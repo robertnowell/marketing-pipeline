@@ -1,0 +1,134 @@
+# projects.yml — source of truth for what the pipeline knows about each project.
+# Add a new project = add a YAML block. No code changes needed.
+#
+# Required fields per project:
+#   repo                — github URL
+#   kind                — what the project IS (maps into surfaces.yml kinds)
+#   audience            — who the project is FOR (maps into surfaces.yml audiences)
+#   status              — live | wip | archived
+#   problem             — concrete problem in TARGET USER'S language (not AI-industry language)
+#   solution_one_liner  — what the project does, one sentence, no fluff
+#   facts[]             — the ONLY claims the drafter is allowed to make; validator grounds against this
+#   angles[]            — rotation pool; drafter picks one per post
+#   channels[]          — which daily-loop channels to post to (subset of audience.daily_social + content_blogs)
+#
+# Voice rule: `problem` and `solution_one_liner` are read verbatim into the drafter prompt.
+# Write them the way the target user would describe the problem to a friend, not the way
+# a product page would.
+
+konid:
+  repo: https://github.com/robertnowell/konid-language-learning
+  kind: mcp-server
+  audience: mcp-users
+  status: live
+  problem: "Google Translate still tells Spanish learners 'estoy caliente' means 'I'm hot'. It doesn't. Literal translation misses register, formality, and the cultural tone that makes you sound like a native speaker instead of a tourist."
+  solution_one_liner: "A language coach that returns three options (casual to formal) for anything you want to say, with cultural context, nuance notes, and audio pronunciation."
+  facts:
+    - "Returns 3 options per query, ordered casual → formal, with the register explained."
+    - "Supports 13+ languages including Mandarin, Japanese, Korean, Spanish, French, German, Portuguese, Italian, Russian, Arabic, and Hindi."
+    - "Works as an MCP server with Claude Code (`claude mcp add konid-ai -- npx -y konid-ai`), Cursor, VS Code Copilot, Windsurf, Zed, JetBrains, and Claude Cowork."
+    - "Also installs as a ChatGPT app via Developer mode with the endpoint `https://konid.fly.dev/mcp`."
+    - "Plays audio pronunciation directly through speakers using node-edge-tts (no external API key needed)."
+    - "Returns cultural context and nuance comparison between options, not just a literal translation."
+    - "MIT licensed; source at github.com/robertnowell/konid-language-learning."
+    - "'konid' (کنید) is Farsi for 'do' — take action."
+  angles:
+    - { id: caliente-bug, summary: "The 'estoy caliente' problem — literal translation vs register", last_used: null }
+    - { id: three-options, summary: "Why returning 3 options at different formality levels beats one answer", last_used: null }
+    - { id: audio-matters, summary: "Why hearing the pronunciation matters more than reading it", last_used: null }
+    - { id: one-server-three-clients, summary: "Same MCP brain across Claude Code, ChatGPT, Cowork", last_used: null }
+  channels: [bluesky, mastodon, devto, hashnode]
+  launch: {}
+
+rabbitholes:
+  repo: https://github.com/robertnowell/rabbitholes
+  kind: chrome-extension
+  audience: research-devs
+  status: live
+  problem: "You hit a term in an article you don't know. You open a new tab, search, read, close the tab, come back, lose your place, forget what you were reading about. Research on the web is death by a thousand context switches."
+  solution_one_liner: "A Chrome extension that turns any selected text into an inline explanation and lets you dig into any word in the response without leaving the page."
+  facts:
+    - "Highlights text → shadow-DOM tooltip renders an explanation from Claude Haiku 4.5 next to your cursor. Doesn't pollute the host page."
+    - "Click any word in the explanation to explore it further. Drag across words to pick a phrase."
+    - "Every answer ends with two suggested rabbit-hole topics — the most interesting threads from here, one click away."
+    - "Pencil icon reveals a free-form follow-up input that inherits current context as background."
+    - "Globe icon re-answers the query enriched with Brave Search results, with source chips you can click."
+    - "Rabbit-hole counter tracks how many hops deep you've gone. Hit 'philosophy' and you get a shareable trail."
+    - "Zero analytics, zero telemetry, no intermediary server. Requests go directly from your browser to api.anthropic.com and api.search.brave.com."
+    - "Manifest V3. Anthropic API key stored in chrome.storage.sync (encrypted, never leaves the browser)."
+  angles:
+    - { id: context-loss, summary: "The tab-switching research-death problem", last_used: null }
+    - { id: shadow-dom, summary: "Why shadow DOM was the right choice over iframe overlay", last_used: null }
+    - { id: philosophy-counter, summary: "The rabbit-hole counter + philosophy endpoint", last_used: null }
+    - { id: no-telemetry, summary: "Why a privacy-native browser extension matters in 2026", last_used: null }
+  channels: [bluesky, mastodon, devto, hashnode]
+  launch: {}
+
+# ──────────────────────────────────────────────────────────────────────────
+# TODO placeholders — user to confirm these exist and fill in real facts.
+# Pipeline will skip projects with status: wip until promoted to status: live.
+# ──────────────────────────────────────────────────────────────────────────
+
+klein-blue:
+  repo: "local: ~/klein-terminal-theme"  # [U] — not pushed to GitHub yet; pipeline should skip directory PRs until a public repo exists
+  kind: terminal-theme
+  audience: claude-code-users
+  status: live
+  problem: "Claude Code's default theme palette turns permission prompts, tool calls, and diff output into a wash of low-contrast accents. When you're reading hundreds of tool outputs a day, the difference between 'can I actually read this' and 'my eyes hurt' is whether the designer ran APCA contrast checks or just eyeballed the hex values."
+  solution_one_liner: "Four Yves-Klein-blue terminal themes for macOS Terminal.app, APCA-verified for legibility, tuned specifically for Claude Code's ansi slot assignments."
+  facts:
+    - "Four variations: Klein Void Refined (balanced), Klein Void Sand & Sea (Claude-brand two-hero), Klein Void Prot (fully APCA-verified), Klein Void Gallery (one-blue maximum void)."
+    - "Uses APCA Lc contrast metric with per-role gates: body >= 90, subtle >= 75, muted >= 45, accent >= 60. V3 Prot is the only variation where every accent passes strict gates."
+    - "Pure IKB (#002FA7) fails APCA contrast as text on dark ground (Lc -12, effectively invisible). Split across two ANSI slots — pure IKB in ansi:blue (decorative borders/highlights) and lifted Klein-family #A8BEF0 in ansi:blueBright (readable permission-prompt text)."
+    - "Ships as macOS Terminal.app .terminal profile files. Built from build.m with a variation-aware Objective-C builder, installed via install.sh, fully rollback-able via restore.sh."
+    - "Requires Claude Code's `/theme` picker set to dark-ansi — otherwise Claude Code uses its hardcoded RGB palette and the ANSI theme is ignored."
+    - "Ships with two font options: CommitMono-Regular (V1, V3) and IBM Plex Mono (V2, V4), both installed to ~/Library/Fonts/."
+    - "Targets Claude Code specifically: the ansi:redBright slot — which Claude Code uses for the claude-sand brand color — is the differentiating moment between variations (neutralize for no brand competition vs accept as second hero)."
+  angles:
+    - { id: apca-gates, summary: "Why APCA per-role gates beat a single contrast floor for Claude Code legibility", last_used: null }
+    - { id: ikb-split, summary: "The pure-IKB-is-invisible-as-text problem and how splitting across two ansi slots fixes it", last_used: null }
+    - { id: four-variations, summary: "Why four variations instead of one — the ansi:redBright question is the identity", last_used: null }
+    - { id: brand-negotiation, summary: "How V2 Sand & Sea handles the Claude brand color as a second hero", last_used: null }
+  channels: [bluesky, mastodon, devto, hashnode]
+  launch: {}
+
+skill-tree:
+  repo: https://github.com/robertnowell/ai-fluency-skill-cards
+  kind: claude-code-plugin
+  audience: claude-code-users
+  status: live
+  problem: "You've been using Claude Code for months. You don't know whether you're actually getting better at delegating, or just writing longer prompts. The feedback loop on 'am I collaborating well with AI' is nonexistent — you can't A/B test your own habits, and no tool tells you what you're avoiding."
+  solution_one_liner: "Analyzes your Claude Code or Cowork session history, classifies 11 observable behaviors from Anthropic's AI Fluency Index, assigns one of seven character archetype cards, and picks a behavior you haven't tried as a growth quest for your next session."
+  facts:
+    - "Uses Anthropic's AI Fluency Index (Feb 2026, 9,830 Claude conversations studied) as the population baseline. Classifies the same 11 observable behaviors on your own sessions."
+    - "Behavior taxonomy + three axes (Description, Discernment, Delegation) come from Dakan & Feller's 4D AI Fluency Framework (Diligence is the fourth axis, not visible in chat logs)."
+    - "Seven archetype cards, rendered as tarot cards with curated museum art. See live example at skill-tree-ai.fly.dev/fixture/illuminator."
+    - "Remote classifier runs on Fly.io (Claude Haiku), hosted visualization stored on a Fly.io volume, stable URL returned per analysis."
+    - "Installs in Claude Code via plugin marketplace: `claude plugin marketplace add robertnowell/ai-fluency-skill-cards && claude plugin install skill-tree-ai@ai-fluency-skill-cards`. Also works in Cowork via `skill-tree-ai.zip`."
+    - "7-step orchestration takes ~30–60 seconds end-to-end: find session files → extract user messages → remote classifier → archetype assignment → narrative synthesis → render → return URL."
+    - "Growth quest persists across sessions via SessionStart hook. Claude Code uses durable `~/.skill-tree/` path; Cowork uses `$CLAUDE_PLUGIN_ROOT/.user-state/` because of its ephemeral $HOME."
+    - "Also available as an MCP server (npm package `skill-tree-ai`) for non-plugin clients like Cursor, VS Code, Windsurf."
+  angles:
+    - { id: fluency-index, summary: "Anthropic's AI Fluency Index as a population baseline you can compare yourself to", last_used: null }
+    - { id: eleven-behaviors, summary: "The 11 observable behaviors and what 'Description / Discernment / Delegation' actually measures", last_used: null }
+    - { id: growth-quest, summary: "Why the growth quest picks what you AVOID, not what you already do well", last_used: null }
+    - { id: archetype-card, summary: "The seven tarot-card archetypes and what they say about your collaboration style", last_used: null }
+    - { id: cowork-home, summary: "Why Cowork's ephemeral $HOME forced the dual-state-path design", last_used: null }
+  channels: [bluesky, mastodon, devto, hashnode]
+  launch: {}
+
+# TODO placeholder — shopify-conjure lives at ~/Projects/kopi/shopify-conjure but
+# is inside the tryrendition/Rendition monorepo (likely private/commercial).
+# User needs to clarify which Kopi sub-packages are publicly marketable as OSS
+# before the pipeline should market them.
+shopify-conjure:
+  repo: TODO  # clarify with user whether this is publicly OSS
+  kind: cli-audit-tool
+  audience: ecom-solopreneurs
+  status: wip
+  problem: "TODO — awaiting user clarification on public OSS status"
+  solution_one_liner: "TODO"
+  facts: []
+  angles: []
+  channels: [bluesky, mastodon, devto, hashnode, indiehackers]
+  launch: {}
