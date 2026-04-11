@@ -195,6 +195,74 @@ def test_unknown_audience_raises() -> None:
         raise AssertionError("expected KeyError for unknown audience")
 
 
+def test_watering_holes_resolved_for_live_audiences() -> None:
+    """The three audiences with live projects (claude-code-users, mcp-users,
+    knowledge-workers) should each resolve to a non-empty watering-hole list,
+    with type discriminators the safari.py dispatcher will understand.
+    Audiences without watering_holes populated must default to an empty list
+    (not raise) so the schema is forward-compatible.
+    """
+    surfaces = _surfaces()
+
+    # claude-code-users has watering holes
+    cc = surfaces.resolve(_project("claude-code-users", "claude-code-plugin"))
+    assert len(cc.watering_holes) > 0
+    cc_types = {wh["type"] for wh in cc.watering_holes}
+    assert "hn_algolia" in cc_types
+    assert "reddit_search" in cc_types
+    assert "bluesky_search" in cc_types
+    # Spot-check one entry's fields
+    reddit_entries = [wh for wh in cc.watering_holes if wh["type"] == "reddit_search"]
+    assert any(wh.get("sub") == "ClaudeAI" for wh in reddit_entries)
+
+    # mcp-users has watering holes including GitHub Issues for the MCP repos
+    mcp = surfaces.resolve(_project("mcp-users", "mcp-server"))
+    assert len(mcp.watering_holes) > 0
+    mcp_types = {wh["type"] for wh in mcp.watering_holes}
+    assert "github_issues" in mcp_types
+    gh_entries = [wh for wh in mcp.watering_holes if wh["type"] == "github_issues"]
+    assert any("modelcontextprotocol/servers" in wh.get("repos", []) for wh in gh_entries)
+
+    # knowledge-workers has watering holes targeting research pain, not dev tooling
+    kw = surfaces.resolve(_project("knowledge-workers", "chrome-extension"))
+    assert len(kw.watering_holes) > 0
+    kw_keywords_flat = [
+        k for wh in kw.watering_holes
+        if wh["type"] == "bluesky_search"
+        for k in wh.get("keywords", [])
+    ]
+    assert any("tab" in k or "rabbit" in k for k in kw_keywords_flat), (
+        "knowledge-workers watering holes should target research/tab-management pain"
+    )
+
+    # An audience without watering_holes configured must default to empty list
+    gc = surfaces.resolve(_project("general-consumers", "consumer-web-app"))
+    assert gc.watering_holes == []
+
+    # frontend-engineers is live-project-adjacent but not populated yet — empty
+    fe = surfaces.resolve(_project("frontend-engineers", "saas-web-app"))
+    assert fe.watering_holes == []
+
+
+def test_watering_holes_not_cross_contaminated_by_audience() -> None:
+    """Regression guard: mcp-users and knowledge-workers must NOT see each other's
+    watering holes. The resolver's audience-only lookup for watering_holes
+    (no kind-layering) is what makes per-project pain catalogs non-overlapping.
+    """
+    surfaces = _surfaces()
+    mcp = surfaces.resolve(_project("mcp-users", "mcp-server"))
+    kw = surfaces.resolve(_project("knowledge-workers", "chrome-extension"))
+
+    mcp_reddit_subs = {wh.get("sub") for wh in mcp.watering_holes if wh["type"] == "reddit_search"}
+    kw_reddit_subs = {wh.get("sub") for wh in kw.watering_holes if wh["type"] == "reddit_search"}
+
+    # Each audience has its own distinct subreddit set
+    assert "LocalLLaMA" in mcp_reddit_subs
+    assert "LocalLLaMA" not in kw_reddit_subs
+    assert "ObsidianMD" in kw_reddit_subs
+    assert "ObsidianMD" not in mcp_reddit_subs
+
+
 def test_directory_dataclass_accepts_all_types() -> None:
     """Sanity: Directory dataclass handles pr / cli / form / contact shapes."""
     d1 = Directory(name="foo", type="pr", repo="a/b")

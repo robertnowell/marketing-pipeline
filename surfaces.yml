@@ -27,6 +27,16 @@ audiences:
       - { name: awesome-claude-plugins, repo: ccplugins/awesome-claude-code-plugins, type: pr }
       # [U] verify exact URL
       - { name: anthropic-plugins-form, url: "https://platform.claude.com/plugins/submit", type: form }
+    watering_holes:
+      # [U] Every entry below needs first-principles primary-source verification
+      # in Week 2 before safari.py depends on it. Fetch each endpoint by hand,
+      # confirm it returns real results for the claimed query, convert to [V] or remove.
+      - { type: hn_algolia, query: "claude code", window_days: 7 }
+      - { type: hn_algolia, query: "claude.md", window_days: 14 }
+      - { type: reddit_search, sub: ClaudeAI, window_days: 7 }
+      - { type: reddit_search, sub: ChatGPTCoding, window_days: 7 }
+      - { type: github_issues, repos: ["anthropics/claude-code"], query: "is:issue" }
+      - { type: bluesky_search, keywords: ["claude code", "claude.md", "claude skill", "claude plugin"] }
     forums_manual: [r_ClaudeAI, claude_discord_showcase, hn_show]
 
   mcp-users:
@@ -47,6 +57,15 @@ audiences:
       - { name: awesome-mcp-servers, repo: wong2/awesome-mcp-servers, type: pr }
       # [U] Anthropic Connectors Directory — verify exact URL
       - { name: anthropic-connectors, url: "https://platform.claude.com/plugins/submit", type: form }
+    watering_holes:
+      # [U] Verify each endpoint in Week 2 before safari.py depends on them.
+      - { type: hn_algolia, query: "mcp server", window_days: 7 }
+      - { type: hn_algolia, query: "model context protocol", window_days: 14 }
+      - { type: reddit_search, sub: LocalLLaMA, window_days: 7 }
+      - { type: reddit_search, sub: mcp, window_days: 14 }
+      - { type: reddit_search, sub: ClaudeAI, window_days: 7 }
+      - { type: github_issues, repos: ["modelcontextprotocol/servers", "modelcontextprotocol/registry"], query: "is:issue" }
+      - { type: bluesky_search, keywords: ["mcp server", "model context protocol", "mcp-publisher"] }
     forums_manual: [r_LocalLLaMA, r_ClaudeAI, hn_show]
 
   frontend-engineers:
@@ -95,6 +114,16 @@ audiences:
       - { name: edge-addons, url: "https://microsoftedge.microsoft.com/addons/publish", type: form }
       # [U] fregante/Awesome-WebExtensions — verify CONTRIBUTING
       - { name: awesome-webextensions, repo: fregante/Awesome-WebExtensions, type: pr }
+    watering_holes:
+      # [U] Verify each endpoint in Week 2 before safari.py depends on them.
+      # Knowledge-worker pain is about context loss during research, not dev tooling.
+      - { type: hn_algolia, query: "tab management research", window_days: 14 }
+      - { type: hn_algolia, query: "wikipedia rabbit hole", window_days: 30 }
+      - { type: reddit_search, sub: productivity, window_days: 14 }
+      - { type: reddit_search, sub: ObsidianMD, window_days: 14 }
+      - { type: reddit_search, sub: Zettelkasten, window_days: 30 }
+      - { type: reddit_search, sub: chrome_extensions, window_days: 14 }
+      - { type: bluesky_search, keywords: ["tab hoarding", "research tool", "close all tabs", "wikipedia rabbit hole"] }
     forums_manual:
       - r_productivity
       - r_notion

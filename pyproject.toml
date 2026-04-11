@@ -11,6 +11,9 @@ dependencies = [
     "ruamel.yaml>=0.18.0",
     "httpx>=0.27.0",
     "tweepy>=4.14.0",
+    # Demand-capture reframe additions:
+    "praw>=7.7.0",               # Reddit API (OAuth, read-only listener targets)
+    "python-frontmatter>=1.1.0", # YAML frontmatter for ebomb + SEO pages
 ]
 
 [project.optional-dependencies]

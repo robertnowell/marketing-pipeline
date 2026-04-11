@@ -35,6 +35,11 @@ class ResolvedSurfaces:
     content_blogs: list[str] = field(default_factory=list)
     directories: list[Directory] = field(default_factory=list)
     forums_manual: list[str] = field(default_factory=list)
+    # Watering holes: read-only listener targets for pain-catalog harvesting.
+    # Each entry is a dict with a `type` discriminator (hn_algolia, reddit_search,
+    # github_issues, bluesky_search, so_tag, ...) plus type-specific fields.
+    # Passed through as raw dicts; safari.py / listener.py dispatch on `type`.
+    watering_holes: list[dict] = field(default_factory=list)
 
     @property
     def daily_channels(self) -> list[str]:
@@ -93,6 +98,10 @@ class SurfaceRegistry:
             content_blogs=list(audience.get("content_blogs") or []),
             directories=list(dir_map.values()),
             forums_manual=forums,
+            # Watering holes are audience-only in MVP. No kind-layering — kinds
+            # currently only layer directories. Revisit if a kind ever needs
+            # to add type-specific listener targets.
+            watering_holes=list(audience.get("watering_holes") or []),
         )
 
 
