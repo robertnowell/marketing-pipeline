@@ -43,7 +43,7 @@ konid:
 rabbitholes:
   repo: https://github.com/robertnowell/rabbitholes
   kind: chrome-extension
-  audience: research-devs
+  audience: knowledge-workers
   status: live
   problem: "You hit a term in an article you don't know. You open a new tab, search, read, close the tab, come back, lose your place, forget what you were reading about. Research on the web is death by a thousand context switches."
   solution_one_liner: "A Chrome extension that turns any selected text into an inline explanation and lets you dig into any word in the response without leaving the page."

@@ -1,22 +1,34 @@
 # surfaces.yml — per-audience/kind channel + directory graph
-# Sources marked [V] are verified from primary docs during cross-audit.
-# Sources marked [U] need fresh primary-source verification before code depends on them.
+#
+# This is the piece that makes the pipeline project-agnostic. Audience + kind
+# are the two keys. audience selects the social surfaces + base directories;
+# kind layers on additive directories specific to the project type.
+#
+# Intentionally broader than dev tools: the same resolver handles a terminal
+# theme for Claude Code users, a consumer AI app on the App Store, a B2B SaaS
+# for marketing ops, or an API product for ops engineers.
+#
+# Sources marked [V] verified from primary docs during cross-audit.
+# Sources marked [U] need fresh primary-source verification before code depends.
+# Sources marked [TODO] are vertical placeholders for the user to populate.
 
 audiences:
-  # ──────────────────────────────────────────────────────────────────
+  # ═══════════════════════════════════════════════════════════════════
+  # DEVELOPER AUDIENCES
+  # ═══════════════════════════════════════════════════════════════════
+
   claude-code-users:
     daily_social: [bluesky, mastodon]
     content_blogs: [devto, hashnode]
     directories:
       # [V] 38k stars, highest-star Claude Code list
       - { name: awesome-claude-code, repo: hesreallyhim/awesome-claude-code, type: pr }
-      # [U] ccplugins/awesome-claude-code-plugins — verify repo exists + CONTRIBUTING
+      # [U] verify repo exists + CONTRIBUTING
       - { name: awesome-claude-plugins, repo: ccplugins/awesome-claude-code-plugins, type: pr }
-      # [U] Claude plugins submission form — verify exact URL
+      # [U] verify exact URL
       - { name: anthropic-plugins-form, url: "https://platform.claude.com/plugins/submit", type: form }
     forums_manual: [r_ClaudeAI, claude_discord_showcase, hn_show]
 
-  # ──────────────────────────────────────────────────────────────────
   mcp-users:
     daily_social: [bluesky, mastodon]
     content_blogs: [devto, hashnode]
@@ -25,7 +37,7 @@ audiences:
       - { name: mcp-registry, tool: mcp-publisher, type: cli }
       # [V] smithery.ai/docs/build/publish — URL-only for hosted servers
       - { name: smithery, tool: smithery-cli, type: cli }
-      # [V] glama.ai/mcp/servers — live page, Add Server button
+      # [V] glama.ai/mcp/servers — live, Add Server button
       - { name: glama, url: "https://glama.ai/mcp/servers", type: form }
       # [V] pulsemcp.com/submit — single URL field, daily cascade
       - { name: pulsemcp, url: "https://pulsemcp.com/submit", type: form }
@@ -33,36 +45,45 @@ audiences:
       - { name: mcpservers, url: "https://mcpservers.org/submit", type: form }
       # [V] wong2/awesome-mcp-servers — canonical
       - { name: awesome-mcp-servers, repo: wong2/awesome-mcp-servers, type: pr }
-      # [U] Anthropic Connectors Directory form — verify exact URL
+      # [U] Anthropic Connectors Directory — verify exact URL
       - { name: anthropic-connectors, url: "https://platform.claude.com/plugins/submit", type: form }
     forums_manual: [r_LocalLLaMA, r_ClaudeAI, hn_show]
 
-  # ──────────────────────────────────────────────────────────────────
-  ecom-solopreneurs:
-    daily_social: [bluesky, mastodon, indiehackers]
-    content_blogs: [devto, hashnode, indiehackers_article]
-    directories:
-      # [U] AlternativeTo — 149k monthly, 2-7 day review, position as alternative-to
-      - { name: alternativeto, url: "https://alternativeto.net/submit", type: form }
-      # [U] Uneed — daily competition, free submission, DR 74
-      - { name: uneed, url: "https://uneed.best/submit", type: form }
-      # [U] DevHunt — free dev listing, DR 59
-      - { name: devhunt, url: "https://devhunt.org/submit", type: form }
-      # [U] IndieHackers Products listing — one-shot per project
-      - { name: indiehackers-products, url: "https://indiehackers.com/products/add", type: form }
-    forums_manual: [r_ecommerce, r_shopify, r_entrepreneur, indiehackers_main, product_hunt]
-
-  # ──────────────────────────────────────────────────────────────────
   frontend-engineers:
     daily_social: [bluesky, mastodon]
     content_blogs: [devto, hashnode]
     directories:
       # [V] Cooper Press — reply to the latest issue email
-      - { name: cooper-press-js-weekly, contact: "reply to latest JS Weekly email" }
-    forums_manual: [hn_show, r_javascript, r_webdev]
+      - { name: cooper-press-js-weekly, contact: "reply to latest JS Weekly email", type: contact }
+    forums_manual: [hn_show, r_javascript, r_webdev, r_frontend]
 
-  # ──────────────────────────────────────────────────────────────────
-  research-devs:
+  ai-engineers:
+    daily_social: [bluesky, mastodon]
+    content_blogs: [devto, hashnode]
+    directories:
+      # [V] Changelog News — 25k subs, 3 fields, rejects tutorials/commercial
+      - { name: changelog-news, url: "https://changelog.com/news/submit", type: form }
+      # [V] Console.dev — pre-1.0/beta gate hard
+      - { name: console-dev, contact: "email hello@console.dev", type: contact }
+    forums_manual: [r_LocalLLaMA, r_MachineLearning, hn_show]
+
+  ops-and-sre:
+    daily_social: [bluesky, mastodon]
+    content_blogs: [devto, hashnode]
+    directories:
+      # [U] awesome-sysadmin + awesome-devops — verify each
+      - { name: awesome-sysadmin, repo: awesome-foss/awesome-sysadmin, type: pr }
+      - { name: awesome-devops, repo: wmariuss/awesome-devops, type: pr }
+    forums_manual: [r_devops, r_sysadmin, r_kubernetes, r_homelab, hn_show]
+
+  # ═══════════════════════════════════════════════════════════════════
+  # KNOWLEDGE-WORKER / PROSUMER AUDIENCES
+  # (Researchers, analysts, consultants, writers — the broad "info worker"
+  #  slot that rabbitholes and any browser-based research tool targets.
+  #  Renamed from `research-devs` — research is not just a dev activity.)
+  # ═══════════════════════════════════════════════════════════════════
+
+  knowledge-workers:
     daily_social: [bluesky, mastodon]
     content_blogs: [devto, hashnode]
     directories:
@@ -74,56 +95,278 @@ audiences:
       - { name: edge-addons, url: "https://microsoftedge.microsoft.com/addons/publish", type: form }
       # [U] fregante/Awesome-WebExtensions — verify CONTRIBUTING
       - { name: awesome-webextensions, repo: fregante/Awesome-WebExtensions, type: pr }
-    forums_manual: [r_chrome, r_chromeextensions, product_hunt, hn_show]
+    forums_manual:
+      - r_productivity
+      - r_notion
+      - r_obsidianmd
+      - r_zettelkasten
+      - hn_show
+      - product_hunt
 
-  # ──────────────────────────────────────────────────────────────────
-  ai-engineers:
-    daily_social: [bluesky, mastodon]
-    content_blogs: [devto, hashnode]
+  creative-prosumers:
+    # Artists, designers, writers, video creators. Big on visual platforms.
+    daily_social: [bluesky, mastodon, threads]
+    content_blogs: []  # Substack / Medium are manual; no first-class automation surface
     directories:
-      # [V] Changelog News — 25k subs, 3 fields, rejects tutorials/commercial
-      - { name: changelog-news, url: "https://changelog.com/news/submit", type: form }
-      # [V] Console.dev — pre-1.0/beta gate hard
-      - { name: console-dev, contact: "email hello@console.dev" }
-    forums_manual: [r_LocalLLaMA, hn_show]
+      # [U] Product Hunt — one-shot per project, best for consumer/creator tools
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      # [U] AlternativeTo — 149k monthly, 2–7 day review, position as alternative to X
+      - { name: alternativeto, url: "https://alternativeto.net/submit", type: form }
+      # [U] TAAFT — $347 one-off paid, refundable if rejected, 2.5M newsletter
+      - { name: taaft, url: "https://theresanaiforthat.com/submit", type: form }
+      # [U] futuretools.io — free form, Matt Wolfe reviews
+      - { name: futuretools, url: "https://futuretools.io/submit-a-tool", type: form }
+    forums_manual:
+      - r_DigitalArt
+      - r_creativity
+      - r_midjourney
+      - r_StableDiffusion
+      - instagram_manual
+      - tiktok_manual
+      - youtube_manual
+      - creator_discords_manual
+
+  # ═══════════════════════════════════════════════════════════════════
+  # CONSUMER AUDIENCES
+  # (General public, non-technical. Real daily-automation surface here is
+  #  thin — the channels where consumers live (TikTok, Instagram, YouTube)
+  #  are either manual-only or require per-permission platform review.
+  #  The pipeline's role is drafting assets for release + launch windows,
+  #  not daily broadcast.)
+  # ═══════════════════════════════════════════════════════════════════
+
+  general-consumers:
+    daily_social: [bluesky, mastodon, threads]  # Threads gated on Meta app review
+    content_blogs: []
+    directories:
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      - { name: alternativeto, url: "https://alternativeto.net/submit", type: form }
+      - { name: taaft, url: "https://theresanaiforthat.com/submit", type: form }
+      - { name: futuretools, url: "https://futuretools.io/submit-a-tool", type: form }
+    forums_manual:
+      - r_apps
+      - r_ChatGPT
+      - r_ArtificialInteligence  # [sic] — actual sub name
+      - product_hunt
+      - tiktok_manual
+      - instagram_manual
+      - youtube_manual
+
+  # ═══════════════════════════════════════════════════════════════════
+  # B2B AUDIENCES
+  # (LinkedIn matters most here but is automation-hostile for personal
+  #  accounts. Route LinkedIn through a partner (Typefully/Buffer) or
+  #  accept it as manual-only.)
+  # ═══════════════════════════════════════════════════════════════════
+
+  founders-solopreneurs:
+    daily_social: [bluesky, mastodon, indiehackers]
+    content_blogs: [devto, hashnode, indiehackers_article]
+    directories:
+      - { name: indiehackers-products, url: "https://www.indiehackers.com/products/add", type: form }
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      - { name: alternativeto, url: "https://alternativeto.net/submit", type: form }
+      - { name: uneed, url: "https://uneed.best/submit", type: form }
+      - { name: taaft, url: "https://theresanaiforthat.com/submit", type: form }
+    forums_manual:
+      - r_startups
+      - r_SaaS
+      - r_SideProject
+      - r_Entrepreneur
+      - indiehackers_main
+      - hn_show
+      - product_hunt
+      - linkedin_manual
+
+  ecom-solopreneurs:
+    daily_social: [bluesky, mastodon, indiehackers]
+    content_blogs: [devto, hashnode, indiehackers_article]
+    directories:
+      - { name: alternativeto, url: "https://alternativeto.net/submit", type: form }
+      - { name: uneed, url: "https://uneed.best/submit", type: form }
+      - { name: indiehackers-products, url: "https://www.indiehackers.com/products/add", type: form }
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+    forums_manual:
+      - r_ecommerce
+      - r_shopify
+      - r_Entrepreneur
+      - indiehackers_main
+      - product_hunt
+
+  marketing-ops:
+    daily_social: [bluesky, mastodon, threads]
+    content_blogs: []  # MarTech audience lives on LinkedIn (partner-only)
+    directories:
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      - { name: alternativeto, url: "https://alternativeto.net/submit", type: form }
+      - { name: taaft, url: "https://theresanaiforthat.com/submit", type: form }
+      - { name: futuretools, url: "https://futuretools.io/submit-a-tool", type: form }
+    forums_manual:
+      - r_marketing
+      - r_SaaS
+      - product_hunt
+      - linkedin_manual
+
+  # ═══════════════════════════════════════════════════════════════════
+  # VERTICAL AUDIENCES (skeletons — user fills in specifics per vertical)
+  # ═══════════════════════════════════════════════════════════════════
+
+  healthcare-professionals:
+    daily_social: [bluesky, mastodon]
+    content_blogs: []
+    directories:
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      # [TODO] add healthtech-specific directories (Rock Health, HIMSS, specific sub-specialty listings)
+    forums_manual:
+      - r_medicine
+      - r_nursing
+      - linkedin_manual  # healthcare pros live on LinkedIn
+
+  legal-professionals:
+    daily_social: [bluesky, mastodon]
+    content_blogs: []
+    directories:
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      # [TODO] legaltech directories (Above the Law, Legaltech Hub)
+    forums_manual:
+      - r_law
+      - r_LawFirm
+      - linkedin_manual
+
+  educators:
+    daily_social: [bluesky, mastodon]
+    content_blogs: []
+    directories:
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      # [TODO] edtech directories (Common Sense Education, EdSurge)
+    forums_manual:
+      - r_Teachers
+      - r_education
+      - linkedin_manual
+
+# ═══════════════════════════════════════════════════════════════════════
+# KINDS
+# Additive directories applied on top of audience set, based on what the
+# project IS. Full dict entries (not string refs) so kinds work across any
+# audience, not just the audience where a directory was first defined.
+# ═══════════════════════════════════════════════════════════════════════
 
 kinds:
-  # Additive directories applied on top of audience set, based on what the project IS.
+  # ─── Developer-tool kinds ───────────────────────────────────────────
 
   terminal-theme:
     directories_additive:
-      # [V] iTerm2-Color-Schemes — 26.7k stars, cascades to Ghostty/WezTerm/Windows Terminal
+      # [V] 26.7k stars, cascades to Ghostty/WezTerm/Windows Terminal
       - { name: iterm2-color-schemes, repo: mbadolato/iTerm2-Color-Schemes, type: pr }
       # [V] Tinted Theming base16/base24 — one PR propagates to 70+ apps
       - { name: base16-schemes, repo: tinted-theming/schemes, type: pr }
-      # [V] Gogh — terminal palette collection
       - { name: gogh, repo: Gogh-Co/Gogh, type: pr }
       # [U] Starship presets — verify CONTRIBUTING
       - { name: starship-presets, repo: starship/starship, type: pr }
     forums_additive: [r_unixporn]
 
-  chrome-extension:
-    directories_additive:
-      - firefox-amo
-      - edge-addons
-      - chrome-web-store
-
   mcp-server:
     directories_additive:
-      - mcp-registry
-      - smithery
-      - glama
-      - pulsemcp
-      - mcpservers
+      # Full dicts (not string refs) so MCP servers work in any audience
+      - { name: mcp-registry, tool: mcp-publisher, type: cli }
+      - { name: smithery, tool: smithery-cli, type: cli }
+      - { name: glama, url: "https://glama.ai/mcp/servers", type: form }
+      - { name: pulsemcp, url: "https://pulsemcp.com/submit", type: form }
+      - { name: mcpservers, url: "https://mcpservers.org/submit", type: form }
+      - { name: awesome-mcp-servers, repo: wong2/awesome-mcp-servers, type: pr }
+    forums_additive: []
 
   claude-code-plugin:
     directories_additive:
-      - awesome-claude-code
-      - awesome-claude-plugins
-      - anthropic-plugins-form
+      - { name: awesome-claude-code, repo: hesreallyhim/awesome-claude-code, type: pr }
+      - { name: awesome-claude-plugins, repo: ccplugins/awesome-claude-code-plugins, type: pr }
+      - { name: anthropic-plugins-form, url: "https://platform.claude.com/plugins/submit", type: form }
+    forums_additive: [r_ClaudeAI]
 
   cli-audit-tool:
     directories_additive: []  # rely on audience directories
 
   saas-web-app:
     directories_additive: []  # rely on audience directories
+
+  # ─── Generic / cross-audience kinds ─────────────────────────────────
+
+  browser-extension:
+    # Generic browser extension — works for Chrome, Firefox, Edge regardless
+    # of audience. Full dicts so this kind can be applied to any audience
+    # (knowledge-workers, general-consumers, marketing-ops, etc).
+    directories_additive:
+      - { name: chrome-web-store, url: "https://chrome.google.com/webstore/devconsole", type: form }
+      - { name: firefox-amo, url: "https://addons.mozilla.org/developers/addon/submit", type: form }
+      - { name: edge-addons, url: "https://microsoftedge.microsoft.com/addons/publish", type: form }
+      - { name: awesome-webextensions, repo: fregante/Awesome-WebExtensions, type: pr }
+    forums_additive: [r_chrome_extensions]
+
+  chrome-extension:
+    # Legacy alias for browser-extension — kept for backwards compatibility
+    # with projects.yml entries that already use `kind: chrome-extension`.
+    directories_additive:
+      - { name: chrome-web-store, url: "https://chrome.google.com/webstore/devconsole", type: form }
+      - { name: firefox-amo, url: "https://addons.mozilla.org/developers/addon/submit", type: form }
+      - { name: edge-addons, url: "https://microsoftedge.microsoft.com/addons/publish", type: form }
+      - { name: awesome-webextensions, repo: fregante/Awesome-WebExtensions, type: pr }
+    forums_additive: [r_chrome_extensions]
+
+  consumer-mobile-app:
+    # App Store / Play Store submission is a release-process artifact, not a
+    # marketing-pipeline action. The pipeline drafts copy for stores; the
+    # human ships the build. What it CAN automate is directory submissions.
+    directories_additive:
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      - { name: alternativeto, url: "https://alternativeto.net/submit", type: form }
+      - { name: taaft, url: "https://theresanaiforthat.com/submit", type: form }
+    forums_additive: [r_apps, r_androidapps, r_iosapps]
+
+  consumer-web-app:
+    directories_additive:
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      - { name: alternativeto, url: "https://alternativeto.net/submit", type: form }
+      - { name: taaft, url: "https://theresanaiforthat.com/submit", type: form }
+      - { name: futuretools, url: "https://futuretools.io/submit-a-tool", type: form }
+      - { name: uneed, url: "https://uneed.best/submit", type: form }
+    forums_additive: []
+
+  b2b-saas:
+    directories_additive:
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      - { name: alternativeto, url: "https://alternativeto.net/submit", type: form }
+      # [U] G2 and Capterra are paid/review-gated for most entries
+      - { name: g2, url: "https://www.g2.com/products/new", type: form }
+      - { name: capterra, url: "https://www.capterra.com/vendors/sign-up", type: form }
+    forums_additive: []
+
+  desktop-app:
+    directories_additive:
+      # [U] Setapp developers program, Homebrew cask — both have quality gates
+      - { name: setapp-dev, url: "https://setapp.com/developers", type: form }
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      - { name: alternativeto, url: "https://alternativeto.net/submit", type: form }
+    forums_additive: [r_macapps, r_software]
+
+  api-product:
+    directories_additive:
+      # [U] RapidAPI marketplace — verify submission flow
+      - { name: rapidapi, url: "https://rapidapi.com/developer/new-api", type: form }
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+    forums_additive: [r_api, hn_show]
+
+  creator-tool:
+    # Tools for video/content creators (not "developer tools for creators")
+    directories_additive:
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      - { name: taaft, url: "https://theresanaiforthat.com/submit", type: form }
+      - { name: futuretools, url: "https://futuretools.io/submit-a-tool", type: form }
+    forums_additive: [r_NewTubers, r_youtubers, r_podcasting]
+
+  workflow-automation:
+    # Tools that build integrations / no-code automations
+    directories_additive:
+      - { name: product-hunt-launch, url: "https://www.producthunt.com/posts/new", type: form }
+      - { name: alternativeto, url: "https://alternativeto.net/submit", type: form }
+      # [U] Zapier public templates, n8n templates — verify submission flow
+    forums_additive: [r_automation, r_nocode, r_zapier, r_n8n]

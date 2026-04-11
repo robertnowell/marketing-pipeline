@@ -56,14 +56,78 @@ def test_terminal_theme_resolves_to_theme_directories() -> None:
     assert "r_unixporn" in resolved.forums_manual
 
 
-def test_chrome_extension_for_research_devs() -> None:
+def test_chrome_extension_for_knowledge_workers() -> None:
     surfaces = _surfaces()
-    resolved = surfaces.resolve(_project("research-devs", "chrome-extension"))
+    resolved = surfaces.resolve(_project("knowledge-workers", "chrome-extension"))
     names = [d.name for d in resolved.directories]
     assert "chrome-web-store" in names
     assert "firefox-amo" in names
     assert "edge-addons" in names
     assert "awesome-webextensions" in names
+
+
+def test_browser_extension_kind_works_across_audiences() -> None:
+    """The `browser-extension` kind uses full dict entries (not string refs),
+    so it should resolve its three stores regardless of what audience the
+    project is in. This is the proof that kinds aren't implicitly coupled
+    to the audience that first defined a directory.
+    """
+    surfaces = _surfaces()
+    # A consumer-audience browser extension (e.g. a general-public tab manager)
+    resolved = surfaces.resolve(_project("general-consumers", "browser-extension"))
+    names = [d.name for d in resolved.directories]
+    assert "chrome-web-store" in names
+    assert "firefox-amo" in names
+    assert "edge-addons" in names
+    # And still picks up the audience's own directories
+    assert "product-hunt-launch" in names
+
+
+def test_consumer_web_app_resolves_to_consumer_surfaces() -> None:
+    """The critical non-dev cross-audience test. A consumer web app must
+    resolve to consumer-facing directories (Product Hunt, TAAFT, AlternativeTo)
+    and forums (r_apps, instagram_manual, tiktok_manual) — and must NOT see
+    dev-tool directories (mcp-registry, awesome-claude-code, iterm2-color-schemes).
+    If this passes, the audience/kind abstraction is actually project-agnostic.
+    """
+    surfaces = _surfaces()
+    resolved = surfaces.resolve(_project("general-consumers", "consumer-web-app"))
+    names = [d.name for d in resolved.directories]
+    # Consumer surfaces present
+    assert "product-hunt-launch" in names
+    assert "taaft" in names
+    assert "alternativeto" in names
+    assert "futuretools" in names
+    # Dev-tool surfaces absent
+    assert "mcp-registry" not in names
+    assert "awesome-claude-code" not in names
+    assert "iterm2-color-schemes" not in names
+    assert "awesome-webextensions" not in names
+    # Consumer forums present
+    assert "instagram_manual" in resolved.forums_manual
+    assert "tiktok_manual" in resolved.forums_manual
+    assert "r_apps" in resolved.forums_manual
+
+
+def test_founders_b2b_saas_resolves_correctly() -> None:
+    """A B2B SaaS for founders/solopreneurs should see IndieHackers, HN, and
+    the B2B review directories — not Claude Code lists, not MCP registries."""
+    surfaces = _surfaces()
+    resolved = surfaces.resolve(_project("founders-solopreneurs", "b2b-saas"))
+    names = [d.name for d in resolved.directories]
+    # Founder surfaces
+    assert "indiehackers-products" in names
+    assert "product-hunt-launch" in names
+    # B2B-saas kind adds
+    assert "g2" in names
+    assert "capterra" in names
+    # Dev-tool absent
+    assert "mcp-registry" not in names
+    assert "awesome-claude-code" not in names
+    # Founder forums
+    assert "indiehackers_main" in resolved.forums_manual
+    assert "hn_show" in resolved.forums_manual
+    assert "linkedin_manual" in resolved.forums_manual
 
 
 def test_ecom_cli_audit_tool_has_different_surface_set() -> None:
