@@ -1,0 +1,25 @@
+- url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjd4cm5y6i2t
+  channel: bluesky
+  project: konid
+  angle: girlfriend-language
+  posted_at: '2026-04-12'
+  likes: 0
+  reposts: 0
+  replies: 0
+  views: 0
+  engagement: 0
+  fetched_at: '2026-04-12T20:18:27Z'
+  error:
+- url: 
+    https://dev.to/palo_alto_ai/konid-say-what-you-mean-in-13-languages-not-what-google-translate-thinks-you-mean-4l63
+  channel: devto
+  project: konid
+  angle: girlfriend-language
+  posted_at: '2026-04-12'
+  likes: 0
+  reposts: 0
+  replies: 0
+  views: 10
+  engagement: 0
+  fetched_at: '2026-04-12T20:18:28Z'
+  error:

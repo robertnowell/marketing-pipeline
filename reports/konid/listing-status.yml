@@ -1,0 +1,60 @@
+project: konid
+repo: https://github.com/robertnowell/konid-language-learning
+submissions:
+  GitHub Topics (SkillsMP auto-index):
+    method: github_topics
+    automated: true
+    status: submitted
+    output: '[dry run] would run: gh repo edit robertnowell/konid-language-learning
+      --add-topic mcp,mcp-server,model-context-protocol,open-source'
+    notes: 'Sets topics: mcp, mcp-server, model-context-protocol, open-source. SkillsMP
+      and similar indexers pick these up automatically.'
+  Official MCP Registry:
+    method: cli
+    automated: true
+    status: submitted
+    output: '[dry run] would run: mcp-publisher publish'
+    notes: Requires server.json in repo root. Auth via GitHub OIDC in CI or 
+      `mcp-publisher login github-oidc` locally. Downstream aggregators (Glama, 
+      PulseMCP) poll this registry hourly.
+  Smithery:
+    method: cli
+    automated: true
+    status: submitted
+    output: '[dry run] would run: smithery mcp publish https://github.com/robertnowell/konid-language-learning
+      -n robertnowell/konid-language-learning'
+    notes: Requires smithery CLI installed. Targets Smithery registry only.
+  mcp.so:
+    method: web_form
+    automated: false
+    status: pending
+    url: https://mcp.so
+    notes: Submit via GitHub issue on mcp.so's repo or web form.
+  mcpservers.org:
+    method: web_form
+    automated: false
+    status: pending
+    url: https://mcpservers.org/submit
+    notes: Web form, ~12h human review. No API.
+  PulseMCP:
+    method: web_form
+    automated: false
+    status: pending
+    url: https://www.pulsemcp.com/submit
+    notes: Web form + Discord. Run by MCP Steering Committee members. Also 
+      publishes a weekly newsletter — getting listed here is high-signal.
+  Glama:
+    method: web_form
+    automated: false
+    status: pending
+    url: 
+      https://glama.ai/mcp/servers?add=https://github.com/robertnowell/konid-language-learning
+    notes: Click 'Add Server', paste GitHub URL. Claims auto-index within 
+      24-48h.
+  awesome-claude-code:
+    method: pr
+    automated: false
+    status: pending
+    url: https://github.com/hesreallyhim/awesome-claude-code
+    notes: Fork + PR. 38k+ stars, highest-traffic Claude Code list. Human 
+      review.
