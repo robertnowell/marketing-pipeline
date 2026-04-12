@@ -91,57 +91,83 @@ pip install -e ".[dev]"
 
 ### 2. Configure credentials
 
-Copy `.env.example` to `.env` and fill in:
-
-```
-ANTHROPIC_API_KEY=          # for drafting (Claude Messages API)
-BLUESKY_HANDLE=             # e.g. yourhandle.bsky.social
-BLUESKY_APP_PASSWORD=       # from Settings → Privacy → App Passwords
-DEVTO_API_KEY=              # from Settings → Extensions → API Keys
-HASHNODE_PAT=               # from Developer Settings
-HASHNODE_PUBLICATION_ID=    # from Dashboard → General
-MASTODON_ACCESS_TOKEN=      # from Preferences → Development → New Application
-MASTODON_INSTANCE_URL=      # e.g. https://hachyderm.io
+```bash
+cp .env.example .env
+marketing setup
 ```
 
-### 3. Onboard a project
+`marketing setup` checks what's configured, what's missing, and tells you exactly where to go for each one. It also verifies connectivity.
+
+**Required** (pipeline won't draft/post without these):
+
+| Credential | Where to get it |
+|---|---|
+| `ANTHROPIC_API_KEY` | [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys) |
+| `BLUESKY_HANDLE` + `BLUESKY_APP_PASSWORD` | bsky.app → Settings → Privacy and security → App Passwords |
+| `DEVTO_API_KEY` | dev.to → Settings → Extensions → DEV Community API Keys |
+| `HASHNODE_PAT` + `HASHNODE_PUBLICATION_ID` | hashnode.com → Avatar → Account Settings → Developer |
+
+**Optional:**
+
+| Credential | Where to get it |
+|---|---|
+| `MASTODON_ACCESS_TOKEN` + `MASTODON_INSTANCE_URL` | Your instance → Preferences → Development → New Application |
+| `SLACK_WEBHOOK_URL` | [api.slack.com/apps](https://api.slack.com/apps) → Create App → Incoming Webhooks |
+
+**One-time CLI auth (for publishing):**
 
 ```bash
-marketing onboard --name konid --repo robertnowell/konid-language-learning --kind mcp-server
+npm login                        # for npm package publishing
+mcp-publisher login github       # for official MCP Registry (device code flow)
 ```
 
-### 4. Test
+### 3. Onboard and launch a project
 
 ```bash
-marketing draft --project konid --channel bluesky
-marketing launch --project konid --dry-run
-marketing cycle --dry-run
+marketing onboard --name my-tool --repo owner/repo --kind mcp-server
+marketing launch --project my-tool --dry-run   # review first
+marketing launch --project my-tool             # go live
 ```
 
-### 5. Go live
+That's it. `onboard` reads the README and generates everything. `launch` handles directories, drafts, and posting.
+
+### 4. Monitor
 
 ```bash
-marketing launch --project konid
+marketing status    # what's live, what's posted
+marketing report    # fetch engagement metrics, send Slack digest
 ```
 
-### GitHub Actions
+### 5. Daily automation (GitHub Actions)
 
 Add the same env vars as repository secrets, plus:
 
 - `NPM_TOKEN` — for automated npm publishing in the launch workflow
+- `SLACK_WEBHOOK_URL` — for daily engagement digests
 - The launch workflow uses `github-oidc` for MCP Registry auth (no secrets needed)
+
+The daily cron runs `marketing cycle` + `marketing report` at 14:00 UTC weekdays.
+
+### What's manual (can't be automated)
+
+- **awesome-claude-code submission**: Their rules require human submission via [the issue form](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml). One form per project, once.
+- **Reviewing auto-generated angles**: `onboard` generates problem/angles from the README. They're usually good but worth a 30-second sanity check in `projects.yml`.
+- **Credential rotation**: Rotate API keys periodically. Run `marketing setup` to verify everything still works.
 
 ## CLI reference
 
 | Command | What it does |
 |---|---|
+| `marketing setup` | Check credentials, verify connectivity, guide through missing setup |
+| `marketing status` | Show live projects, post counts, latest activity |
+| `marketing onboard --name X --repo owner/repo --kind mcp-server` | Auto-generate project entry from README via Claude |
+| `marketing draft --project X --channel bluesky` | Generate 3 draft candidates, validate, save best |
+| `marketing post --channel bluesky --file path.md` | Publish a draft to a channel |
+| `marketing launch --project X [--dry-run]` | Full launch: directories + drafts + posts |
+| `marketing cycle [--dry-run]` | Daily rotation: draft + post for all live projects |
+| `marketing report` | Fetch engagement metrics, save snapshot, send Slack digest |
 | `marketing plan` | Print registry summary |
 | `marketing surfaces --project X` | Show resolved channels + directories |
-| `marketing onboard --name X --repo owner/repo --kind mcp-server` | Auto-generate project entry from README |
-| `marketing draft --project X --channel bluesky` | Generate 3 draft candidates, validate, save best |
-| `marketing post --channel bluesky --file path.md` | Publish a draft |
-| `marketing launch --project X [--dry-run]` | Submit to all directories |
-| `marketing cycle [--dry-run]` | Daily rotation: draft + post for all live projects |
 
 ## Supported surfaces
 

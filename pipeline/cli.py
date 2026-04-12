@@ -358,6 +358,35 @@ def _cmd_report(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_setup(args: argparse.Namespace) -> int:
+    """Check credentials and guide through setup."""
+    from pipeline.setup import run_setup
+    return run_setup()
+
+
+def _cmd_status(args: argparse.Namespace) -> int:
+    """Show pipeline status: projects, posts, next actions."""
+    from pipeline.report import load_manifest
+
+    registry = load(args.projects)
+    live = registry.live_projects()
+    manifest = load_manifest()
+
+    print("Pipeline Status\n")
+    print(f"  Projects: {len(live)} live, {len(registry.projects) - len(live)} other")
+    for name, project in live.items():
+        posts = [p for p in manifest if p["project"] == name]
+        channels = [p["channel"] for p in posts]
+        print(f"    {name}: {len(project.angles)} angles, {len(posts)} posts ({', '.join(channels) or 'none yet'})")
+
+    print(f"\n  Total posts tracked: {len(manifest)}")
+    if manifest:
+        latest = manifest[-1]
+        print(f"  Latest: {latest['project']}/{latest['channel']} on {latest.get('posted_at', '?')}")
+
+    return 0
+
+
 def _pick_next_angle(angles: list[Angle]) -> Angle:
     """Pick the angle with the oldest (or None) last_used date."""
     unused = [a for a in angles if a.last_used is None]
@@ -397,6 +426,7 @@ def main(argv: list[str] | None = None) -> int:
 
     p_post = sub.add_parser("post", help="Publish a draft to a channel.")
     p_post.add_argument("--channel", type=str, required=True)
+    p_post.add_argument("--project", type=str, default=None, help="Project name for manifest tracking")
     p_post.add_argument("--file", type=str, default=None, help="Path to draft file")
     p_post.add_argument("--dry-run", action="store_true")
     p_post.set_defaults(func=_cmd_post)
@@ -420,6 +450,12 @@ def main(argv: list[str] | None = None) -> int:
 
     p_report = sub.add_parser("report", help="Fetch engagement metrics and generate report.")
     p_report.set_defaults(func=_cmd_report)
+
+    p_setup = sub.add_parser("setup", help="Check credentials and guide through setup.")
+    p_setup.set_defaults(func=_cmd_setup)
+
+    p_status = sub.add_parser("status", help="Show pipeline status: projects, posts, next actions.")
+    p_status.set_defaults(func=_cmd_status)
 
     args = parser.parse_args(argv)
     return args.func(args)
