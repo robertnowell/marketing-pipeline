@@ -109,29 +109,96 @@ def plan_listings(project: Project, project_name: str) -> ListingPlan:
         plan.submissions.append(_mcpservers_submission(project, project_name, repo_url))
         plan.submissions.append(_pulsemcp_submission(project, project_name, repo_url))
 
-    # Claude Code skills/plugins
-    if kind in ("claude-skill", "claude_skill", "claude-plugin", "skill"):
+    # Claude Code skills/plugins — full directory set
+    if kind in ("claude-skill", "claude_skill", "claude-plugin", "skill",
+                "mcp-server", "mcp_server", "mcp"):
         plan.submissions.append(DirectorySubmission(
             directory="Claude Plugin Marketplace",
             method="web_form",
             url="https://claude.ai/settings/plugins/submit",
-            notes="Manual form submission. Requires Anthropic review.",
+            notes="Official Anthropic marketplace. Form-based review. 'Verified' badge for approved plugins.",
+        ))
+        plan.submissions.append(_awesome_claude_code_pr(project, project_name, repo_url))
+        plan.submissions.append(DirectorySubmission(
+            directory="awesome-claude-plugins (Composio)",
+            method="pr",
+            url="https://github.com/ComposioHQ/awesome-claude-plugins",
+            pr_body=_awesome_list_pr_body(project, project_name, repo_url),
+            notes="1.3k stars. Fork + PR. Must be tested, address a real use case.",
+        ))
+        plan.submissions.append(DirectorySubmission(
+            directory="awesome-claude-skills (Composio)",
+            method="pr",
+            url="https://github.com/ComposioHQ/awesome-claude-skills",
+            pr_body=_awesome_list_pr_body(project, project_name, repo_url),
+            notes="Skills-focused curated list. Fork + PR.",
+        ))
+        plan.submissions.append(DirectorySubmission(
+            directory="awesome-claude-skills (travisvn)",
+            method="pr",
+            url="https://github.com/travisvn/awesome-claude-skills",
+            pr_body=_awesome_list_pr_body(project, project_name, repo_url),
+            notes="40+ entries. SKILL.md-focused. Fork + PR.",
+        ))
+        plan.submissions.append(DirectorySubmission(
+            directory="skillsdirectory.com",
+            method="web_form",
+            url="https://www.skillsdirectory.com/",
+            notes="36k skills indexed. Security-scanned (50+ rules). Submit via web form.",
+        ))
+        plan.submissions.append(DirectorySubmission(
+            directory="awesomeclaude.ai",
+            method="pr",
+            url="https://awesomeclaude.ai",
+            notes="Visual directory aggregator. Submit via GitHub PR.",
+        ))
+        # Auto-indexed directories (no submission needed beyond GitHub topics)
+        plan.submissions.append(DirectorySubmission(
+            directory="SkillsMP (auto-indexed)",
+            method="github_topics",
+            notes=(
+                "96k+ skills indexed. Auto-scrapes GitHub for repos with SKILL.md files. "
+                "No submission needed — having SKILL.md + GitHub topics triggers indexing."
+            ),
+            automated=True,
+            command="echo 'SkillsMP auto-indexes from GitHub — no action needed'",
         ))
 
-    # Glama (for both MCP servers and agent tools)
+    # Glama (for MCP servers and agent tools)
     if kind in ("mcp-server", "mcp_server", "mcp", "agent-tool"):
         plan.submissions.append(DirectorySubmission(
             directory="Glama",
             method="web_form",
             url=f"https://glama.ai/mcp/servers?add={repo_url}",
-            notes="Click 'Add Server', paste GitHub URL. Claims auto-index within 24-48h.",
+            notes="Click 'Add Server', paste GitHub URL. Also auto-indexes from official MCP Registry within 24-48h.",
         ))
 
-    # awesome-claude-code PR (for any Claude Code related tool)
-    if kind in ("claude-skill", "claude_skill", "claude-plugin", "skill", "mcp-server", "mcp_server", "mcp"):
-        plan.submissions.append(_awesome_claude_code_pr(project, project_name, repo_url))
+    # General dev-tool directories (for any kind)
+    plan.submissions.append(DirectorySubmission(
+        directory="DevHunt",
+        method="web_form",
+        url="https://devhunt.org",
+        notes="Developer-specific Product Hunt alternative. Free. GitHub auth. Dofollow backlinks (DR 61).",
+    ))
+    plan.submissions.append(DirectorySubmission(
+        directory="Uneed",
+        method="web_form",
+        url="https://www.uneed.best/submit-a-tool",
+        notes="292k monthly visits. Every product gets featured regardless of audience size.",
+    ))
 
     return plan
+
+
+def _awesome_list_pr_body(project: Project, name: str, repo_url: str) -> str:
+    """Generate a generic PR body for awesome-list submissions."""
+    return (
+        f"## Add {name}\n\n"
+        f"**Repository:** {repo_url}\n"
+        f"**Description:** {project.solution_one_liner}\n"
+        f"**Problem:** {project.problem}\n\n"
+        f"Open source, actively maintained.\n"
+    )
 
 
 def _github_topics(project: Project) -> list[str]:
