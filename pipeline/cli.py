@@ -313,9 +313,20 @@ def _cmd_onboard(args: argparse.Namespace) -> int:
 
     print(f"Fetching README from {args.repo}...")
     readme = fetch_readme(args.repo)
-    print(f"  Got {len(readme)} chars. Generating project entry via Claude...")
+    print(f"  Got {len(readme)} chars.")
 
-    entry = generate_entry(readme, args.repo, args.kind, audience, config)
+    # Load pain research context if provided
+    pain_context = None
+    if args.pain_context:
+        pain_path = Path(args.pain_context)
+        if pain_path.exists():
+            pain_context = pain_path.read_text()
+            print(f"  Loaded {len(pain_context)} chars of pain research from {pain_path}")
+        else:
+            print(f"  Warning: --pain-context file not found: {pain_path}", file=sys.stderr)
+
+    print("  Generating project entry via Claude...")
+    entry = generate_entry(readme, args.repo, args.kind, audience, config, pain_context=pain_context)
 
     doc[args.name] = entry
 
@@ -446,6 +457,8 @@ def main(argv: list[str] | None = None) -> int:
     p_onboard.add_argument("--kind", type=str, required=True,
                            help="mcp-server, claude-skill, browser-extension, etc.")
     p_onboard.add_argument("--audience", type=str, default=None)
+    p_onboard.add_argument("--pain-context", type=str, default=None,
+                           help="Path to a file with real user pain statements from research")
     p_onboard.set_defaults(func=_cmd_onboard)
 
     p_report = sub.add_parser("report", help="Fetch engagement metrics and generate report.")

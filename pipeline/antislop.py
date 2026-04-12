@@ -87,6 +87,44 @@ TECH_KEYWORDS = [
 ]
 
 
+def _is_quoted(text: str, pos: int) -> bool:
+    """Check if the character at pos is inside quotes, backticks, or a code block.
+
+    Allows marketing tokens to appear when quoted — e.g., describing what
+    the anti-slop gate blocks: "rejects 'excited' and 'game-changer'".
+    Also allows tokens inside ```code blocks``` and inline `code`.
+    """
+    # Check immediately adjacent quote characters
+    before_char = text[pos - 1] if pos > 0 else ""
+    # Look in a window around the match position
+    window = 40
+    chunk_before = text[max(0, pos - window):pos]
+    chunk_after = text[pos:min(len(text), pos + window)]
+
+    # Single quotes, double quotes, backticks
+    for q in ("'", '"', "`"):
+        if before_char == q and q in chunk_after:
+            return True
+        # Check for enclosing quotes within the window
+        if q in chunk_before and q in chunk_after:
+            return True
+
+    # Check if inside a fenced code block (``` ... ```)
+    text_before = text[:pos]
+    fence_opens = text_before.count("```")
+    if fence_opens % 2 == 1:
+        # Odd number of ``` before this position = we're inside a code block
+        return True
+
+    # Check if the line starts with code-block-like patterns (indented code, list of tokens)
+    line_start = text_before.rfind("\n", 0, pos)
+    line = text[line_start + 1:pos + 20] if line_start >= 0 else text[:pos + 20]
+    if line.lstrip().startswith(("r'", "r\"", ">>>", "...")):
+        return True
+
+    return False
+
+
 @dataclass
 class Violation:
     rule: str
@@ -117,23 +155,25 @@ def validate(draft: str, channel: str | None = None) -> ValidationResult:
     violations: list[Violation] = []
     text_lower = draft.lower()
 
-    # 1. Marketing tokens
+    # 1. Marketing tokens (skip matches inside quotes — allows describing what the tool blocks)
     for pattern in MARKETING_TOKENS:
-        match = re.search(pattern, text_lower)
-        if match:
-            violations.append(Violation(
-                rule="marketing_token",
-                detail=f"Forbidden marketing token: '{match.group()}'",
-            ))
+        for match in re.finditer(pattern, text_lower):
+            if not _is_quoted(draft, match.start()):
+                violations.append(Violation(
+                    rule="marketing_token",
+                    detail=f"Forbidden marketing token: '{match.group()}'",
+                ))
+                break  # one violation per pattern is enough
 
-    # 2. AI shorthand
+    # 2. AI shorthand (same quoting exception)
     for pattern in AI_SHORTHAND:
-        match = re.search(pattern, draft, re.IGNORECASE)
-        if match:
-            violations.append(Violation(
-                rule="ai_shorthand",
-                detail=f"Forbidden AI shorthand: '{match.group()}'",
-            ))
+        for match in re.finditer(pattern, draft, re.IGNORECASE):
+            if not _is_quoted(draft, match.start()):
+                violations.append(Violation(
+                    rule="ai_shorthand",
+                    detail=f"Forbidden AI shorthand: '{match.group()}'",
+                ))
+                break
 
     # 3. Emoji
     match = EMOJI_PATTERN.search(draft)

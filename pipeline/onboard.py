@@ -59,24 +59,43 @@ def fetch_readme(repo: str) -> str:
     return resp.text
 
 
-def generate_entry(readme: str, repo: str, kind: str, audience: str, config: Config) -> dict:
-    """Send README to Claude and get back a structured project entry."""
+def generate_entry(
+    readme: str,
+    repo: str,
+    kind: str,
+    audience: str,
+    config: Config,
+    pain_context: str | None = None,
+) -> dict:
+    """Send README + optional pain research to Claude and get back a structured project entry.
+
+    If pain_context is provided (real user complaints from forums/HN/Reddit),
+    the generation prompt uses that language to ground the problem statement
+    and angles in words actual users use — not README paraphrasing.
+    """
     api_key = config.require_anthropic()
     client = anthropic.Anthropic(api_key=api_key)
+
+    user_content = (
+        f"Repository: {repo}\n"
+        f"Kind: {kind}\n"
+        f"Target audience: {audience}\n\n"
+        f"README contents:\n\n{readme[:12000]}"
+    )
+
+    if pain_context:
+        user_content += (
+            f"\n\n---\n\n"
+            f"REAL USER PAIN STATEMENTS (from forums, HN, Reddit — use this language "
+            f"to ground the problem statement and angles):\n\n"
+            f"{pain_context[:6000]}"
+        )
 
     response = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=2048,
         system=ONBOARD_SYSTEM_PROMPT,
-        messages=[{
-            "role": "user",
-            "content": (
-                f"Repository: {repo}\n"
-                f"Kind: {kind}\n"
-                f"Target audience: {audience}\n\n"
-                f"README contents:\n\n{readme[:12000]}"
-            ),
-        }],
+        messages=[{"role": "user", "content": user_content}],
     )
 
     raw = response.content[0].text.strip()

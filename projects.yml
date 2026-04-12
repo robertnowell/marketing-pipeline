@@ -231,3 +231,65 @@ shopify-conjure:
   angles: []
   channels: [bluesky, mastodon, devto, hashnode, indiehackers]
   launch: {}
+marketing-pipeline:
+  repo: https://github.com/robertnowell/marketing-pipeline
+  kind: claude-skill
+  audience: claude-code-users
+  status: live
+  problem: You built something useful, posted it once, got silence, and moved on
+    — because doing distribution consistently takes time you don't have and 
+    skills you never wanted to develop. Most OSS tools die not because they're 
+    bad but because nobody keeps showing up for them.
+  solution_one_liner: 'marketing-pipeline automates the recurring work of distributing
+    open source developer tools: directory listings, social posts across four platforms,
+    and daily content rotation — configured once, runs without daily intervention.'
+  facts:
+    - 'Onboarding a project takes one command: `marketing onboard --name my-tool --repo
+      owner/repo --kind mcp-server` — it fetches the README, sends it to Claude, and
+      saves problem, facts, and angles to projects.yml'
+    - "The anti-slop gate in pipeline/antislop.py hard-rejects specific tokens before
+      any post is published: 'excited', 'game-changer', 'unlock', 'empower', 'AI-powered',
+      emoji, hashtags, exclamation points, and rhetorical questions"
+    - 'Per-channel length limits are enforced: Bluesky 300 chars, Mastodon 500, X
+      280, Dev.to/Hashnode 150-400 words'
+    - Automated posting covers Bluesky, Dev.to, Hashnode, and Mastodon; 
+      automated directory listing covers the official MCP Registry, Smithery, 
+      and GitHub Topics
+    - The daily cron (`marketing cycle`) runs via GitHub Actions at 14:00 UTC on
+      weekdays, rotating through projects × angles × channels and picking the 
+      least-recently-used angle
+    - 'The `kind` field routes projects to type-specific directories: mcp-server gets
+      MCP Registry/Smithery/Glama/PulseMCP; claude-skill gets awesome-claude-code;
+      browser-extension gets Chrome Web Store/Firefox AMO/Edge Add-ons'
+    - awesome-claude-code submission cannot be automated — the pipeline 
+      generates the payload but their rules require a human to submit via their 
+      GitHub issue form, once per project
+    - The pipeline requires an Anthropic API key plus credentials for at least 
+      Bluesky, Dev.to, and Hashnode to draft and post; Mastodon and Slack are 
+      optional
+  angles:
+    - id: launch
+      summary: Built to solve the 'I built it, nobody came' problem specifically
+        for MCP servers, Claude Code skills, and agent-focused tools — where the
+        ecosystem moves fast but distribution infrastructure doesn't exist yet 
+        for most indie builders
+    - id: problem-specific
+      summary: You launch, get a small spike, then posting stops because it's 
+        repetitive manual work. This pipeline's daily cron keeps rotating 
+        content across channels without you doing anything after initial setup
+    - id: how-it-works
+      summary: Every generated draft passes through a regex blacklist before it 
+        can be published — specific banned tokens, structural patterns like 
+        rhetorical questions, and per-channel character limits are all enforced 
+        in code, not by prompting Claude to 'sound natural'
+    - id: comparison
+      summary: Manually cross-posting means you write for each platform, 
+        remember character limits, track which angle you used last, and do it 
+        again next week. This pipeline stores angles in projects.yml, tracks 
+        recency, and handles the per-channel formatting constraints 
+        automatically
+    - id: use-case
+      summary: You've published an MCP server and want it indexed where 
+        developers actually look — the launch command hits the official MCP 
+        Registry (which Glama and PulseMCP pull from automatically), Smithery, 
+        and GitHub Topics in one step, then drafts and posts to social channels
