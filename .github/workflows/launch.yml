@@ -1,0 +1,147 @@
+name: Launch project to directories
+
+on:
+  workflow_dispatch:
+    inputs:
+      project:
+        description: "Project name (from projects.yml)"
+        required: true
+        type: string
+      dry_run:
+        description: "Dry run (show plan but don't submit)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  id-token: write  # Required for mcp-publisher github-oidc
+
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: pip install -e .
+
+      - name: Install submission CLIs
+        run: |
+          # mcp-publisher: official MCP Registry CLI
+          curl -fsSL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz" \
+            -o /tmp/mcp-publisher.tar.gz
+          tar xzf /tmp/mcp-publisher.tar.gz -C /usr/local/bin/ mcp-publisher
+          chmod +x /usr/local/bin/mcp-publisher
+
+      # --- Step 1: Set GitHub topics ---
+      - name: Set GitHub topics
+        if: ${{ inputs.dry_run != true }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: marketing launch --project "${{ inputs.project }}" --dry-run 2>&1 | head -5
+
+      # --- Step 2: Publish to MCP Registry (if mcp-server) ---
+      - name: Authenticate to MCP Registry
+        if: ${{ inputs.dry_run != true }}
+        run: mcp-publisher login github-oidc
+
+      - name: Publish to MCP Registry
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          # Extract repo from projects.yml, clone it, publish server.json
+          REPO=$(python -c "
+          from pipeline.registry import load
+          p = load('projects.yml').get('${{ inputs.project }}')
+          r = p.repo
+          print(r.removeprefix('https://github.com/') if r.startswith('https://') else r)
+          ")
+          echo "Publishing $REPO to MCP Registry..."
+          TMPDIR=$(mktemp -d)
+          git clone --depth 1 "https://github.com/$REPO" "$TMPDIR/repo"
+          if [ -f "$TMPDIR/repo/server.json" ]; then
+            cd "$TMPDIR/repo" && mcp-publisher publish
+          else
+            echo "No server.json found — skipping MCP Registry publish"
+          fi
+
+      # --- Step 3: Publish to npm (if package.json has mcpName) ---
+      - name: Publish to npm
+        if: ${{ inputs.dry_run != true }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          REPO=$(python -c "
+          from pipeline.registry import load
+          p = load('projects.yml').get('${{ inputs.project }}')
+          r = p.repo
+          print(r.removeprefix('https://github.com/') if r.startswith('https://') else r)
+          ")
+          TMPDIR=$(mktemp -d)
+          git clone --depth 1 "https://github.com/$REPO" "$TMPDIR/repo"
+          cd "$TMPDIR/repo"
+          if [ -f "package.json" ] && grep -q '"mcpName"' package.json; then
+            echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
+            npm install && npm run build && npm publish || echo "npm publish failed or version already exists"
+          else
+            echo "No package.json with mcpName — skipping npm publish"
+          fi
+
+      # --- Step 4: Run directory lister ---
+      - name: Run directory launch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            marketing launch --project "${{ inputs.project }}" --dry-run
+          else
+            marketing launch --project "${{ inputs.project }}"
+          fi
+
+      # --- Step 5: Generate drafts for all channels ---
+      - name: Generate drafts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          for channel in bluesky mastodon devto hashnode; do
+            echo "--- Drafting for $channel ---"
+            marketing draft --project "${{ inputs.project }}" --channel "$channel" || true
+          done
+
+      # --- Step 6: Post to all configured channels ---
+      - name: Post to channels
+        if: ${{ inputs.dry_run != true }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          HASHNODE_PAT: ${{ secrets.HASHNODE_PAT }}
+          HASHNODE_PUBLICATION_ID: ${{ secrets.HASHNODE_PUBLICATION_ID }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          MASTODON_INSTANCE_URL: ${{ secrets.MASTODON_INSTANCE_URL }}
+        run: |
+          for channel in bluesky mastodon devto hashnode; do
+            DRAFT=$(find content/drafts/${{ inputs.project }}/$channel -name "*.md" -type f | sort | tail -1)
+            if [ -n "$DRAFT" ]; then
+              echo "--- Posting to $channel ---"
+              marketing post --channel "$channel" --file "$DRAFT" || echo "Post to $channel failed"
+            fi
+          done
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: launch-${{ inputs.project }}-${{ github.run_id }}
+          path: |
+            reports/${{ inputs.project }}/
+            content/drafts/${{ inputs.project }}/
+          if-no-files-found: ignore

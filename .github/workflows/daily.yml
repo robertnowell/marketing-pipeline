@@ -1,0 +1,65 @@
+name: Daily post cycle + engagement report
+
+on:
+  schedule:
+    # 14:00 UTC (7am PT / 10am ET) — weekdays only
+    - cron: "0 14 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (draft but don't publish)"
+        type: boolean
+        default: true
+
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -e .
+
+      - name: Run daily cycle
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          HASHNODE_PAT: ${{ secrets.HASHNODE_PAT }}
+          HASHNODE_PUBLICATION_ID: ${{ secrets.HASHNODE_PUBLICATION_ID }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          MASTODON_INSTANCE_URL: ${{ secrets.MASTODON_INSTANCE_URL }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ] || [ "${{ github.event_name }}" = "schedule" ]; then
+            marketing cycle --dry-run
+          else
+            marketing cycle
+          fi
+
+      - name: Engagement report + Slack digest
+        if: always()
+        env:
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          HASHNODE_PAT: ${{ secrets.HASHNODE_PAT }}
+          HASHNODE_PUBLICATION_ID: ${{ secrets.HASHNODE_PUBLICATION_ID }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          MASTODON_INSTANCE_URL: ${{ secrets.MASTODON_INSTANCE_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: marketing report
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-${{ github.run_id }}
+          path: |
+            content/drafts/
+            reports/metrics/
+          if-no-files-found: ignore
