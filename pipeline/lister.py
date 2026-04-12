@@ -26,7 +26,6 @@ Directory submission landscape (from primary-source research, April 2026):
 
 from __future__ import annotations
 
-import json
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Literal
@@ -81,7 +80,7 @@ def plan_listings(project: Project, project_name: str) -> ListingPlan:
     plan.submissions.append(DirectorySubmission(
         directory="GitHub Topics (SkillsMP auto-index)",
         method="github_topics",
-        command=f"gh api repos/{repo_slug}/topics -X PUT --input - <<< '{{\"names\":{json.dumps(topics)}}}'",
+        command=f"gh api repos/{repo_slug}/topics -X PUT -f " + " -f ".join(f"names[]={t}" for t in topics),
         notes=f"Sets topics: {', '.join(topics)}. SkillsMP and similar indexers pick these up automatically.",
         automated=True,
     ))
@@ -230,6 +229,7 @@ def execute_automated(
 
     Returns list of (directory_name, success, output_or_error).
     """
+    import shlex
     import subprocess
     import time
 
@@ -245,9 +245,12 @@ def execute_automated(
         success = False
         for attempt in range(1, max_attempts + 1):
             try:
+                # Use shlex.split to avoid shell=True injection risks.
+                # Commands are constructed internally but contain user-supplied
+                # repo names from projects.yml.
                 result = subprocess.run(
-                    sub.command,
-                    shell=True,
+                    shlex.split(sub.command),
+                    shell=False,
                     capture_output=True,
                     text=True,
                     timeout=60,

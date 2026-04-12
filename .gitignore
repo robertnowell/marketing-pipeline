@@ -12,3 +12,10 @@ env/
 .env
 .env.local
 secrets/
+
+# User-generated content (personal data, post URLs, engagement metrics)
+content/drafts/
+content/posted/*.md
+content/posted/manifest.yml
+reports/metrics/
+reports/*/listing-status.yml

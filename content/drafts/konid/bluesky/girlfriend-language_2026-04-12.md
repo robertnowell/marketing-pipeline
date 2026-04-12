@@ -1,1 +1,0 @@
-Wanted to say 'I missed you today' in my girlfriend's first language and have it land — not sound like a phrasebook. konid returns 3 options casual→formal with the register explained and audio pronunciation. 13+ languages. github.com/robertnowell/konid-language-learning
