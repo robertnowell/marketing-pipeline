@@ -108,49 +108,61 @@ def format_report(results: list[PostMetrics]) -> str:
     return "\n".join(lines)
 
 
-def format_slack_report(results: list[PostMetrics]) -> dict:
-    """Format metrics as a Slack webhook payload."""
+def format_slack_report(results: list[PostMetrics]) -> dict | None:
+    """Format metrics as a Slack webhook payload. Returns None if nothing to report."""
     if not results:
-        return {
-            "text": f"Marketing Pipeline — {date.today().isoformat()}\nNo posts to report.",
-        }
+        return None  # Don't send empty reports
 
     total_engagement = sum(m.engagement for m in results)
     total_views = sum(m.views for m in results)
-    sorted_results = sorted(results, key=lambda m: m.engagement, reverse=True)
+    today = date.today().isoformat()
 
-    blocks = []
+    # Group by project
+    by_project: dict[str, list[PostMetrics]] = {}
+    for m in results:
+        by_project.setdefault(m.project, []).append(m)
 
-    # Header
-    blocks.append({
-        "type": "header",
-        "text": {"type": "plain_text", "text": f"Daily Engagement — {date.today().isoformat()}"},
-    })
+    # Today's posts
+    today_posts = [m for m in results if m.posted_at == today]
 
-    # Summary
-    summary = f"*{total_engagement}* engagements, *{total_views}* views across *{len(results)}* posts"
-    blocks.append({
-        "type": "section",
-        "text": {"type": "mrkdwn", "text": summary},
-    })
+    # Build a single compact text block (more readable in Slack than blocks API)
+    lines = [f"*Marketing Pipeline — {today}*"]
+    lines.append("")
 
-    blocks.append({"type": "divider"})
+    # Summary line
+    lines.append(
+        f"{total_engagement} engagements, {total_views} views across "
+        f"{len(results)} posts in {len(by_project)} projects"
+    )
 
-    # Per-post
-    for m in sorted_results[:10]:  # Top 10
-        if m.error:
-            text = f"*{m.project}* ({m.channel}) — error fetching metrics"
-        else:
-            parts = [f"{m.likes} likes", f"{m.reposts} reposts", f"{m.replies} replies"]
-            if m.views:
-                parts.append(f"{m.views} views")
-            text = f"*{m.project}* ({m.channel}) — {', '.join(parts)}\n<{m.url}>"
-        blocks.append({
-            "type": "section",
-            "text": {"type": "mrkdwn", "text": text},
-        })
+    # Per-project summary (compact)
+    lines.append("")
+    for proj, metrics in sorted(by_project.items()):
+        proj_eng = sum(m.engagement for m in metrics)
+        proj_views = sum(m.views for m in metrics)
+        channels = ", ".join(sorted({m.channel for m in metrics}))
+        parts = []
+        if proj_eng:
+            parts.append(f"{proj_eng} eng")
+        if proj_views:
+            parts.append(f"{proj_views} views")
+        stats = " | ".join(parts) if parts else "no engagement yet"
+        lines.append(f"*{proj}* ({channels}) — {stats}")
 
-    return {"blocks": blocks}
+    # Top performer (only if there's actual engagement)
+    top = max(results, key=lambda m: m.engagement)
+    if top.engagement > 0:
+        lines.append("")
+        lines.append(f"Top: <{top.url}|{top.project}/{top.channel}> ({top.engagement} eng)")
+
+    # What was posted today
+    if today_posts:
+        lines.append("")
+        lines.append(f"_Posted today: {len(today_posts)} new_")
+        for m in today_posts:
+            lines.append(f"  <{m.url}|{m.project} → {m.channel}>")
+
+    return {"text": "\n".join(lines)}
 
 
 def send_slack(payload: dict, webhook_url: str) -> bool:

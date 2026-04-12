@@ -361,7 +361,9 @@ def _cmd_report(args: argparse.Namespace) -> int:
     webhook = os.environ.get("SLACK_WEBHOOK_URL")
     if webhook:
         payload = format_slack_report(results)
-        if send_slack(payload, webhook):
+        if payload is None:
+            print("\nNo posts to report — skipping Slack.")
+        elif send_slack(payload, webhook):
             print("\nSlack notification sent.")
         else:
             print("\nSlack notification failed.", file=sys.stderr)
