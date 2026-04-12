@@ -9,7 +9,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from pipeline.registry import Project, load
-from pipeline.surfaces import Directory, ResolvedSurfaces, SurfaceRegistry
+from pipeline.surfaces import Directory, SurfaceRegistry
 
 REPO_ROOT = Path(__file__).parent.parent
 

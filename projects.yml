@@ -21,23 +21,40 @@ konid:
   kind: mcp-server
   audience: mcp-users
   status: live
-  problem: "I wanted to tell my girlfriend 'I missed you today' in her first language and have it sound real, not like a phrasebook. Or I translate work emails every day in a language I'm still learning and want each translation to actually teach me something, not just get me through the task. Literal translation tools give you one answer with no register, no cultural context, no nuance between options."
-  solution_one_liner: "A language coach that returns three options (casual to formal) for anything you want to say, with cultural context, nuance notes, and audio pronunciation."
+  problem: "I wanted to tell my girlfriend 'I missed you today' in her first language
+    and have it sound real, not like a phrasebook. Or I translate work emails every
+    day in a language I'm still learning and want each translation to actually teach
+    me something, not just get me through the task. Literal translation tools give
+    you one answer with no register, no cultural context, no nuance between options."
+  solution_one_liner: "A language coach that returns three options (casual to formal)
+    for anything you want to say, with cultural context, nuance notes, and audio pronunciation."
   facts:
     - "Returns 3 options per query, ordered casual → formal, with the register explained."
-    - "Supports 13+ languages including Mandarin, Japanese, Korean, Spanish, French, German, Portuguese, Italian, Russian, Arabic, and Hindi."
-    - "Works as an MCP server with Claude Code (`claude mcp add konid-ai -- npx -y konid-ai`), Cursor, VS Code Copilot, Windsurf, Zed, JetBrains, and Claude Cowork."
+    - "Supports 13+ languages including Mandarin, Japanese, Korean, Spanish, French,
+      German, Portuguese, Italian, Russian, Arabic, and Hindi."
+    - "Works as an MCP server with Claude Code (`claude mcp add konid-ai -- npx -y
+      konid-ai`), Cursor, VS Code Copilot, Windsurf, Zed, JetBrains, and Claude Cowork."
     - "Also installs as a ChatGPT app via Developer mode with the endpoint `https://konid.fly.dev/mcp`."
-    - "Plays audio pronunciation directly through speakers using node-edge-tts (no external API key needed)."
-    - "Returns cultural context and nuance comparison between options, not just a literal translation."
+    - "Plays audio pronunciation directly through speakers using node-edge-tts (no
+      external API key needed)."
+    - "Returns cultural context and nuance comparison between options, not just a
+      literal translation."
     - "MIT licensed; source at github.com/robertnowell/konid-language-learning."
     - "'konid' (کنید) is Farsi for 'do' — take action."
   angles:
-    - { id: girlfriend-language, summary: "Trying to say something tender in a loved one's first language without sounding like a phrasebook", last_used: null }
-    - { id: translate-and-learn, summary: "Using daily professional translation as a language-learning loop instead of a one-shot utility", last_used: null }
-    - { id: register-matters, summary: "The same phrase can be casual, neutral, or tender — the choice signals the relationship (long-form)", last_used: null }
-    - { id: audio-fluency, summary: "Why hearing the tone contour and vowel length changes what you actually remember", last_used: null }
-    - { id: one-server-three-clients, summary: "Same MCP brain across Claude Code, Cowork, and ChatGPT — write once, four clients (long-form)", last_used: null }
+    - {id: girlfriend-language, summary: "Trying to say something tender in a loved
+        one's first language without sounding like a phrasebook", last_used: 
+        null}
+    - {id: translate-and-learn, summary: "Using daily professional translation as
+        a language-learning loop instead of a one-shot utility", last_used: null}
+    - {id: register-matters, summary: "The same phrase can be casual, neutral, or
+        tender — the choice signals the relationship (long-form)", last_used: 
+        null}
+    - {id: audio-fluency, summary: "Why hearing the tone contour and vowel length
+        changes what you actually remember", last_used: null}
+    - {id: one-server-three-clients, summary: "Same MCP brain across Claude Code,
+        Cowork, and ChatGPT — write once, four clients (long-form)", last_used: 
+        null}
   channels: [bluesky, mastodon, devto, hashnode]
   launch: {}
 
@@ -46,24 +63,44 @@ rabbitholes:
   kind: chrome-extension
   audience: knowledge-workers
   status: live
-  problem: "I wanted Wikipedia on every page. Every article I read has words I half-know and concepts that would open up if I just knew what they meant. But opening a new tab kills my focus, and skipping past them leaves me with a shallow read. I wanted all the world's knowledge one highlight away, inline, on every page, all the time."
-  solution_one_liner: "A Chrome extension that turns any selected text into an inline explanation and lets you dig into any word in the response without leaving the page."
+  problem: "I wanted Wikipedia on every page. Every article I read has words I half-know
+    and concepts that would open up if I just knew what they meant. But opening a
+    new tab kills my focus, and skipping past them leaves me with a shallow read.
+    I wanted all the world's knowledge one highlight away, inline, on every page,
+    all the time."
+  solution_one_liner: "A Chrome extension that turns any selected text into an inline
+    explanation and lets you dig into any word in the response without leaving the
+    page."
   facts:
-    - "Highlights text → shadow-DOM tooltip renders an explanation from Claude Haiku 4.5 next to your cursor. Doesn't pollute the host page."
-    - "Click any word in the explanation to explore it further. Drag across words to pick a phrase."
-    - "Every answer ends with two suggested rabbit-hole topics — the most interesting threads from here, one click away."
-    - "Pencil icon reveals a free-form follow-up input that inherits current context as background."
-    - "Globe icon re-answers the query enriched with Brave Search results, with source chips you can click."
-    - "Rabbit-hole counter tracks how many hops deep you've gone. Hit 'philosophy' and you get a shareable trail."
-    - "Zero analytics, zero telemetry, no intermediary server. Requests go directly from your browser to api.anthropic.com and api.search.brave.com."
-    - "Manifest V3. Anthropic API key stored in chrome.storage.sync (encrypted, never leaves the browser)."
+    - "Highlights text → shadow-DOM tooltip renders an explanation from Claude Haiku
+      4.5 next to your cursor. Doesn't pollute the host page."
+    - "Click any word in the explanation to explore it further. Drag across words
+      to pick a phrase."
+    - "Every answer ends with two suggested rabbit-hole topics — the most interesting
+      threads from here, one click away."
+    - "Pencil icon reveals a free-form follow-up input that inherits current context
+      as background."
+    - "Globe icon re-answers the query enriched with Brave Search results, with source
+      chips you can click."
+    - "Rabbit-hole counter tracks how many hops deep you've gone. Hit 'philosophy'
+      and you get a shareable trail."
+    - "Zero analytics, zero telemetry, no intermediary server. Requests go directly
+      from your browser to api.anthropic.com and api.search.brave.com."
+    - "Manifest V3. Anthropic API key stored in chrome.storage.sync (encrypted, never
+      leaves the browser)."
   angles:
-    - { id: wikipedia-everywhere, summary: "The 'Wikipedia on every page' feeling — all the world's knowledge one highlight away", last_used: null }
-    - { id: half-known-concepts, summary: "Every article has words you half-know that would open up if you just knew what they meant", last_used: null }
-    - { id: curiosity-without-losing-place, summary: "Following a tangent without killing the thread you were actually reading", last_used: null }
-    - { id: philosophy-counter, summary: "The rabbit-hole counter and the Wikipedia-philosophy game, for your own reading trails", last_used: null }
-    - { id: shadow-dom, summary: "Design note: why shadow DOM beat iframe overlay for on-page tooltips (long-form)", last_used: null }
-    - { id: no-telemetry, summary: "Design note: privacy-native by construction — direct browser-to-API, no intermediary server (long-form)", last_used: null }
+    - {id: wikipedia-everywhere, summary: "The 'Wikipedia on every page' feeling —
+        all the world's knowledge one highlight away", last_used: null}
+    - {id: half-known-concepts, summary: "Every article has words you half-know that
+        would open up if you just knew what they meant", last_used: null}
+    - {id: curiosity-without-losing-place, summary: "Following a tangent without killing
+        the thread you were actually reading", last_used: null}
+    - {id: philosophy-counter, summary: "The rabbit-hole counter and the Wikipedia-philosophy
+        game, for your own reading trails", last_used: null}
+    - {id: shadow-dom, summary: "Design note: why shadow DOM beat iframe overlay for
+        on-page tooltips (long-form)", last_used: null}
+    - {id: no-telemetry, summary: "Design note: privacy-native by construction — direct
+        browser-to-API, no intermediary server (long-form)", last_used: null}
   channels: [bluesky, mastodon, devto, hashnode]
   launch: {}
 
@@ -77,23 +114,51 @@ klein-blue:
   kind: terminal-theme
   audience: claude-code-users
   status: live
-  problem: "Claude Code is mostly prose. Tool output, reasoning, permission prompts, explanations — I read paragraphs of it for hours every day. Most terminal themes are tuned for code syntax highlighting; they're optimizing for the wrong thing when your screen is 80% English. I wanted a theme tuned for comfortable prose reading at body size over long sessions, with a single anchor color I actually cared about."
-  solution_one_liner: "Four Claude Code terminal themes built around Yves Klein's IKB pigment — APCA-verified for body-size prose legibility, tuned for the specific ANSI slots Claude Code uses for tool output, reasoning, and permission prompts."
+  problem: "Claude Code is mostly prose. Tool output, reasoning, permission prompts,
+    explanations — I read paragraphs of it for hours every day. Most terminal themes
+    are tuned for code syntax highlighting; they're optimizing for the wrong thing
+    when your screen is 80% English. I wanted a theme tuned for comfortable prose
+    reading at body size over long sessions, with a single anchor color I actually
+    cared about."
+  solution_one_liner: "Four Claude Code terminal themes built around Yves Klein's
+    IKB pigment — APCA-verified for body-size prose legibility, tuned for the specific
+    ANSI slots Claude Code uses for tool output, reasoning, and permission prompts."
   facts:
-    - "Four variations: Klein Void Refined (balanced), Klein Void Sand & Sea (Claude-brand two-hero), Klein Void Prot (fully APCA-verified), Klein Void Gallery (one-blue maximum void)."
-    - "Uses APCA Lc contrast metric with per-role gates: body >= 90, subtle >= 75, muted >= 45, accent >= 60. V3 Prot is the only variation where every accent passes strict gates."
-    - "Pure IKB (#002FA7) fails APCA contrast as text on dark ground (Lc -12, effectively invisible). Split across two ANSI slots — pure IKB in ansi:blue (decorative borders/highlights) and lifted Klein-family #A8BEF0 in ansi:blueBright (readable permission-prompt text)."
-    - "Ships as macOS Terminal.app .terminal profile files. Built from build.m with a variation-aware Objective-C builder, installed via install.sh, fully rollback-able via restore.sh."
-    - "Requires Claude Code's `/theme` picker set to dark-ansi — otherwise Claude Code uses its hardcoded RGB palette and the ANSI theme is ignored."
-    - "Ships with two font options: CommitMono-Regular (V1, V3) and IBM Plex Mono (V2, V4), both installed to ~/Library/Fonts/."
-    - "Targets Claude Code specifically: the ansi:redBright slot — which Claude Code uses for the claude-sand brand color — is the differentiating moment between variations (neutralize for no brand competition vs accept as second hero)."
+    - "Four variations: Klein Void Refined (balanced), Klein Void Sand & Sea (Claude-brand
+      two-hero), Klein Void Prot (fully APCA-verified), Klein Void Gallery (one-blue
+      maximum void)."
+    - "Uses APCA Lc contrast metric with per-role gates: body >= 90, subtle >= 75,
+      muted >= 45, accent >= 60. V3 Prot is the only variation where every accent
+      passes strict gates."
+    - "Pure IKB (#002FA7) fails APCA contrast as text on dark ground (Lc -12, effectively
+      invisible). Split across two ANSI slots — pure IKB in ansi:blue (decorative
+      borders/highlights) and lifted Klein-family #A8BEF0 in ansi:blueBright (readable
+      permission-prompt text)."
+    - "Ships as macOS Terminal.app .terminal profile files. Built from build.m with
+      a variation-aware Objective-C builder, installed via install.sh, fully rollback-able
+      via restore.sh."
+    - "Requires Claude Code's `/theme` picker set to dark-ansi — otherwise Claude
+      Code uses its hardcoded RGB palette and the ANSI theme is ignored."
+    - "Ships with two font options: CommitMono-Regular (V1, V3) and IBM Plex Mono
+      (V2, V4), both installed to ~/Library/Fonts/."
+    - "Targets Claude Code specifically: the ansi:redBright slot — which Claude Code
+      uses for the claude-sand brand color — is the differentiating moment between
+      variations (neutralize for no brand competition vs accept as second hero)."
   angles:
-    - { id: prose-not-code, summary: "Claude Code is 80% prose — most terminal themes are optimizing for the wrong thing", last_used: null }
-    - { id: ikb-mystique, summary: "What makes International Klein Blue so powerful — depth, void, one specific pigment registered in 1960", last_used: null }
-    - { id: reading-for-hours, summary: "Designing a terminal theme for comfortable body-size prose reading over long sessions, not code scanning", last_used: null }
-    - { id: four-variations, summary: "Four themes instead of one — each answers the 'how should Claude's brand color live in my terminal' question differently", last_used: null }
-    - { id: apca-gates, summary: "Design note: APCA per-role gates and why WCAG ratios lie on dark ground (long-form)", last_used: null }
-    - { id: ikb-split, summary: "Design note: the pure-IKB-is-invisible-as-text problem and the two-slot fix (long-form)", last_used: null }
+    - {id: prose-not-code, summary: "Claude Code is 80% prose — most terminal themes
+        are optimizing for the wrong thing", last_used: null}
+    - {id: ikb-mystique, summary: "What makes International Klein Blue so powerful
+        — depth, void, one specific pigment registered in 1960", last_used: null}
+    - {id: reading-for-hours, summary: "Designing a terminal theme for comfortable
+        body-size prose reading over long sessions, not code scanning", 
+        last_used: null}
+    - {id: four-variations, summary: "Four themes instead of one — each answers the
+        'how should Claude's brand color live in my terminal' question differently",
+      last_used: null}
+    - {id: apca-gates, summary: "Design note: APCA per-role gates and why WCAG ratios
+        lie on dark ground (long-form)", last_used: null}
+    - {id: ikb-split, summary: "Design note: the pure-IKB-is-invisible-as-text problem
+        and the two-slot fix (long-form)", last_used: null}
   channels: [bluesky, mastodon, devto, hashnode]
   launch: {}
 
@@ -102,23 +167,52 @@ skill-tree:
   kind: claude-code-plugin
   audience: claude-code-users
   status: live
-  problem: "I've been using Claude Code every day for months and I have no idea if I'm getting better or just getting faster at the same few habits. Anthropic put out a study in February measuring 11 observable collaboration behaviors across 9,830 Claude conversations — I wanted to know what MINE look like against that baseline, and more importantly, which behaviors I never touch."
-  solution_one_liner: "Analyzes your Claude Code or Cowork session history, classifies 11 observable behaviors from Anthropic's AI Fluency Index, assigns one of seven character archetype cards, and picks a behavior you haven't tried as a growth quest for your next session."
+  problem: "I've been using Claude Code every day for months and I have no idea if
+    I'm getting better or just getting faster at the same few habits. Anthropic put
+    out a study in February measuring 11 observable collaboration behaviors across
+    9,830 Claude conversations — I wanted to know what MINE look like against that
+    baseline, and more importantly, which behaviors I never touch."
+  solution_one_liner: "Analyzes your Claude Code or Cowork session history, classifies
+    11 observable behaviors from Anthropic's AI Fluency Index, assigns one of seven
+    character archetype cards, and picks a behavior you haven't tried as a growth
+    quest for your next session."
   facts:
-    - "Uses Anthropic's AI Fluency Index (Feb 2026, 9,830 Claude conversations studied) as the population baseline. Classifies the same 11 observable behaviors on your own sessions."
-    - "Behavior taxonomy + three axes (Description, Discernment, Delegation) come from Dakan & Feller's 4D AI Fluency Framework (Diligence is the fourth axis, not visible in chat logs)."
-    - "Seven archetype cards, rendered as tarot cards with curated museum art. See live example at skill-tree-ai.fly.dev/fixture/illuminator."
-    - "Remote classifier runs on Fly.io (Claude Haiku), hosted visualization stored on a Fly.io volume, stable URL returned per analysis."
-    - "Installs in Claude Code via plugin marketplace: `claude plugin marketplace add robertnowell/ai-fluency-skill-cards && claude plugin install skill-tree-ai@ai-fluency-skill-cards`. Also works in Cowork via `skill-tree-ai.zip`."
-    - "7-step orchestration takes ~30–60 seconds end-to-end: find session files → extract user messages → remote classifier → archetype assignment → narrative synthesis → render → return URL."
-    - "Growth quest persists across sessions via SessionStart hook. Claude Code uses durable `~/.skill-tree/` path; Cowork uses `$CLAUDE_PLUGIN_ROOT/.user-state/` because of its ephemeral $HOME."
-    - "Also available as an MCP server (npm package `skill-tree-ai`) for non-plugin clients like Cursor, VS Code, Windsurf."
+    - "Uses Anthropic's AI Fluency Index (Feb 2026, 9,830 Claude conversations studied)
+      as the population baseline. Classifies the same 11 observable behaviors on your
+      own sessions."
+    - "Behavior taxonomy + three axes (Description, Discernment, Delegation) come
+      from Dakan & Feller's 4D AI Fluency Framework (Diligence is the fourth axis,
+      not visible in chat logs)."
+    - "Seven archetype cards, rendered as tarot cards with curated museum art. See
+      live example at skill-tree-ai.fly.dev/fixture/illuminator."
+    - "Remote classifier runs on Fly.io (Claude Haiku), hosted visualization stored
+      on a Fly.io volume, stable URL returned per analysis."
+    - "Installs in Claude Code via plugin marketplace: `claude plugin marketplace
+      add robertnowell/ai-fluency-skill-cards && claude plugin install skill-tree-ai@ai-fluency-skill-cards`.
+      Also works in Cowork via `skill-tree-ai.zip`."
+    - "7-step orchestration takes ~30–60 seconds end-to-end: find session files →
+      extract user messages → remote classifier → archetype assignment → narrative
+      synthesis → render → return URL."
+    - "Growth quest persists across sessions via SessionStart hook. Claude Code uses
+      durable `~/.skill-tree/` path; Cowork uses `$CLAUDE_PLUGIN_ROOT/.user-state/`
+      because of its ephemeral $HOME."
+    - "Also available as an MCP server (npm package `skill-tree-ai`) for non-plugin
+      clients like Cursor, VS Code, Windsurf."
   angles:
-    - { id: am-i-getting-better, summary: "Using Claude daily but having no idea whether you're improving or just plateauing in a few habits that feel efficient", last_used: null }
-    - { id: fluency-on-my-conversations, summary: "Running Anthropic's 11-behavior classification against your own session history to see what YOURS look like against the population baseline", last_used: null }
-    - { id: what-you-avoid, summary: "Why the growth quest picks a behavior you AVOID, not something you already do well — the anti-local-optimum rule", last_used: null }
-    - { id: archetype-card, summary: "The seven tarot-card archetypes (Illuminator, Navigator, Alchemist, four others) with curated museum art and a skill radar", last_used: null }
-    - { id: cowork-home, summary: "Design note: Cowork's ephemeral $HOME forced the dual-state-path design (long-form)", last_used: null }
+    - {id: am-i-getting-better, summary: "Using Claude daily but having no idea whether
+        you're improving or just plateauing in a few habits that feel efficient",
+      last_used: null}
+    - {id: fluency-on-my-conversations, summary: "Running Anthropic's 11-behavior
+        classification against your own session history to see what YOURS look like
+        against the population baseline", last_used: null}
+    - {id: what-you-avoid, summary: "Why the growth quest picks a behavior you AVOID,
+        not something you already do well — the anti-local-optimum rule", 
+        last_used: null}
+    - {id: archetype-card, summary: "The seven tarot-card archetypes (Illuminator,
+        Navigator, Alchemist, four others) with curated museum art and a skill radar",
+      last_used: null}
+    - {id: cowork-home, summary: "Design note: Cowork's ephemeral $HOME forced the
+        dual-state-path design (long-form)", last_used: null}
   channels: [bluesky, mastodon, devto, hashnode]
   launch: {}
 
