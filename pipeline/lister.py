@@ -81,7 +81,7 @@ def plan_listings(project: Project, project_name: str) -> ListingPlan:
         directory="GitHub Topics (SkillsMP auto-index)",
         method="github_topics",
         command=f"gh api repos/{repo_slug}/topics -X PUT -f " + " -f ".join(f"names[]={t}" for t in topics),
-        notes=f"Sets topics: {', '.join(topics)}. SkillsMP and similar indexers pick these up automatically.",
+        notes=f"Sets topics: {', '.join(topics)}. Cascades to: SkillsMP (96k+), claudemarketplaces.com, awesome-skills.com (auto-indexed).",
         automated=True,
     ))
 
@@ -92,9 +92,8 @@ def plan_listings(project: Project, project_name: str) -> ListingPlan:
             method="cli",
             command="mcp-publisher publish",
             notes=(
-                "Requires server.json in repo root. Auth via GitHub OIDC in CI "
-                "or `mcp-publisher login github-oidc` locally. "
-                "Downstream aggregators (Glama, PulseMCP) poll this registry hourly."
+                "Requires server.json in repo root. Auth via GitHub OIDC in CI. "
+                "Cascades to: Glama (24-48h), PulseMCP (daily), GitHub MCP Registry (hourly)."
             ),
             automated=True,
         ))

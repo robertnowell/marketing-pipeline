@@ -21,12 +21,28 @@ audiences:
     daily_social: [bluesky, mastodon]
     content_blogs: [devto, hashnode]
     directories:
-      # [V] 38k stars, highest-star Claude Code list
+      # [V] 38k stars, dominant Claude Code list. Submission via GitHub issue form (not PR).
       - { name: awesome-claude-code, repo: hesreallyhim/awesome-claude-code, type: pr }
-      # [U] verify repo exists + CONTRIBUTING
-      - { name: awesome-claude-plugins, repo: ccplugins/awesome-claude-code-plugins, type: pr }
-      # [U] verify exact URL
-      - { name: anthropic-plugins-form, url: "https://platform.claude.com/plugins/submit", type: form }
+      # [V] 1.3k stars, curated. Fork + PR.
+      - { name: awesome-claude-plugins, repo: ComposioHQ/awesome-claude-plugins, type: pr }
+      # [V] Skills-focused curated list. Fork + PR.
+      - { name: awesome-claude-skills-composio, repo: ComposioHQ/awesome-claude-skills, type: pr }
+      # [V] 40+ entries, SKILL.md-focused. Fork + PR.
+      - { name: awesome-claude-skills-travisvn, repo: travisvn/awesome-claude-skills, type: pr }
+      # [V] Official Anthropic marketplace. Form-based review.
+      - { name: claude-plugin-marketplace, url: "https://claude.ai/settings/plugins/submit", type: form }
+      # [V] 36k skills, security-scanned (50+ rules). Web form.
+      - { name: skillsdirectory, url: "https://www.skillsdirectory.com/", type: form }
+      # [V] Visual aggregator. GitHub PR.
+      - { name: awesomeclaude-ai, url: "https://awesomeclaude.ai", type: pr }
+      # [V] Developer-specific Product Hunt alt. Free. Dofollow backlinks (DR 61).
+      - { name: devhunt, url: "https://devhunt.org", type: form }
+      # [V] 292k monthly. Every product gets featured. Web form.
+      - { name: uneed, url: "https://www.uneed.best/submit-a-tool", type: form }
+      # Auto-indexed (no submission needed):
+      # - SkillsMP (96k+) — auto-scrapes GitHub for SKILL.md files
+      # - claudemarketplaces.com — aggregates by install count + stars
+      # - awesome-skills.com (148 skills) — trust/safety indicators
     watering_holes:
       # [U] Every entry below needs first-principles primary-source verification
       # in Week 2 before safari.py depends on it. Fetch each endpoint by hand,
