@@ -1,0 +1,62 @@
+{
+  "name": "marketing-pipeline",
+  "version": "0.1.0",
+  "description": "Automated distribution pipeline for open source developer tools. Onboard a project from its README, launch to MCP Registry + directories, post to Bluesky/Dev.to/Hashnode/Mastodon, track engagement.",
+  "author": {
+    "name": "Robert Nowell"
+  },
+  "homepage": "https://github.com/robertnowell/marketing-pipeline",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertnowell/marketing-pipeline"
+  },
+  "license": "MIT",
+  "keywords": ["marketing", "social-media", "mcp", "developer-tools", "distribution"],
+  "userConfig": {
+    "ANTHROPIC_API_KEY": {
+      "description": "Anthropic API key for draft generation (console.anthropic.com/settings/keys)",
+      "sensitive": true,
+      "required": true
+    },
+    "BLUESKY_HANDLE": {
+      "description": "Bluesky handle (e.g., yourname.bsky.social)",
+      "sensitive": false,
+      "required": true
+    },
+    "BLUESKY_APP_PASSWORD": {
+      "description": "Bluesky app password (Settings > Privacy > App Passwords)",
+      "sensitive": true,
+      "required": true
+    },
+    "DEVTO_API_KEY": {
+      "description": "Dev.to API key (dev.to/settings/extensions)",
+      "sensitive": true,
+      "required": true
+    },
+    "HASHNODE_PAT": {
+      "description": "Hashnode personal access token (Account Settings > Developer)",
+      "sensitive": true,
+      "required": false
+    },
+    "HASHNODE_PUBLICATION_ID": {
+      "description": "Hashnode publication ID (query via GraphQL after setting PAT)",
+      "sensitive": false,
+      "required": false
+    },
+    "MASTODON_ACCESS_TOKEN": {
+      "description": "Mastodon access token with write:statuses scope",
+      "sensitive": true,
+      "required": false
+    },
+    "MASTODON_INSTANCE_URL": {
+      "description": "Mastodon instance URL (e.g., https://hachyderm.io)",
+      "sensitive": false,
+      "required": false
+    },
+    "SLACK_WEBHOOK_URL": {
+      "description": "Slack incoming webhook URL for daily engagement reports",
+      "sensitive": true,
+      "required": false
+    }
+  }
+}

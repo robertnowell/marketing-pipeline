@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# Marketing pipeline CLI wrapper for Claude Code plugin.
+# Activates the venv, cd's to the state directory, and exec's the CLI.
+set -euo pipefail
+
+VENV_DIR="${CLAUDE_PLUGIN_DATA:-$HOME/.claude/plugins/data/marketing-pipeline}/venv"
+STATE_DIR="${MARKETING_STATE_DIR:-${CLAUDE_PLUGIN_DATA:-$HOME/.claude/plugins/data/marketing-pipeline}/state}"
+ORIG_CWD="$PWD"
+
+if [ ! -f "$VENV_DIR/bin/activate" ]; then
+  echo "Error: marketing pipeline venv not initialized." >&2
+  echo "Start a new Claude Code session to trigger setup, or run:" >&2
+  echo "  bash \"\$(dirname \"\$0\")/../hooks-handlers/session-start.sh\"" >&2
+  exit 1
+fi
+
+# Activate the venv
+# shellcheck disable=SC1091
+source "$VENV_DIR/bin/activate"
+
+# Resolve any --file arguments to absolute paths before cd
+args=()
+next_is_file=false
+for arg in "$@"; do
+  if $next_is_file; then
+    # Resolve relative path against original working directory
+    if [[ "$arg" != /* ]]; then
+      arg="$ORIG_CWD/$arg"
+    fi
+    next_is_file=false
+  fi
+  if [ "$arg" = "--file" ]; then
+    next_is_file=true
+  fi
+  args+=("$arg")
+done
+
+# cd to state dir so CWD-relative paths (content/, reports/) resolve correctly
+cd "$STATE_DIR"
+
+exec python -m pipeline.cli "${args[@]}"

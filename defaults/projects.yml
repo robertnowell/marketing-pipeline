@@ -1,0 +1,11 @@
+# Marketing Pipeline — Project Registry
+#
+# Add projects with: marketing onboard --name my-tool --repo owner/repo --kind mcp-server
+# That command fetches the README and auto-generates all fields below.
+#
+# Supported kinds: mcp-server, claude-skill, browser-extension, terminal-theme,
+#                  cli-audit-tool, consumer-web-app, b2b-saas
+#
+# Supported audiences: mcp-users, claude-code-users, knowledge-workers,
+#                       general-consumers, founders-solopreneurs, ecom-solopreneurs,
+#                       frontend-engineers
