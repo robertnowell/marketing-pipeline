@@ -6,55 +6,70 @@
     "name": "Robert Nowell"
   },
   "homepage": "https://github.com/robertnowell/marketing-pipeline",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/robertnowell/marketing-pipeline"
-  },
+  "repository": "https://github.com/robertnowell/marketing-pipeline",
   "license": "MIT",
   "keywords": ["marketing", "social-media", "mcp", "developer-tools", "distribution"],
   "userConfig": {
     "ANTHROPIC_API_KEY": {
-      "description": "Anthropic API key — only needed for GitHub Actions cron, not for plugin use (console.anthropic.com/settings/keys)",
+      "title": "Anthropic API Key",
+      "description": "Only needed for GitHub Actions cron, not for plugin use",
+      "type": "string",
       "sensitive": true,
       "required": false
     },
     "BLUESKY_HANDLE": {
-      "description": "Bluesky handle (e.g., yourname.bsky.social)",
+      "title": "Bluesky Handle",
+      "description": "e.g., yourname.bsky.social",
+      "type": "string",
       "sensitive": false,
       "required": true
     },
     "BLUESKY_APP_PASSWORD": {
-      "description": "Bluesky app password (Settings > Privacy > App Passwords)",
+      "title": "Bluesky App Password",
+      "description": "Settings > Privacy > App Passwords",
+      "type": "string",
       "sensitive": true,
       "required": true
     },
     "DEVTO_API_KEY": {
-      "description": "Dev.to API key (dev.to/settings/extensions)",
+      "title": "Dev.to API Key",
+      "description": "dev.to/settings/extensions",
+      "type": "string",
       "sensitive": true,
       "required": true
     },
     "HASHNODE_PAT": {
-      "description": "Hashnode personal access token (Account Settings > Developer)",
+      "title": "Hashnode Personal Access Token",
+      "description": "Account Settings > Developer",
+      "type": "string",
       "sensitive": true,
       "required": false
     },
     "HASHNODE_PUBLICATION_ID": {
-      "description": "Hashnode publication ID (query via GraphQL after setting PAT)",
+      "title": "Hashnode Publication ID",
+      "description": "Query via GraphQL after setting PAT",
+      "type": "string",
       "sensitive": false,
       "required": false
     },
     "MASTODON_ACCESS_TOKEN": {
-      "description": "Mastodon access token with write:statuses scope",
+      "title": "Mastodon Access Token",
+      "description": "Needs write:statuses scope",
+      "type": "string",
       "sensitive": true,
       "required": false
     },
     "MASTODON_INSTANCE_URL": {
-      "description": "Mastodon instance URL (e.g., https://hachyderm.io)",
+      "title": "Mastodon Instance URL",
+      "description": "e.g., https://hachyderm.io",
+      "type": "string",
       "sensitive": false,
       "required": false
     },
     "SLACK_WEBHOOK_URL": {
-      "description": "Slack incoming webhook URL for daily engagement reports",
+      "title": "Slack Webhook URL",
+      "description": "Incoming webhook for daily engagement reports",
+      "type": "string",
       "sensitive": true,
       "required": false
     }
