@@ -41,6 +41,7 @@ def fetch_top_emails(
         f"{base_url}/api/emails/gallery",
         params={"limit": limit, "sortBy": sort_by, "sortOrder": "desc"},
         timeout=15,
+        follow_redirects=True,
     )
     resp.raise_for_status()
     data = resp.json()

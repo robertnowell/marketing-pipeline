@@ -293,3 +293,41 @@ marketing-pipeline:
         developers actually look — the launch command hits the official MCP 
         Registry (which Glama and PulseMCP pull from automatically), Smithery, 
         and GitHub Topics in one step, then drafts and posts to social channels
+kopi:
+  repo: https://trykopi.ai
+  kind: saas-email-tool
+  audience: ecom-solopreneurs
+  status: live
+  problem: Email marketing tools give you a blank canvas and a template library 
+    — you still spend hours building each campaign from scratch, and you have no
+    idea if the design is good until you send it.
+  solution_one_liner: AI email design tool that generates complete emails from a
+    brief and scores every design on layout, mobile readability, and CTA 
+    contrast before it ships.
+  facts:
+    - Generates complete HTML emails from a text prompt in under 5 minutes
+    - Every email gets an automated design critique scoring layout hierarchy, 
+      mobile readability, CTA contrast, and 12+ other criteria on a 0-100 scale
+    - Public gallery at trykopi.ai/emails shows 400+ emails scoring 80+ out of 
+      100
+    - Integrates with Klaviyo for direct campaign export
+    - Works as an MCP server for Claude Code, Cursor, and ChatGPT
+    - Supports brand-specific design systems — learns your fonts, colors, and 
+      layout preferences
+  angles:
+    - id: showcase
+      summary: Highlight a top-scoring email design with its screenshot and 
+        critique score
+    - id: before-after
+      summary: Show what a brief looks like vs what Kopi generates from it
+    - id: design-critique
+      summary: Focus on the automated scoring — what makes a 93/100 email 
+        different from a 70
+    - id: time-savings
+      summary: Hours spent building emails manually vs minutes with Kopi
+    - id: brand-consistency
+      summary: How the design system ensures every email matches the brand
+  content_source:
+    type: kopi
+    base_url: https://trykopi.ai
+    gallery_url: https://trykopi.ai/api/emails/gallery

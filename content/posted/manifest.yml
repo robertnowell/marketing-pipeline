@@ -5,12 +5,14 @@
   posted_at: '2026-04-12'
 - project: konid
   channel: devto
-  url: https://dev.to/palo_alto_ai/konid-say-what-you-mean-in-13-languages-not-what-google-translate-thinks-you-mean-4l63
+  url: 
+    https://dev.to/palo_alto_ai/konid-say-what-you-mean-in-13-languages-not-what-google-translate-thinks-you-mean-4l63
   angle: girlfriend-language
   posted_at: '2026-04-12'
 - project: konid
   channel: hashnode
-  url: https://palo-alto-ai.hashnode.dev/when-one-translation-isnt-enough-building-konid
+  url: 
+    https://palo-alto-ai.hashnode.dev/when-one-translation-isnt-enough-building-konid
   angle: girlfriend-language
   posted_at: '2026-04-12'
 - project: marketing-pipeline
@@ -20,11 +22,29 @@
   posted_at: '2026-04-12'
 - project: marketing-pipeline
   channel: devto
-  url: https://dev.to/palo_alto_ai/you-shipped-an-mcp-server-nobody-found-it-heres-what-i-did-about-it-119b
+  url: 
+    https://dev.to/palo_alto_ai/you-shipped-an-mcp-server-nobody-found-it-heres-what-i-did-about-it-119b
   angle: launch
   posted_at: '2026-04-12'
 - project: marketing-pipeline
   channel: hashnode
-  url: https://palo-alto-ai.hashnode.dev/draft-quality-you-cant-prompt-your-way-into
+  url: 
+    https://palo-alto-ai.hashnode.dev/draft-quality-you-cant-prompt-your-way-into
   angle: how-it-works
   posted_at: '2026-04-12'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjfu7k3bfi2i
+  angle: showcase
+  posted_at: '2026-04-13'
+- project: kopi
+  channel: devto
+  url: https://dev.to/palo_alto_ai/gymshark66-forge-your-grind-scored-93100-3f9o
+  angle: showcase
+  posted_at: '2026-04-13'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/gymshark66-forge-your-grind-scored-93100-by-kopi-design-critique
+  angle: showcase
+  posted_at: '2026-04-13'
