@@ -14,9 +14,9 @@
   "keywords": ["marketing", "social-media", "mcp", "developer-tools", "distribution"],
   "userConfig": {
     "ANTHROPIC_API_KEY": {
-      "description": "Anthropic API key for draft generation (console.anthropic.com/settings/keys)",
+      "description": "Anthropic API key — only needed for GitHub Actions cron, not for plugin use (console.anthropic.com/settings/keys)",
       "sensitive": true,
-      "required": true
+      "required": false
     },
     "BLUESKY_HANDLE": {
       "description": "Bluesky handle (e.g., yourname.bsky.social)",

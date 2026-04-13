@@ -29,11 +29,29 @@ The pipeline's voice rules:
 Output a JSON object with these fields:
 
 {
+  "kind": "Auto-detect from the README. Use ALL that apply as a comma-separated string:
+           mcp-server (has MCP SDK, server.json, or describes itself as an MCP server),
+           claude-skill (has SKILL.md, .claude-plugin, or describes itself as a Claude Code skill/plugin),
+           browser-extension (has manifest.json, describes itself as a Chrome/Firefox/Edge extension),
+           terminal-theme (color scheme, iTerm2, terminal theme),
+           cli-tool (command-line tool),
+           web-app (web application or SaaS).
+           Example: 'mcp-server,claude-skill' for a tool that is both.",
+  "audience": "Auto-detect the target user. Options:
+               claude-code-users (developers using Claude Code, Cursor, or similar),
+               mcp-users (developers building/using MCP servers),
+               knowledge-workers (researchers, writers, non-developers),
+               general-consumers (general public),
+               founders-solopreneurs (indie hackers, startup founders),
+               ecom-solopreneurs (Shopify/e-commerce operators).
+               Pick the most specific match.",
   "problem": "1-2 sentences describing the concrete problem this tool solves, in the
                language a frustrated user would use. Start with what breaks or annoys.",
   "solution_one_liner": "One sentence: what the tool does. Not a tagline — a description.",
   "facts": ["5-8 specific, verifiable facts from the README. Numbers, supported platforms,
-             technical choices, constraints. Each must be directly stated in the README."],
+             technical choices, constraints. Each must be directly stated in the README.
+             Do NOT list the specific tokens the anti-slop gate blocks — say 'growth-marketing
+             tokens' instead of listing them, because quoting them triggers the gate."],
   "angles": [
     {"id": "launch", "summary": "The launch angle — why this exists, what motivated building it"},
     {"id": "problem-specific", "summary": "A specific problem scenario the tool solves"},
@@ -62,13 +80,14 @@ def fetch_readme(repo: str) -> str:
 def generate_entry(
     readme: str,
     repo: str,
-    kind: str,
-    audience: str,
     config: Config,
+    kind: str | None = None,
+    audience: str | None = None,
     pain_context: str | None = None,
 ) -> dict:
     """Send README + optional pain research to Claude and get back a structured project entry.
 
+    kind and audience are auto-detected from the README if not provided.
     If pain_context is provided (real user complaints from forums/HN/Reddit),
     the generation prompt uses that language to ground the problem statement
     and angles in words actual users use — not README paraphrasing.
@@ -76,12 +95,16 @@ def generate_entry(
     api_key = config.require_anthropic()
     client = anthropic.Anthropic(api_key=api_key)
 
-    user_content = (
-        f"Repository: {repo}\n"
-        f"Kind: {kind}\n"
-        f"Target audience: {audience}\n\n"
-        f"README contents:\n\n{readme[:12000]}"
-    )
+    user_content = f"Repository: {repo}\n"
+    if kind:
+        user_content += f"Kind (override): {kind}\n"
+    else:
+        user_content += "Kind: auto-detect from README\n"
+    if audience:
+        user_content += f"Target audience (override): {audience}\n"
+    else:
+        user_content += "Target audience: auto-detect from README\n"
+    user_content += f"\nREADME contents:\n\n{readme[:12000]}"
 
     if pain_context:
         user_content += (
@@ -107,11 +130,15 @@ def generate_entry(
 
     parsed = json.loads(raw)
 
+    # Use auto-detected kind/audience from Claude, with user overrides taking priority
+    detected_kind = parsed.get("kind", "cli-tool")
+    detected_audience = parsed.get("audience", "claude-code-users")
+
     # Build the full projects.yml entry
     return {
         "repo": repo if repo.startswith("https://") else f"https://github.com/{repo}",
-        "kind": kind,
-        "audience": audience,
+        "kind": kind or detected_kind,
+        "audience": audience or detected_audience,
         "status": "live",
         "problem": parsed["problem"],
         "solution_one_liner": parsed["solution_one_liner"],

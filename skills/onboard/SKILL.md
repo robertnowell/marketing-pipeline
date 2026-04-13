@@ -1,9 +1,10 @@
 ---
 name: onboard
-description: "Add a new open source project to the marketing pipeline. Researches real user pain first, then generates problem statement, facts, and content angles grounded in that research."
+description: "Add a new open source project to the marketing pipeline. Researches real user pain, auto-detects project type, generates everything."
 user-invocable: true
 allowed-tools:
-  - Bash(marketing *)
+  - Bash(marketing onboard *)
+  - Bash(marketing plan)
   - WebSearch
   - WebFetch
   - Write
@@ -16,54 +17,37 @@ This is a multi-step process. Do NOT skip the research phase.
 
 ## Step 1: Gather inputs
 
-Ask the user for:
-1. **Repository** — GitHub `owner/repo`
-2. **Kind** — `mcp-server`, `claude-skill`, `browser-extension`, `terminal-theme`, `cli-audit-tool`, `consumer-web-app`, `b2b-saas`
-3. **Audience** (optional, defaults to `claude-code-users`)
+You only need ONE thing from the user: the **GitHub repo** (owner/repo or full URL).
+
+Everything else is auto-detected:
+- **Project name** — infer from the repo name
+- **Kind** — auto-detected from README (mcp-server, claude-skill, browser-extension, etc.)
+- **Audience** — auto-detected from README
+
+If the user says "onboard my project at owner/repo" that's enough to proceed.
 
 ## Step 2: Research real user pain
 
-Before generating any marketing content, research how real people describe the problem this tool solves. This is the most important step — it grounds every future post in language that resonates.
+Before generating any marketing content, research how real people describe the problem this tool solves.
 
-1. Read the repo's README to understand what problem the tool addresses
-2. Use WebSearch with 3-5 queries to find real complaints about this problem on:
-   - Hacker News (search via hn.algolia.com)
-   - Reddit (r/programming, r/webdev, relevant subreddits)
-   - Dev forums, Stack Overflow, blog comments
-3. Use WebFetch to read the most promising 2-3 threads
-4. Extract 10-15 **exact quotes** from real users describing their frustration
-5. Note the specific vocabulary they use — "awkward", "broken", "waste of time", etc.
+1. Read the repo's README to understand the problem space
+2. Use WebSearch with 3-5 queries to find real complaints on HN, Reddit, dev forums
+3. Use WebFetch to read the 2-3 most promising threads
+4. Extract 10-15 exact quotes from real users describing their frustration
+5. Note the vocabulary they use
 
-Save the research findings to a temp file:
+Save findings to `/tmp/pain-research-{name}.md`.
 
-```bash
-# Write findings to a temp file
-```
-
-Write the file at `/tmp/pain-research-{project-name}.md` with the format:
-```
-## Pain statements from real users
-
-1. "exact quote" — source (HN/Reddit/forum), engagement (upvotes/comments)
-2. "exact quote" — source
-...
-
-## Key vocabulary patterns
-- words and phrases users reach for when describing this problem
-```
-
-## Step 3: Run the onboard command with research context
+## Step 3: Run the onboard command
 
 ```bash
-marketing onboard --name <name> --repo <owner/repo> --kind <kind> --pain-context /tmp/pain-research-<name>.md
+marketing onboard --name <name> --repo <owner/repo> --pain-context /tmp/pain-research-<name>.md
 ```
 
-This feeds the research into the generation prompt so the problem statement and angles use real user language, not README paraphrasing.
+The `--kind` flag is optional — the pipeline auto-detects it from the README. Only pass it if you want to override the detection.
 
-## Step 4: Review the output
+## Step 4: Review
 
-Show the user the generated problem, solution, facts, and angles. Call out which pain statements from the research influenced the framing. Suggest edits if any angle feels generic.
-
-Then suggest next steps:
-- `marketing draft --project <name> --channel bluesky` to see a sample post
-- `marketing launch --project <name> --dry-run` to preview the directory listing plan
+Show the user what was generated. Suggest next steps:
+- "Want me to draft a Bluesky post for this?"
+- "Want me to launch it to all directories?"

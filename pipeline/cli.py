@@ -315,7 +315,6 @@ def _cmd_onboard(args: argparse.Namespace) -> int:
         return 1
 
     config = Config.from_env()
-    audience = args.audience or "claude-code-users"
 
     print(f"Fetching README from {args.repo}...")
     readme = fetch_readme(args.repo)
@@ -332,7 +331,11 @@ def _cmd_onboard(args: argparse.Namespace) -> int:
             print(f"  Warning: --pain-context file not found: {pain_path}", file=sys.stderr)
 
     print("  Generating project entry via Claude...")
-    entry = generate_entry(readme, args.repo, args.kind, audience, config, pain_context=pain_context)
+    entry = generate_entry(
+        readme, args.repo, config,
+        kind=args.kind, audience=args.audience,
+        pain_context=pain_context,
+    )
 
     doc[args.name] = entry
 
@@ -406,6 +409,35 @@ def _cmd_status(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_validate(args: argparse.Namespace) -> int:
+    """Validate a draft through the anti-slop gate."""
+    from pipeline.antislop import validate
+
+    if args.file:
+        draft_text = Path(args.file).read_text().strip()
+    else:
+        draft_text = sys.stdin.read().strip()
+
+    if not draft_text:
+        print("Error: empty draft.", file=sys.stderr)
+        return 1
+
+    result = validate(draft_text, channel=args.channel)
+
+    if result.passed:
+        print("PASSED")
+        if result.warnings:
+            for v in result.warnings:
+                print(f"  [~] {v.rule}: {v.detail}")
+        return 0
+    else:
+        print("FAILED")
+        for v in result.violations:
+            marker = "X" if v.severity == "hard" else "~"
+            print(f"  [{marker}] {v.rule}: {v.detail}")
+        return 1
+
+
 def _pick_next_angle(angles: list[Angle]) -> Angle:
     """Pick the angle with the oldest (or None) last_used date."""
     unused = [a for a in angles if a.last_used is None]
@@ -462,12 +494,17 @@ def main(argv: list[str] | None = None) -> int:
     p_onboard = sub.add_parser("onboard", help="Scaffold a new project entry.")
     p_onboard.add_argument("--name", type=str, required=True)
     p_onboard.add_argument("--repo", type=str, required=True, help="owner/repo")
-    p_onboard.add_argument("--kind", type=str, required=True,
-                           help="mcp-server, claude-skill, browser-extension, etc.")
+    p_onboard.add_argument("--kind", type=str, default=None,
+                           help="Auto-detected from README if omitted")
     p_onboard.add_argument("--audience", type=str, default=None)
     p_onboard.add_argument("--pain-context", type=str, default=None,
                            help="Path to a file with real user pain statements from research")
     p_onboard.set_defaults(func=_cmd_onboard)
+
+    p_validate = sub.add_parser("validate", help="Run anti-slop gate on a draft.")
+    p_validate.add_argument("--file", type=str, default=None, help="Path to draft (or stdin)")
+    p_validate.add_argument("--channel", type=str, default=None, help="Channel for length checks")
+    p_validate.set_defaults(func=_cmd_validate)
 
     p_report = sub.add_parser("report", help="Fetch engagement metrics and generate report.")
     p_report.set_defaults(func=_cmd_report)
