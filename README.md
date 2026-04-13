@@ -4,8 +4,23 @@ Automated distribution pipeline for open source developer tools. Install the plu
 
 ## Install
 
+Add the marketplace to your Claude Code settings (one-time):
+
+```json
+// ~/.claude/settings.json
+{
+  "extraKnownMarketplaces": {
+    "marketing-pipeline-marketplace": {
+      "source": { "source": "github", "repo": "robertnowell/marketing-pipeline" }
+    }
+  }
+}
 ```
-/plugin install robertnowell/marketing-pipeline
+
+Then install:
+
+```
+/plugin install marketing-pipeline@marketing-pipeline-marketplace
 ```
 
 Claude Code prompts you for API keys (Bluesky, Dev.to, Hashnode, Anthropic). They're stored in your system keychain. Dependencies install automatically on first session. That's it.
