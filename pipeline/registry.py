@@ -31,8 +31,8 @@ class ChannelWeight(BaseModel):
 
 
 class Project(BaseModel):
-    repo: str
-    kind: str
+    repo: str  # GitHub repo URL or website URL (e.g., https://trykopi.ai)
+    kind: str  # Comma-separated: "mcp-server,claude-skill", "saas-email-tool", etc.
     audience: str
     status: Literal["live", "wip", "archived"]
     problem: str
@@ -41,6 +41,8 @@ class Project(BaseModel):
     angles: list[Angle] = Field(default_factory=list)
     channels: list[str] | dict[str, ChannelWeight] = Field(default_factory=list)
     launch: dict[str, str] = Field(default_factory=dict)
+    # Optional: for projects that have visual content to fetch (e.g., Kopi email designs)
+    content_source: dict | None = None
 
     @property
     def channel_names(self) -> list[str]:

@@ -33,12 +33,14 @@ def get_publisher(channel: str) -> Publisher:
     from pipeline.publish.devto import DevtoPublisher
     from pipeline.publish.hashnode import HashnodePublisher
     from pipeline.publish.mastodon import MastodonPublisher
+    from pipeline.publish.pinterest import PinterestPublisher
 
     publishers: dict[str, Publisher] = {
         "bluesky": BlueskyPublisher(),
         "devto": DevtoPublisher(),
         "hashnode": HashnodePublisher(),
         "mastodon": MastodonPublisher(),
+        "pinterest": PinterestPublisher(),
     }
     publisher = publishers.get(channel.lower())
     if publisher is None:

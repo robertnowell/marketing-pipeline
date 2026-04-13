@@ -42,6 +42,12 @@ class MastodonConfig:
     instance_url: str  # e.g. "https://hachyderm.io"
 
 
+@dataclass(frozen=True)
+class PinterestConfig:
+    access_token: str
+    board_id: str
+
+
 @dataclass
 class Config:
     """Pipeline configuration loaded from environment variables.
@@ -56,6 +62,7 @@ class Config:
     devto: DevtoConfig | None = None
     hashnode: HashnodeConfig | None = None
     mastodon: MastodonConfig | None = None
+    pinterest: PinterestConfig | None = None
 
     # Operational flags
     dry_run: bool = False
@@ -88,12 +95,20 @@ class Config:
                 instance_url=os.environ["MASTODON_INSTANCE_URL"].rstrip("/"),
             )
 
+        pinterest = None
+        if os.environ.get("PINTEREST_ACCESS_TOKEN") and os.environ.get("PINTEREST_BOARD_ID"):
+            pinterest = PinterestConfig(
+                access_token=os.environ["PINTEREST_ACCESS_TOKEN"],
+                board_id=os.environ["PINTEREST_BOARD_ID"],
+            )
+
         return cls(
             anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY"),
             bluesky=bluesky,
             devto=devto,
             hashnode=hashnode,
             mastodon=mastodon,
+            pinterest=pinterest,
         )
 
     def require_anthropic(self) -> str:
@@ -122,6 +137,13 @@ class Config:
                 "MASTODON_ACCESS_TOKEN and MASTODON_INSTANCE_URL are required"
             )
         return self.mastodon
+
+    def require_pinterest(self) -> PinterestConfig:
+        if not self.pinterest:
+            raise ConfigError(
+                "PINTEREST_ACCESS_TOKEN and PINTEREST_BOARD_ID are required"
+            )
+        return self.pinterest
 
 
 class ConfigError(Exception):

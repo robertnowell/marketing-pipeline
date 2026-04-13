@@ -72,6 +72,20 @@
       "type": "string",
       "sensitive": true,
       "required": false
+    },
+    "PINTEREST_ACCESS_TOKEN": {
+      "title": "Pinterest Access Token",
+      "description": "OAuth 2.0 token with pins:write scope (developers.pinterest.com)",
+      "type": "string",
+      "sensitive": true,
+      "required": false
+    },
+    "PINTEREST_BOARD_ID": {
+      "title": "Pinterest Board ID",
+      "description": "Target board for pins (digits, from board URL)",
+      "type": "string",
+      "sensitive": false,
+      "required": false
     }
   }
 }

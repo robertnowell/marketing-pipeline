@@ -20,7 +20,7 @@ from datetime import date
 from pathlib import Path
 
 from pipeline.config import Config
-from pipeline.registry import Angle, load
+from pipeline.registry import Angle, Project, load
 from pipeline.surfaces import SurfaceRegistry
 
 # --- Existing commands (unchanged) ---
@@ -231,10 +231,36 @@ def _cmd_launch(args: argparse.Namespace) -> int:
     return 0
 
 
+def _pick_next_project(
+    live: dict[str, Project],
+    manifest: list[dict],
+) -> str | None:
+    """Pick the next project to post: skip projects already posted today,
+    then pick the one with the oldest most-recent post (or never posted)."""
+    today = date.today().isoformat()
+    posted_today = {e["project"] for e in manifest if e.get("posted_at") == today}
+
+    candidates = [name for name in live if name not in posted_today]
+    if not candidates:
+        return None  # All projects already posted today
+
+    # Among candidates, pick the one with the oldest last post (or never posted)
+    def last_posted(name: str) -> str:
+        project_posts = [e for e in manifest if e.get("project") == name]
+        if not project_posts:
+            return ""  # Never posted — highest priority
+        return max(e.get("posted_at", "") for e in project_posts)
+
+    candidates.sort(key=last_posted)
+    return candidates[0]
+
+
 def _cmd_cycle(args: argparse.Namespace) -> int:
-    """Daily cycle: pick next angle/channel rotation, draft, validate, post."""
+    """Daily cycle: pick one project, draft + post to all its channels."""
     from pipeline.drafter import draft
     from pipeline.publish import get_publisher
+    from pipeline.registry import load_raw, save_raw
+    from pipeline.report import add_to_manifest, load_manifest, previous_posts_for
 
     registry = load(args.projects)
     surfaces = SurfaceRegistry.load(args.surfaces)
@@ -253,29 +279,42 @@ def _cmd_cycle(args: argparse.Namespace) -> int:
         print("No live projects.", file=sys.stderr)
         return 1
 
+    # Pick one project for this invocation
+    manifest = load_manifest()
+    name = _pick_next_project(live, manifest)
+    if name is None:
+        print("All live projects already posted today. Nothing to do.")
+        return 0
+
+    project = live[name]
+    resolved = surfaces.resolve(project)
+    channels = resolved.daily_channels
+    if not channels or not project.angles:
+        print(f"No channels or angles for {name}, skipping.", file=sys.stderr)
+        return 1
+
+    angle = _pick_next_angle(project.angles)
+    history = previous_posts_for(name, limit=3)
+
+    print(f"=== {name} | angle={angle.id} | channels={','.join(channels)} ===")
+
+    if args.dry_run:
+        for ch in channels:
+            print(f"  [dry run] Would draft + post to {ch}")
+        print(f"\nCycle complete: {name} → {len(channels)} channel(s) (dry run).")
+        return 0
+
     posted = 0
-    for name, project in live.items():
-        resolved = surfaces.resolve(project)
-        channels = resolved.daily_channels
-        if not channels or not project.angles:
-            continue
+    for channel in channels:
+        print(f"\n--- {name} | {channel} ---")
 
-        # Simple rotation: pick the angle with the oldest last_used date
-        angle = _pick_next_angle(project.angles)
-        # Post to first available channel (rotate channels across days in future)
-        channel = channels[0]
-
-        print(f"\n--- {name} | angle={angle.id} | channel={channel} ---")
-
-        if args.dry_run:
-            print(f"  [dry run] Would draft + post to {channel}")
-            posted += 1
-            continue
-
-        result = draft(project, name, angle.id, channel, config)
+        result = draft(
+            project, name, angle.id, channel, config,
+            previous_posts=history,
+        )
         best = result.best
         if not best:
-            print(f"  No drafts passed validation for {name}.", file=sys.stderr)
+            print("  No drafts passed validation.", file=sys.stderr)
             continue
 
         print(f"  Draft: {best.text[:100]}...")
@@ -283,17 +322,42 @@ def _cmd_cycle(args: argparse.Namespace) -> int:
         try:
             publisher = get_publisher(channel)
         except ValueError:
-            print(f"  No publisher for channel '{channel}', skipping.", file=sys.stderr)
+            print(f"  No publisher for '{channel}', skipping.", file=sys.stderr)
             continue
 
         post_result = publisher.publish(best.text, config)
         if post_result.success:
             print(f"  Posted: {post_result.url or post_result.error}")
             posted += 1
+
+            posted_dir = Path("content") / "posted"
+            posted_dir.mkdir(parents=True, exist_ok=True)
+            posted_path = posted_dir / f"{channel}_{date.today().isoformat()}_{name}.md"
+            posted_path.write_text(best.text)
+
+            add_to_manifest(
+                project=name,
+                channel=channel,
+                url=post_result.url or "",
+                angle=angle.id,
+            )
+
+            # Add to history so subsequent channels in this run see it
+            history.insert(0, best.text)
         else:
             print(f"  Failed: {post_result.error}", file=sys.stderr)
 
-    print(f"\nCycle complete: {posted} post(s).")
+    # Persist angle last_used back to projects.yml
+    if posted > 0:
+        raw_doc = load_raw(args.projects)
+        today_str = date.today().isoformat()
+        if name in raw_doc:
+            for a in raw_doc[name].get("angles", []):
+                if a["id"] == angle.id:
+                    a["last_used"] = today_str
+        save_raw(raw_doc, args.projects)
+
+    print(f"\nCycle complete: {name} → {posted}/{len(channels)} channel(s).")
     return 0
 
 
