@@ -39,17 +39,58 @@ def save_manifest(entries: list[dict]) -> None:
 
 def add_to_manifest(
     project: str, channel: str, url: str, angle: str = "",
+    source_id: str = "",
 ) -> None:
-    """Append a posted item to the manifest."""
+    """Append a posted item to the manifest.
+
+    source_id uniquely identifies the source content (e.g., Kopi email ID)
+    so dedup works even when the same content is posted via different URLs.
+    """
     entries = load_manifest()
     entries.append({
         "project": project,
         "channel": channel,
         "url": url,
         "angle": angle,
+        "source_id": source_id,
         "posted_at": date.today().isoformat(),
     })
     save_manifest(entries)
+
+
+def is_already_posted(source_id: str) -> bool:
+    """Check if content with this source_id has already been posted."""
+    if not source_id:
+        return False
+    manifest = load_manifest()
+    return any(entry.get("source_id") == source_id for entry in manifest)
+
+
+def previous_posts_for(project: str, limit: int = 3) -> list[str]:
+    """Return up to `limit` most recent posted texts for a project, newest first."""
+    manifest = load_manifest()
+    # Filter to this project, most recent first
+    project_entries = [
+        e for e in reversed(manifest) if e.get("project") == project
+    ][:limit]
+
+    posted_dir = Path("content/posted")
+    texts = []
+    for entry in project_entries:
+        channel = entry.get("channel", "")
+        posted_at = entry.get("posted_at", "")
+        proj = entry.get("project", "")
+        # Try new naming convention first (channel_date_project.md),
+        # fall back to old (channel_date.md)
+        candidates = [
+            posted_dir / f"{channel}_{posted_at}_{proj}.md",
+            posted_dir / f"{channel}_{posted_at}.md",
+        ]
+        for path in candidates:
+            if path.exists():
+                texts.append(path.read_text().strip())
+                break
+    return texts
 
 
 def generate_report(config: Config) -> list[PostMetrics]:

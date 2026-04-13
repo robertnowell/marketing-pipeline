@@ -62,14 +62,8 @@ def fetch_top_emails(
             slug=slug,
         ))
 
-    # Filter out already-posted emails (don't double dip)
+    # Filter out already-posted emails by source_id (don't double dip)
     manifest = load_manifest()
-    posted_urls = {entry.get("url", "") for entry in manifest}
-    posted_ids = set()
-    for url in posted_urls:
-        # Extract email ID from trykopi.ai/emails/... or /p/... URLs
-        for segment in ("/emails/", "/p/"):
-            if segment in url:
-                posted_ids.add(url.split(segment)[-1].split("/")[0].split("?")[0])
+    posted_source_ids = {entry.get("source_id", "") for entry in manifest}
 
-    return [e for e in emails if e.id not in posted_ids and e.slug not in posted_ids]
+    return [e for e in emails if f"kopi:{e.id}" not in posted_source_ids]

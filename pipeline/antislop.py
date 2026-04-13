@@ -235,7 +235,23 @@ def validate(draft: str, channel: str | None = None) -> ValidationResult:
                 severity="soft",
             ))
 
-    # 10. Channel-specific length checks
+    # 10. Bare domain without https:// (links won't be clickable)
+    bare_domain = re.search(
+        r"(?<!\w)(?:trykopi\.ai|github\.com|dev\.to|hashnode\.dev)[/\w.-]*",
+        draft,
+    )
+    if bare_domain:
+        # Check it's not already preceded by https://
+        start = bare_domain.start()
+        prefix = draft[max(0, start - 8):start]
+        if "://" not in prefix:
+            violations.append(Violation(
+                rule="bare_domain",
+                detail=f"URL missing https:// — won't be clickable: '{bare_domain.group()}'",
+                severity="soft",
+            ))
+
+    # 11. Channel-specific length checks
     if channel:
         length_violations = _check_length(draft, channel)
         violations.extend(length_violations)

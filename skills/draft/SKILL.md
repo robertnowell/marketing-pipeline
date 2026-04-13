@@ -54,3 +54,18 @@ If FAILED, fix the violations and revalidate. Only present candidates that PASS 
 ## Step 4: Save the best one
 
 Save the user's chosen draft to `content/drafts/{project}/{channel}/`.
+
+## Image posts (for projects with content_source like Kopi)
+
+If the project has a `content_source` in projects.yml, the post includes a screenshot image. For these:
+
+1. Fetch the image URL from the content source API
+2. **View the image with Read** before approving — check that:
+   - Hero/header section is fully rendered (no blank or grey areas at top)
+   - Content is not cut off at the bottom
+   - No broken image placeholders
+   - Layout looks complete and professional
+3. If the image has rendering issues, skip it and try the next one
+4. Validate the image programmatically: `marketing validate-image --url <image_url>`
+5. Write the caption as a human would — NOT a feature checklist. Good: "Dark theme, high-contrast CTAs, the countdown timer is a nice touch. Built with Kopi." Bad: "scored 93/100. Layout hierarchy, mobile readability, CTA contrast checked."
+6. All URLs must start with `https://` — bare domains like `trykopi.ai/emails` won't be clickable

@@ -502,6 +502,28 @@ def _cmd_validate(args: argparse.Namespace) -> int:
         return 1
 
 
+def _cmd_validate_image(args: argparse.Namespace) -> int:
+    """Validate an image before posting — programmatic + optional AI vision check."""
+    import os
+
+    from pipeline.image_check import check_image_visual
+
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    result = check_image_visual(args.url, api_key=api_key)
+
+    if result.passed:
+        print(f"PASSED — {result.width}x{result.height} {result.format}, {result.file_size} bytes")
+        if result.issues:
+            for issue in result.issues:
+                print(f"  [~] {issue}")
+    else:
+        print("FAILED")
+        for issue in result.issues:
+            print(f"  [X] {issue}")
+
+    return 0 if result.passed else 1
+
+
 def _pick_next_angle(angles: list[Angle]) -> Angle:
     """Pick the angle with the oldest (or None) last_used date."""
     unused = [a for a in angles if a.last_used is None]
@@ -578,6 +600,10 @@ def main(argv: list[str] | None = None) -> int:
 
     p_status = sub.add_parser("status", help="Show pipeline status: projects, posts, next actions.")
     p_status.set_defaults(func=_cmd_status)
+
+    p_valimg = sub.add_parser("validate-image", help="Check an image before posting (programmatic + AI vision).")
+    p_valimg.add_argument("--url", type=str, required=True, help="Image URL to check")
+    p_valimg.set_defaults(func=_cmd_validate_image)
 
     args = parser.parse_args(argv)
     return args.func(args)
