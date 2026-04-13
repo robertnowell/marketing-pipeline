@@ -1,31 +1,15 @@
-"""Directory listing automation for MCP servers and Claude Code skills.
+"""Directory listing automation — data-driven from surfaces.yml.
 
-For each project, generates submission commands/payloads for all relevant
-directories. Some are fully automated (CLI commands), some produce
-ready-to-submit assets (PR bodies, form data) for manual submission.
-
-Directory submission landscape (from primary-source research, April 2026):
-
-  AUTOMATED (CLI/API):
-    - Official MCP Registry: mcp-publisher publish (GitHub OIDC in CI)
-    - Smithery: smithery mcp publish <url>
-    - GitHub topics: add claude-skill, claude-code, mcp-server for auto-indexing
-
-  SEMI-AUTOMATED (generate payload, human submits):
-    - Glama: "Add Server" button with GitHub URL
-    - PulseMCP: web form + Discord
-    - mcp.so: GitHub issue submission
-    - mcpservers.org: web form (~12h review)
-    - awesome-claude-code: fork + PR
-    - Claude plugin marketplace: form at claude.ai/settings/plugins/submit
-
-  PULL-BASED (publish to official registry, aggregators pull):
-    - Glama, PulseMCP, GitHub MCP Registry poll the official registry API hourly
-    - Propagation is not guaranteed for all aggregators
+Reads the resolved directories for a project (audience + kind layering)
+from surfaces.yml and generates submission commands/payloads for each.
+Adding a new project type or directory means editing surfaces.yml, not Python.
 """
 
 from __future__ import annotations
 
+import shlex
+import subprocess
+import time
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Literal
@@ -33,6 +17,7 @@ from typing import Literal
 from ruamel.yaml import YAML
 
 from pipeline.registry import Project
+from pipeline.surfaces import Directory, SurfaceRegistry
 
 _yaml = YAML()
 _yaml.default_flow_style = False
@@ -42,12 +27,12 @@ _yaml.default_flow_style = False
 class DirectorySubmission:
     directory: str
     method: Literal["cli", "api", "github_topics", "pr", "web_form", "manual"]
-    command: str | None = None        # Shell command to run
-    url: str | None = None            # URL to open or submit to
-    payload: dict | None = None       # Form data or API payload
-    pr_body: str | None = None        # Markdown body for a PR
-    notes: str | None = None          # Human-readable instructions
-    automated: bool = False           # True if no human intervention needed
+    command: str | None = None
+    url: str | None = None
+    payload: dict | None = None
+    pr_body: str | None = None
+    notes: str | None = None
+    automated: bool = False
 
 
 @dataclass
@@ -65,240 +50,140 @@ class ListingPlan:
         return [s for s in self.submissions if not s.automated]
 
 
-def plan_listings(project: Project, project_name: str) -> ListingPlan:
-    """Generate a submission plan for a project across all relevant directories."""
+# --- Cascade notes for well-known directories ---
+CASCADE_NOTES: dict[str, str] = {
+    "mcp-registry": "Cascades to: Glama (24-48h), PulseMCP (daily), GitHub MCP Registry (hourly).",
+    "smithery": "Targets Smithery registry only.",
+    "glama": "Also auto-indexes from official MCP Registry within 24-48h.",
+    "pulsemcp": "Run by MCP Steering Committee. Weekly newsletter — high-signal.",
+}
+
+
+def plan_listings(
+    project: Project,
+    project_name: str,
+    surfaces_path: Path | str = "surfaces.yml",
+) -> ListingPlan:
+    """Generate a submission plan from surfaces.yml — no hardcoded routing."""
     repo = project.repo
     repo_url = repo if repo.startswith("https://") else f"https://github.com/{repo}"
-    # Extract owner/repo slug for CLI commands that need it
     repo_slug = repo_url.removeprefix("https://github.com/")
     plan = ListingPlan(project_name=project_name, repo_url=repo_url)
 
-    kind = project.kind.lower()
-
-    # Always: GitHub topics for auto-indexing
-    topics = _github_topics(project)
-    plan.submissions.append(DirectorySubmission(
-        directory="GitHub Topics (SkillsMP auto-index)",
-        method="github_topics",
-        command=f"gh api repos/{repo_slug}/topics -X PUT -f " + " -f ".join(f"names[]={t}" for t in topics),
-        notes=f"Sets topics: {', '.join(topics)}. Cascades to: SkillsMP (96k+), claudemarketplaces.com, awesome-skills.com (auto-indexed).",
-        automated=True,
-    ))
-
-    # MCP servers: official registry + Smithery
-    if kind in ("mcp-server", "mcp_server", "mcp"):
+    # 1. GitHub topics (always, for auto-indexing)
+    topics = _github_topics_from_kind(project.kind)
+    if topics:
         plan.submissions.append(DirectorySubmission(
-            directory="Official MCP Registry",
-            method="cli",
-            command="mcp-publisher publish",
-            notes=(
-                "Requires server.json in repo root. Auth via GitHub OIDC in CI. "
-                "Cascades to: Glama (24-48h), PulseMCP (daily), GitHub MCP Registry (hourly)."
-            ),
-            automated=True,
-        ))
-        plan.submissions.append(DirectorySubmission(
-            directory="Smithery",
-            method="cli",
-            command=f"smithery mcp publish {repo_url} -n {repo_slug}",
-            notes="Requires smithery CLI installed. Targets Smithery registry only.",
-            automated=True,
-        ))
-        plan.submissions.append(_mcp_so_submission(project, project_name, repo_url))
-        plan.submissions.append(_mcpservers_submission(project, project_name, repo_url))
-        plan.submissions.append(_pulsemcp_submission(project, project_name, repo_url))
-
-    # Claude Code skills/plugins — full directory set
-    if kind in ("claude-skill", "claude_skill", "claude-plugin", "skill",
-                "mcp-server", "mcp_server", "mcp"):
-        plan.submissions.append(DirectorySubmission(
-            directory="Claude Plugin Marketplace",
-            method="web_form",
-            url="https://claude.ai/settings/plugins/submit",
-            notes="Official Anthropic marketplace. Form-based review. 'Verified' badge for approved plugins.",
-        ))
-        plan.submissions.append(_awesome_claude_code_pr(project, project_name, repo_url))
-        plan.submissions.append(DirectorySubmission(
-            directory="awesome-claude-plugins (Composio)",
-            method="pr",
-            url="https://github.com/ComposioHQ/awesome-claude-plugins",
-            pr_body=_awesome_list_pr_body(project, project_name, repo_url),
-            notes="1.3k stars. Fork + PR. Must be tested, address a real use case.",
-        ))
-        plan.submissions.append(DirectorySubmission(
-            directory="awesome-claude-skills (Composio)",
-            method="pr",
-            url="https://github.com/ComposioHQ/awesome-claude-skills",
-            pr_body=_awesome_list_pr_body(project, project_name, repo_url),
-            notes="Skills-focused curated list. Fork + PR.",
-        ))
-        plan.submissions.append(DirectorySubmission(
-            directory="awesome-claude-skills (travisvn)",
-            method="pr",
-            url="https://github.com/travisvn/awesome-claude-skills",
-            pr_body=_awesome_list_pr_body(project, project_name, repo_url),
-            notes="40+ entries. SKILL.md-focused. Fork + PR.",
-        ))
-        plan.submissions.append(DirectorySubmission(
-            directory="skillsdirectory.com",
-            method="web_form",
-            url="https://www.skillsdirectory.com/",
-            notes="36k skills indexed. Security-scanned (50+ rules). Submit via web form.",
-        ))
-        plan.submissions.append(DirectorySubmission(
-            directory="awesomeclaude.ai",
-            method="pr",
-            url="https://awesomeclaude.ai",
-            notes="Visual directory aggregator. Submit via GitHub PR.",
-        ))
-        # Auto-indexed directories (no submission needed beyond GitHub topics)
-        plan.submissions.append(DirectorySubmission(
-            directory="SkillsMP (auto-indexed)",
+            directory="GitHub Topics",
             method="github_topics",
-            notes=(
-                "96k+ skills indexed. Auto-scrapes GitHub for repos with SKILL.md files. "
-                "No submission needed — having SKILL.md + GitHub topics triggers indexing."
-            ),
+            command=f"gh api repos/{repo_slug}/topics -X PUT -f " + " -f ".join(f"names[]={t}" for t in topics),
+            notes=f"Sets: {', '.join(topics)}. Triggers auto-indexing by SkillsMP, claudemarketplaces.com.",
             automated=True,
-            command="echo 'SkillsMP auto-indexes from GitHub — no action needed'",
         ))
 
-    # Glama (for MCP servers and agent tools)
-    if kind in ("mcp-server", "mcp_server", "mcp", "agent-tool"):
-        plan.submissions.append(DirectorySubmission(
-            directory="Glama",
-            method="web_form",
-            url=f"https://glama.ai/mcp/servers?add={repo_url}",
-            notes="Click 'Add Server', paste GitHub URL. Also auto-indexes from official MCP Registry within 24-48h.",
-        ))
+    # 2. All directories from surfaces.yml (audience + kind layering)
+    surfaces = SurfaceRegistry.load(surfaces_path)
+    resolved = surfaces.resolve(project)
 
-    # General dev-tool directories (for any kind)
-    plan.submissions.append(DirectorySubmission(
-        directory="DevHunt",
-        method="web_form",
-        url="https://devhunt.org",
-        notes="Developer-specific Product Hunt alternative. Free. GitHub auth. Dofollow backlinks (DR 61).",
-    ))
-    plan.submissions.append(DirectorySubmission(
-        directory="Uneed",
-        method="web_form",
-        url="https://www.uneed.best/submit-a-tool",
-        notes="292k monthly visits. Every product gets featured regardless of audience size.",
-    ))
+    for directory in resolved.directories:
+        sub = _directory_to_submission(directory, project, project_name, repo_url, repo_slug)
+        if sub is not None:
+            plan.submissions.append(sub)
 
     return plan
 
 
-def _awesome_list_pr_body(project: Project, name: str, repo_url: str) -> str:
-    """Generate a generic PR body for awesome-list submissions."""
-    return (
-        f"## Add {name}\n\n"
-        f"**Repository:** {repo_url}\n"
-        f"**Description:** {project.solution_one_liner}\n"
-        f"**Problem:** {project.problem}\n\n"
-        f"Open source, actively maintained.\n"
-    )
+def _directory_to_submission(
+    d: Directory,
+    project: Project,
+    project_name: str,
+    repo_url: str,
+    repo_slug: str,
+) -> DirectorySubmission | None:
+    """Convert a surfaces.yml Directory to a DirectorySubmission."""
+    cascade = CASCADE_NOTES.get(d.name, "")
+
+    if d.type == "cli" and d.tool:
+        # CLI-based automated submission
+        if d.tool == "mcp-publisher":
+            command = "mcp-publisher publish"
+        elif d.tool == "smithery-cli":
+            command = f"smithery mcp publish {repo_url} -n {repo_slug}"
+        else:
+            command = d.tool
+        notes = f"Requires {d.tool} CLI."
+        if cascade:
+            notes += f" {cascade}"
+        return DirectorySubmission(
+            directory=d.name,
+            method="cli",
+            command=command,
+            notes=notes,
+            automated=True,
+        )
+
+    if d.type == "pr" and d.repo:
+        # GitHub PR submission
+        pr_body = (
+            f"## Add {project_name}\n\n"
+            f"**Repository:** {repo_url}\n"
+            f"**Description:** {project.solution_one_liner}\n"
+            f"**Problem:** {project.problem}\n\n"
+            f"Open source, actively maintained.\n"
+        )
+        return DirectorySubmission(
+            directory=d.name,
+            method="pr",
+            url=f"https://github.com/{d.repo}",
+            pr_body=pr_body,
+            notes=f"Fork + PR to {d.repo}. {cascade}".strip(),
+        )
+
+    if d.type == "form" and d.url:
+        # Web form submission
+        notes = "Web form submission."
+        if cascade:
+            notes += f" {cascade}"
+        return DirectorySubmission(
+            directory=d.name,
+            method="web_form",
+            url=d.url,
+            notes=notes,
+        )
+
+    if d.type == "contact" and d.contact:
+        return DirectorySubmission(
+            directory=d.name,
+            method="manual",
+            notes=f"Contact: {d.contact}",
+        )
+
+    return None
 
 
-def _github_topics(project: Project) -> list[str]:
-    """Determine which GitHub topics to set based on project kind."""
-    kind = project.kind.lower()
-    topics = []
-    if kind in ("mcp-server", "mcp_server", "mcp"):
-        topics.extend(["mcp", "mcp-server", "model-context-protocol"])
-    if kind in ("claude-skill", "claude_skill", "claude-plugin", "skill"):
-        topics.extend(["claude-skill", "claude-code", "anthropic"])
-    if kind in ("browser-extension", "extension"):
-        topics.extend(["browser-extension", "chrome-extension", "firefox-addon"])
-    # Always include these for discoverability
+def _github_topics_from_kind(kind: str) -> list[str]:
+    """Generate GitHub topics from kind(s). Supports comma-separated."""
+    topics: list[str] = []
+    for k in kind.split(","):
+        k = k.strip().lower()
+        if k in ("mcp-server", "mcp_server", "mcp"):
+            topics.extend(["mcp", "mcp-server", "model-context-protocol"])
+        elif k in ("claude-skill", "claude_skill", "claude-plugin", "skill"):
+            topics.extend(["claude-skill", "claude-code", "anthropic"])
+        elif k in ("browser-extension", "chrome-extension", "extension"):
+            topics.extend(["browser-extension", "chrome-extension", "firefox-addon"])
+        elif k in ("terminal-theme",):
+            topics.extend(["terminal-theme", "color-scheme"])
     topics.append("open-source")
-    return topics
-
-
-def _mcp_so_submission(project: Project, name: str, repo_url: str) -> DirectorySubmission:
-    """mcp.so accepts submissions via GitHub issue."""
-    issue_body = (
-        f"**Server Name:** {name}\n"
-        f"**Repository:** {repo_url}\n"
-        f"**Description:** {project.solution_one_liner}\n"
-        f"**Problem it solves:** {project.problem}\n"
-    )
-    return DirectorySubmission(
-        directory="mcp.so",
-        method="web_form",
-        url="https://mcp.so",
-        payload={"title": f"Add {name}", "body": issue_body},
-        notes="Submit via GitHub issue on mcp.so's repo or web form.",
-    )
-
-
-def _mcpservers_submission(project: Project, name: str, repo_url: str) -> DirectorySubmission:
-    return DirectorySubmission(
-        directory="mcpservers.org",
-        method="web_form",
-        url="https://mcpservers.org/submit",
-        payload={
-            "name": name,
-            "description": project.solution_one_liner,
-            "link": repo_url,
-            "email": "",  # user fills in
-        },
-        notes="Web form, ~12h human review. No API.",
-    )
-
-
-def _pulsemcp_submission(project: Project, name: str, repo_url: str) -> DirectorySubmission:
-    return DirectorySubmission(
-        directory="PulseMCP",
-        method="web_form",
-        url="https://www.pulsemcp.com/submit",
-        payload={
-            "name": name,
-            "url": repo_url,
-            "description": project.solution_one_liner,
-        },
-        notes=(
-            "Web form + Discord. Run by MCP Steering Committee members. "
-            "Also publishes a weekly newsletter — getting listed here is high-signal."
-        ),
-    )
-
-
-def _awesome_claude_code_pr(
-    project: Project, name: str, repo_url: str,
-) -> DirectorySubmission:
-    pr_body = (
-        f"## Add {name}\n\n"
-        f"{project.solution_one_liner}\n\n"
-        f"**Repository:** {repo_url}\n"
-        f"**Problem:** {project.problem}\n\n"
-        f"### Why this belongs here\n\n"
-        f"- Solves a concrete problem for Claude Code users\n"
-        f"- Open source, actively maintained\n"
-    )
-    return DirectorySubmission(
-        directory="awesome-claude-code",
-        method="pr",
-        url="https://github.com/hesreallyhim/awesome-claude-code",
-        pr_body=pr_body,
-        notes="Fork + PR. 38k+ stars, highest-traffic Claude Code list. Human review.",
-    )
+    # Dedupe preserving order
+    seen: set[str] = set()
+    return [t for t in topics if not (t in seen or seen.add(t))]
 
 
 def execute_automated(
-    plan: ListingPlan, dry_run: bool = False, max_attempts: int = 3,
+    plan: ListingPlan, dry_run: bool = False, max_attempts: int = 2,
 ) -> list[tuple[str, bool, str]]:
-    """Execute all automated submissions in a plan.
-
-    Each command is retried up to *max_attempts* times on failure before
-    recording a final result.
-
-    Returns list of (directory_name, success, output_or_error).
-    """
-    import shlex
-    import subprocess
-    import time
-
+    """Execute all automated submissions in a plan."""
     results = []
     for sub in plan.automated:
         if sub.command is None:
@@ -311,9 +196,6 @@ def execute_automated(
         success = False
         for attempt in range(1, max_attempts + 1):
             try:
-                # Use shlex.split to avoid shell=True injection risks.
-                # Commands are constructed internally but contain user-supplied
-                # repo names from projects.yml.
                 result = subprocess.run(
                     shlex.split(sub.command),
                     shell=False,
@@ -327,9 +209,8 @@ def execute_automated(
                     break
             except Exception as e:
                 last_output = str(e)
-                success = False
             if attempt < max_attempts:
-                time.sleep(2 ** attempt)  # 2s, 4s backoff
+                time.sleep(2)
 
         results.append((sub.directory, success, last_output))
 
@@ -342,7 +223,7 @@ def save_listing_status(plan: ListingPlan, results: list[tuple[str, bool, str]])
     reports_dir.mkdir(parents=True, exist_ok=True)
     path = reports_dir / "listing-status.yml"
 
-    status = {
+    status: dict = {
         "project": plan.project_name,
         "repo": plan.repo_url,
         "submissions": {},

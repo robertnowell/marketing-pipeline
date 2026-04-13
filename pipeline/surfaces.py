@@ -70,9 +70,12 @@ class SurfaceRegistry:
             raise KeyError(
                 f"audience '{project.audience}' for project not found in surfaces.yml"
             )
-        kind = self._kinds.get(project.kind, {}) or {}
 
-        # 1. Build directories: audience base + kind additives.
+        # Support comma-separated kinds (e.g., "mcp-server,claude-skill")
+        kind_names = [k.strip() for k in project.kind.split(",")]
+        kinds = [self._kinds.get(k, {}) or {} for k in kind_names]
+
+        # 1. Build directories: audience base + ALL kind additives.
         dir_map: dict[str, Directory] = {}
 
         for entry in audience.get("directories", []) or []:
@@ -80,15 +83,19 @@ class SurfaceRegistry:
             if d is not None:
                 dir_map[d.name] = d
 
-        for entry in kind.get("directories_additive", []) or []:
-            d = _coerce_directory(entry, dir_map)
-            if d is not None:
-                dir_map[d.name] = d
+        for kind in kinds:
+            for entry in kind.get("directories_additive", []) or []:
+                d = _coerce_directory(entry, dir_map)
+                if d is not None:
+                    dir_map[d.name] = d
 
-        # 2. Forums: audience manual + kind additives.
+        # 2. Forums: audience manual + ALL kind additives.
         forums_seen: set[str] = set()
         forums: list[str] = []
-        for f in (audience.get("forums_manual") or []) + (kind.get("forums_additive") or []):
+        all_forums = list(audience.get("forums_manual") or [])
+        for kind in kinds:
+            all_forums.extend(kind.get("forums_additive") or [])
+        for f in all_forums:
             if f not in forums_seen:
                 forums_seen.add(f)
                 forums.append(f)
