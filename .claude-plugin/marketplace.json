@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "marketing-pipeline-marketplace",
+  "description": "Automated distribution pipeline for open source developer tools",
+  "owner": {
+    "name": "Robert Nowell"
+  },
+  "plugins": [
+    {
+      "name": "marketing-pipeline",
+      "description": "Onboard a project, launch to directories, post to social channels, track engagement",
+      "category": "productivity",
+      "source": "./"
+    }
+  ]
+}
