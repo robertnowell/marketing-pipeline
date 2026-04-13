@@ -266,6 +266,12 @@ def _cmd_cycle(args: argparse.Namespace) -> int:
         channel = channels[0]
 
         print(f"\n--- {name} | angle={angle.id} | channel={channel} ---")
+
+        if args.dry_run:
+            print(f"  [dry run] Would draft + post to {channel}")
+            posted += 1
+            continue
+
         result = draft(project, name, angle.id, channel, config)
         best = result.best
         if not best:
