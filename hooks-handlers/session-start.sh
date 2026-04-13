@@ -21,7 +21,8 @@ if [ -z "$PYTHON_VERSION" ] || [ "$PYTHON_MAJOR" -lt 3 ] || { [ "$PYTHON_MAJOR" 
 fi
 
 # --- 2. Venv + dependency installation (hash-gated) ---
-CURRENT_HASH=$(shasum -a 256 "$PLUGIN_ROOT/pyproject.toml" 2>/dev/null | cut -d' ' -f1 || echo "none")
+# Hash both pyproject.toml AND the pipeline code so code changes trigger reinstall
+CURRENT_HASH=$(find "$PLUGIN_ROOT/pipeline" "$PLUGIN_ROOT/pyproject.toml" -name "*.py" -o -name "*.toml" -o -name "*.md" 2>/dev/null | sort | xargs cat 2>/dev/null | shasum -a 256 | cut -d' ' -f1 || echo "none")
 CACHED_HASH=""
 if [ -f "$HASH_FILE" ]; then
   CACHED_HASH=$(cat "$HASH_FILE")
@@ -30,7 +31,7 @@ fi
 if [ "$CURRENT_HASH" != "$CACHED_HASH" ] || [ ! -d "$VENV_DIR/bin" ]; then
   echo "Marketing pipeline: installing dependencies..." >&2
   python3 -m venv "$VENV_DIR" 2>/dev/null || true
-  "$VENV_DIR/bin/pip" install --quiet --disable-pip-version-check "$PLUGIN_ROOT" 2>/dev/null
+  "$VENV_DIR/bin/pip" install --quiet --disable-pip-version-check --force-reinstall "$PLUGIN_ROOT" 2>/dev/null
   echo "$CURRENT_HASH" > "$HASH_FILE"
 fi
 
