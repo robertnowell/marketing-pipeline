@@ -1,7 +1,8 @@
-"""Fetch top-scoring email designs from Kopi AI for Pinterest posting.
+"""Fetch top-scoring email designs from Kopi AI for image posting.
 
-Calls the Kopi gallery API, filters for exported emails above a score
-threshold, and excludes emails already in the posted manifest.
+Calls the Kopi gallery API (GET /api/emails/gallery), which returns
+public emails with critiqueScore >= 80, sorted by score.
+Excludes emails already in the posted manifest to avoid re-posting.
 """
 
 from __future__ import annotations
@@ -15,50 +16,49 @@ from pipeline.report import load_manifest
 
 @dataclass
 class KopiEmail:
-    chat_id: str
+    id: str
     title: str
-    subject_line: str
+    brand_name: str | None
     screenshot_url: str
     email_url: str
-    score: float
+    score: int | None
+    slug: str
 
 
 def fetch_top_emails(
-    api_url: str,
-    brand_id: str | None = None,
-    limit: int = 5,
-    min_score: float = 70,
+    base_url: str,
+    limit: int = 10,
+    sort_by: str = "critiqueScore",
 ) -> list[KopiEmail]:
-    """Fetch top-scoring exported emails from Kopi, excluding already-posted ones.
+    """Fetch top-scoring public emails from Kopi, excluding already-posted ones.
 
     Args:
-        api_url: Base API URL (e.g., "https://trykopi.ai/api")
-        brand_id: Optional brand filter
+        base_url: Kopi base URL (e.g., "https://trykopi.ai")
         limit: Max emails to return
-        min_score: Minimum critique score threshold
+        sort_by: "critiqueScore" or "createdAt"
     """
-    params: dict = {"limit": limit, "minScore": min_score, "exported": "true"}
-    if brand_id:
-        params["brandId"] = brand_id
-
     resp = httpx.get(
-        f"{api_url}/emails/gallery",
-        params=params,
+        f"{base_url}/api/emails/gallery",
+        params={"limit": limit, "sortBy": sort_by, "sortOrder": "desc"},
         timeout=15,
     )
     resp.raise_for_status()
     data = resp.json()
 
-    # Parse response
     emails = []
-    for item in data:
+    for item in data.get("data", []):
+        screenshot = item.get("screenshotUrl")
+        if not screenshot:
+            continue
+        slug = item.get("slug", item["id"])
         emails.append(KopiEmail(
-            chat_id=item["chatId"],
+            id=item["id"],
             title=item.get("title", ""),
-            subject_line=item.get("subjectLine", ""),
-            screenshot_url=item["screenshotUrl"],
-            email_url=item.get("emailUrl", f"https://trykopi.ai/p/{item['chatId']}"),
-            score=item.get("critiqueScore", 0),
+            brand_name=item.get("brandName"),
+            screenshot_url=screenshot,
+            email_url=f"{base_url}/emails/{slug}",
+            score=item.get("critiqueScore"),
+            slug=slug,
         ))
 
     # Filter out already-posted emails (don't double dip)
@@ -66,8 +66,9 @@ def fetch_top_emails(
     posted_urls = {entry.get("url", "") for entry in manifest}
     posted_ids = set()
     for url in posted_urls:
-        # Extract chatId from trykopi.ai/p/{chatId} URLs
-        if "/p/" in url:
-            posted_ids.add(url.split("/p/")[-1].split("/")[0].split("?")[0])
+        # Extract email ID from trykopi.ai/emails/... or /p/... URLs
+        for segment in ("/emails/", "/p/"):
+            if segment in url:
+                posted_ids.add(url.split(segment)[-1].split("/")[0].split("?")[0])
 
-    return [e for e in emails if e.chat_id not in posted_ids]
+    return [e for e in emails if e.id not in posted_ids and e.slug not in posted_ids]
