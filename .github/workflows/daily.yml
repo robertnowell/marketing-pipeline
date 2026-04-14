@@ -47,7 +47,7 @@ jobs:
           fi
 
       - name: Commit updated state
-        if: success() && inputs.dry_run != 'true'
+        if: always() && inputs.dry_run != 'true'
         run: |
           git config user.name "marketing-pipeline[bot]"
           git config user.email "noreply@github.com"

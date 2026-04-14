@@ -304,14 +304,21 @@ def _cmd_cycle(args: argparse.Namespace) -> int:
         print(f"\nCycle complete: {name} → {len(channels)} channel(s) (dry run).")
         return 0
 
+    from pipeline.config import ConfigError
+
     posted = 0
     for channel in channels:
         print(f"\n--- {name} | {channel} ---")
 
-        result = draft(
-            project, name, angle.id, channel, config,
-            previous_posts=history,
-        )
+        try:
+            result = draft(
+                project, name, angle.id, channel, config,
+                previous_posts=history,
+            )
+        except Exception as e:
+            print(f"  Draft error, skipping: {e}", file=sys.stderr)
+            continue
+
         best = result.best
         if not best:
             print("  No drafts passed validation.", file=sys.stderr)
@@ -325,7 +332,15 @@ def _cmd_cycle(args: argparse.Namespace) -> int:
             print(f"  No publisher for '{channel}', skipping.", file=sys.stderr)
             continue
 
-        post_result = publisher.publish(best.text, config)
+        try:
+            post_result = publisher.publish(best.text, config)
+        except ConfigError as e:
+            print(f"  Missing credentials for '{channel}', skipping: {e}", file=sys.stderr)
+            continue
+        except Exception as e:
+            print(f"  Publish error on '{channel}', skipping: {e}", file=sys.stderr)
+            continue
+
         if post_result.success:
             print(f"  Posted: {post_result.url or post_result.error}")
             posted += 1
