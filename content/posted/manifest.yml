@@ -72,3 +72,23 @@
   angle: wikipedia-everywhere
   source_id: ''
   posted_at: '2026-04-14'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mji4nr722q2a
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-04-14'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-optimize-for-syntax-claude-code-isnt-syntax-28o
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-04-14'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/permission-prompts-are-the-lines-you-have-to-read-most-themes-treat-them-as-decoration
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-04-14'
