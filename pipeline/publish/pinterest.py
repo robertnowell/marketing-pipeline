@@ -62,8 +62,10 @@ class PinterestPublisher:
             if link:
                 payload["link"] = link
 
+            import os
+            api_url = os.environ.get("PINTEREST_API_URL", "https://api.pinterest.com")
             resp = httpx.post(
-                "https://api.pinterest.com/v5/pins",
+                f"{api_url}/v5/pins",
                 json=payload,
                 headers={
                     "Authorization": f"Bearer {creds.access_token}",
