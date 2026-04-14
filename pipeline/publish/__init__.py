@@ -29,18 +29,27 @@ class Publisher(Protocol):
 
 def get_publisher(channel: str) -> Publisher:
     """Return the publisher for a given channel name."""
+    import os
+
     from pipeline.publish.bluesky import BlueskyPublisher
     from pipeline.publish.devto import DevtoPublisher
     from pipeline.publish.hashnode import HashnodePublisher
     from pipeline.publish.mastodon import MastodonPublisher
     from pipeline.publish.pinterest import PinterestPublisher
+    from pipeline.publish.tailwind import TailwindPublisher
+
+    # Route Pinterest via Tailwind if TAILWIND_API_KEY is set,
+    # otherwise use direct Pinterest API.
+    pinterest_pub: Publisher = (
+        TailwindPublisher() if os.environ.get("TAILWIND_API_KEY") else PinterestPublisher()
+    )
 
     publishers: dict[str, Publisher] = {
         "bluesky": BlueskyPublisher(),
         "devto": DevtoPublisher(),
         "hashnode": HashnodePublisher(),
         "mastodon": MastodonPublisher(),
-        "pinterest": PinterestPublisher(),
+        "pinterest": pinterest_pub,
     }
     publisher = publishers.get(channel.lower())
     if publisher is None:
