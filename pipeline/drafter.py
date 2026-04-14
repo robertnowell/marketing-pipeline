@@ -64,6 +64,7 @@ def draft(
     channel: str,
     config: Config,
     model: str = "claude-sonnet-4-6",
+    previous_posts: list[str] | None = None,
 ) -> DraftResult:
     """Generate draft posts for a project+angle+channel combination.
 
@@ -72,7 +73,10 @@ def draft(
     feedback so the model can correct its mistakes.
     """
     system_prompt = _load_system_prompt()
-    user_message = _build_user_message(project, project_name, angle_id, channel)
+    user_message = _build_user_message(
+        project, project_name, angle_id, channel,
+        previous_posts=previous_posts,
+    )
 
     api_key = config.require_anthropic()
     client = anthropic.Anthropic(api_key=api_key)
@@ -178,7 +182,11 @@ def _load_system_prompt() -> str:
 
 
 def _build_user_message(
-    project: Project, project_name: str, angle_id: str, channel: str,
+    project: Project,
+    project_name: str,
+    angle_id: str,
+    channel: str,
+    previous_posts: list[str] | None = None,
 ) -> str:
     angle = next((a for a in project.angles if a.id == angle_id), None)
     if angle is None:
@@ -192,6 +200,17 @@ def _build_user_message(
         "angle": angle.summary,
         "channel": channel,
     }
+
+    if previous_posts:
+        payload["previous_posts"] = previous_posts
+        payload["history_instruction"] = (
+            "These are posts previously published for this project. "
+            "Do NOT repeat the same phrasing, opening, structure, or specific "
+            "detail emphasis. Vary your approach: different opening, different "
+            "fact highlighted, different sentence structure. If the previous "
+            "posts led with a problem statement, try leading with a concrete "
+            "detail or scenario instead — and vice versa."
+        )
 
     # Add explicit character limit for short-form channels
     if channel in CHAR_LIMITS:

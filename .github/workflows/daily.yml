@@ -2,14 +2,19 @@ name: Daily post cycle + engagement report
 
 on:
   schedule:
-    # 14:00 UTC (7am PT / 10am ET) — weekdays only
-    - cron: "0 14 * * 1-5"
+    # One project per invocation, spaced 2 hours apart across the day.
+    # 5 live projects → 5 fires: 10am–6pm UTC (3am–11am PT), weekdays.
+    # Each run picks the next unposted project for today.
+    - cron: "0 10,12,14,16,18 * * 1-5"
   workflow_dispatch:
     inputs:
       dry_run:
         description: "Dry run (draft but don't publish)"
         type: boolean
         default: true
+
+permissions:
+  contents: write
 
 jobs:
   cycle:
@@ -40,6 +45,15 @@ jobs:
           else
             marketing cycle
           fi
+
+      - name: Commit updated state
+        if: success() && inputs.dry_run != 'true'
+        run: |
+          git config user.name "marketing-pipeline[bot]"
+          git config user.email "noreply@github.com"
+          git add content/posted/ projects.yml
+          git diff --cached --quiet || git commit -m "cycle: post $(date -u +%Y-%m-%d %H:%M)"
+          git push
 
       - name: Engagement report + Slack digest
         if: always()
