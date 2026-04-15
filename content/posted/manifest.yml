@@ -151,3 +151,23 @@
   angle: launch
   source_id: ''
   posted_at: '2026-04-15'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjkekalt4s2u
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-04-15'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/rabbitholes-inline-knowledge-without-leaving-the-page-4mmn
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-04-15'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-inline-wikipedia-i-always-wanted-but-had-to-build-myself
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-04-15'
