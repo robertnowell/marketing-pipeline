@@ -112,3 +112,22 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-04-15'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjjy37e4wx23
+  angle: girlfriend-language
+  source_id: ''
+  posted_at: '2026-04-15'
+- project: konid
+  channel: devto
+  url: https://dev.to/palo_alto_ai/when-one-translation-isnt-enough-2dnc
+  angle: girlfriend-language
+  source_id: ''
+  posted_at: '2026-04-15'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-translations-because-tender-and-formal-arent-the-same-word
+  angle: girlfriend-language
+  source_id: ''
+  posted_at: '2026-04-15'
