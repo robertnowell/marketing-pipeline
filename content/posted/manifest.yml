@@ -171,3 +171,23 @@
   angle: wikipedia-everywhere
   source_id: ''
   posted_at: '2026-04-15'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjklvbufkz2t
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-04-15'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/klein-blue-in-a-terminal-one-pigment-four-themes-one-constraint-4ln8
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-04-15'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/when-terminal-themes-optimize-for-the-wrong-thing
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-04-15'
