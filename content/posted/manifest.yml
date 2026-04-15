@@ -131,3 +131,23 @@
   angle: girlfriend-language
   source_id: ''
   posted_at: '2026-04-15'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjk632c5hv2t
+  angle: launch
+  source_id: ''
+  posted_at: '2026-04-15'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-most-mcp-servers-stay-invisible-after-launch-kp4
+  angle: launch
+  source_id: ''
+  posted_at: '2026-04-15'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/one-command-to-stop-manually-chasing-distribution
+  angle: launch
+  source_id: ''
+  posted_at: '2026-04-15'

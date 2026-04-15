@@ -272,6 +272,7 @@ marketing-pipeline:
         for MCP servers, Claude Code skills, and agent-focused tools — where the
         ecosystem moves fast but distribution infrastructure doesn't exist yet 
         for most indie builders
+      last_used: '2026-04-15'
     - id: problem-specific
       summary: You launch, get a small spike, then posting stops because it's 
         repetitive manual work. This pipeline's daily cron keeps rotating 
