@@ -3,9 +3,9 @@ name: Daily post cycle + engagement report
 on:
   schedule:
     # One project per invocation, spaced 2 hours apart across the day.
-    # 5 live projects → 5 fires: 10am–6pm UTC (3am–11am PT), weekdays.
-    # Each run picks the next unposted project for today.
-    - cron: "0 10,12,14,16,18 * * 1-5"
+    # 5 fires/day every day (weekends too); each picks the next project
+    # that hasn't posted today. If all posted, no-op.
+    - cron: "0 10,12,14,16,18 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -15,6 +15,12 @@ on:
 
 permissions:
   contents: write
+
+# Only one run of this workflow active at a time — prevents two fires from
+# racing on git push or posting the same project twice.
+concurrency:
+  group: marketing-pipeline-cycle
+  cancel-in-progress: false
 
 jobs:
   cycle:
@@ -66,7 +72,8 @@ jobs:
           MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           MASTODON_INSTANCE_URL: ${{ secrets.MASTODON_INSTANCE_URL }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        run: marketing report
+        # --no-sync: cron just committed posts and is at HEAD; no pull needed.
+        run: marketing report --no-sync
 
       - name: Upload artifacts
         if: always()
