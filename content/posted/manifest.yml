@@ -191,3 +191,23 @@
   angle: ikb-mystique
   source_id: ''
   posted_at: '2026-04-15'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjmaro7cq72e
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-04-16'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-a-91100-email-design-score-actually-catches-4o03
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-04-16'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/kopis-scoring-caught-what-three-rounds-of-qa-missed
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-04-16'
