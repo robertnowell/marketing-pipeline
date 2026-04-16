@@ -91,7 +91,7 @@ rabbitholes:
     - {id: wikipedia-everywhere, summary: "The 'Wikipedia on every page' feeling —
         all the world's knowledge one highlight away", last_used: '2026-04-15'}
     - {id: half-known-concepts, summary: "Every article has words you half-know that
-        would open up if you just knew what they meant", last_used: null}
+        would open up if you just knew what they meant", last_used: '2026-04-16'}
     - {id: curiosity-without-losing-place, summary: "Following a tangent without killing
         the thread you were actually reading", last_used: null}
     - {id: philosophy-counter, summary: "The rabbit-hole counter and the Wikipedia-philosophy

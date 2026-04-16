@@ -225,3 +225,23 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-04-16'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjmpiknkn324
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-04-16'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/half-knowing-a-word-is-worse-than-not-knowing-it-395a
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-04-16'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/reading-depth-depends-on-knowing-the-words-that-hold-a-paragraph-together
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-04-16'
