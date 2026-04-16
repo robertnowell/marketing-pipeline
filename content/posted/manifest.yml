@@ -265,3 +265,23 @@
   angle: reading-for-hours
   source_id: ''
   posted_at: '2026-04-16'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjn3u5izju2v
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-04-16'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-9830-claude-conversations-reveal-about-your-own-habits-ic1
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-04-16'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-11-behaviors-anthropic-measured-and-which-ones-i-was-skipping
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-04-16'
