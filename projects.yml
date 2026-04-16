@@ -45,7 +45,7 @@ konid:
     - {id: girlfriend-language, summary: "Trying to say something tender in a loved
         one's first language without sounding like a phrasebook", last_used: '2026-04-15'}
     - {id: translate-and-learn, summary: "Using daily professional translation as
-        a language-learning loop instead of a one-shot utility", last_used: null}
+        a language-learning loop instead of a one-shot utility", last_used: '2026-04-16'}
     - {id: register-matters, summary: "The same phrase can be casual, neutral, or
         tender — the choice signals the relationship (long-form)", last_used: 
         null}

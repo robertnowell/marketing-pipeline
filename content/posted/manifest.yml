@@ -211,3 +211,17 @@
   angle: showcase
   source_id: ''
   posted_at: '2026-04-16'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/stop-translating-work-emails-start-learning-from-them-fil
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-04-16'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-translations-one-lesson-what-i-built-to-stop-guessing-register
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-04-16'
