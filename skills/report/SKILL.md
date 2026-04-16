@@ -23,4 +23,6 @@ Saves a dated snapshot to `reports/metrics/YYYY-MM-DD.yml` for tracking trends o
 
 If `SLACK_WEBHOOK_URL` is configured, sends a formatted digest to Slack.
 
+**Auto-sync:** before fetching, runs `git pull --rebase --autostash` to pick up any new posts the GH Actions cron has committed to `content/posted/manifest.yml`. Without this the local manifest goes stale and the digest under-reports. Pass `--no-sync` to skip (e.g., when running on the cron itself).
+
 When discussing results with the user, highlight which projects/channels/angles are performing best and which aren't getting traction. This is the data that should inform future angle choices.

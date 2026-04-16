@@ -432,9 +432,36 @@ def _cmd_onboard(args: argparse.Namespace) -> int:
     return 0
 
 
+def _sync_manifest_from_remote() -> None:
+    """Pull the latest manifest from the git remote before reading it.
+
+    The GH Actions cron commits new posts to content/posted/manifest.yml on
+    every cycle. Without this sync, a local `marketing report` reads a stale
+    manifest and the Slack digest under-reports — silently. Fail-soft: warn
+    on any failure and continue with whatever's local.
+    """
+    import subprocess
+    try:
+        r = subprocess.run(
+            ["git", "pull", "--rebase", "--autostash", "--quiet"],
+            capture_output=True, text=True, timeout=15,
+        )
+        if r.returncode != 0:
+            print(f"Manifest sync warning: git pull failed ({r.returncode}). "
+                  f"Continuing with local manifest.", file=sys.stderr)
+            if r.stderr.strip():
+                print(f"  stderr: {r.stderr.strip()[:200]}", file=sys.stderr)
+    except Exception as exc:
+        print(f"Manifest sync warning: {exc}. Continuing with local manifest.",
+              file=sys.stderr)
+
+
 def _cmd_report(args: argparse.Namespace) -> int:
     """Fetch engagement metrics and generate a report."""
     from pipeline.report import format_report, format_slack_report, generate_report, send_slack
+
+    if not getattr(args, "no_sync", False):
+        _sync_manifest_from_remote()
 
     config = Config.from_env()
     print("Fetching engagement metrics...")
@@ -608,6 +635,8 @@ def main(argv: list[str] | None = None) -> int:
     p_validate.set_defaults(func=_cmd_validate)
 
     p_report = sub.add_parser("report", help="Fetch engagement metrics and generate report.")
+    p_report.add_argument("--no-sync", action="store_true",
+                          help="Skip the git pull that syncs the manifest from remote.")
     p_report.set_defaults(func=_cmd_report)
 
     p_setup = sub.add_parser("setup", help="Check credentials and guide through setup.")

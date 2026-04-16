@@ -150,7 +150,15 @@ def format_report(results: list[PostMetrics]) -> str:
 
 
 def format_slack_report(results: list[PostMetrics]) -> dict | None:
-    """Format metrics as a Slack webhook payload. Returns None if nothing to report."""
+    """Format metrics as a Slack webhook payload. Returns None if nothing to report.
+
+    Structure (optimized for a morning scan):
+      1. Headline summary line.
+      2. "What got engagement" — per-post lines with breakdown + link.
+         Only shown when at least one post has engagement > 0.
+      3. "By project" rollup — projects sorted by engagement desc.
+      4. "Posted today" — per-project line with inline links to each channel.
+    """
     if not results:
         return None  # Don't send empty reports
 
@@ -158,52 +166,131 @@ def format_slack_report(results: list[PostMetrics]) -> dict | None:
     total_views = sum(m.views for m in results)
     today = date.today().isoformat()
 
-    # Group by project
     by_project: dict[str, list[PostMetrics]] = {}
     for m in results:
         by_project.setdefault(m.project, []).append(m)
 
-    # Today's posts
     today_posts = [m for m in results if m.posted_at == today]
-
-    # Build a single compact text block (more readable in Slack than blocks API)
-    lines = [f"*Marketing Pipeline — {today}*"]
-    lines.append("")
-
-    # Summary line
-    lines.append(
-        f"{total_engagement} engagements, {total_views} views across "
-        f"{len(results)} posts in {len(by_project)} projects"
+    engaged = sorted(
+        (m for m in results if m.engagement > 0),
+        key=lambda m: m.engagement,
+        reverse=True,
+    )
+    failing = sorted(
+        (m for m in results if m.error),
+        key=lambda m: (m.channel, m.posted_at or ""),
     )
 
-    # Per-project summary (compact)
+    lines: list[str] = [f"*Marketing Pipeline — {today}*"]
+    tail = f" · {len(failing)} failing" if failing else ""
+    lines.append(
+        f"{total_engagement} eng · {total_views} views · "
+        f"{len(results)} posts · {len(by_project)} projects{tail}"
+    )
+
+    # --- 1. What got engagement (per-post, with links)
+    if engaged:
+        lines.append("")
+        lines.append(f"*What got engagement* ({len(engaged)} of {len(results)})")
+        for m in engaged:
+            lines.append(_engaged_line(m))
+
+    # --- 1b. Can't fetch metrics (failed posts — surface, don't hide)
+    if failing:
+        lines.append("")
+        lines.append(f"*Can't fetch metrics* ({len(failing)} of {len(results)})")
+        for m in failing:
+            lines.append(_failing_line(m))
+
+    # --- 2. By project (engagement-sorted rollup)
     lines.append("")
-    for proj, metrics in sorted(by_project.items()):
-        proj_eng = sum(m.engagement for m in metrics)
-        proj_views = sum(m.views for m in metrics)
-        channels = ", ".join(sorted({m.channel for m in metrics}))
+    lines.append("*By project*")
+    proj_sorted = sorted(
+        by_project.items(),
+        key=lambda kv: (
+            -sum(m.engagement for m in kv[1]),
+            -sum(m.views for m in kv[1]),
+            kv[0],
+        ),
+    )
+    for proj, metrics in proj_sorted:
+        p_eng = sum(m.engagement for m in metrics)
+        p_views = sum(m.views for m in metrics)
         parts = []
-        if proj_eng:
-            parts.append(f"{proj_eng} eng")
-        if proj_views:
-            parts.append(f"{proj_views} views")
-        stats = " | ".join(parts) if parts else "no engagement yet"
-        lines.append(f"*{proj}* ({channels}) — {stats}")
+        if p_eng:
+            parts.append(f"{p_eng} eng")
+        if p_views:
+            parts.append(f"{p_views} views")
+        summary = " · ".join(parts) if parts else "no engagement yet"
+        lines.append(f"• *{proj}* — {summary}")
 
-    # Top performer (only if there's actual engagement)
-    top = max(results, key=lambda m: m.engagement)
-    if top.engagement > 0:
-        lines.append("")
-        lines.append(f"Top: <{top.url}|{top.project}/{top.channel}> ({top.engagement} eng)")
-
-    # What was posted today
+    # --- 3. Posted today (one line per project, channel links inline)
     if today_posts:
-        lines.append("")
-        lines.append(f"_Posted today: {len(today_posts)} new_")
+        today_by_project: dict[str, list[PostMetrics]] = {}
         for m in today_posts:
-            lines.append(f"  <{m.url}|{m.project} → {m.channel}>")
+            today_by_project.setdefault(m.project, []).append(m)
+
+        lines.append("")
+        lines.append(
+            f"*Posted today* ({len(today_posts)} posts · {len(today_by_project)} projects)"
+        )
+        for proj in sorted(today_by_project.keys()):
+            channel_posts = sorted(today_by_project[proj], key=lambda m: m.channel)
+            links = " · ".join(f"<{m.url}|{m.channel}>" for m in channel_posts)
+            lines.append(f"• {proj} → {links}")
 
     return {"text": "\n".join(lines)}
+
+
+def _engaged_line(m: PostMetrics) -> str:
+    """One per-post line in the 'What got engagement' section.
+
+    Format: `• project → channel · N eng (breakdown) [· Nv] · <url|open>`
+
+    - Breakdown uses L/R/C for likes/reposts/replies, only non-zero components.
+    - Views suffix only if views > 0 (most platforms don't report views publicly).
+    - Link text is 'open' rather than the long URL for scannability.
+    """
+    counts: list[str] = []
+    if m.likes:
+        counts.append(f"{m.likes}L")
+    if m.reposts:
+        counts.append(f"{m.reposts}R")
+    if m.replies:
+        counts.append(f"{m.replies}C")
+    breakdown = " ".join(counts)
+
+    views_suffix = f" · {m.views}v" if m.views else ""
+    return (
+        f"• *{m.project}* → {m.channel} · "
+        f"{m.engagement} eng ({breakdown}){views_suffix} · "
+        f"<{m.url}|open>"
+    )
+
+
+def _failing_line(m: PostMetrics) -> str:
+    """One per-post line in the 'Can't fetch metrics' section.
+
+    Classifies the error into a short tag so the cause is scannable:
+      - post-not-found → the platform doesn't recognize the URL (likely removed)
+      - no-fetcher     → the pipeline doesn't support metrics for this channel
+      - other          → first part of the raw error string
+    """
+    err = (m.error or "").strip()
+    low = err.lower()
+    if "not found" in low:
+        tag = "post-not-found"
+    elif "no metrics fetcher" in low:
+        tag = "no-fetcher"
+    else:
+        tag = err[:40]
+
+    posted = f" · posted {m.posted_at[5:]}" if m.posted_at else ""
+    return (
+        f"• {m.channel} · *{m.project}* · "
+        f"`{tag}`{posted} · "
+        f"<{m.url}|open>"
+    )
 
 
 def send_slack(payload: dict, webhook_url: str) -> bool:
