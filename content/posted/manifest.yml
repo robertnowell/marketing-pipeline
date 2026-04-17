@@ -305,3 +305,23 @@
   angle: problem-specific
   source_id: ''
   posted_at: '2026-04-17'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjoy3a67re2y
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-04-17'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-one-translation-isnt-enough-building-konid-2cg7
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-04-17'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-ways-to-say-i-missed-you-and-why-the-choice-matters
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-04-17'
