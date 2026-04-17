@@ -365,3 +365,23 @@
   angle: four-variations
   source_id: ''
   posted_at: '2026-04-17'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjplgpbadm2t
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-04-17'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/skill-tree-finding-the-claude-code-habits-you-never-touch-3bm5
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-04-17'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-behavior-you-never-touch-is-the-one-worth-tracking
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-04-17'
