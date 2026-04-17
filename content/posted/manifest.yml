@@ -325,3 +325,23 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-04-17'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjp6ahpicg2g
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-04-17'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/inline-context-without-losing-the-paragraph-you-were-reading-3fh
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-04-17'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-rabbit-hole-you-followed-didnt-have-to-cost-you-the-article
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-04-17'
