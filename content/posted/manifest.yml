@@ -285,3 +285,23 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-04-16'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjoqqpviol2t
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-04-17'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-oss-graveyard-is-full-of-tools-that-only-posted-once-543l
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-04-17'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/distribution-dies-when-posting-feels-like-a-second-job
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-04-17'
