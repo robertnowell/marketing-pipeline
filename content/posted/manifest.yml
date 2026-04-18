@@ -425,3 +425,23 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-04-18'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjrnxgdi5u2e
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-04-18'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-built-a-rabbit-hole-counter-for-my-reading-habit-54a0
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-04-18'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/reading-trails-tracking-how-deep-a-single-highlight-takes-you
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-04-18'
