@@ -405,3 +405,23 @@
   angle: before-after
   source_id: ''
   posted_at: '2026-04-18'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjrhl5nwf52o
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-04-18'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/audio-pronunciation-made-me-remember-japanese-words-id-read-a-hundred-times-1c55
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-04-18'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-ways-to-say-i-missed-you-and-why-only-one-sounds-right
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-04-18'
