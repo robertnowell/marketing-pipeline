@@ -385,3 +385,23 @@
   angle: what-you-avoid
   source_id: ''
   posted_at: '2026-04-17'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjraftllw42b
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-04-18'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/building-email-campaigns-in-klaviyo-without-knowing-if-they-work-2bo8
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-04-18'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/what-400-high-scoring-emails-have-in-common
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-04-18'
