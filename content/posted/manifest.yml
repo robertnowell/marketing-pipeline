@@ -445,3 +445,23 @@
   angle: philosophy-counter
   source_id: ''
   posted_at: '2026-04-18'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjrudlet5625
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-04-18'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/apca-per-role-gates-the-contrast-math-behind-a-prose-first-terminal-theme-50ca
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-04-18'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/why-prose-heavy-terminal-tools-expose-the-limits-of-syntax-tuned-themes
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-04-18'
