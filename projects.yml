@@ -282,6 +282,7 @@ marketing-pipeline:
         can be published — specific banned tokens, structural patterns like 
         rhetorical questions, and per-channel character limits are all enforced 
         in code, not by prompting Claude to 'sound natural'
+      last_used: '2026-04-19'
     - id: comparison
       summary: Manually cross-posting means you write for each platform, 
         remember character limits, track which angle you used last, and do it 

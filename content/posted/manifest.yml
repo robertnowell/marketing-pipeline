@@ -485,3 +485,16 @@
   angle: archetype-card
   source_id: ''
   posted_at: '2026-04-18'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjtqt3pufw2j
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-04-19'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/marketing-pipeline-configured-once-posts-without-you
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-04-19'
