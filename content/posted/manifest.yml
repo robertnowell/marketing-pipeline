@@ -498,3 +498,23 @@
   angle: how-it-works
   source_id: ''
   posted_at: '2026-04-19'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjtxxzz3mk2h
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-04-19'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/konid-three-translations-per-phrase-with-register-across-four-mcp-clients-3749
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-04-19'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/one-translation-isnt-enough-when-register-is-the-whole-point
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-04-19'
