@@ -518,3 +518,23 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-04-19'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mju6g3sy4z24
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-04-19'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/shadow-dom-vs-iframe-the-tooltip-rendering-tradeoff-in-rabbitholes-26h4
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-04-19'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/rabbitholes-inline-follow-up-questions-on-any-page
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-04-19'
