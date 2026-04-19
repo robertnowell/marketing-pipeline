@@ -155,7 +155,7 @@ klein-blue:
     - {id: apca-gates, summary: "Design note: APCA per-role gates and why WCAG ratios
         lie on dark ground (long-form)", last_used: '2026-04-18'}
     - {id: ikb-split, summary: "Design note: the pure-IKB-is-invisible-as-text problem
-        and the two-slot fix (long-form)", last_used: null}
+        and the two-slot fix (long-form)", last_used: '2026-04-19'}
   channels: [bluesky, mastodon, devto, hashnode]
   launch: {}
 
