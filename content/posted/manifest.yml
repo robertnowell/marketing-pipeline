@@ -658,3 +658,17 @@
   angle: prose-not-code
   source_id: ''
   posted_at: '2026-04-20'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-built-a-tool-to-find-out-if-i-was-actually-getting-better-at-claude-code-1l4g
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-04-20'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/seven-archetypes-11-behaviors-one-habit-i-never-once-used
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-04-20'
