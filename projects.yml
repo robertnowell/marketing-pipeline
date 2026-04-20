@@ -97,7 +97,7 @@ rabbitholes:
     - {id: shadow-dom, summary: "Design note: why shadow DOM beat iframe overlay for
         on-page tooltips (long-form)", last_used: '2026-04-19'}
     - {id: no-telemetry, summary: "Design note: privacy-native by construction — direct
-        browser-to-API, no intermediary server (long-form)", last_used: null}
+        browser-to-API, no intermediary server (long-form)", last_used: '2026-04-20'}
   channels: [bluesky, mastodon, devto, hashnode]
   launch: {}
 

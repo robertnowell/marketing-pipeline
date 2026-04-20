@@ -618,3 +618,23 @@
   angle: girlfriend-language
   source_id: ''
   posted_at: '2026-04-20'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjwquua4p22h
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-04-20'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/no-server-sees-your-reading-habits-that-was-a-design-constraint-not-a-feature-2d4m
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-04-20'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/inline-context-for-every-concept-you-half-know-while-reading
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-04-20'
