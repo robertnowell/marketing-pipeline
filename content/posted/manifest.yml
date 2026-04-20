@@ -638,3 +638,23 @@
   angle: no-telemetry
   source_id: ''
   posted_at: '2026-04-20'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjwwqvabuu2j
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-04-20'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-your-terminal-is-80-prose-syntax-contrast-is-the-wrong-target-1h3m
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-04-20'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/reading-terminal-output-for-hours-teaches-you-what-contrast-is-actually-for
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-04-20'
