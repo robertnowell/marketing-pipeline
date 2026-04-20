@@ -325,6 +325,7 @@ kopi:
     - id: design-critique
       summary: Focus on the automated scoring — what makes a 93/100 email 
         different from a 70
+      last_used: '2026-04-20'
     - id: time-savings
       summary: Hours spent building emails manually vs minutes with Kopi
     - id: brand-consistency

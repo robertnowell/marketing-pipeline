@@ -578,3 +578,23 @@
   angle: cowork-home
   source_id: ''
   posted_at: '2026-04-19'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjwdlqmbc42w
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-04-20'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-14-criteria-kopi-checks-before-an-email-ships-3l37
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-04-20'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/what-separates-a-93100-email-from-a-70100-in-kopis-scorer
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-04-20'
