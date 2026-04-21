@@ -711,3 +711,23 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-04-21'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjzaz2bkhy2p
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-04-21'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/rabbitholes-inline-wikipedia-for-any-text-you-highlight-dge
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-04-21'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/when-you-highlight-a-word-and-the-answer-appears-next-to-your-cursor
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-04-21'
