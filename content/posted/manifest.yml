@@ -672,3 +672,23 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-04-20'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjytcaqxy32a
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-04-21'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/cross-posting-to-four-platforms-manually-means-tracking-it-all-in-your-head-7cd
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-04-21'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-angle-tracking-problem-in-oss-distribution
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-04-21'

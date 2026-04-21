@@ -288,6 +288,7 @@ marketing-pipeline:
         again next week. This pipeline stores angles in projects.yml, tracks 
         recency, and handles the per-channel formatting constraints 
         automatically
+      last_used: '2026-04-21'
     - id: use-case
       summary: You've published an MCP server and want it indexed where 
         developers actually look — the launch command hits the official MCP 
