@@ -692,3 +692,22 @@
   angle: comparison
   source_id: ''
   posted_at: '2026-04-21'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjz27hudw42b
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-04-21'
+- project: konid
+  channel: devto
+  url: https://dev.to/palo_alto_ai/when-translation-tools-teach-you-nothing-15n7
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-04-21'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-translations-one-lesson-how-konid-changed-my-daily-email-habit
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-04-21'
