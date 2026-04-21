@@ -731,3 +731,23 @@
   angle: wikipedia-everywhere
   source_id: ''
   posted_at: '2026-04-21'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mjzgvnptkh2a
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-04-21'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/klein-blue-a-terminal-theme-tuned-for-prose-not-syntax-2phm
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-04-21'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/why-ikb-fails-as-terminal-text-and-what-i-did-about-it
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-04-21'
