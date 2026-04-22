@@ -771,3 +771,23 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-04-21'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mk3dodonyz2u
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-04-22'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/building-marketing-emails-by-hand-is-a-design-qa-problem-2eo8
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-04-22'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/from-brief-to-scored-html-email-in-under-5-minutes
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-04-22'
