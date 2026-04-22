@@ -204,7 +204,7 @@ skill-tree:
         against the population baseline", last_used: '2026-04-21'}
     - {id: what-you-avoid, summary: "Why the growth quest picks a behavior you AVOID,
         not something you already do well — the anti-local-optimum rule", 
-        last_used: '2026-04-17'}
+        last_used: '2026-04-22'}
     - {id: archetype-card, summary: "The seven tarot-card archetypes (Illuminator,
         Navigator, Alchemist, four others) with curated museum art and a skill radar",
       last_used: '2026-04-18'}

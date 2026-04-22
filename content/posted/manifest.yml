@@ -851,3 +851,23 @@
   angle: reading-for-hours
   source_id: ''
   posted_at: '2026-04-22'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mk46ntqihe2c
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-04-22'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-behavior-i-never-touch-is-probably-the-one-i-need-most-15d1
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-04-22'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-anti-local-optimum-rule-in-skill-trees-growth-quest
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-04-22'
