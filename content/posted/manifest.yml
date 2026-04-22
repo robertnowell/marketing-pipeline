@@ -811,3 +811,23 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-04-22'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mk3rjpmmdb2r
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-04-22'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/rabbitholes-inline-wikipedia-for-any-word-on-any-page-2j93
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-04-22'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-words-you-skip-past-are-the-ones-that-would-have-changed-the-article
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-04-22'
