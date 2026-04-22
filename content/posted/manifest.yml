@@ -831,3 +831,23 @@
   angle: half-known-concepts
   source_id: ''
   posted_at: '2026-04-22'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mk3xei345y2n
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-04-22'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-i-stopped-using-syntax-highlighting-themes-for-claude-code-2op9
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-04-22'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/ikb-is-invisible-at-lc-12-so-i-split-it-across-two-ansi-slots
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-04-22'
