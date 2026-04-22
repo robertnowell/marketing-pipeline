@@ -791,3 +791,23 @@
   angle: time-savings
   source_id: ''
   posted_at: '2026-04-22'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mk3kqwij7n2b
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-04-22'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-one-translation-isnt-enough-building-konid-for-real-language-3pn5
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-04-22'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/one-phrase-three-relationships-what-translation-tools-skip
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-04-22'
