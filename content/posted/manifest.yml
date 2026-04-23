@@ -871,3 +871,23 @@
   angle: what-you-avoid
   source_id: ''
   posted_at: '2026-04-22'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mk5udhkg622r
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-04-23'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-distribution-gap-that-kills-good-mcp-servers-pol
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-04-23'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/one-command-four-directories-getting-an-mcp-server-actually-found
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-04-23'
