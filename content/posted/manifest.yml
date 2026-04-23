@@ -911,3 +911,22 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-04-23'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mk6e6w273i24
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-04-23'
+- project: rabbitholes
+  channel: devto
+  url: https://dev.to/palo_alto_ai/when-a-word-costs-you-the-article-3fcj
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-04-23'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-rabbit-hole-counter-i-didnt-know-i-needed
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-04-23'
