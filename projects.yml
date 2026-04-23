@@ -207,7 +207,7 @@ skill-tree:
         last_used: '2026-04-22'}
     - {id: archetype-card, summary: "The seven tarot-card archetypes (Illuminator,
         Navigator, Alchemist, four others) with curated museum art and a skill radar",
-      last_used: '2026-04-18'}
+      last_used: '2026-04-23'}
     - {id: cowork-home, summary: "Design note: Cowork's ephemeral $HOME forced the
         dual-state-path design (long-form)", last_used: '2026-04-19'}
   channels: [bluesky, mastodon, devto, hashnode]
