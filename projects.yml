@@ -151,7 +151,7 @@ klein-blue:
         last_used: '2026-04-22'}
     - {id: four-variations, summary: "Four themes instead of one — each answers the
         'how should Claude's brand color live in my terminal' question differently",
-      last_used: '2026-04-17'}
+      last_used: '2026-04-23'}
     - {id: apca-gates, summary: "Design note: APCA per-role gates and why WCAG ratios
         lie on dark ground (long-form)", last_used: '2026-04-18'}
     - {id: ikb-split, summary: "Design note: the pure-IKB-is-invisible-as-text problem

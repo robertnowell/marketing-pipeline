@@ -930,3 +930,16 @@
   angle: curiosity-without-losing-place
   source_id: ''
   posted_at: '2026-04-23'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mk6iz446hv2r
+  angle: four-variations
+  source_id: ''
+  posted_at: '2026-04-23'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/four-ways-to-answer-one-question-about-your-claude-code-terminal
+  angle: four-variations
+  source_id: ''
+  posted_at: '2026-04-23'
