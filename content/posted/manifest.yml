@@ -1003,3 +1003,23 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-04-24'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkas7tzvon2p
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-04-24'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/reading-rabbit-holes-tracking-how-deep-you-go-on-any-article-3bg3
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-04-24'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-philosophy-game-but-for-your-own-reading-trail
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-04-24'
