@@ -153,7 +153,7 @@ klein-blue:
         'how should Claude's brand color live in my terminal' question differently",
       last_used: '2026-04-23'}
     - {id: apca-gates, summary: "Design note: APCA per-role gates and why WCAG ratios
-        lie on dark ground (long-form)", last_used: '2026-04-18'}
+        lie on dark ground (long-form)", last_used: '2026-04-24'}
     - {id: ikb-split, summary: "Design note: the pure-IKB-is-invisible-as-text problem
         and the two-slot fix (long-form)", last_used: '2026-04-19'}
   channels: [bluesky, mastodon, devto, hashnode]

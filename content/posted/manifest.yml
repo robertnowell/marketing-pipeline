@@ -1023,3 +1023,16 @@
   angle: philosophy-counter
   source_id: ''
   posted_at: '2026-04-24'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkaxyypym52a
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-04-24'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/why-wcag-lied-about-my-blue-and-what-i-used-instead
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-04-24'
