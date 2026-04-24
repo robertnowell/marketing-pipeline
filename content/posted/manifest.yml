@@ -983,3 +983,23 @@
   angle: brand-consistency
   source_id: ''
   posted_at: '2026-04-24'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkaljrkb6u2c
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-04-24'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/one-mcp-server-four-clients-zero-translation-dead-ends-3f5i
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-04-24'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-register-gap-why-one-translation-is-never-enough
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-04-24'
