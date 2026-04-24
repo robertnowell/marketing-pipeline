@@ -963,3 +963,23 @@
   angle: archetype-card
   source_id: ''
   posted_at: '2026-04-23'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkaeopiggx2p
+  angle: brand-consistency
+  source_id: ''
+  posted_at: '2026-04-24'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/brand-consistency-in-email-campaigns-without-a-style-guide-meeting-412a
+  angle: brand-consistency
+  source_id: ''
+  posted_at: '2026-04-24'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-design-score-that-runs-before-your-campaign-ships
+  angle: brand-consistency
+  source_id: ''
+  posted_at: '2026-04-24'
