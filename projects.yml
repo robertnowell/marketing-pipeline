@@ -209,7 +209,7 @@ skill-tree:
         Navigator, Alchemist, four others) with curated museum art and a skill radar",
       last_used: '2026-04-23'}
     - {id: cowork-home, summary: "Design note: Cowork's ephemeral $HOME forced the
-        dual-state-path design (long-form)", last_used: '2026-04-19'}
+        dual-state-path design (long-form)", last_used: '2026-04-24'}
   channels: [bluesky, mastodon, devto, hashnode]
   launch: {}
 
