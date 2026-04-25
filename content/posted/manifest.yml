@@ -1136,3 +1136,23 @@
   angle: ikb-split
   source_id: ''
   posted_at: '2026-04-25'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkdorb2vbd2c
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-04-25'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-getting-faster-isnt-the-same-as-getting-better-43ih
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-04-25'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/seven-archetypes-for-how-you-actually-use-claude-not-how-you-think-you-do
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-04-25'
