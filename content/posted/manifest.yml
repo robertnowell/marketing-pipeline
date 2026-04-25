@@ -1096,3 +1096,23 @@
   angle: girlfriend-language
   source_id: ''
   posted_at: '2026-04-25'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkdbbzoeey2w
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-04-25'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-rabbitholes-uses-shadow-dom-instead-of-an-iframe-overlay-1n66
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-04-25'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/reading-anything-deeply-requires-a-second-tab-you-never-want-to-open
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-04-25'
