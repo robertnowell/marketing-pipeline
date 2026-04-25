@@ -1056,3 +1056,23 @@
   angle: cowork-home
   source_id: ''
   posted_at: '2026-04-24'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkctu5cc4b2b
+  angle: launch
+  source_id: ''
+  posted_at: '2026-04-25'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-mcp-servers-die-in-obscurity-and-a-fix-that-runs-itself-28ip
+  angle: launch
+  source_id: ''
+  posted_at: '2026-04-25'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/distribution-rot-why-oss-tools-disappear-after-the-first-post
+  angle: launch
+  source_id: ''
+  posted_at: '2026-04-25'
