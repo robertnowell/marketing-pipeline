@@ -1116,3 +1116,23 @@
   angle: shadow-dom
   source_id: ''
   posted_at: '2026-04-25'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkdhqqnlog2a
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-04-25'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-pure-klein-blue-disappears-as-text-and-the-two-slot-fix-225p
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-04-25'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/tuning-a-terminal-theme-for-prose-not-syntax
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-04-25'
