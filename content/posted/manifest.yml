@@ -1216,3 +1216,23 @@
   angle: no-telemetry
   source_id: ''
   posted_at: '2026-04-26'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkfyblgkvg2a
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-04-26'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-i-rebuilt-my-terminal-theme-around-prose-contrast-not-syntax-18cm
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-04-26'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/why-prose-legibility-is-a-different-problem-than-syntax-contrast
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-04-26'
