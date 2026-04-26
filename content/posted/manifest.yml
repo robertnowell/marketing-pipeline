@@ -1236,3 +1236,23 @@
   angle: prose-not-code
   source_id: ''
   posted_at: '2026-04-26'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkg7bzhi6l2r
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-04-26'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-9830-claude-conversations-reveal-about-your-own-habits-b0d
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-04-26'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/seven-archetypes-11-behaviors-and-the-habits-you-never-noticed
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-04-26'
