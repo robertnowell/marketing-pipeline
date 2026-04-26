@@ -1176,3 +1176,23 @@
   angle: showcase
   source_id: ''
   posted_at: '2026-04-26'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkflhfa7zb2u
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-04-26'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/every-work-email-you-translate-could-teach-you-something-most-dont-6cd
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-04-26'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-translations-per-query-not-one-is-how-register-actually-sticks
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-04-26'
