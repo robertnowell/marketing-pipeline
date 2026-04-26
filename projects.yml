@@ -320,7 +320,7 @@ kopi:
     - id: showcase
       summary: Highlight a top-scoring email design with its screenshot and 
         critique score
-      last_used: '2026-04-16'
+      last_used: '2026-04-26'
     - id: before-after
       summary: Show what a brief looks like vs what Kopi generates from it
       last_used: '2026-04-18'

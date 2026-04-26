@@ -1156,3 +1156,23 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-04-25'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkfeg5stnv24
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-04-26'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-a-91100-email-critique-actually-looks-like-172g
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-04-26'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/when-your-email-critique-catches-what-your-gut-missed
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-04-26'
