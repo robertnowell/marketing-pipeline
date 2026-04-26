@@ -1196,3 +1196,23 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-04-26'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkfrrrpkew2b
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-04-26'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/rabbitholes-sends-your-highlights-straight-to-anthropic-no-server-in-between-17l8
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-04-26'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-rabbit-hole-counter-how-i-track-how-lost-i-get-while-reading
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-04-26'
