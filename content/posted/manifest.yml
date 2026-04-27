@@ -1336,3 +1336,23 @@
   angle: ikb-mystique
   source_id: ''
   posted_at: '2026-04-27'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkira2sigu2c
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-04-27'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/skill-tree-finding-the-claude-behaviors-you-systematically-avoid-nj0
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-04-27'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-anti-local-optimum-rule-in-skill-trees-growth-quest-1
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-04-27'
