@@ -275,7 +275,7 @@ marketing-pipeline:
       summary: You launch, get a small spike, then posting stops because it's 
         repetitive manual work. This pipeline's daily cron keeps rotating 
         content across channels without you doing anything after initial setup
-      last_used: '2026-04-17'
+      last_used: '2026-04-27'
     - id: how-it-works
       summary: Every generated draft passes through a regex blacklist before it 
         can be published — specific banned tokens, structural patterns like 

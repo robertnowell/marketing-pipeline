@@ -1256,3 +1256,23 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-04-26'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkhxt5g6il2p
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-04-27'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-launch-spike-fades-because-nobody-keeps-showing-up-1hmf
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-04-27'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/why-oss-tools-go-quiet-after-the-first-week
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-04-27'
