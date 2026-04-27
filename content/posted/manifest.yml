@@ -1276,3 +1276,23 @@
   angle: problem-specific
   source_id: ''
   posted_at: '2026-04-27'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mki5w2m67m2u
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-04-27'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-one-translation-is-never-enough-when-the-relationship-is-the-message-2n21
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-04-27'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-ways-to-say-i-love-you-and-why-the-wrong-one-costs-you
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-04-27'
