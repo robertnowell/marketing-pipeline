@@ -1296,3 +1296,23 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-04-27'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkif6l3mas24
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-04-27'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-wanted-wikipedia-inline-on-every-page-i-read-532d
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-04-27'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/reading-without-gaps-inline-context-on-any-word-any-page
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-04-27'
