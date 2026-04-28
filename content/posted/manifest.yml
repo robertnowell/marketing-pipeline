@@ -1396,3 +1396,23 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-04-28'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkkxn4etkg2c
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-04-28'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/rabbitholes-inline-wikipedia-for-any-word-on-any-page-53bb
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-04-28'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/reading-rabbit-holes-how-one-highlight-turns-into-a-trail
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-04-28'
