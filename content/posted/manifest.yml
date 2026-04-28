@@ -1376,3 +1376,23 @@
   angle: before-after
   source_id: ''
   posted_at: '2026-04-28'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkkozhqwgp2h
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-04-28'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-i-missed-you-today-sounds-wrong-even-when-its-correct-2dh0
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-04-28'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-gap-between-reading-a-transliteration-and-saying-it-right
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-04-28'

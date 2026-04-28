@@ -49,7 +49,7 @@ konid:
     - {id: register-matters, summary: "The same phrase can be casual, neutral, or
         tender — the choice signals the relationship (long-form)", last_used: '2026-04-27'}
     - {id: audio-fluency, summary: "Why hearing the tone contour and vowel length
-        changes what you actually remember", last_used: '2026-04-23'}
+        changes what you actually remember", last_used: '2026-04-28'}
     - {id: one-server-three-clients, summary: "Same MCP brain across Claude Code,
         Cowork, and ChatGPT — write once, four clients (long-form)", last_used: '2026-04-24'}
   channels: [bluesky, mastodon, devto, hashnode]
