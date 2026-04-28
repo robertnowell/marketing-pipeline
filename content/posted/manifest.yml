@@ -1416,3 +1416,23 @@
   angle: half-known-concepts
   source_id: ''
   posted_at: '2026-04-28'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mklcm6s3wr2d
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-04-28'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-assume-youre-scanning-code-most-reading-isnt-512f
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-04-28'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/four-hours-of-reading-output-that-was-tuned-for-code-scanning
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-04-28'

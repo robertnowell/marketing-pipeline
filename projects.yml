@@ -148,7 +148,7 @@ klein-blue:
         — depth, void, one specific pigment registered in 1960", last_used: '2026-04-27'}
     - {id: reading-for-hours, summary: "Designing a terminal theme for comfortable
         body-size prose reading over long sessions, not code scanning", 
-        last_used: '2026-04-22'}
+        last_used: '2026-04-28'}
     - {id: four-variations, summary: "Four themes instead of one — each answers the
         'how should Claude's brand color live in my terminal' question differently",
       last_used: '2026-04-23'}
