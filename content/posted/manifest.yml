@@ -1356,3 +1356,23 @@
   angle: what-you-avoid
   source_id: ''
   posted_at: '2026-04-27'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkkivajq3b2n
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-04-28'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/from-a-3-sentence-brief-to-a-scored-html-email-in-under-5-minutes-260a
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-04-28'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-design-critique-you-skip-is-the-one-that-bites-you
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-04-28'
