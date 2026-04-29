@@ -1489,3 +1489,23 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-04-29'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mknm7xkvrd2d
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-04-29'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/inline-context-for-every-half-known-word-without-switching-tabs-9pi
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-04-29'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-rabbit-hole-you-followed-didnt-have-to-lose-you-your-place
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-04-29'
