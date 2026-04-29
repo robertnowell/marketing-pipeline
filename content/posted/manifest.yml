@@ -1509,3 +1509,23 @@
   angle: curiosity-without-losing-place
   source_id: ''
   posted_at: '2026-04-29'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mknsh7luby2a
+  angle: four-variations
+  source_id: ''
+  posted_at: '2026-04-29'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/four-terminal-themes-for-prose-legibility-built-around-a-single-pigment-13bl
+  angle: four-variations
+  source_id: ''
+  posted_at: '2026-04-29'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/why-pure-ikb-is-invisible-in-terminals-and-what-i-did-about-it
+  angle: four-variations
+  source_id: ''
+  posted_at: '2026-04-29'
