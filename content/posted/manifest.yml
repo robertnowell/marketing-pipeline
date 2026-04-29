@@ -1456,3 +1456,16 @@
   angle: archetype-card
   source_id: ''
   posted_at: '2026-04-29'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkn75nzexm22
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-04-29'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-anti-slop-gate-enforcing-post-quality-in-code-not-prompts
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-04-29'
