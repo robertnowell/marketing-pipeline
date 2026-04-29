@@ -1436,3 +1436,23 @@
   angle: reading-for-hours
   source_id: ''
   posted_at: '2026-04-28'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkmyfqes4j2u
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-04-29'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/skill-tree-which-of-anthropics-11-ai-fluency-behaviors-do-you-actually-use-2hk2
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-04-29'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/skill-tree-a-tarot-card-that-shows-which-claude-behaviors-you-avoid
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-04-29'
