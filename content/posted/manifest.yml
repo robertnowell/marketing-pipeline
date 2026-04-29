@@ -1469,3 +1469,23 @@
   angle: how-it-works
   source_id: ''
   posted_at: '2026-04-29'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mknhf2xyel2n
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-04-29'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/one-mcp-server-four-clients-how-konid-handles-language-context-across-tools-1c76
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-04-29'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-translations-not-one-what-konid-does-that-google-translate-doesnt
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-04-29'
