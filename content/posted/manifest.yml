@@ -1569,3 +1569,23 @@
   angle: girlfriend-language
   source_id: ''
   posted_at: '2026-04-30'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkpxfazwka2a
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-04-30'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/inline-explanations-that-let-you-follow-threads-without-losing-your-place-293e
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-04-30'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/reading-trails-tracking-how-deep-a-single-word-takes-you
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-04-30'

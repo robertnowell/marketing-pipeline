@@ -93,7 +93,7 @@ rabbitholes:
     - {id: curiosity-without-losing-place, summary: "Following a tangent without killing
         the thread you were actually reading", last_used: '2026-04-29'}
     - {id: philosophy-counter, summary: "The rabbit-hole counter and the Wikipedia-philosophy
-        game, for your own reading trails", last_used: '2026-04-24'}
+        game, for your own reading trails", last_used: '2026-04-30'}
     - {id: shadow-dom, summary: "Design note: why shadow DOM beat iframe overlay for
         on-page tooltips (long-form)", last_used: '2026-04-25'}
     - {id: no-telemetry, summary: "Design note: privacy-native by construction — direct
