@@ -1529,3 +1529,23 @@
   angle: four-variations
   source_id: ''
   posted_at: '2026-04-29'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkpit2rbfd2e
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-04-30'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-a-93100-email-has-that-a-70100-doesnt-1gk5
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-04-30'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/blank-canvas-email-tools-dont-tell-you-whats-broken-until-its-sent
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-04-30'
