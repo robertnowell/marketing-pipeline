@@ -1589,3 +1589,23 @@
   angle: philosophy-counter
   source_id: ''
   posted_at: '2026-04-30'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkq46vpfuy2e
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-04-30'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-wcag-contrast-ratios-mislead-on-dark-terminals-3gan
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-04-30'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/four-ansi-slots-one-pigment-and-why-body-text-needs-its-own-lc-gate
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-04-30'
