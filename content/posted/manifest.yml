@@ -1549,3 +1549,23 @@
   angle: design-critique
   source_id: ''
   posted_at: '2026-04-30'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkppihdyos2n
+  angle: girlfriend-language
+  source_id: ''
+  posted_at: '2026-04-30'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-one-translation-isnt-enough-building-konid-1om8
+  angle: girlfriend-language
+  source_id: ''
+  posted_at: '2026-04-30'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-translations-not-one-what-i-built-to-stop-sounding-like-a-phrasebook
+  angle: girlfriend-language
+  source_id: ''
+  posted_at: '2026-04-30'
