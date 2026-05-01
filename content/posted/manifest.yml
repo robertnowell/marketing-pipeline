@@ -1629,3 +1629,23 @@
   angle: cowork-home
   source_id: ''
   posted_at: '2026-04-30'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkry3y5ujl2a
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-05-01'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/cross-posting-your-oss-tool-by-hand-doesnt-scale-past-week-two-59m9
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-05-01'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-angle-tracking-problem-in-oss-distribution-1
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-05-01'
