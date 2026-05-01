@@ -198,7 +198,7 @@ skill-tree:
   angles:
     - {id: am-i-getting-better, summary: "Using Claude daily but having no idea whether
         you're improving or just plateauing in a few habits that feel efficient",
-      last_used: '2026-04-25'}
+      last_used: '2026-05-01'}
     - {id: fluency-on-my-conversations, summary: "Running Anthropic's 11-behavior
         classification against your own session history to see what YOURS look like
         against the population baseline", last_used: '2026-04-26'}
