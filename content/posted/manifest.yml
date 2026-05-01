@@ -1669,3 +1669,23 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-05-01'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mksepzum2z2r
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-05-01'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/building-inline-tooltips-that-match-every-sites-typography-4p8
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-05-01'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/why-rabbitholes-uses-a-counter-instead-of-a-back-button
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-05-01'
