@@ -1689,3 +1689,23 @@
   angle: shadow-dom
   source_id: ''
   posted_at: '2026-05-01'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkslbyxyig2b
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-05-01'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-ikb-fails-as-terminal-text-and-the-two-slot-fix-4096
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-05-01'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/claude-code-reads-like-a-document-terminal-themes-dont-know-that
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-05-01'
