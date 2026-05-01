@@ -1649,3 +1649,23 @@
   angle: comparison
   source_id: ''
   posted_at: '2026-05-01'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mks6ldshzz2r
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-01'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/every-work-email-in-a-foreign-language-was-a-wasted-rep-5k8
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-01'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/i-missed-you-today-in-her-language-not-a-phrasebooks-version
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-01'
