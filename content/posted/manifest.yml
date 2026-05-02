@@ -1749,3 +1749,23 @@
   angle: time-savings
   source_id: ''
   posted_at: '2026-05-02'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkuolm4onc2e
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-05-02'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-one-translation-isnt-enough-building-konid-for-real-language-learning-56lk
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-05-02'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-ways-to-say-i-love-you-and-why-the-choice-matters
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-05-02'
