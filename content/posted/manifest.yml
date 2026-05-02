@@ -1809,3 +1809,23 @@
   angle: prose-not-code
   source_id: ''
   posted_at: '2026-05-02'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkvcfd7m572w
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-05-02'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/mapping-my-claude-code-habits-against-9830-conversation-baseline-2196
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-05-02'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/which-of-11-collaboration-behaviors-do-you-never-use-with-claude
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-05-02'
