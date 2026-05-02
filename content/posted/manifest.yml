@@ -1729,3 +1729,23 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-05-01'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkuhiq46zq2b
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-05-02'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/building-email-campaigns-by-hand-is-a-design-qa-problem-14jh
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-05-02'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-blank-canvas-problem-in-email-marketing
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-05-02'
