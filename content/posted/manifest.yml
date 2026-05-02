@@ -1789,3 +1789,23 @@
   angle: no-telemetry
   source_id: ''
   posted_at: '2026-05-02'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkv3c5iz3q2r
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-05-02'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-for-code-syntax-useless-when-your-screen-is-prose-59a4
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-05-02'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/apca-contrast-gates-for-prose-not-syntax-how-klein-blue-is-tuned
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-05-02'
