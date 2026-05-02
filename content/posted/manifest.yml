@@ -1769,3 +1769,23 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-05-02'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkuusoyl7o2p
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-05-02'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-rabbitholes-sends-your-api-key-directly-to-anthropic-5h31
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-05-02'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-rabbit-hole-counter-how-rabbitholes-tracks-your-inline-reading-depth
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-05-02'
