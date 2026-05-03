@@ -1849,3 +1849,23 @@
   angle: use-case
   source_id: ''
   posted_at: '2026-05-03'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkx6zzkgw22d
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-05-03'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-one-translation-isnt-enough-when-tone-is-the-whole-message-2ho1
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-05-03'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/audio-pronunciation-changed-how-much-of-my-translation-i-actually-kept
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-05-03'
