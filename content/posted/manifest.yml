@@ -1829,3 +1829,23 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-05-02'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkwy4edou72b
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-05-03'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-most-mcp-servers-stay-invisible-after-launch-15fh
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-05-03'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/one-command-gets-your-mcp-server-into-three-indexes-at-once
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-05-03'
