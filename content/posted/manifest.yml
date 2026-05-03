@@ -1869,3 +1869,23 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-05-03'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkxfcvhdpj2h
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-05-03'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/rabbitholes-inline-explanations-without-leaving-the-page-2bpl
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-05-03'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-hop-counter-how-rabbitholes-tracks-how-deep-youve-gone
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-05-03'
