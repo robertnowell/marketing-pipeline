@@ -1889,3 +1889,23 @@
   angle: wikipedia-everywhere
   source_id: ''
   posted_at: '2026-05-03'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkxlswc35j2u
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-05-03'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-ikb-fails-as-readable-text-and-what-i-did-about-it-ic7
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-05-03'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/klein-blue-as-prose-anchor-building-for-depth-not-syntax
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-05-03'
