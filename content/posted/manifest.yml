@@ -2009,3 +2009,23 @@
   angle: reading-for-hours
   source_id: ''
   posted_at: '2026-05-04'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3ml2f2tiyud2a
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-05-04'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/mapping-11-ai-collaboration-behaviors-across-your-own-claude-sessions-20kb
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-05-04'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/which-of-11-ai-collaboration-behaviors-have-you-never-tried
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-05-04'
