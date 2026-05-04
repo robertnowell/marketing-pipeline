@@ -1989,3 +1989,23 @@
   angle: half-known-concepts
   source_id: ''
   posted_at: '2026-05-04'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3ml26rjbzjc2a
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-05-04'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-optimize-for-syntax-claude-code-isnt-syntax-h69
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-05-04'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/why-i-had-to-split-ikb-across-two-ansi-slots-to-make-it-readable
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-05-04'
