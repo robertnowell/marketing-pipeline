@@ -1949,3 +1949,23 @@
   angle: brand-consistency
   source_id: ''
   posted_at: '2026-05-04'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkzrh2q5mj2a
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-05-04'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/one-mcp-server-four-clients-zero-phrasebook-answers-5f8a
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-05-04'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/when-sorry-for-the-delay-has-five-registers-and-you-need-the-right-one
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-05-04'
