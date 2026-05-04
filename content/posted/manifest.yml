@@ -1929,3 +1929,23 @@
   angle: what-you-avoid
   source_id: ''
   posted_at: '2026-05-03'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mkzlrm4blx2b
+  angle: brand-consistency
+  source_id: ''
+  posted_at: '2026-05-04'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/brand-drift-in-email-campaigns-how-kopis-design-system-fixes-it-1pg5
+  angle: brand-consistency
+  source_id: ''
+  posted_at: '2026-05-04'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/when-six-teammates-touch-one-campaign-brand-consistency-breaks
+  angle: brand-consistency
+  source_id: ''
+  posted_at: '2026-05-04'

@@ -333,7 +333,7 @@ kopi:
       last_used: '2026-05-02'
     - id: brand-consistency
       summary: How the design system ensures every email matches the brand
-      last_used: '2026-04-24'
+      last_used: '2026-05-04'
   content_source:
     type: kopi
     base_url: https://trykopi.ai
