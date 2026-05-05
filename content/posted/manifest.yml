@@ -2069,3 +2069,23 @@
   angle: girlfriend-language
   source_id: ''
   posted_at: '2026-05-05'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3ml4ix4qrnc2u
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-05-05'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/inline-context-without-losing-your-place-in-the-article-4i9i
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-05-05'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/tangents-that-dont-cost-you-the-paragraph-you-were-reading
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-05-05'
