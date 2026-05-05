@@ -2029,3 +2029,23 @@
   angle: archetype-card
   source_id: ''
   posted_at: '2026-05-04'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3ml42j4ttgp2j
+  angle: launch
+  source_id: ''
+  posted_at: '2026-05-05'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-mcp-servers-die-six-days-after-launch-2d9p
+  angle: launch
+  source_id: ''
+  posted_at: '2026-05-05'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/one-command-to-onboard-a-project-then-it-runs-itself
+  angle: launch
+  source_id: ''
+  posted_at: '2026-05-05'
