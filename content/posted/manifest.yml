@@ -2109,3 +2109,23 @@
   angle: four-variations
   source_id: ''
   posted_at: '2026-05-05'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3ml4v24vcdn2w
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-05-05'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-my-claude-code-skill-tree-plugin-has-two-state-paths-1kj1
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-05-05'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/classifying-my-own-claude-sessions-against-anthropics-9830-conversation-study
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-05-05'
