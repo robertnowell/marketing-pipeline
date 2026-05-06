@@ -2202,3 +2202,23 @@
   angle: apca-gates
   source_id: ''
   posted_at: '2026-05-06'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3ml7ghn53l22u
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-05-06'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/eleven-behaviors-anthropic-measured-which-ones-do-you-actually-use-40jj
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-05-06'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-behaviors-anthropic-measured-in-9830-sessions-and-which-ones-i-skip
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-05-06'
