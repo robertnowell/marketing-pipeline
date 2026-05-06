@@ -2182,3 +2182,23 @@
   angle: philosophy-counter
   source_id: ''
   posted_at: '2026-05-06'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3ml77y7bd772w
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-05-06'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-wcag-failed-my-terminal-theme-and-what-i-used-instead-1h8g
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-05-06'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/four-ansi-slots-one-pigment-and-why-prose-needs-different-contrast-rules
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-05-06'
