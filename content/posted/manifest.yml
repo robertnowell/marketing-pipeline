@@ -2169,3 +2169,16 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-05-06'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3ml72wjirrt2n
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-05-06'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/tracking-how-deep-a-wikipedia-spiral-goes-inline-on-any-page
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-05-06'
