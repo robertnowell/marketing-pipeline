@@ -2129,3 +2129,23 @@
   angle: cowork-home
   source_id: ''
   posted_at: '2026-05-05'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3ml6mrqr3o32d
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-05-06'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/designing-email-campaigns-blind-how-a-design-score-changes-the-loop-3k8a
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-05-06'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/what-a-94100-email-score-actually-looks-like
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-05-06'
