@@ -2149,3 +2149,23 @@
   angle: showcase
   source_id: ''
   posted_at: '2026-05-06'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3ml6tnnt37m2n
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-06'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/every-work-email-in-french-was-a-task-now-its-a-lesson-2348
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-06'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-register-gap-literal-translators-dont-show-you
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-06'
