@@ -17,6 +17,10 @@ class PostResult:
     channel: str
     success: bool
     error: str | None = None
+    # Platform's stable ID for this post (Hashnode post id, Pinterest pin id, etc.).
+    # Stored in the manifest so metrics fetchers can query by ID instead of URL,
+    # which protects against slug rewrites on platforms like Hashnode.
+    post_id: str | None = None
 
 
 class Publisher(Protocol):

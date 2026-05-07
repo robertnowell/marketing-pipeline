@@ -109,7 +109,12 @@ class TailwindPublisher:
             else:
                 url = None
 
-            return PostResult(url=url, channel=self.channel, success=True)
+            return PostResult(
+                url=url,
+                channel=self.channel,
+                success=True,
+                post_id=pin_id or None,
+            )
 
         except Exception as e:
             return PostResult(

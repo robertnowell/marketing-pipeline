@@ -107,7 +107,7 @@ rabbitholes:
 # ──────────────────────────────────────────────────────────────────────────
 
 klein-blue:
-  repo: "local: ~/klein-terminal-theme"  # [U] — not pushed to GitHub yet; pipeline should skip directory PRs until a public repo exists
+  repo: https://github.com/robertnowell/klein-void
   kind: terminal-theme
   audience: claude-code-users
   status: live
@@ -141,6 +141,7 @@ klein-blue:
     - "Targets Claude Code specifically: the ansi:redBright slot — which Claude Code
       uses for the claude-sand brand color — is the differentiating moment between
       variations (neutralize for no brand competition vs accept as second hero)."
+    - "MIT licensed; source at github.com/robertnowell/klein-void."
   angles:
     - {id: prose-not-code, summary: "Claude Code is 80% prose — most terminal themes
         are optimizing for the wrong thing", last_used: '2026-05-02'}

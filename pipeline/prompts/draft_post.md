@@ -41,6 +41,7 @@ Apply that standard here.
 - Growth-marketing tokens, anywhere: `excited`, `thrilled`, `introducing`, `game-changer`, `solution`, `future of`, `leverage`, `unlock`, `empower`, `journey`, `🚀`, `✨`, `🔥`
 - Growth-marketing AI-shorthand, anywhere: `AI-powered`, `AI-driven`, `powered by AI`, `next-generation AI`, `AI-first`. (The word "AI" by itself is fine if it's actually load-bearing context; these specific marketing phrasings are not.)
 - URL shorteners — always full `github.com/...` links
+- **Inventing or paraphrasing the project URL.** If you include a link, copy `repo` from the input verbatim. Never construct a URL from `project_name` (project keys and repo slugs often differ).
 - "Check it out", "Link in bio", or equivalent CTA filler
 - **First-line mention of the technology as the value prop** — including AI, LLMs, Rust, WebGPU, blockchain, or any other implementation detail. The first sentence names the pain. Technology shows up later or not at all.
 - Generic opening gambits that work for any topic
@@ -61,7 +62,7 @@ For long-form (Dev.to / Hashnode / IndieHackers): lead with a real scenario wher
 
 ## Yes-ship examples (what good looks like)
 
-> Shipped klein-blue: a terminal theme for Claude Code that pins foreground contrast ≥7:1 on every syntax class I use daily. Built it because the default blue-on-black ate my Python type hints. github.com/robertnowell/klein-blue
+> Shipped klein-blue: a terminal theme for Claude Code that pins foreground contrast ≥7:1 on every syntax class I use daily. Built it because the default blue-on-black ate my Python type hints. github.com/robertnowell/klein-void
 
 > Google Translate told me "estoy caliente" meant "I'm hot" in Spanish. It doesn't. konid returns three options casual-to-formal for anything you want to say, with the register explained and audio pronunciation. Works in Claude Code, Cursor, and Claude Cowork. github.com/robertnowell/konid-language-learning
 
@@ -80,6 +81,7 @@ For long-form (Dev.to / Hashnode / IndieHackers): lead with a real scenario wher
 You will receive:
 
 - `project_name`
+- `repo` (the canonical project URL — use it verbatim; never construct one from `project_name`)
 - `problem` (verbatim from the registry, in the target user's language)
 - `solution_one_liner`
 - `facts[]` (the ONLY claims you are allowed to make)

@@ -186,6 +186,7 @@ def _cmd_post(args: argparse.Namespace) -> int:
                 project=getattr(args, "project", "unknown"),
                 channel=args.channel,
                 url=result.url,
+                post_id=result.post_id or "",
             )
     else:
         print(f"Failed to post to {result.channel}: {result.error}", file=sys.stderr)
@@ -355,6 +356,7 @@ def _cmd_cycle(args: argparse.Namespace) -> int:
                 channel=channel,
                 url=post_result.url or "",
                 angle=angle.id,
+                post_id=post_result.post_id or "",
             )
 
             # Add to history so subsequent channels in this run see it
@@ -464,8 +466,9 @@ def _cmd_report(args: argparse.Namespace) -> int:
         _sync_manifest_from_remote()
 
     config = Config.from_env()
-    print("Fetching engagement metrics...")
-    results = generate_report(config)
+    days = getattr(args, "days", 7)
+    print(f"Fetching engagement metrics (last {days} days)...")
+    results = generate_report(config, recent_days=days)
 
     report = format_report(results)
     print(f"\n{report}")
@@ -637,6 +640,8 @@ def main(argv: list[str] | None = None) -> int:
     p_report = sub.add_parser("report", help="Fetch engagement metrics and generate report.")
     p_report.add_argument("--no-sync", action="store_true",
                           help="Skip the git pull that syncs the manifest from remote.")
+    p_report.add_argument("--days", type=int, default=7,
+                          help="Only include posts from the last N days (default 7).")
     p_report.set_defaults(func=_cmd_report)
 
     p_setup = sub.add_parser("setup", help="Check credentials and guide through setup.")

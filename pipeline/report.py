@@ -7,7 +7,7 @@ or terminal output.
 
 from __future__ import annotations
 
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 from ruamel.yaml import YAML
@@ -39,22 +39,29 @@ def save_manifest(entries: list[dict]) -> None:
 
 def add_to_manifest(
     project: str, channel: str, url: str, angle: str = "",
-    source_id: str = "",
+    source_id: str = "", post_id: str = "",
 ) -> None:
     """Append a posted item to the manifest.
 
     source_id uniquely identifies the source content (e.g., Kopi email ID)
     so dedup works even when the same content is posted via different URLs.
+
+    post_id is the platform's stable ID for the post (Hashnode post id,
+    Pinterest pin id). Stored so metrics fetchers can query by ID instead
+    of URL — protects against slug rewrites on platforms like Hashnode.
     """
     entries = load_manifest()
-    entries.append({
+    entry = {
         "project": project,
         "channel": channel,
         "url": url,
         "angle": angle,
         "source_id": source_id,
         "posted_at": date.today().isoformat(),
-    })
+    }
+    if post_id:
+        entry["post_id"] = post_id
+    entries.append(entry)
     save_manifest(entries)
 
 
@@ -93,15 +100,25 @@ def previous_posts_for(project: str, limit: int = 3) -> list[str]:
     return texts
 
 
-def generate_report(config: Config) -> list[PostMetrics]:
-    """Fetch metrics for all posted content and save a snapshot."""
+def generate_report(config: Config, recent_days: int = 7) -> list[PostMetrics]:
+    """Fetch metrics for posts from the last `recent_days` days and save a snapshot.
+
+    Older posts stay in the manifest for history, but the Slack digest only
+    cares about recent engagement — fetching everything every day produces a
+    growing list of stale `Can't fetch metrics` rows for posts no one is
+    looking at anymore.
+    """
     manifest = load_manifest()
     if not manifest:
         return []
 
+    cutoff = (date.today() - timedelta(days=recent_days)).isoformat()
+
     results = []
     for post in manifest:
         if not post.get("url"):
+            continue
+        if post.get("posted_at", "") < cutoff:
             continue
         metrics = fetch_metrics(post, config)
         results.append(metrics)

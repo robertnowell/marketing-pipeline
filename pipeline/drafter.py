@@ -194,6 +194,7 @@ def _build_user_message(
 
     payload = {
         "project_name": project_name,
+        "repo": project.repo,
         "problem": project.problem,
         "solution_one_liner": project.solution_one_liner,
         "facts": project.facts,

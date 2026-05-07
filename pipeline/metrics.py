@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import httpx
 
@@ -50,8 +50,9 @@ class PostMetrics:
         }
 
 
-def fetch_bluesky_metrics(url: str, config: Config) -> dict:
+def fetch_bluesky_metrics(post: dict, config: Config) -> dict:
     """Fetch metrics for a Bluesky post. Public API, no auth needed."""
+    url = post["url"]
     # URL format: https://bsky.app/profile/{handle}/post/{rkey}
     match = re.match(r"https://bsky\.app/profile/([^/]+)/post/([^/]+)", url)
     if not match:
@@ -88,39 +89,45 @@ def fetch_bluesky_metrics(url: str, config: Config) -> dict:
         return {"error": str(e)}
 
 
-def fetch_devto_metrics(url: str, config: Config) -> dict:
+def fetch_devto_metrics(post: dict, config: Config) -> dict:
     """Fetch metrics for a Dev.to article. Uses API key for view counts."""
     # Extract article slug from URL
     # URL format: https://dev.to/{username}/{slug}
+    url = post["url"]
     try:
         creds = config.require_devto()
-        # Fetch user's articles and find the matching one
-        resp = httpx.get(
-            "https://dev.to/api/articles/me/published",
-            headers={
-                "api-key": creds.api_key,
-                "Accept": "application/vnd.forem.api-v1+json",
-            },
-            timeout=15,
-        )
-        resp.raise_for_status()
-        articles = resp.json()
-
-        for article in articles:
-            if article.get("url") == url:
-                return {
-                    "likes": article.get("positive_reactions_count", 0),
-                    "replies": article.get("comments_count", 0),
-                    "views": article.get("page_views_count", 0),
-                }
+        # Paginate through user's articles. Dev.to defaults per_page=30, caps
+        # at 1000; stop once we find the URL or the page is short.
+        for page in range(1, 11):
+            resp = httpx.get(
+                "https://dev.to/api/articles/me/published",
+                params={"page": page, "per_page": 100},
+                headers={
+                    "api-key": creds.api_key,
+                    "Accept": "application/vnd.forem.api-v1+json",
+                },
+                timeout=15,
+            )
+            resp.raise_for_status()
+            articles = resp.json()
+            for article in articles:
+                if article.get("url") == url:
+                    return {
+                        "likes": article.get("positive_reactions_count", 0),
+                        "replies": article.get("comments_count", 0),
+                        "views": article.get("page_views_count", 0),
+                    }
+            if len(articles) < 100:
+                break
 
         return {"error": f"Article not found in your published list: {url}"}
     except Exception as e:
         return {"error": str(e)}
 
 
-def fetch_mastodon_metrics(url: str, config: Config) -> dict:
+def fetch_mastodon_metrics(post: dict, config: Config) -> dict:
     """Fetch metrics for a Mastodon status."""
+    url = post["url"]
     # URL format: https://{instance}/@{user}/{id}
     match = re.match(r"https://([^/]+)/@[^/]+/(\d+)", url)
     if not match:
@@ -147,31 +154,66 @@ def fetch_mastodon_metrics(url: str, config: Config) -> dict:
         return {"error": str(e)}
 
 
-def fetch_hashnode_metrics(url: str, config: Config) -> dict:
-    """Fetch metrics for a Hashnode post via GraphQL."""
-    # Extract slug from URL — format varies by publication
+_HASHNODE_BY_ID_QUERY = """
+query GetPostById($id: ID!) {
+  post(id: $id) {
+    views
+    reactionCount
+    responseCount
+  }
+}
+"""
+
+_HASHNODE_BY_SLUG_QUERY = """
+query GetPostBySlug($slug: String!, $host: String!) {
+  publication(host: $host) {
+    post(slug: $slug) {
+      views
+      reactionCount
+      responseCount
+    }
+  }
+}
+"""
+
+
+def fetch_hashnode_metrics(post: dict, config: Config) -> dict:
+    """Fetch metrics for a Hashnode post via GraphQL.
+
+    Hashnode rewrites slugs after edits, so the URL stored at publish time may
+    no longer resolve via the publication+slug query. We prefer the stable
+    `post_id` (returned by `publishDraft` and persisted in the manifest), and
+    fall back to slug for old manifest entries that predate post_id capture.
+    """
+    url = post["url"]
+    post_id = post.get("post_id")
     try:
-        slug = url.rstrip("/").split("/")[-1]
         creds = config.require_hashnode()
 
-        query = """
-        query GetPost($slug: String!, $host: String!) {
-          publication(host: $host) {
-            post(slug: $slug) {
-              views
-              reactionCount
-              responseCount
+        if post_id:
+            resp = httpx.post(
+                "https://gql.hashnode.com",
+                json={"query": _HASHNODE_BY_ID_QUERY, "variables": {"id": post_id}},
+                headers={"Authorization": creds.pat},
+                timeout=15,
+            )
+            resp.raise_for_status()
+            node = resp.json().get("data", {}).get("post")
+            if not node:
+                return {"error": f"Post not found by id {post_id}: {url}"}
+            return {
+                "likes": node.get("reactionCount", 0),
+                "replies": node.get("responseCount", 0),
+                "views": node.get("views", 0),
             }
-          }
-        }
-        """
-        # Extract host from URL
-        host = url.split("/")[2]
 
+        # Legacy fallback: pre–post_id manifest entries.
+        slug = url.rstrip("/").split("/")[-1]
+        host = url.split("/")[2]
         resp = httpx.post(
             "https://gql.hashnode.com",
             json={
-                "query": query,
+                "query": _HASHNODE_BY_SLUG_QUERY,
                 "variables": {"slug": slug, "host": host},
             },
             headers={"Authorization": creds.pat},
@@ -179,14 +221,69 @@ def fetch_hashnode_metrics(url: str, config: Config) -> dict:
         )
         resp.raise_for_status()
         data = resp.json()
-        post = data.get("data", {}).get("publication", {}).get("post")
-        if not post:
-            return {"error": f"Post not found: {url}"}
+        node = data.get("data", {}).get("publication", {}).get("post")
+        if not node:
+            return {"error": f"Post not found (slug may have been rewritten): {url}"}
 
         return {
-            "likes": post.get("reactionCount", 0),
-            "replies": post.get("responseCount", 0),
-            "views": post.get("views", 0),
+            "likes": node.get("reactionCount", 0),
+            "replies": node.get("responseCount", 0),
+            "views": node.get("views", 0),
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def fetch_pinterest_metrics(post: dict, config: Config) -> dict:
+    """Fetch metrics for a Pinterest pin via Pinterest API v5.
+
+    Mapping (Pinterest → PostMetrics):
+      SAVE           → likes    (a save is the user-saving-for-later signal)
+      OUTBOUND_CLICK → reposts  (highest-intent propagation off-platform)
+      PIN_CLICK      → replies  (engagement depth — expanded the pin)
+      IMPRESSION     → views
+
+    Tailwind staging URLs (https://www.tailwindapp.com/posts/...) belong to
+    pins that hadn't yet rolled to Pinterest when the manifest entry was
+    written. They have no Pinterest pin_id and no analytics; surface that
+    explicitly so the daily digest tags them usefully instead of `no-fetcher`.
+    """
+    url = post["url"]
+    pin_id = post.get("post_id")
+
+    if "tailwindapp.com" in url and not pin_id:
+        return {"error": "Tailwind staging URL — pin not yet on Pinterest"}
+
+    if not pin_id:
+        match = re.match(r"https://(?:www\.)?pinterest\.com/pin/(\d+)/?", url)
+        if not match:
+            return {"error": f"Can't parse Pinterest URL: {url}"}
+        pin_id = match.group(1)
+
+    try:
+        creds = config.require_pinterest()
+        end = datetime.utcnow().date()
+        start = end - timedelta(days=89)  # Pinterest caps the window at 90 days
+        resp = httpx.get(
+            f"https://api.pinterest.com/v5/pins/{pin_id}/analytics",
+            params={
+                "start_date": start.isoformat(),
+                "end_date": end.isoformat(),
+                "metric_types": "IMPRESSION,SAVE,OUTBOUND_CLICK,PIN_CLICK",
+            },
+            headers={"Authorization": f"Bearer {creds.access_token}"},
+            timeout=15,
+        )
+        if resp.status_code == 404:
+            return {"error": f"Post not found: {url}"}
+        resp.raise_for_status()
+        summary = resp.json().get("all", {}).get("summary_metrics", {})
+
+        return {
+            "likes": int(summary.get("SAVE", 0)),
+            "reposts": int(summary.get("OUTBOUND_CLICK", 0)),
+            "replies": int(summary.get("PIN_CLICK", 0)),
+            "views": int(summary.get("IMPRESSION", 0)),
         }
     except Exception as e:
         return {"error": str(e)}
@@ -197,6 +294,7 @@ FETCHERS = {
     "devto": fetch_devto_metrics,
     "mastodon": fetch_mastodon_metrics,
     "hashnode": fetch_hashnode_metrics,
+    "pinterest": fetch_pinterest_metrics,
 }
 
 
@@ -218,7 +316,7 @@ def fetch_metrics(post: dict, config: Config) -> PostMetrics:
         metrics.error = f"No metrics fetcher for channel: {channel}"
         return metrics
 
-    result = fetcher(post["url"], config)
+    result = fetcher(post, config)
     if "error" in result:
         metrics.error = result["error"]
     else:

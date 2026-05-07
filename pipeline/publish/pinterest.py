@@ -11,6 +11,8 @@ from dataclasses import dataclass
 
 import httpx
 
+import re
+
 from pipeline.config import Config
 from pipeline.publish import PostResult
 
@@ -79,7 +81,12 @@ class PinterestPublisher:
             pin_id = data.get("id", "")
             pin_url = f"https://www.pinterest.com/pin/{pin_id}/" if pin_id else None
 
-            return PostResult(url=pin_url, channel=self.channel, success=True)
+            return PostResult(
+                url=pin_url,
+                channel=self.channel,
+                success=True,
+                post_id=pin_id or None,
+            )
 
         except Exception as e:
             return PostResult(

@@ -127,8 +127,13 @@ class HashnodePublisher:
                     error=f"GraphQL errors: {data['errors']}",
                 )
 
-            post_url = data["data"]["publishDraft"]["post"]["url"]
-            return PostResult(url=post_url, channel=self.channel, success=True)
+            post = data["data"]["publishDraft"]["post"]
+            return PostResult(
+                url=post["url"],
+                channel=self.channel,
+                success=True,
+                post_id=post.get("id"),
+            )
 
         except Exception as e:
             return PostResult(
