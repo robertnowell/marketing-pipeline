@@ -2242,3 +2242,23 @@
   angle: problem-specific
   source_id: ''
   posted_at: '2026-05-07'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlbd6s4wlo24
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-05-07'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/three-ways-to-say-i-missed-you-and-only-one-sounds-like-you-mean-it-2252
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-05-07'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/register-is-the-thing-translation-tools-never-show-you
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-05-07'
