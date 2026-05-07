@@ -2283,3 +2283,24 @@
   source_id: ''
   posted_at: '2026-05-07'
   post_id: 69fcb748c22e6e0c8b1736b8
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlbrqr3jwo24
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-05-07'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-the-blue-i-built-this-theme-around-is-nearly-invisible-as-text-1lnm
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-05-07'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/when-your-terminal-theme-is-solving-the-wrong-problem
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-05-07'
+  post_id: 69fcd187ffe442da5c3f139e
