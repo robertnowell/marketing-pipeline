@@ -2304,3 +2304,16 @@
   source_id: ''
   posted_at: '2026-05-07'
   post_id: 69fcd187ffe442da5c3f139e
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlbx4p26np2c
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-05-07'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-ran-anthropics-ai-fluency-study-against-my-own-claude-sessions-1cgl
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-05-07'
