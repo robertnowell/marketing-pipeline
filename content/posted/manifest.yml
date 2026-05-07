@@ -2222,3 +2222,23 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-05-06'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlb55ovpam2d
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-05-07'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-oss-graveyard-problem-isnt-code-quality-its-distribution-gg9
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-05-07'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/after-the-launch-spike-why-most-oss-tools-go-quiet
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-05-07'
