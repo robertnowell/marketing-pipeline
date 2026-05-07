@@ -2262,3 +2262,24 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-05-07'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlbljuoog22u
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-05-07'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-i-used-shadow-dom-instead-of-iframes-for-inline-tooltips-5d0m
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-05-07'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/reading-well-requires-knowing-what-youre-reading
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-05-07'
+  post_id: 69fcb748c22e6e0c8b1736b8
