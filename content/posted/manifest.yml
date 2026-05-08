@@ -2359,3 +2359,23 @@
   source_id: ''
   posted_at: '2026-05-08'
   post_id: 69fde115c23d5d18bc601c04
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mldzhlywjl2h
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-05-08'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-rabbitholes-sends-your-api-key-nowhere-near-my-server-83f
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-05-08'
+- project: rabbitholes
+  channel: hashnode
+  url: https://palo-alto-ai.hashnode.dev/reading-deeply-without-a-tab-graveyard
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-05-08'
+  post_id: 69fdfe22b0f35a851a3e8688
