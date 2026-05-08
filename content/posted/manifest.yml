@@ -2393,3 +2393,24 @@
   source_id: ''
   posted_at: '2026-05-08'
   post_id: 69fe17dd4b5363e3d46cd205
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlege7fevq2u
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-05-08'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-growth-quest-picks-behaviors-you-avoid-not-ones-you-already-do-55ni
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-05-08'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/seven-archetypes-one-blind-spot-mapping-your-ai-collaboration-habits
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-05-08'
+  post_id: 69fe3444dccdcd7b64715190
