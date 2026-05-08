@@ -2317,3 +2317,24 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-05-07'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mldlhufctf24
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-05-08'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/from-a-one-sentence-brief-to-a-scored-html-email-in-under-5-minutes-45c8
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-05-08'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-email-design-review-you-skip-because-theres-no-time-to-run-it
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-05-08'
+  post_id: 69fdc38589a87b1a7d50da41
