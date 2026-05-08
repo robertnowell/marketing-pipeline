@@ -2379,3 +2379,17 @@
   source_id: ''
   posted_at: '2026-05-08'
   post_id: 69fdfe22b0f35a851a3e8688
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mle7kv4ndx22
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-05-08'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/terminal-themes-built-for-prose-sessions-not-syntax-highlighting
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-05-08'
+  post_id: 69fe17dd4b5363e3d46cd205
