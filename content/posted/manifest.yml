@@ -2338,3 +2338,24 @@
   source_id: ''
   posted_at: '2026-05-08'
   post_id: 69fdc38589a87b1a7d50da41
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mldskb4u6u2p
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-05-08'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-your-pronunciation-is-wrong-the-meaning-changes-completely-5g9a
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-05-08'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/translating-work-emails-daily-in-a-language-youre-still-learning
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-05-08'
+  post_id: 69fde115c23d5d18bc601c04
