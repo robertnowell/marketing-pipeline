@@ -2456,3 +2456,24 @@
   source_id: ''
   posted_at: '2026-05-09'
   post_id: 69ff2f2c7af43ce924b2f39c
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlgi5wvhuq2c
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-05-09'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/rabbitholes-inline-explanations-without-leaving-the-page-4ok
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-05-09'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-hover-dictionary-i-always-wanted-built-into-every-page
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-05-09'
+  post_id: 69ff4834a9594f669fb7d797
