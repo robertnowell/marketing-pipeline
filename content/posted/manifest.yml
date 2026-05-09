@@ -2477,3 +2477,24 @@
   source_id: ''
   posted_at: '2026-05-09'
   post_id: 69ff4834a9594f669fb7d797
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlgotntxj72n
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-05-09'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-tuned-for-prose-not-syntax-highlighting-2a0i
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-05-09'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/reading-terminal-output-for-hours-deserves-better-than-syntax-tuned-contrast
+  angle: ikb-mystique
+  source_id: ''
+  posted_at: '2026-05-09'
+  post_id: 69ff645c4ec787811eeaffb2
