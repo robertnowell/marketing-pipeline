@@ -2498,3 +2498,24 @@
   source_id: ''
   posted_at: '2026-05-09'
   post_id: 69ff645c4ec787811eeaffb2
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlgvqb57nz2a
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-05-09'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/mapping-which-claude-code-habits-i-actually-use-vs-which-i-avoid-1659
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-05-09'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/seven-cards-one-mirror-what-your-claude-sessions-actually-show
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-05-09'
+  post_id: 69ff8124b068babebc51f0fe
