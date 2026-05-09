@@ -2414,3 +2414,24 @@
   source_id: ''
   posted_at: '2026-05-08'
   post_id: 69fe3444dccdcd7b64715190
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlg34otmbg2d
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-05-09'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-antislop-gate-enforcing-post-quality-in-code-not-prompts-3f79
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-05-09'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/configured-once-runs-without-you-oss-distribution-on-autopilot
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-05-09'
+  post_id: 69ff117d6b23ec8d934d832f
