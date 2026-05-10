@@ -2519,3 +2519,24 @@
   source_id: ''
   posted_at: '2026-05-09'
   post_id: 69ff8124b068babebc51f0fe
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlilvzdoas2a
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-05-10'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-separates-a-93100-email-from-a-70100-email-4bib
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-05-10'
+- project: kopi
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-26-points-you-lose-before-anyone-opens-your-email
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-05-10'
+  post_id: 6a00647aab606cd34a7eef93
