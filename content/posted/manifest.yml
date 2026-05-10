@@ -2602,3 +2602,24 @@
   source_id: ''
   posted_at: '2026-05-10'
   post_id: 6a00b612148c97e837f59b85
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mljge3tl7b2n
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-05-10'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/measuring-my-claude-habits-against-9830-real-conversations-a3m
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-05-10'
+- project: skill-tree
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/why-coworks-ephemeral-home-broke-my-skill-tree-plugin
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-05-10'
+  post_id: 6a00d34eacff9f6498989909
