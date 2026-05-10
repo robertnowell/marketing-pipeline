@@ -2581,3 +2581,24 @@
   source_id: ''
   posted_at: '2026-05-10'
   post_id: 6a009b3046d7c6dacf402fac
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlj7ef6iav22
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-05-10'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-optimize-for-code-claude-code-isnt-code-54n7
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-05-10'
+- project: klein-blue
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/why-i-measured-contrast-in-lc-not-wcag-ratios-for-a-reading-theme
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-05-10'
+  post_id: 6a00b612148c97e837f59b85
