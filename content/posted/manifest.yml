@@ -2540,3 +2540,24 @@
   source_id: ''
   posted_at: '2026-05-10'
   post_id: 6a00647aab606cd34a7eef93
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlispjkgds2p
+  angle: girlfriend-language
+  source_id: ''
+  posted_at: '2026-05-10'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-literal-translation-makes-you-sound-like-a-stranger-369f
+  angle: girlfriend-language
+  source_id: ''
+  posted_at: '2026-05-10'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-ways-to-say-i-love-you-and-why-the-difference-matters
+  angle: girlfriend-language
+  source_id: ''
+  posted_at: '2026-05-10'
+  post_id: 6a0080dd2c65efee0db01c47
