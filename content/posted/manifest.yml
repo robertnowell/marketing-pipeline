@@ -2561,3 +2561,23 @@
   source_id: ''
   posted_at: '2026-05-10'
   post_id: 6a0080dd2c65efee0db01c47
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mliyyapf4d2b
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-05-10'
+- project: rabbitholes
+  channel: devto
+  url: https://dev.to/palo_alto_ai/inline-wikipedia-for-every-page-you-read-jl4
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-05-10'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-words-you-skip-are-compounding-against-you
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-05-10'
+  post_id: 6a009b3046d7c6dacf402fac
