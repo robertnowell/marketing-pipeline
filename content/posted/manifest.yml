@@ -2665,3 +2665,24 @@
   source_id: ''
   posted_at: '2026-05-11'
   post_id: 6a02032765b946531b880d6a
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mllz2bmp6j2j
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-05-11'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/inline-context-without-losing-your-place-in-the-article-3c9
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-05-11'
+- project: rabbitholes
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/the-rabbit-hole-you-followed-didnt-have-to-cost-you-the-article-1
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-05-11'
+  post_id: 6a022e1cca07ff91f91d0dae
