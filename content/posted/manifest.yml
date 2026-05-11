@@ -2623,3 +2623,24 @@
   source_id: ''
   posted_at: '2026-05-10'
   post_id: 6a00d34eacff9f6498989909
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mllbxag2ea24
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-05-11'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/cross-posting-to-four-platforms-means-remembering-four-character-limits-18ac
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-05-11'
+- project: marketing-pipeline
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/one-command-onboards-a-project-a-daily-cron-handles-the-rest
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-05-11'
+  post_id: 6a01cd4179e11aebaf04bfcf
