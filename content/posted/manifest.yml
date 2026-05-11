@@ -2644,3 +2644,24 @@
   source_id: ''
   posted_at: '2026-05-11'
   post_id: 6a01cd4179e11aebaf04bfcf
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mllosrownu24
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-11'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/every-work-email-i-translated-was-a-missed-lesson-2p5b
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-11'
+- project: konid
+  channel: hashnode
+  url: 
+    https://palo-alto-ai.hashnode.dev/three-translations-where-one-used-to-be-building-with-konid
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-11'
+  post_id: 6a02032765b946531b880d6a
