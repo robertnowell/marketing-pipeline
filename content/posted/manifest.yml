@@ -2712,3 +2712,16 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-05-12'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlo6sag73p2d
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-05-12'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-i-stopped-guessing-whether-my-email-designs-were-any-good-471k
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-05-12'
