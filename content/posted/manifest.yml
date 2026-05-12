@@ -2725,3 +2725,9 @@
   angle: time-savings
   source_id: ''
   posted_at: '2026-05-12'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlojkq5mal2n
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-05-12'
