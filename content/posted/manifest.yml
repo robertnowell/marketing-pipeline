@@ -2686,3 +2686,16 @@
   source_id: ''
   posted_at: '2026-05-11'
   post_id: 6a022e1cca07ff91f91d0dae
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlnprdszkf24
+  angle: four-variations
+  source_id: ''
+  posted_at: '2026-05-12'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/four-terminal-themes-for-the-terminal-thats-mostly-paragraphs-4fic
+  angle: four-variations
+  source_id: ''
+  posted_at: '2026-05-12'
