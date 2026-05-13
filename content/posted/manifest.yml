@@ -2744,3 +2744,16 @@
   angle: philosophy-counter
   source_id: ''
   posted_at: '2026-05-13'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlqiinc2hc2b
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-05-13'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/mcp-server-distribution-without-the-daily-grind-145k
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-05-13'

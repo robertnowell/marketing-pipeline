@@ -295,7 +295,7 @@ marketing-pipeline:
         developers actually look — the launch command hits the official MCP 
         Registry (which Glama and PulseMCP pull from automatically), Smithery, 
         and GitHub Topics in one step, then drafts and posts to social channels
-      last_used: '2026-05-03'
+      last_used: '2026-05-13'
 kopi:
   repo: https://trykopi.ai
   kind: saas-email-tool
