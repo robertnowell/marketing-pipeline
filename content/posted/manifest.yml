@@ -2770,3 +2770,16 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-05-13'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlr3i5ndxq24
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-05-13'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-pure-klein-blue-disappears-on-dark-ground-and-how-i-routed-around-it-41ce
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-05-13'
