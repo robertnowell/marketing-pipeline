@@ -2731,3 +2731,16 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-05-12'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlqapuqoap2a
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-05-13'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/reading-deeply-without-tab-switching-how-i-built-rabbitholes-1lbl
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-05-13'
