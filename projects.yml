@@ -51,7 +51,7 @@ konid:
     - {id: audio-fluency, summary: "Why hearing the tone contour and vowel length
         changes what you actually remember", last_used: '2026-05-13'}
     - {id: one-server-three-clients, summary: "Same MCP brain across Claude Code,
-        Cowork, and ChatGPT — write once, four clients (long-form)", last_used: '2026-05-09'}
+        Cowork, and ChatGPT — write once, four clients (long-form)", last_used: '2026-05-14'}
   channels: [bluesky, mastodon, devto, hashnode]
   launch: {}
 
