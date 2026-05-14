@@ -2796,3 +2796,16 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-05-14'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlsxflt33h2j
+  angle: brand-consistency
+  source_id: ''
+  posted_at: '2026-05-14'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/your-email-design-system-shouldnt-live-only-in-your-head-260l
+  angle: brand-consistency
+  source_id: ''
+  posted_at: '2026-05-14'
