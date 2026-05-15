@@ -2835,3 +2835,16 @@
   angle: shadow-dom
   source_id: ''
   posted_at: '2026-05-14'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlvb6zhamy2p
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-05-15'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-are-optimized-for-syntax-i-read-prose-all-day-59e4
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-05-15'
