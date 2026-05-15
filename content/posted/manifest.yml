@@ -2887,3 +2887,16 @@
   angle: no-telemetry
   source_id: ''
   posted_at: '2026-05-15'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlw2dyzpbq2c
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-05-15'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-growth-quest-picks-what-you-avoid-not-what-youre-good-at-3ncd
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-05-15'
