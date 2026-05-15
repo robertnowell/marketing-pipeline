@@ -2874,3 +2874,16 @@
   angle: girlfriend-language
   source_id: ''
   posted_at: '2026-05-15'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlvtzqtdzo2c
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-05-15'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-i-built-rabbitholes-without-a-server-in-the-middle-4f6i
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-05-15'
