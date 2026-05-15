@@ -2848,3 +2848,16 @@
   angle: ikb-split
   source_id: ''
   posted_at: '2026-05-15'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlvhptlgjh24
+  angle: launch
+  source_id: ''
+  posted_at: '2026-05-15'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/distribution-work-that-kills-most-oss-projects-before-anyone-finds-them-4m6m
+  angle: launch
+  source_id: ''
+  posted_at: '2026-05-15'
