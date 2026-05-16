@@ -2939,3 +2939,16 @@
   angle: wikipedia-everywhere
   source_id: ''
   posted_at: '2026-05-16'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlycek7qik2a
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-05-16'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-solve-the-wrong-problem-for-claude-code-3plp
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-05-16'
