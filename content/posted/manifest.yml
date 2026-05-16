@@ -2952,3 +2952,16 @@
   angle: prose-not-code
   source_id: ''
   posted_at: '2026-05-16'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlyje2tkbj2b
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-05-16'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/you-dont-know-which-claude-collaboration-habits-youve-never-touched-465o
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-05-16'
