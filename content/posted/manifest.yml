@@ -2926,3 +2926,16 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-05-16'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mly3psnexo2a
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-05-16'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/inline-context-for-every-article-without-leaving-the-page-1fkn
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-05-16'
