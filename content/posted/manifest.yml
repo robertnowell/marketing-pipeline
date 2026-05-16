@@ -2913,3 +2913,16 @@
   angle: showcase
   source_id: ''
   posted_at: '2026-05-16'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlxvphhl5f2a
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-16'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-professional-translation-teaches-you-nothing-2geg
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-16'
