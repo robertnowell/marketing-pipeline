@@ -2900,3 +2900,16 @@
   angle: what-you-avoid
   source_id: ''
   posted_at: '2026-05-15'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mlxoql6atg2b
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-05-16'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/your-email-looked-fine-in-preview-heres-why-it-failed-on-mobile-4jh0
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-05-16'
