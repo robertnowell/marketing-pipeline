@@ -2965,3 +2965,10 @@
   angle: archetype-card
   source_id: ''
   posted_at: '2026-05-16'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/you-posted-once-got-silence-and-moved-on-heres-why-that-happens-4gd6
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-05-17'
