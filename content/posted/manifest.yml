@@ -3006,3 +3006,16 @@
   angle: cowork-home
   source_id: ''
   posted_at: '2026-05-18'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mm5d3iutfp2b
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-05-18'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/building-email-campaigns-without-knowing-if-the-design-works-25bk
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-05-18'
