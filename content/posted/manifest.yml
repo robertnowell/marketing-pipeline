@@ -3019,3 +3019,16 @@
   angle: before-after
   source_id: ''
   posted_at: '2026-05-18'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mm5m6l3f522r
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-05-18'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-one-translation-isnt-enough-when-youre-actually-trying-to-connect-18lf
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-05-18'
