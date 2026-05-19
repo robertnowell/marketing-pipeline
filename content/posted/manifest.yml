@@ -3058,3 +3058,16 @@
   angle: reading-for-hours
   source_id: ''
   posted_at: '2026-05-19'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mma5mrrp6d2d
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-05-19'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-oss-distribution-problem-isnt-posting-once-its-showing-up-every-week-h96
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-05-19'
