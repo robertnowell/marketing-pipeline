@@ -3097,3 +3097,16 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-05-20'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmcp6c6vun2a
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-05-20'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-separates-a-93100-email-from-a-70100-email-3d6n
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-05-20'
