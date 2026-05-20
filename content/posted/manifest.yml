@@ -3084,3 +3084,16 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-05-20'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmcecvvnuu22
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-05-20'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/measuring-ai-fluency-against-9830-conversations-including-yours-200n
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-05-20'
