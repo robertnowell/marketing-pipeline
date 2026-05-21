@@ -3110,3 +3110,16 @@
   angle: design-critique
   source_id: ''
   posted_at: '2026-05-20'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmeguqnd6n2n
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-05-21'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-wikipedia-philosophy-game-but-for-everything-you-read-56lg
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-05-21'
