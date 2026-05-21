@@ -3129,3 +3129,16 @@
   angle: four-variations
   source_id: ''
   posted_at: '2026-05-21'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmf6lh3ahn24
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-05-21'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/cross-posting-to-four-platforms-by-hand-doesnt-scale-past-week-one-cii
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-05-21'
