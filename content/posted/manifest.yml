@@ -3168,3 +3168,16 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-05-22'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmhnwbt67k2h
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-05-22'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/scoring-email-designs-before-they-ship-not-after-39j0
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-05-22'
