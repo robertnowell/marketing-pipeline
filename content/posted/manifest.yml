@@ -3155,3 +3155,16 @@
   angle: girlfriend-language
   source_id: ''
   posted_at: '2026-05-22'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmhdgnzsso2n
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-05-22'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-9830-claude-conversations-reveal-about-your-own-habits-298c
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-05-22'
