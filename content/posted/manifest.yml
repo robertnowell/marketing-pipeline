@@ -3142,3 +3142,16 @@
   angle: comparison
   source_id: ''
   posted_at: '2026-05-21'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmgvtz6axo2n
+  angle: girlfriend-language
+  source_id: ''
+  posted_at: '2026-05-22'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-one-translation-isnt-enough-to-say-what-you-mean-d5b
+  angle: girlfriend-language
+  source_id: ''
+  posted_at: '2026-05-22'
