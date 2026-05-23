@@ -3181,3 +3181,16 @@
   angle: time-savings
   source_id: ''
   posted_at: '2026-05-22'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmjcirvkuw2b
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-05-23'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-shadow-dom-beat-iframe-for-inline-tooltips-4mcb
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-05-23'
