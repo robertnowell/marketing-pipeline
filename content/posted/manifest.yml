@@ -3220,3 +3220,16 @@
   angle: use-case
   source_id: ''
   posted_at: '2026-05-23'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmjvv5ppkn2e
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-23'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/every-work-email-i-translated-was-a-missed-lesson-4hmf
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-23'
