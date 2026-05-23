@@ -3194,3 +3194,16 @@
   angle: shadow-dom
   source_id: ''
   posted_at: '2026-05-23'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmjj53qiky2d
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-05-23'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-wcag-ratios-misled-me-building-a-dark-terminal-theme-5afp
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-05-23'
