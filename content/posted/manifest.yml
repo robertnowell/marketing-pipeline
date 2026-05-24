@@ -3272,3 +3272,16 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-05-24'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmm7vejscy2a
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-05-24'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/rabbitholes-how-i-built-a-chrome-extension-with-no-server-to-touch-your-data-1bph
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-05-24'
