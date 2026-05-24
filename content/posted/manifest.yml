@@ -3259,3 +3259,16 @@
   angle: brand-consistency
   source_id: ''
   posted_at: '2026-05-24'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmlzk7i2sk2a
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-05-24'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-i-missed-you-sounds-like-a-business-memo-3eeg
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-05-24'
