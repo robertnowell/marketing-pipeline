@@ -3298,3 +3298,16 @@
   angle: ikb-split
   source_id: ''
   posted_at: '2026-05-24'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmmnq6233i2j
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-05-24'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/seven-archetypes-11-behaviors-one-mirror-for-your-claude-habits-3dlm
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-05-24'
