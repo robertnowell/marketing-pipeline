@@ -3324,3 +3324,16 @@
   angle: launch
   source_id: ''
   posted_at: '2026-05-25'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmouscrkb52b
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-05-25'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-i-stopped-using-google-translate-to-write-in-my-girlfriends-language-2le4
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-05-25'
