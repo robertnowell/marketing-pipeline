@@ -3337,3 +3337,16 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-05-25'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmp6vpofw224
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-05-25'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/reading-online-without-a-dictionary-open-is-a-compromise-5dgn
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-05-25'
