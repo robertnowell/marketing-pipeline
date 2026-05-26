@@ -3363,3 +3363,16 @@
   angle: prose-not-code
   source_id: ''
   posted_at: '2026-05-26'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmrrnsqw422e
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-05-26'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-i-dont-know-if-im-actually-getting-better-at-using-claude-e15
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-05-26'
