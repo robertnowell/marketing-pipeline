@@ -3350,3 +3350,16 @@
   angle: wikipedia-everywhere
   source_id: ''
   posted_at: '2026-05-25'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmrixs4dbe2c
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-05-26'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-are-tuned-for-syntax-mine-are-tuned-for-prose-247f
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-05-26'
