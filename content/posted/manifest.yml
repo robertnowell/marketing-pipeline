@@ -3402,3 +3402,16 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-05-27'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmuce7ofdb2b
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-05-27'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/inline-wikipedia-for-every-article-you-read-dgg
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-05-27'
