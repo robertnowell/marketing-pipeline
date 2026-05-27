@@ -3376,3 +3376,16 @@
   angle: cowork-home
   source_id: ''
   posted_at: '2026-05-26'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmtk5jhmcl2u
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-05-27'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/from-blank-canvas-to-scored-email-in-under-5-minutes-2kh2
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-05-27'
