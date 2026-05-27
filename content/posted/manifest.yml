@@ -3389,3 +3389,16 @@
   angle: showcase
   source_id: ''
   posted_at: '2026-05-27'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmty3b5rua2d
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-05-27'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/one-translation-tool-four-clients-zero-phrasebook-answers-133j
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-05-27'
