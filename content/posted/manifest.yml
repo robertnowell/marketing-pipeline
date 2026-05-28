@@ -3415,3 +3415,16 @@
   angle: half-known-concepts
   source_id: ''
   posted_at: '2026-05-27'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmw5lrelgp2h
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-05-28'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-oss-distribution-treadmill-how-i-stopped-doing-it-manually-46a8
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-05-28'
