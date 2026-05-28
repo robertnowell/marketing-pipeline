@@ -3441,3 +3441,16 @@
   angle: ikb-mystique
   source_id: ''
   posted_at: '2026-05-28'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mmwt4otuup2a
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-05-28'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/claude-code-isnt-telling-you-which-collaboration-skills-youve-stopped-growing-2fpj
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-05-28'
