@@ -3506,3 +3506,16 @@
   angle: reading-for-hours
   source_id: ''
   posted_at: '2026-05-30'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mn34ij4j4d22
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-05-30'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-9830-claude-conversations-reveal-about-your-own-habits-5c82
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-05-30'
