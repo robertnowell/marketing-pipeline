@@ -3532,3 +3532,16 @@
   angle: how-it-works
   source_id: ''
   posted_at: '2026-05-30'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mn3j7r5i3b2k
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-30'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/every-work-email-i-translate-in-japanese-is-a-missed-lesson-3ned
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-05-30'
