@@ -3545,3 +3545,16 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-05-30'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mn3qdc3siu22
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-05-30'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/reading-trails-a-rabbit-hole-counter-for-inline-research-1ka4
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-05-30'
