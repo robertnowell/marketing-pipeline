@@ -3493,3 +3493,16 @@
   angle: before-after
   source_id: ''
   posted_at: '2026-05-29'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mn2wartw4h2v
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-05-30'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-optimize-for-code-scanning-claude-code-isnt-code-1e84
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-05-30'
