@@ -3597,3 +3597,16 @@
   angle: shadow-dom
   source_id: ''
   posted_at: '2026-05-31'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mn5zwwqltc2c
+  angle: four-variations
+  source_id: ''
+  posted_at: '2026-05-31'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/four-themes-for-a-terminal-you-read-more-than-you-syntax-highlight-58kd
+  angle: four-variations
+  source_id: ''
+  posted_at: '2026-05-31'
