@@ -3584,3 +3584,16 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-05-31'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mn5u3sriwn2b
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-05-31'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/building-inline-wikipedia-for-every-page-the-tooltip-architecture-behind-rabbitholes-2kl4
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-05-31'
