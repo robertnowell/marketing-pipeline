@@ -3558,3 +3558,16 @@
   angle: philosophy-counter
   source_id: ''
   posted_at: '2026-05-30'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mn5hkowms72c
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-05-31'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-separates-a-93-from-a-70-in-email-design-2ado
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-05-31'
