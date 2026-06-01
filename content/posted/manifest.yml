@@ -3636,3 +3636,16 @@
   angle: comparison
   source_id: ''
   posted_at: '2026-06-01'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnavac3h2d2u
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-06-01'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/audio-pronunciation-changed-how-i-retain-vocabulary-in-a-second-language-22l9
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-06-01'
