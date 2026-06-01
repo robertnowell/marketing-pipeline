@@ -3623,3 +3623,16 @@
   angle: what-you-avoid
   source_id: ''
   posted_at: '2026-05-31'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnaglrtw6v2u
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-06-01'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/cross-posting-to-four-platforms-by-hand-means-remembering-four-character-limits-13cg
+  angle: comparison
+  source_id: ''
+  posted_at: '2026-06-01'
