@@ -3649,3 +3649,16 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-06-01'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mncqk3s3ql25
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-06-02'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/how-i-stopped-leaking-queries-to-proxy-servers-in-a-browser-extension-1o2h
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-06-02'
