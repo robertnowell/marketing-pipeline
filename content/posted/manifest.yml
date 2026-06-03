@@ -3688,3 +3688,16 @@
   angle: archetype-card
   source_id: ''
   posted_at: '2026-06-02'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnfcnggpcg26
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-06-03'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/building-email-campaigns-from-scratch-costs-more-time-than-most-teams-admit-3pbd
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-06-03'
