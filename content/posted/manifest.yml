@@ -3740,3 +3740,16 @@
   angle: wikipedia-everywhere
   source_id: ''
   posted_at: '2026-06-04'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnifqfo3au2d
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-06-04'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-ikb-is-invisible-as-terminal-text-and-the-two-slot-fix-4jab
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-06-04'
