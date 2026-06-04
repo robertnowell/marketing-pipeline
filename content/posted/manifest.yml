@@ -3714,3 +3714,16 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-06-03'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnhndzidxn2p
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-06-04'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/keeping-an-oss-tool-alive-after-the-launch-day-post-2pae
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-06-04'
