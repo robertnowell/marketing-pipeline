@@ -3727,3 +3727,16 @@
   angle: use-case
   source_id: ''
   posted_at: '2026-06-04'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mni35ldzxo26
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-06-04'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-built-inline-wikipedia-for-every-page-you-read-39e1
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-06-04'
