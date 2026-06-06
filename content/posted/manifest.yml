@@ -3844,3 +3844,16 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-06-06'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnndwf5dea2o
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-06-06'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/measuring-ai-fluency-against-9830-conversations-instead-of-vibes-g9f
+  angle: am-i-getting-better
+  source_id: ''
+  posted_at: '2026-06-06'
