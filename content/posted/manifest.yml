@@ -3792,3 +3792,16 @@
   angle: brand-consistency
   source_id: ''
   posted_at: '2026-06-05'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnmjrfek4n2o
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-06-06'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-i-skip-words-i-half-know-i-get-a-shallower-read-47jk
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-06-06'
