@@ -3818,3 +3818,16 @@
   angle: prose-not-code
   source_id: ''
   posted_at: '2026-06-06'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnmwk2ebw42t
+  angle: launch
+  source_id: ''
+  posted_at: '2026-06-06'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-mcp-servers-and-claude-code-skills-die-quiet-deaths-3k7
+  angle: launch
+  source_id: ''
+  posted_at: '2026-06-06'
