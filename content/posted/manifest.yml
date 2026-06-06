@@ -3831,3 +3831,16 @@
   angle: launch
   source_id: ''
   posted_at: '2026-06-06'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnn4ydl6jm2o
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-06-06'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/daily-translation-practice-that-actually-teaches-you-the-language-1280
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-06-06'
