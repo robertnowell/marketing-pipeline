@@ -3909,3 +3909,16 @@
   angle: ikb-mystique
   source_id: ''
   posted_at: '2026-06-07'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnpuhs4l7n2v
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-06-07'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/mapping-my-claude-code-habits-against-9830-real-sessions-4fd5
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-06-07'
