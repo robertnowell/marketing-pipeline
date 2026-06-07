@@ -3883,3 +3883,16 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-06-07'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnphpv7mmw2u
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-06-07'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/staying-in-the-thread-while-following-a-tangent-556m
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-06-07'
