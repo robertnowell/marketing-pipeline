@@ -3857,3 +3857,16 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-06-06'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnp3mqwsmn2v
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-06-07'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/sending-blind-why-i-built-a-design-score-into-every-email-1e6d
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-06-07'
