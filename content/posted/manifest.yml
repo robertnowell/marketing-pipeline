@@ -3935,3 +3935,16 @@
   angle: problem-specific
   source_id: ''
   posted_at: '2026-06-08'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mns75ndgr62e
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-06-08'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-one-translation-answer-is-usually-the-wrong-one-193j
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-06-08'
