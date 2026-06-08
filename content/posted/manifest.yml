@@ -3948,3 +3948,16 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-06-08'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnshz2i6vg2u
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-06-08'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/reading-with-a-rabbit-hole-counter-how-deep-can-you-go-17oo
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-06-08'
