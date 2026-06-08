@@ -3922,3 +3922,16 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-06-07'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnrtqfiwgy22
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-06-08'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-launch-spike-fades-most-oss-tools-die-in-the-silence-after-25dk
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-06-08'
