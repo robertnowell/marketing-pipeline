@@ -3987,3 +3987,16 @@
   angle: what-you-avoid
   source_id: ''
   posted_at: '2026-06-09'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnuy6d6uyd2i
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-06-09'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/from-brief-to-scored-html-email-in-under-5-minutes-kao
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-06-09'
