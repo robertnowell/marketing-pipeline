@@ -3974,3 +3974,16 @@
   angle: reading-for-hours
   source_id: ''
   posted_at: '2026-06-09'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnumfawtca2l
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-06-09'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/your-claude-sessions-have-a-blind-spot-you-keep-skipping-1d0o
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-06-09'
