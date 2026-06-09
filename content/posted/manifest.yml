@@ -3961,3 +3961,16 @@
   angle: philosophy-counter
   source_id: ''
   posted_at: '2026-06-08'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnu7a5zqyc25
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-06-09'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-optimize-for-syntax-this-one-optimizes-for-prose-51l8
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-06-09'
