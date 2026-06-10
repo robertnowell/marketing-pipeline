@@ -4013,3 +4013,16 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-06-10'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnwrlm2zg42l
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-06-10'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/shadow-dom-vs-iframe-for-browser-extension-tooltips-a-build-note-33c5
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-06-10'
