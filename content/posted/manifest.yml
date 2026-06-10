@@ -4026,3 +4026,16 @@
   angle: shadow-dom
   source_id: ''
   posted_at: '2026-06-10'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnwy7nlsgp2d
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-06-10'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-distribution-problem-oss-tools-have-that-isnt-about-code-quality-5bde
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-06-10'
