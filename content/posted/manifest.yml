@@ -4000,3 +4000,16 @@
   angle: before-after
   source_id: ''
   posted_at: '2026-06-09'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnwleojwlu2p
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-06-10'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/one-translation-tool-that-works-across-four-clients-without-reconfiguration-bo7
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-06-10'
