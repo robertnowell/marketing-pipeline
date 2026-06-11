@@ -4090,3 +4090,16 @@
   angle: girlfriend-language
   source_id: ''
   posted_at: '2026-06-11'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnzj7bzvgs22
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-06-11'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/rabbitholes-inline-explanations-with-no-server-in-the-middle-4c2o
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-06-11'
