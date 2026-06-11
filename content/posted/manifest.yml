@@ -4065,3 +4065,15 @@
   angle: archetype-card
   source_id: ''
   posted_at: '2026-06-10'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mnz4qwo7o32i
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-06-11'
+- project: kopi
+  channel: devto
+  url: https://dev.to/palo_alto_ai/what-separates-a-93100-email-from-a-70100-47d
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-06-11'
