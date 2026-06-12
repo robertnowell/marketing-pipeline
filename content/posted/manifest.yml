@@ -4168,3 +4168,16 @@
   angle: wikipedia-everywhere
   source_id: ''
   posted_at: '2026-06-12'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mo47jnjqno26
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-06-12'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-color-i-built-this-theme-around-is-invisible-as-text-3kp2
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-06-12'
