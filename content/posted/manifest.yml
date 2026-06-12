@@ -4142,3 +4142,16 @@
   angle: comparison
   source_id: ''
   posted_at: '2026-06-12'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mo3sildec22p
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-06-12'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/translating-work-emails-every-day-without-learning-anything-1124
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-06-12'
