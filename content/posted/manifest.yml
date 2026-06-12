@@ -4155,3 +4155,16 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-06-12'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mo3z2jsshb2w
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-06-12'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/inline-context-for-every-page-without-leaving-it-4dj2
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-06-12'
