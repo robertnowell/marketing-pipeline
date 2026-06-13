@@ -4194,3 +4194,16 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-06-12'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mo63azyktv23
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-06-13'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/building-email-campaigns-by-hand-while-guessing-if-theyll-actually-work-10jc
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-06-13'

@@ -331,7 +331,7 @@ kopi:
       last_used: '2026-06-11'
     - id: time-savings
       summary: Hours spent building emails manually vs minutes with Kopi
-      last_used: '2026-06-03'
+      last_used: '2026-06-13'
     - id: brand-consistency
       summary: How the design system ensures every email matches the brand
       last_used: '2026-06-05'
