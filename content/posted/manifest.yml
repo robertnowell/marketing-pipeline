@@ -4232,3 +4232,16 @@
   angle: half-known-concepts
   source_id: ''
   posted_at: '2026-06-13'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mo6oeutgbq2l
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-06-13'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/a-terminal-theme-built-for-reading-paragraphs-not-scanning-tokens-307j
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-06-13'
