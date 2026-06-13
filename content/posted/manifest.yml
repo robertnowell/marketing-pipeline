@@ -4245,3 +4245,16 @@
   angle: prose-not-code
   source_id: ''
   posted_at: '2026-06-13'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mo6uymonex24
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-06-13'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-9830-claude-conversations-reveal-about-your-session-habits-3g07
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-06-13'
