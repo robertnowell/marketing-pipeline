@@ -4220,3 +4220,15 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-06-13'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mo6ihv7tqz24
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-06-13'
+- project: rabbitholes
+  channel: devto
+  url: https://dev.to/palo_alto_ai/inline-wikipedia-for-every-page-you-read-4pe0
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-06-13'
