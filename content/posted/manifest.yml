@@ -4207,3 +4207,16 @@
   angle: time-savings
   source_id: ''
   posted_at: '2026-06-13'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mo6b7uznjs2e
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-06-13'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-one-translation-isnt-enough-building-a-language-coach-for-real-speech-35a4
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-06-13'
