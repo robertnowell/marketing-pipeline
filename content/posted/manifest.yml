@@ -4284,3 +4284,15 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-06-14'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3moaz2xvbno2t
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-06-14'
+- project: rabbitholes
+  channel: devto
+  url: https://dev.to/palo_alto_ai/inline-context-without-the-tab-spiral-421p
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-06-14'
