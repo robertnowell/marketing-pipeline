@@ -4258,3 +4258,16 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-06-13'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3moamcssnpn2q
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-06-14'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-mcp-servers-die-in-obscurity-and-how-i-automated-the-fix-4j0d
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-06-14'
