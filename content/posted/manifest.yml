@@ -4309,3 +4309,16 @@
   angle: ikb-mystique
   source_id: ''
   posted_at: '2026-06-14'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mobfh7q77q2v
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-06-14'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-your-ai-coding-habits-calcify-and-one-way-to-break-them-3cch
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-06-14'
