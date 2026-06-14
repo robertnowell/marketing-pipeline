@@ -4271,3 +4271,16 @@
   angle: use-case
   source_id: ''
   posted_at: '2026-06-14'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3moartzmao42e
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-06-14'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/translating-i-missed-you-so-it-doesnt-land-like-a-form-letter-2lj4
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-06-14'
