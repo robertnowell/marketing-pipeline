@@ -4335,3 +4335,16 @@
   angle: brand-consistency
   source_id: ''
   posted_at: '2026-06-15'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3modnm3hfka2j
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-06-15'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/-building-an-mcp-language-coach-that-works-in-claude-code-cursor-a-4fp
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-06-15'
