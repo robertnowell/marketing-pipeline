@@ -4361,3 +4361,16 @@
   angle: philosophy-counter
   source_id: ''
   posted_at: '2026-06-15'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3modyqzcy7q23
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-06-15'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/building-a-theme-for-prose-legibility-not-syntax-highlighting-eod
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-06-15'
