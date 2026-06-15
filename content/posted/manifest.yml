@@ -4348,3 +4348,16 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-06-15'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3modthv5upt2e
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-06-15'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-built-a-rabbit-hole-counter-for-my-own-reading-mc5
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-06-15'
