@@ -4387,3 +4387,16 @@
   angle: archetype-card
   source_id: ''
   posted_at: '2026-06-16'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mofwanrwzx24
+  angle: launch
+  source_id: ''
+  posted_at: '2026-06-16'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/oss-distribution-for-mcp-servers-the-part-nobody-built-yet-49jg
+  angle: launch
+  source_id: ''
+  posted_at: '2026-06-16'
