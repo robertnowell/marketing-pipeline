@@ -4374,3 +4374,16 @@
   angle: reading-for-hours
   source_id: ''
   posted_at: '2026-06-15'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/product-ideas.bsky.social/post/3mofpyj43lj27
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-06-16'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-kind-of-claude-collaborator-are-you-actually-30c4
+  angle: archetype-card
+  source_id: ''
+  posted_at: '2026-06-16'
