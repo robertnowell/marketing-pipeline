@@ -4441,3 +4441,10 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-06-17'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/no-intermediary-server-how-rabbitholes-handles-your-api-keys-1lac
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-06-17'
