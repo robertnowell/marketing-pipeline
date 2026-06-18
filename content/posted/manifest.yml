@@ -4476,3 +4476,10 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-06-18'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-wanted-wikipedia-inline-on-every-page-i-read-499
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-06-18'
