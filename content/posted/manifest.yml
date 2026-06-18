@@ -4455,3 +4455,10 @@
   angle: apca-gates
   source_id: ''
   posted_at: '2026-06-17'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-couldnt-tell-if-i-was-actually-getting-better-at-working-with-claude-4hce
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-06-18'
