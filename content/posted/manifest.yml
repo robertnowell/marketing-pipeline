@@ -4497,3 +4497,10 @@
   angle: before-after
   source_id: ''
   posted_at: '2026-06-19'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-translation-gives-you-one-answer-and-no-context-5e2l
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-06-19'
