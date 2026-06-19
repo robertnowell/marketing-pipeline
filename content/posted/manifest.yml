@@ -4504,3 +4504,10 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-06-19'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/reading-the-web-with-half-understood-words-everywhere-28fd
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-06-19'
