@@ -4490,3 +4490,10 @@
   angle: ikb-split
   source_id: ''
   posted_at: '2026-06-18'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/stop-building-email-campaigns-from-a-blank-canvas-48k9
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-06-19'
