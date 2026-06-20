@@ -4525,3 +4525,10 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-06-19'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-i-enforce-post-quality-with-a-regex-gate-not-a-better-prompt-5d14
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-06-20'
