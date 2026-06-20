@@ -4539,3 +4539,10 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-06-20'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/inline-lookups-that-dont-break-your-reading-flow-110j
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-06-20'
