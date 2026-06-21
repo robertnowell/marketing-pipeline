@@ -4587,3 +4587,10 @@
   angle: reading-for-hours
   source_id: ''
   posted_at: '2026-06-21'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-didnt-know-which-claude-code-habits-id-never-tried-595m
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-06-21'
