@@ -4560,3 +4560,10 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-06-20'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-your-email-design-fails-before-anyone-opens-it-22dn
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-06-21'
