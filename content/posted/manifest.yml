@@ -4608,3 +4608,10 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-06-22'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/shadow-dom-vs-iframe-for-browser-extension-tooltips-5f77
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-06-22'
