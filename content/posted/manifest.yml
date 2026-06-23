@@ -4636,3 +4636,10 @@
   angle: time-savings
   source_id: ''
   posted_at: '2026-06-23'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/the-register-problem-why-one-translation-answer-isnt-enough-plc
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-06-23'
