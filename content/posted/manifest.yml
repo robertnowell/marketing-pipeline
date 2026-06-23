@@ -4650,3 +4650,10 @@
   angle: no-telemetry
   source_id: ''
   posted_at: '2026-06-23'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/reading-terminal-output-for-hours-is-a-prose-problem-not-a-syntax-problem-5apd
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-06-23'
