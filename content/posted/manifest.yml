@@ -4657,3 +4657,10 @@
   angle: apca-gates
   source_id: ''
   posted_at: '2026-06-23'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/you-shipped-an-mcp-server-nobody-found-it-4jna
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-06-24'
