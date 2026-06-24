@@ -4671,3 +4671,10 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-06-24'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-wanted-wikipedia-on-every-page-so-i-built-it-into-every-page-43n7
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-06-24'
