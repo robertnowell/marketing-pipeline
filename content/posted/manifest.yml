@@ -4664,3 +4664,10 @@
   angle: use-case
   source_id: ''
   posted_at: '2026-06-24'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-one-translation-isnt-enough-building-a-language-coach-for-real-speech-4498
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-06-24'
