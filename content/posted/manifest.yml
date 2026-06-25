@@ -4705,3 +4705,10 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-06-25'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/reading-with-a-shallow-vocabulary-is-a-slow-leak-i-finally-patched-4g24
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-06-25'
