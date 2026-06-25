@@ -4712,3 +4712,10 @@
   angle: half-known-concepts
   source_id: ''
   posted_at: '2026-06-25'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-optimize-for-code-claude-code-is-mostly-prose-l35
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-06-25'
