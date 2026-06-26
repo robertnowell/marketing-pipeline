@@ -4726,3 +4726,10 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-06-25'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/you-shipped-an-mcp-server-nobody-found-it-heres-the-fix-10b9
+  angle: launch
+  source_id: ''
+  posted_at: '2026-06-26'
