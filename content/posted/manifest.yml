@@ -4761,3 +4761,10 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-06-26'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/sending-blind-how-i-stopped-guessing-whether-my-email-designs-work-2lj5
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-06-27'
