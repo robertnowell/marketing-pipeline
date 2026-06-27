@@ -4787,3 +4787,10 @@
   angle: reading-for-hours
   source_id: ''
   posted_at: '2026-06-27'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-didnt-know-which-claude-code-habits-i-was-missing-until-this-4694
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-06-27'
