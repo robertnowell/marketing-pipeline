@@ -4808,3 +4808,10 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-06-28'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/building-an-inline-tooltip-that-doesnt-wreck-the-host-page-2an2
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-07-01'
