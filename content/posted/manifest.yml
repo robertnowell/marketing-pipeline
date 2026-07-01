@@ -4836,3 +4836,10 @@
   angle: before-after
   source_id: ''
   posted_at: '2026-07-01'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-one-translation-isnt-enough-building-a-language-coach-for-real-sentences-4no5
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-07-01'
