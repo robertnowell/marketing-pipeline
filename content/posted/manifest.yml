@@ -4850,3 +4850,10 @@
   angle: how-it-works
   source_id: ''
   posted_at: '2026-07-02'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-one-translation-isnt-enough-building-a-language-coach-as-an-mcp-server-2p64
+  angle: one-server-three-clients
+  source_id: ''
+  posted_at: '2026-07-02'
