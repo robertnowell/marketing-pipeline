@@ -4843,3 +4843,10 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-07-01'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-you-post-once-and-get-silence-distribution-is-the-bug-10if
+  angle: how-it-works
+  source_id: ''
+  posted_at: '2026-07-02'
