@@ -4871,3 +4871,10 @@
   angle: apca-gates
   source_id: ''
   posted_at: '2026-07-02'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-built-a-skill-tree-for-claude-code-because-i-couldnt-tell-if-i-was-improving-2bdb
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-07-02'
