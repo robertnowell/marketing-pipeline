@@ -4864,3 +4864,10 @@
   angle: no-telemetry
   source_id: ''
   posted_at: '2026-07-02'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/-apca-per-role-contrast-gates-and-why-wcag-lies-on-dark-terminalsn-17ge
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-07-02'
