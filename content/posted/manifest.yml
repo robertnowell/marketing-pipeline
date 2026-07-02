@@ -4857,3 +4857,10 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-07-02'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/no-server-in-the-middle-how-rabbitholes-handles-your-api-keys-2gfo
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-07-02'
