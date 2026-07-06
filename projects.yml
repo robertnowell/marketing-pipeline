@@ -339,3 +339,106 @@ kopi:
     type: kopi
     base_url: https://trykopi.ai
     gallery_url: https://trykopi.ai/api/emails/gallery
+research:
+  repo: https://github.com/robertnowell
+  kind: research-feed
+  audience: founders-solopreneurs
+  status: live
+  post_type: research
+  problem: Most takes you read are secondhand opinion with no paper trail. I run
+    multi-source deep research with tiered sources and verification, and post 
+    only what survived it.
+  solution_one_liner: 'A daily research thread: the most surprising verified finding
+    from my own deep-research reports, with sources named.'
+  channels:
+    - bluesky
+    - mastodon
+    - devto
+    - hashnode
+  facts:
+    - "\"Short posts perform better\" is folklore, not measurement  Neither Godin,
+      Fried/37signals, nor Axios provides engagement data for brevity. Godin: \"I
+      don't keep track… I don't know how many people read my blog.\" [Tier 3, direct
+      quote] Axios's \"80% of readers quit after 350 words\" traces only to a founder
+      interview describing internal Politico/Axios-era data; no dataset, methodology,
+      or third-party…"
+    - 'Despite the missing data, practice converges on one structural template  Axios
+      Smart Brevity "Core 4": (1) ≤6-word muscular tease, (2) one strong opening sentence
+      carrying the most memorable fact, (3) "Why it matters" in 1–2 sentences immediately
+      after the lede, (4) optional "Go deeper" links. Items under ~300 words, paragraphs
+      of 1–2 sentences, ~40% shorter than equivalent prose. [Tier 1 Axios…'
+    - "The link-blog pattern (Willison, Gruber) is the strongest primary-sourced format
+      for research-anchored short posts  Willison (7,607 link posts since 2003): every
+      entry must (a) credit the creator by name (\"Credit is really important\"),
+      (b) explain why it's worth reading, (c) quote liberally, (d) \"add something
+      extra\" so the reader gains value without clicking through. [Tier 1] Gruber's
+      Linked…"
+    - Digest assembly = batch repackaging of continuously published atoms, with 
+      an annotation-required filter  Willison's weekly newsletter is assembled 
+      from the week's already-published blog entries (an Observable notebook 
+      formats them; paste into Substack). External links ("beats") are included 
+      only when they carry an author-written description — raw un-annotated 
+      links are excluded from the digest.…
+    - Verbosity/low density is the top human-judged slop signal; automated 
+      detection of it is weak  The only rigorous slop taxonomy (arXiv 
+      2509.19163, 19 expert interviews → 7 codes) found Relevance, Density, and 
+      Tone the strongest predictors of human slop judgments (all 7 codes 
+      p<0.05); "verbose text conveying minimal content" was consistently 
+      significant across all annotators. The same paper…
+    - Deterministic prose linters are the reliable production gate; at least one
+      prod loop chains an AI writer to one with self-correction  Vale (YAML 
+      style rules, offline, wraps proselint/write-good/alex) is the production 
+      standard. [Tier 1] Fern's "Fern Writer" agent opens PRs that must pass the
+      same Vale checks as human content and auto-commits fixes when flagged — a 
+      real…
+    - 'One-line AI disclosure preserves trust; detailed disclosure damages it  ACM
+      FAccT 2026 controlled study (n=34): detailed AI-use disclosures dropped trust
+      significantly (9.18 vs 9.94, p=0.023) and produced the lowest subscription rates;
+      a one-line disclosure (10.43) matched no-disclosure trust. Small sample; directional.
+      [Tier 1]'
+    - "The best-documented AI-native pipeline (Every.to) keeps humans at three judgment
+      points; no credible fully-automated solo pipeline is documented  Every's five-stage
+      essay pipeline: AI transcribes/organizes/critiques; the human owns \"what am
+      I really trying to say,\" rewrites in own words, and makes final editorial calls.
+      Notable QA trick: Codex converts 4–5k-word drafts to TTS audio so the author…"
+    - Willison's byline policy is a relevant industry marker  "I have a strong 
+      personal policy of not publishing AI-generated writing under my own name" 
+      — while using LLMs heavily for code and proofreading. Combined with 
+      finding 7, the implication for an automated engine is a distinct, 
+      honestly-labeled voice with a one-line standing disclosure, not simulated 
+      personal authorship. [Tier 1]
+    - 'Daily notification pressure wins the hour, not the habit; action-connection
+      and adaptive cadence sustain recurring self-consumed products  JMIR micro-randomized
+      trial (n=598): a notification raised next-hour open probability 3.5× (CI 2.91–4.25)
+      with minimal 30-day habituation decay (0.993/day) — yet median time-to-disengagement
+      was statistically identical with vs. without notifications (11 vs 7…'
+    - This thread comes from the operator's own multi-source deep-research 
+      report '2026-07-06-research-to-content-engine-sota' dated 2026-07-06, and 
+      from a simulated review round where 5 agent-written posts were ranked by 
+      votes.
+  angles:
+    - id: 2026-07-06-simon-willison-s-digest-gate-never-reads
+      summary: "Simon Willison's digest gate never reads the prose: no author-written
+        annotation, no inclusion · thread: The brevity gospel is unmeasured folklore,
+        and AI can't detect slop"
+      last_used:
+    - id: 2026-07-06-the-0-08-recall-stat-this-sub-runs-on-te
+      summary: "The 0.08 recall stat this sub runs on tested three models in September
+        2025 — its own source says re-check before hard-coding · thread: The brevity
+        gospel is unmeasured folklore, and AI can't detect slop"
+      last_used:
+    - id: 2026-07-06-axios-built-smart-brevity-on-80-of-reade
+      summary: "Axios built Smart Brevity on '80% of readers quit after 350 words'
+        — a stat nobody has ever verified · thread: The brevity gospel is unmeasured
+        folklore, and AI can't detect slop"
+      last_used:
+    - id: 2026-07-06-simon-willison-pinned-down-slop-in-may-2
+      summary: "Simon Willison pinned down 'slop' in May 2024 — and his definition
+        has nothing to do with writing quality · thread: The brevity gospel is unmeasured
+        folklore, and AI can't detect slop"
+      last_used:
+    - id: 2026-07-06-llm-judges-catch-the-1-human-slop-signal
+      summary: "LLM judges catch the #1 human slop signal at 0.08 recall — so the
+        reliable gate is a word list · thread: The brevity gospel is unmeasured folklore,
+        and AI can't detect slop"
+      last_used:
