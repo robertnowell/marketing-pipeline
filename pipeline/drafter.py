@@ -72,7 +72,7 @@ def draft(
     the antislop validation gate. If all 3 fail, retries once with violation
     feedback so the model can correct its mistakes.
     """
-    system_prompt = _load_system_prompt()
+    system_prompt = _load_system_prompt(project.post_type)
     user_message = _build_user_message(
         project, project_name, angle_id, channel,
         previous_posts=previous_posts,
@@ -176,9 +176,9 @@ def _candidates_to_json(candidates: list[DraftCandidate]) -> str:
     return json.dumps([c.text for c in candidates])
 
 
-def _load_system_prompt() -> str:
-    path = PROMPTS_DIR / "draft_post.md"
-    return path.read_text()
+def _load_system_prompt(post_type: str = "product") -> str:
+    name = "draft_research_post.md" if post_type == "research" else "draft_post.md"
+    return (PROMPTS_DIR / name).read_text()
 
 
 def _build_user_message(

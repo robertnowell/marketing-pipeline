@@ -35,6 +35,10 @@ class Project(BaseModel):
     kind: str  # Comma-separated: "mcp-server,claude-skill", "saas-email-tool", etc.
     audience: str
     status: Literal["live", "wip", "archived"]
+    # "product" = a tool the author built (default, original behavior).
+    # "research" = a daily research thread — drafts use draft_research_post.md,
+    # which writes link-blog-style insight posts instead of build notes.
+    post_type: Literal["product", "research"] = "product"
     problem: str
     solution_one_liner: str
     facts: list[str] = Field(default_factory=list)
