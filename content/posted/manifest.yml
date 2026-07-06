@@ -4878,3 +4878,10 @@
   angle: cowork-home
   source_id: ''
   posted_at: '2026-07-02'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-your-email-designs-fail-silently-and-a-scorer-that-catches-it-first-984
+  angle: design-critique
+  source_id: ''
+  posted_at: '2026-07-06'
