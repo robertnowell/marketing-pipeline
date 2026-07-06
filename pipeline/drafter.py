@@ -83,7 +83,7 @@ def draft(
 
     # First attempt
     messages = [{"role": "user", "content": user_message}]
-    result = _generate_and_validate(client, model, system_prompt, messages, channel)
+    result = _generate_and_validate(client, model, system_prompt, messages, channel, project=project)
 
     if result.best is not None:
         result.project_name = project_name
@@ -107,7 +107,7 @@ def draft(
         {"role": "user", "content": retry_message},
     ]
 
-    retry_result = _generate_and_validate(client, model, system_prompt, messages, channel)
+    retry_result = _generate_and_validate(client, model, system_prompt, messages, channel, project=project)
     retry_result.project_name = project_name
     retry_result.angle_id = angle_id
     retry_result.channel = channel
@@ -137,6 +137,7 @@ def _generate_and_validate(
     system_prompt: str,
     messages: list[dict],
     channel: str,
+    project: Project | None = None,
 ) -> DraftResult:
     """Call the API and validate the response."""
     response = client.messages.create(
@@ -149,9 +150,15 @@ def _generate_and_validate(
     raw_text = response.content[0].text
     drafts = _parse_drafts(raw_text)
 
+    is_research = project is not None and project.post_type == "research"
     candidates = []
     for i, draft_text in enumerate(drafts):
-        validation = validate(draft_text, channel=channel)
+        validation = validate(
+            draft_text,
+            channel=channel,
+            facts=project.facts if project else None,
+            require_number_grounding=is_research,
+        )
         candidates.append(DraftCandidate(
             text=draft_text,
             validation=validation,

@@ -146,11 +146,43 @@ class ValidationResult:
         return [v for v in self.violations if v.severity == "soft"]
 
 
-def validate(draft: str, channel: str | None = None) -> ValidationResult:
+def _number_grounding_violations(draft: str, facts: list[str]) -> list[Violation]:
+    """Every digit-group in the draft must appear somewhere in facts[].
+
+    Deterministic proxy for claim grounding: names and paraphrase can't be
+    checked cheaply, but a number that appears in no fact is by definition
+    an invented or mutated claim. Normalizes separators ($1,500 == 1500)
+    so formatting differences don't false-positive.
+    """
+    def norm_numbers(text: str) -> set[str]:
+        return {m.replace(",", "") for m in re.findall(r"\d[\d,]*(?:\.\d+)?", text)}
+
+    fact_numbers = set()
+    for f in facts:
+        fact_numbers |= norm_numbers(f)
+
+    violations = []
+    for num in norm_numbers(draft):
+        if num not in fact_numbers:
+            violations.append(Violation(
+                rule="ungrounded_number",
+                detail=f"Number '{num}' appears in the draft but in no fact — "
+                       f"invented or mutated claim",
+            ))
+    return violations
+
+
+def validate(
+    draft: str,
+    channel: str | None = None,
+    facts: list[str] | None = None,
+    require_number_grounding: bool = False,
+) -> ValidationResult:
     """Run the full anti-slop gate on a draft.
 
     Returns a ValidationResult. The draft passes only if there are zero
-    hard violations.
+    hard violations. When require_number_grounding is set (research posts),
+    every number in the draft must trace to facts[].
     """
     violations: list[Violation] = []
     text_lower = draft.lower()
@@ -255,6 +287,10 @@ def validate(draft: str, channel: str | None = None) -> ValidationResult:
     if channel:
         length_violations = _check_length(draft, channel)
         violations.extend(length_violations)
+
+    # 12. Claim grounding for research posts: numbers must trace to facts
+    if require_number_grounding and facts:
+        violations.extend(_number_grounding_violations(draft, facts))
 
     return ValidationResult(
         passed=not any(v.severity == "hard" for v in violations),

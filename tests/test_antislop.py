@@ -193,3 +193,25 @@ def test_clean_long_form_passes() -> None:
     )
     result = validate(draft, channel="devto")
     assert result.passed, f"Clean long draft failed: {[v.detail for v in result.violations]}"
+
+
+def test_number_grounding_rejects_invented_numbers() -> None:
+    facts = ["CoSchedule surveyed 515 marketers: 62% use no PM software."]
+    draft = "A survey of 515 marketers found 70% use no calendar software at all."
+    result = validate(draft, facts=facts, require_number_grounding=True)
+    assert not result.passed
+    assert any(v.rule == "ungrounded_number" and "70" in v.detail
+               for v in result.violations)
+
+
+def test_number_grounding_passes_grounded_and_normalizes_separators() -> None:
+    facts = ["The retrofit now costs $3,500 and 62% of teams skipped it."]
+    draft = "The retrofit costs 3500 dollars; 62% of teams skipped it, per the report."
+    result = validate(draft, facts=facts, require_number_grounding=True)
+    assert result.passed
+
+
+def test_number_grounding_off_by_default() -> None:
+    draft = "A survey of 999 people found 88% of everything is invented."
+    result = validate(draft)
+    assert result.passed
