@@ -4892,3 +4892,10 @@
   angle: girlfriend-language
   source_id: ''
   posted_at: '2026-07-06'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-wanted-wikipedia-on-every-page-so-i-built-it-359j
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-07-06'
