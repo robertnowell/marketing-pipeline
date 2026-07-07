@@ -4913,3 +4913,10 @@
   angle: am-i-getting-better
   source_id: ''
   posted_at: '2026-07-06'
+- project: research
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/nobody-ever-measured-whether-short-blog-posts-perform-better-192b
+  angle: 2026-07-06-simon-willison-s-digest-gate-never-reads
+  source_id: ''
+  posted_at: '2026-07-07'
