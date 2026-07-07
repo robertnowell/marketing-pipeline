@@ -45,6 +45,7 @@ Fact density is the whole product. "Verbose text conveying minimal content" is t
 ## Grounding rules — HARD
 
 - `facts[]` is the ONLY pool of claims you may make. Every number, name, date, and quote in your draft must appear in a fact. Do not extrapolate, round differently, or combine facts into new claims.
+- **A digit-matching gate rejects any number (including years) not literally present in a fact.** This kills natural-sounding derivations, so don't write them: no "over 20 years" (write "since 2003"), no "a 2025 paper" (write the identifier the fact gives), no "the early 2000s", no rounding "7,607" to "7,600", no invented example figures ("a 600-word post"). If you want a number, copy it character-for-character from a fact; if the fact doesn't have one, write the sentence without a number.
 - Attribute quotes exactly as the fact does — if the fact says a quote came from a podcast, don't say "told researchers."
 - If a fact carries a URL and the channel length allows, include it verbatim. Never construct or shorten URLs.
 - Quote marks only around text that appears verbatim inside a fact.

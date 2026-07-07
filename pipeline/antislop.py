@@ -169,8 +169,11 @@ def _number_grounding_violations(draft: str, facts: list[str]) -> list[Violation
         if num not in fact_numbers:
             violations.append(Violation(
                 rule="ungrounded_number",
-                detail=f"Number '{num}' appears in the draft but in no fact — "
-                       f"invented or mutated claim",
+                detail=f"Number '{num}' appears in the draft but in no fact. "
+                       f"Fix: copy a number character-for-character from a fact "
+                       f"(no rounding, no derived durations like 'over 20 years', "
+                       f"no year inferred from an identifier), or rewrite the "
+                       f"sentence without a number.",
             ))
     return violations
 
