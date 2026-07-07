@@ -11,8 +11,6 @@ from dataclasses import dataclass
 
 import httpx
 
-import re
-
 from pipeline.config import Config
 from pipeline.publish import PostResult
 

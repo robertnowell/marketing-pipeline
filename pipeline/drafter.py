@@ -184,7 +184,7 @@ def _generate_and_validate(
         verdicts = judge_titles(
             client, [p for _, p in judgeable], project.audience, model=model,
         )
-        for (c, p), v in zip(judgeable, verdicts):
+        for (c, p), v in zip(judgeable, verdicts, strict=False):
             if v.get("verdict") == "fail":
                 c.validation.violations.append(Violation(
                     rule="cold_read_title",
