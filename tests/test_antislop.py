@@ -215,3 +215,11 @@ def test_number_grounding_off_by_default() -> None:
     draft = "A survey of 999 people found 88% of everything is invented."
     result = validate(draft)
     assert result.passed
+
+
+def test_markdown_image_is_not_an_exclamation() -> None:
+    draft = "# Title\n\n![cover](https://example.com/img.png)\n\nBody with facts."
+    result = validate(draft)
+    assert not any(v.rule == "exclamation" for v in result.violations)
+    result2 = validate("Wow! Amazing.")
+    assert any(v.rule == "exclamation" for v in result2.violations)

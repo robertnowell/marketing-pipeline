@@ -226,8 +226,9 @@ def validate(
             detail=f"Hashtag not allowed: '{match.group()}'",
         ))
 
-    # 5. Exclamation points
-    if "!" in draft:
+    # 5. Exclamation points — markdown image syntax (`![alt](url)`) is not
+    # an exclamation; strip it before checking.
+    if "!" in re.sub(r"!\[", "", draft):
         violations.append(Violation(
             rule="exclamation",
             detail="Exclamation points not allowed",
