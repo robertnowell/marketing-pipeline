@@ -155,6 +155,9 @@ def _number_grounding_violations(draft: str, facts: list[str]) -> list[Violation
     so formatting differences don't false-positive.
     """
     def norm_numbers(text: str) -> set[str]:
+        # URLs aren't claims — strip them so image links and repo paths
+        # (which carry dates and ids) don't trip the gate.
+        text = re.sub(r"https?://\S+", "", text)
         return {m.replace(",", "") for m in re.findall(r"\d[\d,]*(?:\.\d+)?", text)}
 
     fact_numbers = set()

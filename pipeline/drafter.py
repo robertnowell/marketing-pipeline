@@ -202,12 +202,22 @@ def _build_user_message(
     payload = {
         "project_name": project_name,
         "repo": project.repo,
+        "audience": project.audience,
         "problem": project.problem,
         "solution_one_liner": project.solution_one_liner,
         "facts": project.facts,
         "angle": angle.summary,
         "channel": channel,
     }
+
+    # Long-form research posts embed the thread's cover image right after
+    # the title — a text-only wall is copy, not a blog post.
+    if project.cover_image and channel in LONG_FORM_CHANNELS:
+        payload["cover_image_url"] = project.cover_image
+        payload["cover_image_instruction"] = (
+            "Immediately after the title line, include exactly this markdown "
+            f"image line, verbatim: ![cover]({project.cover_image})"
+        )
 
     if previous_posts:
         payload["previous_posts"] = previous_posts

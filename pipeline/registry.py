@@ -47,6 +47,9 @@ class Project(BaseModel):
     launch: dict[str, str] = Field(default_factory=dict)
     # Optional: for projects that have visual content to fetch (e.g., Kopi email designs)
     content_source: dict | None = None
+    # Optional: hosted cover image URL embedded at the top of long-form drafts
+    # (research projects: regenerated per-thread by content-engine's harvest)
+    cover_image: str | None = None
 
     @property
     def channel_names(self) -> list[str]:
