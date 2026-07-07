@@ -356,91 +356,65 @@ research:
     - devto
     - hashnode
   facts:
-    - "\"Short posts perform better\" is folklore, not measurement  Neither Godin,
-      Fried/37signals, nor Axios provides engagement data for brevity. Godin: \"I
-      don't keep track… I don't know how many people read my blog.\" [Tier 3, direct
-      quote] Axios's \"80% of readers quit after 350 words\" traces only to a founder
-      interview describing internal Politico/Axios-era data; no dataset, methodology,
-      or third-party…"
-    - 'Despite the missing data, practice converges on one structural template  Axios
-      Smart Brevity "Core 4": (1) ≤6-word muscular tease, (2) one strong opening sentence
-      carrying the most memorable fact, (3) "Why it matters" in 1–2 sentences immediately
-      after the lede, (4) optional "Go deeper" links. Items under ~300 words, paragraphs
-      of 1–2 sentences, ~40% shorter than equivalent prose. [Tier 1 Axios…'
-    - "The link-blog pattern (Willison, Gruber) is the strongest primary-sourced format
-      for research-anchored short posts  Willison (7,607 link posts since 2003): every
-      entry must (a) credit the creator by name (\"Credit is really important\"),
-      (b) explain why it's worth reading, (c) quote liberally, (d) \"add something
-      extra\" so the reader gains value without clicking through. [Tier 1] Gruber's
-      Linked…"
-    - Digest assembly = batch repackaging of continuously published atoms, with 
-      an annotation-required filter  Willison's weekly newsletter is assembled 
-      from the week's already-published blog entries (an Observable notebook 
-      formats them; paste into Substack). External links ("beats") are included 
-      only when they carry an author-written description — raw un-annotated 
-      links are excluded from the digest.…
-    - Verbosity/low density is the top human-judged slop signal; automated 
-      detection of it is weak  The only rigorous slop taxonomy (arXiv 
-      2509.19163, 19 expert interviews → 7 codes) found Relevance, Density, and 
-      Tone the strongest predictors of human slop judgments (all 7 codes 
-      p<0.05); "verbose text conveying minimal content" was consistently 
-      significant across all annotators. The same paper…
-    - Deterministic prose linters are the reliable production gate; at least one
-      prod loop chains an AI writer to one with self-correction  Vale (YAML 
-      style rules, offline, wraps proselint/write-good/alex) is the production 
-      standard. [Tier 1] Fern's "Fern Writer" agent opens PRs that must pass the
-      same Vale checks as human content and auto-commits fixes when flagged — a 
-      real…
-    - 'One-line AI disclosure preserves trust; detailed disclosure damages it  ACM
-      FAccT 2026 controlled study (n=34): detailed AI-use disclosures dropped trust
-      significantly (9.18 vs 9.94, p=0.023) and produced the lowest subscription rates;
-      a one-line disclosure (10.43) matched no-disclosure trust. Small sample; directional.
-      [Tier 1]'
-    - "The best-documented AI-native pipeline (Every.to) keeps humans at three judgment
-      points; no credible fully-automated solo pipeline is documented  Every's five-stage
-      essay pipeline: AI transcribes/organizes/critiques; the human owns \"what am
-      I really trying to say,\" rewrites in own words, and makes final editorial calls.
-      Notable QA trick: Codex converts 4–5k-word drafts to TTS audio so the author…"
-    - Willison's byline policy is a relevant industry marker  "I have a strong 
-      personal policy of not publishing AI-generated writing under my own name" 
-      — while using LLMs heavily for code and proofreading. Combined with 
-      finding 7, the implication for an automated engine is a distinct, 
-      honestly-labeled voice with a one-line standing disclosure, not simulated 
-      personal authorship. [Tier 1]
-    - 'Daily notification pressure wins the hour, not the habit; action-connection
-      and adaptive cadence sustain recurring self-consumed products  JMIR micro-randomized
-      trial (n=598): a notification raised next-hour open probability 3.5× (CI 2.91–4.25)
-      with minimal 30-day habituation decay (0.993/day) — yet median time-to-disengagement
-      was statistically identical with vs. without notifications (11 vs 7…'
+    - 'Fully answered, with two clear headlines: A) For a 3-year hold, HW4 is NOT
+      the thing that goes obsolete. Tesla stated on the Q1 2026 earnings call that
+      "AI4 is sufficient for unsupervised Full Self-Driving," and AI5 (HW5) slipped
+      to ~mid-2027 for production cars — even the *Cybercab* launches on HW4.'
+    - HW4 keeps getting the flagship software (FSD v15 confirmed to run on it).
+    - So through 2026–2029 you're current-generation, not stranded, and hardware
+      generation is only weakly priced into a mainstream used Model 3.
+    - "The honest caveat: Tesla has a documented pattern of stranding hardware it
+      once called \"enough\" (it admitted HW3 *can't* do unsupervised FSD in April
+      2026, and the promised \"free\" retrofit became a paid ~$3–5k / trade-in-discount
+      that still hasn't shipped) — plus a memory-doubled \"HW4 Plus\" is coming in
+      2027."
+    - So an eventual HW4 squeeze is a real *tail risk*, just not the base case 
+      for a 3-year hold.
+    - B) Your all-in cost is ≈ $840/month (~$30,200 over 3 years) — and 
+      depreciation is ~60% of it. Your $0 charging barely matters; the whole 
+      ballgame is depreciation.
+    - 'The good news: you bought at year 2, after the brutal early drop, so the car
+      rides the *flat tail* of the curve, and used Tesla values are currently *firming*
+      (up 4.3% after the EV credit expired).'
+    - Projected mid-2029 resale ≈ $23,500 private-party, making your 3-year 
+      capital loss ≈ $17,900.
+    - '| Line | 3-yr total | Per month | |---|---|---| | Depreciation (capital lost:
+      $41,359 paid − ~$23,500 resale) | ~$17,900 | ~$497 | | Insurance (GEICO full
+      coverage) | $9,000 | $250 | | Registration / DMV (CA, incl.'
+    - EV fee) | ~$1,600 | ~$44 | | Tires (one set within 3 yrs/50k mi) | ~$1,200
+      | ~$33 | | Maintenance (filters, rotations, wipers) | ~$500 | ~$14 | | 
+      Electricity (charge free at work) | $0 | $0 | | Cash cost of ownership | 
+      ~$30,200 | ≈ $839 / month | | *Opportunity cost of $41k cash (~4%) — 
+      separate line* | *~$4,900* | *~$136* | | *Economic cost incl.
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-07-06-research-to-content-engine-sota' dated 2026-07-06, and 
-      from a simulated review round where 5 agent-written posts were ranked by 
-      votes.
+      report '2026-07-06-tesla-m3-3yr-cost-hw4-obsolescence' dated 2026-07-07, 
+      and from a simulated review round where 5 agent-written posts were ranked 
+      by votes.
   angles:
-    - id: 2026-07-06-simon-willison-s-digest-gate-never-reads
-      summary: "Simon Willison's digest gate never reads the prose: no author-written
-        annotation, no inclusion · thread: The brevity gospel is unmeasured folklore,
-        and AI can't detect slop"
-      last_used: '2026-07-07'
-    - id: 2026-07-06-the-0-08-recall-stat-this-sub-runs-on-te
-      summary: "The 0.08 recall stat this sub runs on tested three models in September
-        2025 — its own source says re-check before hard-coding · thread: The brevity
-        gospel is unmeasured folklore, and AI can't detect slop"
+    - id: 2026-07-07-the-dupont-teflon-memos-surfaced-because
+      summary: "The DuPont Teflon memos surfaced because a West Virginia farmer's
+        cattle died: Robert Bilott obtained 'tens of thousands of damning documents'
+        in the Tennant litigation · thread: Tesla promised a free self-driving…"
       last_used:
-    - id: 2026-07-06-axios-built-smart-brevity-on-80-of-reade
-      summary: "Axios built Smart Brevity on '80% of readers quit after 350 words'
-        — a stat nobody has ever verified · thread: The brevity gospel is unmeasured
-        folklore, and AI can't detect slop"
+    - id: 2026-07-07-internal-plastics-industry-documents-fro
+      summary: "Internal plastics-industry documents from the late 1960s called recycling
+        'virtually hopeless.' The industry funded the first recycling pilots anyway
+        · thread: Tesla promised a free self-driving upgrade, then made it…"
       last_used:
-    - id: 2026-07-06-simon-willison-pinned-down-slop-in-may-2
-      summary: "Simon Willison pinned down 'slop' in May 2024 — and his definition
-        has nothing to do with writing quality · thread: The brevity gospel is unmeasured
-        folklore, and AI can't detect slop"
+    - id: 2026-07-07-roland-geyer-counted-every-piece-of-plas
+      summary: 'Roland Geyer counted every piece of plastic ever made: 9% recycled.
+        For aluminum, roughly 75% of all metal ever produced is still in use · thread:
+        Tesla promised a free self-driving upgrade, then made it cost thousands'
       last_used:
-    - id: 2026-07-06-llm-judges-catch-the-1-human-slop-signal
-      summary: "LLM judges catch the #1 human slop signal at 0.08 recall — so the
-        reliable gate is a word list · thread: The brevity gospel is unmeasured folklore,
-        and AI can't detect slop"
+    - id: 2026-07-07-in-1956-lloyd-stouffer-told-plastics-exe
+      summary: "In 1956, Lloyd Stouffer told plastics executives their future was
+        'in the trash can.' The hard part was teaching Depression-era Americans to
+        throw things away · thread: Tesla promised a free self-driving upgrade, then…"
+      last_used:
+    - id: 2026-07-07-in-1961-dupont-s-own-toxicologist-warned
+      summary: "In 1961, DuPont's own toxicologist warned that Teflon chemicals enlarged
+        rat livers. By 1973, the company had concluded there was no safe exposure
+        level · thread: Tesla promised a free self-driving upgrade, then made it…"
       last_used:
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-06-the-brevity-gospel-is-unmeasured-folklor.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-07-tesla-promised-a-free-self-driving-upgra.png
