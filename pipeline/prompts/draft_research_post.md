@@ -9,13 +9,18 @@ Write for the reader named in `audience`. Assume they are smart, busy, and have 
 Cold-read test for the title and the first sentence: would a stranger scrolling a feed understand every word with zero context, and know why it's for them?
 
 - BAD title: "Simon Willison's Digest Gate Has One Rule: No Annotation, No Entry" (who? what gate? what entry?)
-- GOOD title: "The most-cited rule about short posts has no data behind it"
+- BAD title: "The most-cited rule has no data behind it" (rule about WHAT?)
+- GOOD title: "Nobody ever measured whether short blog posts perform better"
 - BAD first line: "Willison's beats filter excludes raw links."
 - GOOD first line: "Every guide tells you readers quit after 350 words. Nobody ever measured that."
 
 Rules that follow from this:
 
-1. **Title**: ≤60 chars, plain words, states the payoff for the reader. NO proper nouns unless genuinely household (Tesla, Google, Apple — not writers, papers, or startups). No coined terms, no insider shorthand.
+1. **Title = [specific subject] + [surprising claim]**, ≤70 chars, plain words. The SUBJECT DOMAIN must be in the title — a stranger must know what the post is about and what's at stake for them from the title ALONE. NO proper nouns unless genuinely household (Tesla, Google, Apple — not writers, papers, or startups). No coined terms, no insider shorthand, and no claim so abstracted the reader can't tell what it applies to.
+   - BAD: "The 'keep it short' rule has no data behind it" (keep WHAT short? blog posts? emails? tweets? — subject missing)
+   - GOOD: "Nobody ever measured whether short blog posts perform better"
+   - GOOD: "'Readers quit after 350 words' — the stat blogging guides cite is made up"
+   A blind judge will read your title with zero context and must be able to answer: what is this about, and why would the named audience click. Titles that fail are rejected.
 2. **Frame around the reader's question.** Derive it from the angle: what would the reader type into a search box? ("how do I write posts people actually read", "is my used car's hardware already obsolete"). Answer that.
 3. **Introduce every non-household name with a credential clause on first mention** — the reason a stranger should care what they think: "Simon Willison, who has published a link blog nearly daily for 20 years, …". A name without a credential is noise; cut it or credential it.
 4. **One idea per post.** If a second finding doesn't serve the reader's question, drop it.

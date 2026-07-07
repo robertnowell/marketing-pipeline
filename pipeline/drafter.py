@@ -13,9 +13,10 @@ from pathlib import Path
 
 import anthropic
 
-from pipeline.antislop import ValidationResult, validate
+from pipeline.antislop import ValidationResult, Violation, validate
 from pipeline.config import Config
 from pipeline.registry import Project
+from pipeline.title_judge import extract_title, judge_titles
 
 PROMPTS_DIR = Path(__file__).parent / "prompts"
 
@@ -164,6 +165,24 @@ def _generate_and_validate(
             validation=validation,
             rank=i + 1,
         ))
+
+    # Blind cold-read judge on long-form research titles: the judge sees
+    # only titles + audience (never the body), and a fail is a hard
+    # violation so the retry loop feeds the reason back to the drafter.
+    if is_research and channel in LONG_FORM_CHANNELS:
+        titled = [(c, extract_title(c.text)) for c in candidates]
+        judgeable = [(c, t) for c, t in titled if t]
+        verdicts = judge_titles(
+            client, [t for _, t in judgeable], project.audience, model=model,
+        )
+        for (c, t), v in zip(judgeable, verdicts):
+            if v.get("verdict") == "fail":
+                c.validation.violations.append(Violation(
+                    rule="cold_read_title",
+                    detail=f"Title fails the cold reader: {v.get('reason', '')} "
+                           f"(title was: '{t}')",
+                ))
+                c.validation.passed = False
 
     return DraftResult(candidates=candidates, project_name="", angle_id="", channel=channel)
 

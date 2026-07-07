@@ -223,3 +223,9 @@ def test_markdown_image_is_not_an_exclamation() -> None:
     assert not any(v.rule == "exclamation" for v in result.violations)
     result2 = validate("Wow! Amazing.")
     assert any(v.rule == "exclamation" for v in result2.violations)
+
+
+def test_extract_title() -> None:
+    from pipeline.title_judge import extract_title
+    assert extract_title("# My Title\n\nBody") == "My Title"
+    assert extract_title("No title here.") is None
