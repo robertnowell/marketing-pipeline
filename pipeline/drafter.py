@@ -8,6 +8,7 @@ with violation feedback if all candidates fail validation.
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -166,21 +167,27 @@ def _generate_and_validate(
             rank=i + 1,
         ))
 
-    # Blind cold-read judge on long-form research titles: the judge sees
-    # only titles + audience (never the body), and a fail is a hard
-    # violation so the retry loop feeds the reason back to the drafter.
-    if is_research and channel in LONG_FORM_CHANNELS:
-        titled = [(c, extract_title(c.text)) for c in candidates]
-        judgeable = [(c, t) for c, t in titled if t]
+    # Blind cold-read judge on research packaging: the judge sees only the
+    # packaging text + audience (never the body). Long-form: the title.
+    # Short channels: the first sentence — it IS the packaging there.
+    # Fails are hard violations so the retry loop feeds reasons back.
+    if is_research:
+        def packaging(c: DraftCandidate) -> str | None:
+            if channel in LONG_FORM_CHANNELS:
+                return extract_title(c.text)
+            first = c.text.strip().split("\n")[0]
+            return re.split(r"(?<=[.!?—]) ", first)[0][:200] or None
+
+        judgeable = [(c, p) for c in candidates if (p := packaging(c))]
         verdicts = judge_titles(
-            client, [t for _, t in judgeable], project.audience, model=model,
+            client, [p for _, p in judgeable], project.audience, model=model,
         )
-        for (c, t), v in zip(judgeable, verdicts):
+        for (c, p), v in zip(judgeable, verdicts):
             if v.get("verdict") == "fail":
                 c.validation.violations.append(Violation(
                     rule="cold_read_title",
-                    detail=f"Title fails the cold reader: {v.get('reason', '')} "
-                           f"(title was: '{t}')",
+                    detail=f"Opening/title fails the cold reader: {v.get('reason', '')} "
+                           f"(text was: '{p}')",
                 ))
                 c.validation.passed = False
 
