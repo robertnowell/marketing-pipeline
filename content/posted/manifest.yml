@@ -4940,3 +4940,10 @@
   angle: half-known-concepts
   source_id: ''
   posted_at: '2026-07-07'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-are-built-for-syntax-claude-code-is-mostly-paragraphs-527b
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-07-07'
