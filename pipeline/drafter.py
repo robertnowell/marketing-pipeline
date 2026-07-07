@@ -176,7 +176,9 @@ def _generate_and_validate(
             if channel in LONG_FORM_CHANNELS:
                 return extract_title(c.text)
             first = c.text.strip().split("\n")[0]
-            return re.split(r"(?<=[.!?—]) ", first)[0][:200] or None
+            # Split on sentence enders only — an em-dash mid-sentence is
+            # not a boundary, and judging a fragment is a false fail.
+            return re.split(r"(?<=[.!?]) ", first)[0][:200] or None
 
         judgeable = [(c, p) for c in candidates if (p := packaging(c))]
         verdicts = judge_titles(
