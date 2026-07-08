@@ -4985,3 +4985,16 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-07-08'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mq5k5wplba27
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-07-08'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-the-word-you-dont-know-is-inside-the-definition-37p8
+  angle: curiosity-without-losing-place
+  source_id: ''
+  posted_at: '2026-07-08'
