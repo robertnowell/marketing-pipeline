@@ -4947,3 +4947,16 @@
   angle: prose-not-code
   source_id: ''
   posted_at: '2026-07-07'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mq4wlinhd52z
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-07-08'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/what-anthropics-11-behavior-study-looks-like-on-your-own-sessions-141g
+  angle: fluency-on-my-conversations
+  source_id: ''
+  posted_at: '2026-07-08'
