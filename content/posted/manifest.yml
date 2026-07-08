@@ -4960,3 +4960,15 @@
   angle: fluency-on-my-conversations
   source_id: ''
   posted_at: '2026-07-08'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mq54rs6dns2e
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-07-08'
+- project: kopi
+  channel: devto
+  url: https://dev.to/palo_alto_ai/why-i-stopped-designing-emails-by-hand-415c
+  angle: time-savings
+  source_id: ''
+  posted_at: '2026-07-08'
