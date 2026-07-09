@@ -5042,3 +5042,16 @@
   angle: audio-fluency
   source_id: ''
   posted_at: '2026-07-09'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mq7tgmg4c62l
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-07-09'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/wikipedia-on-every-page-without-the-tab-switch-h4b
+  angle: philosophy-counter
+  source_id: ''
+  posted_at: '2026-07-09'
