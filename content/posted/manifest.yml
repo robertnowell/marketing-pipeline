@@ -5055,3 +5055,16 @@
   angle: philosophy-counter
   source_id: ''
   posted_at: '2026-07-09'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mq7xlvj7bh22
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-07-09'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-optimize-for-code-claude-code-is-mostly-sentences-b35
+  angle: reading-for-hours
+  source_id: ''
+  posted_at: '2026-07-09'
