@@ -5029,3 +5029,16 @@
   angle: 2026-07-07-the-dupont-teflon-memos-surfaced-because
   source_id: ''
   posted_at: '2026-07-09'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mq7qpldrax2p
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-07-09'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/audio-pronunciation-isnt-a-bonus-feature-its-how-register-sticks-3ag5
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-07-09'
