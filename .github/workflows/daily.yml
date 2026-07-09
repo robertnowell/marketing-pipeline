@@ -2,10 +2,18 @@ name: Daily post cycle + engagement report
 
 on:
   schedule:
-    # One project per invocation, spaced 2 hours apart across the day.
-    # 5 fires/day every day (weekends too); each picks the next project
-    # that hasn't posted today. If all posted, no-op.
-    - cron: "0 10,12,14,16,18 * * *"
+    # One project per invocation; each picks the next project that hasn't
+    # posted today. If all posted, no-op. All fires held to the overnight
+    # window (nothing after 8am Pacific): 3:30–7:30am PT, hourly.
+    # UTC is fixed, so in PDT (UTC-7) these are 3:30/4:30/5:30/6:30/7:30 AM;
+    # in PST (UTC-8) they shift an hour earlier (2:30–6:30 AM) — still in-window.
+    # The content-engine harvest lands overnight (~11pm PT start), so these
+    # draft from the day's fresh research angle.
+    - cron: "30 10 * * *"   # 3:30 AM PT
+    - cron: "30 11 * * *"   # 4:30 AM PT
+    - cron: "30 12 * * *"   # 5:30 AM PT
+    - cron: "30 13 * * *"   # 6:30 AM PT
+    - cron: "30 14 * * *"   # 7:30 AM PT
   workflow_dispatch:
     inputs:
       dry_run:
