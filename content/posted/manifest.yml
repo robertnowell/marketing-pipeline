@@ -5004,3 +5004,16 @@
   angle: ikb-mystique
   source_id: ''
   posted_at: '2026-07-08'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mq7k5avcx72l
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-07-09'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/shipping-an-mcp-server-without-watching-it-disappear-24e4
+  angle: use-case
+  source_id: ''
+  posted_at: '2026-07-09'
