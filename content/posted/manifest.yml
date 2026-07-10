@@ -5068,3 +5068,15 @@
   angle: reading-for-hours
   source_id: ''
   posted_at: '2026-07-09'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqc2cbwz2a2o
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-07-10'
+- project: skill-tree
+  channel: devto
+  url: https://dev.to/palo_alto_ai/-41fp
+  angle: what-you-avoid
+  source_id: ''
+  posted_at: '2026-07-10'
