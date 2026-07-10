@@ -5106,3 +5106,16 @@
   angle: one-server-three-clients
   source_id: ''
   posted_at: '2026-07-10'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqcdrfjpyo2l
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-07-10'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-i-chose-shadow-dom-over-an-iframe-for-inline-tooltips-73c
+  angle: shadow-dom
+  source_id: ''
+  posted_at: '2026-07-10'
