@@ -5080,3 +5080,16 @@
   angle: what-you-avoid
   source_id: ''
   posted_at: '2026-07-10'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqc4wiipqp2l
+  angle: brand-consistency
+  source_id: ''
+  posted_at: '2026-07-10'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/your-email-design-is-broken-and-you-wont-know-until-open-rates-drop-52k9
+  angle: brand-consistency
+  source_id: ''
+  posted_at: '2026-07-10'
