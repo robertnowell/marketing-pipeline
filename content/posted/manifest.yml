@@ -5119,3 +5119,16 @@
   angle: shadow-dom
   source_id: ''
   posted_at: '2026-07-10'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqchaeyjek2z
+  angle: four-variations
+  source_id: ''
+  posted_at: '2026-07-10'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/a-terminal-theme-tuned-for-paragraphs-not-keywords-1bf0
+  angle: four-variations
+  source_id: ''
+  posted_at: '2026-07-10'
