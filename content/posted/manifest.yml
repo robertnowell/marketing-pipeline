@@ -5171,3 +5171,16 @@
   angle: girlfriend-language
   source_id: ''
   posted_at: '2026-07-11'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqetbp4qgp2o
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-07-11'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/no-server-sees-your-queries-thats-a-design-choice-not-a-footnote-o7a
+  angle: no-telemetry
+  source_id: ''
+  posted_at: '2026-07-11'
