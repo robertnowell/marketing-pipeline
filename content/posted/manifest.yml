@@ -5145,3 +5145,16 @@
   angle: launch
   source_id: ''
   posted_at: '2026-07-11'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqelnwjf3p2o
+  angle: 2026-07-07-internal-plastics-industry-documents-fro
+  source_id: ''
+  posted_at: '2026-07-11'
+- project: research
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/buying-a-used-tesla-depreciation-is-60-of-what-youll-actually-spend-1a1e
+  angle: 2026-07-07-internal-plastics-industry-documents-fro
+  source_id: ''
+  posted_at: '2026-07-11'
