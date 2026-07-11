@@ -5132,3 +5132,16 @@
   angle: four-variations
   source_id: ''
   posted_at: '2026-07-10'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqeiltaxmc2c
+  angle: launch
+  source_id: ''
+  posted_at: '2026-07-11'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-mcp-servers-die-in-week-two-and-a-fix-2nc4
+  angle: launch
+  source_id: ''
+  posted_at: '2026-07-11'
