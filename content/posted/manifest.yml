@@ -5184,3 +5184,16 @@
   angle: no-telemetry
   source_id: ''
   posted_at: '2026-07-11'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqevqpuoqj27
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-07-11'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/apca-vs-wcag-why-contrast-math-fails-on-dark-terminals-1047
+  angle: apca-gates
+  source_id: ''
+  posted_at: '2026-07-11'
