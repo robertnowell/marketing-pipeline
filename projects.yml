@@ -356,65 +356,58 @@ research:
     - devto
     - hashnode
   facts:
-    - 'Fully answered, with two clear headlines: A) For a 3-year hold, HW4 is NOT
-      the thing that goes obsolete. Tesla stated on the Q1 2026 earnings call that
-      "AI4 is sufficient for unsupervised Full Self-Driving," and AI5 (HW5) slipped
-      to ~mid-2027 for production cars — even the *Cybercab* launches on HW4.'
-    - HW4 keeps getting the flagship software (FSD v15 confirmed to run on it).
-    - So through 2026–2029 you're current-generation, not stranded, and hardware
-      generation is only weakly priced into a mainstream used Model 3.
-    - "The honest caveat: Tesla has a documented pattern of stranding hardware it
-      once called \"enough\" (it admitted HW3 *can't* do unsupervised FSD in April
-      2026, and the promised \"free\" retrofit became a paid ~$3–5k / trade-in-discount
-      that still hasn't shipped) — plus a memory-doubled \"HW4 Plus\" is coming in
-      2027."
-    - So an eventual HW4 squeeze is a real *tail risk*, just not the base case 
-      for a 3-year hold.
-    - B) Your all-in cost is ≈ $840/month (~$30,200 over 3 years) — and 
-      depreciation is ~60% of it. Your $0 charging barely matters; the whole 
-      ballgame is depreciation.
-    - 'The good news: you bought at year 2, after the brutal early drop, so the car
-      rides the *flat tail* of the curve, and used Tesla values are currently *firming*
-      (up 4.3% after the EV credit expired).'
-    - Projected mid-2029 resale ≈ $23,500 private-party, making your 3-year 
-      capital loss ≈ $17,900.
-    - '| Line | 3-yr total | Per month | |---|---|---| | Depreciation (capital lost:
-      $41,359 paid − ~$23,500 resale) | ~$17,900 | ~$497 | | Insurance (GEICO full
-      coverage) | $9,000 | $250 | | Registration / DMV (CA, incl.'
-    - EV fee) | ~$1,600 | ~$44 | | Tires (one set within 3 yrs/50k mi) | ~$1,200
-      | ~$33 | | Maintenance (filters, rotations, wipers) | ~$500 | ~$14 | | 
-      Electricity (charge free at work) | $0 | $0 | | Cash cost of ownership | 
-      ~$30,200 | ≈ $839 / month | | *Opportunity cost of $41k cash (~4%) — 
-      separate line* | *~$4,900* | *~$136* | | *Economic cost incl.
+    - 'The line items decode as: Business Plan (the enterprise tier that unlocks everything),
+      Unify Plus (identity resolution + AI-computed traits like predicted lifetime
+      value / churn), Audiences and Journeys (build customer segments and run automated
+      multi-step campaigns), and Functions (custom-code connectors — billed at $0
+      here).'
+    - As a Segment contract, it's completely normal. Real-deal benchmark data 
+      (Vendr, 379 deals) puts the *median* Segment Business contract at 
+      $55,600/year, range $14.8K–$197K.
+    - As a tool for a brand of Mirai's size, it looks badly oversized. Mirai 
+      Clinical is a ~$3–4M-revenue, bootstrapped, DTC-only brand run by one 
+      full-time person (founder Koko Hayashi — who is literally named "Project 
+      Sponsor" on the invoice) plus freelancers, with ~60K website visits/month 
+      and no data/growth team.
+    - $50K is ~1.3–1.7% of revenue on a single infrastructure tool — and almost 
+      everything it does, Mirai could get from Klaviyo + Shopify, which they 
+      very likely already pay for.
+    - "The real question isn't \"why is the bill so high\" — it's \"who sold a one-person
+      skincare brand a mid-market CDP, and is any of it actually wired up and driving
+      revenue?\" > ⚠️ Source caveat: Product and pricing findings are anchored in
+      Tier 1/2 sources (official Twilio docs, Vendr deal data)."
+    - The brand-sizing and the "cheaper alternative" comparisons lean partly on 
+      Tier 3 estimators and vendor-adjacent sources — directionally strong, but 
+      revenue/traffic figures are estimates, not audited numbers.
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-07-06-tesla-m3-3yr-cost-hw4-obsolescence' dated 2026-07-07, 
-      and from a simulated review round where 5 agent-written posts were ranked 
-      by votes.
+      report '2026-07-10-twilio-segment-mirai-invoice' dated 2026-07-11, and 
+      from a simulated review round where 5 agent-written posts were ranked by 
+      votes.
   angles:
-    - id: 2026-07-07-the-dupont-teflon-memos-surfaced-because
-      summary: "The DuPont Teflon memos surfaced because a West Virginia farmer's
-        cattle died: Robert Bilott obtained 'tens of thousands of damning documents'
-        in the Tennant litigation · thread: Tesla promised a free self-driving…"
-      last_used: '2026-07-09'
-    - id: 2026-07-07-internal-plastics-industry-documents-fro
-      summary: "Internal plastics-industry documents from the late 1960s called recycling
-        'virtually hopeless.' The industry funded the first recycling pilots anyway
-        · thread: Tesla promised a free self-driving upgrade, then made it…"
-      last_used: '2026-07-11'
-    - id: 2026-07-07-roland-geyer-counted-every-piece-of-plas
-      summary: 'Roland Geyer counted every piece of plastic ever made: 9% recycled.
-        For aluminum, roughly 75% of all metal ever produced is still in use · thread:
-        Tesla promised a free self-driving upgrade, then made it cost thousands'
+    - id: 2026-07-11-a-one-person-3-4m-skincare-brand-paying
+      summary: "A one-person, $3–4M skincare brand paying Segment $50K/year was told
+        to ask one question: 'What does Segment do that Klaviyo + Shopify don't?'
+        · thread: A one-person skincare brand pays $50,000 a year for data plumbing"
       last_used:
-    - id: 2026-07-07-in-1956-lloyd-stouffer-told-plastics-exe
-      summary: "In 1956, Lloyd Stouffer told plastics executives their future was
-        'in the trash can.' The hard part was teaching Depression-era Americans to
-        throw things away · thread: Tesla promised a free self-driving upgrade, then…"
+    - id: 2026-07-11-klaviyo-taught-claude-and-cursor-to-quer
+      summary: 'Klaviyo taught Claude and Cursor to query its customer data in August
+        2025, seven months before it shipped its own AI agent · thread: A one-person
+        skincare brand pays $50,000 a year for data plumbing'
       last_used:
-    - id: 2026-07-07-in-1961-dupont-s-own-toxicologist-warned
-      summary: "In 1961, DuPont's own toxicologist warned that Teflon chemicals enlarged
-        rat livers. By 1973, the company had concluded there was no safe exposure
-        level · thread: Tesla promised a free self-driving upgrade, then made it…"
+    - id: 2026-07-11-six-weeks-after-launch-klaviyo-s-ceo-had
+      summary: "Six weeks after launch, Klaviyo's CEO had one Composer story to tell
+        analysts: it found automations 'broken for years' — broken on Klaviyo's own
+        platform · thread: A one-person skincare brand pays $50,000 a year for…"
+      last_used:
+    - id: 2026-07-11-the-review-that-said-klaviyo-s-ai-needed
+      summary: "The review that said Klaviyo's AI 'needed a full rewrite' also said
+        its predictive analytics 'can't be replicated externally' — bears quote half
+        of it · thread: A one-person skincare brand pays $50,000 a year for data…"
+      last_used:
+    - id: 2026-07-11-klaviyo-already-has-80-market-share-insi
+      summary: 'Klaviyo already has 80%+ market share inside the Shopify ecosystem.
+        That makes 23% growth look like arithmetic, not failure · thread: A one-person
+        skincare brand pays $50,000 a year for data plumbing'
       last_used:
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-07-tesla-promised-a-free-self-driving-upgra.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-11-a-one-person-skincare-brand-pays-50-000.png
