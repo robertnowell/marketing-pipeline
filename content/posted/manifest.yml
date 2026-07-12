@@ -5223,3 +5223,16 @@
   angle: showcase
   source_id: ''
   posted_at: '2026-07-12'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqh7qwjdmx2i
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-07-12'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/every-work-email-i-translated-taught-me-nothing-1lnk
+  angle: translate-and-learn
+  source_id: ''
+  posted_at: '2026-07-12'
