@@ -229,3 +229,11 @@ def test_extract_title() -> None:
     from pipeline.title_judge import extract_title
     assert extract_title("# My Title\n\nBody") == "My Title"
     assert extract_title("No title here.") is None
+
+
+def test_privacy_denylist_blocks_client_names() -> None:
+    r = validate("Mirai Clinical pays $50K/year for Segment, per founder Koko Hayashi.")
+    assert not r.passed
+    assert any(v.rule == "privacy_denylist" for v in r.violations)
+    # clean public content is unaffected
+    assert validate("Nobody measured whether short blog posts perform better.").passed

@@ -9,6 +9,18 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 
+# --- PRIVACY DENYLIST (final backstop; runs in CI, self-contained) ---
+# Private clients/people and privileged terms that must NEVER be published,
+# regardless of what upstream produced. This is the last gate before a post
+# goes live. Mirror of content-engine/privacy.py DENY_ENTITIES — keep in sync
+# (this copy exists because CI has no access to the content-engine repo).
+PRIVACY_DENYLIST = [
+    "Mirai Clinical", "Mirai", "Koko Hayashi",
+    "U Vape", "UVape", "Window Seat Coffee", "Warner Mansion",
+    "Gulf Coast International Properties",
+    "Robert Nowell", "Rob Nowell", "robert.j.nowell", "jknowlesaroni",
+]
+
 # --- Forbidden token lists (extracted from prompts/draft_post.md) ---
 
 MARKETING_TOKENS = [
@@ -192,6 +204,16 @@ def validate(
     """
     violations: list[Violation] = []
     text_lower = draft.lower()
+
+    # 0. PRIVACY DENYLIST — hard block, no quoting exception. A private
+    # client/person named in a public post is a confidentiality breach; this
+    # is the final backstop before publish.
+    for ent in PRIVACY_DENYLIST:
+        if re.search(r"(?<![a-z0-9])" + re.escape(ent.lower()) + r"(?![a-z0-9])", text_lower):
+            violations.append(Violation(
+                rule="privacy_denylist",
+                detail=f"Names a private/privileged party '{ent}' — must not be published",
+            ))
 
     # 1. Marketing tokens (skip matches inside quotes — allows describing what the tool blocks)
     for pattern in MARKETING_TOKENS:
