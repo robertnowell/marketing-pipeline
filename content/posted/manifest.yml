@@ -5236,3 +5236,16 @@
   angle: translate-and-learn
   source_id: ''
   posted_at: '2026-07-12'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqhdt53l4h2c
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-07-12'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/i-built-inline-wikipedia-for-every-page-i-read-4e52
+  angle: wikipedia-everywhere
+  source_id: ''
+  posted_at: '2026-07-12'
