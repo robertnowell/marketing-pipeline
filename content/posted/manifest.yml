@@ -5249,3 +5249,16 @@
   angle: wikipedia-everywhere
   source_id: ''
   posted_at: '2026-07-12'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqhgar3cjj2l
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-07-12'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-ikb-fails-as-terminal-text-and-how-i-split-it-across-two-ansi-slots-4bd
+  angle: ikb-split
+  source_id: ''
+  posted_at: '2026-07-12'
