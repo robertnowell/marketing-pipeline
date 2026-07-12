@@ -5210,3 +5210,16 @@
   angle: archetype-card
   source_id: ''
   posted_at: '2026-07-12'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqh4abfx3y2l
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-07-12'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/designing-ecom-emails-blind-what-kopis-automated-critique-catches-2h9d
+  angle: showcase
+  source_id: ''
+  posted_at: '2026-07-12'
