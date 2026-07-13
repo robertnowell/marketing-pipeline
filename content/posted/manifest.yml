@@ -5281,3 +5281,16 @@
   angle: 2026-07-07-roland-geyer-counted-every-piece-of-plas
   source_id: ''
   posted_at: '2026-07-13'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqjrt43ll22i
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-07-13'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-one-translation-isnt-enough-building-a-language-coach-for-real-speech-l36
+  angle: register-matters
+  source_id: ''
+  posted_at: '2026-07-13'
