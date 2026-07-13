@@ -5262,3 +5262,16 @@
   angle: ikb-split
   source_id: ''
   posted_at: '2026-07-12'
+- project: marketing-pipeline
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqjlz43a5y2l
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-07-13'
+- project: marketing-pipeline
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/when-the-launch-spike-fades-and-you-stop-showing-up-1b3f
+  angle: problem-specific
+  source_id: ''
+  posted_at: '2026-07-13'
