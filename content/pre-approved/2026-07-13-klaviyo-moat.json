@@ -1,0 +1,16 @@
+{
+  "id": "2026-07-13-klaviyo-moat",
+  "date": "2026-07-13",
+  "project": "research",
+  "angle": "Solo DTC brands get sold mid-market CDPs they don't need",
+  "posts": [
+    {
+      "channel": "devto",
+      "text": "# A solo DTC founder pays $50K a year for tools they already own\r\n\r\nA bootstrapped direct-to-consumer brand pulling in a few million dollars a year is run by one full-time operator. No team, no ops department \u2014 one person making every infrastructure call.\r\n\r\nThat operator pays roughly $50K a year for an enterprise customer data platform (CDP) \u2014 a low single-digit percentage of revenue on one tool. The pitch for a CDP is unifying customer data across sources and computing traits like predicted lifetime value. Real capability. The question is whether a solo brand on Shopify needs a separate mid-market system to get it.\r\n\r\nFor most brands this size, the email platform and the storefront already cover the bulk of it: identity resolution, segments, automations, the events a CDP would forward anyway. The CDP becomes a second, parallel data layer that someone has to wire up, maintain, and justify \u2014 with no one on staff whose job that is.\r\n\r\nNone of this means CDPs are bad. It means tools get sold at a tier above the buyer. If you're a lean operator, the useful audit isn't \"is the bill too high\" \u2014 it's \"what does this do that my email + storefront don't, and is any of it actually wired up and driving revenue?\" If you can't answer that in a sentence, you're paying enterprise prices for a capability you already own."
+    },
+    {
+      "channel": "bluesky",
+      "text": "A solo-run DTC brand doing a few million a year was paying ~$50K/yr for an enterprise CDP \u2014 low-single-digit % of revenue on one tool its email + storefront already largely covered. The useful question isn't 'is the bill high' but 'what does this do that my existing stack doesn't?'"
+    }
+  ]
+}
