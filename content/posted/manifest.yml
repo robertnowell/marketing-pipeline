@@ -5307,3 +5307,16 @@
   angle: half-known-concepts
   source_id: ''
   posted_at: '2026-07-13'
+- project: klein-blue
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqjyyvqtv52p
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-07-13'
+- project: klein-blue
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/terminal-themes-tune-for-syntax-claude-code-is-80-prose-16pk
+  angle: prose-not-code
+  source_id: ''
+  posted_at: '2026-07-13'
