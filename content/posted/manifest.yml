@@ -5294,3 +5294,16 @@
   angle: register-matters
   source_id: ''
   posted_at: '2026-07-13'
+- project: rabbitholes
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqjv7dao2a2c
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-07-13'
+- project: rabbitholes
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/inline-explanations-on-every-page-without-opening-a-new-tab-5288
+  angle: half-known-concepts
+  source_id: ''
+  posted_at: '2026-07-13'
