@@ -569,6 +569,38 @@ def _cmd_validate_image(args: argparse.Namespace) -> int:
     return 0 if result.passed else 1
 
 
+def _cmd_badges(args: argparse.Namespace) -> int:
+    from pipeline.badges import badge_strip_html, check_site, expected_badges, handle_violations
+
+    registry = load(args.projects)
+    surfaces = SurfaceRegistry.load(args.surfaces)
+    project = registry.get(args.project)
+    resolved = surfaces.resolve(project)
+    expected = expected_badges(resolved)
+
+    if not expected:
+        print(f"{args.project}: no badge-requiring directories in its surface set.")
+        return 0
+
+    if args.strip:
+        html, missing = badge_strip_html(args.project, resolved)
+        print(html)
+        for name in missing:
+            print(f"  [~] no embed code recorded yet for {name} "
+                  f"(add it to reports/{args.project}/badges.yml)", file=sys.stderr)
+        return 0
+
+    if not args.site:
+        print("--site is required for a compliance check (or use --strip).", file=sys.stderr)
+        return 2
+
+    print(f"▎ {args.project} — checking {len(expected)} badge(s) on {args.site}")
+    report = check_site(args.site, expected)
+    if report.ok:
+        print(f"  all {len(expected)} badge links present.")
+    return handle_violations(report)
+
+
 def _pick_next_angle(angles: list[Angle]) -> Angle:
     """Pick the angle with the oldest (or None) last_used date."""
     unused = [a for a in angles if a.last_used is None]
@@ -578,6 +610,11 @@ def _pick_next_angle(angles: list[Angle]) -> Angle:
 
 
 # --- CLI wiring ---
+
+
+def _cmd_post_approved(args: argparse.Namespace) -> int:
+    from pipeline.postapproved import run
+    return run(Config.from_env())
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -622,6 +659,10 @@ def main(argv: list[str] | None = None) -> int:
     p_cycle.add_argument("--dry-run", action="store_true")
     p_cycle.set_defaults(func=_cmd_cycle)
 
+    p_pa = sub.add_parser("post-approved",
+                          help="Publish human-approved posts verbatim (sanitize lane).")
+    p_pa.set_defaults(func=_cmd_post_approved)
+
     p_onboard = sub.add_parser("onboard", help="Scaffold a new project entry.")
     p_onboard.add_argument("--name", type=str, required=True)
     p_onboard.add_argument("--repo", type=str, required=True, help="owner/repo")
@@ -653,6 +694,12 @@ def main(argv: list[str] | None = None) -> int:
     p_valimg = sub.add_parser("validate-image", help="Check an image before posting (programmatic + AI vision).")
     p_valimg.add_argument("--url", type=str, required=True, help="Image URL to check")
     p_valimg.set_defaults(func=_cmd_validate_image)
+
+    p_badges = sub.add_parser("badges", help="Badge-wall tools: render the /featured-on strip or check live compliance.")
+    p_badges.add_argument("--project", type=str, required=True)
+    p_badges.add_argument("--site", type=str, default=None, help="Live site URL to check badges on")
+    p_badges.add_argument("--strip", action="store_true", help="Print the /featured-on HTML from recorded embeds")
+    p_badges.set_defaults(func=_cmd_badges)
 
     args = parser.parse_args(argv)
     return args.func(args)
