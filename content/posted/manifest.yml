@@ -5339,3 +5339,16 @@
   angle: cowork-home
   source_id: ''
   posted_at: '2026-07-14'
+- project: kopi
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqm5qhgkj62l
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-07-14'
+- project: kopi
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/from-a-text-brief-to-a-scored-html-email-how-kopi-works-3i9h
+  angle: before-after
+  source_id: ''
+  posted_at: '2026-07-14'

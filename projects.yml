@@ -324,7 +324,7 @@ kopi:
       last_used: '2026-07-12'
     - id: before-after
       summary: Show what a brief looks like vs what Kopi generates from it
-      last_used: '2026-07-01'
+      last_used: '2026-07-14'
     - id: design-critique
       summary: Focus on the automated scoring — what makes a 93/100 email 
         different from a 70
