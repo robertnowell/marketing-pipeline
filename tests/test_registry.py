@@ -19,12 +19,10 @@ def test_load_projects_yml() -> None:
 def test_live_projects_filters_wip() -> None:
     registry = load(REPO_ROOT / "projects.yml")
     live = registry.live_projects()
-    # konid, rabbitholes, klein-blue, skill-tree are live; shopify-conjure is the wip placeholder.
-    assert "konid" in live
-    assert "rabbitholes" in live
-    assert "klein-blue" in live
-    assert "skill-tree" in live
-    assert "shopify-conjure" not in live
+    # Research is the live daily driver; the product projects are paused (wip)
+    # while the pipeline focuses on research angles (flip status back to revive).
+    assert "research" in live
+    assert "shopify-conjure" not in live  # wip placeholder
     # Filter correctness: all wip projects must be excluded from live.
     for name, project in registry.projects.items():
         if project.status == "wip":

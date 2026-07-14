@@ -232,18 +232,37 @@ def _cmd_launch(args: argparse.Namespace) -> int:
     return 0
 
 
+# Research is the promotion ladder's cheap-test tier: it posts several distinct
+# angles per day (one per GH cron fire), not once. Product projects post at most
+# once/day as before.
+RESEARCH_DAILY_MAX = 5
+
+
 def _pick_next_project(
     live: dict[str, Project],
     manifest: list[dict],
 ) -> str | None:
-    """Pick the next project to post: skip projects already posted today,
-    then pick the one with the oldest most-recent post (or never posted)."""
-    today = date.today().isoformat()
-    posted_today = {e["project"] for e in manifest if e.get("posted_at") == today}
+    """Pick the next project to post.
 
-    candidates = [name for name in live if name not in posted_today]
+    Research (post_type=="research") is the daily driver — it may post up to
+    RESEARCH_DAILY_MAX distinct angles per day. Product projects post at most
+    once per day. Among candidates, pick the oldest most-recent post first.
+    """
+    today = date.today().isoformat()
+
+    def posts_today(name: str) -> int:
+        return sum(1 for e in manifest
+                   if e.get("project") == name and e.get("posted_at") == today)
+
+    candidates = []
+    for name, p in live.items():
+        if getattr(p, "post_type", "product") == "research":
+            if posts_today(name) < RESEARCH_DAILY_MAX:
+                candidates.append(name)
+        elif posts_today(name) == 0:
+            candidates.append(name)
     if not candidates:
-        return None  # All projects already posted today
+        return None  # Nothing left to post today
 
     # Among candidates, pick the one with the oldest last post (or never posted)
     def last_posted(name: str) -> str:
@@ -290,6 +309,18 @@ def _cmd_cycle(args: argparse.Namespace) -> int:
     project = live[name]
     resolved = surfaces.resolve(project)
     channels = resolved.daily_channels
+
+    # Research = the cheap-test tier: post to social (Bluesky) only, one distinct
+    # angle per fire. Blogs (Dev.to) are reserved for the 7-day winner via the
+    # promotion step, not every angle. Once the day's mined angles are all
+    # posted, stop — don't repost the same angle on a later fire.
+    if getattr(project, "post_type", "product") == "research":
+        channels = [c for c in channels if c in resolved.daily_social]
+        today = date.today().isoformat()
+        if not any(str(a.last_used) != today for a in project.angles):
+            print(f"All of {name}'s mined angles already posted today. Nothing to do.")
+            return 0
+
     if not channels or not project.angles:
         print(f"No channels or angles for {name}, skipping.", file=sys.stderr)
         return 1

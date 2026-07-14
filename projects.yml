@@ -20,7 +20,7 @@ konid:
   repo: https://github.com/robertnowell/konid-language-learning
   kind: mcp-server
   audience: mcp-users
-  status: live
+  status: wip
   problem: "I wanted to tell my girlfriend 'I missed you today' in her first language
     and have it sound real, not like a phrasebook. Or I translate work emails every
     day in a language I'm still learning and want each translation to actually teach
@@ -59,7 +59,7 @@ rabbitholes:
   repo: https://github.com/robertnowell/rabbitholes
   kind: chrome-extension
   audience: knowledge-workers
-  status: live
+  status: wip
   problem: "I wanted Wikipedia on every page. Every article I read has words I half-know
     and concepts that would open up if I just knew what they meant. But opening a
     new tab kills my focus, and skipping past them leaves me with a shallow read.
@@ -110,7 +110,7 @@ klein-blue:
   repo: https://github.com/robertnowell/klein-void
   kind: terminal-theme
   audience: claude-code-users
-  status: live
+  status: wip
   problem: "Claude Code is mostly prose. Tool output, reasoning, permission prompts,
     explanations — I read paragraphs of it for hours every day. Most terminal themes
     are tuned for code syntax highlighting; they're optimizing for the wrong thing
@@ -164,7 +164,7 @@ skill-tree:
   repo: https://github.com/robertnowell/ai-fluency-skill-cards
   kind: claude-code-plugin
   audience: claude-code-users
-  status: live
+  status: wip
   problem: "I've been using Claude Code every day for months and I have no idea if
     I'm getting better or just getting faster at the same few habits. Anthropic put
     out a study in February measuring 11 observable collaboration behaviors across
@@ -233,7 +233,7 @@ marketing-pipeline:
   repo: https://github.com/robertnowell/marketing-pipeline
   kind: claude-skill
   audience: claude-code-users
-  status: live
+  status: wip
   problem: You built something useful, posted it once, got silence, and moved on
     — because doing distribution consistently takes time you don't have and 
     skills you never wanted to develop. Most OSS tools die not because they're 
@@ -300,7 +300,7 @@ kopi:
   repo: https://trykopi.ai
   kind: saas-email-tool
   audience: ecom-solopreneurs
-  status: live
+  status: wip
   problem: Email marketing tools give you a blank canvas and a template library 
     — you still spend hours building each campaign from scratch, and you have no
     idea if the design is good until you send it.
@@ -352,9 +352,6 @@ research:
     from my own deep-research reports, with sources named.'
   channels:
     - bluesky
-    - mastodon
-    - devto
-    - hashnode
   facts:
     - Google penalizes execution, not method. "Scaled content abuse is when many
       pages are generated for the primary purpose of manipulating search 
