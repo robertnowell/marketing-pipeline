@@ -356,65 +356,58 @@ research:
     - devto
     - hashnode
   facts:
-    - 'Fully answered, with two clear headlines: A) For a 3-year hold, HW4 is NOT
-      the thing that goes obsolete. Tesla stated on the Q1 2026 earnings call that
-      "AI4 is sufficient for unsupervised Full Self-Driving," and AI5 (HW5) slipped
-      to ~mid-2027 for production cars — even the *Cybercab* launches on HW4.'
-    - HW4 keeps getting the flagship software (FSD v15 confirmed to run on it).
-    - So through 2026–2029 you're current-generation, not stranded, and hardware
-      generation is only weakly priced into a mainstream used Model 3.
-    - "The honest caveat: Tesla has a documented pattern of stranding hardware it
-      once called \"enough\" (it admitted HW3 *can't* do unsupervised FSD in April
-      2026, and the promised \"free\" retrofit became a paid ~$3–5k / trade-in-discount
-      that still hasn't shipped) — plus a memory-doubled \"HW4 Plus\" is coming in
-      2027."
-    - So an eventual HW4 squeeze is a real *tail risk*, just not the base case 
-      for a 3-year hold.
-    - B) Your all-in cost is ≈ $840/month (~$30,200 over 3 years) — and 
-      depreciation is ~60% of it. Your $0 charging barely matters; the whole 
-      ballgame is depreciation.
-    - 'The good news: you bought at year 2, after the brutal early drop, so the car
-      rides the *flat tail* of the curve, and used Tesla values are currently *firming*
-      (up 4.3% after the EV credit expired).'
-    - Projected mid-2029 resale ≈ $23,500 private-party, making your 3-year 
-      capital loss ≈ $17,900.
-    - '| Line | 3-yr total | Per month | |---|---|---| | Depreciation (capital lost:
-      $41,359 paid − ~$23,500 resale) | ~$17,900 | ~$497 | | Insurance (GEICO full
-      coverage) | $9,000 | $250 | | Registration / DMV (CA, incl.'
-    - EV fee) | ~$1,600 | ~$44 | | Tires (one set within 3 yrs/50k mi) | ~$1,200
-      | ~$33 | | Maintenance (filters, rotations, wipers) | ~$500 | ~$14 | | 
-      Electricity (charge free at work) | $0 | $0 | | Cash cost of ownership | 
-      ~$30,200 | ≈ $839 / month | | *Opportunity cost of $41k cash (~4%) — 
-      separate line* | *~$4,900* | *~$136* | | *Economic cost incl.
+    - Google penalizes execution, not method. "Scaled content abuse is when many
+      pages are generated for the primary purpose of manipulating search 
+      rankings and not helping users… no matter how it's created." [Tier 1] 
+      Volume and templating are *not* the trigger — "little to no added value" 
+      per page is. A thousand pages survive fine if each is the useful 
+      destination; they get penalized (as *doorway* +…
+    - Alt text is "a caption, not a replacement for real content." [Tier 1] 
+      Rendering the email as real HTML is the biggest unlock — and Kopi already 
+      has the HTML. 3.
+    - 'Two proven winning models exist, and Kopi can borrow from both: Milled (renders
+      the *full email as crawlable HTML* → ~20K chars/page, wins brand+campaign long-tail)
+      and saasemailtemplates.io / Really Good Emails (screenshot + *tight taxonomy
+      hubs* + real-brand artifact + editorial commentary → wins "[niche] email examples").'
+    - saasemailtemplates.io ranks page-1 for "SaaS email template examples" with
+      no schema and ~1 sentence of unique copy — proof the levers are *intent 
+      match + taxonomy + a real artifact*, not word count or JSON-LD.
+    - 'The winnable queries are category / occasion / industry "examples," plus a
+      brand long-tail — NOT "[brand] email template." Really Good Emails ranks #1
+      for "abandoned cart email examples" and "black friday email examples" with category
+      hub pages.'
+    - Kopi must compensate with genuine added value (rendered HTML + its own 
+      design-critique as editorial), taxonomy hubs, and selective indexing — not
+      blanket indexing all ~2,171.
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-07-06-tesla-m3-3yr-cost-hw4-obsolescence' dated 2026-07-07, 
-      and from a simulated review round where 5 agent-written posts were ranked 
-      by votes.
+      report '2026-07-14-programmatic-email-template-seo' dated 2026-07-14, and 
+      from a simulated review round where 5 agent-written posts were ranked by 
+      votes.
   angles:
-    - id: 2026-07-07-the-dupont-teflon-memos-surfaced-because
-      summary: "The DuPont Teflon memos surfaced because a West Virginia farmer's
-        cattle died: Robert Bilott obtained 'tens of thousands of damning documents'
-        in the Tennant litigation · thread: Tesla promised a free self-driving…"
-      last_used: '2026-07-09'
-    - id: 2026-07-07-internal-plastics-industry-documents-fro
-      summary: "Internal plastics-industry documents from the late 1960s called recycling
-        'virtually hopeless.' The industry funded the first recycling pilots anyway
-        · thread: Tesla promised a free self-driving upgrade, then made it…"
-      last_used: '2026-07-11'
-    - id: 2026-07-07-roland-geyer-counted-every-piece-of-plas
-      summary: 'Roland Geyer counted every piece of plastic ever made: 9% recycled.
-        For aluminum, roughly 75% of all metal ever produced is still in use · thread:
-        Tesla promised a free self-driving upgrade, then made it cost thousands'
-      last_used: '2026-07-13'
-    - id: 2026-07-07-in-1956-lloyd-stouffer-told-plastics-exe
-      summary: "In 1956, Lloyd Stouffer told plastics executives their future was
-        'in the trash can.' The hard part was teaching Depression-era Americans to
-        throw things away · thread: Tesla promised a free self-driving upgrade, then…"
+    - id: 2026-07-14-simon-willison-s-may-2024-definition-of
+      summary: "Simon Willison's May 2024 definition of 'slop' has nothing to do with
+        writing quality · thread: Google doesn't penalize AI pages — it penalizes
+        ones that help nobody"
       last_used:
-    - id: 2026-07-07-in-1961-dupont-s-own-toxicologist-warned
-      summary: "In 1961, DuPont's own toxicologist warned that Teflon chemicals enlarged
-        rat livers. By 1973, the company had concluded there was no safe exposure
-        level · thread: Tesla promised a free self-driving upgrade, then made it…"
+    - id: 2026-07-14-gpt-5-deepseek-v3-and-o3-mini-caught-the
+      summary: "GPT-5, DeepSeek-V3 and o3-mini caught the top slop signal at 0.08
+        recall — so the pipeline puts them last · thread: Google doesn't penalize
+        AI pages — it penalizes ones that help nobody"
+      last_used:
+    - id: 2026-07-14-daily-reminders-win-you-the-next-hour-an
+      summary: "Daily reminders win you the next hour and lose you after 7 to 11 days,
+        no matter how often you send them · thread: Google doesn't penalize AI pages
+        — it penalizes ones that help nobody"
+      last_used:
+    - id: 2026-07-14-every-to-s-most-documented-ai-content-pi
+      summary: "Every.to's most documented AI content pipeline still keeps three human
+        checkpoints a day · thread: Google doesn't penalize AI pages — it penalizes
+        ones that help nobody"
+      last_used:
+    - id: 2026-07-14-fern-s-ai-writer-meets-vale-linter-loop
+      summary: "Fern's AI-writer-meets-Vale-linter loop is the one production anti-slop
+        gate that's live — and unmeasured · thread: Google doesn't penalize AI pages
+        — it penalizes ones that help nobody"
       last_used:
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-07-tesla-promised-a-free-self-driving-upgra.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-14-google-doesn-t-penalize-ai-pages-it-pena.png
