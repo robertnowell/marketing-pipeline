@@ -5320,3 +5320,22 @@
   angle: prose-not-code
   source_id: ''
   posted_at: '2026-07-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqm2rntr5q2s
+  angle: Solo DTC brands get sold mid-market CDPs they don't need
+  source_id: 2026-07-13-klaviyo-moat
+  posted_at: '2026-07-14'
+- project: skill-tree
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqm2rxdlmg2l
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-07-14'
+- project: skill-tree
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/why-i-built-a-skill-tracker-for-claude-code-sessions-115e
+  angle: cowork-home
+  source_id: ''
+  posted_at: '2026-07-14'
