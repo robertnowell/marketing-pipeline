@@ -5352,3 +5352,16 @@
   angle: before-after
   source_id: ''
   posted_at: '2026-07-14'
+- project: konid
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqmaul3aqt2o
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-07-14'
+- project: konid
+  channel: devto
+  url: 
+    https://dev.to/palo_alto_ai/pronunciation-is-how-you-remember-what-you-learned-6hg
+  angle: audio-fluency
+  source_id: ''
+  posted_at: '2026-07-14'
