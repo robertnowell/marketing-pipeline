@@ -5391,3 +5391,9 @@
   angle: ikb-mystique
   source_id: ''
   posted_at: '2026-07-14'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqolck7nzs2x
+  angle: 2026-07-14-simon-willison-s-may-2024-definition-of
+  source_id: ''
+  posted_at: '2026-07-15'
