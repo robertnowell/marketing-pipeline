@@ -390,7 +390,7 @@ research:
       summary: "GPT-5, DeepSeek-V3 and o3-mini caught the top slop signal at 0.08
         recall — so the pipeline puts them last · thread: Google doesn't penalize
         AI pages — it penalizes ones that help nobody"
-      last_used:
+      last_used: '2026-07-15'
     - id: 2026-07-14-daily-reminders-win-you-the-next-hour-an
       summary: "Daily reminders win you the next hour and lose you after 7 to 11 days,
         no matter how often you send them · thread: Google doesn't penalize AI pages
