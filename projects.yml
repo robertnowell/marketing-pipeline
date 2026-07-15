@@ -400,7 +400,7 @@ research:
       summary: "Every.to's most documented AI content pipeline still keeps three human
         checkpoints a day · thread: Google doesn't penalize AI pages — it penalizes
         ones that help nobody"
-      last_used:
+      last_used: '2026-07-15'
     - id: 2026-07-14-fern-s-ai-writer-meets-vale-linter-loop
       summary: "Fern's AI-writer-meets-Vale-linter loop is the one production anti-slop
         gate that's live — and unmeasured · thread: Google doesn't penalize AI pages
