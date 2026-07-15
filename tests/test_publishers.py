@@ -57,15 +57,26 @@ def test_mastodon_dry_run() -> None:
 
 
 def test_get_publisher_returns_correct_types() -> None:
-    assert isinstance(get_publisher("bluesky"), BlueskyPublisher)
-    assert isinstance(get_publisher("devto"), DevtoPublisher)
-    assert isinstance(get_publisher("hashnode"), HashnodePublisher)
-    assert isinstance(get_publisher("mastodon"), MastodonPublisher)
+    # get_publisher wraps each publisher (_Destyled — em-dash strip at the
+    # publish boundary), so assert the routed channel, not the wrapper type.
+    assert get_publisher("bluesky").channel == "bluesky"
+    assert get_publisher("devto").channel == "devto"
+    assert get_publisher("hashnode").channel == "hashnode"
+    assert get_publisher("mastodon").channel == "mastodon"
 
 
 def test_get_publisher_case_insensitive() -> None:
-    assert isinstance(get_publisher("Bluesky"), BlueskyPublisher)
-    assert isinstance(get_publisher("DEVTO"), DevtoPublisher)
+    assert get_publisher("Bluesky").channel == "bluesky"
+    assert get_publisher("DEVTO").channel == "devto"
+
+
+def test_destyle_strips_emdashes_but_keeps_ranges() -> None:
+    from pipeline.publish import destyle
+    assert destyle("a free upgrade — it never came") == "a free upgrade, it never came"
+    assert destyle("word—word") == "word, word"
+    assert destyle("range $3–5k stays") == "range $3–5k stays"  # en-dash untouched
+    assert destyle("plain, comma text") == "plain, comma text"
+    assert destyle(None) is None
 
 
 def test_get_publisher_unknown_raises() -> None:

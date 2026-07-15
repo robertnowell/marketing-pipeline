@@ -54,6 +54,7 @@ Fact density is the whole product. "Verbose text conveying minimal content" is t
 ## Forbidden
 
 - Emoji, hashtags, exclamation points, rhetorical questions
+- Em-dashes (—). They're an AI tell. Use a comma, colon, or period instead.
 - Growth-marketing tokens: `excited`, `thrilled`, `introducing`, `game-changer`, `solution`, `future of`, `leverage`, `unlock`, `empower`, `journey`
 - AI-tell vocabulary: `delve`, `moreover`, `boasts`, `dive into`, `explore how`
 - "Studies show / research suggests" without a named source
