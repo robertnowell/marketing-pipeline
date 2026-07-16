@@ -379,7 +379,7 @@ research:
       summary: "Stitch Fix's 2020 experiment platform never stores your A/B bucket
         — it re-hashes you into one every time · thread: Netflix picks your movie-poster
         art with a slot-machine algorithm"
-      last_used:
+      last_used: '2026-07-16'
     - id: 2026-07-15-yahoo-s-2010-homepage-algorithm-delibera
       summary: "Yahoo's 2010 homepage algorithm deliberately showed you the wrong
         article — and gained 12.5% more clicks · thread: Netflix picks your movie-poster

@@ -5421,3 +5421,27 @@
   angle: 2026-07-14-fern-s-ai-writer-meets-vale-linter-loop
   source_id: ''
   posted_at: '2026-07-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqr43bmhrq2u
+  angle: 2026-07-15-yahoo-s-2010-homepage-algorithm-delibera
+  source_id: research-2026-07-15-2
+  posted_at: '2026-07-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqr43d6och2q
+  angle: 2026-07-15-every-major-ai-crawler-except-one-runs-w
+  source_id: research-2026-07-15-3
+  posted_at: '2026-07-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqr43eplm62a
+  angle: 2026-07-15-past-100-000-data-points-the-kolmogorov
+  source_id: research-2026-07-15-5
+  posted_at: '2026-07-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqr43rwqps25
+  angle: 2026-07-15-stitch-fix-s-2020-experiment-platform-ne
+  source_id: ''
+  posted_at: '2026-07-16'
