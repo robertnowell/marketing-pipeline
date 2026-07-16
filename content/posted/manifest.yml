@@ -5445,3 +5445,9 @@
   angle: 2026-07-15-stitch-fix-s-2020-experiment-platform-ne
   source_id: ''
   posted_at: '2026-07-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqr6sqmyak2q
+  angle: 2026-07-15-netflix-built-its-thumbnail-picking-algo
+  source_id: ''
+  posted_at: '2026-07-16'

@@ -393,7 +393,7 @@ research:
       summary: 'Netflix built its thumbnail-picking algorithm to punish clickbait,
         not reward it · thread: Netflix picks your movie-poster art with a slot-machine
         algorithm'
-      last_used:
+      last_used: '2026-07-16'
     - id: 2026-07-15-past-100-000-data-points-the-kolmogorov
       summary: 'Past 100,000 data points, the Kolmogorov-Smirnov test starts treating
         a 0.5% wiggle as a crisis · thread: Netflix picks your movie-poster art with
