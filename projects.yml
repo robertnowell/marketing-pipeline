@@ -384,11 +384,11 @@ research:
       summary: "Yahoo's 2010 homepage algorithm deliberately showed you the wrong
         article — and gained 12.5% more clicks · thread: Netflix picks your movie-poster
         art with a slot-machine algorithm"
-      last_used:
+      last_used: '2026-07-15'
     - id: 2026-07-15-every-major-ai-crawler-except-one-runs-w
       summary: 'Every major AI crawler except one runs with JavaScript switched off
         · thread: Netflix picks your movie-poster art with a slot-machine algorithm'
-      last_used:
+      last_used: '2026-07-15'
     - id: 2026-07-15-netflix-built-its-thumbnail-picking-algo
       summary: 'Netflix built its thumbnail-picking algorithm to punish clickbait,
         not reward it · thread: Netflix picks your movie-poster art with a slot-machine
@@ -398,6 +398,6 @@ research:
       summary: 'Past 100,000 data points, the Kolmogorov-Smirnov test starts treating
         a 0.5% wiggle as a crisis · thread: Netflix picks your movie-poster art with
         a slot-machine algorithm'
-      last_used:
+      last_used: '2026-07-15'
   cover_image: 
     https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-15-netflix-picks-your-movie-poster-art-with.png

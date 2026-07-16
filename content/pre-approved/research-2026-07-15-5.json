@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-07-15-5",
+  "date": "2026-07-15",
+  "project": "research",
+  "angle": "2026-07-15-past-100-000-data-points-the-kolmogorov",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "On mature products the median A/B test effect is \u2248 zero. 90%+ of ideas fail, and the biggest wins are usually just instrumentation bugs (Twyman's Law), not real lift. Check your tracking before you celebrate a win. Source: production research report, 2026-07-15."
+    }
+  ]
+}

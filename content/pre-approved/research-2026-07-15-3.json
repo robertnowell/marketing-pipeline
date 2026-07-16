@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-07-15-3",
+  "date": "2026-07-15",
+  "project": "research",
+  "angle": "2026-07-15-every-major-ai-crawler-except-one-runs-w",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you A/B test anything: on mature surfaces the median experiment effect is \u2248 zero, 90%+ of ideas fail, and the biggest apparent wins are usually instrumentation bugs, not real lift. From today's deep-research report on productionizing a blackbox copy optimizer, 2026-07-15."
+    }
+  ]
+}
