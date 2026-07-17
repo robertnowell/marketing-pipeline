@@ -353,51 +353,87 @@ research:
   channels:
     - bluesky
   facts:
-    - The 33-eval loop doesn't get "scaled up" — three of its core assumptions 
-      (instant reward, trustworthy reward, independent arms) each break and each
-      forces a named production subsystem.
-    - 'The five load-bearing shifts, each forced by a broken assumption: 1.'
-    - → off-policy evaluation (IPS/SNIPS/DR + replay), which is impossible 
-      unless you log action propensities from day one. 4.
-    - "→ serving/optimization split, a feature store, warm-starting via transfer,
-      and a persistent global holdout to prove the *program* beats \"do nothing.\"\
-      \ The uncomfortable statistical truth to lead with in the walkthrough: on mature
-      surfaces the *median* experiment effect is ≈ zero, 90%+ of ideas fail, and the
-      biggest apparent \"wins\" are usually instrumentation bugs (Twyman's Law)."
-    - '> Source-quality note: This rests overwhelmingly on Tier-1 primary sources
-      — peer-reviewed papers and first-party engineering blogs from the named companies,
-      plus official docs (OWASP, Anthropic, OpenTelemetry).'
-    - The only Tier-3 material is a handful of *illustrative* failure anecdotes 
-      (the specific Twyman's-Law percentages); these are flagged as secondhand 
-      and the plan does not depend on them.
+    - 'Ode = "Ode with Anthropic," a $1.5B JV, not a startup — Confidence: Established
+      Formed May 2026 by Anthropic, Blackstone, and Hellman & Friedman (plus Goldman
+      Sachs, General Atlantic, Leonard Green, Apollo, GIC, Sequoia); publicly introduced
+      July 15, 2026. Operational core is the acquired Fractional AI (founded 2024
+      by Chris Taylor, Eddie Siegel, Travis May; previously an OpenAI partner for
+      ~11…'
+    - "The whole category capitalized in one 8-week window (May–July 2026) — Confidence:
+      Established OpenAI Deployment Company (\"DeployCo\"): $4B at $10B pre-money,
+      TPG-led, 19 investors incl. McKinsey/Bain/Capgemini, launched May 11. Anthropic's
+      Ode: $1.5B, May. AWS Forward Deployed Engineering: $1B, June 30. Microsoft Frontier
+      Company: $2.5B + 6,000 people, July 2. Google Cloud: $750M for FDE teams…"
+    - 'The acquisition playbook is now a repeated pattern — boutiques that embed with
+      a lab get bought — Confidence: Established DeployCo acquired Tomoro (founded
+      2023 "in alliance with OpenAI"; ~150 FDEs; clients Mattel, Supercell, Red Bull,
+      Tesco, Virgin Atlantic, Fidelity, NBA; monthly revenue up ~10x in 12 months;
+      only ~£10M raised) at launch, then Northslope (Denver; CEO Bill Ward, ex-Palantir
+      FDE;…'
+    - 'Distyl AI is the largest still-independent breakout — Confidence: Established
+      (funding), Contested (founding year/headcount) Ex-Palantir founders (Arjun Prakash,
+      Derek Ho). $7M seed (2023) → $20M A → $175M Series B at $1.8B valuation (Sept
+      2025, Khosla + Lightspeed, w/ Coatue, DTC, DST). Revenue reported 5x in 2024,
+      projected 8x in 2025 [Tier 2 Crunchbase News]; ~110–160 employees (aggregators…'
+    - "Edra is the strongest \"next Northslope\" candidate — Confidence: Established
+      (verified against TechCrunch) Founded by ex-Palantir Eugen Alpeza and Yannis
+      Karamanlakis — *Palantir's first forward-deployed AI engineer*. Out of stealth
+      March 2026 with a $30M Series A led by Sequoia (8VC, A* participating). Turns
+      enterprise operational exhaust into agent-ready knowledge bases. Verified early…"
+    - 'Conduct: fastest funding escalation in the cohort — Confidence: Established
+      (verified against Tech.eu) Founded 2024 by three ex-Palantir employees (CEO
+      Jan Philipp Haas; other co-founder names unverified). AI agents that reverse-engineer
+      legacy ERP/SAP for Fortune-500 migrations ahead of the 2027 S/4HANA deadline.
+      $60M Series A (June 2026), ~$72M total — seed-to-$60M-A inside ~12 months.'
+    - 'Ciridae: year-one revenue traction on the Ode model for the mid-market — Confidence:
+      Likely (single Tier 2 Fortune source, claim-verified) Founded by Jack Soslow
+      (ex-a16z partner) and Jack Weissenberger (ex-Apple/Tenyx). $20M seed led by
+      Accel (a16z, General Catalyst participating). 20+ clients, "high seven-figures"
+      2025 revenue in its first year, targeting PE-backed "real economy" businesses…'
+    - 'Tribe AI: the capital-efficiency outlier and dual-lab partner — Confidence:
+      Likely Founded 2019 (Jaclyn Rice Nelson), bootstrapped six years, then just
+      $3.25M raised (July 2024) at an eight-figure revenue run rate on track to double.
+      ~120–155 core employees + 600+ engineer network. Officially listed as both an
+      OpenAI business partner and an Anthropic Claude services partner — rare dual-lab…'
+    - 'forgd: earliest-stage watchlist entry — Confidence: Emerging Founded by ex-Heroku/Salesforce
+      platform leaders Peter Goodman and Paul Andrew. Anthropic Preferred Partner
+      focused exclusively on Claude Code / agentic-app transformation; left stealth
+      ~early 2026 with paying customers at launch and hiring against "unexpected early
+      demand." No disclosed funding. Closest structural miniature of Ode…'
+    - "The vertical cousin: Sequoia's \"Services: The New Software\" cohort sells
+      outcomes, not consulting — Confidence: Established Julien Bek's essay (sequoiacap.com,
+      March 5, 2026) names Crosby (AI-native law firm: $5.8M seed → $20M A → $60M
+      B co-led by Index + Lux at $400M valuation, ~100 clients incl. Cursor, Clay,
+      Cognition, Tishman Speyer; revenue +~400% since Oct), WithCoverage ($42M Series
+      B,…"
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-07-15-productionizing-blackbox-copy-optimizer' dated 
-      2026-07-15, and from a simulated review round where 5 agent-written posts 
-      were ranked by votes.
+      report '2026-07-16-applied-ai-fde-breakouts' dated 2026-07-16, and from a 
+      simulated review round where 5 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-07-15-stitch-fix-s-2020-experiment-platform-ne
-      summary: "Stitch Fix's 2020 experiment platform never stores your A/B bucket
-        — it re-hashes you into one every time · thread: Netflix picks your movie-poster
-        art with a slot-machine algorithm"
-      last_used: '2026-07-16'
-    - id: 2026-07-15-yahoo-s-2010-homepage-algorithm-delibera
-      summary: "Yahoo's 2010 homepage algorithm deliberately showed you the wrong
-        article — and gained 12.5% more clicks · thread: Netflix picks your movie-poster
-        art with a slot-machine algorithm"
-      last_used: '2026-07-15'
-    - id: 2026-07-15-every-major-ai-crawler-except-one-runs-w
-      summary: 'Every major AI crawler except one runs with JavaScript switched off
-        · thread: Netflix picks your movie-poster art with a slot-machine algorithm'
-      last_used: '2026-07-15'
-    - id: 2026-07-15-netflix-built-its-thumbnail-picking-algo
-      summary: 'Netflix built its thumbnail-picking algorithm to punish clickbait,
-        not reward it · thread: Netflix picks your movie-poster art with a slot-machine
-        algorithm'
-      last_used: '2026-07-16'
-    - id: 2026-07-15-past-100-000-data-points-the-kolmogorov
-      summary: 'Past 100,000 data points, the Kolmogorov-Smirnov test starts treating
-        a 0.5% wiggle as a crisis · thread: Netflix picks your movie-poster art with
-        a slot-machine algorithm'
-      last_used: '2026-07-15'
+    - id: 2026-07-16-palantir-named-the-forward-deployed-engi
+      summary: "Palantir named the forward-deployed-engineer role 'Delta' in the early
+        2010s — and put it under Business Development · thread: The 'scrappy' AI startup
+        was secretly a $1.5B Anthropic buyout"
+      last_used:
+    - id: 2026-07-16-northslope-s-series-a-was-co-led-by-two
+      summary: "Northslope's Series A was co-led by two Palantir-alumni funds. Six
+        months later, OpenAI's deployment arm bought it. · thread: The 'scrappy' AI
+        startup was secretly a $1.5B Anthropic buyout"
+      last_used:
+    - id: 2026-07-16-techcrunch-put-a-number-on-ode-s-1-5b-30
+      summary: "TechCrunch put a number on Ode's $1.5B: $300M each from Anthropic,
+        Blackstone, and H&F — that's only $900M · thread: The 'scrappy' AI startup
+        was secretly a $1.5B Anthropic buyout"
+      last_used:
+    - id: 2026-07-16-fractional-ai-worked-with-openai-for-11
+      summary: "Fractional AI worked with OpenAI for 11 months. Then Anthropic's PE-backed
+        JV bought it whole. · thread: The 'scrappy' AI startup was secretly a $1.5B
+        Anthropic buyout"
+      last_used:
+    - id: 2026-07-16-fractional-ai-took-two-years-to-get-boug
+      summary: "Fractional AI took two years to get bought. Northslope took six months,
+        ending July 8, 2026. · thread: The 'scrappy' AI startup was secretly a $1.5B
+        Anthropic buyout"
+      last_used:
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-15-netflix-picks-your-movie-poster-art-with.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-16-the-scrappy-ai-startup-was-secretly-a-1.png
