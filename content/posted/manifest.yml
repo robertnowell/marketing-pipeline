@@ -5451,3 +5451,15 @@
   angle: 2026-07-15-netflix-built-its-thumbnail-picking-algo
   source_id: ''
   posted_at: '2026-07-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqtm5epd7a2x
+  angle: 2026-07-16-techcrunch-put-a-number-on-ode-s-1-5b-30
+  source_id: research-2026-07-16-3
+  posted_at: '2026-07-17'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqtm66ln352x
+  angle: 2026-07-16-palantir-named-the-forward-deployed-engi
+  source_id: ''
+  posted_at: '2026-07-17'
