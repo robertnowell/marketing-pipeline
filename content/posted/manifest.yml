@@ -5475,3 +5475,21 @@
   angle: 2026-07-16-fractional-ai-worked-with-openai-for-11
   source_id: ''
   posted_at: '2026-07-17'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqw3w2yqn72x
+  angle: angle:sib-2026-07-17-2026-07-07-tesla-promise-1
+  source_id: research-2026-07-17-sib-2026-07-07-tesla-promise-1
+  posted_at: '2026-07-18'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqw3w4jgar2f
+  angle: angle:sib-2026-07-17-2026-07-07-tesla-promise-2
+  source_id: research-2026-07-17-sib-2026-07-07-tesla-promise-2
+  posted_at: '2026-07-18'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mqw3wuiyq42s
+  angle: 2026-07-16-fractional-ai-took-two-years-to-get-boug
+  source_id: ''
+  posted_at: '2026-07-18'
