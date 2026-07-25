@@ -413,7 +413,7 @@ research:
       summary: 'A bidegree check — (3,2) vs (2,3) — killed one claim in the Jacobian
         counterexample writeup · thread: A decades-old unsolved math conjecture was
         just disproven with an explicit counterexample'
-      last_used:
+      last_used: '2026-07-24'
       provenance:
         post_id: p_0811859cdd89
         round_id: open_conjectures:2026-07-24
@@ -422,7 +422,7 @@ research:
       summary: 'Stephen Smale predicted in 1998 that a smart undergraduate could disprove
         this conjecture — one just did, 28 years later · thread: A decades-old unsolved
         math conjecture was just disproven with an explicit counterexample'
-      last_used:
+      last_used: '2026-07-24'
       provenance:
         post_id: p_fefa9e1a5bf1
         round_id: open_conjectures:2026-07-24
@@ -431,7 +431,7 @@ research:
       summary: "A 1993 Polish theorem about maps that aren't 'proper' turned out to
         be the ruler for the 2026 Jacobian counterexample · thread: A decades-old
         unsolved math conjecture was just disproven with an explicit counterexample"
-      last_used:
+      last_used: '2026-07-24'
       provenance:
         post_id: p_8b18c811efe6
         round_id: open_conjectures:2026-07-24
@@ -440,7 +440,7 @@ research:
       summary: "The Jacobian counterexample isn't a one-point failure — it's 3-to-1
         almost everywhere · thread: A decades-old unsolved math conjecture was just
         disproven with an explicit counterexample"
-      last_used:
+      last_used: '2026-07-24'
       provenance:
         post_id: p_a5cfd3eaecdb
         round_id: open_conjectures:2026-07-24
@@ -449,7 +449,7 @@ research:
       summary: "T.T. Moh's computer checked the 2-variable Jacobian conjecture to
         degree 108 — the break came in a different dimension at degree 3 · thread:
         A decades-old unsolved math conjecture was just disproven with an explicit…"
-      last_used:
+      last_used: '2026-07-24'
       provenance:
         post_id: p_ffeea7d3cbc3
         round_id: open_conjectures:2026-07-24

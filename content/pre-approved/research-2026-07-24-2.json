@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-07-24-2",
+  "date": "2026-07-24",
+  "project": "research",
+  "angle": "2026-07-24-stephen-smale-predicted-in-1998-that-a-s",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A math conjecture unsolved for decades was just disproven, with a public counterexample. Anthropic mathematician Levent Alp\u00f6ge, working with model Fable, posted it; a research agent independently recomputed det DF = -2 in sympy and found the same three solutions. False for all n \u2265 3, n = 2 still open."
+    }
+  ]
+}
