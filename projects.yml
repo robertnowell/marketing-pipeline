@@ -353,87 +353,106 @@ research:
   channels:
     - bluesky
   facts:
-    - 'Ode = "Ode with Anthropic," a $1.5B JV, not a startup — Confidence: Established
-      Formed May 2026 by Anthropic, Blackstone, and Hellman & Friedman (plus Goldman
-      Sachs, General Atlantic, Leonard Green, Apollo, GIC, Sequoia); publicly introduced
-      July 15, 2026. Operational core is the acquired Fractional AI (founded 2024
-      by Chris Taylor, Eddie Siegel, Travis May; previously an OpenAI partner for
-      ~11…'
-    - "The whole category capitalized in one 8-week window (May–July 2026) — Confidence:
-      Established OpenAI Deployment Company (\"DeployCo\"): $4B at $10B pre-money,
-      TPG-led, 19 investors incl. McKinsey/Bain/Capgemini, launched May 11. Anthropic's
-      Ode: $1.5B, May. AWS Forward Deployed Engineering: $1B, June 30. Microsoft Frontier
-      Company: $2.5B + 6,000 people, July 2. Google Cloud: $750M for FDE teams…"
-    - 'The acquisition playbook is now a repeated pattern — boutiques that embed with
-      a lab get bought — Confidence: Established DeployCo acquired Tomoro (founded
-      2023 "in alliance with OpenAI"; ~150 FDEs; clients Mattel, Supercell, Red Bull,
-      Tesco, Virgin Atlantic, Fidelity, NBA; monthly revenue up ~10x in 12 months;
-      only ~£10M raised) at launch, then Northslope (Denver; CEO Bill Ward, ex-Palantir
-      FDE;…'
-    - 'Distyl AI is the largest still-independent breakout — Confidence: Established
-      (funding), Contested (founding year/headcount) Ex-Palantir founders (Arjun Prakash,
-      Derek Ho). $7M seed (2023) → $20M A → $175M Series B at $1.8B valuation (Sept
-      2025, Khosla + Lightspeed, w/ Coatue, DTC, DST). Revenue reported 5x in 2024,
-      projected 8x in 2025 [Tier 2 Crunchbase News]; ~110–160 employees (aggregators…'
-    - "Edra is the strongest \"next Northslope\" candidate — Confidence: Established
-      (verified against TechCrunch) Founded by ex-Palantir Eugen Alpeza and Yannis
-      Karamanlakis — *Palantir's first forward-deployed AI engineer*. Out of stealth
-      March 2026 with a $30M Series A led by Sequoia (8VC, A* participating). Turns
-      enterprise operational exhaust into agent-ready knowledge bases. Verified early…"
-    - 'Conduct: fastest funding escalation in the cohort — Confidence: Established
-      (verified against Tech.eu) Founded 2024 by three ex-Palantir employees (CEO
-      Jan Philipp Haas; other co-founder names unverified). AI agents that reverse-engineer
-      legacy ERP/SAP for Fortune-500 migrations ahead of the 2027 S/4HANA deadline.
-      $60M Series A (June 2026), ~$72M total — seed-to-$60M-A inside ~12 months.'
-    - 'Ciridae: year-one revenue traction on the Ode model for the mid-market — Confidence:
-      Likely (single Tier 2 Fortune source, claim-verified) Founded by Jack Soslow
-      (ex-a16z partner) and Jack Weissenberger (ex-Apple/Tenyx). $20M seed led by
-      Accel (a16z, General Catalyst participating). 20+ clients, "high seven-figures"
-      2025 revenue in its first year, targeting PE-backed "real economy" businesses…'
-    - 'Tribe AI: the capital-efficiency outlier and dual-lab partner — Confidence:
-      Likely Founded 2019 (Jaclyn Rice Nelson), bootstrapped six years, then just
-      $3.25M raised (July 2024) at an eight-figure revenue run rate on track to double.
-      ~120–155 core employees + 600+ engineer network. Officially listed as both an
-      OpenAI business partner and an Anthropic Claude services partner — rare dual-lab…'
-    - 'forgd: earliest-stage watchlist entry — Confidence: Emerging Founded by ex-Heroku/Salesforce
-      platform leaders Peter Goodman and Paul Andrew. Anthropic Preferred Partner
-      focused exclusively on Claude Code / agentic-app transformation; left stealth
-      ~early 2026 with paying customers at launch and hiring against "unexpected early
-      demand." No disclosed funding. Closest structural miniature of Ode…'
-    - "The vertical cousin: Sequoia's \"Services: The New Software\" cohort sells
-      outcomes, not consulting — Confidence: Established Julien Bek's essay (sequoiacap.com,
-      March 5, 2026) names Crosby (AI-native law firm: $5.8M seed → $20M A → $60M
-      B co-led by Index + Lux at $400M valuation, ~100 clients incl. Cursor, Clay,
-      Cognition, Tishman Speyer; revenue +~400% since Oct), WithCoverage ($42M Series
-      B,…"
+    - "The counterexample is real, public, and dated July 19–21, 2026; the conversation's
+      map is THE map. — Confidence: Established Levent Alpöge (reported as an Anthropic
+      mathematician, working with the model \"Fable\") posted the map P=(1+xy)³z+y²(1+xy)(4+3xy),
+      Q=y+3x(1+xy)²z+3xy²(4+3xy), R=2x−3x²y−x³z; Tao's blog (Tier 1), the Secret Blogging
+      Seminar (Tier 2), a rigorous verification preprint (ulam.ai,…"
+    - "The core computation was independently re-verified during this research. —
+      Confidence: Established A research agent recomputed det DF = −2 symbolically
+      (sympy) and solved F = (−1/4, 0, 0), finding exactly the three preimages (0,0,−1/4),
+      (1,−3/2,13/2), (−1,3/2,13/2) — identical to the conversation's claim and to
+      an independent Hacker News computation from July 20 (thread 48973869)."
+    - "JC status: false for all n ≥ 3 (by the counterexample plus trivial stabilization/padding);
+      n = 2 remains open. — Confidence: Established Every source addressing dimension
+      (Tao, John D. Cook, Zhang's consequences page, Shaska's arXiv:2607.20210) states
+      n = 2 is still open. Stabilization (x,y,z,u₄,…,uₙ) ↦ (F(x,y,z),u₄,…,uₙ) extends
+      the refutation to every n ≥ 3. Peer review is explicitly…"
+    - "The refutation logic in the conversation is correct: étale + non-injective
+      is exactly what's needed. — Confidence: Established Injective polynomial self-maps
+      of ℂⁿ are automatically automorphisms (Ax–Grothendieck for surjectivity; Białynicki-Birula–Rosenlicht
+      / Rudin / Cynk–Rusek for polynomial inverse), so any counterexample must be
+      locally injective but globally non-injective — Tao frames his…"
+    - "The incidence-geometry construction in the conversation matches the public
+      record almost verbatim — and its public originator is Will Sawin (July 20, SBS
+      comments), relaying an AI-suggested picture. — Confidence: Likely (LLM-mediated
+      fetch of comment thread; two consistent passes) Sawin's comment states the construction
+      with the literal phrase \"hyperplane tangent but not osculating to the small…"
+    - '"Only degree 3 works" is publicly confirmed, by essentially the same argument
+      the conversation developed. — Confidence: Likely Commenter "Skooi" (SBS, July
+      21) proves via the excision/class-group sequence that Cl(U)=0 forces the removed
+      divisor classes {(d−1,1),(1,1)} to be a ℤ-basis of ℤ², i.e. determinant d−2
+      = ±1, which "threads the needle only at d = 3"; corroborated by Shubhodip Mondal…'
+    - "The Jelonek-set computation and 3/1/0 fiber census in the conversation appear
+      verbatim in the rigorous preprint. — Confidence: Likely ulam.ai's Theorem 2.2
+      invokes Jelonek's theorem; the preprint states S_F = V(Δ) with Δ = q² − 16p
+      − q³r + 18pqr − 27p²r² (the negative of the conversation's D, same hypersurface)
+      and the exact fiber counts 3 (generic), 1 (discriminant, off the triple-root
+      curve), 0…"
+    - "Both proof styles for X ≅ 𝔸³ that the conversation developed exist publicly:
+      explicit coordinates (Tao — who calls it \"the miracle\" and admits no full
+      conceptual explanation) and intrinsic bundle arguments (Speyer's exact sequence
+      0→O(−2)→O³→O(1)²→0; Levinson's and van Dobben de Bruyn's coordinate-free treatments).
+      — Confidence: Likely However, the conversation's specific named tools —…"
+    - 'The background theorem toolkit is genuine as attributed, with one hypothesis
+      subtlety. — Confidence: Established Kraft–Russell (affine 𝔸²-fibrations over
+      a smooth curve are Zariski-locally trivial), Bass–Connell–Wright 1976 (locally
+      polynomial algebras are symmetric algebras), Quillen–Suslin, Danielewski surfaces
+      (xⁿy=P(z); 1989 cancellation counterexample; Makar–Limanov invariant distinguishes…'
+    - "One conversation claim is affirmatively wrong: R + π⁻¹(H) is NOT anticanonical.
+      — Confidence: Established (by direct computation) On P¹×P², −K = O(2,3), while
+      R + π*H = O(2,1) + O(1,1) = O(3,2) ≠ (2,3). The Riemann–Hurwitz check (K = π*K_{P³}
+      + R ⇒ R = O(2,1)) confirms the conversation's individual divisor classes were
+      right; only the log-Calabi–Yau speculation fails. The conversation flagged it…"
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-07-16-applied-ai-fde-breakouts' dated 2026-07-16, and from a 
-      simulated review round where 5 agent-written posts were ranked by votes.
+      report '2026-07-24-jacobian-counterexample-claims' dated 2026-07-24, and 
+      from a simulated review round where 10 agent-written posts were ranked by 
+      votes.
   angles:
-    - id: 2026-07-16-palantir-named-the-forward-deployed-engi
-      summary: "Palantir named the forward-deployed-engineer role 'Delta' in the early
-        2010s — and put it under Business Development · thread: The 'scrappy' AI startup
-        was secretly a $1.5B Anthropic buyout"
-      last_used: '2026-07-24'
-    - id: 2026-07-16-northslope-s-series-a-was-co-led-by-two
-      summary: "Northslope's Series A was co-led by two Palantir-alumni funds. Six
-        months later, OpenAI's deployment arm bought it. · thread: The 'scrappy' AI
-        startup was secretly a $1.5B Anthropic buyout"
-      last_used: '2026-07-24'
-    - id: 2026-07-16-techcrunch-put-a-number-on-ode-s-1-5b-30
-      summary: "TechCrunch put a number on Ode's $1.5B: $300M each from Anthropic,
-        Blackstone, and H&F — that's only $900M · thread: The 'scrappy' AI startup
-        was secretly a $1.5B Anthropic buyout"
-      last_used: '2026-07-24'
-    - id: 2026-07-16-fractional-ai-worked-with-openai-for-11
-      summary: "Fractional AI worked with OpenAI for 11 months. Then Anthropic's PE-backed
-        JV bought it whole. · thread: The 'scrappy' AI startup was secretly a $1.5B
-        Anthropic buyout"
-      last_used: '2026-07-24'
-    - id: 2026-07-16-fractional-ai-took-two-years-to-get-boug
-      summary: "Fractional AI took two years to get bought. Northslope took six months,
-        ending July 8, 2026. · thread: The 'scrappy' AI startup was secretly a $1.5B
-        Anthropic buyout"
-      last_used: '2026-07-23'
+    - id: 2026-07-24-a-bidegree-check-3-2-vs-2-3-killed-one-c
+      summary: 'A bidegree check — (3,2) vs (2,3) — killed one claim in the Jacobian
+        counterexample writeup · thread: A decades-old unsolved math conjecture was
+        just disproven with an explicit counterexample'
+      last_used:
+      provenance:
+        post_id: p_0811859cdd89
+        round_id: open_conjectures:2026-07-24
+        report_label: 2026-07-24-jacobian-counterexample-claims
+    - id: 2026-07-24-stephen-smale-predicted-in-1998-that-a-s
+      summary: 'Stephen Smale predicted in 1998 that a smart undergraduate could disprove
+        this conjecture — one just did, 28 years later · thread: A decades-old unsolved
+        math conjecture was just disproven with an explicit counterexample'
+      last_used:
+      provenance:
+        post_id: p_fefa9e1a5bf1
+        round_id: open_conjectures:2026-07-24
+        report_label: 2026-07-24-jacobian-counterexample-claims
+    - id: 2026-07-24-a-1993-polish-theorem-about-maps-that-ar
+      summary: "A 1993 Polish theorem about maps that aren't 'proper' turned out to
+        be the ruler for the 2026 Jacobian counterexample · thread: A decades-old
+        unsolved math conjecture was just disproven with an explicit counterexample"
+      last_used:
+      provenance:
+        post_id: p_8b18c811efe6
+        round_id: open_conjectures:2026-07-24
+        report_label: 2026-07-24-jacobian-counterexample-claims
+    - id: 2026-07-24-the-jacobian-counterexample-isn-t-a-one
+      summary: "The Jacobian counterexample isn't a one-point failure — it's 3-to-1
+        almost everywhere · thread: A decades-old unsolved math conjecture was just
+        disproven with an explicit counterexample"
+      last_used:
+      provenance:
+        post_id: p_a5cfd3eaecdb
+        round_id: open_conjectures:2026-07-24
+        report_label: 2026-07-24-jacobian-counterexample-claims
+    - id: 2026-07-24-t-t-moh-s-computer-checked-the-2-variabl
+      summary: "T.T. Moh's computer checked the 2-variable Jacobian conjecture to
+        degree 108 — the break came in a different dimension at degree 3 · thread:
+        A decades-old unsolved math conjecture was just disproven with an explicit…"
+      last_used:
+      provenance:
+        post_id: p_ffeea7d3cbc3
+        round_id: open_conjectures:2026-07-24
+        report_label: 2026-07-24-jacobian-counterexample-claims
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-16-the-scrappy-ai-startup-was-secretly-a-1.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-24-a-decades-old-unsolved-math-conjecture-w.png
