@@ -413,7 +413,7 @@ research:
       summary: "Ian Whitestone's carryover simulation: randomizing an email test by
         session instead of by recipient shrinks a real 2% lift to a measured 1.4%
         · thread: No one has ever actually measured how much email marketing…"
-      last_used: '2026-07-27'
+      last_used: '2026-07-28'
       provenance:
         post_id: p_2353dac04611
         round_id: klaviyo_moat:2026-07-27
