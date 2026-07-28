@@ -449,7 +449,7 @@ research:
       summary: "Apple flipped a privacy switch on Sept 20, 2021 that turned half of
         all email 'opens' into fake pixel fetches · thread: No one has ever actually
         measured how much email marketing overstates its results"
-      last_used:
+      last_used: '2026-07-28'
       provenance:
         post_id: p_025e430bbb4c
         round_id: klaviyo_moat:2026-07-27
