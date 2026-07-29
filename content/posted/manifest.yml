@@ -5727,3 +5727,21 @@
   angle: 2026-07-27-ian-whitestone-s-carryover-simulation-ra
   source_id: ''
   posted_at: '2026-07-28'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mrrslqwteq2n
+  angle: 2026-07-28-klaviyo-s-headline-rcs-number-136-higher
+  source_id: research-2026-07-28-1
+  posted_at: '2026-07-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mrrslsgunv2n
+  angle: 2026-07-28-klaviyo-s-rcs-rollout-beats-postscript-a
+  source_id: research-2026-07-28-2
+  posted_at: '2026-07-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mrrsm77fpe2a
+  angle: 2026-07-28-klaviyo-s-headline-rcs-number-136-higher
+  source_id: ''
+  posted_at: '2026-07-29'
