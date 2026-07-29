@@ -353,106 +353,82 @@ research:
   channels:
     - bluesky
   facts:
-    - "The standard causal technique is a recipient-level randomized holdout, not
-      an A/B test that \"runs longer.\" — Confidence: Established Klaviyo's Global
-      Holdout Groups suppresses a percentage of profiles from all marketing and compares
-      purchase behavior between groups [Tier 1]; Bluecore's engineering implementation
-      assigns holdouts via `FARM_FINGERPRINT(customer_id + per-campaign salt)` so…"
-    - "Klaviyo gates account-wide holdout measurement to 400,000+ profiles — a Tier-1
-      admission of the statistical power problem. — Confidence: Established Below
-      a certain list size, holdouts can't be powered adequately; Klaviyo recommends
-      a 3-month runtime [Tier 1]."
-    - "Sample-size math gets audience-prohibitive fast, and it must be decided pre-send.
-      — Confidence: Likely Worked example: detecting a 1pp lift on a 3% baseline at
-      95% confidence / 80% power needs 5,302 per arm (~10,600 total) [Tier 3, formula-verified].
-      Evan Miller's n = 16σ²/δ² (σ² = p(1−p)) confirmed at the primary source; the
-      constant 16 comes from the 80%-power/5%-significance convention (Lehr's…"
-    - 'Because sends are finite, practitioners explicitly trade statistical rigor
-      for audience cost. — Confidence: Likely Documented framing: "conservative" 95%
-      confidence / 80% power / 50-50 split vs "aggressive" 95% / 50% power / 90-10
-      split [Tier 3]. Practitioner holdout sizes cluster at 10–20% of the eligible
-      audience, 2–4 weeks minimum duration [Tier 3, corroborated].'
-    - 'Recipient-level (not session-level) randomization is required because of carryover
-      contamination. — Confidence: Likely Simulation evidence: with carryover, session-level
-      randomization shrank a true 2% effect to a measured 1.4% and dropped detection
-      from 100% to 90% [Tier 3]; consistent with Klaviyo/Bluecore recipient-grain
-      designs [Tier 1/2].'
-    - 'Apple MPP has destroyed opens as a metric: >50% of opens occur on MPP-active
-      devices, and pre/post data shows opens inflating while clicks stayed flat. —
-      Confidence: Established (mechanics) / Likely (magnitudes) MPP (Sept 20, 2021)
-      pre-fetches tracking pixels at delivery whether or not the email is read, via
-      Apple proxies that anonymize IP/user-agent [Tier 1, SendGrid docs]. Litmus:
-      >50% of opens…'
-    - "Clicks are only relatively trustworthy: bot/security-scanner clicks run ~20%
-      with basic detection and approach 50% with third-party intelligence. — Confidence:
-      Likely Mailchimp's internal testing [Tier 2]; mechanism confirmed at Tier 1
-      — Microsoft Safe Links (and Proofpoint URL Defense) rewrite every link and re-fetch
-      destinations at delivery-scan time and at click time."
-    - 'Klaviyo attribution is last-touch within short windows, and Klaviyo itself
-      rebuilt it to filter MPP phantom opens and bot clicks — a Tier-1 admission the
-      over-attribution was real. — Confidence: Established Defaults: email 5 days
-      (opens and clicks count), SMS 1-day opens/5-day clicks, push 24h; last-touch
-      across channels; windows adjustable 1–30 days [Tier 1]. The update added bot-click…'
-    - 'No verifiable, email-specific "attribution overstates by X%" number exists
-      — a verified negative. — Confidence: Established (as a gap) The circulating
-      figures — agency "70% rule" (Klaviyo-attributed ≈ 70–85% of true email revenue),
-      "20–50% inflation" — are Tier-3 heuristics, not audited studies. A targeted
-      verification pass chased every named lead (Ryan Healy client audit: qualitative
-      bug…'
-    - "The best rigorous quantification of the attribution-vs-incrementality gap is
-      paid-ads-only: ByteDance's ADKDD 2026 paper found raw attribution overestimated
-      true experimental lift by 179–334% across channel slices. — Confidence: Established
-      (for paid ads; analogy only for email) Their cannibalization-corrected method
-      cut normalized calibration error by 91.38% [Tier 1, arXiv 2606.26690]. Citing…"
+    - 'RBM is live on US iPhones today — since iOS 18.1 (Oct 28, 2024) — on all big-three
+      carriers. — Confidence: Likely A2P/business RCS reached iPhone with iOS 18.1
+      in select markets; multiple vendor sources converge that RCS for Business now
+      works on modern iOS + Android where carrier support exists, including AT&T,
+      Verizon, T-Mobile [Tier 3, convergent; no single Tier-1 Apple statement]. A
+      May 2025…'
+    - "17 US carriers support RCS on iPhone (up from 3 at launch). — Confidence: Likely
+      AT&T, Verizon, T-Mobile, Boost (iOS 18.2+), C Spire, Consumer Cellular, Cricket,
+      FirstNet, H2O, Metro, PureTalk, Red Pocket, Spectrum Mobile, TracFone/Straight
+      Talk, US Cellular, Visible, Xfinity Mobile [Tier 2, 9to5Mac extraction of Apple's
+      carrier page, cross-corroborated]. Apple's own pages (support.apple.com…"
+    - 'iOS renders RBM materially worse than Android — the degradation is specific
+      and documented. — Confidence: Likely Rich cards show ~3 lines / ~144 characters
+      on iPhone; multiple CTA buttons are "only sometimes visible"; carousels render
+      as stacked cards instead of horizontal scroll; no Google Wallet integration
+      or location-request [Tier 3, convergent across Infobip/Messente/Sinch]. Design…'
+    - "Apple implements Universal Profile 2.4, not 3.0; E2EE shipped in iOS 26.5 beta
+      (May 11, 2026) and is P2P-scoped. — Confidence: Established (E2EE, per Apple
+      Newsroom) / Likely (UP version, per MacRumors) Apple's E2EE rollout is built
+      on UP 3.0's MLS protocol but full UP 3.0 features are arriving piecemeal across
+      iOS 26.x [Tier 1 + Tier 2]. RBM/business traffic is *not* end-to-end encrypted
+      — it…"
+    - 'The verified sender is the core capability differentiator, and it has the only
+      independently methodologized consumer stat found. — Confidence: Established
+      (capability) / Likely (stat) RBM replaces an anonymous 10DLC/short-code number
+      with a Google-verified brand agent: logo, name, verification badge [Tier 1,
+      Google RBM docs]. Datos Insights survey (n=1,500 US consumers, Oct 2025, commissioned
+      by…'
+    - 'Rich-card mechanics are spec-defined and tight. — Confidence: Established Title
+      ≤200 chars, description ≤2,000, ≤4 primary suggestions + 11 chips, 250 KB card
+      payload, 100 KB thumbnail; carousels ≤10 cards with progressive truncation [Tier
+      1, Google RBM spec].'
+    - 'RBM agent registration is a real gate: Google-managed launches in days, carrier-managed
+      launches in 8–16 weeks plus a commercial agreement per carrier. — Confidence:
+      Established (process) / Contested (Google-managed timeline: 1–3 days per Google
+      vs 2–4 weeks per practitioners — likely processing-time vs end-to-end) Hard
+      prerequisites: working website, published privacy policy and ToS, opt-out…'
+    - 'Platform readiness is uneven: Klaviyo is GA; Postscript and Yotpo are gated
+      betas. — Confidence: Established Klaviyo RCS generally available for brands
+      in US, UK, DE, FR, IT, ES, PL, AT, SE, NO, DK, with automatic SMS/MMS fallback,
+      built on a Google partnership [Tier 1, Klaviyo announcement]. Attentive claims
+      first-to-market and a CTIA board seat [Tier 1, self-描述]. Postscript: private
+      beta,…'
+    - "Pricing lands close to SMS for basic sends; rich content carries a modest premium.
+      — Confidence: Likely Google's billing taxonomy: basic (plain text) / single
+      (rich) / conversational (24h window, unlimited messages) [Tier 1, structure
+      only — no dollar rates]. Infobip's published guidance: basic ≈ SMS; single ≈
+      +20–30%; conversational ≈ 2× SMS [Tier 1 vendor page]. Twilio publishes no public
+      RCS…"
+    - "Every campaign-lift number found is vendor-self-reported; zero independent
+      verification exists. — Confidence: Established (as a pattern) Klaviyo/POPFLEX:
+      +23% total revenue vs SMS, +136% conversion vs SMS, 6× email CTR [Tier 1 source,
+      vendor-reported result]. Sinch's Picard 3× CTR, Clarins 79% read rate, Micromania
+      7× CTR; aggregate \"72% open rates, 15–30% CTR, 35× email read rates\" — all
+      trace…"
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-07-20-email-incrementality-measurement' dated 2026-07-27, and
-      from a simulated review round where 10 agent-written posts were ranked by 
-      votes.
+      report '2026-07-23-rcs-ecommerce-marketing' dated 2026-07-28, and from a 
+      simulated review round where 2 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-07-27-ian-whitestone-s-carryover-simulation-ra
-      summary: "Ian Whitestone's carryover simulation: randomizing an email test by
-        session instead of by recipient shrinks a real 2% lift to a measured 1.4%
-        · thread: No one has ever actually measured how much email marketing…"
-      last_used: '2026-07-28'
+    - id: 2026-07-28-klaviyo-s-headline-rcs-number-136-higher
+      summary: "Klaviyo's headline RCS number — 136% higher conversion than SMS —
+        comes from Klaviyo, about one customer, unverified · thread: RCS was supposed
+        to replace texting — it's 3% of revenue"
+      last_used:
       provenance:
-        post_id: p_2353dac04611
-        round_id: klaviyo_moat:2026-07-27
-        report_label: 2026-07-20-email-incrementality-measurement
-    - id: 2026-07-27-klaviyo-s-checkout-attribution-runs-on-a
-      summary: "Klaviyo's checkout attribution runs on a parameter called _kx that
-        Safari's own privacy rules are built to break · thread: No one has ever actually
-        measured how much email marketing overstates its results"
-      last_used: '2026-07-28'
+        post_id: p_27f048957503
+        round_id: klaviyo_moat:2026-07-28
+        report_label: 2026-07-23-rcs-ecommerce-marketing
+    - id: 2026-07-28-klaviyo-s-rcs-rollout-beats-postscript-a
+      summary: "Klaviyo's RCS rollout beats Postscript and Yotpo on paper — eleven
+        countries live, versus their gated betas · thread: RCS was supposed to replace
+        texting — it's 3% of revenue"
+      last_used:
       provenance:
-        post_id: p_be85b3131a22
-        round_id: klaviyo_moat:2026-07-27
-        report_label: 2026-07-20-email-incrementality-measurement
-    - id: 2026-07-27-the-only-real-number-for-how-much-market
-      summary: "The only real number for how much marketing attribution overstates
-        results comes from TikTok's owner studying ads, not email · thread: No one
-        has ever actually measured how much email marketing overstates its results"
-      last_used: '2026-07-28'
-      provenance:
-        post_id: p_edd56cb5fb72
-        round_id: klaviyo_moat:2026-07-27
-        report_label: 2026-07-20-email-incrementality-measurement
-    - id: 2026-07-27-optimizely-mutiny-and-unbounce-each-buil
-      summary: "Optimizely, Mutiny, and Unbounce each built a piece of the email-to-landing-page
-        handoff. A search of Eppo's docs for the full recipe came back with zero hits
-        · thread: No one has ever actually measured how much email…"
-      last_used: '2026-07-28'
-      provenance:
-        post_id: p_296dfed9d116
-        round_id: klaviyo_moat:2026-07-27
-        report_label: 2026-07-20-email-incrementality-measurement
-    - id: 2026-07-27-apple-flipped-a-privacy-switch-on-sept-2
-      summary: "Apple flipped a privacy switch on Sept 20, 2021 that turned half of
-        all email 'opens' into fake pixel fetches · thread: No one has ever actually
-        measured how much email marketing overstates its results"
-      last_used: '2026-07-28'
-      provenance:
-        post_id: p_025e430bbb4c
-        round_id: klaviyo_moat:2026-07-27
-        report_label: 2026-07-20-email-incrementality-measurement
+        post_id: p_44b25e5f90df
+        round_id: klaviyo_moat:2026-07-28
+        report_label: 2026-07-23-rcs-ecommerce-marketing
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-27-no-one-has-ever-actually-measured-how-mu.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-28-rcs-was-supposed-to-replace-texting-it-s.png
