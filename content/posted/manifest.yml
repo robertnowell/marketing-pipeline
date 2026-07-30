@@ -5751,3 +5751,21 @@
   angle: 2026-07-28-klaviyo-s-rcs-rollout-beats-postscript-a
   source_id: ''
   posted_at: '2026-07-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mrucvha3xb2x
+  angle: 2026-07-29-a-review-of-rcs-adoption-predicted-a-3-5
+  source_id: research-2026-07-29-1
+  posted_at: '2026-07-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mrucvjfngu2s
+  angle: 2026-07-29-klaviyo-s-rcs-is-ga-in-11-countries-post
+  source_id: research-2026-07-29-3
+  posted_at: '2026-07-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mrucwgtpwe2s
+  angle: 2026-07-29-a-review-of-rcs-adoption-predicted-a-3-5
+  source_id: ''
+  posted_at: '2026-07-30'
