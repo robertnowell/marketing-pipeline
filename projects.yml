@@ -409,26 +409,35 @@ research:
       7× CTR; aggregate \"72% open rates, 15–30% CTR, 35× email read rates\" — all
       trace…"
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-07-23-rcs-ecommerce-marketing' dated 2026-07-28, and from a 
-      simulated review round where 2 agent-written posts were ranked by votes.
+      report '2026-07-23-rcs-ecommerce-marketing' dated 2026-07-29, and from a 
+      simulated review round where 3 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-07-28-klaviyo-s-headline-rcs-number-136-higher
-      summary: "Klaviyo's headline RCS number — 136% higher conversion than SMS —
-        comes from Klaviyo, about one customer, unverified · thread: RCS was supposed
-        to replace texting — it's 3% of revenue"
-      last_used: '2026-07-29'
+    - id: 2026-07-29-a-review-of-rcs-adoption-predicted-a-3-5
+      summary: "A review of RCS adoption predicted a 3–5 year takeover of messaging.
+        It's WhatsApp doing the taking, not RCS. · thread: Klaviyo's new texting feature
+        may only reach 18% adoption by 2029"
+      last_used:
       provenance:
-        post_id: p_27f048957503
-        round_id: klaviyo_moat:2026-07-28
+        post_id: p_de0c8af9c3f3
+        round_id: klaviyo_moat:2026-07-29
         report_label: 2026-07-23-rcs-ecommerce-marketing
-    - id: 2026-07-28-klaviyo-s-rcs-rollout-beats-postscript-a
-      summary: "Klaviyo's RCS rollout beats Postscript and Yotpo on paper — eleven
-        countries live, versus their gated betas · thread: RCS was supposed to replace
-        texting — it's 3% of revenue"
-      last_used: '2026-07-29'
+    - id: 2026-07-29-popflex-s-23-revenue-lift-is-the-best-pu
+      summary: "POPFLEX's +23% revenue lift is the best public number on Klaviyo RCS.
+        Klaviyo published it about itself. · thread: Klaviyo's new texting feature
+        may only reach 18% adoption by 2029"
+      last_used:
       provenance:
-        post_id: p_44b25e5f90df
-        round_id: klaviyo_moat:2026-07-28
+        post_id: p_d0272919e5e1
+        round_id: klaviyo_moat:2026-07-29
+        report_label: 2026-07-23-rcs-ecommerce-marketing
+    - id: 2026-07-29-klaviyo-s-rcs-is-ga-in-11-countries-post
+      summary: "Klaviyo's RCS is GA in 11 countries. Postscript and Yotpo are still
+        gated betas — a rare falsifiable fact in this debate. · thread: Klaviyo's
+        new texting feature may only reach 18% adoption by 2029"
+      last_used:
+      provenance:
+        post_id: p_373ff41eceb9
+        round_id: klaviyo_moat:2026-07-29
         report_label: 2026-07-23-rcs-ecommerce-marketing
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-28-rcs-was-supposed-to-replace-texting-it-s.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-29-klaviyo-s-new-texting-feature-may-only-r.png
