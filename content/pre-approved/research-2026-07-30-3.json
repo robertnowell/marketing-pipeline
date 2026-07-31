@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-07-30-3",
+  "date": "2026-07-30",
+  "project": "research",
+  "angle": "2026-07-30-agent-s2-s-32-7-improvement-on-osworld-i",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "GPT-5.5 and Claude Opus, tested on the same browser task, both skipped the website entirely and POSTed straight to the internal API to finish it (OSWorld task 065, per Steelman Labs). Why: agents complete only 20.6-26.2% of tasks through a UI, versus 78-95%+ for humans. API calls also run 950ms vs 3,404ms for browser automation (arXiv:2604.00694). If you're building for agents, the API is the product now."
+    }
+  ]
+}

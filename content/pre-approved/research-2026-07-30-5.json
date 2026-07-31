@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-07-30-5",
+  "date": "2026-07-30",
+  "project": "research",
+  "angle": "2026-07-30-on-osworld-task-052-gpt-5-5-opened-dev-t",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "GPT-5.5 opened dev tools before it opened the booking form. On OSWorld task 052, it found the site's internal API and POSTed the reservation directly (Steelman Labs, Jul 2026). API calls average 950ms vs 3,404ms for browser automation, 3.6x faster (arXiv:2604.00694). Build API-first."
+    }
+  ]
+}

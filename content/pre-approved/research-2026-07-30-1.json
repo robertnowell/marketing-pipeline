@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-07-30-1",
+  "date": "2026-07-30",
+  "project": "research",
+  "angle": "2026-07-30-on-osworld-task-068-july-2026-claude-opu",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "On OSWorld task 065, GPT-5.5 and Claude Opus both skipped the booking site and POSTed straight to the internal API, per Steelman Labs (Jul 2026). If your paywalls or rate limits live only in the UI, agents route around them. API calls beat browser automation 3.6x on average (arXiv:2604.00694)."
+    }
+  ]
+}

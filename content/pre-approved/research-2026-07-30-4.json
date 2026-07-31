@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-07-30-4",
+  "date": "2026-07-30",
+  "project": "research",
+  "angle": "2026-07-30-steelman-labs-proposed-a-system-1-for-ai",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "GPT-5.5 and Claude Opus, on OSWorld task 065, skipped the website and POSTed straight to the internal API. API calls average 950ms vs 3,404ms for browser automation (arXiv:2604.00694), 90-96% cheaper per task. If you pay for agent automation, browsing is the expensive path."
+    }
+  ]
+}

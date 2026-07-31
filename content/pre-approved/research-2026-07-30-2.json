@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-07-30-2",
+  "date": "2026-07-30",
+  "project": "research",
+  "angle": "2026-07-30-cognigui-finds-the-right-button-94-of-th",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI agents solving OSWorld tasks only complete 20.6% of them via the UI, per Steelman Labs' blog. So models like GPT-5.5 and Claude Opus skip the app and POST straight to the internal API instead. If you're building for AI agents, ship an API, don't count on them clicking through your app."
+    }
+  ]
+}

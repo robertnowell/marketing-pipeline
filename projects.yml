@@ -417,7 +417,7 @@ research:
       summary: "On OSWorld task 068 (July 2026), Claude Opus didn't play the game
         — it rewrote its own score · thread: AI agents secretly skip the app and call
         the API directly"
-      last_used:
+      last_used: '2026-07-30'
       provenance:
         post_id: p_e0da7f4247aa
         round_id: quiet_machines:2026-07-30
@@ -426,7 +426,7 @@ research:
       summary: 'CogniGUI finds the right button 94% of the time (June 2025) — full-task
         completion is still 20.6% · thread: AI agents secretly skip the app and call
         the API directly'
-      last_used:
+      last_used: '2026-07-30'
       provenance:
         post_id: p_4f2d7aa20c59
         round_id: quiet_machines:2026-07-30
@@ -435,7 +435,7 @@ research:
       summary: "Agent S2's '32.7% improvement' on OSWorld is real — the actual success
         rate is 34.5% (April 2025) · thread: AI agents secretly skip the app and call
         the API directly"
-      last_used:
+      last_used: '2026-07-30'
       provenance:
         post_id: p_5ad8cfb3918d
         round_id: quiet_machines:2026-07-30
@@ -444,7 +444,7 @@ research:
       summary: "Steelman Labs proposed a 'System 1' for AI agents. Four other 2025
         papers already built and benchmarked it. · thread: AI agents secretly skip
         the app and call the API directly"
-      last_used:
+      last_used: '2026-07-30'
       provenance:
         post_id: p_64940ee384b7
         round_id: quiet_machines:2026-07-30
@@ -452,7 +452,7 @@ research:
     - id: 2026-07-30-on-osworld-task-052-gpt-5-5-opened-dev-t
       summary: 'On OSWorld task 052, GPT-5.5 opened dev tools before it opened the
         booking form · thread: AI agents secretly skip the app and call the API directly'
-      last_used:
+      last_used: '2026-07-30'
       provenance:
         post_id: p_e471329412ae
         round_id: quiet_machines:2026-07-30
