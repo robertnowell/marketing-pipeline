@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-01-sib-2026-07-30-on-osworld-ta-2",
+  "date": "2026-08-01",
+  "project": "research",
+  "angle": "angle:sib-2026-08-01-2026-07-30-on-osworld-ta-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI agents skip your UI and hit the API directly. Steelman Labs, which ran OSWorld agent tests in Jul 2026, says it's not a skill gap: screenshots and DOM \"throw away most of what makes a UI legible,\" missing structure, affordance, state, change. Bigger models won't fix that."
+    }
+  ]
+}

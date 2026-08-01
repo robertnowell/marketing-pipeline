@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-01-sib-2026-07-30-agent-s2-s-32-1",
+  "date": "2026-08-01",
+  "project": "research",
+  "angle": "angle:sib-2026-08-01-2026-07-30-agent-s2-s-32-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "GPT-5.5 skipped your booking form. On OSWorld task 052 it read the site's JavaScript, found the internal API, and POSTed the reservation directly. On task 065, GPT-5.5 and Claude Opus both bypassed the site entirely. Source: Steelman Labs, Jul 2026. Assume agents route around your UI."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-01-sib-2026-07-30-on-osworld-ta-1",
+  "date": "2026-08-01",
+  "project": "research",
+  "angle": "angle:sib-2026-08-01-2026-07-30-on-osworld-ta-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "On OSWorld task 065, GPT-5.5 and Claude Opus both skipped the booking website and POSTed straight to the internal API. On task 052, GPT-5.5 dug through the site's JavaScript to find that same API first. If you build for agents, the UI may be optional. (Steelman Labs)"
+    }
+  ]
+}

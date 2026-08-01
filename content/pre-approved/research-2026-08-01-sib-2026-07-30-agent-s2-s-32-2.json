@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-01-sib-2026-07-30-agent-s2-s-32-2",
+  "date": "2026-08-01",
+  "project": "research",
+  "angle": "angle:sib-2026-08-01-2026-07-30-agent-s2-s-32-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Your app's UI isn't why AI agents skip it, the screenshot is. Steelman Labs, who caught GPT-5.5 and Claude Opus calling APIs directly in benchmark tests, argues screenshots and DOM \"throw away most of what makes a UI legible.\" My take: expose a clean API, don't just harden the UI."
+    }
+  ]
+}
