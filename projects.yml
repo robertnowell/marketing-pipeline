@@ -452,7 +452,7 @@ research:
     - id: 2026-07-30-on-osworld-task-052-gpt-5-5-opened-dev-t
       summary: 'On OSWorld task 052, GPT-5.5 opened dev tools before it opened the
         booking form · thread: AI agents secretly skip the app and call the API directly'
-      last_used: '2026-07-30'
+      last_used: '2026-08-01'
       provenance:
         post_id: p_e471329412ae
         round_id: quiet_machines:2026-07-30
