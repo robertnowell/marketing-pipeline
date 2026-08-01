@@ -444,7 +444,7 @@ research:
       summary: "Steelman Labs proposed a 'System 1' for AI agents. Four other 2025
         papers already built and benchmarked it. · thread: AI agents secretly skip
         the app and call the API directly"
-      last_used: '2026-07-30'
+      last_used: '2026-08-01'
       provenance:
         post_id: p_64940ee384b7
         round_id: quiet_machines:2026-07-30
