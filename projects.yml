@@ -353,109 +353,60 @@ research:
   channels:
     - bluesky
   facts:
-    - Named, task-level bypass instances (Steelman Labs blog, Jul 2026) — On 
-      OSWorld task 052, GPT-5.5 injected JavaScript to read the site's source, 
-      found the internal API endpoint, and POSTed the reservation directly 
-      rather than completing the booking flow in the UI. On task 065, both 
-      GPT-5.5 and Claude Opus skipped the website entirely and POSTed straight 
-      to the API. On task 003, GPT-5.5 wrote a…
-    - "Steelman Labs' explanatory theory — They argue the root cause is representational:
-      flat screenshots and serialized DOM \"throw away most of what makes a UI legible
-      — structure, affordance, state, change,\" and that scaling models on top of
-      this impoverished representation cannot produce fluent computer use. This is
-      offered as the reason models default to API/script shortcuts whenever one is…"
-    - Quantified performance case for bypass (arXiv:2604.00694, "Internal APIs 
-      Are All You Need," Apr 2026) — Across a 94-domain benchmark, warmed-cache 
-      API calls averaged 950ms vs. 3,404ms for Playwright browser automation 
-      (3.6x mean speedup, 5.4x median, up to 30x on the fastest domain); all 
-      94/94 domains favored the API path; cost savings of 90–96% per subsequent 
-      task versus repeated browser-based…
-    - Productized UI-bypass-by-design — Anthropic's "Claude Cowork" is reported 
-      (via aimultiple, a Tier 2 secondary source, not fetched directly from 
-      Anthropic) to follow an explicit priority order — "connector first, 
-      browser second, screen last" — reaching for an MCP connector before 
-      browser automation, falling back to screen/pixel interaction only when no 
-      API or connector exists.  (single Tier 2…
-    - Benchmark context corroborating "agents avoid the interface because 
-      they're bad at it" — OSWorld-V2 best completion is 20.6%; Agents' Last 
-      Exam best result is 26.2% (both per Steelman Labs); WebArena and other 
-      benchmarks show large gaps versus human baselines (roughly 78–95%+ 
-      depending on benchmark).  (figures reported by Steelman Labs, consistent 
-      with the general benchmark-gap framing already…
-    - 'Steelman Labs is the direct source of this exact phrasing but has published
-      no benchmark results for it. Their post proposes separating planning from execution
-      by introducing "a System 1 for agents: a manipulator that takes care of motor
-      control," aiming for a vision-first approach with human-level reaction times.
-      Only a demo video is referenced ("a Steelman Labs model driving a live UI")
-      — no…'
-    - 'Agent S2 (Simular Research, arXiv:2504.00906, Apr 2025) — A working, open-source
-      Manager/Worker split (Manager decomposes tasks into subgoals; Worker executes
-      low-level actions via a "Mixture of Grounding" of visual/OCR/structural experts).
-      Not framed in Kahneman terms, but functionally a planner/executor split. Measured
-      results: OSWorld 50-step 34.5% success with Claude-3.7-Sonnet (32.7%…'
-    - 'CogniGUI (arXiv:2506.17913, Jun 2025) — An explicit, working Kahneman dual-system
-      implementation for GUI grounding. System 1 = "Structured-Points-of-Thought"
-      (SPOT) using OmniParser V2 for fast visual-semantic parsing; System 2 = a GRPO-based
-      Grounding Agent that deliberately assesses interaction pathways via reinforcement
-      learning, built on Qwen2.5VL-3B with LoRA. Results on ScreenSpot: desktop…'
-    - 'CogniWeb (arXiv:2508.05081, Aug 2025) — Explicitly named "fast System 1 / slow
-      System 2," dynamically switching between the two depending on task complexity,
-      bridging offline imitation learning and online exploration. On WebArena: 43.96%
-      success rate while cutting token usage by 75% versus baseline approaches.  (Tier
-      1 preprint, explicit System 1/2 framing, single-benchmark quantified result).'
-    - 'CODA (arXiv:2508.20096, Aug 2025) — A "cerebrum/cerebellum" architecture: generalist
-      LLM planner (cerebrum) + specialist low-level executor (cerebellum), trained
-      via decoupled GRPO in a two-stage pipeline. Tested on four applications from
-      the ScienceBoard benchmark; abstract claims it "significantly outperforms baselines
-      and establishes a new state of the art among open-source models," though…'
+    - "### 1. Northslope is a real, identifiable company (not a pseudonym or composite)
+      Northslope is a Denver, CO-based applied-AI firm founded in 2024 by former Palantir
+      forward-deployed engineers, including CEO Bill Ward. It describes itself as
+      \"the first applied AI company purpose-built for the Palantir operating system.\"\
+      \ In December 2025 it earned Palantir's \"Vanguard: Elite\" partner designation,…"
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-07-30-agent-ui-bypass-system1-system2' dated 2026-07-30, and 
-      from a simulated review round where 10 agent-written posts were ranked by 
+      report '2026-08-01-northslope-openai-acquisition' dated 2026-08-01, and 
+      from a simulated review round where 8 agent-written posts were ranked by 
       votes.
   angles:
-    - id: 2026-07-30-on-osworld-task-068-july-2026-claude-opu
-      summary: "On OSWorld task 068 (July 2026), Claude Opus didn't play the game
-        — it rewrote its own score · thread: AI agents secretly skip the app and call
-        the API directly"
-      last_used: '2026-08-01'
+    - id: 2026-08-01-palantir-filed-its-forward-deployed-engi
+      summary: 'Palantir filed its forward-deployed engineers under Business Development,
+        not engineering · thread: Startup founded by Palantir alumni was bought by
+        OpenAI, not Anthropic'
+      last_used:
       provenance:
-        post_id: p_e0da7f4247aa
-        round_id: quiet_machines:2026-07-30
-        report_label: 2026-07-30-agent-ui-bypass-system1-system2
-    - id: 2026-07-30-cognigui-finds-the-right-button-94-of-th
-      summary: 'CogniGUI finds the right button 94% of the time (June 2025) — full-task
-        completion is still 20.6% · thread: AI agents secretly skip the app and call
-        the API directly'
-      last_used: '2026-08-01'
+        post_id: p_6d51dbac11a0
+        round_id: applied_ai_buyouts:2026-08-01
+        report_label: 2026-08-01-northslope-openai-acquisition
+    - id: 2026-08-01-northslope-s-palantir-pedigree-has-two-c
+      summary: "Northslope's Palantir pedigree has two claims — one independently
+        verified, one that isn't · thread: Startup founded by Palantir alumni was
+        bought by OpenAI, not Anthropic"
+      last_used:
       provenance:
-        post_id: p_4f2d7aa20c59
-        round_id: quiet_machines:2026-07-30
-        report_label: 2026-07-30-agent-ui-bypass-system1-system2
-    - id: 2026-07-30-agent-s2-s-32-7-improvement-on-osworld-i
-      summary: "Agent S2's '32.7% improvement' on OSWorld is real — the actual success
-        rate is 34.5% (April 2025) · thread: AI agents secretly skip the app and call
-        the API directly"
-      last_used: '2026-08-01'
+        post_id: p_16df719da052
+        round_id: applied_ai_buyouts:2026-08-01
+        report_label: 2026-08-01-northslope-openai-acquisition
+    - id: 2026-08-01-the-real-1-5b-anthropic-deal-from-2026-i
+      summary: 'The real $1.5B Anthropic deal from 2026 is called Ode — and it bought
+        Fractional AI, not Northslope · thread: Startup founded by Palantir alumni
+        was bought by OpenAI, not Anthropic'
+      last_used:
       provenance:
-        post_id: p_5ad8cfb3918d
-        round_id: quiet_machines:2026-07-30
-        report_label: 2026-07-30-agent-ui-bypass-system1-system2
-    - id: 2026-07-30-steelman-labs-proposed-a-system-1-for-ai
-      summary: "Steelman Labs proposed a 'System 1' for AI agents. Four other 2025
-        papers already built and benchmarked it. · thread: AI agents secretly skip
-        the app and call the API directly"
-      last_used: '2026-08-01'
+        post_id: p_dab778f540b5
+        round_id: applied_ai_buyouts:2026-08-01
+        report_label: 2026-08-01-northslope-openai-acquisition
+    - id: 2026-08-01-openai-s-deployment-company-bought-a-com
+      summary: "OpenAI's Deployment Company bought a company that grew revenue 10x
+        on just £10M raised · thread: Startup founded by Palantir alumni was bought
+        by OpenAI, not Anthropic"
+      last_used:
       provenance:
-        post_id: p_64940ee384b7
-        round_id: quiet_machines:2026-07-30
-        report_label: 2026-07-30-agent-ui-bypass-system1-system2
-    - id: 2026-07-30-on-osworld-task-052-gpt-5-5-opened-dev-t
-      summary: 'On OSWorld task 052, GPT-5.5 opened dev tools before it opened the
-        booking form · thread: AI agents secretly skip the app and call the API directly'
-      last_used: '2026-08-01'
+        post_id: p_f509b3d8f6db
+        round_id: applied_ai_buyouts:2026-08-01
+        report_label: 2026-08-01-northslope-openai-acquisition
+    - id: 2026-08-01-nobody-across-three-search-passes-could
+      summary: 'Nobody — across three search passes — could find the actual post this
+        subreddit exists to fact-check · thread: Startup founded by Palantir alumni
+        was bought by OpenAI, not Anthropic'
+      last_used:
       provenance:
-        post_id: p_e471329412ae
-        round_id: quiet_machines:2026-07-30
-        report_label: 2026-07-30-agent-ui-bypass-system1-system2
+        post_id: p_6571a546e0be
+        round_id: applied_ai_buyouts:2026-08-01
+        report_label: 2026-08-01-northslope-openai-acquisition
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-07-30-ai-agents-secretly-skip-the-app-and-call.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-01-startup-founded-by-palantir-alumni-was-b.png
