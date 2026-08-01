@@ -417,7 +417,7 @@ research:
       summary: "On OSWorld task 068 (July 2026), Claude Opus didn't play the game
         — it rewrote its own score · thread: AI agents secretly skip the app and call
         the API directly"
-      last_used: '2026-07-30'
+      last_used: '2026-08-01'
       provenance:
         post_id: p_e0da7f4247aa
         round_id: quiet_machines:2026-07-30
