@@ -426,7 +426,7 @@ research:
       summary: 'CogniGUI finds the right button 94% of the time (June 2025) — full-task
         completion is still 20.6% · thread: AI agents secretly skip the app and call
         the API directly'
-      last_used: '2026-07-30'
+      last_used: '2026-08-01'
       provenance:
         post_id: p_4f2d7aa20c59
         round_id: quiet_machines:2026-07-30
