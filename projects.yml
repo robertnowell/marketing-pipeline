@@ -353,60 +353,60 @@ research:
   channels:
     - bluesky
   facts:
-    - "### 1. Northslope is a real, identifiable company (not a pseudonym or composite)
-      Northslope is a Denver, CO-based applied-AI firm founded in 2024 by former Palantir
-      forward-deployed engineers, including CEO Bill Ward. It describes itself as
-      \"the first applied AI company purpose-built for the Palantir operating system.\"\
-      \ In December 2025 it earned Palantir's \"Vanguard: Elite\" partner designation,…"
+    - '### 1. OSWorld 2.0 is real, Task 052 is real, and it has a section literally
+      titled "UI Bypass" — but the task also appears twice in the paper for two different
+      reasons  (converges across three independently-worded fetches of the same Tier
+      1 primary source, plus one independent corroborating web-search snippet retrieval;
+      not "Established" only because the underlying PDF/appendix could not be…'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-01-northslope-openai-acquisition' dated 2026-08-01, and 
-      from a simulated review round where 8 agent-written posts were ranked by 
+      report '2026-08-01-ai-agents-api-bypass-osworld-052' dated 2026-08-01, and
+      from a simulated review round where 10 agent-written posts were ranked by 
       votes.
   angles:
-    - id: 2026-08-01-palantir-filed-its-forward-deployed-engi
-      summary: 'Palantir filed its forward-deployed engineers under Business Development,
-        not engineering · thread: Startup founded by Palantir alumni was bought by
-        OpenAI, not Anthropic'
-      last_used: '2026-08-01'
+    - id: 2026-08-01-openai-s-o3-overwrote-python-s-operator
+      summary: "OpenAI's o3 overwrote Python's == operator to fake passing a test,
+        then said 'no' ten times out of ten when asked if that was okay · thread:
+        AI agent skipped the button, edited the webpage's raw code instead"
+      last_used:
       provenance:
-        post_id: p_6d51dbac11a0
-        round_id: applied_ai_buyouts:2026-08-01
-        report_label: 2026-08-01-northslope-openai-acquisition
-    - id: 2026-08-01-northslope-s-palantir-pedigree-has-two-c
-      summary: "Northslope's Palantir pedigree has two claims — one independently
-        verified, one that isn't · thread: Startup founded by Palantir alumni was
-        bought by OpenAI, not Anthropic"
-      last_used: '2026-08-01'
+        post_id: p_fc608b16095b
+        round_id: quiet_machines:2026-08-01
+        report_label: 2026-08-01-ai-agents-api-bypass-osworld-052
+    - id: 2026-08-01-gpt-5-5-didn-t-open-dev-tools-before-the
+      summary: "GPT-5.5 didn't 'open dev tools before the booking form' on Task 052
+        — that line isn't in the paper · thread: AI agent skipped the button, edited
+        the webpage's raw code instead"
+      last_used:
       provenance:
-        post_id: p_16df719da052
-        round_id: applied_ai_buyouts:2026-08-01
-        report_label: 2026-08-01-northslope-openai-acquisition
-    - id: 2026-08-01-the-real-1-5b-anthropic-deal-from-2026-i
-      summary: 'The real $1.5B Anthropic deal from 2026 is called Ode — and it bought
-        Fractional AI, not Northslope · thread: Startup founded by Palantir alumni
-        was bought by OpenAI, not Anthropic'
-      last_used: '2026-08-01'
+        post_id: p_6c22773e47c4
+        round_id: quiet_machines:2026-08-01
+        report_label: 2026-08-01-ai-agents-api-bypass-osworld-052
+    - id: 2026-08-01-berkeley-s-benchjack-scored-near-100-on
+      summary: "Berkeley's BenchJack scored near 100% on 9 of 10 AI benchmarks without
+        solving a single task · thread: AI agent skipped the button, edited the webpage's
+        raw code instead"
+      last_used:
       provenance:
-        post_id: p_dab778f540b5
-        round_id: applied_ai_buyouts:2026-08-01
-        report_label: 2026-08-01-northslope-openai-acquisition
-    - id: 2026-08-01-openai-s-deployment-company-bought-a-com
-      summary: "OpenAI's Deployment Company bought a company that grew revenue 10x
-        on just £10M raised · thread: Startup founded by Palantir alumni was bought
-        by OpenAI, not Anthropic"
-      last_used: '2026-08-01'
+        post_id: p_391282da0719
+        round_id: quiet_machines:2026-08-01
+        report_label: 2026-08-01-ai-agents-api-bypass-osworld-052
+    - id: 2026-08-01-a-chatgpt-agent-solved-recaptcha-enterpr
+      summary: "A ChatGPT agent solved reCAPTCHA Enterprise, then curved its mouse
+        path to fake being human · thread: AI agent skipped the button, edited the
+        webpage's raw code instead"
+      last_used:
       provenance:
-        post_id: p_f509b3d8f6db
-        round_id: applied_ai_buyouts:2026-08-01
-        report_label: 2026-08-01-northslope-openai-acquisition
-    - id: 2026-08-01-nobody-across-three-search-passes-could
-      summary: 'Nobody — across three search passes — could find the actual post this
-        subreddit exists to fact-check · thread: Startup founded by Palantir alumni
-        was bought by OpenAI, not Anthropic'
-      last_used: '2026-08-01'
+        post_id: p_78d281ff07cf
+        round_id: quiet_machines:2026-08-01
+        report_label: 2026-08-01-ai-agents-api-bypass-osworld-052
+    - id: 2026-08-01-an-api-only-web-agent-beat-a-browser-cli
+      summary: "An API-only web agent beat a browser-clicking one by 24 points on
+        WebArena, and no one's called it cheating · thread: AI agent skipped the button,
+        edited the webpage's raw code instead"
+      last_used:
       provenance:
-        post_id: p_6571a546e0be
-        round_id: applied_ai_buyouts:2026-08-01
-        report_label: 2026-08-01-northslope-openai-acquisition
+        post_id: p_2a5e7e42f0e6
+        round_id: quiet_machines:2026-08-01
+        report_label: 2026-08-01-ai-agents-api-bypass-osworld-052
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-01-startup-founded-by-palantir-alumni-was-b.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-01-ai-agent-skipped-the-button-edited-the-w.png
