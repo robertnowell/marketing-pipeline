@@ -5847,3 +5847,45 @@
   angle: 2026-07-30-on-osworld-task-052-gpt-5-5-opened-dev-t
   source_id: ''
   posted_at: '2026-08-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3ms3tioe6ok2a
+  angle: 2026-08-01-gpt-5-5-didn-t-open-dev-tools-before-the
+  source_id: research-2026-08-01-2
+  posted_at: '2026-08-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3ms3tipwsrh22
+  angle: 2026-08-01-berkeley-s-benchjack-scored-near-100-on
+  source_id: research-2026-08-01-3
+  posted_at: '2026-08-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3ms3tiscmkh2h
+  angle: angle:sib-2026-08-01-2026-07-30-agent-s2-s-32-1
+  source_id: research-2026-08-01-sib-2026-07-30-agent-s2-s-32-1
+  posted_at: '2026-08-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3ms3titum6r2o
+  angle: angle:sib-2026-08-01-2026-07-30-agent-s2-s-32-2
+  source_id: research-2026-08-01-sib-2026-07-30-agent-s2-s-32-2
+  posted_at: '2026-08-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3ms3tivi4ms2a
+  angle: angle:sib-2026-08-01-2026-07-30-on-osworld-ta-1
+  source_id: research-2026-08-01-sib-2026-07-30-on-osworld-ta-1
+  posted_at: '2026-08-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3ms3tix3aca2r
+  angle: angle:sib-2026-08-01-2026-07-30-on-osworld-ta-2
+  source_id: research-2026-08-01-sib-2026-07-30-on-osworld-ta-2
+  posted_at: '2026-08-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3ms3tiyob3m2n
+  angle: angle:sib-2026-08-01-2026-07-30-steelman-labs-1
+  source_id: research-2026-08-01-sib-2026-07-30-steelman-labs-1
+  posted_at: '2026-08-02'
