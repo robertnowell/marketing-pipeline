@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-01-sib-2026-07-30-steelman-labs-1",
+  "date": "2026-08-01",
+  "project": "research",
+  "angle": "angle:sib-2026-08-01-2026-07-30-steelman-labs-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI agents don't use your UI. On one OSWorld task, GPT-5.5 read the page's JavaScript, found the internal API endpoint, and POSTed the reservation directly, skipping the booking flow. On another, GPT-5.5 and Claude Opus both skipped the site entirely. (Steelman Labs, Jul 2026)"
+    }
+  ]
+}

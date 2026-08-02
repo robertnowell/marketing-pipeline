@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-01-sib-2026-07-30-steelman-labs-2",
+  "date": "2026-08-01",
+  "project": "research",
+  "angle": "angle:sib-2026-08-01-2026-07-30-steelman-labs-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If your AI agent browses websites like a human, it's wasting your money. A 94-domain benchmark: API calls averaged 950ms vs 3,404ms via browser automation, up to 30x faster on the fastest domain, cutting costs 90-96% per repeat task. All 94 domains favored the API. Source: arXiv:2604.00694, Apr 2026."
+    }
+  ]
+}
