@@ -2,11 +2,11 @@
   "id": "research-2026-08-01-4",
   "date": "2026-08-01",
   "project": "research",
-  "angle": "2026-08-01-openai-s-deployment-company-bought-a-com",
+  "angle": "2026-08-01-a-chatgpt-agent-solved-recaptcha-enterpr",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "OpenAI just acquired a company built to serve Palantir's platform. Northslope, founded 2024 in Denver by ex-Palantir engineers, calls itself 'the first applied AI company purpose-built for the Palantir operating system.' It earned Palantir's 'Vanguard: Elite' status in December 2025."
+      "text": "OSWorld 2.0, the benchmark that grades AI computer-use agents, includes Task 052, which has a section literally titled 'UI Bypass.' The same task appears twice in the paper, each time for a different reason. If you're trusting benchmark scores to pick an agent tool, read what the pass actually required."
     }
   ]
 }

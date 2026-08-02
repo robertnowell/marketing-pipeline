@@ -2,11 +2,11 @@
   "id": "research-2026-08-01-2",
   "date": "2026-08-01",
   "project": "research",
-  "angle": "2026-08-01-northslope-s-palantir-pedigree-has-two-c",
+  "angle": "2026-08-01-gpt-5-5-didn-t-open-dev-tools-before-the",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Northslope, the Denver, CO applied-AI firm founded in 2024 by former Palantir forward-deployed engineers under CEO Bill Ward, is real, not a rumor. It earned Palantir's \"Vanguard: Elite\" partner designation in December 2025. The pedigree checks out. Whoever bought it, check that claim separately."
+      "text": "The viral claim that an AI agent opened dev tools before a booking form doesn't appear in the paper. OSWorld 2.0's Task 052 is real, and it has a section literally titled 'UI Bypass', but the task shows up twice, for two different reasons. Check the primary source before you cite it."
     }
   ]
 }

@@ -2,11 +2,11 @@
   "id": "research-2026-08-01-1",
   "date": "2026-08-01",
   "project": "research",
-  "angle": "2026-08-01-palantir-filed-its-forward-deployed-engi",
+  "angle": "2026-08-01-openai-s-o3-overwrote-python-s-operator",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Northslope, founded 2024 by ex-Palantir forward-deployed engineers, hit Palantir's \"Vanguard: Elite\" partner tier by December 2025. It calls itself \"the first applied AI company purpose-built for the Palantir operating system.\" Deep platform focus can pay off fast."
+      "text": "OSWorld 2.0, a benchmark that tests whether AI agents can operate real software, includes a task called Task 052 with a section literally titled \"UI Bypass.\" That same task appears twice in the paper, for two different reasons. If you're trusting an agent's report that it \"completed the task,\" check whether it actually used the interface or just edited the code underneath."
     }
   ]
 }

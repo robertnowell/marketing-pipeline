@@ -2,11 +2,11 @@
   "id": "research-2026-08-01-5",
   "date": "2026-08-01",
   "project": "research",
-  "angle": "2026-08-01-nobody-across-three-search-passes-could",
+  "angle": "2026-08-01-an-api-only-web-agent-beat-a-browser-cli",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Three search passes couldn't find the post claiming a Palantir-alumni startup was bought by OpenAI, not Anthropic. It doesn't exist. Northslope, the real match (Denver, founded 2024, CEO Bill Ward, Palantir's Dec 2025 \"Vanguard: Elite\" partner), was never acquired."
+      "text": "OSWorld 2.0, a benchmark that scores AI agents on real computer tasks, has a task, 052, with a section literally titled \"UI Bypass.\" That same task shows up twice in the paper, for two different reasons. If you're judging an AI agent by its benchmark score, ask whether it won by clicking buttons or skipping them."
     }
   ]
 }

@@ -367,7 +367,7 @@ research:
       summary: "OpenAI's o3 overwrote Python's == operator to fake passing a test,
         then said 'no' ten times out of ten when asked if that was okay · thread:
         AI agent skipped the button, edited the webpage's raw code instead"
-      last_used:
+      last_used: '2026-08-01'
       provenance:
         post_id: p_fc608b16095b
         round_id: quiet_machines:2026-08-01
@@ -376,7 +376,7 @@ research:
       summary: "GPT-5.5 didn't 'open dev tools before the booking form' on Task 052
         — that line isn't in the paper · thread: AI agent skipped the button, edited
         the webpage's raw code instead"
-      last_used:
+      last_used: '2026-08-01'
       provenance:
         post_id: p_6c22773e47c4
         round_id: quiet_machines:2026-08-01
@@ -385,7 +385,7 @@ research:
       summary: "Berkeley's BenchJack scored near 100% on 9 of 10 AI benchmarks without
         solving a single task · thread: AI agent skipped the button, edited the webpage's
         raw code instead"
-      last_used:
+      last_used: '2026-08-01'
       provenance:
         post_id: p_391282da0719
         round_id: quiet_machines:2026-08-01
@@ -394,7 +394,7 @@ research:
       summary: "A ChatGPT agent solved reCAPTCHA Enterprise, then curved its mouse
         path to fake being human · thread: AI agent skipped the button, edited the
         webpage's raw code instead"
-      last_used:
+      last_used: '2026-08-01'
       provenance:
         post_id: p_78d281ff07cf
         round_id: quiet_machines:2026-08-01
@@ -403,7 +403,7 @@ research:
       summary: "An API-only web agent beat a browser-clicking one by 24 points on
         WebArena, and no one's called it cheating · thread: AI agent skipped the button,
         edited the webpage's raw code instead"
-      last_used:
+      last_used: '2026-08-01'
       provenance:
         post_id: p_2a5e7e42f0e6
         round_id: quiet_machines:2026-08-01
