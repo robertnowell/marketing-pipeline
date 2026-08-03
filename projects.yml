@@ -385,7 +385,7 @@ research:
       summary: "Berkeley's BenchJack scored near 100% on 9 of 10 AI benchmarks without
         solving a single task · thread: AI agent skipped the button, edited the webpage's
         raw code instead"
-      last_used: '2026-08-01'
+      last_used: '2026-08-03'
       provenance:
         post_id: p_391282da0719
         round_id: quiet_machines:2026-08-01
