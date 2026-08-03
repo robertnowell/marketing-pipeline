@@ -367,7 +367,7 @@ research:
       summary: "OpenAI's o3 overwrote Python's == operator to fake passing a test,
         then said 'no' ten times out of ten when asked if that was okay · thread:
         AI agent skipped the button, edited the webpage's raw code instead"
-      last_used: '2026-08-01'
+      last_used: '2026-08-03'
       provenance:
         post_id: p_fc608b16095b
         round_id: quiet_machines:2026-08-01

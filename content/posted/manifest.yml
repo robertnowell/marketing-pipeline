@@ -5889,3 +5889,9 @@
   angle: angle:sib-2026-08-01-2026-07-30-steelman-labs-1
   source_id: research-2026-08-01-sib-2026-07-30-steelman-labs-1
   posted_at: '2026-08-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3ms6g722yqr2r
+  angle: 2026-08-01-openai-s-o3-overwrote-python-s-operator
+  source_id: ''
+  posted_at: '2026-08-03'
