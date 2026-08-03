@@ -376,7 +376,7 @@ research:
       summary: "GPT-5.5 didn't 'open dev tools before the booking form' on Task 052
         — that line isn't in the paper · thread: AI agent skipped the button, edited
         the webpage's raw code instead"
-      last_used: '2026-08-01'
+      last_used: '2026-08-03'
       provenance:
         post_id: p_6c22773e47c4
         round_id: quiet_machines:2026-08-01
