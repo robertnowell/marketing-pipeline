@@ -5913,3 +5913,9 @@
   angle: 2026-08-01-a-chatgpt-agent-solved-recaptcha-enterpr
   source_id: ''
   posted_at: '2026-08-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msavg2jjnu2h
+  angle: 2026-08-01-an-api-only-web-agent-beat-a-browser-cli
+  source_id: ''
+  posted_at: '2026-08-04'
