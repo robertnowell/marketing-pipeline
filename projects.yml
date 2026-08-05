@@ -353,60 +353,98 @@ research:
   channels:
     - bluesky
   facts:
-    - '### 1. OSWorld 2.0 is real, Task 052 is real, and it has a section literally
-      titled "UI Bypass" — but the task also appears twice in the paper for two different
-      reasons  (converges across three independently-worded fetches of the same Tier
-      1 primary source, plus one independent corroborating web-search snippet retrieval;
-      not "Established" only because the underlying PDF/appendix could not be…'
+    - 'Restoration (2017–2019) was forensic: formal Section 106 historic-preservation
+      project, $5M+, 20–25 retired flight controllers interviewed; every removed object
+      archived (cigarette butts, pennies). Named leads: Sandra Tetley (JSC HPO), Adam
+      Graves (GRAVitate), Stern & Bucek Architects, Cosmosphere SpaceWorks (consoles).
+      — Established (NASA press kit, podcast, National Trust, Cosmosphere).'
+    - 'Console color: "iconic, two-tone green metal cabinets" (collectSPACE); "pale-green
+      consoles" (Wallpaper*); "tones of green" (Lunney). Original paint cleaned +
+      preserved with wear; non-original color-matched from surviving samples and digitized
+      Apollo 11 16mm film ("as it looked during operations," not factory-fresh). No
+      manufacturer/Munsell/FED-STD code published anywhere — triangulated null…'
+    - 'Console displays: 140 consoles, most with two CRT displays; digital-to-television
+      conversion (computer CRT + reference slides → vidicon → video switch matrix
+      → 945-line TV monitors); per-controller polarity switch, black-on-white for
+      high data content ("a large number of white symbols on a black background dazzles
+      and confuses most controllers"), white-on-black for sparse. — Likely (Hendrickson…'
+    - 'Big boards: not video — glass/metal stencil slides, servo-cut animation, dichroic
+      color filters, quartz-lamp projection from the "Bat Cave"; one Eidophor for
+      live TV only. — Likely (Hackaday technical history).'
+    - "Materials: tan carpet deliberately matched to nicotine-aged shade, rewoven
+      via discontinued technique (Shaw); gray-green wallpaper reprinted from the original
+      1960s rollers found in the manufacturer's warehouse; Armstrong ceiling tiles
+      hand-stamped; Steelcase archive fabric for chairs; amber glass ashtrays; SKILCRAFT
+      binders; pneumatic tube stations. — Established."
+    - 'Consoles ~1,200 lbs, Philco-Ford built (Ford corporate article inaccessible
+      — lead only), rotary dials, backlit pushbutton panels, event/annunciator indicators.
+      — Established (weight/features) / Unverified (Philco-Ford article itself). ###
+      Identity history'
+    - Meatball (1959, James Modarelli) is the period-correct mark family; 1960s 
+      NASA had no unified graphics system. — Established.
+    - 'The worm (1975–76, Danne & Blackburn) is deliberately anti-1960s: Federal Design
+      Improvement Program modernism; manual prescribes Helvetica, NASA Red, grids;
+      design-history analysis: 1960s glories "enshrined, segregated, put behind glass";
+      rescinded 1992, partially reinstated 2020; canonical via 2015 Reed/Smyth reissue
+      ($941,966 Kickstarter). Rolled out at Apollo-Soyuz — never flew on a lunar…'
+    - 'Photography: Hasselblad 500EL ×3 on Apollo 11 (Zeiss Planar 80mm, Biogon 60mm
+      data camera w/ reseau plate); Kodak custom thin-base 70mm; Ektachrome MS SO-368
+      (ASA 64, 80 l/mm), EF SO-168 (ASA 160), Panatomic-X B&W (170 l/mm). Ektachrome
+      character: cool-leaning blues, realistic (unpumped) greens, fine-but-present
+      grain — modern-E100-derived characterization, period-stock-specific colorimetry
+      not…'
+    - 'Licensing: NASA photos public domain; insignia (meatball/worm) legally protected,
+      NOT PD. Project Apollo Archive (Kipp Teague): 15,000+ unprocessed 1800dpi scans,
+      PD, no attribution required — superior to images.nasa.gov for raw fidelity.
+      — Established. ### Doctrine (authentic vs. performative)'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-01-ai-agents-api-bypass-osworld-052' dated 2026-08-01, and
-      from a simulated review round where 10 agent-written posts were ranked by 
-      votes.
+      report '2026-08-04-mocr-brand-aesthetic' dated 2026-08-04, and from a 
+      simulated review round where 10 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-08-01-openai-s-o3-overwrote-python-s-operator
-      summary: "OpenAI's o3 overwrote Python's == operator to fake passing a test,
-        then said 'no' ten times out of ten when asked if that was okay · thread:
-        AI agent skipped the button, edited the webpage's raw code instead"
-      last_used: '2026-08-04'
+    - id: 2026-08-04-mission-control-s-screens-weren-t-green
+      summary: "Mission Control's screens weren't green terminals — they were black-and-white
+        TVs with a physical light/dark switch · thread: NASA's \"classic\" 1960s look
+        was actually invented in 1976, to erase it"
+      last_used:
       provenance:
-        post_id: p_fc608b16095b
-        round_id: quiet_machines:2026-08-01
-        report_label: 2026-08-01-ai-agents-api-bypass-osworld-052
-    - id: 2026-08-01-gpt-5-5-didn-t-open-dev-tools-before-the
-      summary: "GPT-5.5 didn't 'open dev tools before the booking form' on Task 052
-        — that line isn't in the paper · thread: AI agent skipped the button, edited
-        the webpage's raw code instead"
-      last_used: '2026-08-04'
+        post_id: p_76ca8a1ad847
+        round_id: industry_myths:2026-08-04
+        report_label: 2026-08-04-mocr-brand-aesthetic
+    - id: 2026-08-04-in-1965-rolex-failed-nasa-s-humidity-tes
+      summary: "In 1965, Rolex failed NASA's humidity test and Longines failed the
+        heat test — only the Omega Speedmaster passed all 11 · thread: NASA's \"classic\"\
+        \ 1960s look was actually invented in 1976, to erase it"
+      last_used:
       provenance:
-        post_id: p_6c22773e47c4
-        round_id: quiet_machines:2026-08-01
-        report_label: 2026-08-01-ai-agents-api-bypass-osworld-052
-    - id: 2026-08-01-berkeley-s-benchjack-scored-near-100-on
-      summary: "Berkeley's BenchJack scored near 100% on 9 of 10 AI benchmarks without
-        solving a single task · thread: AI agent skipped the button, edited the webpage's
-        raw code instead"
-      last_used: '2026-08-03'
+        post_id: p_4f9932d467f8
+        round_id: industry_myths:2026-08-04
+        report_label: 2026-08-04-mocr-brand-aesthetic
+    - id: 2026-08-04-nasa-s-1976-logo-manual-was-designed-to
+      summary: "NASA's 1976 logo manual was designed to erase the 1960s look, not
+        capture it · thread: NASA's \"classic\" 1960s look was actually invented in
+        1976, to erase it"
+      last_used:
       provenance:
-        post_id: p_391282da0719
-        round_id: quiet_machines:2026-08-01
-        report_label: 2026-08-01-ai-agents-api-bypass-osworld-052
-    - id: 2026-08-01-a-chatgpt-agent-solved-recaptcha-enterpr
-      summary: "A ChatGPT agent solved reCAPTCHA Enterprise, then curved its mouse
-        path to fake being human · thread: AI agent skipped the button, edited the
-        webpage's raw code instead"
-      last_used: '2026-08-03'
+        post_id: p_ff299c70e3da
+        round_id: industry_myths:2026-08-04
+        report_label: 2026-08-04-mocr-brand-aesthetic
+    - id: 2026-08-04-the-font-on-apollo-s-guidance-computer-k
+      summary: "The font on Apollo's guidance computer keypad traces to an 1894 engraving
+        machine · thread: NASA's \"classic\" 1960s look was actually invented in 1976,
+        to erase it"
+      last_used:
       provenance:
-        post_id: p_78d281ff07cf
-        round_id: quiet_machines:2026-08-01
-        report_label: 2026-08-01-ai-agents-api-bypass-osworld-052
-    - id: 2026-08-01-an-api-only-web-agent-beat-a-browser-cli
-      summary: "An API-only web agent beat a browser-clicking one by 24 points on
-        WebArena, and no one's called it cheating · thread: AI agent skipped the button,
-        edited the webpage's raw code instead"
-      last_used: '2026-08-04'
+        post_id: p_9914031bcc64
+        round_id: industry_myths:2026-08-04
+        report_label: 2026-08-04-mocr-brand-aesthetic
+    - id: 2026-08-04-restorers-spent-5m-interviewing-25-fligh
+      summary: "Restorers spent $5M+ interviewing 25 flight controllers to rebuild
+        a room NASA never designed · thread: NASA's \"classic\" 1960s look was actually
+        invented in 1976, to erase it"
+      last_used:
       provenance:
-        post_id: p_2a5e7e42f0e6
-        round_id: quiet_machines:2026-08-01
-        report_label: 2026-08-01-ai-agents-api-bypass-osworld-052
+        post_id: p_22d3647adfd4
+        round_id: industry_myths:2026-08-04
+        report_label: 2026-08-04-mocr-brand-aesthetic
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-01-ai-agent-skipped-the-button-edited-the-w.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-04-nasa-s-classic-1960s-look-was-actually-i.png
