@@ -5961,3 +5961,33 @@
   angle: 2026-08-04-restorers-spent-5m-interviewing-25-fligh
   source_id: research-2026-08-04-5
   posted_at: '2026-08-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msg23bnlg62h
+  angle: 2026-08-05-john-aaron-s-sce-to-aux-call-during-apol
+  source_id: research-2026-08-05-2
+  posted_at: '2026-08-06'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msg23d2m442p
+  angle: 2026-08-05-gene-kranz-polled-eight-controllers-by-n
+  source_id: research-2026-08-05-3
+  posted_at: '2026-08-06'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msg23eijo22c
+  angle: 2026-08-05-nasa-s-1995-mission-control-handbook-ban
+  source_id: research-2026-08-05-4
+  posted_at: '2026-08-06'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msg23fxbo62h
+  angle: 2026-08-05-during-apollo-13-one-engineer-had-person
+  source_id: research-2026-08-05-5
+  posted_at: '2026-08-06'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msg243kdwg2h
+  angle: 2026-08-05-on-april-10-1981-one-spoken-word-scrubbe
+  source_id: ''
+  posted_at: '2026-08-06'
