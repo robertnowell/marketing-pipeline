@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-05-4",
+  "date": "2026-08-05",
+  "project": "research",
+  "angle": "2026-08-05-nasa-s-1995-mission-control-handbook-ban",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "NASA's 1995 mission-control handbook has one absolute rule: never say \"Roger\" when you mean yes or no. Roger means only \"I have received your transmission.\" If your team's \"ok\" does double duty for received and agreed, that's the exact ambiguity NASA banned. Source: JSC-36207, Jan 1995."
+    }
+  ]
+}

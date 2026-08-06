@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-05-1",
+  "date": "2026-08-05",
+  "project": "research",
+  "angle": "2026-08-05-on-april-10-1981-one-spoken-word-scrubbe",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "NASA banned mission control from ever saying 'Roger' to mean yes or no. JSC-36207, the 1995 handbook from NASA's Space Flight Training Division, defines it only as 'I have received your transmission.' Never affirmative, never negative. If you're designing status words for an AI agent, steal this rule before inventing your own."
+    }
+  ]
+}

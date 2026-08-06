@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-05-3",
+  "date": "2026-08-05",
+  "project": "research",
+  "angle": "2026-08-05-gene-kranz-polled-eight-controllers-by-n",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Apollo mission control never let 'Roger' mean yes. NASA's 1995 handbook JSC-36207 spells out exact words: Copy = I understand, Roger = received only, Wilco = will comply. If your team's 'ok' means whatever the reader wants, that ambiguity is the bug AI agents will inherit too."
+    }
+  ]
+}
