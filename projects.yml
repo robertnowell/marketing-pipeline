@@ -353,98 +353,96 @@ research:
   channels:
     - bluesky
   facts:
-    - 'Restoration (2017–2019) was forensic: formal Section 106 historic-preservation
-      project, $5M+, 20–25 retired flight controllers interviewed; every removed object
-      archived (cigarette butts, pennies). Named leads: Sandra Tetley (JSC HPO), Adam
-      Graves (GRAVitate), Stern & Bucek Architects, Cosmosphere SpaceWorks (consoles).
-      — Established (NASA press kit, podcast, National Trust, Cosmosphere).'
-    - 'Console color: "iconic, two-tone green metal cabinets" (collectSPACE); "pale-green
-      consoles" (Wallpaper*); "tones of green" (Lunney). Original paint cleaned +
-      preserved with wear; non-original color-matched from surviving samples and digitized
-      Apollo 11 16mm film ("as it looked during operations," not factory-fresh). No
-      manufacturer/Munsell/FED-STD code published anywhere — triangulated null…'
-    - 'Console displays: 140 consoles, most with two CRT displays; digital-to-television
-      conversion (computer CRT + reference slides → vidicon → video switch matrix
-      → 945-line TV monitors); per-controller polarity switch, black-on-white for
-      high data content ("a large number of white symbols on a black background dazzles
-      and confuses most controllers"), white-on-black for sparse. — Likely (Hendrickson…'
-    - 'Big boards: not video — glass/metal stencil slides, servo-cut animation, dichroic
-      color filters, quartz-lamp projection from the "Bat Cave"; one Eidophor for
-      live TV only. — Likely (Hackaday technical history).'
-    - "Materials: tan carpet deliberately matched to nicotine-aged shade, rewoven
-      via discontinued technique (Shaw); gray-green wallpaper reprinted from the original
-      1960s rollers found in the manufacturer's warehouse; Armstrong ceiling tiles
-      hand-stamped; Steelcase archive fabric for chairs; amber glass ashtrays; SKILCRAFT
-      binders; pneumatic tube stations. — Established."
-    - 'Consoles ~1,200 lbs, Philco-Ford built (Ford corporate article inaccessible
-      — lead only), rotary dials, backlit pushbutton panels, event/annunciator indicators.
-      — Established (weight/features) / Unverified (Philco-Ford article itself). ###
-      Identity history'
-    - Meatball (1959, James Modarelli) is the period-correct mark family; 1960s 
-      NASA had no unified graphics system. — Established.
-    - 'The worm (1975–76, Danne & Blackburn) is deliberately anti-1960s: Federal Design
-      Improvement Program modernism; manual prescribes Helvetica, NASA Red, grids;
-      design-history analysis: 1960s glories "enshrined, segregated, put behind glass";
-      rescinded 1992, partially reinstated 2020; canonical via 2015 Reed/Smyth reissue
-      ($941,966 Kickstarter). Rolled out at Apollo-Soyuz — never flew on a lunar…'
-    - 'Photography: Hasselblad 500EL ×3 on Apollo 11 (Zeiss Planar 80mm, Biogon 60mm
-      data camera w/ reseau plate); Kodak custom thin-base 70mm; Ektachrome MS SO-368
-      (ASA 64, 80 l/mm), EF SO-168 (ASA 160), Panatomic-X B&W (170 l/mm). Ektachrome
-      character: cool-leaning blues, realistic (unpumped) greens, fine-but-present
-      grain — modern-E100-derived characterization, period-stock-specific colorimetry
-      not…'
-    - 'Licensing: NASA photos public domain; insignia (meatball/worm) legally protected,
-      NOT PD. Project Apollo Archive (Kipp Teague): 15,000+ unprocessed 1800dpi scans,
-      PD, no attribution required — superior to images.nasa.gov for raw fidelity.
-      — Established. ### Doctrine (authentic vs. performative)'
+    - '### Angle 1 — Transcript corpora and bulk access'
+    - Ben Feist's GitHub repos are the practical bulk-transcript source . 
+      `bfeist/Apollo_11` (`A11_merged_utterances.csv`), `bfeist/Apollo_13` 
+      (`A13_utterances.csv` + `flight-director-loop.txt` + `A13_TEC_raw.txt`), 
+      `bfeist/Apollo17` (`A17 master TEC and PAO utterances.csv`, 3.25 MB), plus
+      `Apollo_16`, `Apollo14_Flight_Journal`, `ISS-in-real-time`, 
+      `ArtemisInRealTime`. Format verified by direct fetch…
+    - 'apolloinrealtime.org offers NO bulk download by design . Site transcripts were
+      regenerated with WhisperX large-v3 in Oct 2024: Apollo 11 = 4,803,618 utterances
+      / 42.7M words / 224 MB; Apollo 13 = 3,936,510 utterances / 37.5M words / 199
+      MB. Architecture is pre-rendered static HTML from the CSVs (no JSON API).'
+    - 'archive.org hosts genuinely bulk-downloadable public-domain MOCR audio . `Apollo11Audio`:
+      93 FLAC files, 264.3 GB, CM/PAO/TEC loops, Public Domain Mark, plus PDF transcripts;
+      siblings `Apollo12Audio`, `Apollo13Audio` (incl. "Loop-During-Accident"). Skylab/Shuttle
+      exist only as highlight reels.'
+    - 'Fearless Steps APOLLO (UT Dallas CRSS) is the research-grade corpus: ~19,000
+      hours, 30 time-synchronized channels, 450+ speakers, Apollo 1/8/11/13  for existence/scale
+      range; access mechanics Emerging. Custom 30-track parallel read head cut digitization
+      from an estimated 170 years to months (NSF-funded, Hansen). NOT in the LDC catalog
+      (verified by direct catalog enumeration — zero matches);…'
+    - "Official NASA JSC Mission Transcript Collection: ~80 transcripts, ~45,000 pages,
+      Mercury–Apollo . Public bulk search \"available soon\" per NASA's own page;
+      current path is email history@mail.nasa.gov. Individual mission air-ground technical
+      transcripts are posted standalone."
+    - 'Licensing landmine: ALSJ/AFJ annotated transcripts are author-copyrighted,
+      NOT public domain . AFJ: "No portion of the Journal may be reproduced... without
+      express permission." Mine raw NASA transcripts and the Feist CSVs, not the journals.
+      NASA insignia are legally protected even though photos are PD.'
+    - "Smithsonian Transcription Center holds completed crowdsourced transcriptions
+      of actual FD-loop reels (\"Apollo 11 Flight Director; CapCom\", \"Launch Director's
+      Loop\" reels) . Page-by-page UI, no confirmed export. ### Angle 2 — The rules
+      of the loop"
+    - 'Opening speech act: callee-first callsign pair, answered only with "Go ahead"
+      or "Standby" . "Flight, MMACS" → "Go ahead." "Standby" is a formalized deferral
+      (JSC-36207: "I must pause for a few seconds"), used when the caller misjudged
+      interruptibility.'
+    - "JSC-36207 \"Space Flight Technical Language Handbook\" (MOD Space Flight Training
+      Division, Jan 1995) is a verbatim procedure-word glossary . Entries: Copy (\"\
+      I understand\"), Roger (\"I have received your transmission. Never say 'Roger'
+      when you mean affirmative or negative\"), Wilco (\"received, understand, will
+      comply; 'Roger' never used with 'Wilco'\"), Say again (with scoped forms \"\
+      Say again all…"
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-04-mocr-brand-aesthetic' dated 2026-08-04, and from a 
+      report '2026-08-04-mocr-voice-loop-protocol' dated 2026-08-05, and from a 
       simulated review round where 10 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-08-04-mission-control-s-screens-weren-t-green
-      summary: "Mission Control's screens weren't green terminals — they were black-and-white
-        TVs with a physical light/dark switch · thread: NASA's \"classic\" 1960s look
-        was actually invented in 1976, to erase it"
-      last_used: '2026-08-04'
+    - id: 2026-08-05-on-april-10-1981-one-spoken-word-scrubbe
+      summary: "On April 10, 1981, one spoken word scrubbed the first Space Shuttle
+        launch — not a warning light · thread: NASA's Apollo mission-control radio
+        rules now guide AI agent design"
+      last_used:
       provenance:
-        post_id: p_76ca8a1ad847
-        round_id: industry_myths:2026-08-04
-        report_label: 2026-08-04-mocr-brand-aesthetic
-    - id: 2026-08-04-in-1965-rolex-failed-nasa-s-humidity-tes
-      summary: "In 1965, Rolex failed NASA's humidity test and Longines failed the
-        heat test — only the Omega Speedmaster passed all 11 · thread: NASA's \"classic\"\
-        \ 1960s look was actually invented in 1976, to erase it"
-      last_used: '2026-08-04'
+        post_id: p_2a446ffd527f
+        round_id: quiet_machines:2026-08-05
+        report_label: 2026-08-04-mocr-voice-loop-protocol
+    - id: 2026-08-05-john-aaron-s-sce-to-aux-call-during-apol
+      summary: "John Aaron's 'SCE to Aux' call during Apollo 12 wasn't improvised
+        — he'd cracked that glitch a year earlier · thread: NASA's Apollo mission-control
+        radio rules now guide AI agent design"
+      last_used:
       provenance:
-        post_id: p_4f9932d467f8
-        round_id: industry_myths:2026-08-04
-        report_label: 2026-08-04-mocr-brand-aesthetic
-    - id: 2026-08-04-nasa-s-1976-logo-manual-was-designed-to
-      summary: "NASA's 1976 logo manual was designed to erase the 1960s look, not
-        capture it · thread: NASA's \"classic\" 1960s look was actually invented in
-        1976, to erase it"
-      last_used: '2026-08-04'
+        post_id: p_a255a39f751c
+        round_id: quiet_machines:2026-08-05
+        report_label: 2026-08-04-mocr-voice-loop-protocol
+    - id: 2026-08-05-gene-kranz-polled-eight-controllers-by-n
+      summary: "Gene Kranz polled eight controllers by name in under a minute before
+        Apollo 11 landed · thread: NASA's Apollo mission-control radio rules now guide
+        AI agent design"
+      last_used:
       provenance:
-        post_id: p_ff299c70e3da
-        round_id: industry_myths:2026-08-04
-        report_label: 2026-08-04-mocr-brand-aesthetic
-    - id: 2026-08-04-the-font-on-apollo-s-guidance-computer-k
-      summary: "The font on Apollo's guidance computer keypad traces to an 1894 engraving
-        machine · thread: NASA's \"classic\" 1960s look was actually invented in 1976,
-        to erase it"
-      last_used: '2026-08-04'
+        post_id: p_8a874ac3786b
+        round_id: quiet_machines:2026-08-05
+        report_label: 2026-08-04-mocr-voice-loop-protocol
+    - id: 2026-08-05-nasa-s-1995-mission-control-handbook-ban
+      summary: "NASA's 1995 mission-control handbook bans saying \"Roger\" when you
+        mean yes · thread: NASA's Apollo mission-control radio rules now guide AI
+        agent design"
+      last_used:
       provenance:
-        post_id: p_9914031bcc64
-        round_id: industry_myths:2026-08-04
-        report_label: 2026-08-04-mocr-brand-aesthetic
-    - id: 2026-08-04-restorers-spent-5m-interviewing-25-fligh
-      summary: "Restorers spent $5M+ interviewing 25 flight controllers to rebuild
-        a room NASA never designed · thread: NASA's \"classic\" 1960s look was actually
-        invented in 1976, to erase it"
-      last_used: '2026-08-04'
+        post_id: p_9b5683bc0b84
+        round_id: quiet_machines:2026-08-05
+        report_label: 2026-08-04-mocr-voice-loop-protocol
+    - id: 2026-08-05-during-apollo-13-one-engineer-had-person
+      summary: "During Apollo 13, one engineer had personal veto power over every
+        switch that used electricity · thread: NASA's Apollo mission-control radio
+        rules now guide AI agent design"
+      last_used:
       provenance:
-        post_id: p_22d3647adfd4
-        round_id: industry_myths:2026-08-04
-        report_label: 2026-08-04-mocr-brand-aesthetic
+        post_id: p_e12d45aa2ad8
+        round_id: quiet_machines:2026-08-05
+        report_label: 2026-08-04-mocr-voice-loop-protocol
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-04-nasa-s-classic-1960s-look-was-actually-i.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-05-nasa-s-apollo-mission-control-radio-rule.png
