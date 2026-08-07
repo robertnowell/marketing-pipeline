@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-06-3",
+  "date": "2026-08-06",
+  "project": "research",
+  "angle": "2026-08-06-rfc-8621-2019-and-rfc-9051-2021-landed-o",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A notification bug wasn't corrupted data, it was six writers with no owner. RFC 9051 (IMAP4rev2): message attributes 'MUST never change,' read state lives elsewhere. Google Chat keys it as spaceReadState, per user and space. Store read/unread on the item itself and you get stale badges."
+    }
+  ]
+}

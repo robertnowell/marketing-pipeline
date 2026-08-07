@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-06-5",
+  "date": "2026-08-06",
+  "project": "research",
+  "angle": "2026-08-06-a-sqlite-benchmark-on-8-000-rows-found-t",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A notification bug wasn't corrupted data, it was six different writers touching one 'read' flag with no owner. Gmail's fix: labels only exist on messages, never threads, so state stays consistent everywhere. Copy that if you're rolling your own read state."
+    }
+  ]
+}

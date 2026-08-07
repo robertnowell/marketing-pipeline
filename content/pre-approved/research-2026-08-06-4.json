@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-06-4",
+  "date": "2026-08-06",
+  "project": "research",
+  "angle": "2026-08-06-nat-pryce-s-team-named-their-event-sourc",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Notification bugs aren't corrupted data. They're too many writers touching one piece of state. RFC 9051 (IMAP4rev2) forces email systems to split what \"MUST never change\" from what's mutable. Gmail's fix: labels only exist on messages, never threads. One state, one owner, no bug."
+    }
+  ]
+}

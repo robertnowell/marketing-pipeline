@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-06-2",
+  "date": "2026-08-06",
+  "project": "research",
+  "angle": "2026-08-06-kafka-never-sorts-by-the-clock-every-rec",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A notification bug that looked like corrupted data was really six writers touching one field, no owner. Google Chat keeps read state as its own resource per user+space (spaceReadState). Gmail: labels exist only on messages, not threads. Count your writers, not your data."
+    }
+  ]
+}
