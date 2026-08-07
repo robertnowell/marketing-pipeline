@@ -5991,3 +5991,33 @@
   angle: 2026-08-05-on-april-10-1981-one-spoken-word-scrubbe
   source_id: ''
   posted_at: '2026-08-06'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msigzc6xl722
+  angle: 2026-08-06-sqlite-3-51-0-s-max-silently-returned-th
+  source_id: research-2026-08-06-1
+  posted_at: '2026-08-07'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msigzdv7yy2d
+  angle: 2026-08-06-kafka-never-sorts-by-the-clock-every-rec
+  source_id: research-2026-08-06-2
+  posted_at: '2026-08-07'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msigzfflul2e
+  angle: 2026-08-06-rfc-8621-2019-and-rfc-9051-2021-landed-o
+  source_id: research-2026-08-06-3
+  posted_at: '2026-08-07'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msigzgvlvl2h
+  angle: 2026-08-06-nat-pryce-s-team-named-their-event-sourc
+  source_id: research-2026-08-06-4
+  posted_at: '2026-08-07'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msigzibqyd2h
+  angle: 2026-08-06-a-sqlite-benchmark-on-8-000-rows-found-t
+  source_id: research-2026-08-06-5
+  posted_at: '2026-08-07'
