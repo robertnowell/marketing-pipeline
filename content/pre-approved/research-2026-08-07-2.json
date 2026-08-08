@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-07-2",
+  "date": "2026-08-07",
+  "project": "research",
+  "angle": "2026-08-07-the-3-4-distinguishable-voices-number-pe",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Air traffic controllers monitor about 4 radio loops at once. The trick isn't distinct voices, it's word order: named station first, then caller, then message, never reversed. If you're building multi-agent AI tools, structure beats more voices. (NASA mission control research, ICAO phraseology)"
+    }
+  ]
+}

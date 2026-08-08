@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-07-4",
+  "date": "2026-08-07",
+  "project": "research",
+  "angle": "2026-08-07-roderick-patterson-s-1982-alarm-design-r",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "NASA controllers monitor about 4 voice loops at once, never more. ICUs ignored that cap: ~350 alarms per bed per day, 85-95% non-actionable, 80 deaths logged by the Joint Commission (2009-2012). If everything you build pings you, nothing does. Cap what's allowed to talk to you."
+    }
+  ]
+}

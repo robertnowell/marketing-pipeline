@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-07-5",
+  "date": "2026-08-07",
+  "project": "research",
+  "angle": "2026-08-07-faa-data-atc-readback-errors-jump-from-3",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Air traffic controllers mishear a radio call 3.84% of the time when it carries one piece of information. At four pieces, that jumps to 25.69%. FAA measured this across 10,471+ real ATC messages (DOT/FAA/AM-06/25). If you supervise AI agents by voice, that's your ceiling: one fact per update."
+    }
+  ]
+}

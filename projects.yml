@@ -403,7 +403,7 @@ research:
       summary: "The '23 minutes to refocus after an interruption' stat isn't in Gloria
         Mark's paper — she found close to the opposite · thread: Air traffic control
         and NASA already solved supervising many things by voice"
-      last_used:
+      last_used: '2026-08-07'
       provenance:
         post_id: p_f790107350e5
         round_id: quiet_machines:2026-08-07
@@ -412,7 +412,7 @@ research:
       summary: "The '3-4 distinguishable voices' number people cite for multi-agent
         audio comes from a different experiment than the one they're building · thread:
         Air traffic control and NASA already solved supervising many things by…"
-      last_used:
+      last_used: '2026-08-07'
       provenance:
         post_id: p_b30cf8fed386
         round_id: quiet_machines:2026-08-07
@@ -421,7 +421,7 @@ research:
       summary: "In 1995 Xerox PARC's Mark Weiser wired an 8-foot string to the office
         Ethernet cable · thread: Air traffic control and NASA already solved supervising
         many things by voice"
-      last_used:
+      last_used: '2026-08-07'
       provenance:
         post_id: p_ea3bd36dd83e
         round_id: quiet_machines:2026-08-07
@@ -430,7 +430,7 @@ research:
       summary: "Roderick Patterson's 1982 alarm-design rule: cap distinguishable warning
         sounds at six, or nobody learns them · thread: Air traffic control and NASA
         already solved supervising many things by voice"
-      last_used:
+      last_used: '2026-08-07'
       provenance:
         post_id: p_638a26f2a55d
         round_id: quiet_machines:2026-08-07
@@ -439,7 +439,7 @@ research:
       summary: "FAA data: ATC readback errors jump from 3.8% to 25.7% once a controller's
         message hits four pieces of information · thread: Air traffic control and
         NASA already solved supervising many things by voice"
-      last_used:
+      last_used: '2026-08-07'
       provenance:
         post_id: p_c48ddff26d21
         round_id: quiet_machines:2026-08-07

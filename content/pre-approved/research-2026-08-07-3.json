@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-07-3",
+  "date": "2026-08-07",
+  "project": "research",
+  "angle": "2026-08-07-in-1995-xerox-parc-s-mark-weiser-wired-a",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "FAA studied 10,471+ real air traffic control messages: one-topic alerts get a 3.84% readback error rate. Four-topic alerts: 25.69%. If your bot's status pings stack multiple facts into one alert, you're not saving time, you're guaranteeing missed info."
+    }
+  ]
+}
