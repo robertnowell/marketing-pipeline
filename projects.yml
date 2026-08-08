@@ -353,79 +353,96 @@ research:
   channels:
     - bluesky
   facts:
-    - "1. A derived projection table is legitimate; six writers are not — Established
-      — Fowler's test is that application state is discardable and rebuildable:"
-    - '2. Inline or live projection; async is unwarranted — Established — Marten documents
-      three lifecycles: Inline ("executed at the time of event capture and'
-    - 3. One projection, not several — Likely — > "adding a second projection 
-      doubles the amount of code that touches your event stream"
-    - 4. Replay must not re-fire side effects — Established — > "if these events
-      cause update messages to be sent to external systems, then things will
-    - 5. Immutable record + mutable named annotations is the universal shape — 
-      Established — RFC 9051 (IMAP4rev2) separates attributes that "MUST never 
-      change" — internal date,
-    - '6. Unread is derived everywhere — Established — - JMAP: `unreadEmails` = "The
-      number of Emails in this Mailbox that have neither the'
-    - '7. Read state is a separate resource keyed by user + container — Established
-      — Google Chat: `users/{user}/spaces/{space}/spaceReadState`, carrying only `name`
-      +'
-    - 8. Gmail's thread rule is the direct fix for the UserPromptSubmit bug — 
-      Established — > "Labels only exist on messages… When you add or remove a 
-      label on a thread, you add or
-    - 9. Dismissal is scoped to the instance, not the key — Established — > "To 
-      update a notification after you issue it, call 
-      `NotificationManagerCompat.notify()`
-    - '10. Supersession is a caller-supplied identity key — Established — - Android:
-      "If a notification with the same tag and id has already been posted… it will'
+    - 'NASA mission control uses parallel monitored loops with a monitor-many/talk-one
+      constraint; controllers monitor ~4 loops simultaneously. — Confidence: Likely
+      (secondary syntheses of Patterson, Watts-Perotti & Woods 1999; primary not directly
+      read). Addressing formality scales with loop level; overhearing ("party line")
+      is a designed-in feature for anticipatory awareness.'
+    - 'ATC addressing is order-strict: called station named first, then caller, then
+      message — never reversed. — Confidence: Established (ICAO-derived phraseology
+      references + procedure-word canon). This is the core convention that routes
+      utterances on a shared channel without a UI.'
+    - "Only safety-critical content requires verbatim readback; advisories don't.
+      — Confidence: Established. Selective confirmation keeps the channel from clogging.
+      Procedure words (over/out/roger/wilco/say again/break) compress channel-state
+      into single tokens."
+    - 'Readback/hearback errors ~1 per hour per frequency; top factors: confusable
+      call signs, expectation bias, workload. — Confidence: Likely (ASRS analysis
+      of 386 reports via secondary synthesis). Three-failure taxonomy: no readback
+      / readback-hearback error / hearback type II.'
+    - "Ten-codes (brevity codes) failed at scale due to cross-jurisdiction fragmentation
+      — post-Katrina federal policy mandates plain language. — Confidence: Established.
+      Lesson: don't invent a private code vocabulary; plain language + fixed structure
+      wins."
+    - "Spoken-message element budget: 1 element ≈ 3.84% readback error; 4 elements
+      ≈ 25.69% (FAA DOT/FAA/AM-06/25, 51 hrs / 10,471+ real ATC messages); monotonic
+      increase; 54.2% of real transmissions carry one topic. — Confidence: Established
+      (government human-factors study, figures corroborated across independent search
+      paths; primary PDF 403'd — re-verify if quoting precisely). Converges with Cowan…"
+    - 'Notifications at task breakpoints cut interruption cost; coarser breakpoints
+      beat fine ones. — Confidence: Likely (Iqbal & Bailey CHI 2008 via summaries).'
+    - 'Horvitz attention-sensitive alerting: per-event expected-cost-of-delay vs.
+      interruption-cost scoring, escalate to audio only when delay-cost dominates
+      and user is away from the visual channel. — Confidence: Likely (MSR primary
+      page).'
+    - 'Alarm fatigue is the canonical failure mode of speak-often systems: ~350 alarms/bed/day
+      in ICUs; 85–95% non-actionable; habituation is neurological; Joint Commission
+      logged 98 alarm-related incidents 2009–2012, 80 fatal. — Confidence: Established
+      (clinical literature). Fix is raising the actionability bar, never adding alert
+      types.'
+    - "The \"23-minute interruption recovery\" statistic is a media artifact — not
+      in Gloria Mark's paper. Her actual finding: interrupted workers complete faster
+      (20.3 vs 22.8 min) at higher stress. — Confidence: Established (direct fact-check
+      of primary). Do not cite 23 minutes."
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-03-notification-state-from-event-log' dated 2026-08-06, 
-      and from a simulated review round where 10 agent-written posts were ranked
-      by votes.
+      report '2026-08-04-voice-agent-supervision-hci' dated 2026-08-07, and from
+      a simulated review round where 10 agent-written posts were ranked by 
+      votes.
   angles:
-    - id: 2026-08-06-sqlite-3-51-0-s-max-silently-returned-th
-      summary: "SQLite 3.51.0's max() silently returned the wrong row when two notification
-        events tied on timestamp · thread: A notification bug wasn't corrupted data
-        — it was six writers, no owner"
-      last_used: '2026-08-06'
+    - id: 2026-08-07-the-23-minutes-to-refocus-after-an-inter
+      summary: "The '23 minutes to refocus after an interruption' stat isn't in Gloria
+        Mark's paper — she found close to the opposite · thread: Air traffic control
+        and NASA already solved supervising many things by voice"
+      last_used:
       provenance:
-        post_id: p_09265b42ee02
-        round_id: quiet_machines:2026-08-06
-        report_label: 2026-08-03-notification-state-from-event-log
-    - id: 2026-08-06-kafka-never-sorts-by-the-clock-every-rec
-      summary: "Kafka never sorts by the clock — every record is ordered by an offset,
-        because POSIX time isn't monotonic · thread: A notification bug wasn't corrupted
-        data — it was six writers, no owner"
-      last_used: '2026-08-06'
+        post_id: p_f790107350e5
+        round_id: quiet_machines:2026-08-07
+        report_label: 2026-08-04-voice-agent-supervision-hci
+    - id: 2026-08-07-the-3-4-distinguishable-voices-number-pe
+      summary: "The '3-4 distinguishable voices' number people cite for multi-agent
+        audio comes from a different experiment than the one they're building · thread:
+        Air traffic control and NASA already solved supervising many things by…"
+      last_used:
       provenance:
-        post_id: p_e7c76370c4a7
-        round_id: quiet_machines:2026-08-06
-        report_label: 2026-08-03-notification-state-from-event-log
-    - id: 2026-08-06-rfc-8621-2019-and-rfc-9051-2021-landed-o
-      summary: "RFC 8621 (2019) and RFC 9051 (2021) landed on the identical rule:
-        read status can't live on the message · thread: A notification bug wasn't
-        corrupted data — it was six writers, no owner"
-      last_used: '2026-08-06'
+        post_id: p_b30cf8fed386
+        round_id: quiet_machines:2026-08-07
+        report_label: 2026-08-04-voice-agent-supervision-hci
+    - id: 2026-08-07-in-1995-xerox-parc-s-mark-weiser-wired-a
+      summary: "In 1995 Xerox PARC's Mark Weiser wired an 8-foot string to the office
+        Ethernet cable · thread: Air traffic control and NASA already solved supervising
+        many things by voice"
+      last_used:
       provenance:
-        post_id: p_9110d9762c0c
-        round_id: quiet_machines:2026-08-06
-        report_label: 2026-08-03-notification-state-from-event-log
-    - id: 2026-08-06-nat-pryce-s-team-named-their-event-sourc
-      summary: "Nat Pryce's team named their event-sourcing bug 'stored events and
-        current state' — that combo was the whole disease · thread: A notification
-        bug wasn't corrupted data — it was six writers, no owner"
-      last_used: '2026-08-06'
+        post_id: p_ea3bd36dd83e
+        round_id: quiet_machines:2026-08-07
+        report_label: 2026-08-04-voice-agent-supervision-hci
+    - id: 2026-08-07-roderick-patterson-s-1982-alarm-design-r
+      summary: "Roderick Patterson's 1982 alarm-design rule: cap distinguishable warning
+        sounds at six, or nobody learns them · thread: Air traffic control and NASA
+        already solved supervising many things by voice"
+      last_used:
       provenance:
-        post_id: p_46110ea242a2
-        round_id: quiet_machines:2026-08-06
-        report_label: 2026-08-03-notification-state-from-event-log
-    - id: 2026-08-06-a-sqlite-benchmark-on-8-000-rows-found-t
-      summary: "A SQLite benchmark on 8,000 rows found the cache table won by 0.18
-        milliseconds — and that's the whole case against building one · thread: A
-        notification bug wasn't corrupted data — it was six writers, no owner"
-      last_used: '2026-08-06'
+        post_id: p_638a26f2a55d
+        round_id: quiet_machines:2026-08-07
+        report_label: 2026-08-04-voice-agent-supervision-hci
+    - id: 2026-08-07-faa-data-atc-readback-errors-jump-from-3
+      summary: "FAA data: ATC readback errors jump from 3.8% to 25.7% once a controller's
+        message hits four pieces of information · thread: Air traffic control and
+        NASA already solved supervising many things by voice"
+      last_used:
       provenance:
-        post_id: p_5c277d4d0993
-        round_id: quiet_machines:2026-08-06
-        report_label: 2026-08-03-notification-state-from-event-log
+        post_id: p_c48ddff26d21
+        round_id: quiet_machines:2026-08-07
+        report_label: 2026-08-04-voice-agent-supervision-hci
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-06-a-notification-bug-wasn-t-corrupted-data.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-07-air-traffic-control-and-nasa-already-sol.png
