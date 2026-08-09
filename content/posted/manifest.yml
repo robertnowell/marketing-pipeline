@@ -6051,3 +6051,27 @@
   angle: 2026-08-07-faa-data-atc-readback-errors-jump-from-3
   source_id: research-2026-08-07-5
   posted_at: '2026-08-08'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msngrx4x6z2r
+  angle: 2026-08-08-peonping-has-4-981-github-stars-and-does
+  source_id: research-2026-08-08-2
+  posted_at: '2026-08-09'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msngrysowb2r
+  angle: 2026-08-08-revisiondojo-hit-454-points-on-hacker-ne
+  source_id: research-2026-08-08-3
+  posted_at: '2026-08-09'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msngs2eio72p
+  angle: 2026-08-08-conductor-s-22m-series-a-got-3-points-on
+  source_id: research-2026-08-08-4
+  posted_at: '2026-08-09'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msngsjqwio2o
+  angle: 2026-08-08-the-53-of-product-hunt-winners-include-v
+  source_id: ''
+  posted_at: '2026-08-09'
