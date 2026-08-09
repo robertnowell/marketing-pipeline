@@ -353,96 +353,91 @@ research:
   channels:
     - bluesky
   facts:
-    - 'NASA mission control uses parallel monitored loops with a monitor-many/talk-one
-      constraint; controllers monitor ~4 loops simultaneously. — Confidence: Likely
-      (secondary syntheses of Patterson, Watts-Perotti & Woods 1999; primary not directly
-      read). Addressing formality scales with loop level; overhearing ("party line")
-      is a designed-in feature for anticipatory awareness.'
-    - 'ATC addressing is order-strict: called station named first, then caller, then
-      message — never reversed. — Confidence: Established (ICAO-derived phraseology
-      references + procedure-word canon). This is the core convention that routes
-      utterances on a shared channel without a UI.'
-    - "Only safety-critical content requires verbatim readback; advisories don't.
-      — Confidence: Established. Selective confirmation keeps the channel from clogging.
-      Procedure words (over/out/roger/wilco/say again/break) compress channel-state
-      into single tokens."
-    - 'Readback/hearback errors ~1 per hour per frequency; top factors: confusable
-      call signs, expectation bias, workload. — Confidence: Likely (ASRS analysis
-      of 386 reports via secondary synthesis). Three-failure taxonomy: no readback
-      / readback-hearback error / hearback type II.'
-    - "Ten-codes (brevity codes) failed at scale due to cross-jurisdiction fragmentation
-      — post-Katrina federal policy mandates plain language. — Confidence: Established.
-      Lesson: don't invent a private code vocabulary; plain language + fixed structure
-      wins."
-    - "Spoken-message element budget: 1 element ≈ 3.84% readback error; 4 elements
-      ≈ 25.69% (FAA DOT/FAA/AM-06/25, 51 hrs / 10,471+ real ATC messages); monotonic
-      increase; 54.2% of real transmissions carry one topic. — Confidence: Established
-      (government human-factors study, figures corroborated across independent search
-      paths; primary PDF 403'd — re-verify if quoting precisely). Converges with Cowan…"
-    - 'Notifications at task breakpoints cut interruption cost; coarser breakpoints
-      beat fine ones. — Confidence: Likely (Iqbal & Bailey CHI 2008 via summaries).'
-    - 'Horvitz attention-sensitive alerting: per-event expected-cost-of-delay vs.
-      interruption-cost scoring, escalate to audio only when delay-cost dominates
-      and user is away from the visual channel. — Confidence: Likely (MSR primary
-      page).'
-    - 'Alarm fatigue is the canonical failure mode of speak-often systems: ~350 alarms/bed/day
-      in ICUs; 85–95% non-actionable; habituation is neurological; Joint Commission
-      logged 98 alarm-related incidents 2009–2012, 80 fatal. — Confidence: Established
-      (clinical literature). Fix is raising the actionability bar, never adding alert
-      types.'
-    - "The \"23-minute interruption recovery\" statistic is a media artifact — not
-      in Gloria Mark's paper. Her actual finding: interrupted workers complete faster
-      (20.3 vs 22.8 min) at higher stress. — Confidence: Established (direct fact-check
-      of primary). Do not cite 23 minutes."
+    - '### Launch post-mortems (Tier 1 numbers via HN Algolia + GitHub API)'
+    - "The strong Show HN anatomy — Established. Omnara Show HN 310pts/168cm (Aug
+      2025), Conductor 228/115, Vibe Kanban 195/132 all share: first-person \"I'm
+      [name], one of the creators\"; concrete personal-pain origin (Vibe Kanban: \"\
+      doomscrolling during 2-5 min agent waits\"); dogfooding proof; explicit responsiveness
+      promise. SKI's Show HN got 15 points because a non-maker account posted it same-day
+      as…"
+    - "PH vs HN: SKI took PH #1 (641 votes, #3 of week) while its HN flopped — PH
+      rewards coordinated same-day mobilization (followers, maker graph, leaderboard);
+      HN rewards founder presence and story. No data-backed sequencing study found
+      (gap); the defensible read: they're different games; run HN with full founder
+      apparatus first (OSS-native audience), PH as a separate day with the video."
+    - 'A launch moment is optional: Claude Squad = 8,239★ with a 5-point non-Show-HN
+      as its only HN appearance — Established.'
+    - "Omnara's warm-up: category-definition essay posted 3 days before Launch HN
+      (\"Everyone's building 'async agents'…\", 63pts) — deliberate pre-framing —
+      Established."
+    - 'OpenClaw (385,364★, GitHub-verified) is not the playbook: growth contested
+      by its own community (auto-star-on-install allegations, abnormal star velocity)
+      and sustained by controversy cycles (bans/reversals/security scares at 1099/802/667/514pts).
+      Adversarial-attention growth contradicts calm-competence — Established for the
+      numbers, Contested for the causal story.'
+    - "Conductor raised $22M Series A post-launch (follow-up HN posts got 3pts — funding
+      news doesn't re-trigger HN) — Likely. ### Video/demo strategy"
+    - "Nobody in the category has shipped a convincing video demo — Established (direct
+      fetches): SKI's PH gallery = 6 static images, zero videos; heyski.io has no
+      embedded player; Wispr Flow's hero = text before/after + WPM stats, no audio/video
+      (their YouTube is a secondary surface). A real demo video is an open differentiator,
+      not table stakes."
+    - "The credible voice-demo doctrine (consistent across Tavis Rudd PyCon 2013,
+      Emily Shea's Talon talks, Josh Comeau's hands-free post): live, unedited, real
+      loop shown before any explanation — screen-recording + real voice, never produced
+      trailer. Comeau opens with the video \"to prove feasibility.\" Shea's most-cited
+      talk showcased the bespoke workflow built on top, not the base tool — maps directly…"
+    - "Landing-page split: hero should convert MUTED (Wispr's choice); the sound-on
+      video carries YouTube/social discovery — Emerging (inference from Wispr + PH
+      sound-off norms)."
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-04-voice-agent-supervision-hci' dated 2026-08-07, and from
-      a simulated review round where 10 agent-written posts were ranked by 
-      votes.
+      report '2026-08-06-retrofire-launch-channels' dated 2026-08-08, and from a
+      simulated review round where 9 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-08-07-the-23-minutes-to-refocus-after-an-inter
-      summary: "The '23 minutes to refocus after an interruption' stat isn't in Gloria
-        Mark's paper — she found close to the opposite · thread: Air traffic control
-        and NASA already solved supervising many things by voice"
-      last_used: '2026-08-07'
+    - id: 2026-08-08-the-53-of-product-hunt-winners-include-v
+      summary: "The '53% of Product Hunt winners include video, 2.7x more upvotes'
+        stat has no traceable source · thread: A product launch flopped because the
+        founder didn't post it himself"
+      last_used:
       provenance:
-        post_id: p_f790107350e5
-        round_id: quiet_machines:2026-08-07
-        report_label: 2026-08-04-voice-agent-supervision-hci
-    - id: 2026-08-07-the-3-4-distinguishable-voices-number-pe
-      summary: "The '3-4 distinguishable voices' number people cite for multi-agent
-        audio comes from a different experiment than the one they're building · thread:
-        Air traffic control and NASA already solved supervising many things by…"
-      last_used: '2026-08-07'
+        post_id: p_a62af5ed3b37
+        round_id: quiet_machines:2026-08-08
+        report_label: 2026-08-06-retrofire-launch-channels
+    - id: 2026-08-08-peonping-has-4-981-github-stars-and-does
+      summary: "PeonPing has 4,981 GitHub stars and doesn't appear on the list built
+        for tools exactly like it · thread: A product launch flopped because the founder
+        didn't post it himself"
+      last_used:
       provenance:
-        post_id: p_b30cf8fed386
-        round_id: quiet_machines:2026-08-07
-        report_label: 2026-08-04-voice-agent-supervision-hci
-    - id: 2026-08-07-in-1995-xerox-parc-s-mark-weiser-wired-a
-      summary: "In 1995 Xerox PARC's Mark Weiser wired an 8-foot string to the office
-        Ethernet cable · thread: Air traffic control and NASA already solved supervising
-        many things by voice"
-      last_used: '2026-08-07'
+        post_id: p_71d879fb3a82
+        round_id: quiet_machines:2026-08-08
+        report_label: 2026-08-06-retrofire-launch-channels
+    - id: 2026-08-08-revisiondojo-hit-454-points-on-hacker-ne
+      summary: "RevisionDojo hit 454 points on Hacker News in 2026, then got banned
+        for astroturfing · thread: A product launch flopped because the founder didn't
+        post it himself"
+      last_used:
       provenance:
-        post_id: p_ea3bd36dd83e
-        round_id: quiet_machines:2026-08-07
-        report_label: 2026-08-04-voice-agent-supervision-hci
-    - id: 2026-08-07-roderick-patterson-s-1982-alarm-design-r
-      summary: "Roderick Patterson's 1982 alarm-design rule: cap distinguishable warning
-        sounds at six, or nobody learns them · thread: Air traffic control and NASA
-        already solved supervising many things by voice"
-      last_used: '2026-08-07'
+        post_id: p_2d1fe7220382
+        round_id: quiet_machines:2026-08-08
+        report_label: 2026-08-06-retrofire-launch-channels
+    - id: 2026-08-08-conductor-s-22m-series-a-got-3-points-on
+      summary: "Conductor's $22M Series A got 3 points on Hacker News. Its launch
+        post got 228. · thread: A product launch flopped because the founder didn't
+        post it himself"
+      last_used:
       provenance:
-        post_id: p_638a26f2a55d
-        round_id: quiet_machines:2026-08-07
-        report_label: 2026-08-04-voice-agent-supervision-hci
-    - id: 2026-08-07-faa-data-atc-readback-errors-jump-from-3
-      summary: "FAA data: ATC readback errors jump from 3.8% to 25.7% once a controller's
-        message hits four pieces of information · thread: Air traffic control and
-        NASA already solved supervising many things by voice"
-      last_used: '2026-08-07'
+        post_id: p_de261a81a991
+        round_id: quiet_machines:2026-08-08
+        report_label: 2026-08-06-retrofire-launch-channels
+    - id: 2026-08-08-ski-s-show-hn-post-got-15-points-the-sam
+      summary: "SKI's Show HN post got 15 points the same day it hit #1 on Product
+        Hunt with 641 votes · thread: A product launch flopped because the founder
+        didn't post it himself"
+      last_used:
       provenance:
-        post_id: p_c48ddff26d21
-        round_id: quiet_machines:2026-08-07
-        report_label: 2026-08-04-voice-agent-supervision-hci
+        post_id: p_514166fe033d
+        round_id: quiet_machines:2026-08-08
+        report_label: 2026-08-06-retrofire-launch-channels
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-07-air-traffic-control-and-nasa-already-sol.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-08-a-product-launch-flopped-because-the-fou.png
