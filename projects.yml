@@ -407,7 +407,7 @@ research:
       summary: "Conductor's founder answered every comment on his launch post. His
         funding post had 1 comment to answer. · thread: A founder's own launch post
         beats a PR post by up to 120x"
-      last_used:
+      last_used: '2026-08-10'
       provenance:
         post_id: p_4c87e8f6ae0f
         round_id: founder_vs_pr:2026-08-10
@@ -416,7 +416,7 @@ research:
       summary: "Webflow's Series B: the company got 6 points, TechCrunch got 7, and
         VentureBeat got 88 · thread: A founder's own launch post beats a PR post by
         up to 120x"
-      last_used:
+      last_used: '2026-08-10'
       provenance:
         post_id: p_354a2e24db99
         round_id: founder_vs_pr:2026-08-10
@@ -425,7 +425,7 @@ research:
       summary: "The 35x-120x founder-post advantage rests on five companies — all
         HN darlings before they ever posted · thread: A founder's own launch post
         beats a PR post by up to 120x"
-      last_used:
+      last_used: '2026-08-10'
       provenance:
         post_id: p_ef7eb5849fbe
         round_id: founder_vs_pr:2026-08-10
@@ -434,7 +434,7 @@ research:
       summary: "HN's scoring formula is (votes-1)^0.8 / age^1.8 — and it doesn't explain
         why funding posts die · thread: A founder's own launch post beats a PR post
         by up to 120x"
-      last_used:
+      last_used: '2026-08-10'
       provenance:
         post_id: p_9a670f0c22b1
         round_id: founder_vs_pr:2026-08-10
@@ -443,7 +443,7 @@ research:
       summary: "HN's moderator says self-promotion isn't banned. Funding posts still
         die because of two rules that have nothing to do with promotion. · thread:
         A founder's own launch post beats a PR post by up to 120x"
-      last_used:
+      last_used: '2026-08-10'
       provenance:
         post_id: p_7de973fb0cbc
         round_id: founder_vs_pr:2026-08-10

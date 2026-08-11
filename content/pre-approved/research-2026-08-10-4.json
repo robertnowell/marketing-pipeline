@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-10-4",
+  "date": "2026-08-10",
+  "project": "research",
+  "angle": "2026-08-10-hn-s-scoring-formula-is-votes-1-0-8-age",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you're planning a funding announcement on Hacker News, don't. One founder's Series A post scored 3 points; their own product launch scored 228, a 76x gap. Same held for Linear, Notion, Retool, Superhuman: 35x-120x swings, verified via HN's Algolia API. Ship the product, not the press release."
+    }
+  ]
+}
