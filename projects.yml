@@ -353,100 +353,108 @@ research:
   channels:
     - bluesky
   facts:
-    - "The Conductor case is independently verified from HN's own database, not a
-      secondhand claim. The Series A post scored 3 points / 1 comment; the Show HN
-      launch post scored 228 points / 115 comments — a ~76x gap, both submitted by
-      the same founder account. — Confidence: Established"
-    - "This is not a one-off; the same pattern holds across four additional companies
-      with gaps of 35x-120x, each pulled directly from HN's Algolia API: Linear (491
-      pts launch vs. 7-11 pts per funding round), Notion (970-1,044 pts launch vs.
-      1-23 pts per funding round, across four rounds), Retool (592 pts launch vs.
-      21 pts self-published Series C2), Superhuman (189 pts launch vs. 2 pts for Forbes…"
-    - The mechanism is structurally enforced, not just a cultural preference. 
-      HN's official Show HN rules require the project be "something you've 
-      worked on personally and which you're around to discuss," explicitly 
-      excluding blog posts, press pages, and landing pages. HN's core guidelines
-      forbid "using HN primarily for promotion" and vote solicitation. HN's 
-      actual ranking formula (reverse-engineered…
-    - "Founder/OP comment engagement in the winning thread is extensive and iterative,
-      not a courtesy reply. In Conductor's launch thread, the founder personally answered
-      setup complaints, fixed an over-broad OAuth scope mid-thread and posted the
-      fix back, and shipped an Intel Mac build in response to a comment, all inside
-      the same discussion. — Confidence: Established (verified against the primary
-      HN…"
-    - dang, HN's moderator, has confirmed on the record that he actively coaches
-      YC founders to remove marketing/PR language before they post, and 
-      separately attributed a corporate post's underperformance to being "too 
-      enterprisey" in tone. He has also stated self-promotion per se is not 
-      against HN's spirit — repetitive or out-of-context promotion is the actual
-      violation. No dang comment specifically…
-    - The "self-published vs. third-party-reported" sub-hypothesis does not hold
-      as a general rule. It replicated for Retool and Rippling's Series E 
-      (self-post flopped, journalist coverage of the same round won by 10-35x), 
-      but was directly contradicted by Segment (two rounds), Rippling's own 
-      Series A, and Vercel (two rounds), where the company's own 
-      founder/engineer-voiced post on its own domain beat…
-    - Corporate-authored content underperforms personal/founder content on HN's 
-      front page generally, independent of the funding-announcement question 
-      specifically. Amplify Partners' analysis of front-page composition found 
-      corporate blog posts have roughly an 8-11% chance of reaching the front 
-      page versus 25-26% for personal blogs, and that even successful corporate 
-      posts skew toward non-promotional…
-    - Most founder launch posts still flop — the Conductor/Linear/Notion tier 
-      are survivorship-biased successes, not the norm. Aggregate data across 
-      41,301 Show HN posts over 12 months shows a median of 2 points and 0 
-      comments, with 61.7% receiving zero comments. The mechanism identified 
-      here explains why founder posts *can* dramatically outperform PR posts, 
-      not that they reliably will. — Confidence:…
+    - Curated directories require an explicit submission act; none auto-list 
+      from popularity alone.  Five platforms checked (GitHub's flagship 
+      `sindresorhus/awesome`, `awesome-selfhosted`, There's An AI For That, 
+      Product Hunt, AlternativeTo) all gate inclusion behind a PR, issue, paid 
+      form, or post — never a star-count-triggered crawl.
+    - PeonPing is real and its star count is roughly as cited.  GitHub API 
+      confirms `PeonPing/peon-ping`, MIT-licensed, ~4,977–4,992 stars depending 
+      on the day sampled (the "4,981" figure is plausible day-to-day drift, not 
+      independently pinned to a timestamp).
+    - PeonPing is absent from the most canonical, most-specific list in its own 
+      category — while present in smaller, more generic ones.  It's missing from
+      `hesreallyhim/awesome-claude-code` (35.9k–52k stars, the dominant list in 
+      this space, with a dedicated notifications/voice-I/O section) and from two
+      hooks/sound-specific lists (`varun86/awesome-claude-code-sounds`,…
+    - The flagship list's absence is best explained by "nobody filed the 
+      submission," not rejection.  `hesreallyhim/awesome-claude-code` is 
+      populated only through a formal GitHub-issue submission template; no 
+      closed/rejected submission issue for PeonPing was found in its tracker, 
+      consistent with an opt-in process nobody triggered rather than a 
+      reviewed-and-declined entry.
+    - No trace of the originating thread or its exact framing was found.  
+      Multi-angle phrase searches (exact quotes, paraphrases, X/Twitter- and 
+      HN-restricted searches) turned up nothing matching "4,981 stars," "doesn't
+      appear on the list," or "founder didn't post it himself" in connection 
+      with PeonPing.
+    - "The \"launch flopped\" framing is contradicted by available evidence.  Product
+      Hunt listing (121 upvotes, #9 Day Rank, co-creator active in comments), press
+      coverage in three outlets, a reported #2 Hacker News placement, and the builder's
+      own viral X post (~3,600 likes) all point to a launch that landed, not one that
+      flopped."
+    - "Self-promotion is a double-edged sword for directory submission — a recognized
+      but non-universal norm, not a blanket rule.  Some awesome-lists explicitly restrict
+      self-promotional PRs (`awesome-php`: *\"Your pull request isn't for self promotion
+      purposes\"*) or require disclosure of affiliation (`awesome-privacy`), but 3
+      of 5 lists checked had no such clause at all."
+    - GitHub stars are a weak, increasingly gameable proxy for real-world 
+      adoption — "objectively qualifies by popularity" is a shakier premise than
+      it looks.  A peer-reviewed study (NDSS MADWeb 2024, ~926k data points) 
+      found stars-to-downloads correlation of only 0.14 (JavaScript) to 0.47 
+      (PHP); a second peer-reviewed study (arXiv:2412.13459, accepted ICSE 2026)
+      identified ~6 million suspected fake…
+    - Where founder-led self-promotion demonstrably works, it works in 
+      quantifiable, front-loaded bursts — and matters less once a project has 
+      critical mass.  A detailed case study (AFFiNE, 33k→60k+ stars) shows 
+      Reddit conversion (2,000+ stars/month), Product Hunt launches (200–600 
+      stars each, 30+ launches), and Hacker News front-page hits (500–2,000 
+      stars each) driving early growth; the founder is…
+    - Community reputation, not platform algorithm, gates who can safely 
+      self-submit on Hacker News.  HN's own FAQ states submitter karma doesn't 
+      affect ranking, but informal community norms (a ~250+ karma threshold 
+      circulates in HN discussion) shape who can self-post without it reading as
+      spam — a distribution lever tied to identity, separate from any documented
+      algorithmic bias.
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-10-hn-founder-launch-vs-pr-posts' dated 2026-08-10, and 
+      report '2026-08-11-peonping-listing-self-submission' dated 2026-08-11, and
       from a simulated review round where 10 agent-written posts were ranked by 
       votes.
   angles:
-    - id: 2026-08-10-conductor-s-founder-answered-every-comme
-      summary: "Conductor's founder answered every comment on his launch post. His
-        funding post had 1 comment to answer. · thread: A founder's own launch post
-        beats a PR post by up to 120x"
-      last_used: '2026-08-10'
+    - id: 2026-08-11-a-peer-reviewed-study-of-926-000-repos-f
+      summary: "A peer-reviewed study of 926,000 repos found GitHub stars barely predict
+        downloads · thread: GitHub stars don't get you on curated lists — someone
+        must submit you"
+      last_used:
       provenance:
-        post_id: p_4c87e8f6ae0f
-        round_id: founder_vs_pr:2026-08-10
-        report_label: 2026-08-10-hn-founder-launch-vs-pr-posts
-    - id: 2026-08-10-webflow-s-series-b-the-company-got-6-poi
-      summary: "Webflow's Series B: the company got 6 points, TechCrunch got 7, and
-        VentureBeat got 88 · thread: A founder's own launch post beats a PR post by
-        up to 120x"
-      last_used: '2026-08-10'
+        post_id: p_fa5042adacf2
+        round_id: quiet_machines:2026-08-11
+        report_label: 2026-08-11-peonping-listing-self-submission
+    - id: 2026-08-11-hacker-news-faq-says-karma-doesn-t-affec
+      summary: "Hacker News' FAQ says karma doesn't affect ranking. The community
+        still holds a ~250-karma line. · thread: GitHub stars don't get you on curated
+        lists — someone must submit you"
+      last_used:
       provenance:
-        post_id: p_354a2e24db99
-        round_id: founder_vs_pr:2026-08-10
-        report_label: 2026-08-10-hn-founder-launch-vs-pr-posts
-    - id: 2026-08-10-the-35x-120x-founder-post-advantage-rest
-      summary: "The 35x-120x founder-post advantage rests on five companies — all
-        HN darlings before they ever posted · thread: A founder's own launch post
-        beats a PR post by up to 120x"
-      last_used: '2026-08-10'
+        post_id: p_b930cc170a6d
+        round_id: quiet_machines:2026-08-11
+        report_label: 2026-08-11-peonping-listing-self-submission
+    - id: 2026-08-11-there-s-an-ai-for-that-will-list-your-to
+      summary: "There's An AI For That will list your tool for $347 — or a free monthly
+        raffle with one winner · thread: GitHub stars don't get you on curated lists
+        — someone must submit you"
+      last_used:
       provenance:
-        post_id: p_ef7eb5849fbe
-        round_id: founder_vs_pr:2026-08-10
-        report_label: 2026-08-10-hn-founder-launch-vs-pr-posts
-    - id: 2026-08-10-hn-s-scoring-formula-is-votes-1-0-8-age
-      summary: "HN's scoring formula is (votes-1)^0.8 / age^1.8 — and it doesn't explain
-        why funding posts die · thread: A founder's own launch post beats a PR post
-        by up to 120x"
-      last_used: '2026-08-10'
+        post_id: p_40d1a92af677
+        round_id: quiet_machines:2026-08-11
+        report_label: 2026-08-11-peonping-listing-self-submission
+    - id: 2026-08-11-awesome-php-s-contributing-guide-says-pr
+      summary: "awesome-php's contributing guide says PRs 'aren't for self promotion
+        purposes' · thread: GitHub stars don't get you on curated lists — someone
+        must submit you"
+      last_used:
       provenance:
-        post_id: p_9a670f0c22b1
-        round_id: founder_vs_pr:2026-08-10
-        report_label: 2026-08-10-hn-founder-launch-vs-pr-posts
-    - id: 2026-08-10-hn-s-moderator-says-self-promotion-isn-t
-      summary: "HN's moderator says self-promotion isn't banned. Funding posts still
-        die because of two rules that have nothing to do with promotion. · thread:
-        A founder's own launch post beats a PR post by up to 120x"
-      last_used: '2026-08-10'
+        post_id: p_80fdd5c0adcd
+        round_id: quiet_machines:2026-08-11
+        report_label: 2026-08-11-peonping-listing-self-submission
+    - id: 2026-08-11-tony-sheng-built-peonping-in-about-an-ho
+      summary: "Tony Sheng built PeonPing in about an hour, then posted it on X to
+        3,600 likes · thread: GitHub stars don't get you on curated lists — someone
+        must submit you"
+      last_used:
       provenance:
-        post_id: p_7de973fb0cbc
-        round_id: founder_vs_pr:2026-08-10
-        report_label: 2026-08-10-hn-founder-launch-vs-pr-posts
+        post_id: p_6a93d10d9830
+        round_id: quiet_machines:2026-08-11
+        report_label: 2026-08-11-peonping-listing-self-submission
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-10-a-founder-s-own-launch-post-beats-a-pr-p.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-11-github-stars-don-t-get-you-on-curated-li.png
