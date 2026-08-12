@@ -373,7 +373,7 @@ research:
       closed/rejected submission issue for PeonPing was found in its tracker, 
       consistent with an opt-in process nobody triggered rather than a 
       reviewed-and-declined entry.
-    - No trace of the originating thread or its exact framing was found.  
+    - No trace of the originating thread or its exact framing was found. 
       Multi-angle phrase searches (exact quotes, paraphrases, X/Twitter- and 
       HN-restricted searches) turned up nothing matching "4,981 stars," "doesn't
       appear on the list," or "founder didn't post it himself" in connection 
@@ -415,7 +415,7 @@ research:
       summary: "A peer-reviewed study of 926,000 repos found GitHub stars barely predict
         downloads · thread: GitHub stars don't get you on curated lists — someone
         must submit you"
-      last_used:
+      last_used: '2026-08-11'
       provenance:
         post_id: p_fa5042adacf2
         round_id: quiet_machines:2026-08-11
@@ -424,7 +424,7 @@ research:
       summary: "Hacker News' FAQ says karma doesn't affect ranking. The community
         still holds a ~250-karma line. · thread: GitHub stars don't get you on curated
         lists — someone must submit you"
-      last_used:
+      last_used: '2026-08-11'
       provenance:
         post_id: p_b930cc170a6d
         round_id: quiet_machines:2026-08-11
@@ -433,7 +433,7 @@ research:
       summary: "There's An AI For That will list your tool for $347 — or a free monthly
         raffle with one winner · thread: GitHub stars don't get you on curated lists
         — someone must submit you"
-      last_used:
+      last_used: '2026-08-11'
       provenance:
         post_id: p_40d1a92af677
         round_id: quiet_machines:2026-08-11
@@ -442,7 +442,7 @@ research:
       summary: "awesome-php's contributing guide says PRs 'aren't for self promotion
         purposes' · thread: GitHub stars don't get you on curated lists — someone
         must submit you"
-      last_used:
+      last_used: '2026-08-11'
       provenance:
         post_id: p_80fdd5c0adcd
         round_id: quiet_machines:2026-08-11
@@ -451,7 +451,7 @@ research:
       summary: "Tony Sheng built PeonPing in about an hour, then posted it on X to
         3,600 likes · thread: GitHub stars don't get you on curated lists — someone
         must submit you"
-      last_used:
+      last_used: '2026-08-11'
       provenance:
         post_id: p_6a93d10d9830
         round_id: quiet_machines:2026-08-11

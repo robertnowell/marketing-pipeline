@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-11-2",
+  "date": "2026-08-11",
+  "project": "research",
+  "angle": "2026-08-11-hacker-news-faq-says-karma-doesn-t-affec",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A tool with ~4,981 GitHub stars is missing from the biggest curated list in its category. Not rejected, just never submitted, no closed issue found in the tracker. Checked 5 directories (Product Hunt, AlternativeTo, awesome-selfhosted...): all require a PR, issue, or form. Stars don't get you listed. Submitting does."
+    }
+  ]
+}

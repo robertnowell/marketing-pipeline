@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-11-1",
+  "date": "2026-08-11",
+  "project": "research",
+  "angle": "2026-08-11-a-peer-reviewed-study-of-926-000-repos-f",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Being popular doesn't get you onto curated lists. PeonPing has ~4,981 GitHub stars but is missing from awesome-claude-code (35.9k-52k stars). Nobody filed the submission issue. All 5 directories checked require a PR, issue, form, or post to get listed. Submit yourself."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-11-3",
+  "date": "2026-08-11",
+  "project": "research",
+  "angle": "2026-08-11-there-s-an-ai-for-that-will-list-your-to",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Checked five curated tool directories, GitHub's awesome lists, Product Hunt, AlternativeTo, more. None auto-list by star count. PeonPing has ~4,981 GitHub stars but is missing from awesome-claude-code (35.9k-52k stars), the dominant list in its niche. Nobody ever submitted it. If you built something, submit it."
+    }
+  ]
+}
