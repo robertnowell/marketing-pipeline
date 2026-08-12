@@ -6159,3 +6159,45 @@
   angle: 2026-08-10-hn-s-moderator-says-self-promotion-isn-t
   source_id: research-2026-08-10-5
   posted_at: '2026-08-11'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msuzdffxra2r
+  angle: 2026-08-11-a-peer-reviewed-study-of-926-000-repos-f
+  source_id: research-2026-08-11-1
+  posted_at: '2026-08-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msuzdhpo7i2n
+  angle: 2026-08-11-awesome-php-s-contributing-guide-says-pr
+  source_id: research-2026-08-11-4
+  posted_at: '2026-08-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msuzdiwpb62w
+  angle: 2026-08-11-tony-sheng-built-peonping-in-about-an-ho
+  source_id: research-2026-08-11-5
+  posted_at: '2026-08-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msuzdkaadm22
+  angle: angle:sib-2026-08-11-2026-08-10-hn-s-moderato-1
+  source_id: research-2026-08-11-sib-2026-08-10-hn-s-moderato-1
+  posted_at: '2026-08-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msuzdlnvco2o
+  angle: angle:sib-2026-08-11-2026-08-10-hn-s-moderato-2
+  source_id: research-2026-08-11-sib-2026-08-10-hn-s-moderato-2
+  posted_at: '2026-08-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msuzdmxq3g2p
+  angle: angle:sib-2026-08-11-2026-08-10-the-35x-120x--1
+  source_id: research-2026-08-11-sib-2026-08-10-the-35x-120x--1
+  posted_at: '2026-08-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msuzdo7vdg2o
+  angle: angle:sib-2026-08-11-2026-08-10-the-35x-120x--2
+  source_id: research-2026-08-11-sib-2026-08-10-the-35x-120x--2
+  posted_at: '2026-08-12'
