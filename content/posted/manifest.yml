@@ -6201,3 +6201,33 @@
   angle: angle:sib-2026-08-11-2026-08-10-the-35x-120x--2
   source_id: research-2026-08-11-sib-2026-08-10-the-35x-120x--2
   posted_at: '2026-08-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msxjpnbqw22u
+  angle: 2026-08-12-linear-had-zero-prior-hacker-news-posts
+  source_id: research-2026-08-12-1
+  posted_at: '2026-08-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msxjpolevr2z
+  angle: 2026-08-12-superhuman-had-a-180-000-person-waitlist
+  source_id: research-2026-08-12-2
+  posted_at: '2026-08-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msxjppvfqe2x
+  angle: 2026-08-12-eisenhardt-s-case-study-rules-say-n-5-bu
+  source_id: research-2026-08-12-3
+  posted_at: '2026-08-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msxjprjoka2o
+  angle: 2026-08-12-buffer-s-growth-wasn-t-one-founder-post
+  source_id: research-2026-08-12-5
+  posted_at: '2026-08-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3msxjq7bloc2u
+  angle: 2026-08-12-linear-had-zero-prior-hacker-news-posts
+  source_id: ''
+  posted_at: '2026-08-13'
