@@ -353,108 +353,100 @@ research:
   channels:
     - bluesky
   facts:
-    - Curated directories require an explicit submission act; none auto-list 
-      from popularity alone.  Five platforms checked (GitHub's flagship 
-      `sindresorhus/awesome`, `awesome-selfhosted`, There's An AI For That, 
-      Product Hunt, AlternativeTo) all gate inclusion behind a PR, issue, paid 
-      form, or post — never a star-count-triggered crawl.
-    - PeonPing is real and its star count is roughly as cited.  GitHub API 
-      confirms `PeonPing/peon-ping`, MIT-licensed, ~4,977–4,992 stars depending 
-      on the day sampled (the "4,981" figure is plausible day-to-day drift, not 
-      independently pinned to a timestamp).
-    - PeonPing is absent from the most canonical, most-specific list in its own 
-      category — while present in smaller, more generic ones.  It's missing from
-      `hesreallyhim/awesome-claude-code` (35.9k–52k stars, the dominant list in 
-      this space, with a dedicated notifications/voice-I/O section) and from two
-      hooks/sound-specific lists (`varun86/awesome-claude-code-sounds`,…
-    - The flagship list's absence is best explained by "nobody filed the 
-      submission," not rejection.  `hesreallyhim/awesome-claude-code` is 
-      populated only through a formal GitHub-issue submission template; no 
-      closed/rejected submission issue for PeonPing was found in its tracker, 
-      consistent with an opt-in process nobody triggered rather than a 
-      reviewed-and-declined entry.
-    - No trace of the originating thread or its exact framing was found. 
-      Multi-angle phrase searches (exact quotes, paraphrases, X/Twitter- and 
-      HN-restricted searches) turned up nothing matching "4,981 stars," "doesn't
-      appear on the list," or "founder didn't post it himself" in connection 
-      with PeonPing.
-    - "The \"launch flopped\" framing is contradicted by available evidence.  Product
-      Hunt listing (121 upvotes, #9 Day Rank, co-creator active in comments), press
-      coverage in three outlets, a reported #2 Hacker News placement, and the builder's
-      own viral X post (~3,600 likes) all point to a launch that landed, not one that
-      flopped."
-    - "Self-promotion is a double-edged sword for directory submission — a recognized
-      but non-universal norm, not a blanket rule.  Some awesome-lists explicitly restrict
-      self-promotional PRs (`awesome-php`: *\"Your pull request isn't for self promotion
-      purposes\"*) or require disclosure of affiliation (`awesome-privacy`), but 3
-      of 5 lists checked had no such clause at all."
-    - GitHub stars are a weak, increasingly gameable proxy for real-world 
-      adoption — "objectively qualifies by popularity" is a shakier premise than
-      it looks.  A peer-reviewed study (NDSS MADWeb 2024, ~926k data points) 
-      found stars-to-downloads correlation of only 0.14 (JavaScript) to 0.47 
-      (PHP); a second peer-reviewed study (arXiv:2412.13459, accepted ICSE 2026)
-      identified ~6 million suspected fake…
-    - Where founder-led self-promotion demonstrably works, it works in 
-      quantifiable, front-loaded bursts — and matters less once a project has 
-      critical mass.  A detailed case study (AFFiNE, 33k→60k+ stars) shows 
-      Reddit conversion (2,000+ stars/month), Product Hunt launches (200–600 
-      stars each, 30+ launches), and Hacker News front-page hits (500–2,000 
-      stars each) driving early growth; the founder is…
-    - Community reputation, not platform algorithm, gates who can safely 
-      self-submit on Hacker News.  HN's own FAQ states submitter karma doesn't 
-      affect ranking, but informal community norms (a ~250+ karma threshold 
-      circulates in HN discussion) shape who can self-post without it reading as
-      spam — a distribution lever tied to identity, separate from any documented
-      algorithmic bias.
+    - The original "35x-120x" / "HN darlings" claim is untraceable.  Two 
+      independent agents ran 20+ search queries (exact-phrase, 
+      X/Twitter-restricted, reformulated) and found zero sources — Tier 1 
+      through 4 — referencing this claim, its numbers, or its five companies.
+    - "Cal.com, Retool, and GrooveHQ each had a substantial earlier HN hit before
+      the post most commonly credited with their growth.  Verified directly via HN
+      Algolia primary-source data: Calendso (Cal.com's predecessor) hit 311 points
+      in April 2021, ~21 months before the 576-point \"Cal.com: Open Scheduling Infrastructure\"\
+      \ post; Retool's 2017 Show HN (190 pts) predates its more-cited 2018 Show HN
+      (592…"
+    - Plausible Analytics' founder had a bigger, earlier HN hit than the post 
+      usually credited with its growth.  A depth-verification pass confirmed via
+      HN Algolia that founder Marko Saric's blog post hit HN's front page on 
+      April 8, 2020 with 462 points — outperforming, and predating by six 
+      months, the official "Show HN" post (Oct 6, 2020, 351 points) that 
+      growth-story retellings typically cite as the…
+    - Linear had no prior HN-specific history, but its founders carried outside 
+      pedigree, an investor-driven seed round, and a ~10,000-person waitlist 
+      over a year before their HN launch post.  Founders Karri Saarinen 
+      (ex-Airbnb Principal Designer, ex-Coinbase Head of Design), Tuomas Artman 
+      (ex-Uber), and Jori Lallo previously co-founded YC-backed Kippt (acquired 
+      by Coinbase, 2014). Linear's April 2019…
+    - Superhuman, Gumroad, and ConvertKit are pre-existing-audience cases too, 
+      but via press/personal-brand rather than HN specifically.  Superhuman ran 
+      invite-only for ~2 years with a reported 180,000-person waitlist and a 
+      $75M raise before any specific "founder post." Gumroad's Sahil Lavingia 
+      was already covered by Fast Company as a known ex-Pinterest designer. 
+      ConvertKit's Nathan Barry had a…
+    - "Supabase and PostHog are clear counter-examples: no predecessor buzz, first
+      HN story *was* the launch.  Both companies' largest and earliest HN stories
+      are literally their YC-launch posts (Supabase: 1,120 pts, May 2020; PostHog:
+      282 pts, Feb 2020) — nothing precedes them in HN's record. This means the \"\
+      already famous\" pattern in this genre is common but not universal."
+    - No source was found already making this specific critique of this specific
+      thread — but the identical structural critique is well-established 
+      elsewhere.  An Indie Hackers post by Davidson Vorhes explicitly 
+      deconstructs a different growth case study by pointing to the founder's 
+      pre-existing "50,000 Twitter followers and 3 years of established social 
+      credibility" as the real explanatory variable.…
+    - Academic case-study methodology treats N≈5 as a floor for exploratory 
+      theory-building, not as evidence for a comparative magnitude claim.  
+      Case-study research conventions (e.g., Eisenhardt's guidance on building 
+      theory from case studies) support using ~5 cases to *generate* hypotheses,
+      not to support a point-estimate causal claim like "beats by up to 120x." A
+      thread making that leap from 5…
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-11-peonping-listing-self-submission' dated 2026-08-11, and
+      report '2026-08-12-founder-post-hn-fame-confound' dated 2026-08-12, and 
       from a simulated review round where 10 agent-written posts were ranked by 
       votes.
   angles:
-    - id: 2026-08-11-a-peer-reviewed-study-of-926-000-repos-f
-      summary: "A peer-reviewed study of 926,000 repos found GitHub stars barely predict
-        downloads · thread: GitHub stars don't get you on curated lists — someone
-        must submit you"
-      last_used: '2026-08-11'
+    - id: 2026-08-12-linear-had-zero-prior-hacker-news-posts
+      summary: 'Linear had zero prior Hacker News posts before its 2020 launch — but
+        its founders had already sold a company to Coinbase · thread: The viral "120x
+        founder posts beat PR" stat has no traceable source'
+      last_used:
       provenance:
-        post_id: p_fa5042adacf2
-        round_id: quiet_machines:2026-08-11
-        report_label: 2026-08-11-peonping-listing-self-submission
-    - id: 2026-08-11-hacker-news-faq-says-karma-doesn-t-affec
-      summary: "Hacker News' FAQ says karma doesn't affect ranking. The community
-        still holds a ~250-karma line. · thread: GitHub stars don't get you on curated
-        lists — someone must submit you"
-      last_used: '2026-08-11'
+        post_id: p_a9b440a168d6
+        round_id: founder_vs_pr:2026-08-12
+        report_label: 2026-08-12-founder-post-hn-fame-confound
+    - id: 2026-08-12-superhuman-had-a-180-000-person-waitlist
+      summary: 'Superhuman had a 180,000-person waitlist and $75M raised before its
+        famous HN post went up · thread: The viral "120x founder posts beat PR" stat
+        has no traceable source'
+      last_used:
       provenance:
-        post_id: p_b930cc170a6d
-        round_id: quiet_machines:2026-08-11
-        report_label: 2026-08-11-peonping-listing-self-submission
-    - id: 2026-08-11-there-s-an-ai-for-that-will-list-your-to
-      summary: "There's An AI For That will list your tool for $347 — or a free monthly
-        raffle with one winner · thread: GitHub stars don't get you on curated lists
-        — someone must submit you"
-      last_used: '2026-08-11'
+        post_id: p_704943ca0640
+        round_id: founder_vs_pr:2026-08-12
+        report_label: 2026-08-12-founder-post-hn-fame-confound
+    - id: 2026-08-12-eisenhardt-s-case-study-rules-say-n-5-bu
+      summary: "Eisenhardt's case-study rules say n≈5 builds a hypothesis, not a '120x'
+        number · thread: The viral \"120x founder posts beat PR\" stat has no traceable
+        source"
+      last_used:
       provenance:
-        post_id: p_40d1a92af677
-        round_id: quiet_machines:2026-08-11
-        report_label: 2026-08-11-peonping-listing-self-submission
-    - id: 2026-08-11-awesome-php-s-contributing-guide-says-pr
-      summary: "awesome-php's contributing guide says PRs 'aren't for self promotion
-        purposes' · thread: GitHub stars don't get you on curated lists — someone
-        must submit you"
-      last_used: '2026-08-11'
+        post_id: p_6b52ff4cc915
+        round_id: founder_vs_pr:2026-08-12
+        report_label: 2026-08-12-founder-post-hn-fame-confound
+    - id: 2026-08-12-supabase-s-1-120-point-hn-launch-had-zer
+      summary: "Supabase's 1,120-point HN launch had zero predecessor buzz — the 'already
+        famous' critique isn't universal either · thread: The viral \"120x founder
+        posts beat PR\" stat has no traceable source"
+      last_used:
       provenance:
-        post_id: p_80fdd5c0adcd
-        round_id: quiet_machines:2026-08-11
-        report_label: 2026-08-11-peonping-listing-self-submission
-    - id: 2026-08-11-tony-sheng-built-peonping-in-about-an-ho
-      summary: "Tony Sheng built PeonPing in about an hour, then posted it on X to
-        3,600 likes · thread: GitHub stars don't get you on curated lists — someone
-        must submit you"
-      last_used: '2026-08-11'
+        post_id: p_615a52787820
+        round_id: founder_vs_pr:2026-08-12
+        report_label: 2026-08-12-founder-post-hn-fame-confound
+    - id: 2026-08-12-buffer-s-growth-wasn-t-one-founder-post
+      summary: "Buffer's growth wasn't one founder post beating one PR post — it was
+        years of guest posts on other blogs · thread: The viral \"120x founder posts
+        beat PR\" stat has no traceable source"
+      last_used:
       provenance:
-        post_id: p_6a93d10d9830
-        round_id: quiet_machines:2026-08-11
-        report_label: 2026-08-11-peonping-listing-self-submission
+        post_id: p_59cca706f66c
+        round_id: founder_vs_pr:2026-08-12
+        report_label: 2026-08-12-founder-post-hn-fame-confound
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-11-github-stars-don-t-get-you-on-curated-li.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-12-the-viral-120x-founder-posts-beat-pr-sta.png
