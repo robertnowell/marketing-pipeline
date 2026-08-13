@@ -393,7 +393,7 @@ research:
       pre-existing "50,000 Twitter followers and 3 years of established social 
       credibility" as the real explanatory variable.…
     - Academic case-study methodology treats N≈5 as a floor for exploratory 
-      theory-building, not as evidence for a comparative magnitude claim.  
+      theory-building, not as evidence for a comparative magnitude claim. 
       Case-study research conventions (e.g., Eisenhardt's guidance on building 
       theory from case studies) support using ~5 cases to *generate* hypotheses,
       not to support a point-estimate causal claim like "beats by up to 120x." A
@@ -407,7 +407,7 @@ research:
       summary: 'Linear had zero prior Hacker News posts before its 2020 launch — but
         its founders had already sold a company to Coinbase · thread: The viral "120x
         founder posts beat PR" stat has no traceable source'
-      last_used:
+      last_used: '2026-08-12'
       provenance:
         post_id: p_a9b440a168d6
         round_id: founder_vs_pr:2026-08-12
@@ -416,7 +416,7 @@ research:
       summary: 'Superhuman had a 180,000-person waitlist and $75M raised before its
         famous HN post went up · thread: The viral "120x founder posts beat PR" stat
         has no traceable source'
-      last_used:
+      last_used: '2026-08-12'
       provenance:
         post_id: p_704943ca0640
         round_id: founder_vs_pr:2026-08-12
@@ -425,7 +425,7 @@ research:
       summary: "Eisenhardt's case-study rules say n≈5 builds a hypothesis, not a '120x'
         number · thread: The viral \"120x founder posts beat PR\" stat has no traceable
         source"
-      last_used:
+      last_used: '2026-08-12'
       provenance:
         post_id: p_6b52ff4cc915
         round_id: founder_vs_pr:2026-08-12
@@ -434,7 +434,7 @@ research:
       summary: "Supabase's 1,120-point HN launch had zero predecessor buzz — the 'already
         famous' critique isn't universal either · thread: The viral \"120x founder
         posts beat PR\" stat has no traceable source"
-      last_used:
+      last_used: '2026-08-12'
       provenance:
         post_id: p_615a52787820
         round_id: founder_vs_pr:2026-08-12
@@ -443,7 +443,7 @@ research:
       summary: "Buffer's growth wasn't one founder post beating one PR post — it was
         years of guest posts on other blogs · thread: The viral \"120x founder posts
         beat PR\" stat has no traceable source"
-      last_used:
+      last_used: '2026-08-12'
       provenance:
         post_id: p_59cca706f66c
         round_id: founder_vs_pr:2026-08-12
