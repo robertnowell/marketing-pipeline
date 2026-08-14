@@ -382,7 +382,7 @@ research:
       summary: "In 2022, dang manually swapped Temporal's Series B post for a third-party
         article, mid-thread · thread: Hacker News's founder-beats-PR funding-post
         claim has no traceable source"
-      last_used:
+      last_used: '2026-08-14'
       provenance:
         post_id: p_221afb07d79a
         round_id: founder_vs_pr:2026-08-14
@@ -391,7 +391,7 @@ research:
       summary: "dang caught a YC startup's coordinated votes on its own Launch HN
         thread in 2025 and emailed the founders · thread: Hacker News's founder-beats-PR
         funding-post claim has no traceable source"
-      last_used:
+      last_used: '2026-08-14'
       provenance:
         post_id: p_c94cca7e3d87
         round_id: founder_vs_pr:2026-08-14
@@ -400,7 +400,7 @@ research:
       summary: "HN's 'no fundraiser posts' rule targets Kickstarter asks, not funding
         round announcements — a 2025 test case · thread: Hacker News's founder-beats-PR
         funding-post claim has no traceable source"
-      last_used:
+      last_used: '2026-08-14'
       provenance:
         post_id: p_a112ca31ce96
         round_id: founder_vs_pr:2026-08-14
@@ -409,7 +409,7 @@ research:
       summary: "In 2021, Hacker News banned the entire dev.to domain — not one post,
         the whole site · thread: Hacker News's founder-beats-PR funding-post claim
         has no traceable source"
-      last_used:
+      last_used: '2026-08-14'
       provenance:
         post_id: p_29998b0ff6fe
         round_id: founder_vs_pr:2026-08-14
@@ -418,7 +418,7 @@ research:
       summary: "A brand-new Hacker News account needs a stranger to 'vouch' for it
         before its posts even show up · thread: Hacker News's founder-beats-PR funding-post
         claim has no traceable source"
-      last_used:
+      last_used: '2026-08-14'
       provenance:
         post_id: p_fd7441798214
         round_id: founder_vs_pr:2026-08-14
