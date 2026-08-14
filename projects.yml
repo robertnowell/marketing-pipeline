@@ -353,100 +353,75 @@ research:
   channels:
     - bluesky
   facts:
-    - The original "35x-120x" / "HN darlings" claim is untraceable.  Two 
-      independent agents ran 20+ search queries (exact-phrase, 
-      X/Twitter-restricted, reformulated) and found zero sources — Tier 1 
-      through 4 — referencing this claim, its numbers, or its five companies.
-    - "Cal.com, Retool, and GrooveHQ each had a substantial earlier HN hit before
-      the post most commonly credited with their growth.  Verified directly via HN
-      Algolia primary-source data: Calendso (Cal.com's predecessor) hit 311 points
-      in April 2021, ~21 months before the 576-point \"Cal.com: Open Scheduling Infrastructure\"\
-      \ post; Retool's 2017 Show HN (190 pts) predates its more-cited 2018 Show HN
-      (592…"
-    - Plausible Analytics' founder had a bigger, earlier HN hit than the post 
-      usually credited with its growth.  A depth-verification pass confirmed via
-      HN Algolia that founder Marko Saric's blog post hit HN's front page on 
-      April 8, 2020 with 462 points — outperforming, and predating by six 
-      months, the official "Show HN" post (Oct 6, 2020, 351 points) that 
-      growth-story retellings typically cite as the…
-    - Linear had no prior HN-specific history, but its founders carried outside 
-      pedigree, an investor-driven seed round, and a ~10,000-person waitlist 
-      over a year before their HN launch post.  Founders Karri Saarinen 
-      (ex-Airbnb Principal Designer, ex-Coinbase Head of Design), Tuomas Artman 
-      (ex-Uber), and Jori Lallo previously co-founded YC-backed Kippt (acquired 
-      by Coinbase, 2014). Linear's April 2019…
-    - Superhuman, Gumroad, and ConvertKit are pre-existing-audience cases too, 
-      but via press/personal-brand rather than HN specifically.  Superhuman ran 
-      invite-only for ~2 years with a reported 180,000-person waitlist and a 
-      $75M raise before any specific "founder post." Gumroad's Sahil Lavingia 
-      was already covered by Fast Company as a known ex-Pinterest designer. 
-      ConvertKit's Nathan Barry had a…
-    - "Supabase and PostHog are clear counter-examples: no predecessor buzz, first
-      HN story *was* the launch.  Both companies' largest and earliest HN stories
-      are literally their YC-launch posts (Supabase: 1,120 pts, May 2020; PostHog:
-      282 pts, Feb 2020) — nothing precedes them in HN's record. This means the \"\
-      already famous\" pattern in this genre is common but not universal."
-    - No source was found already making this specific critique of this specific
-      thread — but the identical structural critique is well-established 
-      elsewhere.  An Indie Hackers post by Davidson Vorhes explicitly 
-      deconstructs a different growth case study by pointing to the founder's 
-      pre-existing "50,000 Twitter followers and 3 years of established social 
-      credibility" as the real explanatory variable.…
-    - Academic case-study methodology treats N≈5 as a floor for exploratory 
-      theory-building, not as evidence for a comparative magnitude claim. 
-      Case-study research conventions (e.g., Eisenhardt's guidance on building 
-      theory from case studies) support using ~5 cases to *generate* hypotheses,
-      not to support a point-estimate causal claim like "beats by up to 120x." A
-      thread making that leap from 5…
+    - Five independent research passes (three breadth agents plus two targeted 
+      depth agents), including direct queries against HN's own Algolia search 
+      API for dang's full comment history, found no dang statement enumerating 
+      "two rules," and no dataset, analysis, blog post, or thread anywhere 
+      containing the "120x" figure.
+    - 'Two real, named, moderator-confirmed mechanisms cause HN posts — including
+      funding-round posts — to die independent of any self-promotion judgment: 1.'
+    - "The \"original source over press release\" rule. HN structurally prefers third-party
+      coverage to a company's own announcement; moderators actively swap submission
+      URLs away from company blog posts/press releases toward independent articles,
+      and dang has called this \"probably the #1 exception\" to HN's post-the-original-source
+      norm."
+    - This was directly confirmed on a real funding-round post (Temporal's 
+      Series B, 2022).
+    - This has been directly confirmed by dang on a real startup-launch thread 
+      (Cua's Launch HN, 2025), where he identified booster comments and 
+      coordinated votes and intervened directly with the founders.
+    - Neither mechanism cares whether the poster is a founder or a PR agency — 
+      which is the load-bearing insight for the "founder posts beat PR posts" 
+      intuition, even without the 120x number to back it.
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-12-founder-post-hn-fame-confound' dated 2026-08-12, and 
+      report '2026-08-14-hn-funding-post-moderation-rules' dated 2026-08-14, and
       from a simulated review round where 10 agent-written posts were ranked by 
       votes.
   angles:
-    - id: 2026-08-12-linear-had-zero-prior-hacker-news-posts
-      summary: 'Linear had zero prior Hacker News posts before its 2020 launch — but
-        its founders had already sold a company to Coinbase · thread: The viral "120x
-        founder posts beat PR" stat has no traceable source'
-      last_used: '2026-08-13'
+    - id: 2026-08-14-in-2022-dang-manually-swapped-temporal-s
+      summary: "In 2022, dang manually swapped Temporal's Series B post for a third-party
+        article, mid-thread · thread: Hacker News's founder-beats-PR funding-post
+        claim has no traceable source"
+      last_used:
       provenance:
-        post_id: p_a9b440a168d6
-        round_id: founder_vs_pr:2026-08-12
-        report_label: 2026-08-12-founder-post-hn-fame-confound
-    - id: 2026-08-12-superhuman-had-a-180-000-person-waitlist
-      summary: 'Superhuman had a 180,000-person waitlist and $75M raised before its
-        famous HN post went up · thread: The viral "120x founder posts beat PR" stat
-        has no traceable source'
-      last_used: '2026-08-14'
+        post_id: p_221afb07d79a
+        round_id: founder_vs_pr:2026-08-14
+        report_label: 2026-08-14-hn-funding-post-moderation-rules
+    - id: 2026-08-14-dang-caught-a-yc-startup-s-coordinated-v
+      summary: "dang caught a YC startup's coordinated votes on its own Launch HN
+        thread in 2025 and emailed the founders · thread: Hacker News's founder-beats-PR
+        funding-post claim has no traceable source"
+      last_used:
       provenance:
-        post_id: p_704943ca0640
-        round_id: founder_vs_pr:2026-08-12
-        report_label: 2026-08-12-founder-post-hn-fame-confound
-    - id: 2026-08-12-eisenhardt-s-case-study-rules-say-n-5-bu
-      summary: "Eisenhardt's case-study rules say n≈5 builds a hypothesis, not a '120x'
-        number · thread: The viral \"120x founder posts beat PR\" stat has no traceable
-        source"
-      last_used: '2026-08-12'
+        post_id: p_c94cca7e3d87
+        round_id: founder_vs_pr:2026-08-14
+        report_label: 2026-08-14-hn-funding-post-moderation-rules
+    - id: 2026-08-14-hn-s-no-fundraiser-posts-rule-targets-ki
+      summary: "HN's 'no fundraiser posts' rule targets Kickstarter asks, not funding
+        round announcements — a 2025 test case · thread: Hacker News's founder-beats-PR
+        funding-post claim has no traceable source"
+      last_used:
       provenance:
-        post_id: p_6b52ff4cc915
-        round_id: founder_vs_pr:2026-08-12
-        report_label: 2026-08-12-founder-post-hn-fame-confound
-    - id: 2026-08-12-supabase-s-1-120-point-hn-launch-had-zer
-      summary: "Supabase's 1,120-point HN launch had zero predecessor buzz — the 'already
-        famous' critique isn't universal either · thread: The viral \"120x founder
-        posts beat PR\" stat has no traceable source"
-      last_used: '2026-08-12'
+        post_id: p_a112ca31ce96
+        round_id: founder_vs_pr:2026-08-14
+        report_label: 2026-08-14-hn-funding-post-moderation-rules
+    - id: 2026-08-14-in-2021-hacker-news-banned-the-entire-de
+      summary: "In 2021, Hacker News banned the entire dev.to domain — not one post,
+        the whole site · thread: Hacker News's founder-beats-PR funding-post claim
+        has no traceable source"
+      last_used:
       provenance:
-        post_id: p_615a52787820
-        round_id: founder_vs_pr:2026-08-12
-        report_label: 2026-08-12-founder-post-hn-fame-confound
-    - id: 2026-08-12-buffer-s-growth-wasn-t-one-founder-post
-      summary: "Buffer's growth wasn't one founder post beating one PR post — it was
-        years of guest posts on other blogs · thread: The viral \"120x founder posts
-        beat PR\" stat has no traceable source"
-      last_used: '2026-08-12'
+        post_id: p_29998b0ff6fe
+        round_id: founder_vs_pr:2026-08-14
+        report_label: 2026-08-14-hn-funding-post-moderation-rules
+    - id: 2026-08-14-a-brand-new-hacker-news-account-needs-a
+      summary: "A brand-new Hacker News account needs a stranger to 'vouch' for it
+        before its posts even show up · thread: Hacker News's founder-beats-PR funding-post
+        claim has no traceable source"
+      last_used:
       provenance:
-        post_id: p_59cca706f66c
-        round_id: founder_vs_pr:2026-08-12
-        report_label: 2026-08-12-founder-post-hn-fame-confound
+        post_id: p_fd7441798214
+        round_id: founder_vs_pr:2026-08-14
+        report_label: 2026-08-14-hn-funding-post-moderation-rules
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-12-the-viral-120x-founder-posts-beat-pr-sta.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-14-hacker-news-s-founder-beats-pr-funding-p.png
