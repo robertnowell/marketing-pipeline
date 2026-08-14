@@ -6231,3 +6231,9 @@
   angle: 2026-08-12-linear-had-zero-prior-hacker-news-posts
   source_id: ''
   posted_at: '2026-08-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mt224icskv2d
+  angle: 2026-08-12-superhuman-had-a-180-000-person-waitlist
+  source_id: ''
+  posted_at: '2026-08-14'
