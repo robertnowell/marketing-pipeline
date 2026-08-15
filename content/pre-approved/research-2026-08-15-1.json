@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-15-1",
+  "date": "2026-08-15",
+  "project": "research",
+  "angle": "2026-08-15-in-january-2024-the-c2pa-standard-delete",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's invisible watermark can't identify who wrote a prompt. Effective Aug 2, 2026, Anthropic adds a statistical word-choice watermark to all outputs. No source, including Anthropic's, says it encodes a user ID. Traceability comes from account logs, not the watermark."
+    }
+  ]
+}

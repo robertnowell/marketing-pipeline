@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-15-3",
+  "date": "2026-08-15",
+  "project": "research",
+  "angle": "2026-08-15-since-august-2-2026-pasting-your-own-par",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Since August 2, 2026, Claude watermarks every output worldwide, even a paraphrase you paste for a translation check. It can't identify which user wrote it: the watermark is a statistical word-bias scheme, not an ID field. Only Anthropic's account/IP logs, under subpoena, can trace it to you."
+    }
+  ]
+}

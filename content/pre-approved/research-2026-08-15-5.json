@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-15-5",
+  "date": "2026-08-15",
+  "project": "research",
+  "angle": "2026-08-15-your-own-employer-s-compliance-api-key-c",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's watermark is a statistical word-bias, not an ID field, no source says it encodes who generated an output. But if your company has Compliance API access, it returns actor.user_id, actor.email_address, actor.ip_address per event. No warrant needed for your own employer to see that."
+    }
+  ]
+}

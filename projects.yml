@@ -418,7 +418,7 @@ research:
       summary: "In January 2024, the C2PA standard deleted the field that could have
         named the human behind an image · thread: Claude's invisible watermark can't
         identify which user generated it"
-      last_used:
+      last_used: '2026-08-15'
       provenance:
         post_id: p_14b2d9c4934e
         round_id: quiet_machines:2026-08-15
@@ -427,7 +427,7 @@ research:
       summary: "Anthropic promised watermark-detection docs 'forthcoming' — as of
         August 2026 they still don't exist · thread: Claude's invisible watermark
         can't identify which user generated it"
-      last_used:
+      last_used: '2026-08-15'
       provenance:
         post_id: p_4a8608d596db
         round_id: quiet_machines:2026-08-15
@@ -436,7 +436,7 @@ research:
       summary: "Since August 2, 2026, pasting your own paragraph into Claude just
         for a translation check gets it watermarked too · thread: Claude's invisible
         watermark can't identify which user generated it"
-      last_used:
+      last_used: '2026-08-15'
       provenance:
         post_id: p_0e77896e7bf2
         round_id: quiet_machines:2026-08-15
@@ -445,7 +445,7 @@ research:
       summary: "A screenshot wipes an AI image's Content Credentials tag completely
         — Google's Gemini watermark skips that problem by not being about you at all
         · thread: Claude's invisible watermark can't identify which user generated…"
-      last_used:
+      last_used: '2026-08-15'
       provenance:
         post_id: p_69d8a104fcf8
         round_id: quiet_machines:2026-08-15
@@ -454,7 +454,7 @@ research:
       summary: "Your own employer's Compliance API key can trace a Claude chat to
         your email and IP — no warrant required · thread: Claude's invisible watermark
         can't identify which user generated it"
-      last_used:
+      last_used: '2026-08-15'
       provenance:
         post_id: p_64d8c5cf036e
         round_id: quiet_machines:2026-08-15

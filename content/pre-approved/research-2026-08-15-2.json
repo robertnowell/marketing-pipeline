@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-15-2",
+  "date": "2026-08-15",
+  "project": "research",
+  "angle": "2026-08-15-anthropic-promised-watermark-detection-d",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Worried Claude's invisible watermark could expose your identity? It can't. It's a statistical word-bias scheme with no ID slot. Traceability comes from Anthropic's account/IP logs (Compliance API: user_id, email, ip_address), not the watermark. Rolled out Aug 2, 2026."
+    }
+  ]
+}

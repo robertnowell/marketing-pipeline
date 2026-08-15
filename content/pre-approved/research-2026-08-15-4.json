@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-15-4",
+  "date": "2026-08-15",
+  "project": "research",
+  "angle": "2026-08-15-a-screenshot-wipes-an-ai-image-s-content",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's watermark isn't a hidden ID field, it's a statistical word-choice bias (green-list vocabulary), and no source, including Anthropic's own docs, says it encodes user data. Screenshots strip the separate C2PA tag entirely. Real tracing runs through account/session logs, not the watermark."
+    }
+  ]
+}
