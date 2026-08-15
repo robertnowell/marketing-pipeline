@@ -6261,3 +6261,9 @@
   angle: 2026-08-14-a-brand-new-hacker-news-account-needs-a
   source_id: research-2026-08-14-5
   posted_at: '2026-08-14'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mt4iu25l4e2x
+  angle: 2026-08-14-in-2022-dang-manually-swapped-temporal-s
+  source_id: ''
+  posted_at: '2026-08-15'
