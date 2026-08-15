@@ -6273,3 +6273,33 @@
   angle: 2026-08-14-dang-caught-a-yc-startup-s-coordinated-v
   source_id: ''
   posted_at: '2026-08-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mt4qmtdf4k2h
+  angle: 2026-08-15-in-january-2024-the-c2pa-standard-delete
+  source_id: research-2026-08-15-1
+  posted_at: '2026-08-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mt4qmujzgq2d
+  angle: 2026-08-15-anthropic-promised-watermark-detection-d
+  source_id: research-2026-08-15-2
+  posted_at: '2026-08-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mt4qmvphos2x
+  angle: 2026-08-15-since-august-2-2026-pasting-your-own-par
+  source_id: research-2026-08-15-3
+  posted_at: '2026-08-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mt4qmwy3hs22
+  angle: 2026-08-15-a-screenshot-wipes-an-ai-image-s-content
+  source_id: research-2026-08-15-4
+  posted_at: '2026-08-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mt4qmy56xk2g
+  angle: 2026-08-15-your-own-employer-s-compliance-api-key-c
+  source_id: research-2026-08-15-5
+  posted_at: '2026-08-15'
