@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-16-3",
+  "date": "2026-08-16",
+  "project": "research",
+  "angle": "2026-08-16-on-claude-s-compliance-api-a-company-s-o",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Anthropic says its own watermark on Claude text \"carries no identifying information and can't be traced to a specific person, organization, or chat.\" If you assumed the watermark could expose which employee used AI on a deliverable, it can't, per Anthropic itself."
+    }
+  ]
+}

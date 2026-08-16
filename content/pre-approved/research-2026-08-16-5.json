@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-16-5",
+  "date": "2026-08-16",
+  "project": "research",
+  "angle": "2026-08-16-a-2026-arxiv-paper-found-some-c2pa-valid",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you think Claude's watermark could expose you as the source of AI-written content, Anthropic says it can't. Anthropic, the company behind Claude: \"Watermarking carries no identifying information and can't be traced to a specific person, organization, or chat.\" Nothing in the key recovers your identity."
+    }
+  ]
+}

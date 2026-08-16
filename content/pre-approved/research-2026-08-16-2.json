@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-16-2",
+  "date": "2026-08-16",
+  "project": "research",
+  "angle": "2026-08-16-anthropic-reported-exactly-1-government",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Anthropic says Claude's watermark on generated text can't identify you: \"Watermarking carries no identifying information and can't be traced to a specific person, organization, or chat.\" If you've been avoiding AI drafts over fear of being traced, that fear is unfounded by design. But it also means you can't use the watermark to prove you wrote something."
+    }
+  ]
+}

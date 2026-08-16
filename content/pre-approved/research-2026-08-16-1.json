@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-16-1",
+  "date": "2026-08-16",
+  "project": "research",
+  "angle": "2026-08-16-eth-zurich-s-sri-lab-tested-the-tech-beh",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Anthropic says Claude's text watermark can't identify you: \"There's nothing in the watermark, or its key, that would allow anyone to recover any information about the user, their organization, or their chats with Claude.\" Worth knowing if you use Claude for client work."
+    }
+  ]
+}

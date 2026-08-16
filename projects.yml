@@ -368,7 +368,7 @@ research:
       summary: "ETH Zurich's SRI Lab tested the tech behind Claude's watermark: forging
         it works 4-15% of the time, erasing it works 90-100% · thread: Claude's watermark
         can't identify you — but Anthropic's own logs can"
-      last_used:
+      last_used: '2026-08-16'
       provenance:
         post_id: p_02c96e806239
         round_id: quiet_machines:2026-08-16
@@ -377,7 +377,7 @@ research:
       summary: "Anthropic reported exactly 1 government request for user info in each
         half of 2024 — except the one category it's legally required to blur to \"\
         somewhere between 0 and 99\" · thread: Claude's watermark can't identify you…"
-      last_used:
+      last_used: '2026-08-16'
       provenance:
         post_id: p_26bd3cb005a2
         round_id: quiet_machines:2026-08-16
@@ -386,7 +386,7 @@ research:
       summary: "On Claude's Compliance API, a company's 'organization admin' role
         hits a 403 error trying to read your chats · thread: Claude's watermark can't
         identify you — but Anthropic's own logs can"
-      last_used:
+      last_used: '2026-08-16'
       provenance:
         post_id: p_3ae49dc29ae9
         round_id: quiet_machines:2026-08-16
@@ -395,7 +395,7 @@ research:
       summary: "Your Claude chat can be deleted and your usage trail still lives for
         6 years · thread: Claude's watermark can't identify you — but Anthropic's
         own logs can"
-      last_used:
+      last_used: '2026-08-16'
       provenance:
         post_id: p_83269eaa6e1f
         round_id: quiet_machines:2026-08-16
@@ -404,7 +404,7 @@ research:
       summary: "A 2026 arXiv paper found some C2PA validators accept revoked certificates
         — and disagree with each other on the same file · thread: Claude's watermark
         can't identify you — but Anthropic's own logs can"
-      last_used:
+      last_used: '2026-08-16'
       provenance:
         post_id: p_9e7a47d9a13c
         round_id: quiet_machines:2026-08-16
