@@ -6303,3 +6303,21 @@
   angle: 2026-08-15-your-own-employer-s-compliance-api-key-c
   source_id: research-2026-08-15-5
   posted_at: '2026-08-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mt6zdk3i5b25
+  angle: 2026-08-16-eth-zurich-s-sri-lab-tested-the-tech-beh
+  source_id: research-2026-08-16-1
+  posted_at: '2026-08-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mt6zdm65yn2x
+  angle: 2026-08-16-on-claude-s-compliance-api-a-company-s-o
+  source_id: research-2026-08-16-3
+  posted_at: '2026-08-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mt6zdnsdye2u
+  angle: 2026-08-16-your-claude-chat-can-be-deleted-and-your
+  source_id: research-2026-08-16-4
+  posted_at: '2026-08-16'
