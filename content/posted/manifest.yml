@@ -6321,3 +6321,33 @@
   angle: 2026-08-16-your-claude-chat-can-be-deleted-and-your
   source_id: research-2026-08-16-4
   posted_at: '2026-08-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtbka44i4d2x
+  angle: 2026-08-17-anthropic-s-2026-policy-your-claude-chat
+  source_id: research-2026-08-17-1
+  posted_at: '2026-08-17'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtbka5uf6d2x
+  angle: 2026-08-17-anthropic-hasn-t-published-who-can-query
+  source_id: research-2026-08-17-2
+  posted_at: '2026-08-17'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtbka7ii7n22
+  angle: 2026-08-17-c2pa-2-4-lets-an-ai-watermark-carry-iden
+  source_id: research-2026-08-17-3
+  posted_at: '2026-08-17'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtbkab3d7p2w
+  angle: 2026-08-17-every-claude-api-call-carries-a-request
+  source_id: research-2026-08-17-4
+  posted_at: '2026-08-17'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtbkacqemc2z
+  angle: 2026-08-17-before-anthropic-ever-announced-a-waterm
+  source_id: research-2026-08-17-5
+  posted_at: '2026-08-17'
