@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-17-4",
+  "date": "2026-08-17",
+  "project": "research",
+  "angle": "2026-08-17-every-claude-api-call-carries-a-request",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's AI watermark carries no identifying info, Anthropic says: nothing in it 'would allow anyone to recover any information about the user.' But Anthropic's Privacy Policy shows it separately collects your name, email, IP, and keeps every prompt tied to your account, not anonymized."
+    }
+  ]
+}

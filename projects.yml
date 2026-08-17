@@ -408,7 +408,7 @@ research:
       summary: "Anthropic's 2026 policy: your Claude chat is gone in 30 days, the
         safety score generated from it can last 7 years · thread: Claude's AI watermark
         carries no identity — but internal logs might"
-      last_used:
+      last_used: '2026-08-17'
       provenance:
         post_id: p_1781787f7446
         round_id: quiet_machines:2026-08-17
@@ -417,7 +417,7 @@ research:
       summary: "Anthropic hasn't published who can query its Claude watermark detector
         — the debate about it right now is about erasing it, not identifying you ·
         thread: Claude's AI watermark carries no identity — but internal logs…"
-      last_used:
+      last_used: '2026-08-17'
       provenance:
         post_id: p_0f1f2f333c98
         round_id: quiet_machines:2026-08-17
@@ -426,7 +426,7 @@ research:
       summary: "C2PA 2.4 lets an AI watermark carry identity fields — Anthropic's
         Aug 2026 Claude implementation leaves them blank · thread: Claude's AI watermark
         carries no identity — but internal logs might"
-      last_used:
+      last_used: '2026-08-17'
       provenance:
         post_id: p_41ef2eccf3f3
         round_id: quiet_machines:2026-08-17
@@ -435,7 +435,7 @@ research:
       summary: "Every Claude API call carries a request-id tied to your account. On
         Nov 7, 2025, a judge ordered OpenAI to hand over 20 million chat logs the
         same way · thread: Claude's AI watermark carries no identity — but internal…"
-      last_used:
+      last_used: '2026-08-17'
       provenance:
         post_id: p_aaa58a73ef02
         round_id: quiet_machines:2026-08-17
@@ -444,7 +444,7 @@ research:
       summary: "Before Anthropic ever announced a watermark, Claude Code was secretly
         tagging users in Chinese timezones with invisible Unicode characters, March
         to July 2026 · thread: Claude's AI watermark carries no identity — but…"
-      last_used:
+      last_used: '2026-08-17'
       provenance:
         post_id: p_e0608ea261e9
         round_id: quiet_machines:2026-08-17

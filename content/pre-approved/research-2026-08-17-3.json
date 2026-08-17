@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-17-3",
+  "date": "2026-08-17",
+  "project": "research",
+  "angle": "2026-08-17-c2pa-2-4-lets-an-ai-watermark-carry-iden",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's new AI watermark carries no identity: Anthropic says it 'can't be traced to a specific person, organization, or chat.' But Anthropic's own Privacy Policy retains your prompts and outputs, tied to your account, not stored as anonymous strings. The mark is blank. The logs aren't."
+    }
+  ]
+}

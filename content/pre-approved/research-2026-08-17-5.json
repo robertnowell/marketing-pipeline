@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-17-5",
+  "date": "2026-08-17",
+  "project": "research",
+  "angle": "2026-08-17-before-anthropic-ever-announced-a-waterm",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's new watermark carries no identifying info, Anthropic says: it \"can't be traced to a specific person, organization, or chat.\" But your account already can be, per their Privacy Policy: prompts and outputs are retained and tied to your name, email, IP. The mark's anonymous. You're not."
+    }
+  ]
+}
