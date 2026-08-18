@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-17-sib-2026-08-17-c2pa-2-4-lets-2",
+  "date": "2026-08-17",
+  "project": "research",
+  "angle": "angle:sib-2026-08-17-2026-08-17-c2pa-2-4-lets-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI image metadata only ever names the tool that made it, not you. The spec behind it, C2PA, permits adding personal-identity fields, it just doesn't require them. Anthropic left them out of Claude's images. Others might not. Source: C2PA Technical Specification"
+    }
+  ]
+}
