@@ -2,11 +2,11 @@
   "id": "research-2026-08-17-4",
   "date": "2026-08-17",
   "project": "research",
-  "angle": "2026-08-17-every-claude-api-call-carries-a-request",
+  "angle": "2026-08-17-the-11-boxes-in-that-your-agent-is-a-fol",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Claude's AI watermark carries no identifying info, Anthropic says: nothing in it 'would allow anyone to recover any information about the user.' But Anthropic's Privacy Policy shows it separately collects your name, email, IP, and keeps every prompt tied to your account, not anonymized."
+      "text": "A viral poster credited to LangChain, the AI-agent framework, wasn't made by them. Content's verbatim accurate, the artifact's unofficial. The 'AI infra house style' it supposedly proves doesn't exist as a documented pattern across primary sources. Verify provenance before you copy a look."
     }
   ]
 }

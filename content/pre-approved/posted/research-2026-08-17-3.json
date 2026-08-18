@@ -2,11 +2,11 @@
   "id": "research-2026-08-17-3",
   "date": "2026-08-17",
   "project": "research",
-  "angle": "2026-08-17-c2pa-2-4-lets-an-ai-watermark-carry-iden",
+  "angle": "2026-08-17-a-poster-s-headline-lines-overlap-by-8-p",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Claude's new AI watermark carries no identity: Anthropic says it 'can't be traced to a specific person, organization, or chat.' But Anthropic's own Privacy Policy retains your prompts and outputs, tied to your account, not stored as anonymous strings. The mark is blank. The logs aren't."
+      "text": "A poster claiming to reveal an 'AI startup house style' went viral, credited to a company that didn't make it. That was the central hypothesis of a design teardown, and it doesn't survive contact with primary sources: no such shared house style exists. If you're copying the 'AI aesthetic' for credibility, you're copying a myth."
     }
   ]
 }

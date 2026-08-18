@@ -2,11 +2,11 @@
   "id": "research-2026-08-17-2",
   "date": "2026-08-17",
   "project": "research",
-  "angle": "2026-08-17-anthropic-hasn-t-published-who-can-query",
+  "angle": "2026-08-17-a-viral-design-poster-s-font-got-id-d-by",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Claude's AI watermark holds no identifying data, Anthropic says: \"nothing in the watermark, or its key, that would allow anyone to recover any information about the user.\" Its Privacy Policy confirms prompts and outputs are stored, tied to your account. The mark's clean. Your account logs aren't."
+      "text": "A viral 'AI agent' poster wasn't made by the company it credits, but the text checks out. Its font was traced from one letterform: a single-storey lowercase g with an open descending hook, to Reckless Neue. Copying the 'AI-infra house style' for your own deck? It doesn't exist as documented."
     }
   ]
 }
