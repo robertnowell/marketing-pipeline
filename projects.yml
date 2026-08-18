@@ -353,101 +353,88 @@ research:
   channels:
     - bluesky
   facts:
-    - '### Theme A — What the mark itself contains (technical design)'
-    - "Anthropic explicitly states the text watermark carries no identifying information.
-      *( — Tier 1)* > \"Watermarking carries no identifying information and can't
-      be traced to a specific person, organization, or chat.\" / \"There's nothing
-      in the watermark, or its key, that would allow anyone to recover any information
-      about the user, their organization, or their chats with Claude.\" Source: [How…"
-    - "The watermark is Anthropic's implementation of Google DeepMind's SynthID-Text
-      scheme, which biases word-selection randomness using a cryptographic key plus
-      preceding context, applied at the model level across all Claude surfaces (Claude.ai,
-      API, Claude Code, Claude Cowork) launched on/after August 2, 2026. *( — Tier
-      1/2)* Sources: [Anthropic…"
-    - "C2PA file metadata (for images like PNG/JPG/SVG) is a signed note stating only
-      \"made or processed with Claude\" — not who made it. Anthropic: \"Nothing in
-      the file changes—it is not embedded or hidden,\" and like the text watermark,
-      \"it doesn't include any identifying information.\" *( — Tier 1)* Source: [Anthropic
-      announcement](https://www.anthropic.com/news/claude-text-watermark) [Tier 1]"
-    - "The C2PA standard's \"signing identity\" is generally scoped to the organization/tool
-      that signs the manifest (via X.509 certificate), not the end user — and the
-      spec permits but does not require richer identity fields depending on implementation
-      choices. Anthropic's implementation deliberately excludes such fields. *( —
-      Tier 1, official C2PA spec)* Source: [C2PA Technical Specification…"
-    - 'Detection only proves "Claude was likely involved at some point" — it cannot
-      distinguish authorship from heavy editing, cannot confirm no other AI was involved,
-      and can be stripped by format conversion, re-saving, or screenshots. *( — Tier
-      1)* Source: [Anthropic announcement](https://www.anthropic.com/news/claude-text-watermark)
-      [Tier 1]; corroborated by [ITWeb, quoting named SA tech…'
-    - "Anthropic's Help Center frames the mark's purpose strictly as \"may have been
-      processed by Claude,\" explicitly stating a detection is \"not fully conclusive\"\
-      \ and does not confirm full provenance. No mention anywhere of user-identification
-      as a use case. *( — Tier 1)* Source: [How Claude marks AI-generated…"
-    - 'Stated purpose is regulatory compliance (EU AI Act Article 50 / EU Code of
-      Practice on Transparency of AI-Generated Content), not enforcement, copyright,
-      or forensic tracing. No Anthropic source mentions law enforcement or copyright
-      use cases for the watermark itself. *( — Tier 1/2)* Sources: [Anthropic announcement](https://www.anthropic.com/news/claude-text-watermark)
-      [Tier 1];…'
-    - SynthID-Text's underlying key architecture (per Google's own developer 
-      docs) is described as a per-deployment secret, not a documented 
-      per-user/per-session variable — though because the algorithm takes `keys` 
-      as a runtime parameter, nothing in the published material rules out a 
-      deployer technically varying keys per user. No source states Anthropic 
-      does this, and independent analysis found "no…
-    - "Anthropic's Privacy Policy confirms it collects direct identifiers (name, email,
-      phone), indirect identifiers, IP address (including derived device location),
-      device/browser info, payment data, and log files — and that prompts/outputs
-      (\"Inputs/Outputs\") are retained and associated with the account, not stored
-      as anonymous strings. *( — Tier 1)* Source: [Anthropic Privacy…"
+    - 1.1 Provenance — accurate content, unofficial form (resolved) — The 
+      product is real and the content is verbatim accurate. [Tier 1, LangChain's
+      own properties]
+    - '1.1b The headline typeface — strongest lead: Reckless / Reckless Neue (Displaay)
+      — My measured target: cap 53px, x-height/cap 0.66, width-per-cap 7.05, high
+      stroke contrast, single-storey `g` with an open descending hook, drop/ball terminals,
+      shallow descender (~0.17 cap).'
+    - '1.2 The measured system (all Tier 1 — direct measurement of the artifact) —
+      Tonal system — 7 values for the entire document:'
+    - "2.1 Swiss / International Typographic Style — present in method, not in citation
+      — Likely. Gerstner's own formulation of the \"programme\" idea is directly attested
+      from primary excerpts: *\"The difficulty is: to find the balance, the maximum
+      of conformity to a rule with the maximum of freedom."
+    - 2.2 The "AI-infra house style" — does not exist as documented — This was 
+      the central hypothesis and it does not survive contact with primary 
+      sources.
+    - '2.3 Terminal / window chrome — Established: a purpose-built tooling ecosystem
+      exists for exactly this visual — Carbon (carbon.now.sh, by Dawn Labs; 20,000+
+      GitHub stars) and ray.so (Raycast), both of which wrap content in a macOS-style
+      title bar with traffic-light dots.'
+    - 2.4 Paper grain on a screen-native artifact — Likely. Design press frames 
+      the 2025–26 texture revival as a deliberate counter-signal to 
+      over-polished, AI-generated visual perfection — Creative Bloq's 2026 
+      trends piece names "texture, warmth and tactile rebellion" as a category.
+    - 2.5 Reductionism / Rams — Established, Tier 1, verbatim from Vitsœ (the 
+      authorised publisher of the ten principles).
+    - '2.6 On dropping accent colour in a marketing artifact — Established: the conversion-optimisation
+      position is that no single colour "wins" — contrast against surroundings, not
+      hue, is what drives measurable effect. [Tier 2 — CXL] Since the accent-colour
+      myth is itself debunked in performance-marketing research, dropping accent colour
+      is not shown to cost anything by itself, provided ink/ground…'
+    - (a) Uneven columns 217/293/257/165 in one 4-up section, even quarters in 
+      the next — DEFENSIBLE, and executed to the pixel — Measured directly.
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-17-claude-watermark-account-traceability' dated 
-      2026-08-17, and from a simulated review round where 10 agent-written posts
-      were ranked by votes.
+      report '2026-08-17-agent-folder-poster-design-system' dated 2026-08-17, 
+      and from a simulated review round where 10 agent-written posts were ranked
+      by votes.
   angles:
-    - id: 2026-08-17-anthropic-s-2026-policy-your-claude-chat
-      summary: "Anthropic's 2026 policy: your Claude chat is gone in 30 days, the
-        safety score generated from it can last 7 years · thread: Claude's AI watermark
-        carries no identity — but internal logs might"
-      last_used: '2026-08-17'
+    - id: 2026-08-17-jan-tschichold-s-1928-typography-manifes
+      summary: "Jan Tschichold's 1928 typography manifesto got cited backward before
+        someone actually read it · thread: Viral \"AI agent\" design poster wasn't
+        made by the company it credits"
+      last_used:
       provenance:
-        post_id: p_1781787f7446
+        post_id: p_1ffbb3b2ac24
         round_id: quiet_machines:2026-08-17
-        report_label: 2026-08-17-claude-watermark-account-traceability
-    - id: 2026-08-17-anthropic-hasn-t-published-who-can-query
-      summary: "Anthropic hasn't published who can query its Claude watermark detector
-        — the debate about it right now is about erasing it, not identifying you ·
-        thread: Claude's AI watermark carries no identity — but internal logs…"
-      last_used: '2026-08-17'
+        report_label: 2026-08-17-agent-folder-poster-design-system
+    - id: 2026-08-17-a-viral-design-poster-s-font-got-id-d-by
+      summary: "A viral design poster's font got ID'd by one rare letter: a single-storey
+        lowercase g · thread: Viral \"AI agent\" design poster wasn't made by the
+        company it credits"
+      last_used:
       provenance:
-        post_id: p_0f1f2f333c98
+        post_id: p_5f69a110294e
         round_id: quiet_machines:2026-08-17
-        report_label: 2026-08-17-claude-watermark-account-traceability
-    - id: 2026-08-17-c2pa-2-4-lets-an-ai-watermark-carry-iden
-      summary: "C2PA 2.4 lets an AI watermark carry identity fields — Anthropic's
-        Aug 2026 Claude implementation leaves them blank · thread: Claude's AI watermark
-        carries no identity — but internal logs might"
-      last_used: '2026-08-17'
+        report_label: 2026-08-17-agent-folder-poster-design-system
+    - id: 2026-08-17-a-poster-s-headline-lines-overlap-by-8-p
+      summary: "A poster's headline lines overlap by 8 pixels in their bounding boxes
+        and still never touch — because of these specific words · thread: Viral \"\
+        AI agent\" design poster wasn't made by the company it credits"
+      last_used:
       provenance:
-        post_id: p_41ef2eccf3f3
+        post_id: p_dbe4ea7b15a2
         round_id: quiet_machines:2026-08-17
-        report_label: 2026-08-17-claude-watermark-account-traceability
-    - id: 2026-08-17-every-claude-api-call-carries-a-request
-      summary: "Every Claude API call carries a request-id tied to your account. On
-        Nov 7, 2025, a judge ordered OpenAI to hand over 20 million chat logs the
-        same way · thread: Claude's AI watermark carries no identity — but internal…"
-      last_used: '2026-08-17'
+        report_label: 2026-08-17-agent-folder-poster-design-system
+    - id: 2026-08-17-the-11-boxes-in-that-your-agent-is-a-fol
+      summary: "The 11 boxes in that 'your agent is a folder' poster sit on a hand-fitted
+        ellipse, not a circle · thread: Viral \"AI agent\" design poster wasn't made
+        by the company it credits"
+      last_used:
       provenance:
-        post_id: p_aaa58a73ef02
+        post_id: p_c4bd2b3f1db8
         round_id: quiet_machines:2026-08-17
-        report_label: 2026-08-17-claude-watermark-account-traceability
-    - id: 2026-08-17-before-anthropic-ever-announced-a-waterm
-      summary: "Before Anthropic ever announced a watermark, Claude Code was secretly
-        tagging users in Chinese timezones with invisible Unicode characters, March
-        to July 2026 · thread: Claude's AI watermark carries no identity — but…"
-      last_used: '2026-08-17'
+        report_label: 2026-08-17-agent-folder-poster-design-system
+    - id: 2026-08-17-anthropic-s-actual-brand-file-specifies
+      summary: "Anthropic's actual brand file specifies three accent colors — the
+        'zero-color AI aesthetic' credited to it doesn't exist there · thread: Viral
+        \"AI agent\" design poster wasn't made by the company it credits"
+      last_used:
       provenance:
-        post_id: p_e0608ea261e9
+        post_id: p_4a9d4a1a9607
         round_id: quiet_machines:2026-08-17
-        report_label: 2026-08-17-claude-watermark-account-traceability
+        report_label: 2026-08-17-agent-folder-poster-design-system
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-17-claude-s-ai-watermark-carries-no-identit.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-17-viral-ai-agent-design-poster-wasn-t-made.png
