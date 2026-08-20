@@ -6387,3 +6387,45 @@
   angle: 2026-08-17-a-viral-design-poster-s-font-got-id-d-by
   source_id: ''
   posted_at: '2026-08-19'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtj3nexns52x
+  angle: angle:sib-2026-08-17-2026-08-17-c2pa-2-4-lets-1
+  source_id: research-2026-08-17-sib-2026-08-17-c2pa-2-4-lets-1
+  posted_at: '2026-08-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtj3ngi4pg2f
+  angle: angle:sib-2026-08-17-2026-08-17-c2pa-2-4-lets-2
+  source_id: research-2026-08-17-sib-2026-08-17-c2pa-2-4-lets-2
+  posted_at: '2026-08-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtj3nhxynb2z
+  angle: 2026-08-19-a-2023-icml-paper-s-green-list-trick-not
+  source_id: research-2026-08-19-1
+  posted_at: '2026-08-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtj3njgf5z2g
+  angle: 2026-08-19-claude-s-watermark-went-global-on-august
+  source_id: research-2026-08-19-2
+  posted_at: '2026-08-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtj3nkwhfm2d
+  angle: 2026-08-19-anthropic-s-proof-its-watermark-can-t-id
+  source_id: research-2026-08-19-3
+  posted_at: '2026-08-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtj3nmhohu2x
+  angle: 2026-08-19-claude-s-ai-made-this-image-tag-is-a-not
+  source_id: research-2026-08-19-4
+  posted_at: '2026-08-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtj3nnvxyv2u
+  angle: 2026-08-19-claude-s-watermark-is-weakest-on-exactly
+  source_id: research-2026-08-19-5
+  posted_at: '2026-08-20'
