@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-19-5",
+  "date": "2026-08-19",
+  "project": "research",
+  "angle": "2026-08-19-claude-s-watermark-is-weakest-on-exactly",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's new watermark can't prove you wrote something, and it barely works on the content most likely to spread unattributed. Anthropic says short text and code give it little room to hide a pattern, and a full rewrite defeats it entirely. The watermark carries no user or account info by design."
+    }
+  ]
+}

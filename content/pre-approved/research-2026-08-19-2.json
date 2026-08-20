@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-19-2",
+  "date": "2026-08-19",
+  "project": "research",
+  "angle": "2026-08-19-claude-s-watermark-went-global-on-august",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's watermark can prove a Claude model touched your content, not that you wrote it. Anthropic says nothing in the watermark, or its key, can identify the user, their organization, or their chats with Claude. It's rolled out globally by default, no confirmed opt-out, since August 2, 2026."
+    }
+  ]
+}

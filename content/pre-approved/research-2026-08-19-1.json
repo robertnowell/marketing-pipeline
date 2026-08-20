@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-19-1",
+  "date": "2026-08-19",
+  "project": "research",
+  "angle": "2026-08-19-a-2023-icml-paper-s-green-list-trick-not",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's AI watermark can't be traced to you. It works by biasing word choices, not hidden tags: when multiple next words are equally good, a secret key picks one. Anthropic says: \"nothing in the watermark, or its key, that would allow anyone to recover any information about the user.\""
+    }
+  ]
+}

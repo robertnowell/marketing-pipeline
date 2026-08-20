@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-19-3",
+  "date": "2026-08-19",
+  "project": "research",
+  "angle": "2026-08-19-anthropic-s-proof-its-watermark-can-t-id",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Anthropic says Claude's watermark can't ID you: \"There's nothing in the watermark, or its key, that would allow anyone to recover any information about the user, their organization, or their chats with Claude.\" The detection API doesn't exist yet, only \"forthcoming technical documentation.\""
+    }
+  ]
+}

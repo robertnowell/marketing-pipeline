@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-19-4",
+  "date": "2026-08-19",
+  "project": "research",
+  "angle": "2026-08-19-claude-s-ai-made-this-image-tag-is-a-not",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's image watermark is a signed C2PA file with a timestamp, like a notary stamp. Screenshot it and that's gone. Text gets an invisible statistical watermark instead. Anthropic says neither carries user or account info: it proves 'a Claude model touched this,' not who wrote it."
+    }
+  ]
+}
