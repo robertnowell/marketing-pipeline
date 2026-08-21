@@ -6429,3 +6429,9 @@
   angle: 2026-08-19-claude-s-watermark-is-weakest-on-exactly
   source_id: research-2026-08-19-5
   posted_at: '2026-08-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtlm5lk7i42h
+  angle: 2026-08-19-a-2023-icml-paper-s-green-list-trick-not
+  source_id: ''
+  posted_at: '2026-08-21'
