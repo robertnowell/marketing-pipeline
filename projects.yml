@@ -353,113 +353,72 @@ research:
   channels:
     - bluesky
   facts:
-    - "Two separate mechanisms cover two separate media types — an imperceptible SynthID-Text-based
-      statistical watermark for text, and a visible/removable but cryptographically-signed
-      C2PA manifest for image/vector files. — Confidence: Established Anthropic's
-      own announcement and Help Center article both describe these as distinct systems
-      with different properties (imperceptible vs. metadata-visible,…"
-    - "The text watermark works by biasing word-choice randomness with a secret key,
-      not by inserting hidden characters. Where Claude has multiple roughly-equally-good
-      next-token options, a function of Anthropic's key plus recent context determines
-      which one gets picked; the resulting statistical pattern is undetectable to
-      a reader but detectable to whoever holds the key. — Confidence: Established…"
-    - "Neither the text watermark nor the C2PA metadata contains user, account, or
-      organization-identifying information — this is Anthropic's explicit, repeated
-      claim. — Confidence: Established > \"There's nothing in the watermark, or its
-      key, that would allow anyone to recover any information about the user, their
-      organization, or their chats with Claude.\" > \"The metadata identifies only
-      that Claude was…"
-    - The mark proves "a Claude model touched this," not authorship or full 
-      provenance. Detecting a mark means content "may have been processed by 
-      Claude" — via generation, but also proofreading, translation, 
-      summarization, or file conversion. It does not confirm Claude originated 
-      the underlying ideas, and its absence doesn't prove content is Claude-free
-      (heavy editing, unsupported tools, or format…
-    - Per-user/per-request identity watermarking is a known, different technique
-      that Anthropic does not use. Research on "multi-bit" or "identity" 
-      watermarking (e.g., CredID, "Watermarking Language Models for Many 
-      Adaptive Users") describes schemes that deliberately encode a user or 
-      document ID as extra payload bits, sometimes via per-user keys issued by a
-      trusted third party. Nothing in Anthropic's…
-    - C2PA's core specification deliberately removed human-identity fields in 
-      version 2.0. The manifest's `claim_generator_info` field identifies the 
-      generating *tool/software*, not a person; earlier "actors" 
-      (human-identity) fields were dropped from the spec as a privacy-preserving
-      design choice. A separate, optional extension (the Creator Assertions 
-      Working Group's identity-assertion mechanism) *can*…
-    - Rollout is global by default, not EU-only, and applies uniformly with no 
-      confirmed opt-out. Models launched on/after August 2, 2026 mark from day 
-      one; older models are being transitioned "over the coming months." Marking
-      covers Claude.ai, the Claude Platform API, Claude Code, Claude Cowork, 
-      Claude Tag, and cloud-partner surfaces (AWS Bedrock, Google Cloud Vertex, 
-      Microsoft Foundry). No source —…
-    - A watermark-detection API is announced but not yet technically documented.
-      Anthropic says it is "in the process of working out the details of its 
-      implementation" and will publish "forthcoming technical documentation." 
-      Independent reporting (The Decoder) describes it as intended to let third 
-      parties estimate "the likelihood this was partly written by Claude" — a 
-      probabilistic signal, not a binary…
-    - The watermark's real-world reliability has stated limits, independent of 
-      the identity question. It performs poorly on short text (few word-choice 
-      branch points), on factual/constrained/code text (little room for 
-      equivalent word choices), and is defeated by a full rewrite replacing 
-      every word. Google DeepMind's own materials describe confidence as 
-      "greatly reduced" under heavy paraphrasing or…
-    - The watermark payload's anonymity is a distinct question from Anthropic's 
-      separate server-side/account-log traceability, and this distinction is not
-      directly addressed in Anthropic's public communications. Anthropic's 
-      retention policy shows normal request data is retained (and inherently 
-      account/workspace-linked) for up to 30 days by default, and up to 2 years 
-      (with trust-and-safety…
+    - The research question is fully answered by primary sources (Anthropic's 
+      own announcement and support documentation, the official C2PA 
+      specification, Google's SynthID-Text documentation and reference 
+      implementation, and peer-reviewed/arXiv robustness studies).
+    - 'Claude embeds two distinct, unrelated provenance mechanisms, both shipped worldwide
+      starting August 2, 2026: 1.'
+    - C2PA Content Credentials, a cryptographically signed provenance manifest 
+      embedded in the file metadata of Claude-generated images (`.png`, `.jpg`, 
+      `.svg`).
+    - 'Neither mechanism is traceable to a specific user or account. Anthropic states
+      this explicitly and unambiguously for both: the watermark key and the C2PA credential
+      identify the *model/service* ("made with Claude"), not the individual, organization,
+      or conversation that produced the content.'
+    - "Both mechanisms are demonstrably reversible/fragile in practice, though via
+      different failure modes: the text watermark degrades under paraphrasing, back-translation,
+      or full rewrites (independently measured, not just claimed by Anthropic); the
+      C2PA credential is destroyed outright by the ordinary, non-adversarial act of
+      re-saving, screenshotting, or converting a file's format, since it lives in…"
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-19-claude-content-watermark-c2pa' dated 2026-08-19, and 
-      from a simulated review round where 10 agent-written posts were ranked by 
-      votes.
+      report '2026-08-20-claude-watermark-c2pa-traceability' dated 2026-08-22, 
+      and from a simulated review round where 10 agent-written posts were ranked
+      by votes.
   angles:
-    - id: 2026-08-19-a-2023-icml-paper-s-green-list-trick-not
-      summary: "A 2023 ICML paper's 'green list' trick, not a hidden tag, is what
-        makes Claude's text watermark work · thread: Claude's invisible AI watermark
-        can't trace content back to you"
-      last_used: '2026-08-22'
+    - id: 2026-08-22-claude-s-watermark-isn-t-a-green-list-it
+      summary: "Claude's watermark isn't a 'green list' — it runs a single-elimination
+        bracket, one word at a time · thread: Every word Claude writes now carries
+        an invisible watermark"
+      last_used:
       provenance:
-        post_id: p_b8d967877a6c
-        round_id: quiet_machines:2026-08-19
-        report_label: 2026-08-19-claude-content-watermark-c2pa
-    - id: 2026-08-19-claude-s-watermark-went-global-on-august
-      summary: "Claude's watermark went global on August 14, 2026 because Anthropic
-        couldn't figure out how to keep it EU-only · thread: Claude's invisible AI
-        watermark can't trace content back to you"
-      last_used: '2026-08-22'
+        post_id: p_17a93b44b4ef
+        round_id: quiet_machines:2026-08-22
+        report_label: 2026-08-20-claude-watermark-c2pa-traceability
+    - id: 2026-08-22-c2pa-didn-t-forget-to-add-creator-id-in
+      summary: "C2PA didn't forget to add creator-ID in 2024 — the coalition voted
+        to cut it · thread: Every word Claude writes now carries an invisible watermark"
+      last_used:
       provenance:
-        post_id: p_8b2617e47b55
-        round_id: quiet_machines:2026-08-19
-        report_label: 2026-08-19-claude-content-watermark-c2pa
-    - id: 2026-08-19-anthropic-s-proof-its-watermark-can-t-id
-      summary: "Anthropic's proof its watermark can't ID you is a claim you can't
-        check yet — the detection API doesn't exist · thread: Claude's invisible AI
-        watermark can't trace content back to you"
-      last_used: '2026-08-22'
+        post_id: p_9f274e74febc
+        round_id: quiet_machines:2026-08-22
+        report_label: 2026-08-20-claude-watermark-c2pa-traceability
+    - id: 2026-08-22-a-signed-made-with-claude-tag-can-be-pee
+      summary: "A signed 'made with Claude' tag can be peeled off one file and glued
+        onto another — and it still validates · thread: Every word Claude writes now
+        carries an invisible watermark"
+      last_used:
       provenance:
-        post_id: p_7fbead1dfd89
-        round_id: quiet_machines:2026-08-19
-        report_label: 2026-08-19-claude-content-watermark-c2pa
-    - id: 2026-08-19-claude-s-ai-made-this-image-tag-is-a-not
-      summary: "Claude's 'AI made this' image tag is a notarized file with a timestamp
-        and certificate — a screenshot deletes all of it · thread: Claude's invisible
-        AI watermark can't trace content back to you"
-      last_used: '2026-08-22'
+        post_id: p_c9f23e28894c
+        round_id: quiet_machines:2026-08-22
+        report_label: 2026-08-20-claude-watermark-c2pa-traceability
+    - id: 2026-08-22-anthropic-says-translating-claude-s-text
+      summary: "Anthropic says translating Claude's text keeps the watermark. A 2026
+        study found translating it twice is what erases it. · thread: Every word Claude
+        writes now carries an invisible watermark"
+      last_used:
       provenance:
-        post_id: p_5c44bd66a5cc
-        round_id: quiet_machines:2026-08-19
-        report_label: 2026-08-19-claude-content-watermark-c2pa
-    - id: 2026-08-19-claude-s-watermark-is-weakest-on-exactly
-      summary: "Claude's watermark is weakest on exactly the text most likely to go
-        viral unattributed: short posts and code · thread: Claude's invisible AI watermark
-        can't trace content back to you"
-      last_used: '2026-08-22'
+        post_id: p_7b59b2299795
+        round_id: quiet_machines:2026-08-22
+        report_label: 2026-08-20-claude-watermark-c2pa-traceability
+    - id: 2026-08-22-google-built-three-algorithms-to-detect
+      summary: "Google built three algorithms to detect a SynthID watermark. Only
+        one of them is allowed to answer 'I don't know.' · thread: Every word Claude
+        writes now carries an invisible watermark"
+      last_used:
       provenance:
-        post_id: p_a187c29872e5
-        round_id: quiet_machines:2026-08-19
-        report_label: 2026-08-19-claude-content-watermark-c2pa
+        post_id: p_4d377dbefac0
+        round_id: quiet_machines:2026-08-22
+        report_label: 2026-08-20-claude-watermark-c2pa-traceability
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-19-claude-s-invisible-ai-watermark-can-t-tr.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-22-every-word-claude-writes-now-carries-an.png
