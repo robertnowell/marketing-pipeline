@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-22-3",
+  "date": "2026-08-22",
+  "project": "research",
+  "angle": "2026-08-22-a-signed-made-with-claude-tag-can-be-pee",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude has embedded invisible provenance tags since August 2, 2026: a text watermark, and a C2PA credential in image metadata. Neither traces to you, Anthropic says, only to the model. The image tag dies the moment you screenshot or resave the file. Paraphrase it and the text tag breaks too."
+    }
+  ]
+}

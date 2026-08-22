@@ -380,7 +380,7 @@ research:
       summary: "Claude's watermark isn't a 'green list' — it runs a single-elimination
         bracket, one word at a time · thread: Every word Claude writes now carries
         an invisible watermark"
-      last_used:
+      last_used: '2026-08-22'
       provenance:
         post_id: p_17a93b44b4ef
         round_id: quiet_machines:2026-08-22
@@ -388,7 +388,7 @@ research:
     - id: 2026-08-22-c2pa-didn-t-forget-to-add-creator-id-in
       summary: "C2PA didn't forget to add creator-ID in 2024 — the coalition voted
         to cut it · thread: Every word Claude writes now carries an invisible watermark"
-      last_used:
+      last_used: '2026-08-22'
       provenance:
         post_id: p_9f274e74febc
         round_id: quiet_machines:2026-08-22
@@ -397,7 +397,7 @@ research:
       summary: "A signed 'made with Claude' tag can be peeled off one file and glued
         onto another — and it still validates · thread: Every word Claude writes now
         carries an invisible watermark"
-      last_used:
+      last_used: '2026-08-22'
       provenance:
         post_id: p_c9f23e28894c
         round_id: quiet_machines:2026-08-22
@@ -406,7 +406,7 @@ research:
       summary: "Anthropic says translating Claude's text keeps the watermark. A 2026
         study found translating it twice is what erases it. · thread: Every word Claude
         writes now carries an invisible watermark"
-      last_used:
+      last_used: '2026-08-22'
       provenance:
         post_id: p_7b59b2299795
         round_id: quiet_machines:2026-08-22
@@ -415,7 +415,7 @@ research:
       summary: "Google built three algorithms to detect a SynthID watermark. Only
         one of them is allowed to answer 'I don't know.' · thread: Every word Claude
         writes now carries an invisible watermark"
-      last_used:
+      last_used: '2026-08-22'
       provenance:
         post_id: p_4d377dbefac0
         round_id: quiet_machines:2026-08-22

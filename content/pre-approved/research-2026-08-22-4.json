@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-22-4",
+  "date": "2026-08-22",
+  "project": "research",
+  "angle": "2026-08-22-anthropic-says-translating-claude-s-text",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Every image and block of text Claude produces since August 2, 2026 carries a hidden provenance mark. Neither one traces back to you: Anthropic says both only prove \"made with Claude,\" not who prompted it. Worse, paraphrasing or back-translating text degrades the watermark, and just re-saving or screenshotting an image destroys its C2PA credential entirely. Don't count on either for proof of authorship."
+    }
+  ]
+}

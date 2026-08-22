@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-22-1",
+  "date": "2026-08-22",
+  "project": "research",
+  "angle": "2026-08-22-claude-s-watermark-isn-t-a-green-list-it",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Since August 2, 2026, everything Claude generates carries two provenance marks: a text watermark and a C2PA credential in image metadata. Neither traces back to you or your account, Anthropic says explicitly, only to the model itself: \"made with Claude.\" Founders relying on this for attribution or leak-tracing should know both marks break easily: paraphrase the text or resave/screenshot the image and the mark is gone."
+    }
+  ]
+}

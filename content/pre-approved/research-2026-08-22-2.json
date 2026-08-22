@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-22-2",
+  "date": "2026-08-22",
+  "project": "research",
+  "angle": "2026-08-22-c2pa-didn-t-forget-to-add-creator-id-in",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude watermarks every image and text output since August 2, 2026. Anthropic says explicitly: neither mark identifies you, your account, or your organization, only that it's \"made with Claude.\" Both break easily: paraphrasing kills the text watermark, resaving a file kills the image's C2PA credential."
+    }
+  ]
+}
