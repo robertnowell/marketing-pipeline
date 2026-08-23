@@ -2,11 +2,11 @@
   "id": "research-2026-08-22-5",
   "date": "2026-08-22",
   "project": "research",
-  "angle": "2026-08-22-google-built-three-algorithms-to-detect",
+  "angle": "2026-08-22-mike-cvet-tore-apart-a-dall-e-3-file-s-p",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Claude has embedded a text watermark and signed C2PA image credentials since Aug 2, 2026. Neither identifies you, only 'made with Claude.' Screenshot or re-save an image and the credential is gone. Paraphrase the text and the watermark fades. Don't treat either as proof of authorship."
+      "text": "Anthropic's FAQ says its Claude watermark can't ID you: \"There's nothing in the watermark, or its key, that would allow anyone to recover any information about the user, their organization, or their chats with Claude.\" No outside audit has tested that on real output yet."
     }
   ]
 }

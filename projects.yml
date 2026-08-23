@@ -414,7 +414,7 @@ research:
       summary: "Anthropic purges a deleted Claude chat in 30 days. Its own classification
         score about that chat can stick around for 7 years · thread: Anthropic says
         its AI text watermark can't identify the writer"
-      last_used:
+      last_used: '2026-08-22'
       provenance:
         post_id: p_5af5f74517b7
         round_id: quiet_machines:2026-08-22
@@ -423,7 +423,7 @@ research:
       summary: "Two academics told Nature the tool that would prove Claude's watermark
         can be beaten is the same tool that would help you beat it · thread: Anthropic
         says its AI text watermark can't identify the writer"
-      last_used:
+      last_used: '2026-08-22'
       provenance:
         post_id: p_ffa0da31cdc2
         round_id: quiet_machines:2026-08-22
@@ -432,7 +432,7 @@ research:
       summary: "A 2026 watermark study found blending 10% AI text into human writing
         spikes false positives to 53% · thread: Anthropic says its AI text watermark
         can't identify the writer"
-      last_used:
+      last_used: '2026-08-22'
       provenance:
         post_id: p_ad96c5a1a97c
         round_id: quiet_machines:2026-08-22
@@ -440,7 +440,7 @@ research:
     - id: 2026-08-22-claude-s-watermark-carries-no-id-anthrop
       summary: "Claude's watermark carries no ID. Anthropic's own login records already
         do. · thread: Anthropic says its AI text watermark can't identify the writer"
-      last_used:
+      last_used: '2026-08-22'
       provenance:
         post_id: p_3414e59b4eff
         round_id: quiet_machines:2026-08-22
@@ -449,7 +449,7 @@ research:
       summary: "Mike Cvet tore apart a DALL-E 3 file's provenance tag with c2patool.
         Nobody's done that to a Claude file yet. · thread: Anthropic says its AI text
         watermark can't identify the writer"
-      last_used:
+      last_used: '2026-08-22'
       provenance:
         post_id: p_ffa58fa17bb5
         round_id: quiet_machines:2026-08-22

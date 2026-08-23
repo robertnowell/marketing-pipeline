@@ -2,11 +2,11 @@
   "id": "research-2026-08-22-4",
   "date": "2026-08-22",
   "project": "research",
-  "angle": "2026-08-22-anthropic-says-translating-claude-s-text",
+  "angle": "2026-08-22-claude-s-watermark-carries-no-id-anthrop",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Every image and block of text Claude produces since August 2, 2026 carries a hidden provenance mark. Neither one traces back to you: Anthropic says both only prove \"made with Claude,\" not who prompted it. Worse, paraphrasing or back-translating text degrades the watermark, and just re-saving or screenshotting an image destroys its C2PA credential entirely. Don't count on either for proof of authorship."
+      "text": "Anthropic says its Claude watermark can't identify who wrote a text: \"There's nothing in the watermark, or its key, that would allow anyone to recover any information about the user, their organization, or their chats with Claude.\" But Anthropic can still link output to your account through ordinary login, API key, and billing logs. The watermark isn't the privacy risk. Your account is."
     }
   ]
 }

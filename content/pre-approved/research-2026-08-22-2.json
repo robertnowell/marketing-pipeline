@@ -2,11 +2,11 @@
   "id": "research-2026-08-22-2",
   "date": "2026-08-22",
   "project": "research",
-  "angle": "2026-08-22-c2pa-didn-t-forget-to-add-creator-id-in",
+  "angle": "2026-08-22-two-academics-told-nature-the-tool-that",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Claude watermarks every image and text output since August 2, 2026. Anthropic says explicitly: neither mark identifies you, your account, or your organization, only that it's \"made with Claude.\" Both break easily: paraphrasing kills the text watermark, resaving a file kills the image's C2PA credential."
+      "text": "Anthropic's Claude watermark can't identify who wrote a text, by design, there's no slot in it for a user ID. Its own FAQ: \"There's nothing in the watermark, or its key, that would allow anyone to recover any information about the user, their organization, or their chats with Claude.\" Backend account logs still can."
     }
   ]
 }
