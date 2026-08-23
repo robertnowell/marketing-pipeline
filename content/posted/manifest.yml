@@ -6483,3 +6483,21 @@
   angle: 2026-08-19-claude-s-ai-made-this-image-tag-is-a-not
   source_id: ''
   posted_at: '2026-08-22'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtqmp6l7r52d
+  angle: 2026-08-22-a-2026-watermark-study-found-blending-10
+  source_id: research-2026-08-22-3
+  posted_at: '2026-08-23'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtqmpbqsrm2f
+  angle: 2026-08-22-mike-cvet-tore-apart-a-dall-e-3-file-s-p
+  source_id: research-2026-08-22-5
+  posted_at: '2026-08-23'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtqmqsnhyd2w
+  angle: 2026-08-22-anthropic-purges-a-deleted-claude-chat-i
+  source_id: ''
+  posted_at: '2026-08-23'

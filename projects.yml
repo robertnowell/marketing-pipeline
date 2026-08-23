@@ -414,7 +414,7 @@ research:
       summary: "Anthropic purges a deleted Claude chat in 30 days. Its own classification
         score about that chat can stick around for 7 years · thread: Anthropic says
         its AI text watermark can't identify the writer"
-      last_used: '2026-08-22'
+      last_used: '2026-08-23'
       provenance:
         post_id: p_5af5f74517b7
         round_id: quiet_machines:2026-08-22
