@@ -6507,3 +6507,33 @@
   angle: 2026-08-22-two-academics-told-nature-the-tool-that
   source_id: ''
   posted_at: '2026-08-23'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtt5s3idiv25
+  angle: 2026-08-23-anthropic-s-aug-14-watermark-explainer-o
+  source_id: research-2026-08-23-1
+  posted_at: '2026-08-24'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtt5s5ck2s2o
+  angle: 2026-08-23-one-sentence-in-anthropic-s-law-enforcem
+  source_id: research-2026-08-23-2
+  posted_at: '2026-08-24'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtt5s72n6h2h
+  angle: 2026-08-23-the-one-claude-court-case-on-record-us-v
+  source_id: research-2026-08-23-3
+  posted_at: '2026-08-24'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtt5saropc2o
+  angle: 2026-08-23-google-s-synthid-watermark-can-be-identi
+  source_id: research-2026-08-23-4
+  posted_at: '2026-08-24'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtt5scithz22
+  angle: 2026-08-23-screenshot-a-claude-marked-image-and-its
+  source_id: research-2026-08-23-5
+  posted_at: '2026-08-24'
