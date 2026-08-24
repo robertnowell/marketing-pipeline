@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-23-2",
+  "date": "2026-08-23",
+  "project": "research",
+  "angle": "2026-08-23-one-sentence-in-anthropic-s-law-enforcem",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's watermark proves AI wrote it, not who asked. Anthropic: \"nothing in the watermark...would allow anyone to recover any information about the user.\" Yet it keeps logs (violations up to 2 years) and can share them without a warrant under a narrow imminent-harm exception."
+    }
+  ]
+}

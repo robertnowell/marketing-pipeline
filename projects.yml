@@ -403,7 +403,7 @@ research:
       summary: "Anthropic's Aug 14 watermark explainer only works one direction: content-to-mark,
         never content-to-account · thread: Claude's AI watermark proves AI wrote it,
         not who asked"
-      last_used:
+      last_used: '2026-08-23'
       provenance:
         post_id: p_9efb6bafa38b
         round_id: quiet_machines:2026-08-23
@@ -412,7 +412,7 @@ research:
       summary: "One sentence in Anthropic's law-enforcement policy lets it skip the
         warrant it otherwise requires · thread: Claude's AI watermark proves AI wrote
         it, not who asked"
-      last_used:
+      last_used: '2026-08-23'
       provenance:
         post_id: p_9d15c7990498
         round_id: quiet_machines:2026-08-23
@@ -421,7 +421,7 @@ research:
       summary: "The one Claude court case on record, US v. Heppner (SDNY, Feb 2026),
         has nothing to do with watermarks · thread: Claude's AI watermark proves AI
         wrote it, not who asked"
-      last_used:
+      last_used: '2026-08-23'
       provenance:
         post_id: p_d020cdaec4d0
         round_id: quiet_machines:2026-08-23
@@ -430,7 +430,7 @@ research:
       summary: "Google's SynthID watermark can be identical whether Gemini, Imagen,
         or Veo made a file · thread: Claude's AI watermark proves AI wrote it, not
         who asked"
-      last_used:
+      last_used: '2026-08-23'
       provenance:
         post_id: p_d00542e4da12
         round_id: quiet_machines:2026-08-23
@@ -439,7 +439,7 @@ research:
       summary: "Screenshot a Claude-marked image and its C2PA credential is gone;
         copy-paste marked text and the watermark stays · thread: Claude's AI watermark
         proves AI wrote it, not who asked"
-      last_used:
+      last_used: '2026-08-23'
       provenance:
         post_id: p_d3a78fe084d3
         round_id: quiet_machines:2026-08-23

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-23-4",
+  "date": "2026-08-23",
+  "project": "research",
+  "angle": "2026-08-23-google-s-synthid-watermark-can-be-identi",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Founders using AI to draft content sometimes worry the watermark could expose them. It won't: Anthropic says \"the credential only says Claude was involved in producing the file; it doesn't include any identifying information.\" Google's SynthID works the same way, flagging the model, not the user."
+    }
+  ]
+}
