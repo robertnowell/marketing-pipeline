@@ -6537,3 +6537,33 @@
   angle: 2026-08-23-screenshot-a-claude-marked-image-and-its
   source_id: research-2026-08-23-5
   posted_at: '2026-08-24'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtvo4b4hcd2d
+  angle: 2026-08-24-austin-clements-had-to-walk-back-a-go-pe
+  source_id: research-2026-08-24-1
+  posted_at: '2026-08-25'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtvo4czxr725
+  angle: 2026-08-24-node-js-hardcoded-a-1-4gb-heap-ceiling-u
+  source_id: research-2026-08-24-2
+  posted_at: '2026-08-25'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtvo4eqhfo2h
+  angle: 2026-08-24-alan-cox-told-the-linux-kernel-mailing-l
+  source_id: research-2026-08-24-3
+  posted_at: '2026-08-25'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtvo4glzmk2z
+  angle: 2026-08-24-niklaus-wirth-s-1995-paper-credits-softw
+  source_id: research-2026-08-24-4
+  posted_at: '2026-08-25'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mtvo4ieizt2o
+  angle: 2026-08-24-vm-stat-and-memory-pressure-run-back-to
+  source_id: research-2026-08-24-5
+  posted_at: '2026-08-25'
