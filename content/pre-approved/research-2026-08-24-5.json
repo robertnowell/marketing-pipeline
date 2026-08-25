@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-24-5",
+  "date": "2026-08-24",
+  "project": "research",
+  "angle": "2026-08-24-vm-stat-and-memory-pressure-run-back-to",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A maxed-out Mac with zero swaps isn't struggling. No study has ever measured a workload's memory footprint across RAM tiers, it's all description. vm_stat and memory_pressure, run back to back on one Mac, disagreed on the size of a memory page. Don't trust the RAM meter."
+    }
+  ]
+}

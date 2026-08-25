@@ -368,7 +368,7 @@ research:
       summary: "Austin Clements had to walk back a Go performance win because it made
         RSS look like a leak · thread: A \"maxed out\" Mac with zero memory swaps
         isn't struggling at all"
-      last_used:
+      last_used: '2026-08-24'
       provenance:
         post_id: p_7cce82958cd8
         round_id: quiet_machines:2026-08-24
@@ -377,7 +377,7 @@ research:
       summary: "Node.js hardcoded a 1.4GB heap ceiling until a 2019 patch made it
         scale to your RAM · thread: A \"maxed out\" Mac with zero memory swaps isn't
         struggling at all"
-      last_used:
+      last_used: '2026-08-24'
       provenance:
         post_id: p_62a76b128af7
         round_id: quiet_machines:2026-08-24
@@ -386,7 +386,7 @@ research:
       summary: "Alan Cox told the Linux kernel mailing list free memory is wasted
         memory in 1998, 11 years before it became a meme · thread: A \"maxed out\"\
         \ Mac with zero memory swaps isn't struggling at all"
-      last_used:
+      last_used: '2026-08-24'
       provenance:
         post_id: p_879df96ee3bd
         round_id: quiet_machines:2026-08-24
@@ -395,7 +395,7 @@ research:
       summary: "Niklaus Wirth's 1995 paper credits 'software expands to fill memory'
         to Parkinson, not himself · thread: A \"maxed out\" Mac with zero memory swaps
         isn't struggling at all"
-      last_used:
+      last_used: '2026-08-24'
       provenance:
         post_id: p_5a88d41fa3df
         round_id: quiet_machines:2026-08-24
@@ -404,7 +404,7 @@ research:
       summary: "vm_stat and memory_pressure, run back to back on the same Mac, disagree
         on a memory page's size by 4x · thread: A \"maxed out\" Mac with zero memory
         swaps isn't struggling at all"
-      last_used:
+      last_used: '2026-08-24'
       provenance:
         post_id: p_3b5766d9a4fb
         round_id: quiet_machines:2026-08-24

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-24-3",
+  "date": "2026-08-24",
+  "project": "research",
+  "angle": "2026-08-24-alan-cox-told-the-linux-kernel-mailing-l",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The idea that RAM always fills up to match what you install has never been tested. No source has measured the same workload's memory use across different RAM sizes, only described it as it happens. If you upgraded assuming it'd get used anyway, that reasoning is unverified."
+    }
+  ]
+}

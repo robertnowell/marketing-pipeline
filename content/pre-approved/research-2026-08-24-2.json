@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-24-2",
+  "date": "2026-08-24",
+  "project": "research",
+  "angle": "2026-08-24-node-js-hardcoded-a-1-4gb-heap-ceiling-u",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "RAM doesn't just expand to fill what's available, apparently. Nobody has ever run a controlled test comparing the same workload's memory use across different RAM tiers. Every source on the phenomenon is qualitative, not measured. If you're buying more RAM on that assumption, you're guessing."
+    }
+  ]
+}

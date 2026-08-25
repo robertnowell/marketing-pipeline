@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-24-1",
+  "date": "2026-08-24",
+  "project": "research",
+  "angle": "2026-08-24-austin-clements-had-to-walk-back-a-go-pe",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A Mac showing full RAM with zero swapping isn't struggling, it's working as designed. Nobody has ever run a controlled measurement of the same workload's memory footprint across different RAM sizes: every source on the topic is qualitative, not measured. Stop treating full RAM as a warning sign."
+    }
+  ]
+}

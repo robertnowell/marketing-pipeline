@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-24-4",
+  "date": "2026-08-24",
+  "project": "research",
+  "angle": "2026-08-24-niklaus-wirth-s-1995-paper-credits-softw",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Buying RAM because it'll just fill up anyway? Nobody has tested that. A deep-research thread (ram-expands-to-fill-available-memory, 2026-08-24) found no controlled measurement of the same workload's memory footprint at different RAM tiers, only qualitative claims. Folklore, not data."
+    }
+  ]
+}
