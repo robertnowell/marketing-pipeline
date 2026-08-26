@@ -353,61 +353,112 @@ research:
   channels:
     - bluesky
   facts:
-    - Original measurement note — The public record contains no controlled 
-      measurement of the same workload's memory footprint at different 
-      physical-RAM tiers. Every source located discusses the phenomenon 
-      qualitatively.
-    - 'Page-size discrepancy (own measurement, reproducible) — On the same machine,
-      in the same session, back to back:'
+    - "Anthropic states directly, in its own words, that the text watermark carries
+      no identifying information.  Anthropic's official announcement states: \"Watermarking
+      carries no identifying information and can't be traced to a specific person,
+      organization, or chat,\" and \"There's nothing in the watermark, or its key,
+      that would allow anyone to recover any information about the user, their…"
+    - The watermark only signals "processed by Claude," not authorship or full 
+      AI-origin.  Detection indicates content "may have been processed by 
+      Claude" — it does not indicate who prompted it, and it doesn't reliably 
+      distinguish fully-AI-generated text from human text that Claude merely 
+      proofread, translated, or summarized. 
+      (anthropic.com/news/claude-text-watermark; support.claude.com)
+    - "C2PA file metadata (images: PNG/JPG/SVG) likewise contains no per-user data
+      — only model version, timestamp, and Anthropic as signing provider.  Anthropic's
+      Help Center confirms Claude \"attach[es] signed provenance metadata\" per the
+      C2PA standard for tamper detection. No source of any tier — including Anthropic's
+      own documentation, the C2PA specification, and independent analysis — found
+      evidence…"
+    - "Both mechanisms are explicitly, publicly acknowledged by Anthropic as defeatable.\
+      \  Text watermark: \"Light editing probably won't remove the watermark completely;
+      a complete rewrite where every word is replaced will,\" and it degrades under
+      heavy paraphrase, translation, or very short passages. File metadata: stripped
+      by \"format conversion, re-saving, screenshots, or other means.\" (Both statements…"
+    - Independent adversarial research finds near-total removal of statistical 
+      text watermarks under paraphrasing.  A 2026 empirical study (arXiv, 
+      submitted to AAAI/ACM AIES) found 100% conditional removal for KGW and 
+      Unigram watermarking schemes and 98.3% for SynthID-Text (the family 
+      Claude's watermark belongs to) among initially-detected samples after 
+      paraphrasing — and baseline false-negative rates…
+    - "Claude's text watermark is confirmed by Anthropic itself to be a SynthID-Text
+      variant — but the specific implementation parameters (and \"tournament sampling\"\
+      \ terminology) are not Anthropic-confirmed.  Anthropic's own news page states:
+      \"Claude's text watermark is a version of the SynthID-Text approach published
+      by Google DeepMind in a Nature paper in 2024.\" However, Anthropic has not disclosed
+      its…"
+    - Google's own self-reported SynthID-Text robustness numbers are 
+      meaningfully more optimistic than independent third-party testing.  
+      Google's Nature 2024 paper claims 85% true-positive rate at 1% 
+      false-positive rate under normal conditions, and an AUC of ~0.7 under 
+      paraphrasing for 1000-token texts (per Google's own supplementary 
+      material, cited by an independent ETH Zurich analysis). That same…
+    - C2PA metadata is stripped by design whenever content is screenshotted, 
+      re-encoded, converted, or run through most social media upload pipelines —
+      and this is acknowledged in C2PA's own coalition FAQ, not just alleged by 
+      critics.  The official C2PA FAQ states manifests "can be separated" from 
+      the asset and describes "durable credentials" (invisible 
+      watermarking/fingerprinting as a *soft binding*)…
+    - C2PA has spec-level weaknesses beyond simple stripping.  A 2026 arXiv 
+      analysis of the C2PA specification found that certain byte ranges (e.g., 
+      some metadata) are excluded from cryptographic protection by design, and 
+      that researchers modified GPS location data in a real Pixel 10 Pro image 
+      without invalidating the signature. Timestamps can reportedly be replaced 
+      without detection, and C2PA-signed…
+    - No known real-world case exists (as of August 2026) where a 
+      vendor-embedded watermark (SynthID-style or Claude's) was used as evidence
+      to identify or catch a specific individual.  Documented 
+      cheating-accusation cases (Palo Alto civil rights suit; Adelphi 
+      University/Orion Newby ruling) involved after-the-fact statistical AI 
+      *detectors* (Turnitin, GPTZero) applied to unmarked text — a 
+      fundamentally…
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-24-ram-expands-to-fill-available-memory' dated 2026-08-24,
+      report '2026-08-24-claude-content-marking-traceability' dated 2026-08-26, 
       and from a simulated review round where 10 agent-written posts were ranked
       by votes.
   angles:
-    - id: 2026-08-24-austin-clements-had-to-walk-back-a-go-pe
-      summary: "Austin Clements had to walk back a Go performance win because it made
-        RSS look like a leak · thread: A \"maxed out\" Mac with zero memory swaps
-        isn't struggling at all"
-      last_used: '2026-08-26'
+    - id: 2026-08-26-google-open-sourced-the-code-to-check-cl
+      summary: "Google open-sourced the code to check Claude's watermark two years
+        before Claude had one · thread: Claude's AI watermark proves AI wrote it,
+        not who"
+      last_used:
       provenance:
-        post_id: p_7cce82958cd8
-        round_id: quiet_machines:2026-08-24
-        report_label: 2026-08-24-ram-expands-to-fill-available-memory
-    - id: 2026-08-24-node-js-hardcoded-a-1-4gb-heap-ceiling-u
-      summary: "Node.js hardcoded a 1.4GB heap ceiling until a 2019 patch made it
-        scale to your RAM · thread: A \"maxed out\" Mac with zero memory swaps isn't
-        struggling at all"
-      last_used: '2026-08-26'
+        post_id: p_66f12eb3d0f2
+        round_id: quiet_machines:2026-08-26
+        report_label: 2026-08-24-claude-content-marking-traceability
+    - id: 2026-08-26-anthropic-s-own-pages-disagree-on-whethe
+      summary: "Anthropic's own pages disagree on whether it needs a subpoena to hand
+        over your data · thread: Claude's AI watermark proves AI wrote it, not who"
+      last_used:
       provenance:
-        post_id: p_62a76b128af7
-        round_id: quiet_machines:2026-08-24
-        report_label: 2026-08-24-ram-expands-to-fill-available-memory
-    - id: 2026-08-24-alan-cox-told-the-linux-kernel-mailing-l
-      summary: "Alan Cox told the Linux kernel mailing list free memory is wasted
-        memory in 1998, 11 years before it became a meme · thread: A \"maxed out\"\
-        \ Mac with zero memory swaps isn't struggling at all"
-      last_used: '2026-08-26'
+        post_id: p_9cfbf6bba806
+        round_id: quiet_machines:2026-08-26
+        report_label: 2026-08-24-claude-content-marking-traceability
+    - id: 2026-08-26-a-content-credentials-seal-on-an-ai-imag
+      summary: "A Content Credentials seal on an AI image breaks the instant you screenshot
+        it · thread: Claude's AI watermark proves AI wrote it, not who"
+      last_used:
       provenance:
-        post_id: p_879df96ee3bd
-        round_id: quiet_machines:2026-08-24
-        report_label: 2026-08-24-ram-expands-to-fill-available-memory
-    - id: 2026-08-24-niklaus-wirth-s-1995-paper-credits-softw
-      summary: "Niklaus Wirth's 1995 paper credits 'software expands to fill memory'
-        to Parkinson, not himself · thread: A \"maxed out\" Mac with zero memory swaps
-        isn't struggling at all"
-      last_used: '2026-08-26'
+        post_id: p_ee978899e086
+        round_id: quiet_machines:2026-08-26
+        report_label: 2026-08-24-claude-content-marking-traceability
+    - id: 2026-08-26-anthropic-s-help-center-says-claude-does
+      summary: "Anthropic's help center says Claude 'doesn't generate photos or illustrations.'
+        It still ships C2PA image metadata. · thread: Claude's AI watermark proves
+        AI wrote it, not who"
+      last_used:
       provenance:
-        post_id: p_5a88d41fa3df
-        round_id: quiet_machines:2026-08-24
-        report_label: 2026-08-24-ram-expands-to-fill-available-memory
-    - id: 2026-08-24-vm-stat-and-memory-pressure-run-back-to
-      summary: "vm_stat and memory_pressure, run back to back on the same Mac, disagree
-        on a memory page's size by 4x · thread: A \"maxed out\" Mac with zero memory
-        swaps isn't struggling at all"
-      last_used: '2026-08-24'
+        post_id: p_a0dca8622b00
+        round_id: quiet_machines:2026-08-26
+        report_label: 2026-08-24-claude-content-marking-traceability
+    - id: 2026-08-26-google-openai-meta-amazon-and-tiktok-all
+      summary: "Google, OpenAI, Meta, Amazon, and TikTok all joined the C2PA coalition.
+        Anthropic didn't. · thread: Claude's AI watermark proves AI wrote it, not
+        who"
+      last_used:
       provenance:
-        post_id: p_3b5766d9a4fb
-        round_id: quiet_machines:2026-08-24
-        report_label: 2026-08-24-ram-expands-to-fill-available-memory
+        post_id: p_2b92b600e901
+        round_id: quiet_machines:2026-08-26
+        report_label: 2026-08-24-claude-content-marking-traceability
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-24-a-maxed-out-mac-with-zero-memory-swaps-i.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-26-claude-s-ai-watermark-proves-ai-wrote-it.png
