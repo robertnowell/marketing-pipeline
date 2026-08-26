@@ -386,7 +386,7 @@ research:
       summary: "Alan Cox told the Linux kernel mailing list free memory is wasted
         memory in 1998, 11 years before it became a meme · thread: A \"maxed out\"\
         \ Mac with zero memory swaps isn't struggling at all"
-      last_used: '2026-08-24'
+      last_used: '2026-08-26'
       provenance:
         post_id: p_879df96ee3bd
         round_id: quiet_machines:2026-08-24
