@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-26-1",
+  "date": "2026-08-26",
+  "project": "research",
+  "angle": "2026-08-26-google-open-sourced-the-code-to-check-cl",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's watermark can't tell you who wrote something, only that Claude touched it. Anthropic: \"Watermarking carries no identifying information and can't be traced to a specific person, organization, or chat.\" A full rewrite removes it. No case has ever used it to catch anyone."
+    }
+  ]
+}

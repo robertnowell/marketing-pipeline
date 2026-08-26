@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-26-4",
+  "date": "2026-08-26",
+  "project": "research",
+  "angle": "2026-08-26-anthropic-s-help-center-says-claude-does",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's AI watermark can prove content passed through Claude. It can't prove who wrote it, and Anthropic says so itself. Their own announcement: watermarking \"can't be traced to a specific person, organization, or chat.\" Detection just means \"may have been processed by Claude\" - even if Claude only proofread a human draft. Don't rely on it for authorship disputes."
+    }
+  ]
+}

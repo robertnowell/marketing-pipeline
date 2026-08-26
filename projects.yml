@@ -388,7 +388,7 @@ research:
       by Google DeepMind in a Nature paper in 2024.\" However, Anthropic has not disclosed
       its…"
     - Google's own self-reported SynthID-Text robustness numbers are 
-      meaningfully more optimistic than independent third-party testing.  
+      meaningfully more optimistic than independent third-party testing. 
       Google's Nature 2024 paper claims 85% true-positive rate at 1% 
       false-positive rate under normal conditions, and an AUC of ~0.7 under 
       paraphrasing for 1000-token texts (per Google's own supplementary 
@@ -421,7 +421,7 @@ research:
       summary: "Google open-sourced the code to check Claude's watermark two years
         before Claude had one · thread: Claude's AI watermark proves AI wrote it,
         not who"
-      last_used:
+      last_used: '2026-08-26'
       provenance:
         post_id: p_66f12eb3d0f2
         round_id: quiet_machines:2026-08-26
@@ -429,7 +429,7 @@ research:
     - id: 2026-08-26-anthropic-s-own-pages-disagree-on-whethe
       summary: "Anthropic's own pages disagree on whether it needs a subpoena to hand
         over your data · thread: Claude's AI watermark proves AI wrote it, not who"
-      last_used:
+      last_used: '2026-08-26'
       provenance:
         post_id: p_9cfbf6bba806
         round_id: quiet_machines:2026-08-26
@@ -437,7 +437,7 @@ research:
     - id: 2026-08-26-a-content-credentials-seal-on-an-ai-imag
       summary: "A Content Credentials seal on an AI image breaks the instant you screenshot
         it · thread: Claude's AI watermark proves AI wrote it, not who"
-      last_used:
+      last_used: '2026-08-26'
       provenance:
         post_id: p_ee978899e086
         round_id: quiet_machines:2026-08-26
@@ -446,7 +446,7 @@ research:
       summary: "Anthropic's help center says Claude 'doesn't generate photos or illustrations.'
         It still ships C2PA image metadata. · thread: Claude's AI watermark proves
         AI wrote it, not who"
-      last_used:
+      last_used: '2026-08-26'
       provenance:
         post_id: p_a0dca8622b00
         round_id: quiet_machines:2026-08-26
@@ -455,7 +455,7 @@ research:
       summary: "Google, OpenAI, Meta, Amazon, and TikTok all joined the C2PA coalition.
         Anthropic didn't. · thread: Claude's AI watermark proves AI wrote it, not
         who"
-      last_used:
+      last_used: '2026-08-26'
       provenance:
         post_id: p_2b92b600e901
         round_id: quiet_machines:2026-08-26

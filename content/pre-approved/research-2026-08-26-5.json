@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-26-5",
+  "date": "2026-08-26",
+  "project": "research",
+  "angle": "2026-08-26-google-openai-meta-amazon-and-tiktok-all",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's AI watermark can't identify you. Anthropic says flatly: 'Watermarking carries no identifying information and can't be traced to a specific person, organization, or chat.' It only flags text as maybe processed by Claude, not who wrote it, and a full rewrite erases it."
+    }
+  ]
+}

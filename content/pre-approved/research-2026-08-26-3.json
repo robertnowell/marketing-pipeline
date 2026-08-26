@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-26-3",
+  "date": "2026-08-26",
+  "project": "research",
+  "angle": "2026-08-26-a-content-credentials-seal-on-an-ai-imag",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A Content Credentials seal on an AI image breaks the instant you screenshot it. C2PA's own FAQ admits manifests \"can be separated\" from the file - stripped by resaving, converting, or most social uploads. Anthropic's file metadata carries no per-user data either: just model version, timestamp, and Anthropic as signer."
+    }
+  ]
+}
