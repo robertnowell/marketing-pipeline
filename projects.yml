@@ -368,7 +368,7 @@ research:
       summary: "Austin Clements had to walk back a Go performance win because it made
         RSS look like a leak · thread: A \"maxed out\" Mac with zero memory swaps
         isn't struggling at all"
-      last_used: '2026-08-24'
+      last_used: '2026-08-26'
       provenance:
         post_id: p_7cce82958cd8
         round_id: quiet_machines:2026-08-24
