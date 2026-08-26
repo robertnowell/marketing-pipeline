@@ -377,7 +377,7 @@ research:
       summary: "Node.js hardcoded a 1.4GB heap ceiling until a 2019 patch made it
         scale to your RAM · thread: A \"maxed out\" Mac with zero memory swaps isn't
         struggling at all"
-      last_used: '2026-08-24'
+      last_used: '2026-08-26'
       provenance:
         post_id: p_62a76b128af7
         round_id: quiet_machines:2026-08-24
