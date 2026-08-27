@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-27-1",
+  "date": "2026-08-27",
+  "project": "research",
+  "angle": "2026-08-27-tmux-s-paste-bracket-only-appears-if-the",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "tmux send-keys exiting 0 only means tmux parsed the syntax, not that your Claude Code or Codex agent read the message. Claude Code now ships a native inbox socket for cross-session messages, and Codex CLI 0.149.0 added `codex queue`. Stop scripting keystrokes into panes, use the real channel."
+    }
+  ]
+}

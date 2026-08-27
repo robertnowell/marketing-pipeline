@@ -378,7 +378,7 @@ research:
       summary: "tmux's paste bracket only appears if the app asks for it, and three
         open bugs eat keystrokes anyway · thread: Claude Code and Codex CLI quietly
         added real inbound messaging channels"
-      last_used:
+      last_used: '2026-08-27'
       provenance:
         post_id: p_543deb3e477b
         round_id: quiet_machines:2026-08-27
@@ -387,7 +387,7 @@ research:
       summary: "Claude Code's new inbox socket can deliver a message that reads like
         your approval. It isn't one. · thread: Claude Code and Codex CLI quietly added
         real inbound messaging channels"
-      last_used:
+      last_used: '2026-08-27'
       provenance:
         post_id: p_cb611ce66308
         round_id: quiet_machines:2026-08-27
@@ -396,7 +396,7 @@ research:
       summary: 'claude-squad writes bytes straight into the terminal process. Codex
         still loses the first one and never notices. · thread: Claude Code and Codex
         CLI quietly added real inbound messaging channels'
-      last_used:
+      last_used: '2026-08-27'
       provenance:
         post_id: p_2dd3618658e3
         round_id: quiet_machines:2026-08-27
@@ -405,7 +405,7 @@ research:
       summary: "Crystal, Omnara, and Conductor don't fight tmux for the terminal.
         They just leave it. · thread: Claude Code and Codex CLI quietly added real
         inbound messaging channels"
-      last_used:
+      last_used: '2026-08-27'
       provenance:
         post_id: p_e801901c96b0
         round_id: quiet_machines:2026-08-27
@@ -414,7 +414,7 @@ research:
       summary: "One orchestrator measured typing into a live coding agent's terminal
         at 70-80% reliability · thread: Claude Code and Codex CLI quietly added real
         inbound messaging channels"
-      last_used:
+      last_used: '2026-08-27'
       provenance:
         post_id: p_d31696bacc55
         round_id: quiet_machines:2026-08-27

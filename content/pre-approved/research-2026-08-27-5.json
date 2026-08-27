@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-27-5",
+  "date": "2026-08-27",
+  "project": "research",
+  "angle": "2026-08-27-one-orchestrator-measured-typing-into-a",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Typing into a coding agent's terminal doesn't confirm it read your message, tmux only confirms it accepted the syntax. Claude Code ships a real per-session inbox socket; Codex CLI 0.149.0 added `codex queue`. Use those, not send-keys. (Claude Code docs)"
+    }
+  ]
+}

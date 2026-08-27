@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-27-3",
+  "date": "2026-08-27",
+  "project": "research",
+  "angle": "2026-08-27-claude-squad-writes-bytes-straight-into",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "tmux's send-keys returns exit 0 once it accepts your syntax, not when the agent reads the message. Amazon's cli-agent-orchestrator dropped chunked send-keys for load-buffer + paste-buffer to avoid slow input and corrupted special characters. Scripting Claude Code or Codex? Assume silent drops."
+    }
+  ]
+}
