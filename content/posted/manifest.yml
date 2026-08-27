@@ -6609,3 +6609,33 @@
   angle: 2026-08-26-google-openai-meta-amazon-and-tiktok-all
   source_id: research-2026-08-26-5
   posted_at: '2026-08-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mu3pjygovc23
+  angle: 2026-08-27-tmux-s-paste-bracket-only-appears-if-the
+  source_id: research-2026-08-27-1
+  posted_at: '2026-08-27'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mu3pjzqyon22
+  angle: 2026-08-27-claude-code-s-new-inbox-socket-can-deliv
+  source_id: research-2026-08-27-2
+  posted_at: '2026-08-27'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mu3pk34yp62x
+  angle: 2026-08-27-claude-squad-writes-bytes-straight-into
+  source_id: research-2026-08-27-3
+  posted_at: '2026-08-27'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mu3pk4kfue2u
+  angle: 2026-08-27-crystal-omnara-and-conductor-don-t-fight
+  source_id: research-2026-08-27-4
+  posted_at: '2026-08-27'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mu3pk5scea2g
+  angle: 2026-08-27-one-orchestrator-measured-typing-into-a
+  source_id: research-2026-08-27-5
+  posted_at: '2026-08-27'
