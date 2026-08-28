@@ -353,71 +353,81 @@ research:
   channels:
     - bluesky
   facts:
-    - 1. Claude Code's per-session inbox socket — [Established, Tier 1 + 
-      first-hand] — Official docs, "Message your other Claude Code sessions".
-    - 2. The consent semantics are the catch — [Established, Tier 1] — This is 
-      the finding that prevents a naive swap.
-    - '3. Codex: `codex queue` — [Established, Tier 1 first-hand] — `codex queue --help`
-      on codex-cli 0.149.0:'
-    - '4. Channels — the architecturally correct end state — [Established but preview,
-      Tier 1] — Claude Code ships channels: "Use channels to push messages, alerts,
-      and webhooks into your Claude Code session from an MCP server… Channels fill
-      the gap by pushing events from non-Claude sources into your already-running
-      local session."'
-    - '5. What the ecosystem actually does — [Established, Tier 1] — - AWS cli-agent-orchestrator:
-      uses `load-buffer`/`set-buffer` + `paste-buffer -p`, not chunked send-keys ("to
-      avoid slow character-by-character input and special character interpretation").'
-    - 6. tmux cannot confirm consumption — [Established, Tier 1] — - `send-keys`
-      exit 0 means tmux accepted syntax, nothing more.
+    - The research question is fully answered, with one thread (the exact shape 
+      of the 2020–2025 price-performance curve) landing as *Contested* rather 
+      than settled — and that contest is itself the finding.
+    - "\"Moore's Law\" is at least five different curves and they have failed at different
+      times. Dennard scaling died ~2005–2007."
+    - Density-per-mm² is still rising but decelerating, and after ~2031 the IRDS
+      roadmap expects density to come from *stacking devices*, not shrinking 
+      them.
+    - The chart in the user's photo is a "best achieved" envelope and overstates
+      the recent trend. Epoch AI's 470-GPU census shows record-holders improve 
+      *slower* (2.95yr doubling) than the market (2.46yr).
+    - The series mixes FP64/FP32/FP16/INT8/FP4 as if they were the same unit.
+    - Kurzweil's own 2023 data point undershot his own projection by ~100×.
+    - 1 PB of unified memory in an iPhone is not a density problem. Density is 
+      the *easiest* of the four walls and is roughly on the existing 3D-NAND 
+      roadmap.
+    - 'The binding constraints are, in order: energy-per-bit-moved (~12,000× gap),
+      bandwidth (~13,000× gap), and static/refresh power (~13,000× gap — but this
+      one has a demonstrated lab answer in IGZO 2T0C DRAM).'
+    - 1 PB of *unified memory* — addressable at memory bandwidth — is physically
+      impossible in a passively-cooled handheld and will remain so, because the 
+      constraint is the energy cost of moving a bit down a wire, which does not 
+      scale away.
+    - The brain's efficiency advantage is real but smaller than folklore, and 
+      mostly architectural rather than physical. The brain sits ~10⁶–10⁷× above 
+      the Landauer limit — it is *not* a thermodynamically optimal computer.
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-26-agent-message-delivery-architecture' dated 2026-08-27, 
+      report '2026-08-25-moores-law-limits-brain-efficiency' dated 2026-08-27, 
       and from a simulated review round where 10 agent-written posts were ranked
       by votes.
   angles:
-    - id: 2026-08-27-tmux-s-paste-bracket-only-appears-if-the
-      summary: "tmux's paste bracket only appears if the app asks for it, and three
-        open bugs eat keystrokes anyway · thread: Claude Code and Codex CLI quietly
-        added real inbound messaging channels"
-      last_used: '2026-08-27'
+    - id: 2026-08-27-1-petabyte-of-phone-storage-is-coming-th
+      summary: "1 petabyte of phone storage is coming this decade. 1 petabyte of phone
+        memory never will — the limit is a 5-micron wire · thread: Moore's Law didn't
+        end once — it died five separate times"
+      last_used:
       provenance:
-        post_id: p_543deb3e477b
+        post_id: p_7577390911ba
         round_id: quiet_machines:2026-08-27
-        report_label: 2026-08-26-agent-message-delivery-architecture
-    - id: 2026-08-27-claude-code-s-new-inbox-socket-can-deliv
-      summary: "Claude Code's new inbox socket can deliver a message that reads like
-        your approval. It isn't one. · thread: Claude Code and Codex CLI quietly added
-        real inbound messaging channels"
-      last_used: '2026-08-27'
+        report_label: 2026-08-25-moores-law-limits-brain-efficiency
+    - id: 2026-08-27-a-brain-synapse-costs-about-as-much-ener
+      summary: "A brain synapse costs about as much energy as an Nvidia H100's math
+        — the brain isn't the efficient one you think · thread: Moore's Law didn't
+        end once — it died five separate times"
+      last_used:
       provenance:
-        post_id: p_cb611ce66308
+        post_id: p_c7601cf1fc83
         round_id: quiet_machines:2026-08-27
-        report_label: 2026-08-26-agent-message-delivery-architecture
-    - id: 2026-08-27-claude-squad-writes-bytes-straight-into
-      summary: 'claude-squad writes bytes straight into the terminal process. Codex
-        still loses the first one and never notices. · thread: Claude Code and Codex
-        CLI quietly added real inbound messaging channels'
-      last_used: '2026-08-27'
+        report_label: 2026-08-25-moores-law-limits-brain-efficiency
+    - id: 2026-08-27-irds-quietly-moved-no-more-2d-chip-scali
+      summary: "IRDS quietly moved 'no more 2D chip scaling' from 2031 to 2035 in
+        its 2024 report — most coverage still says 2031 · thread: Moore's Law didn't
+        end once — it died five separate times"
+      last_used:
       provenance:
-        post_id: p_2dd3618658e3
+        post_id: p_c1e98571c142
         round_id: quiet_machines:2026-08-27
-        report_label: 2026-08-26-agent-message-delivery-architecture
-    - id: 2026-08-27-crystal-omnara-and-conductor-don-t-fight
-      summary: "Crystal, Omnara, and Conductor don't fight tmux for the terminal.
-        They just leave it. · thread: Claude Code and Codex CLI quietly added real
-        inbound messaging channels"
-      last_used: '2026-08-27'
+        report_label: 2026-08-25-moores-law-limits-brain-efficiency
+    - id: 2026-08-27-on-october-16-2025-tsmc-s-ceo-agreed-a-c
+      summary: "On October 16, 2025, TSMC's CEO agreed a customer that Moore's Law
+        is dead — then redefined what the term measures · thread: Moore's Law didn't
+        end once — it died five separate times"
+      last_used:
       provenance:
-        post_id: p_e801901c96b0
+        post_id: p_c96442af9d3d
         round_id: quiet_machines:2026-08-27
-        report_label: 2026-08-26-agent-message-delivery-architecture
-    - id: 2026-08-27-one-orchestrator-measured-typing-into-a
-      summary: "One orchestrator measured typing into a live coding agent's terminal
-        at 70-80% reliability · thread: Claude Code and Codex CLI quietly added real
-        inbound messaging channels"
-      last_used: '2026-08-27'
+        report_label: 2026-08-25-moores-law-limits-brain-efficiency
+    - id: 2026-08-27-lennie-found-under-1-of-cortical-neurons
+      summary: "Lennie found under 1% of cortical neurons fire at once in 2003 — mixture-of-experts
+        models hit the same number for the same reason · thread: Moore's Law didn't
+        end once — it died five separate times"
+      last_used:
       provenance:
-        post_id: p_d31696bacc55
+        post_id: p_a3287021014b
         round_id: quiet_machines:2026-08-27
-        report_label: 2026-08-26-agent-message-delivery-architecture
+        report_label: 2026-08-25-moores-law-limits-brain-efficiency
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-27-claude-code-and-codex-cli-quietly-added.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-27-moore-s-law-didn-t-end-once-it-died-five.png
