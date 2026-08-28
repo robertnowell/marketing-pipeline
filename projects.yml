@@ -388,7 +388,7 @@ research:
       summary: "1 petabyte of phone storage is coming this decade. 1 petabyte of phone
         memory never will — the limit is a 5-micron wire · thread: Moore's Law didn't
         end once — it died five separate times"
-      last_used:
+      last_used: '2026-08-27'
       provenance:
         post_id: p_7577390911ba
         round_id: quiet_machines:2026-08-27
@@ -397,7 +397,7 @@ research:
       summary: "A brain synapse costs about as much energy as an Nvidia H100's math
         — the brain isn't the efficient one you think · thread: Moore's Law didn't
         end once — it died five separate times"
-      last_used:
+      last_used: '2026-08-27'
       provenance:
         post_id: p_c7601cf1fc83
         round_id: quiet_machines:2026-08-27
@@ -406,7 +406,7 @@ research:
       summary: "IRDS quietly moved 'no more 2D chip scaling' from 2031 to 2035 in
         its 2024 report — most coverage still says 2031 · thread: Moore's Law didn't
         end once — it died five separate times"
-      last_used:
+      last_used: '2026-08-27'
       provenance:
         post_id: p_c1e98571c142
         round_id: quiet_machines:2026-08-27
@@ -415,7 +415,7 @@ research:
       summary: "On October 16, 2025, TSMC's CEO agreed a customer that Moore's Law
         is dead — then redefined what the term measures · thread: Moore's Law didn't
         end once — it died five separate times"
-      last_used:
+      last_used: '2026-08-27'
       provenance:
         post_id: p_c96442af9d3d
         round_id: quiet_machines:2026-08-27
@@ -424,7 +424,7 @@ research:
       summary: "Lennie found under 1% of cortical neurons fire at once in 2003 — mixture-of-experts
         models hit the same number for the same reason · thread: Moore's Law didn't
         end once — it died five separate times"
-      last_used:
+      last_used: '2026-08-27'
       provenance:
         post_id: p_a3287021014b
         round_id: quiet_machines:2026-08-27
