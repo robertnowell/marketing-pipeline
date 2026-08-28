@@ -2,11 +2,11 @@
   "id": "research-2026-08-27-3",
   "date": "2026-08-27",
   "project": "research",
-  "angle": "2026-08-27-claude-squad-writes-bytes-straight-into",
+  "angle": "2026-08-27-irds-quietly-moved-no-more-2d-chip-scali",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "tmux's send-keys returns exit 0 once it accepts your syntax, not when the agent reads the message. Amazon's cli-agent-orchestrator dropped chunked send-keys for load-buffer + paste-buffer to avoid slow input and corrupted special characters. Scripting Claude Code or Codex? Assume silent drops."
+      "text": "\"Moore's Law\" is five different curves that died separately: Dennard scaling failed ~2005-2007. Density per mm\u00b2 is still rising but slowing, and after ~2031 the IRDS roadmap expects gains from stacking chips, not shrinking transistors. If your roadmap bets on chips getting smaller, it won't hold."
     }
   ]
 }

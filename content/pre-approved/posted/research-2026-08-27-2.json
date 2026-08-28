@@ -2,11 +2,11 @@
   "id": "research-2026-08-27-2",
   "date": "2026-08-27",
   "project": "research",
-  "angle": "2026-08-27-claude-code-s-new-inbox-socket-can-deliv",
+  "angle": "2026-08-27-a-brain-synapse-costs-about-as-much-ener",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "If you run parallel Claude Code sessions, its new inbox socket lets one message another, per its docs: \"Message your other Claude Code sessions.\" Don't read delivery as approval: consent semantics is the catch. tmux's send-keys exit 0 only means syntax was accepted, not anything was read."
+      "text": "\"Moore's Law\" isn't one trend, it's at least five curves that failed on different schedules. Dennard scaling, which let chips speed up without extra power, died around 2005-2007. If your growth plan assumes chips just keep getting cheaper, check which curve you're on. (research thread, 2026-08-25)"
     }
   ]
 }

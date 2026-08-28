@@ -2,11 +2,11 @@
   "id": "research-2026-08-27-4",
   "date": "2026-08-27",
   "project": "research",
-  "angle": "2026-08-27-crystal-omnara-and-conductor-don-t-fight",
+  "angle": "2026-08-27-on-october-16-2025-tsmc-s-ceo-agreed-a-c",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "tmux's send-keys returns exit 0 the moment it accepts your keystrokes, not when your Claude Code or Codex CLI agent actually reads them. Claude Code now has a per-session inbox socket, Codex has `codex queue`. The catch: consent semantics decide if it lands."
+      "text": "\"Moore's Law\" bundles at least five different curves, and they've failed at different times. Dennard scaling, the rule that smaller chips use less power, died around 2005-2007. If your compute-cost plan assumes the whole bundle still holds, know which curve you're actually betting on."
     }
   ]
 }
