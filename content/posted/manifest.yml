@@ -6675,3 +6675,21 @@
   angle: 2026-08-27-a-brain-synapse-costs-about-as-much-ener
   source_id: ''
   posted_at: '2026-08-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muadjel6il2z
+  angle: 2026-08-29-a-double-freed-apple-event-descriptor-cr
+  source_id: research-2026-08-29-1
+  posted_at: '2026-08-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muadjfveez2g
+  angle: 2026-08-29-how-do-you-prove-a-bug-s-exact-first-cra
+  source_id: research-2026-08-29-2
+  posted_at: '2026-08-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muadji3ql225
+  angle: 2026-08-29-commit-ed52187-merged-20-09-25-on-aug-26
+  source_id: research-2026-08-29-5
+  posted_at: '2026-08-29'
