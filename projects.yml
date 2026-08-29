@@ -353,81 +353,57 @@ research:
   channels:
     - bluesky
   facts:
-    - The research question is fully answered, with one thread (the exact shape 
-      of the 2020–2025 price-performance curve) landing as *Contested* rather 
-      than settled — and that contest is itself the finding.
-    - "\"Moore's Law\" is at least five different curves and they have failed at different
-      times. Dennard scaling died ~2005–2007."
-    - Density-per-mm² is still rising but decelerating, and after ~2031 the IRDS
-      roadmap expects density to come from *stacking devices*, not shrinking 
-      them.
-    - The chart in the user's photo is a "best achieved" envelope and overstates
-      the recent trend. Epoch AI's 470-GPU census shows record-holders improve 
-      *slower* (2.95yr doubling) than the market (2.46yr).
-    - The series mixes FP64/FP32/FP16/INT8/FP4 as if they were the same unit.
-    - Kurzweil's own 2023 data point undershot his own projection by ~100×.
-    - 1 PB of unified memory in an iPhone is not a density problem. Density is 
-      the *easiest* of the four walls and is roughly on the existing 3D-NAND 
-      roadmap.
-    - 'The binding constraints are, in order: energy-per-bit-moved (~12,000× gap),
-      bandwidth (~13,000× gap), and static/refresh power (~13,000× gap — but this
-      one has a demonstrated lab answer in IGZO 2T0C DRAM).'
-    - 1 PB of *unified memory* — addressable at memory bandwidth — is physically
-      impossible in a passively-cooled handheld and will remain so, because the 
-      constraint is the energy cost of moving a bit down a wire, which does not 
-      scale away.
-    - The brain's efficiency advantage is real but smaller than folklore, and 
-      mostly architectural rather than physical. The brain sits ~10⁶–10⁷× above 
-      the Landauer limit — it is *not* a thermodynamically optimal computer.
+    - How certain is “first”? — The retained DiagnosticReports corpus contains 
+      12 Tranquility reports, beginning at Aug 26 20:21.
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-25-moores-law-limits-brain-efficiency' dated 2026-08-27, 
+      report '2026-08-28-tranquility-base-crash-root-cause' dated 2026-08-29, 
       and from a simulated review round where 10 agent-written posts were ranked
       by votes.
   angles:
-    - id: 2026-08-27-1-petabyte-of-phone-storage-is-coming-th
-      summary: "1 petabyte of phone storage is coming this decade. 1 petabyte of phone
-        memory never will — the limit is a 5-micron wire · thread: Moore's Law didn't
-        end once — it died five separate times"
-      last_used: '2026-08-28'
+    - id: 2026-08-29-a-double-freed-apple-event-descriptor-cr
+      summary: "A double-freed Apple Event descriptor crashed five unrelated parts
+        of a Mac app for two days · thread: A single double-freed system descriptor
+        was quietly corrupting a Mac app's memory"
+      last_used:
       provenance:
-        post_id: p_7577390911ba
-        round_id: quiet_machines:2026-08-27
-        report_label: 2026-08-25-moores-law-limits-brain-efficiency
-    - id: 2026-08-27-a-brain-synapse-costs-about-as-much-ener
-      summary: "A brain synapse costs about as much energy as an Nvidia H100's math
-        — the brain isn't the efficient one you think · thread: Moore's Law didn't
-        end once — it died five separate times"
-      last_used: '2026-08-29'
+        post_id: p_481cdfc4c31c
+        round_id: quiet_machines:2026-08-29
+        report_label: 2026-08-28-tranquility-base-crash-root-cause
+    - id: 2026-08-29-how-do-you-prove-a-bug-s-exact-first-cra
+      summary: "How do you prove a bug's exact first crash? Four log files and a 6-day
+        retention window. · thread: A single double-freed system descriptor was quietly
+        corrupting a Mac app's memory"
+      last_used:
       provenance:
-        post_id: p_c7601cf1fc83
-        round_id: quiet_machines:2026-08-27
-        report_label: 2026-08-25-moores-law-limits-brain-efficiency
-    - id: 2026-08-27-irds-quietly-moved-no-more-2d-chip-scali
-      summary: "IRDS quietly moved 'no more 2D chip scaling' from 2031 to 2035 in
-        its 2024 report — most coverage still says 2031 · thread: Moore's Law didn't
-        end once — it died five separate times"
-      last_used: '2026-08-27'
+        post_id: p_fb86c7208b0a
+        round_id: quiet_machines:2026-08-29
+        report_label: 2026-08-28-tranquility-base-crash-root-cause
+    - id: 2026-08-29-a-real-sqlite-bug-covers-versions-3-7-0
+      summary: "A real SQLite bug covers versions 3.7.0 (2010) to 3.51.2 — and it
+        still wasn't this Mac app's crash · thread: A single double-freed system descriptor
+        was quietly corrupting a Mac app's memory"
+      last_used:
       provenance:
-        post_id: p_c1e98571c142
-        round_id: quiet_machines:2026-08-27
-        report_label: 2026-08-25-moores-law-limits-brain-efficiency
-    - id: 2026-08-27-on-october-16-2025-tsmc-s-ceo-agreed-a-c
-      summary: "On October 16, 2025, TSMC's CEO agreed a customer that Moore's Law
-        is dead — then redefined what the term measures · thread: Moore's Law didn't
-        end once — it died five separate times"
-      last_used: '2026-08-27'
+        post_id: p_2e38b1d7320e
+        round_id: quiet_machines:2026-08-29
+        report_label: 2026-08-28-tranquility-base-crash-root-cause
+    - id: 2026-08-29-a-mac-crash-report-claims-95-confidence
+      summary: "A Mac crash report claims 95% confidence — the rate-limited-subagent
+        admission sits three paragraphs from the end · thread: A single double-freed
+        system descriptor was quietly corrupting a Mac app's memory"
+      last_used:
       provenance:
-        post_id: p_c96442af9d3d
-        round_id: quiet_machines:2026-08-27
-        report_label: 2026-08-25-moores-law-limits-brain-efficiency
-    - id: 2026-08-27-lennie-found-under-1-of-cortical-neurons
-      summary: "Lennie found under 1% of cortical neurons fire at once in 2003 — mixture-of-experts
-        models hit the same number for the same reason · thread: Moore's Law didn't
-        end once — it died five separate times"
-      last_used: '2026-08-27'
+        post_id: p_ea470ee61036
+        round_id: quiet_machines:2026-08-29
+        report_label: 2026-08-28-tranquility-base-crash-root-cause
+    - id: 2026-08-29-commit-ed52187-merged-20-09-25-on-aug-26
+      summary: "Commit ed52187, merged 20:09:25 on Aug 26 2026, introduced a textbook
+        CWE-415 double free · thread: A single double-freed system descriptor was
+        quietly corrupting a Mac app's memory"
+      last_used:
       provenance:
-        post_id: p_a3287021014b
-        round_id: quiet_machines:2026-08-27
-        report_label: 2026-08-25-moores-law-limits-brain-efficiency
+        post_id: p_390a9082bcf8
+        round_id: quiet_machines:2026-08-29
+        report_label: 2026-08-28-tranquility-base-crash-root-cause
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-27-moore-s-law-didn-t-end-once-it-died-five.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-29-a-single-double-freed-system-descriptor.png
