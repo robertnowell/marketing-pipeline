@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-29-4",
+  "date": "2026-08-29",
+  "project": "research",
+  "angle": "2026-08-29-a-mac-crash-report-claims-95-confidence",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A crash diagnosis for a Mac app declares it found the 'first' crash. The evidence behind that word: 12 retained diagnostic reports, starting Aug 26 20:21. That's the start of what got kept, not proof of what happened first. Source: deep-research report '2026-08-28-tranquility-base-crash-root-cause' (2026-08-29). Check the sample before you trust the certainty."
+    }
+  ]
+}

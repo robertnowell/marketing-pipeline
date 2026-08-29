@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-29-2",
+  "date": "2026-08-29",
+  "project": "research",
+  "angle": "2026-08-29-how-do-you-prove-a-bug-s-exact-first-cra",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "\"How certain is 'first'?\" A root-cause report on crashes in a Mac app called Tranquility found its retained crash-report corpus held only 12 reports, oldest dated Aug 26 at 20:21. Your oldest saved crash log may just be the oldest one still on disk, not the actual first crash. Dated 2026-08-29."
+    }
+  ]
+}

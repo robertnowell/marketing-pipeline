@@ -364,7 +364,7 @@ research:
       summary: "A double-freed Apple Event descriptor crashed five unrelated parts
         of a Mac app for two days · thread: A single double-freed system descriptor
         was quietly corrupting a Mac app's memory"
-      last_used:
+      last_used: '2026-08-29'
       provenance:
         post_id: p_481cdfc4c31c
         round_id: quiet_machines:2026-08-29
@@ -373,7 +373,7 @@ research:
       summary: "How do you prove a bug's exact first crash? Four log files and a 6-day
         retention window. · thread: A single double-freed system descriptor was quietly
         corrupting a Mac app's memory"
-      last_used:
+      last_used: '2026-08-29'
       provenance:
         post_id: p_fb86c7208b0a
         round_id: quiet_machines:2026-08-29
@@ -382,7 +382,7 @@ research:
       summary: "A real SQLite bug covers versions 3.7.0 (2010) to 3.51.2 — and it
         still wasn't this Mac app's crash · thread: A single double-freed system descriptor
         was quietly corrupting a Mac app's memory"
-      last_used:
+      last_used: '2026-08-29'
       provenance:
         post_id: p_2e38b1d7320e
         round_id: quiet_machines:2026-08-29
@@ -391,7 +391,7 @@ research:
       summary: "A Mac crash report claims 95% confidence — the rate-limited-subagent
         admission sits three paragraphs from the end · thread: A single double-freed
         system descriptor was quietly corrupting a Mac app's memory"
-      last_used:
+      last_used: '2026-08-29'
       provenance:
         post_id: p_ea470ee61036
         round_id: quiet_machines:2026-08-29
@@ -400,7 +400,7 @@ research:
       summary: "Commit ed52187, merged 20:09:25 on Aug 26 2026, introduced a textbook
         CWE-415 double free · thread: A single double-freed system descriptor was
         quietly corrupting a Mac app's memory"
-      last_used:
+      last_used: '2026-08-29'
       provenance:
         post_id: p_390a9082bcf8
         round_id: quiet_machines:2026-08-29
