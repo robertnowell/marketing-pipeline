@@ -2,11 +2,11 @@
   "id": "research-2026-08-29-3",
   "date": "2026-08-29",
   "project": "research",
-  "angle": "2026-08-29-a-real-sqlite-bug-covers-versions-3-7-0",
+  "angle": "2026-08-29-kirchenbauer-s-2023-watermark-held-for-8",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Root-causing a Mac app's crashes, only 12 diagnostic reports were still on disk, the oldest from Aug 26 at 20:21. macOS quietly caps how much crash history it retains. If you're timelining a bug from crash logs, that 'first occurrence' timestamp often just means 'oldest not yet deleted,' not oldest that happened. Check retention before you trust the story it tells."
+      "text": "Anthropic says Claude's text watermark can't identify you. Nobody's independently verified that: no paper, blog, or teardown has tested Anthropic's detector on real Claude output. C2PA image metadata is weaker, a screenshot strips it entirely. Don't treat either as proof of authorship."
     }
   ]
 }

@@ -6693,3 +6693,33 @@
   angle: 2026-08-29-commit-ed52187-merged-20-09-25-on-aug-26
   source_id: research-2026-08-29-5
   posted_at: '2026-08-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mucnlcnozg2z
+  angle: 2026-08-29-claude-s-invisible-watermark-traces-back
+  source_id: research-2026-08-29-2
+  posted_at: '2026-08-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mucnlehmbl2w
+  angle: 2026-08-29-kirchenbauer-s-2023-watermark-held-for-8
+  source_id: research-2026-08-29-3
+  posted_at: '2026-08-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mucnlgdb5x25
+  angle: 2026-08-29-old-drm-had-a-trick-anthropic-s-watermar
+  source_id: research-2026-08-29-4
+  posted_at: '2026-08-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mucnli4gjx2o
+  angle: 2026-08-29-eth-zurich-scrubbed-90-of-google-s-text
+  source_id: research-2026-08-29-5
+  posted_at: '2026-08-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mucnly2kqr2x
+  angle: 2026-08-29-anthropic-says-light-editing-won-t-break
+  source_id: ''
+  posted_at: '2026-08-30'

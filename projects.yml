@@ -418,7 +418,7 @@ research:
       summary: "Anthropic says light editing won't break Claude's watermark. Independent
         labs found detection accuracy crashes to 0.7 AUC. · thread: Anthropic says
         its AI text watermark can't identify you"
-      last_used: '2026-08-29'
+      last_used: '2026-08-30'
       provenance:
         post_id: p_d92928771c33
         round_id: quiet_machines:2026-08-29

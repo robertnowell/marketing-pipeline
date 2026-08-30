@@ -2,11 +2,11 @@
   "id": "research-2026-08-29-5",
   "date": "2026-08-29",
   "project": "research",
-  "angle": "2026-08-29-commit-ed52187-merged-20-09-25-on-aug-26",
+  "angle": "2026-08-29-eth-zurich-scrubbed-90-of-google-s-text",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "One merge quietly broke a Mac app. Commit ed52187, merged 20:09:25 on Aug 26 2026, freed the same system descriptor twice, a textbook CWE-415 double free. Crash reports started 20:21 that day, 12 logged since. If you ship solo, that's the gap code review exists to close."
+      "text": "Anthropic says its Claude text watermark 'carries no identifying information' and can't be traced to you or your chats. It's a version of Google DeepMind's SynthID-Text, whose own data already shows detection AUC dropping to about 0.7 under paraphrase, per an independent ETH Zurich analysis."
     }
   ]
 }
