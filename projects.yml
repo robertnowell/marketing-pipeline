@@ -353,57 +353,111 @@ research:
   channels:
     - bluesky
   facts:
-    - How certain is “first”? — The retained DiagnosticReports corpus contains 
-      12 Tranquility reports, beginning at Aug 26 20:21.
+    - Anthropic states directly, in its own words, that the text watermark 
+      carries no identifying information. "Watermarking carries no identifying 
+      information and can't be traced to a specific person, organization, or 
+      chat." "There's nothing in the watermark, or its key, that would allow 
+      anyone to recover any information about the user, their organization, or 
+      their chats with Claude."…
+    - "The C2PA metadata Anthropic attaches to generated files (images/SVG) is likewise
+      stated to carry no identifying information, but this claim has zero independent
+      technical verification. Anthropic's announcement states: \"the credential only
+      says Claude was involved in producing the file; it doesn't include any identifying
+      information.\" No independent source anywhere (blog, GitHub teardown, forum…"
+    - Detection only proves Claude-involvement, not authorship, and not identity
+      of the requester. A detected watermark or C2PA signature indicates content
+      "may have been processed by Claude," not that Claude authored the 
+      underlying ideas, and not who prompted it. Text and file marking are 
+      applied uniformly across surfaces (claude.ai, Claude API, Claude Code, 
+      Claude Cowork, Claude Tag), consistent with…
+    - "Claude's text watermark is a variant of Google DeepMind's SynthID-Text, itself
+      built on ideas from Scott Aaronson's 2022 work, biasing token-sampling randomness
+      via a cryptographic key rather than forcing specific word choices. Anthropic
+      states this directly: \"Claude's text watermark is a version of the SynthID-Text
+      approach published by Google DeepMind in a Nature paper in 2024.\" The mechanism…"
+    - "Anthropic's own qualitative robustness claims: light editing likely survives;
+      translation is regenerative and typically preserves detectability; full rewrite
+      defeats it; short/low-entropy text (factual, code) carries a weaker signal.
+      \"Light editing probably won't remove the watermark completely; a complete rewrite
+      where every word is replaced will.\" Translated text is described as still…"
+    - Independent academic testing of the underlying SynthID-Text scheme finds 
+      it substantially more fragile under paraphrase attack than vendor language
+      implies, though the apparent "vendor vs. independent" contradiction mostly
+      dissolves once methodology is accounted for. Google's own supplementary 
+      data (cited via an independent ETH Zurich analysis) already shows AUC 
+      dropping to about 0.7 for…
+    - "The older Kirchenbauer et al. (KGW) watermark scheme shows the same vendor-vs-independent
+      divergence pattern, only partially explained. The original KGW authors' own
+      follow-up paper (arXiv:2306.04634, ICLR 2024) reports comparatively strong resilience:
+      detectable after about 800 tokens under strong human paraphrase at a strict
+      1e-5 false-positive rate, and ROC-AUC above 0.85-0.9 under LLM…"
+    - Claude's own watermark implementation has not been independently, 
+      empirically robustness-tested by anyone outside Anthropic. No academic 
+      paper, security-research blog, or technical teardown found tests 
+      Anthropic's actual deployed detector against real Claude output. One 
+      blogger (Andrea Saez, Substack) explicitly built only a hypothetical 
+      generic green/red-list detector from first principles, not…
+    - C2PA file metadata is explicitly acknowledged (by Anthropic and by the 
+      C2PA ecosystem generally) as far more fragile than the text watermark, 
+      trivially strippable. Format conversion, re-saving, editing in unsupported
+      tools, and screenshots all remove C2PA signatures/metadata entirely, per 
+      Anthropic's own documentation. This is a structural property of the C2PA 
+      standard (metadata rides alongside…
+    - The C2PA standard itself supports optional identity-bearing assertions 
+      (e.g., stds.schema-org.CreativeWork, c2pa.exif), which establishes 
+      technical possibility of identity data in a C2PA manifest generally, but 
+      nothing found indicates Anthropic populates any such field for Claude 
+      output. The generic C2PA specification allows creator name, organization, 
+      device serial, or GPS data as opt-in…
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-28-tranquility-base-crash-root-cause' dated 2026-08-29, 
+      report '2026-08-29-claude-watermark-c2pa-traceability' dated 2026-08-29, 
       and from a simulated review round where 10 agent-written posts were ranked
       by votes.
   angles:
-    - id: 2026-08-29-a-double-freed-apple-event-descriptor-cr
-      summary: "A double-freed Apple Event descriptor crashed five unrelated parts
-        of a Mac app for two days · thread: A single double-freed system descriptor
-        was quietly corrupting a Mac app's memory"
-      last_used: '2026-08-29'
+    - id: 2026-08-29-anthropic-says-light-editing-won-t-break
+      summary: "Anthropic says light editing won't break Claude's watermark. Independent
+        labs found detection accuracy crashes to 0.7 AUC. · thread: Anthropic says
+        its AI text watermark can't identify you"
+      last_used:
       provenance:
-        post_id: p_481cdfc4c31c
+        post_id: p_d92928771c33
         round_id: quiet_machines:2026-08-29
-        report_label: 2026-08-28-tranquility-base-crash-root-cause
-    - id: 2026-08-29-how-do-you-prove-a-bug-s-exact-first-cra
-      summary: "How do you prove a bug's exact first crash? Four log files and a 6-day
-        retention window. · thread: A single double-freed system descriptor was quietly
-        corrupting a Mac app's memory"
-      last_used: '2026-08-29'
+        report_label: 2026-08-29-claude-watermark-c2pa-traceability
+    - id: 2026-08-29-claude-s-invisible-watermark-traces-back
+      summary: "Claude's invisible watermark traces back to a 2022 idea from a quantum-computing
+        theorist, not a security team · thread: Anthropic says its AI text watermark
+        can't identify you"
+      last_used:
       provenance:
-        post_id: p_fb86c7208b0a
+        post_id: p_0ce0031d6397
         round_id: quiet_machines:2026-08-29
-        report_label: 2026-08-28-tranquility-base-crash-root-cause
-    - id: 2026-08-29-a-real-sqlite-bug-covers-versions-3-7-0
-      summary: "A real SQLite bug covers versions 3.7.0 (2010) to 3.51.2 — and it
-        still wasn't this Mac app's crash · thread: A single double-freed system descriptor
-        was quietly corrupting a Mac app's memory"
-      last_used: '2026-08-29'
+        report_label: 2026-08-29-claude-watermark-c2pa-traceability
+    - id: 2026-08-29-kirchenbauer-s-2023-watermark-held-for-8
+      summary: "Kirchenbauer's 2023 watermark held for 800 tokens under attack. A
+        2026 paper found 100% removal, and nobody's isolated why · thread: Anthropic
+        says its AI text watermark can't identify you"
+      last_used:
       provenance:
-        post_id: p_2e38b1d7320e
+        post_id: p_9e562a008d75
         round_id: quiet_machines:2026-08-29
-        report_label: 2026-08-28-tranquility-base-crash-root-cause
-    - id: 2026-08-29-a-mac-crash-report-claims-95-confidence
-      summary: "A Mac crash report claims 95% confidence — the rate-limited-subagent
-        admission sits three paragraphs from the end · thread: A single double-freed
-        system descriptor was quietly corrupting a Mac app's memory"
-      last_used: '2026-08-29'
+        report_label: 2026-08-29-claude-watermark-c2pa-traceability
+    - id: 2026-08-29-old-drm-had-a-trick-anthropic-s-watermar
+      summary: "Old DRM had a trick Anthropic's watermark description quietly leaves
+        open: a different key per customer · thread: Anthropic says its AI text watermark
+        can't identify you"
+      last_used:
       provenance:
-        post_id: p_ea470ee61036
+        post_id: p_04339124e23c
         round_id: quiet_machines:2026-08-29
-        report_label: 2026-08-28-tranquility-base-crash-root-cause
-    - id: 2026-08-29-commit-ed52187-merged-20-09-25-on-aug-26
-      summary: "Commit ed52187, merged 20:09:25 on Aug 26 2026, introduced a textbook
-        CWE-415 double free · thread: A single double-freed system descriptor was
-        quietly corrupting a Mac app's memory"
-      last_used: '2026-08-29'
+        report_label: 2026-08-29-claude-watermark-c2pa-traceability
+    - id: 2026-08-29-eth-zurich-scrubbed-90-of-google-s-text
+      summary: "ETH Zurich scrubbed 90% of Google's text watermark using a number
+        Google had already published · thread: Anthropic says its AI text watermark
+        can't identify you"
+      last_used:
       provenance:
-        post_id: p_390a9082bcf8
+        post_id: p_3328b77aad36
         round_id: quiet_machines:2026-08-29
-        report_label: 2026-08-28-tranquility-base-crash-root-cause
+        report_label: 2026-08-29-claude-watermark-c2pa-traceability
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-29-a-single-double-freed-system-descriptor.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-29-anthropic-says-its-ai-text-watermark-can.png
