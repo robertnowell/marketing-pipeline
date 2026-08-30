@@ -418,7 +418,7 @@ research:
       summary: "Anthropic says light editing won't break Claude's watermark. Independent
         labs found detection accuracy crashes to 0.7 AUC. · thread: Anthropic says
         its AI text watermark can't identify you"
-      last_used:
+      last_used: '2026-08-29'
       provenance:
         post_id: p_d92928771c33
         round_id: quiet_machines:2026-08-29
@@ -427,7 +427,7 @@ research:
       summary: "Claude's invisible watermark traces back to a 2022 idea from a quantum-computing
         theorist, not a security team · thread: Anthropic says its AI text watermark
         can't identify you"
-      last_used:
+      last_used: '2026-08-29'
       provenance:
         post_id: p_0ce0031d6397
         round_id: quiet_machines:2026-08-29
@@ -436,7 +436,7 @@ research:
       summary: "Kirchenbauer's 2023 watermark held for 800 tokens under attack. A
         2026 paper found 100% removal, and nobody's isolated why · thread: Anthropic
         says its AI text watermark can't identify you"
-      last_used:
+      last_used: '2026-08-29'
       provenance:
         post_id: p_9e562a008d75
         round_id: quiet_machines:2026-08-29
@@ -445,7 +445,7 @@ research:
       summary: "Old DRM had a trick Anthropic's watermark description quietly leaves
         open: a different key per customer · thread: Anthropic says its AI text watermark
         can't identify you"
-      last_used:
+      last_used: '2026-08-29'
       provenance:
         post_id: p_04339124e23c
         round_id: quiet_machines:2026-08-29
@@ -454,7 +454,7 @@ research:
       summary: "ETH Zurich scrubbed 90% of Google's text watermark using a number
         Google had already published · thread: Anthropic says its AI text watermark
         can't identify you"
-      last_used:
+      last_used: '2026-08-29'
       provenance:
         post_id: p_3328b77aad36
         round_id: quiet_machines:2026-08-29

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-29-4",
+  "date": "2026-08-29",
+  "project": "research",
+  "angle": "2026-08-29-old-drm-had-a-trick-anthropic-s-watermar",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Anthropic says its Claude text watermark \"can't be traced to a specific person, organization, or chat.\" No outside researcher has ever tested that claim against real Claude output. If you publish Claude-drafted content, you're trusting an unverified promise."
+    }
+  ]
+}

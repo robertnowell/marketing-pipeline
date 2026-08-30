@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-29-2",
+  "date": "2026-08-29",
+  "project": "research",
+  "angle": "2026-08-29-claude-s-invisible-watermark-traces-back",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Anthropic says Claude's text watermark 'carries no identifying information' and 'can't be traced to a specific person, organization, or chat.' For founders using Claude on client work: detection only proves Claude was involved, not who prompted it or what they wrote."
+    }
+  ]
+}
