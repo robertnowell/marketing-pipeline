@@ -353,111 +353,98 @@ research:
   channels:
     - bluesky
   facts:
-    - Anthropic states directly, in its own words, that the text watermark 
-      carries no identifying information. "Watermarking carries no identifying 
-      information and can't be traced to a specific person, organization, or 
-      chat." "There's nothing in the watermark, or its key, that would allow 
-      anyone to recover any information about the user, their organization, or 
-      their chats with Claude."…
-    - "The C2PA metadata Anthropic attaches to generated files (images/SVG) is likewise
-      stated to carry no identifying information, but this claim has zero independent
-      technical verification. Anthropic's announcement states: \"the credential only
-      says Claude was involved in producing the file; it doesn't include any identifying
-      information.\" No independent source anywhere (blog, GitHub teardown, forum…"
-    - Detection only proves Claude-involvement, not authorship, and not identity
-      of the requester. A detected watermark or C2PA signature indicates content
-      "may have been processed by Claude," not that Claude authored the 
-      underlying ideas, and not who prompted it. Text and file marking are 
-      applied uniformly across surfaces (claude.ai, Claude API, Claude Code, 
-      Claude Cowork, Claude Tag), consistent with…
-    - "Claude's text watermark is a variant of Google DeepMind's SynthID-Text, itself
-      built on ideas from Scott Aaronson's 2022 work, biasing token-sampling randomness
-      via a cryptographic key rather than forcing specific word choices. Anthropic
-      states this directly: \"Claude's text watermark is a version of the SynthID-Text
-      approach published by Google DeepMind in a Nature paper in 2024.\" The mechanism…"
-    - "Anthropic's own qualitative robustness claims: light editing likely survives;
-      translation is regenerative and typically preserves detectability; full rewrite
-      defeats it; short/low-entropy text (factual, code) carries a weaker signal.
-      \"Light editing probably won't remove the watermark completely; a complete rewrite
-      where every word is replaced will.\" Translated text is described as still…"
-    - Independent academic testing of the underlying SynthID-Text scheme finds 
-      it substantially more fragile under paraphrase attack than vendor language
-      implies, though the apparent "vendor vs. independent" contradiction mostly
-      dissolves once methodology is accounted for. Google's own supplementary 
-      data (cited via an independent ETH Zurich analysis) already shows AUC 
-      dropping to about 0.7 for…
-    - "The older Kirchenbauer et al. (KGW) watermark scheme shows the same vendor-vs-independent
-      divergence pattern, only partially explained. The original KGW authors' own
-      follow-up paper (arXiv:2306.04634, ICLR 2024) reports comparatively strong resilience:
-      detectable after about 800 tokens under strong human paraphrase at a strict
-      1e-5 false-positive rate, and ROC-AUC above 0.85-0.9 under LLM…"
-    - Claude's own watermark implementation has not been independently, 
-      empirically robustness-tested by anyone outside Anthropic. No academic 
-      paper, security-research blog, or technical teardown found tests 
-      Anthropic's actual deployed detector against real Claude output. One 
-      blogger (Andrea Saez, Substack) explicitly built only a hypothetical 
-      generic green/red-list detector from first principles, not…
-    - C2PA file metadata is explicitly acknowledged (by Anthropic and by the 
-      C2PA ecosystem generally) as far more fragile than the text watermark, 
-      trivially strippable. Format conversion, re-saving, editing in unsupported
-      tools, and screenshots all remove C2PA signatures/metadata entirely, per 
-      Anthropic's own documentation. This is a structural property of the C2PA 
-      standard (metadata rides alongside…
-    - The C2PA standard itself supports optional identity-bearing assertions 
-      (e.g., stds.schema-org.CreativeWork, c2pa.exif), which establishes 
-      technical possibility of identity data in a C2PA manifest generally, but 
-      nothing found indicates Anthropic populates any such field for Claude 
-      output. The generic C2PA specification allows creator name, organization, 
-      device serial, or GPS data as opt-in…
+    - "The text watermark identifies \"Claude produced this,\" not a user or account,
+      stated directly by Anthropic. Anthropic's own announcement states there is nothing
+      in the watermark or its key that would allow anyone (including Anthropic) to
+      recover information about the user, their organization, or their chats. (Source:
+      anthropic.com/news/claude-text-watermark [Tier 1])"
+    - C2PA metadata is a separate mechanism from the text watermark, applies 
+      only to generated/processed files (.svg, .png, .jpg), and also carries no 
+      user-identifying data. C2PA (Content Credentials) is an 
+      image/file-provenance standard; Anthropic uses it for files, and a 
+      distinct statistical watermark for plain text. Neither is documented to 
+      embed account or session identifiers. (Source:…
+    - Detection is via a single shared Anthropic-held key/detector, not per-user
+      signing. There is no per-account channel to exploit even in principle. The
+      mechanism (adapted from Google DeepMind's SynthID-Text) biases low-stakes 
+      token choices (e.g., synonym selection) using a cryptographic key plus 
+      context; checking consistency with that key is a binary "Claude-consistent
+      or not" test, not an…
+    - The watermark degrades significantly and can fail entirely under 
+      paraphrasing, translation, and heavy editing, per Anthropic's own 
+      admission. Anthropic's Help Center states marks may fail to register if 
+      text has been "heavily edited, paraphrased, translated, or mixed into 
+      other writing," and that a full rewrite where every word is replaced 
+      removes the mark (at which point Anthropic itself…
+    - "Independent academic literature confirms this class of watermark (green-list/red-list,
+      SynthID-Text-style) is broadly considered not robust against determined paraphrase
+      attacks. Reported figures: Kirchenbauer et al.'s watermark AUROC fell from 99.8%
+      to 69.6% under a word-substitution attack; Krishna et al.'s DIPPER paraphraser
+      cut detection accuracy from 100% to 57.2% after one pass, and…"
+    - A positive watermark detection is explicitly a probabilistic signal, not 
+      proof, and a negative result doesn't prove human authorship either. 
+      Anthropic states detection means text "may have been processed by Claude,"
+      not confirmed provenance; absence of a detected mark does not mean content
+      wasn't AI-generated. Detection is also weaker on short passages, highly 
+      factual/constrained text, and code…
+    - Account-level tracing of Claude output to a specific user does happen in 
+      practice, but through server-side systems entirely separate from the 
+      watermark. Anthropic retains prompts/outputs from "covered" frontier 
+      models for 30 days for safety/trust-and-safety work with tamper-proof 
+      internal access logging; discloses account-linked content or account 
+      records in response to valid legal process…
+    - 'The watermark/C2PA rollout was driven by EU AI Act Article 50 transparency
+      obligations, not by a forensic/law-enforcement traceability goal, and was deployed
+      globally rather than geofenced. This context explains the design choice to make
+      marks detect "AI-produced-ness" broadly rather than build any per-user attribution
+      capability into the content itself. (Source: TechCrunch [Tier 2]; The Register…'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-29-claude-watermark-c2pa-traceability' dated 2026-08-29, 
-      and from a simulated review round where 10 agent-written posts were ranked
-      by votes.
+      report '2026-08-30-claude-watermark-traceability' dated 2026-08-30, and 
+      from a simulated review round where 10 agent-written posts were ranked by 
+      votes.
   angles:
-    - id: 2026-08-29-anthropic-says-light-editing-won-t-break
-      summary: "Anthropic says light editing won't break Claude's watermark. Independent
-        labs found detection accuracy crashes to 0.7 AUC. · thread: Anthropic says
-        its AI text watermark can't identify you"
-      last_used: '2026-08-30'
+    - id: 2026-08-30-a-1986-law-about-phone-bills-decides-whe
+      summary: "A 1986 law about phone bills decides whether police need a warrant
+        for your Claude chat · thread: Claude's AI watermark can't identify you —
+        not even to Anthropic"
+      last_used:
       provenance:
-        post_id: p_d92928771c33
-        round_id: quiet_machines:2026-08-29
-        report_label: 2026-08-29-claude-watermark-c2pa-traceability
-    - id: 2026-08-29-claude-s-invisible-watermark-traces-back
-      summary: "Claude's invisible watermark traces back to a 2022 idea from a quantum-computing
-        theorist, not a security team · thread: Anthropic says its AI text watermark
-        can't identify you"
-      last_used: '2026-08-29'
+        post_id: p_75cecc05ca94
+        round_id: quiet_machines:2026-08-30
+        report_label: 2026-08-30-claude-watermark-traceability
+    - id: 2026-08-30-claude-s-watermark-barely-touches-code-b
+      summary: "Claude's watermark barely touches code — because code gives it nowhere
+        to hide · thread: Claude's AI watermark can't identify you — not even to Anthropic"
+      last_used:
       provenance:
-        post_id: p_0ce0031d6397
-        round_id: quiet_machines:2026-08-29
-        report_label: 2026-08-29-claude-watermark-c2pa-traceability
-    - id: 2026-08-29-kirchenbauer-s-2023-watermark-held-for-8
-      summary: "Kirchenbauer's 2023 watermark held for 800 tokens under attack. A
-        2026 paper found 100% removal, and nobody's isolated why · thread: Anthropic
-        says its AI text watermark can't identify you"
-      last_used: '2026-08-29'
+        post_id: p_69b81e18eb5d
+        round_id: quiet_machines:2026-08-30
+        report_label: 2026-08-30-claude-watermark-traceability
+    - id: 2026-08-30-krishna-et-al-s-dipper-paraphraser-cut-a
+      summary: "Krishna et al.'s DIPPER paraphraser cut a text watermark's detection
+        from 100% to 57.2% in one pass, and into single digits by five · thread: Claude's
+        AI watermark can't identify you — not even to Anthropic"
+      last_used:
       provenance:
-        post_id: p_9e562a008d75
-        round_id: quiet_machines:2026-08-29
-        report_label: 2026-08-29-claude-watermark-c2pa-traceability
-    - id: 2026-08-29-old-drm-had-a-trick-anthropic-s-watermar
-      summary: "Old DRM had a trick Anthropic's watermark description quietly leaves
-        open: a different key per customer · thread: Anthropic says its AI text watermark
-        can't identify you"
-      last_used: '2026-08-29'
+        post_id: p_bf630d3ee6e2
+        round_id: quiet_machines:2026-08-30
+        report_label: 2026-08-30-claude-watermark-traceability
+    - id: 2026-08-30-anthropic-banned-11-4-million-accounts-i
+      summary: "Anthropic banned 11.4 million accounts in six months. The watermark
+        caught none of them. · thread: Claude's AI watermark can't identify you —
+        not even to Anthropic"
+      last_used:
       provenance:
-        post_id: p_04339124e23c
-        round_id: quiet_machines:2026-08-29
-        report_label: 2026-08-29-claude-watermark-c2pa-traceability
-    - id: 2026-08-29-eth-zurich-scrubbed-90-of-google-s-text
-      summary: "ETH Zurich scrubbed 90% of Google's text watermark using a number
-        Google had already published · thread: Anthropic says its AI text watermark
-        can't identify you"
-      last_used: '2026-08-29'
+        post_id: p_1ce80a87ac6a
+        round_id: quiet_machines:2026-08-30
+        report_label: 2026-08-30-claude-watermark-traceability
+    - id: 2026-08-30-a-claude-watermark-hit-doesn-t-mean-ai-a
+      summary: "A Claude watermark 'hit' doesn't mean AI. A 'miss' doesn't mean human.
+        · thread: Claude's AI watermark can't identify you — not even to Anthropic"
+      last_used:
       provenance:
-        post_id: p_3328b77aad36
-        round_id: quiet_machines:2026-08-29
-        report_label: 2026-08-29-claude-watermark-c2pa-traceability
+        post_id: p_013ad6733cc6
+        round_id: quiet_machines:2026-08-30
+        report_label: 2026-08-30-claude-watermark-traceability
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-29-anthropic-says-its-ai-text-watermark-can.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-30-claude-s-ai-watermark-can-t-identify-you.png
