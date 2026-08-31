@@ -6723,3 +6723,27 @@
   angle: 2026-08-29-anthropic-says-light-editing-won-t-break
   source_id: ''
   posted_at: '2026-08-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mufhbhkpqh2z
+  angle: 2026-08-30-a-1986-law-about-phone-bills-decides-whe
+  source_id: research-2026-08-30-1
+  posted_at: '2026-08-31'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mufhbj4x432h
+  angle: 2026-08-30-claude-s-watermark-barely-touches-code-b
+  source_id: research-2026-08-30-2
+  posted_at: '2026-08-31'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mufhbll6av22
+  angle: 2026-08-30-anthropic-banned-11-4-million-accounts-i
+  source_id: research-2026-08-30-4
+  posted_at: '2026-08-31'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mufhc3i2vz2o
+  angle: 2026-08-30-a-1986-law-about-phone-bills-decides-whe
+  source_id: ''
+  posted_at: '2026-08-31'
