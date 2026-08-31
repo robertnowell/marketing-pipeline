@@ -407,7 +407,7 @@ research:
       summary: "A 1986 law about phone bills decides whether police need a warrant
         for your Claude chat · thread: Claude's AI watermark can't identify you —
         not even to Anthropic"
-      last_used:
+      last_used: '2026-08-30'
       provenance:
         post_id: p_75cecc05ca94
         round_id: quiet_machines:2026-08-30
@@ -415,7 +415,7 @@ research:
     - id: 2026-08-30-claude-s-watermark-barely-touches-code-b
       summary: "Claude's watermark barely touches code — because code gives it nowhere
         to hide · thread: Claude's AI watermark can't identify you — not even to Anthropic"
-      last_used:
+      last_used: '2026-08-30'
       provenance:
         post_id: p_69b81e18eb5d
         round_id: quiet_machines:2026-08-30
@@ -424,7 +424,7 @@ research:
       summary: "Krishna et al.'s DIPPER paraphraser cut a text watermark's detection
         from 100% to 57.2% in one pass, and into single digits by five · thread: Claude's
         AI watermark can't identify you — not even to Anthropic"
-      last_used:
+      last_used: '2026-08-30'
       provenance:
         post_id: p_bf630d3ee6e2
         round_id: quiet_machines:2026-08-30
@@ -433,7 +433,7 @@ research:
       summary: "Anthropic banned 11.4 million accounts in six months. The watermark
         caught none of them. · thread: Claude's AI watermark can't identify you —
         not even to Anthropic"
-      last_used:
+      last_used: '2026-08-30'
       provenance:
         post_id: p_1ce80a87ac6a
         round_id: quiet_machines:2026-08-30
@@ -441,7 +441,7 @@ research:
     - id: 2026-08-30-a-claude-watermark-hit-doesn-t-mean-ai-a
       summary: "A Claude watermark 'hit' doesn't mean AI. A 'miss' doesn't mean human.
         · thread: Claude's AI watermark can't identify you — not even to Anthropic"
-      last_used:
+      last_used: '2026-08-30'
       provenance:
         post_id: p_013ad6733cc6
         round_id: quiet_machines:2026-08-30

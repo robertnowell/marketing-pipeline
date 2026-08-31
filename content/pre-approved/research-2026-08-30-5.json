@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-30-5",
+  "date": "2026-08-30",
+  "project": "research",
+  "angle": "2026-08-30-a-claude-watermark-hit-doesn-t-mean-ai-a",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's AI watermark can't identify you, not even to Anthropic. A hit just means \"maybe processed by Claude,\" a miss proves nothing either. Detection runs off one shared key Anthropic holds, no per-user signing. And it breaks under paraphrasing or a full rewrite. Don't trust it to prove authorship either way."
+    }
+  ]
+}

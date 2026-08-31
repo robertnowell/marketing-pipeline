@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-30-4",
+  "date": "2026-08-30",
+  "project": "research",
+  "angle": "2026-08-30-anthropic-banned-11-4-million-accounts-i",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's watermark proves text came from Claude, not who used it. Anthropic says nothing in it could let even Anthropic recover the user, org, or chat. Detection uses one shared key, not per-user signing. Don't rely on it for authorship disputes. anthropic.com/news/claude-text-watermark"
+    }
+  ]
+}

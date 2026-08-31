@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-30-2",
+  "date": "2026-08-30",
+  "project": "research",
+  "angle": "2026-08-30-claude-s-watermark-barely-touches-code-b",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's AI watermark can't identify you, not even to Anthropic: no account or chat data is recoverable from it. It's weakest on short, factual, or code text. If you write code with Claude, the watermark isn't your privacy risk."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-30-3",
+  "date": "2026-08-30",
+  "project": "research",
+  "angle": "2026-08-30-krishna-et-al-s-dipper-paraphraser-cut-a",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's text watermark can't identify you, and Anthropic says even it can't recover who you are from it: \"nothing in the watermark or its key\" reveals the user, org, or chats. One shared detector key checks \"Claude-consistent or not,\" not who wrote it. Separately, a paraphraser cut a similar watermark's detection from 100% to 57.2% in one pass (Krishna et al.). If you're relying on watermarks to prove or disprove authorship, don't."
+    }
+  ]
+}

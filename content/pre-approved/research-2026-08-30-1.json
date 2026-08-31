@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-30-1",
+  "date": "2026-08-30",
+  "project": "research",
+  "angle": "2026-08-30-a-1986-law-about-phone-bills-decides-whe",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's AI text watermark proves Claude wrote something, not who asked. Anthropic says nothing in the watermark or its key lets anyone, including Anthropic, recover the user, org, or chat behind it. Tracing to an account happens only via separate legal-process logs, never the watermark."
+    }
+  ]
+}
