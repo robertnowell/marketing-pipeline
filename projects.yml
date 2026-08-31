@@ -415,7 +415,7 @@ research:
     - id: 2026-08-30-claude-s-watermark-barely-touches-code-b
       summary: "Claude's watermark barely touches code — because code gives it nowhere
         to hide · thread: Claude's AI watermark can't identify you — not even to Anthropic"
-      last_used: '2026-08-30'
+      last_used: '2026-08-31'
       provenance:
         post_id: p_69b81e18eb5d
         round_id: quiet_machines:2026-08-30
