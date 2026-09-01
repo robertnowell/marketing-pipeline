@@ -6753,3 +6753,33 @@
   angle: 2026-08-30-claude-s-watermark-barely-touches-code-b
   source_id: ''
   posted_at: '2026-08-31'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muhp4atq5m22
+  angle: 2026-08-31-codex-found-8-lock-files-guarding-4-live
+  source_id: research-2026-08-31-1
+  posted_at: '2026-09-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muhp4clvyo26
+  angle: 2026-08-31-codex-only-allows-one-notify-hook-and-on
+  source_id: research-2026-08-31-2
+  posted_at: '2026-09-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muhp4ecpvs26
+  angle: 2026-08-31-a-team-rejected-codex-s-app-server-twice
+  source_id: research-2026-08-31-3
+  posted_at: '2026-09-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muhp4g2yon2b
+  angle: 2026-08-31-a-safety-review-commissioned-aug-28-2026
+  source_id: research-2026-08-31-4
+  posted_at: '2026-09-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muhp4ht2mr2y
+  angle: 2026-08-31-codex-s-own-hook-engine-is-named-claudeh
+  source_id: research-2026-08-31-5
+  posted_at: '2026-09-01'
