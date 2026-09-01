@@ -353,98 +353,73 @@ research:
   channels:
     - bluesky
   facts:
-    - "The text watermark identifies \"Claude produced this,\" not a user or account,
-      stated directly by Anthropic. Anthropic's own announcement states there is nothing
-      in the watermark or its key that would allow anyone (including Anthropic) to
-      recover information about the user, their organization, or their chats. (Source:
-      anthropic.com/news/claude-text-watermark [Tier 1])"
-    - C2PA metadata is a separate mechanism from the text watermark, applies 
-      only to generated/processed files (.svg, .png, .jpg), and also carries no 
-      user-identifying data. C2PA (Content Credentials) is an 
-      image/file-provenance standard; Anthropic uses it for files, and a 
-      distinct statistical watermark for plain text. Neither is documented to 
-      embed account or session identifiers. (Source:…
-    - Detection is via a single shared Anthropic-held key/detector, not per-user
-      signing. There is no per-account channel to exploit even in principle. The
-      mechanism (adapted from Google DeepMind's SynthID-Text) biases low-stakes 
-      token choices (e.g., synonym selection) using a cryptographic key plus 
-      context; checking consistency with that key is a binary "Claude-consistent
-      or not" test, not an…
-    - The watermark degrades significantly and can fail entirely under 
-      paraphrasing, translation, and heavy editing, per Anthropic's own 
-      admission. Anthropic's Help Center states marks may fail to register if 
-      text has been "heavily edited, paraphrased, translated, or mixed into 
-      other writing," and that a full rewrite where every word is replaced 
-      removes the mark (at which point Anthropic itself…
-    - "Independent academic literature confirms this class of watermark (green-list/red-list,
-      SynthID-Text-style) is broadly considered not robust against determined paraphrase
-      attacks. Reported figures: Kirchenbauer et al.'s watermark AUROC fell from 99.8%
-      to 69.6% under a word-substitution attack; Krishna et al.'s DIPPER paraphraser
-      cut detection accuracy from 100% to 57.2% after one pass, and…"
-    - A positive watermark detection is explicitly a probabilistic signal, not 
-      proof, and a negative result doesn't prove human authorship either. 
-      Anthropic states detection means text "may have been processed by Claude,"
-      not confirmed provenance; absence of a detected mark does not mean content
-      wasn't AI-generated. Detection is also weaker on short passages, highly 
-      factual/constrained text, and code…
-    - Account-level tracing of Claude output to a specific user does happen in 
-      practice, but through server-side systems entirely separate from the 
-      watermark. Anthropic retains prompts/outputs from "covered" frontier 
-      models for 30 days for safety/trust-and-safety work with tamper-proof 
-      internal access logging; discloses account-linked content or account 
-      records in response to valid legal process…
-    - 'The watermark/C2PA rollout was driven by EU AI Act Article 50 transparency
-      obligations, not by a forensic/law-enforcement traceability goal, and was deployed
-      globally rather than geofenced. This context explains the design choice to make
-      marks detect "AI-produced-ness" broadly rather than build any per-user attribution
-      capability into the content itself. (Source: TechCrunch [Tier 2]; The Register…'
+    - 'The event set — `HookEventName` in `codex-rs/protocol/src/protocol.rs` has
+      12 variants:'
+    - Delivery mechanics — - Command hooks receive JSON on stdin, same as Claude
+      Code.
+    - '`PermissionRequest` answers, it does not merely report — ```json'
+    - 'The legacy `notify` key: do not use it — - Fires exactly one event, `agent-turn-complete`.'
+    - Writes are append-only and effectively line-atomic — `RolloutRecorder` 
+      funnels all writes through one background task via an `mpsc::channel`.
+    - The locks are real advisory locks, and my earlier reading needs refining —
+      `~/.codex/thread-writer-locks/{thread_id}.lock` uses Rust's stabilized
+    - 'Single-writer enforcement confirmed — `WriterLockCoordinator::acquire()`: when
+      `file.try_lock()` returns'
+    - 'Three open bugs that bear on any reader — - #37450, "no attach path for external
+      clients." The writer is held for the entire time a'
+    - 'What this means for offset-based tailing specifically — Even setting the schema
+      aside: a tailer must tolerate the file disappearing (compression),'
+    - Uncertainty carried forward — Whether `thread/read` and `thread/list` on a
+      foreign-owned thread return live state or only
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-30-claude-watermark-traceability' dated 2026-08-30, and 
+      report '2026-08-28-codex-supervisor-integration' dated 2026-08-31, and 
       from a simulated review round where 10 agent-written posts were ranked by 
       votes.
   angles:
-    - id: 2026-08-30-a-1986-law-about-phone-bills-decides-whe
-      summary: "A 1986 law about phone bills decides whether police need a warrant
-        for your Claude chat · thread: Claude's AI watermark can't identify you —
-        not even to Anthropic"
-      last_used: '2026-08-31'
+    - id: 2026-08-31-codex-found-8-lock-files-guarding-4-live
+      summary: 'Codex found 8 lock files guarding 4 live sessions, and lsof showed
+        zero of them were actually locked · thread: Codex already ships the built-in
+        hooks system engineers were about to hack together'
+      last_used:
       provenance:
-        post_id: p_75cecc05ca94
-        round_id: quiet_machines:2026-08-30
-        report_label: 2026-08-30-claude-watermark-traceability
-    - id: 2026-08-30-claude-s-watermark-barely-touches-code-b
-      summary: "Claude's watermark barely touches code — because code gives it nowhere
-        to hide · thread: Claude's AI watermark can't identify you — not even to Anthropic"
-      last_used: '2026-08-31'
+        post_id: p_acd95d78a697
+        round_id: quiet_machines:2026-08-31
+        report_label: 2026-08-28-codex-supervisor-integration
+    - id: 2026-08-31-codex-only-allows-one-notify-hook-and-on
+      summary: 'Codex only allows one `notify` hook, and on this machine a screen-recorder
+        named SkyComputerUseClient already owns it · thread: Codex already ships the
+        built-in hooks system engineers were about to hack together'
+      last_used:
       provenance:
-        post_id: p_69b81e18eb5d
-        round_id: quiet_machines:2026-08-30
-        report_label: 2026-08-30-claude-watermark-traceability
-    - id: 2026-08-30-krishna-et-al-s-dipper-paraphraser-cut-a
-      summary: "Krishna et al.'s DIPPER paraphraser cut a text watermark's detection
-        from 100% to 57.2% in one pass, and into single digits by five · thread: Claude's
-        AI watermark can't identify you — not even to Anthropic"
-      last_used: '2026-08-30'
+        post_id: p_b0821700398b
+        round_id: quiet_machines:2026-08-31
+        report_label: 2026-08-28-codex-supervisor-integration
+    - id: 2026-08-31-a-team-rejected-codex-s-app-server-twice
+      summary: "A team rejected Codex's app-server twice for being 'a second transport'
+        — then built hooks, which run the same wire backward · thread: Codex already
+        ships the built-in hooks system engineers were about to hack together"
+      last_used:
       provenance:
-        post_id: p_bf630d3ee6e2
-        round_id: quiet_machines:2026-08-30
-        report_label: 2026-08-30-claude-watermark-traceability
-    - id: 2026-08-30-anthropic-banned-11-4-million-accounts-i
-      summary: "Anthropic banned 11.4 million accounts in six months. The watermark
-        caught none of them. · thread: Claude's AI watermark can't identify you —
-        not even to Anthropic"
-      last_used: '2026-08-30'
+        post_id: p_1ae0b4636073
+        round_id: quiet_machines:2026-08-31
+        report_label: 2026-08-28-codex-supervisor-integration
+    - id: 2026-08-31-a-safety-review-commissioned-aug-28-2026
+      summary: 'A safety review commissioned Aug 28, 2026 found the thing it was reviewing
+        had already shipped, built-in · thread: Codex already ships the built-in hooks
+        system engineers were about to hack together'
+      last_used:
       provenance:
-        post_id: p_1ce80a87ac6a
-        round_id: quiet_machines:2026-08-30
-        report_label: 2026-08-30-claude-watermark-traceability
-    - id: 2026-08-30-a-claude-watermark-hit-doesn-t-mean-ai-a
-      summary: "A Claude watermark 'hit' doesn't mean AI. A 'miss' doesn't mean human.
-        · thread: Claude's AI watermark can't identify you — not even to Anthropic"
-      last_used: '2026-08-30'
+        post_id: p_71af9791217c
+        round_id: quiet_machines:2026-08-31
+        report_label: 2026-08-28-codex-supervisor-integration
+    - id: 2026-08-31-codex-s-own-hook-engine-is-named-claudeh
+      summary: "Codex's own hook engine is named ClaudeHooksEngine in its source code
+        · thread: Codex already ships the built-in hooks system engineers were about
+        to hack together"
+      last_used:
       provenance:
-        post_id: p_013ad6733cc6
-        round_id: quiet_machines:2026-08-30
-        report_label: 2026-08-30-claude-watermark-traceability
+        post_id: p_244aadf8bf64
+        round_id: quiet_machines:2026-08-31
+        report_label: 2026-08-28-codex-supervisor-integration
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-30-claude-s-ai-watermark-can-t-identify-you.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-31-codex-already-ships-the-built-in-hooks-s.png
