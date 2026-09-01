@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-31-4",
+  "date": "2026-08-31",
+  "project": "research",
+  "angle": "2026-08-31-a-safety-review-commissioned-aug-28-2026",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Thinking of scripting your own hooks into your AI coding agent? Codex already ships 12 built-in hook events, per its protocol code, including a PermissionRequest that actually answers, not just reports. A research report dated 2026-08-31 found the target had already shipped it."
+    }
+  ]
+}

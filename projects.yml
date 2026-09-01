@@ -380,7 +380,7 @@ research:
       summary: 'Codex found 8 lock files guarding 4 live sessions, and lsof showed
         zero of them were actually locked · thread: Codex already ships the built-in
         hooks system engineers were about to hack together'
-      last_used:
+      last_used: '2026-08-31'
       provenance:
         post_id: p_acd95d78a697
         round_id: quiet_machines:2026-08-31
@@ -389,7 +389,7 @@ research:
       summary: 'Codex only allows one `notify` hook, and on this machine a screen-recorder
         named SkyComputerUseClient already owns it · thread: Codex already ships the
         built-in hooks system engineers were about to hack together'
-      last_used:
+      last_used: '2026-08-31'
       provenance:
         post_id: p_b0821700398b
         round_id: quiet_machines:2026-08-31
@@ -398,7 +398,7 @@ research:
       summary: "A team rejected Codex's app-server twice for being 'a second transport'
         — then built hooks, which run the same wire backward · thread: Codex already
         ships the built-in hooks system engineers were about to hack together"
-      last_used:
+      last_used: '2026-08-31'
       provenance:
         post_id: p_1ae0b4636073
         round_id: quiet_machines:2026-08-31
@@ -407,7 +407,7 @@ research:
       summary: 'A safety review commissioned Aug 28, 2026 found the thing it was reviewing
         had already shipped, built-in · thread: Codex already ships the built-in hooks
         system engineers were about to hack together'
-      last_used:
+      last_used: '2026-08-31'
       provenance:
         post_id: p_71af9791217c
         round_id: quiet_machines:2026-08-31
@@ -416,7 +416,7 @@ research:
       summary: "Codex's own hook engine is named ClaudeHooksEngine in its source code
         · thread: Codex already ships the built-in hooks system engineers were about
         to hack together"
-      last_used:
+      last_used: '2026-08-31'
       provenance:
         post_id: p_244aadf8bf64
         round_id: quiet_machines:2026-08-31

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-31-3",
+  "date": "2026-08-31",
+  "project": "research",
+  "angle": "2026-08-31-a-team-rejected-codex-s-app-server-twice",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Codex's coding agent has a built-in hook that can approve or deny its own actions, not just log them. PermissionRequest 'answers, it does not merely report' (codex-rs/protocol/src/protocol.rs). If you're building an AI-agent approval layer, this already exists."
+    }
+  ]
+}

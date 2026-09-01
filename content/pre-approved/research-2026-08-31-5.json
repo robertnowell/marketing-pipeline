@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-31-5",
+  "date": "2026-08-31",
+  "project": "research",
+  "angle": "2026-08-31-codex-s-own-hook-engine-is-named-claudeh",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Before you build a custom hook system for your AI agent tool: Codex already has one. codex-rs/protocol/src/protocol.rs defines HookEventName with 12 variants, and command hooks get JSON on stdin, same as Claude Code. My take: audit vendor internals before scoping new infra."
+    }
+  ]
+}

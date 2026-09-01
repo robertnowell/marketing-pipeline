@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-31-2",
+  "date": "2026-08-31",
+  "project": "research",
+  "angle": "2026-08-31-codex-only-allows-one-notify-hook-and-on",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you're building your own approval gate for an AI coding agent, Codex already ships one. Its hooks system defines 12 event types. The PermissionRequest hook answers a request directly, not just report it. Skip the legacy notify key: it only fires one event, agent-turn-complete."
+    }
+  ]
+}

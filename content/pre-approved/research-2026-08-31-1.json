@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-08-31-1",
+  "date": "2026-08-31",
+  "project": "research",
+  "angle": "2026-08-31-codex-found-8-lock-files-guarding-4-live",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Before you pay an engineer to build monitoring hooks for Codex, know it already ships 12 built-in hook events, and command hooks receive JSON on stdin, same as Claude Code. The legacy notify key only fires one event, agent-turn-complete, skip it."
+    }
+  ]
+}
