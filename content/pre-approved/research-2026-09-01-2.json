@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-01-2",
+  "date": "2026-09-01",
+  "project": "research",
+  "angle": "2026-09-01-a-message-arriving-on-claude-code-s-new",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Your AI coding tool can now message a running session directly. But if it hits a permission prompt, a message can't click yes, even if a human typed it. Consent still has to come from the terminal. Founders wiring up multi-agent setups: don't assume remote messages bypass approval gates."
+    }
+  ]
+}

@@ -378,7 +378,7 @@ research:
       summary: "AWS's own terminal-injection trick stops working on tmux 3.7, because
         a sanitizer defangs the same escape code it needs · thread: AI coding tools
         quietly added hidden APIs to message running sessions directly"
-      last_used:
+      last_used: '2026-09-01'
       provenance:
         post_id: p_f986c6be9dcf
         round_id: quiet_machines:2026-09-01
@@ -387,7 +387,7 @@ research:
       summary: "A message arriving on Claude Code's new inbox can't say yes to a permission
         prompt, even if a human typed it · thread: AI coding tools quietly added hidden
         APIs to message running sessions directly"
-      last_used:
+      last_used: '2026-09-01'
       provenance:
         post_id: p_9a89ff840c14
         round_id: quiet_machines:2026-09-01
@@ -396,7 +396,7 @@ research:
       summary: 'OSWorld 2.0 caught GPT-5.5 skipping the desktop UI in a third of its
         tasks — Claude Code just built the same shortcut aimed inward · thread: AI
         coding tools quietly added hidden APIs to message running sessions directly'
-      last_used:
+      last_used: '2026-09-01'
       provenance:
         post_id: p_53c2763fb2b0
         round_id: quiet_machines:2026-09-01
@@ -405,7 +405,7 @@ research:
       summary: 'AWS measured its own terminal-typing message delivery at 70 to 80
         percent reliable, then threw it out · thread: AI coding tools quietly added
         hidden APIs to message running sessions directly'
-      last_used:
+      last_used: '2026-09-01'
       provenance:
         post_id: p_d59865a87a1d
         round_id: quiet_machines:2026-09-01
@@ -414,7 +414,7 @@ research:
       summary: 'Claude Code v2.1.224 gave every running session a Unix socket, registered
         in a JSON file per PID · thread: AI coding tools quietly added hidden APIs
         to message running sessions directly'
-      last_used:
+      last_used: '2026-09-01'
       provenance:
         post_id: p_bf8af9b9b16b
         round_id: quiet_machines:2026-09-01

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-01-5",
+  "date": "2026-09-01",
+  "project": "research",
+  "angle": "2026-09-01-claude-code-v2-1-224-gave-every-running",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you're orchestrating multiple AI coding agents, don't trust that a message got read. Claude Code's docs describe messaging a running session, titled \"Message your other Claude Code sessions\". tmux's send-keys returning exit 0 only means the syntax was accepted, not that the agent saw it."
+    }
+  ]
+}

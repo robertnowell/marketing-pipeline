@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-01-3",
+  "date": "2026-09-01",
+  "project": "research",
+  "angle": "2026-09-01-osworld-2-0-caught-gpt-5-5-skipping-the",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude Code now ships a socket to \"Message your other Claude Code sessions.\" Codex added its own `codex queue`. Neither proves delivery: tmux `send-keys` exit 0 \"means tmux accepted syntax, nothing more.\" If you're wiring agents together, the consent semantics are the catch."
+    }
+  ]
+}

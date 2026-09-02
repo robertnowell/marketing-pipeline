@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-01-4",
+  "date": "2026-09-01",
+  "project": "research",
+  "angle": "2026-09-01-aws-measured-its-own-terminal-typing-mes",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Founders wiring alerts into Claude Code or Codex sessions have been faking keyboard input over tmux. send-keys exit 0 only confirms syntax, not that the message was read. Claude Code's real fix: 'channels,' which push events into your running session via MCP, per its own docs."
+    }
+  ]
+}

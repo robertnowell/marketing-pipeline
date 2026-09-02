@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-01-1",
+  "date": "2026-09-01",
+  "project": "research",
+  "angle": "2026-09-01-aws-s-own-terminal-injection-trick-stops",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Piping commands into a running Claude Code or Codex session with tmux? Exit code 0 means tmux accepted the syntax, not that the agent read it. Claude Code ships an inbox socket instead: 'Message your other Claude Code sessions'. Catch: consent semantics, so it's not a drop-in swap."
+    }
+  ]
+}
