@@ -6783,3 +6783,45 @@
   angle: 2026-08-31-codex-s-own-hook-engine-is-named-claudeh
   source_id: research-2026-08-31-5
   posted_at: '2026-09-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muk5yv6wrb2u
+  angle: 2026-09-01-aws-s-own-terminal-injection-trick-stops
+  source_id: research-2026-09-01-1
+  posted_at: '2026-09-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muk5ywwh4z2u
+  angle: 2026-09-01-a-message-arriving-on-claude-code-s-new
+  source_id: research-2026-09-01-2
+  posted_at: '2026-09-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muk5yyumjt22
+  angle: 2026-09-01-osworld-2-0-caught-gpt-5-5-skipping-the
+  source_id: research-2026-09-01-3
+  posted_at: '2026-09-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muk5z2kmvr2u
+  angle: 2026-09-01-aws-measured-its-own-terminal-typing-mes
+  source_id: research-2026-09-01-4
+  posted_at: '2026-09-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muk5z4fvgd2a
+  angle: 2026-09-01-claude-code-v2-1-224-gave-every-running
+  source_id: research-2026-09-01-5
+  posted_at: '2026-09-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muk5z645r42y
+  angle: angle:sib-2026-09-01-2026-08-31-codex-s-own-h-1
+  source_id: research-2026-09-01-sib-2026-08-31-codex-s-own-h-1
+  posted_at: '2026-09-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muk5zat44n2b
+  angle: angle:sib-2026-09-01-2026-08-31-codex-s-own-h-2
+  source_id: research-2026-09-01-sib-2026-08-31-codex-s-own-h-2
+  posted_at: '2026-09-02'
