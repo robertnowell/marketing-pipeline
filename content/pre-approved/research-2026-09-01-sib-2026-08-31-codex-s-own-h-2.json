@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-01-sib-2026-08-31-codex-s-own-h-2",
+  "date": "2026-09-01",
+  "project": "research",
+  "angle": "angle:sib-2026-09-01-2026-08-31-codex-s-own-h-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Codex, OpenAI's coding agent, feeds command hooks the same way Claude Code does: JSON piped in on stdin. If your team already wrote hook scripts for Claude Code, they should run against Codex with no rewrite. That's straight from Codex's own source code, not marketing copy."
+    }
+  ]
+}

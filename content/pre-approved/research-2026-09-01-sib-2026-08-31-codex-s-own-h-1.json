@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-01-sib-2026-08-31-codex-s-own-h-1",
+  "date": "2026-09-01",
+  "project": "research",
+  "angle": "angle:sib-2026-09-01-2026-08-31-codex-s-own-h-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Before you build a custom hook system for your AI coding agent, check the code first. Codex's own source, codex-rs/protocol/src/protocol.rs, defines a HookEventName enum with 12 variants, already wired in. Twelve trigger points, shipped, not on a roadmap."
+    }
+  ]
+}
