@@ -353,73 +353,71 @@ research:
   channels:
     - bluesky
   facts:
-    - 'The event set — `HookEventName` in `codex-rs/protocol/src/protocol.rs` has
-      12 variants:'
-    - Delivery mechanics — - Command hooks receive JSON on stdin, same as Claude
-      Code.
-    - '`PermissionRequest` answers, it does not merely report — ```json'
-    - 'The legacy `notify` key: do not use it — - Fires exactly one event, `agent-turn-complete`.'
-    - Writes are append-only and effectively line-atomic — `RolloutRecorder` 
-      funnels all writes through one background task via an `mpsc::channel`.
-    - The locks are real advisory locks, and my earlier reading needs refining —
-      `~/.codex/thread-writer-locks/{thread_id}.lock` uses Rust's stabilized
-    - 'Single-writer enforcement confirmed — `WriterLockCoordinator::acquire()`: when
-      `file.try_lock()` returns'
-    - 'Three open bugs that bear on any reader — - #37450, "no attach path for external
-      clients." The writer is held for the entire time a'
-    - 'What this means for offset-based tailing specifically — Even setting the schema
-      aside: a tailer must tolerate the file disappearing (compression),'
-    - Uncertainty carried forward — Whether `thread/read` and `thread/list` on a
-      foreign-owned thread return live state or only
+    - 1. Claude Code's per-session inbox socket — [Established, Tier 1 + 
+      first-hand] — Official docs, "Message your other Claude Code sessions".
+    - 2. The consent semantics are the catch — [Established, Tier 1] — This is 
+      the finding that prevents a naive swap.
+    - '3. Codex: `codex queue` — [Established, Tier 1 first-hand] — `codex queue --help`
+      on codex-cli 0.149.0:'
+    - '4. Channels — the architecturally correct end state — [Established but preview,
+      Tier 1] — Claude Code ships channels: "Use channels to push messages, alerts,
+      and webhooks into your Claude Code session from an MCP server… Channels fill
+      the gap by pushing events from non-Claude sources into your already-running
+      local session."'
+    - '5. What the ecosystem actually does — [Established, Tier 1] — - AWS cli-agent-orchestrator:
+      uses `load-buffer`/`set-buffer` + `paste-buffer -p`, not chunked send-keys ("to
+      avoid slow character-by-character input and special character interpretation").'
+    - 6. tmux cannot confirm consumption — [Established, Tier 1] — - `send-keys`
+      exit 0 means tmux accepted syntax, nothing more.
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-28-codex-supervisor-integration' dated 2026-08-31, and 
-      from a simulated review round where 10 agent-written posts were ranked by 
-      votes.
+      report '2026-08-26-agent-message-delivery-architecture' dated 2026-09-01, 
+      and from a simulated review round where 10 agent-written posts were ranked
+      by votes.
   angles:
-    - id: 2026-08-31-codex-found-8-lock-files-guarding-4-live
-      summary: 'Codex found 8 lock files guarding 4 live sessions, and lsof showed
-        zero of them were actually locked · thread: Codex already ships the built-in
-        hooks system engineers were about to hack together'
-      last_used: '2026-08-31'
+    - id: 2026-09-01-aws-s-own-terminal-injection-trick-stops
+      summary: "AWS's own terminal-injection trick stops working on tmux 3.7, because
+        a sanitizer defangs the same escape code it needs · thread: AI coding tools
+        quietly added hidden APIs to message running sessions directly"
+      last_used:
       provenance:
-        post_id: p_acd95d78a697
-        round_id: quiet_machines:2026-08-31
-        report_label: 2026-08-28-codex-supervisor-integration
-    - id: 2026-08-31-codex-only-allows-one-notify-hook-and-on
-      summary: 'Codex only allows one `notify` hook, and on this machine a screen-recorder
-        named SkyComputerUseClient already owns it · thread: Codex already ships the
-        built-in hooks system engineers were about to hack together'
-      last_used: '2026-08-31'
+        post_id: p_f986c6be9dcf
+        round_id: quiet_machines:2026-09-01
+        report_label: 2026-08-26-agent-message-delivery-architecture
+    - id: 2026-09-01-a-message-arriving-on-claude-code-s-new
+      summary: "A message arriving on Claude Code's new inbox can't say yes to a permission
+        prompt, even if a human typed it · thread: AI coding tools quietly added hidden
+        APIs to message running sessions directly"
+      last_used:
       provenance:
-        post_id: p_b0821700398b
-        round_id: quiet_machines:2026-08-31
-        report_label: 2026-08-28-codex-supervisor-integration
-    - id: 2026-08-31-a-team-rejected-codex-s-app-server-twice
-      summary: "A team rejected Codex's app-server twice for being 'a second transport'
-        — then built hooks, which run the same wire backward · thread: Codex already
-        ships the built-in hooks system engineers were about to hack together"
-      last_used: '2026-08-31'
+        post_id: p_9a89ff840c14
+        round_id: quiet_machines:2026-09-01
+        report_label: 2026-08-26-agent-message-delivery-architecture
+    - id: 2026-09-01-osworld-2-0-caught-gpt-5-5-skipping-the
+      summary: 'OSWorld 2.0 caught GPT-5.5 skipping the desktop UI in a third of its
+        tasks — Claude Code just built the same shortcut aimed inward · thread: AI
+        coding tools quietly added hidden APIs to message running sessions directly'
+      last_used:
       provenance:
-        post_id: p_1ae0b4636073
-        round_id: quiet_machines:2026-08-31
-        report_label: 2026-08-28-codex-supervisor-integration
-    - id: 2026-08-31-a-safety-review-commissioned-aug-28-2026
-      summary: 'A safety review commissioned Aug 28, 2026 found the thing it was reviewing
-        had already shipped, built-in · thread: Codex already ships the built-in hooks
-        system engineers were about to hack together'
-      last_used: '2026-08-31'
+        post_id: p_53c2763fb2b0
+        round_id: quiet_machines:2026-09-01
+        report_label: 2026-08-26-agent-message-delivery-architecture
+    - id: 2026-09-01-aws-measured-its-own-terminal-typing-mes
+      summary: 'AWS measured its own terminal-typing message delivery at 70 to 80
+        percent reliable, then threw it out · thread: AI coding tools quietly added
+        hidden APIs to message running sessions directly'
+      last_used:
       provenance:
-        post_id: p_71af9791217c
-        round_id: quiet_machines:2026-08-31
-        report_label: 2026-08-28-codex-supervisor-integration
-    - id: 2026-08-31-codex-s-own-hook-engine-is-named-claudeh
-      summary: "Codex's own hook engine is named ClaudeHooksEngine in its source code
-        · thread: Codex already ships the built-in hooks system engineers were about
-        to hack together"
-      last_used: '2026-08-31'
+        post_id: p_d59865a87a1d
+        round_id: quiet_machines:2026-09-01
+        report_label: 2026-08-26-agent-message-delivery-architecture
+    - id: 2026-09-01-claude-code-v2-1-224-gave-every-running
+      summary: 'Claude Code v2.1.224 gave every running session a Unix socket, registered
+        in a JSON file per PID · thread: AI coding tools quietly added hidden APIs
+        to message running sessions directly'
+      last_used:
       provenance:
-        post_id: p_244aadf8bf64
-        round_id: quiet_machines:2026-08-31
-        report_label: 2026-08-28-codex-supervisor-integration
+        post_id: p_bf8af9b9b16b
+        round_id: quiet_machines:2026-09-01
+        report_label: 2026-08-26-agent-message-delivery-architecture
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-08-31-codex-already-ships-the-built-in-hooks-s.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-01-ai-coding-tools-quietly-added-hidden-api.png
