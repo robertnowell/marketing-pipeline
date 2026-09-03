@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-02-sib-2026-09-01-claude-code-v-2",
+  "date": "2026-09-02",
+  "project": "research",
+  "angle": "angle:sib-2026-09-02-2026-09-01-claude-code-v-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Codex CLI has a hidden `codex queue` command, confirmed by `codex queue --help` on codex-cli 0.149.0. Another AI coding tool got a way to push messages into a running session. Same unsolved catch as the rest: nothing here proves the agent actually reads what you send."
+    }
+  ]
+}

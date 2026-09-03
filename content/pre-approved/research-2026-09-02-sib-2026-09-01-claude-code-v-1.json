@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-02-sib-2026-09-01-claude-code-v-1",
+  "date": "2026-09-02",
+  "project": "research",
+  "angle": "angle:sib-2026-09-02-2026-09-01-claude-code-v-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude Code shipped a way for one running session to message another, per official docs: \"Message your other Claude Code sessions.\" If you run parallel sessions for different clients, that's built-in coordination, no third-party bus needed. Catch: consent semantics decide if it lands."
+    }
+  ]
+}
