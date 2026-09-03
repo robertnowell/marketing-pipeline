@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-02-4",
+  "date": "2026-09-02",
+  "project": "research",
+  "angle": "2026-09-02-the-watermark-s-real-exposure-risk-isn-t",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Opposing counsel checking if your content is AI-written doesn't need a subpoena. Claude's watermark reveals nothing about you, per Anthropic. The detection API just needs a self-attested Google form, open to media and researchers. Anthropic won't say if it logs who checks what."
+    }
+  ]
+}

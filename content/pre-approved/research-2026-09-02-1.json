@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-02-1",
+  "date": "2026-09-02",
+  "project": "research",
+  "angle": "2026-09-02-a-july-2026-study-found-claude-s-waterma",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Worried Claude's watermark exposes your AI-written content? It can't. Anthropic says: \"There's nothing in the watermark, or its key, that would allow anyone to recover any information about the user\". What can expose you: a subpoena to your account, the same system behind 11.4M bans in H1 2026."
+    }
+  ]
+}

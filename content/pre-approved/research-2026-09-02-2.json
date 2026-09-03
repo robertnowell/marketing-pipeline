@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-02-2",
+  "date": "2026-09-02",
+  "project": "research",
+  "angle": "2026-09-02-anthropic-s-sept-1-watermark-update-quie",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's text watermark can't identify you. Anthropic: \"There's nothing in the watermark... that would allow anyone to recover any information about the user, their organization, or their chats.\" But a subpoena to your account can: Anthropic banned 11.4M accounts in H1 2026."
+    }
+  ]
+}

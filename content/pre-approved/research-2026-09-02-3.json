@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-02-3",
+  "date": "2026-09-02",
+  "project": "research",
+  "angle": "2026-09-02-anthropic-banned-11-4-million-claude-acc",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's text watermark holds no info about you, your account, or your org, per Anthropic's own statement: \"nothing in the watermark... that would allow anyone to recover any information about the user.\" But Anthropic banned 11.4M accounts in H1 2026 through ordinary account records, not the watermark. Different risk than you think."
+    }
+  ]
+}

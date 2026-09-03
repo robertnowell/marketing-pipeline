@@ -414,7 +414,7 @@ research:
       summary: "A July 2026 study found Claude's watermark family fails 3 of 5 courtroom
         evidence standards · thread: Claude's watermark can't identify you — but a
         subpoena to Anthropic can"
-      last_used:
+      last_used: '2026-09-02'
       provenance:
         post_id: p_4631486c422f
         round_id: quiet_machines:2026-09-02
@@ -423,7 +423,7 @@ research:
       summary: "Anthropic's Sept 1 watermark update quietly ships two tools with opposite
         trust models · thread: Claude's watermark can't identify you — but a subpoena
         to Anthropic can"
-      last_used:
+      last_used: '2026-09-02'
       provenance:
         post_id: p_2e71a0fe03e5
         round_id: quiet_machines:2026-09-02
@@ -432,7 +432,7 @@ research:
       summary: "Anthropic banned 11.4 million Claude accounts in six months — none
         of it touched the watermark · thread: Claude's watermark can't identify you
         — but a subpoena to Anthropic can"
-      last_used:
+      last_used: '2026-09-02'
       provenance:
         post_id: p_efeaea67aab6
         round_id: quiet_machines:2026-09-02
@@ -441,7 +441,7 @@ research:
       summary: "The watermark's real exposure risk isn't a subpoena — it's opposing
         counsel checking for free · thread: Claude's watermark can't identify you
         — but a subpoena to Anthropic can"
-      last_used:
+      last_used: '2026-09-02'
       provenance:
         post_id: p_931509728743
         round_id: quiet_machines:2026-09-02
@@ -450,7 +450,7 @@ research:
       summary: "The watermark detector form asks your country — nobody's checked whether
         EU law requires that · thread: Claude's watermark can't identify you — but
         a subpoena to Anthropic can"
-      last_used:
+      last_used: '2026-09-02'
       provenance:
         post_id: p_df08458b3228
         round_id: quiet_machines:2026-09-02
