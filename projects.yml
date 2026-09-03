@@ -353,71 +353,107 @@ research:
   channels:
     - bluesky
   facts:
-    - 1. Claude Code's per-session inbox socket — [Established, Tier 1 + 
-      first-hand] — Official docs, "Message your other Claude Code sessions".
-    - 2. The consent semantics are the catch — [Established, Tier 1] — This is 
-      the finding that prevents a naive swap.
-    - '3. Codex: `codex queue` — [Established, Tier 1 first-hand] — `codex queue --help`
-      on codex-cli 0.149.0:'
-    - '4. Channels — the architecturally correct end state — [Established but preview,
-      Tier 1] — Claude Code ships channels: "Use channels to push messages, alerts,
-      and webhooks into your Claude Code session from an MCP server… Channels fill
-      the gap by pushing events from non-Claude sources into your already-running
-      local session."'
-    - '5. What the ecosystem actually does — [Established, Tier 1] — - AWS cli-agent-orchestrator:
-      uses `load-buffer`/`set-buffer` + `paste-buffer -p`, not chunked send-keys ("to
-      avoid slow character-by-character input and special character interpretation").'
-    - 6. tmux cannot confirm consumption — [Established, Tier 1] — - `send-keys`
-      exit 0 means tmux accepted syntax, nothing more.
+    - '### Carried forward and reconfirmed from prior research (2026-08-12 through
+      2026-08-30 passes)'
+    - The text watermark and C2PA file metadata carry no user-, account-, 
+      organization-, or session-identifying information, per Anthropic's own 
+      repeated, direct statements. "There's nothing in the watermark, or its 
+      key, that would allow anyone to recover any information about the user, 
+      their organization, or their chats with Claude." Marking is applied at the
+      model level uniformly across surfaces…
+    - Detection is a single shared, Anthropic-held key/detector test 
+      ("Claude-consistent or not"), not a per-user signing scheme, adapted from 
+      Google DeepMind's SynthID-Text (Nature, 2024). A positive result is 
+      explicitly framed by Anthropic as probabilistic ("may have been processed 
+      by Claude... not fully conclusive"), showing involvement, not authorship.
+    - The watermark degrades or fails under heavy paraphrasing, translation 
+      round-tripping, or full rewriting, per both Anthropic's own admission and 
+      independent academic literature on this watermark family 
+      (SynthID-Text/KGW), which reports paraphrase attacks removing 70-100% of 
+      detectable signal depending on method and threshold, and a July 2026 
+      forensic-readiness study finding none of the major LLM…
+    - Separately from the watermark, Anthropic can and does link specific 
+      activity to specific accounts through ordinary account/session records 
+      (not the watermark), disclosed only via valid legal process 
+      (subpoena/warrant) or genuine life-safety emergencies, with user 
+      notification unless legally barred. This capability is exercised at real 
+      scale (11.4M account bans reported for H1 2026) and…
+    - Two categorically different Anthropic tools exist and must not be 
+      conflated. (a) A free, public Content Checker / file checker 
+      (claude.com/check-files) lets anyone upload image/media files to read 
+      embedded C2PA Content Credentials, client-side, no application, no 
+      eligibility gate. (b) A separate text watermark Detection API, gated to 
+      eligible organizations, in private preview.
+    - "The text-watermark Detection API is now confirmed live in private preview,
+      per a September 1, 2026 update note on Anthropic's own watermarking announcement,
+      resolving the \"not yet public / working out the details\" status found as of
+      the 2026-08-30 pass. > \"currently available to eligible organizations\" (Source:
+      anthropic.com/news/claude-text-watermark [Tier 1], Sept 1 2026 update)"
+    - 'Eligibility is explicitly enumerated by Anthropic: regulators, law enforcement,
+      media, fact-checkers, independent researchers, educational organizations/bodies,
+      EU civil society groups, plus enterprises with their own EU AI Act compliance
+      obligations. No GA date, pricing, or rate limits are published; Anthropic states
+      only that it "plans to expand access... over time."'
+    - 'Access is via a live, verified Google Form, self-attested, with no legal-process
+      requirement of any kind. The form ("Claude Watermark Detector Access Request
+      Form," linked from both the support article and the announcement as "register
+      interest in access here," resolving through `forms.gle/9tGA33hPJJwtHsMk9` to
+      a real Google Forms page) asks for: name, email (tied to an existing Claude
+      Platform…'
+    - Neither the support article, the announcement, nor the access-request form
+      itself discloses whether Anthropic logs or retains records of who runs a 
+      detection check or on what content. This is an absence-of-evidence finding
+      across all three Anthropic-controlled artifacts examined, not a confirmed 
+      absence of such logging.
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-08-26-agent-message-delivery-architecture' dated 2026-09-01, 
-      and from a simulated review round where 10 agent-written posts were ranked
-      by votes.
+      report '2026-09-02-claude-watermark-traceability' dated 2026-09-02, and 
+      from a simulated review round where 10 agent-written posts were ranked by 
+      votes.
   angles:
-    - id: 2026-09-01-aws-s-own-terminal-injection-trick-stops
-      summary: "AWS's own terminal-injection trick stops working on tmux 3.7, because
-        a sanitizer defangs the same escape code it needs · thread: AI coding tools
-        quietly added hidden APIs to message running sessions directly"
-      last_used: '2026-09-01'
+    - id: 2026-09-02-a-july-2026-study-found-claude-s-waterma
+      summary: "A July 2026 study found Claude's watermark family fails 3 of 5 courtroom
+        evidence standards · thread: Claude's watermark can't identify you — but a
+        subpoena to Anthropic can"
+      last_used:
       provenance:
-        post_id: p_f986c6be9dcf
-        round_id: quiet_machines:2026-09-01
-        report_label: 2026-08-26-agent-message-delivery-architecture
-    - id: 2026-09-01-a-message-arriving-on-claude-code-s-new
-      summary: "A message arriving on Claude Code's new inbox can't say yes to a permission
-        prompt, even if a human typed it · thread: AI coding tools quietly added hidden
-        APIs to message running sessions directly"
-      last_used: '2026-09-01'
+        post_id: p_4631486c422f
+        round_id: quiet_machines:2026-09-02
+        report_label: 2026-09-02-claude-watermark-traceability
+    - id: 2026-09-02-anthropic-s-sept-1-watermark-update-quie
+      summary: "Anthropic's Sept 1 watermark update quietly ships two tools with opposite
+        trust models · thread: Claude's watermark can't identify you — but a subpoena
+        to Anthropic can"
+      last_used:
       provenance:
-        post_id: p_9a89ff840c14
-        round_id: quiet_machines:2026-09-01
-        report_label: 2026-08-26-agent-message-delivery-architecture
-    - id: 2026-09-01-osworld-2-0-caught-gpt-5-5-skipping-the
-      summary: 'OSWorld 2.0 caught GPT-5.5 skipping the desktop UI in a third of its
-        tasks — Claude Code just built the same shortcut aimed inward · thread: AI
-        coding tools quietly added hidden APIs to message running sessions directly'
-      last_used: '2026-09-01'
+        post_id: p_2e71a0fe03e5
+        round_id: quiet_machines:2026-09-02
+        report_label: 2026-09-02-claude-watermark-traceability
+    - id: 2026-09-02-anthropic-banned-11-4-million-claude-acc
+      summary: "Anthropic banned 11.4 million Claude accounts in six months — none
+        of it touched the watermark · thread: Claude's watermark can't identify you
+        — but a subpoena to Anthropic can"
+      last_used:
       provenance:
-        post_id: p_53c2763fb2b0
-        round_id: quiet_machines:2026-09-01
-        report_label: 2026-08-26-agent-message-delivery-architecture
-    - id: 2026-09-01-aws-measured-its-own-terminal-typing-mes
-      summary: 'AWS measured its own terminal-typing message delivery at 70 to 80
-        percent reliable, then threw it out · thread: AI coding tools quietly added
-        hidden APIs to message running sessions directly'
-      last_used: '2026-09-01'
+        post_id: p_efeaea67aab6
+        round_id: quiet_machines:2026-09-02
+        report_label: 2026-09-02-claude-watermark-traceability
+    - id: 2026-09-02-the-watermark-s-real-exposure-risk-isn-t
+      summary: "The watermark's real exposure risk isn't a subpoena — it's opposing
+        counsel checking for free · thread: Claude's watermark can't identify you
+        — but a subpoena to Anthropic can"
+      last_used:
       provenance:
-        post_id: p_d59865a87a1d
-        round_id: quiet_machines:2026-09-01
-        report_label: 2026-08-26-agent-message-delivery-architecture
-    - id: 2026-09-01-claude-code-v2-1-224-gave-every-running
-      summary: 'Claude Code v2.1.224 gave every running session a Unix socket, registered
-        in a JSON file per PID · thread: AI coding tools quietly added hidden APIs
-        to message running sessions directly'
-      last_used: '2026-09-01'
+        post_id: p_931509728743
+        round_id: quiet_machines:2026-09-02
+        report_label: 2026-09-02-claude-watermark-traceability
+    - id: 2026-09-02-the-watermark-detector-form-asks-your-co
+      summary: "The watermark detector form asks your country — nobody's checked whether
+        EU law requires that · thread: Claude's watermark can't identify you — but
+        a subpoena to Anthropic can"
+      last_used:
       provenance:
-        post_id: p_bf8af9b9b16b
-        round_id: quiet_machines:2026-09-01
-        report_label: 2026-08-26-agent-message-delivery-architecture
+        post_id: p_df08458b3228
+        round_id: quiet_machines:2026-09-02
+        report_label: 2026-09-02-claude-watermark-traceability
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-01-ai-coding-tools-quietly-added-hidden-api.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-02-claude-s-watermark-can-t-identify-you-bu.png
