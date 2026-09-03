@@ -6825,3 +6825,39 @@
   angle: angle:sib-2026-09-01-2026-08-31-codex-s-own-h-2
   source_id: research-2026-09-01-sib-2026-08-31-codex-s-own-h-2
   posted_at: '2026-09-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mumonzwhof2m
+  angle: 2026-09-02-a-july-2026-study-found-claude-s-waterma
+  source_id: research-2026-09-02-1
+  posted_at: '2026-09-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mumoo3o2v62y
+  angle: 2026-09-02-anthropic-s-sept-1-watermark-update-quie
+  source_id: research-2026-09-02-2
+  posted_at: '2026-09-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mumoo5yb4s2b
+  angle: 2026-09-02-the-watermark-s-real-exposure-risk-isn-t
+  source_id: research-2026-09-02-4
+  posted_at: '2026-09-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mumoo7rb6c2a
+  angle: 2026-09-02-the-watermark-detector-form-asks-your-co
+  source_id: research-2026-09-02-5
+  posted_at: '2026-09-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mumoobejtn2m
+  angle: angle:sib-2026-09-02-2026-09-01-claude-code-v-1
+  source_id: research-2026-09-02-sib-2026-09-01-claude-code-v-1
+  posted_at: '2026-09-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mumoocxook2u
+  angle: angle:sib-2026-09-02-2026-09-01-claude-code-v-2
+  source_id: research-2026-09-02-sib-2026-09-01-claude-code-v-2
+  posted_at: '2026-09-03'
