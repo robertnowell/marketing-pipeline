@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-04-3",
+  "date": "2026-09-04",
+  "project": "research",
+  "angle": "2026-09-04-zero-hacker-news-hits-for-claudehookseng",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Codex codebase contains a struct literally named ClaudeHooksEngine (fields: handlers, warnings), confirmed by fetching codex-rs/hooks/src/engine/mod.rs directly from raw.githubusercontent.com/openai/codex/main. Not secondhand. If you use AI coding tools, verify claims at the source."
+    }
+  ]
+}

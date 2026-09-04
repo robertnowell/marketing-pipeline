@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-04-5",
+  "date": "2026-09-04",
+  "project": "research",
+  "angle": "2026-09-04-claude-code-s-own-hook-event-count-moved",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A Rust struct in OpenAI's Codex source is named ClaudeHooksEngine: fields handlers: Vec<ConfiguredHandler>, warnings: Vec<String>. A research agent confirmed it by fetching the file directly from GitHub, not secondhand. Even rival AI coding tools borrow each other's names."
+    }
+  ]
+}

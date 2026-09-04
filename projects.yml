@@ -366,7 +366,7 @@ research:
       summary: "OpenAI's own Codex docs admit they set CLAUDE_PLUGIN_ROOT 'for compatibility
         with existing plugin hooks' · thread: OpenAI's Codex ships an internal struct
         named ClaudeHooksEngine"
-      last_used:
+      last_used: '2026-09-04'
       provenance:
         post_id: p_90f9c38e55ad
         round_id: claude_skills:2026-09-04
@@ -374,7 +374,7 @@ research:
     - id: 2026-09-04-claude-code-hooks-now-have-5-handler-typ
       summary: "Claude Code hooks now have 5 handler types; Codex's hooks still have
         2 · thread: OpenAI's Codex ships an internal struct named ClaudeHooksEngine"
-      last_used:
+      last_used: '2026-09-04'
       provenance:
         post_id: p_04c0f6f8be54
         round_id: claude_skills:2026-09-04
@@ -382,7 +382,7 @@ research:
     - id: 2026-09-04-zero-hacker-news-hits-for-claudehookseng
       summary: "Zero Hacker News hits for 'ClaudeHooksEngine' — the viral thread doesn't
         check out · thread: OpenAI's Codex ships an internal struct named ClaudeHooksEngine"
-      last_used:
+      last_used: '2026-09-04'
       provenance:
         post_id: p_9cf06dcfc151
         round_id: claude_skills:2026-09-04
@@ -390,7 +390,7 @@ research:
     - id: 2026-09-04-codex-documents-12-hook-events-eleven-ma
       summary: "Codex documents 12 hook events. Eleven match Claude Code's names exactly.
         · thread: OpenAI's Codex ships an internal struct named ClaudeHooksEngine"
-      last_used:
+      last_used: '2026-09-04'
       provenance:
         post_id: p_c7b6d714012c
         round_id: claude_skills:2026-09-04
@@ -399,7 +399,7 @@ research:
       summary: "Claude Code's own hook-event count moved from 31 to 33 in the 25 days
         before this was fetched · thread: OpenAI's Codex ships an internal struct
         named ClaudeHooksEngine"
-      last_used:
+      last_used: '2026-09-04'
       provenance:
         post_id: p_0cd854f35dc9
         round_id: claude_skills:2026-09-04
