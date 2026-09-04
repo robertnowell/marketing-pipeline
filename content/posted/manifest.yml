@@ -6861,3 +6861,27 @@
   angle: angle:sib-2026-09-02-2026-09-01-claude-code-v-2
   source_id: research-2026-09-02-sib-2026-09-01-claude-code-v-2
   posted_at: '2026-09-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mup6ha2yvr23
+  angle: 2026-09-04-openai-s-own-codex-docs-admit-they-set-c
+  source_id: research-2026-09-04-1
+  posted_at: '2026-09-04'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mup6hbrpvf2y
+  angle: 2026-09-04-claude-code-hooks-now-have-5-handler-typ
+  source_id: research-2026-09-04-2
+  posted_at: '2026-09-04'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mup6hdintr2b
+  angle: 2026-09-04-zero-hacker-news-hits-for-claudehookseng
+  source_id: research-2026-09-04-3
+  posted_at: '2026-09-04'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mup6hfknz52y
+  angle: 2026-09-04-claude-code-s-own-hook-event-count-moved
+  source_id: research-2026-09-04-5
+  posted_at: '2026-09-04'
