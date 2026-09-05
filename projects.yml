@@ -353,56 +353,112 @@ research:
   channels:
     - bluesky
   facts:
-    - '### 1. The `ClaudeHooksEngine` struct is real, and was verified directly (not
-      secondhand) A research agent fetched `codex-rs/hooks/src/engine/mod.rs` directly
-      from `raw.githubusercontent.com/openai/codex/main/...` and confirmed the literal
-      struct definition: ```rust #[derive(Clone)] pub(crate) struct ClaudeHooksEngine
-      { pub(crate) handlers: Vec<ConfiguredHandler>, warnings: Vec<String>,…'
+    - The text watermark and C2PA file metadata carry no user-, account-, 
+      organization-, or session-identifying information, by Anthropic's own 
+      repeated, direct statement. Reconfirmed independently in this pass across 
+      three separately-run agents citing Anthropic's own support article and 
+      news announcement. "Watermarking carries no identifying information and 
+      can't be traced to a specific person,…
+    - "The text watermark is a statistical token-selection pattern (derived from Google
+      DeepMind's SynthID-Text), not an embedded signature. A secret key plus preceding
+      context words bias token-sampling randomness; no hidden characters or extra
+      tokens are inserted, so it adds no latency or cost. Detection requires the same
+      secret key Anthropic holds: this is a single shared \"Claude-consistent or not\"\
+      …"
+    - 'C2PA content-credentials metadata for image/media files (.png/.jpg/.svg and
+      others) is a separate mechanism from the text watermark: a cryptographically
+      signed provenance "receipt" attached to the file, not embedded in pixels, rolled
+      out worldwide (not EU-only) from August 2, 2025. It proves tamper-evidence,
+      not identity. ### Two separate tools, and who can use each'
+    - A free, public, ungated "Content Checker" and a separate, 
+      eligibility-gated "Detection API" both exist and must not be conflated, 
+      now confirmed directly from Anthropic's own site, not merely a secondhand 
+      snippet. The Content Checker (claude.com/check-content; a 
+      claude.com/check-files alias also resolves to the same tool) reads C2PA 
+      Content Credentials client-side on media files up to 100MB,…
+    - 'The text-watermark Detection API remains in private preview as of this pass,
+      with no GA date, pricing, or rate limits published. Eligibility is limited to
+      named categories: regulators, law enforcement, media, fact-checkers, independent
+      researchers, educational organizations, EU civil society groups, and enterprises
+      with their own EU AI Act compliance obligations. Access is requested through
+      a…'
+    - EU AI Act Article 50 itself imposes no legal-process precondition on who 
+      may query a provider's detection tool. The statute requires providers to 
+      make AI-generated content machine-detectable; it says nothing about a 
+      court order, warrant, or judicial-authorization mechanism gating access to
+      a detection tool. The entire eligibility/intake design (the Google Form, 
+      the named categories) is…
+    - No disclosure exists anywhere, support article, announcement, Content 
+      Checker page, or access-request form, of whether Anthropic logs or retains
+      records of who runs a detection check, what content was checked, or the 
+      result. This absence was checked explicitly across all four 
+      Anthropic-controlled artifacts in this pass (not merely assumed from one 
+      page) and is consistent with the same gap flagged…
+    - "Identifying a specific person still requires a separate, legal-process-gated
+      step against Anthropic's ordinary account records, a subpoena or validly issued
+      warrant, entirely independent of the watermark/detector system. Anthropic's
+      policy: \"Anthropic does not disclose information about customers or end users
+      of our services in response to government requests except in accordance with
+      valid legal…"
+    - User notification is the default. Anthropic states it will notify users 
+      their data was requested "unless we believe we're legally prohibited from 
+      doing so, or other rare exceptions apply." For API/enterprise customers, 
+      requesters are generally directed to the customer first rather than to 
+      Anthropic directly.
+    - Neither of Anthropic's two official legal-process policy pages mentions 
+      National Security Letters, FISA orders, or gag orders anywhere, confirmed 
+      by direct fetch in this pass. Any claim that NSL/FISA process applies 
+      comes only from a search engine's own synthesized paraphrase of a 
+      Government Requests Report PDF that could not be directly rendered or 
+      quoted (see Finding 12); treat as unconfirmed.…
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-09-02-codex-claudehooksengine' dated 2026-09-04, and from a 
-      simulated review round where 9 agent-written posts were ranked by votes.
+      report '2026-09-04-claude-watermark-traceability' dated 2026-09-04, and 
+      from a simulated review round where 10 agent-written posts were ranked by 
+      votes.
   angles:
-    - id: 2026-09-04-openai-s-own-codex-docs-admit-they-set-c
-      summary: "OpenAI's own Codex docs admit they set CLAUDE_PLUGIN_ROOT 'for compatibility
-        with existing plugin hooks' · thread: OpenAI's Codex ships an internal struct
-        named ClaudeHooksEngine"
-      last_used: '2026-09-04'
+    - id: 2026-09-04-even-with-no-attack-at-all-claude-s-wate
+      summary: "Even with no attack at all, Claude's watermark family misses AI text
+        70 to 83 percent of the time · thread: Claude's AI watermark can't identify
+        you without a court order"
+      last_used:
       provenance:
-        post_id: p_90f9c38e55ad
-        round_id: claude_skills:2026-09-04
-        report_label: 2026-09-02-codex-claudehooksengine
-    - id: 2026-09-04-claude-code-hooks-now-have-5-handler-typ
-      summary: "Claude Code hooks now have 5 handler types; Codex's hooks still have
-        2 · thread: OpenAI's Codex ships an internal struct named ClaudeHooksEngine"
-      last_used: '2026-09-04'
+        post_id: p_e61cc5443774
+        round_id: quiet_machines:2026-09-04
+        report_label: 2026-09-04-claude-watermark-traceability
+    - id: 2026-09-04-claude-s-watermark-runs-on-one-secret-ke
+      summary: "Claude's watermark runs on one secret key, shared by every user on
+        Earth · thread: Claude's AI watermark can't identify you without a court order"
+      last_used:
       provenance:
-        post_id: p_04c0f6f8be54
-        round_id: claude_skills:2026-09-04
-        report_label: 2026-09-02-codex-claudehooksengine
-    - id: 2026-09-04-zero-hacker-news-hits-for-claudehookseng
-      summary: "Zero Hacker News hits for 'ClaudeHooksEngine' — the viral thread doesn't
-        check out · thread: OpenAI's Codex ships an internal struct named ClaudeHooksEngine"
-      last_used: '2026-09-04'
+        post_id: p_c94af9099109
+        round_id: quiet_machines:2026-09-04
+        report_label: 2026-09-04-claude-watermark-traceability
+    - id: 2026-09-04-to-check-if-a-document-is-claude-s-fill
+      summary: "To check if a document is Claude's, fill out a Google Form. To learn
+        whose account made it, get a subpoena. · thread: Claude's AI watermark can't
+        identify you without a court order"
+      last_used:
       provenance:
-        post_id: p_9cf06dcfc151
-        round_id: claude_skills:2026-09-04
-        report_label: 2026-09-02-codex-claudehooksengine
-    - id: 2026-09-04-codex-documents-12-hook-events-eleven-ma
-      summary: "Codex documents 12 hook events. Eleven match Claude Code's names exactly.
-        · thread: OpenAI's Codex ships an internal struct named ClaudeHooksEngine"
-      last_used: '2026-09-04'
+        post_id: p_60b97fa9a8a4
+        round_id: quiet_machines:2026-09-04
+        report_label: 2026-09-04-claude-watermark-traceability
+    - id: 2026-09-04-article-50-of-the-eu-ai-act-took-effect
+      summary: "Article 50 of the EU AI Act took effect August 2, 2026. It says nothing
+        about who can check Claude's watermark. · thread: Claude's AI watermark can't
+        identify you without a court order"
+      last_used:
       provenance:
-        post_id: p_c7b6d714012c
-        round_id: claude_skills:2026-09-04
-        report_label: 2026-09-02-codex-claudehooksengine
-    - id: 2026-09-04-claude-code-s-own-hook-event-count-moved
-      summary: "Claude Code's own hook-event count moved from 31 to 33 in the 25 days
-        before this was fetched · thread: OpenAI's Codex ships an internal struct
-        named ClaudeHooksEngine"
-      last_used: '2026-09-04'
+        post_id: p_ca5f54b26553
+        round_id: quiet_machines:2026-09-04
+        report_label: 2026-09-04-claude-watermark-traceability
+    - id: 2026-09-04-anthropic-publishes-a-table-of-what-ever
+      summary: "Anthropic publishes a table of what every API feature retains. The
+        watermark detector isn't a row in it. · thread: Claude's AI watermark can't
+        identify you without a court order"
+      last_used:
       provenance:
-        post_id: p_0cd854f35dc9
-        round_id: claude_skills:2026-09-04
-        report_label: 2026-09-02-codex-claudehooksengine
+        post_id: p_4d9b542c18e1
+        round_id: quiet_machines:2026-09-04
+        report_label: 2026-09-04-claude-watermark-traceability
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-04-openai-s-codex-ships-an-internal-struct.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-04-claude-s-ai-watermark-can-t-identify-you.png
