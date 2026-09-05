@@ -6909,3 +6909,9 @@
   angle: 2026-09-04-even-with-no-attack-at-all-claude-s-wate
   source_id: ''
   posted_at: '2026-09-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3murs6vq4tv2o
+  angle: 2026-09-04-claude-s-watermark-runs-on-one-secret-ke
+  source_id: ''
+  posted_at: '2026-09-05'
