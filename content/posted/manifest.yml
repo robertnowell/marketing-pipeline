@@ -6885,3 +6885,21 @@
   angle: 2026-09-04-claude-code-s-own-hook-event-count-moved
   source_id: research-2026-09-04-5
   posted_at: '2026-09-04'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3murllrt4yu26
+  angle: 2026-09-04-to-check-if-a-document-is-claude-s-fill
+  source_id: research-2026-09-04-3
+  posted_at: '2026-09-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3murlltd72s2u
+  angle: 2026-09-04-article-50-of-the-eu-ai-act-took-effect
+  source_id: research-2026-09-04-4
+  posted_at: '2026-09-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3murllumaks2z
+  angle: 2026-09-04-anthropic-publishes-a-table-of-what-ever
+  source_id: research-2026-09-04-5
+  posted_at: '2026-09-05'

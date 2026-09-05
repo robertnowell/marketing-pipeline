@@ -2,11 +2,11 @@
   "id": "research-2026-09-04-4",
   "date": "2026-09-04",
   "project": "research",
-  "angle": "2026-09-04-codex-documents-12-hook-events-eleven-ma",
+  "angle": "2026-09-04-article-50-of-the-eu-ai-act-took-effect",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "OpenAI's Codex, the AI coding agent, ships an internal struct named ClaudeHooksEngine, confirmed directly in codex-rs/hooks/src/engine/mod.rs on raw.githubusercontent.com. If you're building automations on top of Codex, its own engineers reached for a rival's naming convention rather than inventing one. Worth knowing before you assume the two tools diverge under the hood."
+      "text": "An AI watermark can't expose you as a post's author. Anthropic says the watermark holds no identifying data. Unmasking you still requires a subpoena against account records, separate from any watermark check. Anthropic decided who may run that check, not EU law."
     }
   ]
 }

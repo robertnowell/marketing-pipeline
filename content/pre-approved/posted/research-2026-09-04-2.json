@@ -2,11 +2,11 @@
   "id": "research-2026-09-04-2",
   "date": "2026-09-04",
   "project": "research",
-  "angle": "2026-09-04-claude-code-hooks-now-have-5-handler-typ",
+  "angle": "2026-09-04-claude-s-watermark-runs-on-one-secret-ke",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "OpenAI's Codex contains an internal struct literally named ClaudeHooksEngine, confirmed straight from source: codex-rs/hooks/src/engine/mod.rs. If you're weighing Codex against Claude Code to automate your business, the naming says which one was modeled on which."
+      "text": "Claude's AI watermark can't identify you. Detecting it requires one secret key Anthropic holds, shared across every user, every account, every session. It flags \"Claude-consistent or not,\" nothing more. Pinning it to a person needs a separate legal-process step against account records, per Anthropic's own policy: it discloses user info only \"in accordance with valid legal process.\" If you're worried about AI content tracing back to your business, the watermark itself isn't the risk."
     }
   ]
 }

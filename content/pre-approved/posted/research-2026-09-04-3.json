@@ -2,11 +2,11 @@
   "id": "research-2026-09-04-3",
   "date": "2026-09-04",
   "project": "research",
-  "angle": "2026-09-04-zero-hacker-news-hits-for-claudehookseng",
+  "angle": "2026-09-04-to-check-if-a-document-is-claude-s-fill",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "OpenAI's Codex codebase contains a struct literally named ClaudeHooksEngine (fields: handlers, warnings), confirmed by fetching codex-rs/hooks/src/engine/mod.rs directly from raw.githubusercontent.com/openai/codex/main. Not secondhand. If you use AI coding tools, verify claims at the source."
+      "text": "To check if something's AI-written, Claude offers a free Content Checker at claude.com/check-content. To find out whose account made it, you need a subpoena: Anthropic won't disclose user identity without legal process. The watermark itself carries no identifying data, by design."
     }
   ]
 }
