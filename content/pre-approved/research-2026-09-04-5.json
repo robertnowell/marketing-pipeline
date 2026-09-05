@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-04-5",
+  "date": "2026-09-04",
+  "project": "research",
+  "angle": "2026-09-04-anthropic-publishes-a-table-of-what-ever",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude's text watermark isn't a fingerprint. It's a shared secret key biasing word choice, per Anthropic. Anthropic won't say if it logs who runs a detection check or what was checked. Tracing content to a person still needs a subpoena or warrant against account records, a separate system."
+    }
+  ]
+}

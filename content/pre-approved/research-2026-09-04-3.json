@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-04-3",
+  "date": "2026-09-04",
+  "project": "research",
+  "angle": "2026-09-04-to-check-if-a-document-is-claude-s-fill",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "To check if something's AI-written, Claude offers a free Content Checker at claude.com/check-content. To find out whose account made it, you need a subpoena: Anthropic won't disclose user identity without legal process. The watermark itself carries no identifying data, by design."
+    }
+  ]
+}

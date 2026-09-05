@@ -420,7 +420,7 @@ research:
       summary: "Even with no attack at all, Claude's watermark family misses AI text
         70 to 83 percent of the time · thread: Claude's AI watermark can't identify
         you without a court order"
-      last_used:
+      last_used: '2026-09-04'
       provenance:
         post_id: p_e61cc5443774
         round_id: quiet_machines:2026-09-04
@@ -428,7 +428,7 @@ research:
     - id: 2026-09-04-claude-s-watermark-runs-on-one-secret-ke
       summary: "Claude's watermark runs on one secret key, shared by every user on
         Earth · thread: Claude's AI watermark can't identify you without a court order"
-      last_used:
+      last_used: '2026-09-04'
       provenance:
         post_id: p_c94af9099109
         round_id: quiet_machines:2026-09-04
@@ -437,7 +437,7 @@ research:
       summary: "To check if a document is Claude's, fill out a Google Form. To learn
         whose account made it, get a subpoena. · thread: Claude's AI watermark can't
         identify you without a court order"
-      last_used:
+      last_used: '2026-09-04'
       provenance:
         post_id: p_60b97fa9a8a4
         round_id: quiet_machines:2026-09-04
@@ -446,7 +446,7 @@ research:
       summary: "Article 50 of the EU AI Act took effect August 2, 2026. It says nothing
         about who can check Claude's watermark. · thread: Claude's AI watermark can't
         identify you without a court order"
-      last_used:
+      last_used: '2026-09-04'
       provenance:
         post_id: p_ca5f54b26553
         round_id: quiet_machines:2026-09-04
@@ -455,7 +455,7 @@ research:
       summary: "Anthropic publishes a table of what every API feature retains. The
         watermark detector isn't a row in it. · thread: Claude's AI watermark can't
         identify you without a court order"
-      last_used:
+      last_used: '2026-09-04'
       provenance:
         post_id: p_4d9b542c18e1
         round_id: quiet_machines:2026-09-04
