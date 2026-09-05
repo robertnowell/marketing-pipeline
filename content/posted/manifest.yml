@@ -6903,3 +6903,9 @@
   angle: 2026-09-04-anthropic-publishes-a-table-of-what-ever
   source_id: research-2026-09-04-5
   posted_at: '2026-09-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3murmz7iuf42l
+  angle: 2026-09-04-even-with-no-attack-at-all-claude-s-wate
+  source_id: ''
+  posted_at: '2026-09-05'

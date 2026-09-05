@@ -420,7 +420,7 @@ research:
       summary: "Even with no attack at all, Claude's watermark family misses AI text
         70 to 83 percent of the time · thread: Claude's AI watermark can't identify
         you without a court order"
-      last_used: '2026-09-04'
+      last_used: '2026-09-05'
       provenance:
         post_id: p_e61cc5443774
         round_id: quiet_machines:2026-09-04
