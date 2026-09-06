@@ -6915,3 +6915,33 @@
   angle: 2026-09-04-claude-s-watermark-runs-on-one-secret-ke
   source_id: ''
   posted_at: '2026-09-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muu4wfacw62l
+  angle: 2026-09-05-first-mate-has-4-819-github-stars-and-ma
+  source_id: research-2026-09-05-1
+  posted_at: '2026-09-06'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muu4whjhu427
+  angle: 2026-09-05-zed-s-agent-protocol-turned-13-months-ol
+  source_id: research-2026-09-05-3
+  posted_at: '2026-09-06'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muu4wjcjzm27
+  angle: 2026-09-05-in-openai-s-own-github-discussion-8338-a
+  source_id: research-2026-09-05-4
+  posted_at: '2026-09-06'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muu4wl3vws2h
+  angle: 2026-09-05-zed-models-agent-work-as-a-diff-warp-as
+  source_id: research-2026-09-05-5
+  posted_at: '2026-09-06'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3muu4x5tq7j2z
+  angle: 2026-09-05-first-mate-has-4-819-github-stars-and-ma
+  source_id: ''
+  posted_at: '2026-09-06'
