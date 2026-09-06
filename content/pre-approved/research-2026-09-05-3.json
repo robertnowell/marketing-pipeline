@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-05-3",
+  "date": "2026-09-05",
+  "project": "research",
+  "angle": "2026-09-05-zed-s-agent-protocol-turned-13-months-ol",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you're building a tool that lets users log in with their Claude subscription, Anthropic's own terms already say no: no third-party app can offer Claude login or route subscription credentials. OpenAI's Codex CLI, though, is Apache-2.0 and forkable, confirmed by a maintainer in its own repo."
+    }
+  ]
+}

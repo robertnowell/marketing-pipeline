@@ -389,7 +389,7 @@ research:
       summary: "First Mate has 4,819 GitHub stars and manages AI coding agents with
         zero GUI, while OpenAI and Vercel spent this cycle caging what the model can
         render · thread: Anthropic's terms forbid reselling your Claude login to…"
-      last_used:
+      last_used: '2026-09-05'
       provenance:
         post_id: p_aa700e5f0b61
         round_id: quiet_machines:2026-09-05
@@ -398,7 +398,7 @@ research:
       summary: "Warp built a status panel so you know which of your AI coding agents
         is stuck. Almost nobody else did. · thread: Anthropic's terms forbid reselling
         your Claude login to other apps"
-      last_used:
+      last_used: '2026-09-05'
       provenance:
         post_id: p_ca1d8fe7dd19
         round_id: quiet_machines:2026-09-05
@@ -407,7 +407,7 @@ research:
       summary: "Zed's agent protocol turned 13 months old this month. LSP took the
         editor world 5 years to become normal · thread: Anthropic's terms forbid reselling
         your Claude login to other apps"
-      last_used:
+      last_used: '2026-09-05'
       provenance:
         post_id: p_6669a117ed3a
         round_id: quiet_machines:2026-09-05
@@ -416,7 +416,7 @@ research:
       summary: "In OpenAI's own GitHub Discussion #8338, an engineer answered one
         question with 'Unanswered' · thread: Anthropic's terms forbid reselling your
         Claude login to other apps"
-      last_used:
+      last_used: '2026-09-05'
       provenance:
         post_id: p_f623dfe52633
         round_id: quiet_machines:2026-09-05
@@ -425,7 +425,7 @@ research:
       summary: "Zed models agent work as a diff, Warp as a run, Vibe Kanban as a card:
         nobody's agreed on the unit yet · thread: Anthropic's terms forbid reselling
         your Claude login to other apps"
-      last_used:
+      last_used: '2026-09-05'
       provenance:
         post_id: p_61be87919e4c
         round_id: quiet_machines:2026-09-05

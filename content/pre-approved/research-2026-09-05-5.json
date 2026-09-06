@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-05-5",
+  "date": "2026-09-05",
+  "project": "research",
+  "angle": "2026-09-05-zed-models-agent-work-as-a-diff-warp-as",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Building an app that lets users log in with their own Claude account and passes those credentials through? Anthropic's own compliance docs say that's against the rules. OpenAI's Codex CLI, by contrast, is Apache-2.0 licensed and forkable, confirmed by a maintainer in OpenAI's repo."
+    }
+  ]
+}

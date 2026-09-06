@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-05-1",
+  "date": "2026-09-05",
+  "project": "research",
+  "angle": "2026-09-05-first-mate-has-4-819-github-stars-and-ma",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Anthropic's Legal and Compliance docs bar third-party apps from offering Claude login or routing subscription credentials. OpenAI's Codex CLI is Apache-2.0 and forkable, confirmed by a maintainer in OpenAI's repo. Wrap a product around Claude access and you're violating terms from day one."
+    }
+  ]
+}

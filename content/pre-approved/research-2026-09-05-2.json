@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-05-2",
+  "date": "2026-09-05",
+  "project": "research",
+  "angle": "2026-09-05-warp-built-a-status-panel-so-you-know-wh",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If your app routes users' Claude subscription logins instead of API keys, you're breaking Anthropic's terms: their own Legal and Compliance documentation prohibits third-party apps from offering Claude login or routing subscription credentials. OpenAy's Codex CLI takes the opposite stance, Apache-2.0 licensed and forkable, confirmed by a maintainer in OpenAI's own repo. Know which foundation you're building on."
+    }
+  ]
+}

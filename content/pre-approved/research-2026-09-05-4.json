@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-05-4",
+  "date": "2026-09-05",
+  "project": "research",
+  "angle": "2026-09-05-in-openai-s-own-github-discussion-8338-a",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Anthropic's terms flatly forbid third-party apps offering Claude login or routing subscription credentials. OpenAI is looser on code, Codex CLI is Apache-2.0 and forkable, but its own GitHub thread on the identical question is marked \"Unanswered.\" Build assuming that door stays shut."
+    }
+  ]
+}
