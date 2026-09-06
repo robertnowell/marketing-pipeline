@@ -353,112 +353,82 @@ research:
   channels:
     - bluesky
   facts:
-    - The text watermark and C2PA file metadata carry no user-, account-, 
-      organization-, or session-identifying information, by Anthropic's own 
-      repeated, direct statement. Reconfirmed independently in this pass across 
-      three separately-run agents citing Anthropic's own support article and 
-      news announcement. "Watermarking carries no identifying information and 
-      can't be traced to a specific person,…
-    - "The text watermark is a statistical token-selection pattern (derived from Google
-      DeepMind's SynthID-Text), not an embedded signature. A secret key plus preceding
-      context words bias token-sampling randomness; no hidden characters or extra
-      tokens are inserted, so it adds no latency or cost. Detection requires the same
-      secret key Anthropic holds: this is a single shared \"Claude-consistent or not\"\
-      …"
-    - 'C2PA content-credentials metadata for image/media files (.png/.jpg/.svg and
-      others) is a separate mechanism from the text watermark: a cryptographically
-      signed provenance "receipt" attached to the file, not embedded in pixels, rolled
-      out worldwide (not EU-only) from August 2, 2025. It proves tamper-evidence,
-      not identity. ### Two separate tools, and who can use each'
-    - A free, public, ungated "Content Checker" and a separate, 
-      eligibility-gated "Detection API" both exist and must not be conflated, 
-      now confirmed directly from Anthropic's own site, not merely a secondhand 
-      snippet. The Content Checker (claude.com/check-content; a 
-      claude.com/check-files alias also resolves to the same tool) reads C2PA 
-      Content Credentials client-side on media files up to 100MB,…
-    - 'The text-watermark Detection API remains in private preview as of this pass,
-      with no GA date, pricing, or rate limits published. Eligibility is limited to
-      named categories: regulators, law enforcement, media, fact-checkers, independent
-      researchers, educational organizations, EU civil society groups, and enterprises
-      with their own EU AI Act compliance obligations. Access is requested through
-      a…'
-    - EU AI Act Article 50 itself imposes no legal-process precondition on who 
-      may query a provider's detection tool. The statute requires providers to 
-      make AI-generated content machine-detectable; it says nothing about a 
-      court order, warrant, or judicial-authorization mechanism gating access to
-      a detection tool. The entire eligibility/intake design (the Google Form, 
-      the named categories) is…
-    - No disclosure exists anywhere, support article, announcement, Content 
-      Checker page, or access-request form, of whether Anthropic logs or retains
-      records of who runs a detection check, what content was checked, or the 
-      result. This absence was checked explicitly across all four 
-      Anthropic-controlled artifacts in this pass (not merely assumed from one 
-      page) and is consistent with the same gap flagged…
-    - "Identifying a specific person still requires a separate, legal-process-gated
-      step against Anthropic's ordinary account records, a subpoena or validly issued
-      warrant, entirely independent of the watermark/detector system. Anthropic's
-      policy: \"Anthropic does not disclose information about customers or end users
-      of our services in response to government requests except in accordance with
-      valid legal…"
-    - User notification is the default. Anthropic states it will notify users 
-      their data was requested "unless we believe we're legally prohibited from 
-      doing so, or other rare exceptions apply." For API/enterprise customers, 
-      requesters are generally directed to the customer first rather than to 
-      Anthropic directly.
-    - Neither of Anthropic's two official legal-process policy pages mentions 
-      National Security Letters, FISA orders, or gag orders anywhere, confirmed 
-      by direct fetch in this pass. Any claim that NSL/FISA process applies 
-      comes only from a search engine's own synthesized paraphrase of a 
-      Government Requests Report PDF that could not be directly rendered or 
-      quoted (see Finding 12); treat as unconfirmed.…
+    - "Finding 1.1: Anthropic prohibits third-party apps offering Claude login or
+      routing subscription credentials. [Established] — From Anthropic's own Legal
+      and Compliance documentation:"
+    - "Finding 1.2: OpenAI's position is permissive on the code and unresolved on
+      the auth. [Established] — Codex CLI is Apache-2.0 licensed and forkable, confirmed
+      by a maintainer in OpenAI's own repo."
+    - "Finding 1.3: This validates the user's own stated remedy. [Established, by
+      their own framing] — The user said earlier, unprompted: \"The long-term terms
+      of service compliant version of this is just"
+    - 'Finding 2.1: Three protocol layers, commonly conflated. [Established] — | Protocol
+      | Standardises | Who made it |'
+    - 'Finding 2.2: Every major agent already exposes a documented streaming interface.
+      [Established] — This is the crux, and it comes out better than expected.'
+    - 'Finding 2.3: ACP is real but young, and LSP says be patient. [Established]
+      — Zed announced ACP on 27 August 2025, with Gemini CLI as the first external
+      agent.'
+    - "Finding 2.4: AG-UI has broad backend adoption and a curious client-side entry.
+      [Likely] — AG-UI's own docs list first-party integrations including Microsoft
+      Agent Framework, Google ADK, AWS"
+    - "Finding 3.1: Three tiers of where the agent runs, correlating with who pays.
+      [Established] — - Local, user's own machine and subscription: Conductor (\"\
+      runs entirely on your Mac."
+    - 'Finding 3.2: The git model has converged on worktree or clone per task, PR
+      as terminal artifact. [Established] — Cursor uses git worktrees so each agent
+      has its own working directory on its own branch, and auto-opens'
+    - 'Finding 3.3: The unit of manipulation is not settled, and it reveals what each
+      product thinks it is. [Established] — - Task card: Vibe Kanban and the mission-control
+      genre.'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-09-04-claude-watermark-traceability' dated 2026-09-04, and 
-      from a simulated review round where 10 agent-written posts were ranked by 
-      votes.
+      report '2026-09-05-agent-client-landscape' dated 2026-09-05, and from a 
+      simulated review round where 10 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-09-04-even-with-no-attack-at-all-claude-s-wate
-      summary: "Even with no attack at all, Claude's watermark family misses AI text
-        70 to 83 percent of the time · thread: Claude's AI watermark can't identify
-        you without a court order"
-      last_used: '2026-09-05'
+    - id: 2026-09-05-first-mate-has-4-819-github-stars-and-ma
+      summary: "First Mate has 4,819 GitHub stars and manages AI coding agents with
+        zero GUI, while OpenAI and Vercel spent this cycle caging what the model can
+        render · thread: Anthropic's terms forbid reselling your Claude login to…"
+      last_used:
       provenance:
-        post_id: p_e61cc5443774
-        round_id: quiet_machines:2026-09-04
-        report_label: 2026-09-04-claude-watermark-traceability
-    - id: 2026-09-04-claude-s-watermark-runs-on-one-secret-ke
-      summary: "Claude's watermark runs on one secret key, shared by every user on
-        Earth · thread: Claude's AI watermark can't identify you without a court order"
-      last_used: '2026-09-05'
+        post_id: p_aa700e5f0b61
+        round_id: quiet_machines:2026-09-05
+        report_label: 2026-09-05-agent-client-landscape
+    - id: 2026-09-05-warp-built-a-status-panel-so-you-know-wh
+      summary: "Warp built a status panel so you know which of your AI coding agents
+        is stuck. Almost nobody else did. · thread: Anthropic's terms forbid reselling
+        your Claude login to other apps"
+      last_used:
       provenance:
-        post_id: p_c94af9099109
-        round_id: quiet_machines:2026-09-04
-        report_label: 2026-09-04-claude-watermark-traceability
-    - id: 2026-09-04-to-check-if-a-document-is-claude-s-fill
-      summary: "To check if a document is Claude's, fill out a Google Form. To learn
-        whose account made it, get a subpoena. · thread: Claude's AI watermark can't
-        identify you without a court order"
-      last_used: '2026-09-04'
+        post_id: p_ca1d8fe7dd19
+        round_id: quiet_machines:2026-09-05
+        report_label: 2026-09-05-agent-client-landscape
+    - id: 2026-09-05-zed-s-agent-protocol-turned-13-months-ol
+      summary: "Zed's agent protocol turned 13 months old this month. LSP took the
+        editor world 5 years to become normal · thread: Anthropic's terms forbid reselling
+        your Claude login to other apps"
+      last_used:
       provenance:
-        post_id: p_60b97fa9a8a4
-        round_id: quiet_machines:2026-09-04
-        report_label: 2026-09-04-claude-watermark-traceability
-    - id: 2026-09-04-article-50-of-the-eu-ai-act-took-effect
-      summary: "Article 50 of the EU AI Act took effect August 2, 2026. It says nothing
-        about who can check Claude's watermark. · thread: Claude's AI watermark can't
-        identify you without a court order"
-      last_used: '2026-09-04'
+        post_id: p_6669a117ed3a
+        round_id: quiet_machines:2026-09-05
+        report_label: 2026-09-05-agent-client-landscape
+    - id: 2026-09-05-in-openai-s-own-github-discussion-8338-a
+      summary: "In OpenAI's own GitHub Discussion #8338, an engineer answered one
+        question with 'Unanswered' · thread: Anthropic's terms forbid reselling your
+        Claude login to other apps"
+      last_used:
       provenance:
-        post_id: p_ca5f54b26553
-        round_id: quiet_machines:2026-09-04
-        report_label: 2026-09-04-claude-watermark-traceability
-    - id: 2026-09-04-anthropic-publishes-a-table-of-what-ever
-      summary: "Anthropic publishes a table of what every API feature retains. The
-        watermark detector isn't a row in it. · thread: Claude's AI watermark can't
-        identify you without a court order"
-      last_used: '2026-09-04'
+        post_id: p_f623dfe52633
+        round_id: quiet_machines:2026-09-05
+        report_label: 2026-09-05-agent-client-landscape
+    - id: 2026-09-05-zed-models-agent-work-as-a-diff-warp-as
+      summary: "Zed models agent work as a diff, Warp as a run, Vibe Kanban as a card:
+        nobody's agreed on the unit yet · thread: Anthropic's terms forbid reselling
+        your Claude login to other apps"
+      last_used:
       provenance:
-        post_id: p_4d9b542c18e1
-        round_id: quiet_machines:2026-09-04
-        report_label: 2026-09-04-claude-watermark-traceability
+        post_id: p_61be87919e4c
+        round_id: quiet_machines:2026-09-05
+        report_label: 2026-09-05-agent-client-landscape
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-04-claude-s-ai-watermark-can-t-identify-you.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-05-anthropic-s-terms-forbid-reselling-your.png
