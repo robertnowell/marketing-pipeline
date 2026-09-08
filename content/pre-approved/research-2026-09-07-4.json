@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-07-4",
+  "date": "2026-09-07",
+  "project": "research",
+  "angle": "2026-09-07-a-sept-4-legal-review-recommends-tb-s-da",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Running Claude Code or Codex behind the scenes in your product is probably legal on the Claude Code side: Anthropic allows the unmodified binary if each user authenticates their own account and you don't intermediate. Codex's TUI route stays murky; its app-server API is the safer path."
+    }
+  ]
+}

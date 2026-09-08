@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-07-5",
+  "date": "2026-09-07",
+  "project": "research",
+  "angle": "2026-09-07-t3-code-s-architecture-is-the-cleanest-p",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Thinking of building a product on Claude Code or Codex? The safest pattern found, T3 Code (wires both providers' SDKs to each user's own login), still isn't a safe harbor. Anthropic's SDK rules require API-key auth for third-party products unless approved."
+    }
+  ]
+}

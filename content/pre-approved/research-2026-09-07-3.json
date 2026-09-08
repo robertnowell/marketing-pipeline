@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-07-3",
+  "date": "2026-09-07",
+  "project": "research",
+  "angle": "2026-09-07-anthropic-s-legal-page-permits-running-t",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you're building on Claude Code, you're probably fine: Anthropic's terms say the unmodified binary is compliant when you accept Commercial Terms, keep its built-in auth, require each user to authenticate their own account, and don't intermediate usage. [Tier 1: Claude Code legal and compliance]"
+    }
+  ]
+}

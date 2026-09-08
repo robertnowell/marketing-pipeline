@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-07-1",
+  "date": "2026-09-07",
+  "project": "research",
+  "angle": "2026-09-07-tranquility-base-s-tmux-terminal-is-lega",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Founders automating Claude Code or Codex: Anthropic permits the unmodified Claude Code binary if you keep built-in auth and don't intermediate usage. Codex is unresolved, OpenAI never reconciles its anti-extraction clause with its own app-server docs. Use app-server, skip tmux. (OpenAI Terms)"
+    }
+  ]
+}

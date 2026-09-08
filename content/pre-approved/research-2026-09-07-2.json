@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-07-2",
+  "date": "2026-09-07",
+  "project": "research",
+  "angle": "2026-09-07-tranquility-base-keeps-api-keys-in-your",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Automating Claude Code in your product probably isn't a ToS violation. Anthropic explicitly allows running the unmodified binary if you keep built-in auth and each user logs into their own account. Codex custom clients are officially supported too, per OpenAI's SDK docs."
+    }
+  ]
+}

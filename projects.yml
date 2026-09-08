@@ -381,7 +381,7 @@ research:
       summary: "Tranquility Base's tmux terminal is legally 'immaterial' — the same
         shape is CVE-2025-54795's threat model · thread: Secretly automating Claude
         and OpenAI's coding CLIs turns out to be legal"
-      last_used:
+      last_used: '2026-09-07'
       provenance:
         post_id: p_61b3fea47241
         round_id: quiet_machines:2026-09-07
@@ -390,7 +390,7 @@ research:
       summary: "Tranquility Base keeps API keys in your Mac's Keychain that have nothing
         to do with the Claude agent it launches · thread: Secretly automating Claude
         and OpenAI's coding CLIs turns out to be legal"
-      last_used:
+      last_used: '2026-09-07'
       provenance:
         post_id: p_87916350cd9e
         round_id: quiet_machines:2026-09-07
@@ -399,7 +399,7 @@ research:
       summary: "Anthropic's legal page permits running the unmodified Claude Code
         binary — with three conditions attached · thread: Secretly automating Claude
         and OpenAI's coding CLIs turns out to be legal"
-      last_used:
+      last_used: '2026-09-07'
       provenance:
         post_id: p_c1fd6b614007
         round_id: quiet_machines:2026-09-07
@@ -408,7 +408,7 @@ research:
       summary: "A Sept 4 legal review recommends TB's 'dangerous mode' toggle get
         louder — not removed · thread: Secretly automating Claude and OpenAI's coding
         CLIs turns out to be legal"
-      last_used:
+      last_used: '2026-09-07'
       provenance:
         post_id: p_765308cd6ebb
         round_id: quiet_machines:2026-09-07
@@ -417,7 +417,7 @@ research:
       summary: "T3 Code's architecture is the cleanest pattern in the review — and
         still not a safe harbor · thread: Secretly automating Claude and OpenAI's
         coding CLIs turns out to be legal"
-      last_used:
+      last_used: '2026-09-07'
       provenance:
         post_id: p_2cedc59491b6
         round_id: quiet_machines:2026-09-07
