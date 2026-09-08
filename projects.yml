@@ -353,82 +353,74 @@ research:
   channels:
     - bluesky
   facts:
-    - "Finding 1.1: Anthropic prohibits third-party apps offering Claude login or
-      routing subscription credentials. [Established] — From Anthropic's own Legal
-      and Compliance documentation:"
-    - "Finding 1.2: OpenAI's position is permissive on the code and unresolved on
-      the auth. [Established] — Codex CLI is Apache-2.0 licensed and forkable, confirmed
-      by a maintainer in OpenAI's own repo."
-    - "Finding 1.3: This validates the user's own stated remedy. [Established, by
-      their own framing] — The user said earlier, unprompted: \"The long-term terms
-      of service compliant version of this is just"
-    - 'Finding 2.1: Three protocol layers, commonly conflated. [Established] — | Protocol
-      | Standardises | Who made it |'
-    - 'Finding 2.2: Every major agent already exposes a documented streaming interface.
-      [Established] — This is the crux, and it comes out better than expected.'
-    - 'Finding 2.3: ACP is real but young, and LSP says be patient. [Established]
-      — Zed announced ACP on 27 August 2025, with Gemini CLI as the first external
-      agent.'
-    - "Finding 2.4: AG-UI has broad backend adoption and a curious client-side entry.
-      [Likely] — AG-UI's own docs list first-party integrations including Microsoft
-      Agent Framework, Google ADK, AWS"
-    - "Finding 3.1: Three tiers of where the agent runs, correlating with who pays.
-      [Established] — - Local, user's own machine and subscription: Conductor (\"\
-      runs entirely on your Mac."
-    - 'Finding 3.2: The git model has converged on worktree or clone per task, PR
-      as terminal artifact. [Established] — Cursor uses git worktrees so each agent
-      has its own working directory on its own branch, and auto-opens'
-    - 'Finding 3.3: The unit of manipulation is not settled, and it reveals what each
-      product thinks it is. [Established] — - Task card: Vibe Kanban and the mission-control
-      genre.'
+    - "Claude Code's current path is likely compliant . Anthropic explicitly permits
+      products to run the unmodified Claude Code binary when the provider accepts
+      Commercial Terms, preserves built-in auth, requires each user to authenticate
+      their own account, and does not intermediate usage. [Tier 1: Claude Code legal
+      and compliance]"
+    - 'Codex custom clients are an intended use . Official Codex SDK and app-server
+      docs support app integration, custom clients, managed ChatGPT browser/device
+      login, Plus/Pro plan states, and programmatic workflows. [Tier 1: OpenAI Codex
+      SDK and app-server docs]'
+    - 'Current Codex TUI scraping retains an ambiguity . OpenAI never expressly reconciles
+      its consumer anti-extraction clause with official automation interfaces. App-server
+      is the narrowest defensible route; tmux/hidden pixels are immaterial. [Tier
+      1: OpenAI Terms; Codex app-server]'
+    - 'The repository preserves provider credential custody . TB starts the real binaries
+      in a private tmux PTY and no reads/copies of Claude/Codex token stores were
+      found. [Tier 1: local code]'
+    - "T3 Code uses cleaner programmatic seams  for architecture. T3 Code uses Codex
+      app-server and Claude Agent SDK with local provider auth. It is precedent, not
+      a safe harbor; Anthropic's current SDK rules require API-key auth for third-party
+      products unless approved. [Tier 1: T3 Code repo; Anthropic SDK docs]"
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-09-05-agent-client-landscape' dated 2026-09-05, and from a 
+      report '2026-09-04-codex-claude-compliance' dated 2026-09-07, and from a 
       simulated review round where 10 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-09-05-first-mate-has-4-819-github-stars-and-ma
-      summary: "First Mate has 4,819 GitHub stars and manages AI coding agents with
-        zero GUI, while OpenAI and Vercel spent this cycle caging what the model can
-        render · thread: Anthropic's terms forbid reselling your Claude login to…"
-      last_used: '2026-09-07'
+    - id: 2026-09-07-tranquility-base-s-tmux-terminal-is-lega
+      summary: "Tranquility Base's tmux terminal is legally 'immaterial' — the same
+        shape is CVE-2025-54795's threat model · thread: Secretly automating Claude
+        and OpenAI's coding CLIs turns out to be legal"
+      last_used:
       provenance:
-        post_id: p_aa700e5f0b61
-        round_id: quiet_machines:2026-09-05
-        report_label: 2026-09-05-agent-client-landscape
-    - id: 2026-09-05-warp-built-a-status-panel-so-you-know-wh
-      summary: "Warp built a status panel so you know which of your AI coding agents
-        is stuck. Almost nobody else did. · thread: Anthropic's terms forbid reselling
-        your Claude login to other apps"
-      last_used: '2026-09-07'
+        post_id: p_61b3fea47241
+        round_id: quiet_machines:2026-09-07
+        report_label: 2026-09-04-codex-claude-compliance
+    - id: 2026-09-07-tranquility-base-keeps-api-keys-in-your
+      summary: "Tranquility Base keeps API keys in your Mac's Keychain that have nothing
+        to do with the Claude agent it launches · thread: Secretly automating Claude
+        and OpenAI's coding CLIs turns out to be legal"
+      last_used:
       provenance:
-        post_id: p_ca1d8fe7dd19
-        round_id: quiet_machines:2026-09-05
-        report_label: 2026-09-05-agent-client-landscape
-    - id: 2026-09-05-zed-s-agent-protocol-turned-13-months-ol
-      summary: "Zed's agent protocol turned 13 months old this month. LSP took the
-        editor world 5 years to become normal · thread: Anthropic's terms forbid reselling
-        your Claude login to other apps"
-      last_used: '2026-09-07'
+        post_id: p_87916350cd9e
+        round_id: quiet_machines:2026-09-07
+        report_label: 2026-09-04-codex-claude-compliance
+    - id: 2026-09-07-anthropic-s-legal-page-permits-running-t
+      summary: "Anthropic's legal page permits running the unmodified Claude Code
+        binary — with three conditions attached · thread: Secretly automating Claude
+        and OpenAI's coding CLIs turns out to be legal"
+      last_used:
       provenance:
-        post_id: p_6669a117ed3a
-        round_id: quiet_machines:2026-09-05
-        report_label: 2026-09-05-agent-client-landscape
-    - id: 2026-09-05-in-openai-s-own-github-discussion-8338-a
-      summary: "In OpenAI's own GitHub Discussion #8338, an engineer answered one
-        question with 'Unanswered' · thread: Anthropic's terms forbid reselling your
-        Claude login to other apps"
-      last_used: '2026-09-07'
+        post_id: p_c1fd6b614007
+        round_id: quiet_machines:2026-09-07
+        report_label: 2026-09-04-codex-claude-compliance
+    - id: 2026-09-07-a-sept-4-legal-review-recommends-tb-s-da
+      summary: "A Sept 4 legal review recommends TB's 'dangerous mode' toggle get
+        louder — not removed · thread: Secretly automating Claude and OpenAI's coding
+        CLIs turns out to be legal"
+      last_used:
       provenance:
-        post_id: p_f623dfe52633
-        round_id: quiet_machines:2026-09-05
-        report_label: 2026-09-05-agent-client-landscape
-    - id: 2026-09-05-zed-models-agent-work-as-a-diff-warp-as
-      summary: "Zed models agent work as a diff, Warp as a run, Vibe Kanban as a card:
-        nobody's agreed on the unit yet · thread: Anthropic's terms forbid reselling
-        your Claude login to other apps"
-      last_used: '2026-09-07'
+        post_id: p_765308cd6ebb
+        round_id: quiet_machines:2026-09-07
+        report_label: 2026-09-04-codex-claude-compliance
+    - id: 2026-09-07-t3-code-s-architecture-is-the-cleanest-p
+      summary: "T3 Code's architecture is the cleanest pattern in the review — and
+        still not a safe harbor · thread: Secretly automating Claude and OpenAI's
+        coding CLIs turns out to be legal"
+      last_used:
       provenance:
-        post_id: p_61be87919e4c
-        round_id: quiet_machines:2026-09-05
-        report_label: 2026-09-05-agent-client-landscape
+        post_id: p_2cedc59491b6
+        round_id: quiet_machines:2026-09-07
+        report_label: 2026-09-04-codex-claude-compliance
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-05-anthropic-s-terms-forbid-reselling-your.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-07-secretly-automating-claude-and-openai-s.png
