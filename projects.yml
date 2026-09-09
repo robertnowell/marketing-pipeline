@@ -353,74 +353,102 @@ research:
   channels:
     - bluesky
   facts:
-    - "Claude Code's current path is likely compliant . Anthropic explicitly permits
-      products to run the unmodified Claude Code binary when the provider accepts
-      Commercial Terms, preserves built-in auth, requires each user to authenticate
-      their own account, and does not intermediate usage. [Tier 1: Claude Code legal
-      and compliance]"
-    - 'Codex custom clients are an intended use . Official Codex SDK and app-server
-      docs support app integration, custom clients, managed ChatGPT browser/device
-      login, Plus/Pro plan states, and programmatic workflows. [Tier 1: OpenAI Codex
-      SDK and app-server docs]'
-    - 'Current Codex TUI scraping retains an ambiguity . OpenAI never expressly reconciles
-      its consumer anti-extraction clause with official automation interfaces. App-server
-      is the narrowest defensible route; tmux/hidden pixels are immaterial. [Tier
-      1: OpenAI Terms; Codex app-server]'
-    - 'The repository preserves provider credential custody . TB starts the real binaries
-      in a private tmux PTY and no reads/copies of Claude/Codex token stores were
-      found. [Tier 1: local code]'
-    - "T3 Code uses cleaner programmatic seams  for architecture. T3 Code uses Codex
-      app-server and Claude Agent SDK with local provider auth. It is precedent, not
-      a safe harbor; Anthropic's current SDK rules require API-key auth for third-party
-      products unless approved. [Tier 1: T3 Code repo; Anthropic SDK docs]"
+    - Sentry's DSN is designed to be embedded in shipped clients, and Sentry 
+      recommends making it remotely configurable for desktop apps.. Sentry docs 
+      state DSNs are safe to keep public (submit-only, no read), can be rotated 
+      and revoked, and that for apps shipped to client devices a dynamically 
+      configurable DSN lets you rotate without a new download. Verified against 
+      the source (YES). [Tier 1] Sentry…
+    - 'Sentry Cocoa on macOS: app-hang tracking is on by default at 2 s, MetricKit
+      integration is opt-in on macOS 12+, uncaught-NSException reporting flips the
+      app to crash on NSExceptions, and watchdog-termination tracking is documented
+      only for iOS, tvOS and Mac Catalyst.. [Tier 1] Sentry macOS options.'
+    - 'Sentry cannot attach files to crash events; attachments work for handled errors..
+      [Tier 1] Sentry attachments doc: "Adding attachments to crashes is currently
+      not supported." So the failure-event JSON rides as an attachment on non-fatal
+      reports, and crashes rely on breadcrumbs plus tags.'
+    - Neither Sentry nor PostHog documents a dSYM path for a SwiftPM build; both
+      assume Xcode build phases.. The team must run `dsymutil` on the release 
+      binary per architecture and upload with `sentry-cli debug-files upload`, 
+      which scans folders recursively and skips already-uploaded files. [Tier 1]
+      Sentry dSYM docs, sentry-cli reference, PostHog dSYM doc.
+    - Apple's own crash reports (`.ips` in DiagnosticReports) are symbolicable 
+      by the developer offline with the matching dSYM via `atos` or Xcode's 
+      `CrashSymbolicator.py`, matched on binary UUID.. Useful as a fallback and 
+      for the team's own machines.
+    - MetricKit on macOS 12+ delivers crash and hang diagnostics without an SDK,
+      but its hang diagnostics on macOS only arrive if the app never recovers 
+      (force-quit).. [Tier 1] Apple developer forum thread 729815 and 
+      MXHangDiagnostic docs. Transient hangs need an in-process watchdog, which 
+      Sentry and BugSnag provide.
+    - PostHog's Apple SDK captures Mach exceptions, POSIX signals and 
+      NSExceptions on macOS, persists to disk and sends on next launch, but 
+      without dSYMs Swift crashes surface as bare SIGTRAP; whether it still 
+      requires an experimental import is contested.. Verification found the 
+      install page shows a plain `import PostHog`; the depth agent found the 
+      `@_spi(Experimental)` requirement in PostHog's own…
+    - Better Stack has no Swift SDK; its path is OpenTelemetry Swift over OTLP 
+      or HTTP log ingestion, and its source token has no documented write-only 
+      or client-embedding story and no per-token request limit. for the docs' 
+      content (verification YES); the absence is the finding. [Tier 1] Better 
+      Stack HTTP ingestion doc, OpenTelemetry doc.
+    - Axiom treats ingest tokens as confidential and points client-side users to
+      a proxy; PostHog's project key is public write-only like Sentry's DSN.. 
+      [Tier 1] Axiom tokens doc, PostHog capture docs.
+    - A leaked public DSN's realistic risk is event spam and quota exhaustion; 
+      mitigations are inbound filters (free, no quota), per-DSN rate limits, 
+      spike protection, rotation.. [Tier 1] Sentry filtering, spike protection, 
+      quota docs. A 2026 mass-scraping and "agentjacking" disclosure (fake 
+      events carrying instructions for AI agents reading Sentry via MCP) is 
+      reported by several security outlets but…
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-09-04-codex-claude-compliance' dated 2026-09-07, and from a 
+      report '2026-09-06-desktop-error-reporting' dated 2026-09-08, and from a 
       simulated review round where 10 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-09-07-tranquility-base-s-tmux-terminal-is-lega
-      summary: "Tranquility Base's tmux terminal is legally 'immaterial' — the same
-        shape is CVE-2025-54795's threat model · thread: Secretly automating Claude
-        and OpenAI's coding CLIs turns out to be legal"
-      last_used: '2026-09-07'
+    - id: 2026-09-08-a-codex-pane-crashed-in-0-8-seconds-the
+      summary: "A Codex pane crashed in 0.8 seconds — the log with the fix also had
+        what you'd said aloud · thread: App crash logs quietly captured everything
+        users had dictated aloud"
+      last_used:
       provenance:
-        post_id: p_61b3fea47241
-        round_id: quiet_machines:2026-09-07
-        report_label: 2026-09-04-codex-claude-compliance
-    - id: 2026-09-07-tranquility-base-keeps-api-keys-in-your
-      summary: "Tranquility Base keeps API keys in your Mac's Keychain that have nothing
-        to do with the Claude agent it launches · thread: Secretly automating Claude
-        and OpenAI's coding CLIs turns out to be legal"
-      last_used: '2026-09-07'
+        post_id: p_6b4e8066b327
+        round_id: quiet_machines:2026-09-08
+        report_label: 2026-09-06-desktop-error-reporting
+    - id: 2026-09-08-apple-s-own-crash-tool-only-logs-a-mac-a
+      summary: "Apple's own crash tool only logs a Mac app hang if you force-quit
+        it · thread: App crash logs quietly captured everything users had dictated
+        aloud"
+      last_used:
       provenance:
-        post_id: p_87916350cd9e
-        round_id: quiet_machines:2026-09-07
-        report_label: 2026-09-04-codex-claude-compliance
-    - id: 2026-09-07-anthropic-s-legal-page-permits-running-t
-      summary: "Anthropic's legal page permits running the unmodified Claude Code
-        binary — with three conditions attached · thread: Secretly automating Claude
-        and OpenAI's coding CLIs turns out to be legal"
-      last_used: '2026-09-07'
+        post_id: p_fd8bb0ad58a1
+        round_id: quiet_machines:2026-09-08
+        report_label: 2026-09-06-desktop-error-reporting
+    - id: 2026-09-08-sentry-s-docs-adding-attachments-to-cras
+      summary: "Sentry's docs: \"adding attachments to crashes is currently not supported\"\
+        \ · thread: App crash logs quietly captured everything users had dictated
+        aloud"
+      last_used:
       provenance:
-        post_id: p_c1fd6b614007
-        round_id: quiet_machines:2026-09-07
-        report_label: 2026-09-04-codex-claude-compliance
-    - id: 2026-09-07-a-sept-4-legal-review-recommends-tb-s-da
-      summary: "A Sept 4 legal review recommends TB's 'dangerous mode' toggle get
-        louder — not removed · thread: Secretly automating Claude and OpenAI's coding
-        CLIs turns out to be legal"
-      last_used: '2026-09-07'
+        post_id: p_f73b8ad468a6
+        round_id: quiet_machines:2026-09-08
+        report_label: 2026-09-06-desktop-error-reporting
+    - id: 2026-09-08-tranquility-base-s-mac-build-has-zero-xc
+      summary: "Tranquility Base's Mac build has zero Xcode project files — Sentry
+        and PostHog's crash-symbol docs assume one exists · thread: App crash logs
+        quietly captured everything users had dictated aloud"
+      last_used:
       provenance:
-        post_id: p_765308cd6ebb
-        round_id: quiet_machines:2026-09-07
-        report_label: 2026-09-04-codex-claude-compliance
-    - id: 2026-09-07-t3-code-s-architecture-is-the-cleanest-p
-      summary: "T3 Code's architecture is the cleanest pattern in the review — and
-        still not a safe harbor · thread: Secretly automating Claude and OpenAI's
-        coding CLIs turns out to be legal"
-      last_used: '2026-09-07'
+        post_id: p_8476edf43b14
+        round_id: quiet_machines:2026-09-08
+        report_label: 2026-09-06-desktop-error-reporting
+    - id: 2026-09-08-a-research-report-drafting-tranquility-b
+      summary: "A research report drafting Tranquility Base's crash reporting flagged
+        its own PostHog pick as 'the wrong house' · thread: App crash logs quietly
+        captured everything users had dictated aloud"
+      last_used:
       provenance:
-        post_id: p_2cedc59491b6
-        round_id: quiet_machines:2026-09-07
-        report_label: 2026-09-04-codex-claude-compliance
+        post_id: p_48708a5b5b2f
+        round_id: quiet_machines:2026-09-08
+        report_label: 2026-09-06-desktop-error-reporting
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-07-secretly-automating-claude-and-openai-s.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-08-app-crash-logs-quietly-captured-everythi.png
