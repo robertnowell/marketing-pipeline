@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-08-5",
+  "date": "2026-09-08",
+  "project": "research",
+  "angle": "2026-09-08-a-research-report-drafting-tranquility-b",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Picked PostHog for your desktop app's crash reports? Without dSYM files, Swift crashes show up as a bare SIGTRAP, no trace. PostHog's macOS SDK catches Mach exceptions, POSIX signals and NSExceptions, but neither it nor Sentry documents how to get dSYMs from a SwiftPM build. (PostHog docs)"
+    }
+  ]
+}

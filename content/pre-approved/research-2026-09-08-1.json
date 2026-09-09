@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-08-1",
+  "date": "2026-09-08",
+  "project": "research",
+  "angle": "2026-09-08-a-codex-pane-crashed-in-0-8-seconds-the",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Sentry can't attach files to a crash report, only to non-fatal errors: \"Adding attachments to crashes is currently not supported.\" If you ship a desktop app expecting full debug data on the crash that matters most, you get breadcrumbs and tags, nothing else. Sentry attachments doc."
+    }
+  ]
+}

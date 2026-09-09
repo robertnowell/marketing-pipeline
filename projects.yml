@@ -409,7 +409,7 @@ research:
       summary: "A Codex pane crashed in 0.8 seconds — the log with the fix also had
         what you'd said aloud · thread: App crash logs quietly captured everything
         users had dictated aloud"
-      last_used:
+      last_used: '2026-09-08'
       provenance:
         post_id: p_6b4e8066b327
         round_id: quiet_machines:2026-09-08
@@ -418,7 +418,7 @@ research:
       summary: "Apple's own crash tool only logs a Mac app hang if you force-quit
         it · thread: App crash logs quietly captured everything users had dictated
         aloud"
-      last_used:
+      last_used: '2026-09-08'
       provenance:
         post_id: p_fd8bb0ad58a1
         round_id: quiet_machines:2026-09-08
@@ -427,7 +427,7 @@ research:
       summary: "Sentry's docs: \"adding attachments to crashes is currently not supported\"\
         \ · thread: App crash logs quietly captured everything users had dictated
         aloud"
-      last_used:
+      last_used: '2026-09-08'
       provenance:
         post_id: p_f73b8ad468a6
         round_id: quiet_machines:2026-09-08
@@ -436,7 +436,7 @@ research:
       summary: "Tranquility Base's Mac build has zero Xcode project files — Sentry
         and PostHog's crash-symbol docs assume one exists · thread: App crash logs
         quietly captured everything users had dictated aloud"
-      last_used:
+      last_used: '2026-09-08'
       provenance:
         post_id: p_8476edf43b14
         round_id: quiet_machines:2026-09-08
@@ -445,7 +445,7 @@ research:
       summary: "A research report drafting Tranquility Base's crash reporting flagged
         its own PostHog pick as 'the wrong house' · thread: App crash logs quietly
         captured everything users had dictated aloud"
-      last_used:
+      last_used: '2026-09-08'
       provenance:
         post_id: p_48708a5b5b2f
         round_id: quiet_machines:2026-09-08

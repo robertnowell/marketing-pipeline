@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-08-4",
+  "date": "2026-09-08",
+  "project": "research",
+  "angle": "2026-09-08-tranquility-base-s-mac-build-has-zero-xc",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Building a Mac app with Swift Package Manager instead of Xcode? Sentry and PostHog's crash-symbol docs assume an Xcode project exists. Neither documents a dSYM path for SwiftPM builds. You run dsymutil per architecture yourself, then upload with sentry-cli debug-files upload."
+    }
+  ]
+}

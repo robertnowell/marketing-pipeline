@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-08-2",
+  "date": "2026-09-08",
+  "project": "research",
+  "angle": "2026-09-08-apple-s-own-crash-tool-only-logs-a-mac-a",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Apple's own crash tool, MetricKit, only logs a Mac app hang if you force-quit it. Freezes users just wait out go unrecorded (Apple dev forum thread 729815). Sentry and BugSnag catch those with an in-process watchdog. MetricKit alone leaves you blind to most hangs."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-08-3",
+  "date": "2026-09-08",
+  "project": "research",
+  "angle": "2026-09-08-sentry-s-docs-adding-attachments-to-cras",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Sentry's own docs admit it: \"Adding attachments to crashes is currently not supported.\" If you're shipping a desktop app, you can attach files to handled errors, but a real crash gets only breadcrumbs and tags. Budget your crash diagnostics around that gap."
+    }
+  ]
+}
