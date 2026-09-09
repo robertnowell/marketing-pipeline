@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-08-sib-2026-09-07-a-sept-4-lega-2",
+  "date": "2026-09-08",
+  "project": "research",
+  "angle": "angle:sib-2026-09-08-2026-09-07-a-sept-4-lega-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Founders wrapping Codex to ship their own coding tool: OpenAI's own SDK and app-server docs bless custom clients, managed ChatGPT login, and Plus/Pro plan states. That's an intended integration path, not a gray-area hack. The unresolved risk is scraping the Codex TUI directly, since OpenAI never squares that against its consumer anti-extraction clause. App-server is the defensible route."
+    }
+  ]
+}

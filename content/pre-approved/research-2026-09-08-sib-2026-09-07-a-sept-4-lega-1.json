@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-08-sib-2026-09-07-a-sept-4-lega-1",
+  "date": "2026-09-08",
+  "project": "research",
+  "angle": "angle:sib-2026-09-08-2026-09-07-a-sept-4-lega-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you're building on Claude Code, Anthropic's coding assistant, the compliant path already exists: accept Commercial Terms, keep the built-in auth, require each user to log into their own account, and don't intermediate usage. No workaround or gray-area interpretation needed."
+    }
+  ]
+}
