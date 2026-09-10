@@ -436,7 +436,7 @@ research:
       summary: "Tranquility Base's Mac build has zero Xcode project files — Sentry
         and PostHog's crash-symbol docs assume one exists · thread: App crash logs
         quietly captured everything users had dictated aloud"
-      last_used: '2026-09-08'
+      last_used: '2026-09-10'
       provenance:
         post_id: p_8476edf43b14
         round_id: quiet_machines:2026-09-08
