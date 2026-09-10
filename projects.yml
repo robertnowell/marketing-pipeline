@@ -427,7 +427,7 @@ research:
       summary: "Sentry's docs: \"adding attachments to crashes is currently not supported\"\
         \ · thread: App crash logs quietly captured everything users had dictated
         aloud"
-      last_used: '2026-09-08'
+      last_used: '2026-09-10'
       provenance:
         post_id: p_f73b8ad468a6
         round_id: quiet_machines:2026-09-08
