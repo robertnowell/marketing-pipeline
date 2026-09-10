@@ -445,7 +445,7 @@ research:
       summary: "A research report drafting Tranquility Base's crash reporting flagged
         its own PostHog pick as 'the wrong house' · thread: App crash logs quietly
         captured everything users had dictated aloud"
-      last_used: '2026-09-08'
+      last_used: '2026-09-10'
       provenance:
         post_id: p_48708a5b5b2f
         round_id: quiet_machines:2026-09-08

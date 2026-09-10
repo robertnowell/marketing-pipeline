@@ -7059,3 +7059,9 @@
   angle: 2026-09-08-tranquility-base-s-mac-build-has-zero-xc
   source_id: ''
   posted_at: '2026-09-10'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mv6ma37tfg26
+  angle: 2026-09-08-a-research-report-drafting-tranquility-b
+  source_id: ''
+  posted_at: '2026-09-10'
