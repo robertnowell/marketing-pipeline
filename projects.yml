@@ -418,7 +418,7 @@ research:
       summary: "Apple's own crash tool only logs a Mac app hang if you force-quit
         it · thread: App crash logs quietly captured everything users had dictated
         aloud"
-      last_used: '2026-09-08'
+      last_used: '2026-09-10'
       provenance:
         post_id: p_fd8bb0ad58a1
         round_id: quiet_machines:2026-09-08
