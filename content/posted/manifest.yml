@@ -7035,3 +7035,9 @@
   angle: 2026-09-08-a-research-report-drafting-tranquility-b
   source_id: research-2026-09-08-5
   posted_at: '2026-09-09'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mv6bksvyxk2j
+  angle: 2026-09-08-a-codex-pane-crashed-in-0-8-seconds-the
+  source_id: ''
+  posted_at: '2026-09-10'
