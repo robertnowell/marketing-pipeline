@@ -7083,3 +7083,9 @@
   angle: 2026-09-08-sentry-s-docs-adding-attachments-to-cras
   source_id: ''
   posted_at: '2026-09-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvdbdku6et2z
+  angle: 2026-09-08-tranquility-base-s-mac-build-has-zero-xc
+  source_id: ''
+  posted_at: '2026-09-12'
