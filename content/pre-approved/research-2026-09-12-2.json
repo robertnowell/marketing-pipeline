@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-12-2",
+  "date": "2026-09-12",
+  "project": "research",
+  "angle": "2026-09-12-anthropic-s-rule-for-hosting-claude-code",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenCode has 206.7k GitHub stars, but no hosted or Slack-triggered product exists: its own docs say the GitHub Action \"runs inside your GitHub's runners,\" and the server just listens on 127.0.0.1:4096. Want your coding agent triggered from Slack? OpenHands offers that as a free hosted tier."
+    }
+  ]
+}

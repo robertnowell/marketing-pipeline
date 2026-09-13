@@ -403,7 +403,7 @@ research:
       summary: "Trail of Bits' CVE-2025-54795 hijacked an already-approved command
         — that's the trust model six 2026 startups just automated · thread: A startup
         hosting AI coding agents in Slack already died"
-      last_used:
+      last_used: '2026-09-12'
       provenance:
         post_id: p_8fce4021f421
         round_id: quiet_machines:2026-09-12
@@ -412,7 +412,7 @@ research:
       summary: "Anthropic's rule for hosting Claude Code isn't about subscriptions
         — it's about who holds the login · thread: A startup hosting AI coding agents
         in Slack already died"
-      last_used:
+      last_used: '2026-09-12'
       provenance:
         post_id: p_0b30a30fd23b
         round_id: quiet_machines:2026-09-12
@@ -421,7 +421,7 @@ research:
       summary: 'OpenHands names Apple, Google, Netflix and Amazon as users. Its one
         named paying customer is C3.ai · thread: A startup hosting AI coding agents
         in Slack already died'
-      last_used:
+      last_used: '2026-09-12'
       provenance:
         post_id: p_2e686ca0f3b6
         round_id: quiet_machines:2026-09-12
@@ -430,7 +430,7 @@ research:
       summary: "Blacksmith's coding agent films its own work — its docs never say
         the video reaches the pull request · thread: A startup hosting AI coding agents
         in Slack already died"
-      last_used:
+      last_used: '2026-09-12'
       provenance:
         post_id: p_a678b4fe50f5
         round_id: quiet_machines:2026-09-12
@@ -439,7 +439,7 @@ research:
       summary: "Ona's '13x agent growth' claim before OpenAI bought it in June 2026
         has no primary source · thread: A startup hosting AI coding agents in Slack
         already died"
-      last_used:
+      last_used: '2026-09-12'
       provenance:
         post_id: p_268d7684b1a3
         round_id: quiet_machines:2026-09-12

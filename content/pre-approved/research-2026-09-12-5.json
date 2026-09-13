@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-12-5",
+  "date": "2026-09-12",
+  "project": "research",
+  "angle": "2026-09-12-ona-s-13x-agent-growth-claim-before-open",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenCode, a coding agent CLI, claims \"16M monthly users\" on its homepage. The only independently verified numbers: 206.7k GitHub stars, 27.0k forks, v1.18.30 on 9 Sep 2026. No source confirms the user count. Evaluate dev tools by the repo, not the landing page."
+    }
+  ]
+}

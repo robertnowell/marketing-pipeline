@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-12-4",
+  "date": "2026-09-12",
+  "project": "research",
+  "angle": "2026-09-12-blacksmith-s-coding-agent-films-its-own",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenCode: 206.7k GitHub stars, zero hosted or Slack product. Docs say the GitHub Action \"runs inside your GitHub's runners\"; the server runs locally at 127.0.0.1:4096. OpenHands, its rival, ships a free hosted tier with real Slack and Jira triggers. Only one of these works in Slack today."
+    }
+  ]
+}

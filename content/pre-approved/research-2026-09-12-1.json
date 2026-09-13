@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-12-1",
+  "date": "2026-09-12",
+  "project": "research",
+  "angle": "2026-09-12-trail-of-bits-cve-2025-54795-hijacked-an",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenCode: 206.7k GitHub stars, a \"16M monthly users\" claim on its homepage, and zero hosted or Slack product. Docs say the GitHub Action \"runs inside your GitHub's runners\" and the server just runs locally on 127.0.0.1:4096. Check docs, not marketing, before trusting a coding agent's reach."
+    }
+  ]
+}
