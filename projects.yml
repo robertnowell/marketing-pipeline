@@ -353,102 +353,96 @@ research:
   channels:
     - bluesky
   facts:
-    - Sentry's DSN is designed to be embedded in shipped clients, and Sentry 
-      recommends making it remotely configurable for desktop apps.. Sentry docs 
-      state DSNs are safe to keep public (submit-only, no read), can be rotated 
-      and revoked, and that for apps shipped to client devices a dynamically 
-      configurable DSN lets you rotate without a new download. Verified against 
-      the source (YES). [Tier 1] Sentry…
-    - 'Sentry Cocoa on macOS: app-hang tracking is on by default at 2 s, MetricKit
-      integration is opt-in on macOS 12+, uncaught-NSException reporting flips the
-      app to crash on NSExceptions, and watchdog-termination tracking is documented
-      only for iOS, tvOS and Mac Catalyst.. [Tier 1] Sentry macOS options.'
-    - 'Sentry cannot attach files to crash events; attachments work for handled errors..
-      [Tier 1] Sentry attachments doc: "Adding attachments to crashes is currently
-      not supported." So the failure-event JSON rides as an attachment on non-fatal
-      reports, and crashes rely on breadcrumbs plus tags.'
-    - Neither Sentry nor PostHog documents a dSYM path for a SwiftPM build; both
-      assume Xcode build phases.. The team must run `dsymutil` on the release 
-      binary per architecture and upload with `sentry-cli debug-files upload`, 
-      which scans folders recursively and skips already-uploaded files. [Tier 1]
-      Sentry dSYM docs, sentry-cli reference, PostHog dSYM doc.
-    - Apple's own crash reports (`.ips` in DiagnosticReports) are symbolicable 
-      by the developer offline with the matching dSYM via `atos` or Xcode's 
-      `CrashSymbolicator.py`, matched on binary UUID.. Useful as a fallback and 
-      for the team's own machines.
-    - MetricKit on macOS 12+ delivers crash and hang diagnostics without an SDK,
-      but its hang diagnostics on macOS only arrive if the app never recovers 
-      (force-quit).. [Tier 1] Apple developer forum thread 729815 and 
-      MXHangDiagnostic docs. Transient hangs need an in-process watchdog, which 
-      Sentry and BugSnag provide.
-    - PostHog's Apple SDK captures Mach exceptions, POSIX signals and 
-      NSExceptions on macOS, persists to disk and sends on next launch, but 
-      without dSYMs Swift crashes surface as bare SIGTRAP; whether it still 
-      requires an experimental import is contested.. Verification found the 
-      install page shows a plain `import PostHog`; the depth agent found the 
-      `@_spi(Experimental)` requirement in PostHog's own…
-    - Better Stack has no Swift SDK; its path is OpenTelemetry Swift over OTLP 
-      or HTTP log ingestion, and its source token has no documented write-only 
-      or client-embedding story and no per-token request limit. for the docs' 
-      content (verification YES); the absence is the finding. [Tier 1] Better 
-      Stack HTTP ingestion doc, OpenTelemetry doc.
-    - Axiom treats ingest tokens as confidential and points client-side users to
-      a proxy; PostHog's project key is public write-only like Sentry's DSN.. 
-      [Tier 1] Axiom tokens doc, PostHog capture docs.
-    - A leaked public DSN's realistic risk is event spam and quota exhaustion; 
-      mitigations are inbound filters (free, no quota), per-DSN rate limits, 
-      spike protection, rotation.. [Tier 1] Sentry filtering, spike protection, 
-      quota docs. A 2026 mass-scraping and "agentjacking" disclosure (fake 
-      events carrying instructions for AI agents reading Sentry via MCP) is 
-      reported by several security outlets but…
+    - "OpenCode has no hosted, cloud-sandbox or Slack-triggered product.. GitHub Action
+      docs say it \"runs inside your GitHub's runners\"; server docs describe a local
+      headless HTTP server on 127.0.0.1:4096; no Slack bot is documented anywhere
+      on opencode.ai. [Tier 1: opencode.ai/docs/github, opencode.ai/docs/server]"
+    - "OpenCode traction: 206.7k stars, 27.0k forks, MIT, v1.18.30 on 9 Sep 2026..
+      [Tier 1: github.com/sst/opencode, releases page] The homepage's \"16M monthly
+      users\" and blogs' \"950 contributors\" are vendor or Tier 3 claims with no
+      independent verification."
+    - "OpenCode's company is Anomaly (formerly SST, YC 2021); no verified funding.
+      for identity (co-founder Dax Raad's own statement), Speculative for funding
+      (only a Tracxn \"undisclosed pre-seed\" entry; one \"$420M Series D\" result
+      is satire and excluded). [Tier 1: x.com/thdxr; Tier 3/4: Tracxn]"
+    - 'OpenCode product lineup: TUI, desktop beta, Zen (pay-as-you-go model gateway,
+      $20 minimum top-up), Go (reported $10/month open-weights subscription, not confirmed
+      on a Tier 1 page), Enterprise ("does not store any of your code or context data",
+      no pricing).. [Tier 1: opencode.ai, opencode.ai/zen]'
+    - 'OpenHands: 87.4k stars, 11.5k forks, 8,167 commits as of Sep 2026; ~65k stars
+      and 3 to 4M downloads at the Series A in Nov 2025.. [Tier 1: GitHub repo; Tier
+      1: openhands.dev Series A blog; Tier 2: BusinessWire]'
+    - 'OpenHands funding: $18.8M Series A on 18 Nov 2025 led by Madrona, with Menlo
+      Ventures, Pillar VC, Obvious Ventures, Fujitsu Ventures, Alumni Ventures; about
+      $23.8M total with an earlier ~$5M seed. No Series B found. for the A, Likely
+      for the total. [Tier 1: openhands.dev blog; Tier 2: BusinessWire]'
+    - "OpenHands named customers: C3.ai is the only on-record enterprise customer
+      (quote from Sina Pakazad, VP Data Science, on the Enterprise page). Engineers
+      at AMD, Apple, Google, Amazon, Netflix, TikTok, NVIDIA, Mastercard, VMware are
+      claimed as OSS users in the company's own Series A post, uncorroborated. for
+      C3.ai, Speculative for the list. A case-studies page appears in search indexes
+      but…"
+    - "OpenHands multi-backend (Agent Canvas) spawns Claude Code, Codex and Gemini
+      CLI as subprocesses over the Agent Client Protocol, letting users apply their
+      existing Claude Max, Codex Pro or Gemini subscriptions. Announced 18 Jun 2026..
+      [Tier 1: openhands.dev blog \"use any coding agent\"; GitHub repo description]
+      > \"Instead of Agent Canvas calling an LLM directly, the Agent Server spawns
+      the agent's…"
+    - 'OpenHands pricing and enterprise: Open Source free; Individual free hosted
+      tier with Slack and Jira, BYOK or at-cost tokens, 10 conversations a day; Enterprise
+      custom, SaaS or self-hosted in the customer VPC via Kubernetes, with RBAC, budgets,
+      audit logs, and triggers from GitHub, Slack, Jira or schedule.. [Tier 1: openhands.dev/pricing,
+      openhands.dev/enterprise]'
+    - 'OpenHands team size and revenue: undisclosed. Aggregators disagree (6, 11 to
+      50, 34).. [Tier 3: Tracxn, PitchBook, LinkedIn-derived]'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-09-06-desktop-error-reporting' dated 2026-09-08, and from a 
-      simulated review round where 10 agent-written posts were ranked by votes.
+      report '2026-09-11-open-harness-cloud-agents' dated 2026-09-12, and from a
+      simulated review round where 9 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-09-08-a-codex-pane-crashed-in-0-8-seconds-the
-      summary: "A Codex pane crashed in 0.8 seconds — the log with the fix also had
-        what you'd said aloud · thread: App crash logs quietly captured everything
-        users had dictated aloud"
-      last_used: '2026-09-12'
+    - id: 2026-09-12-trail-of-bits-cve-2025-54795-hijacked-an
+      summary: "Trail of Bits' CVE-2025-54795 hijacked an already-approved command
+        — that's the trust model six 2026 startups just automated · thread: A startup
+        hosting AI coding agents in Slack already died"
+      last_used:
       provenance:
-        post_id: p_6b4e8066b327
-        round_id: quiet_machines:2026-09-08
-        report_label: 2026-09-06-desktop-error-reporting
-    - id: 2026-09-08-apple-s-own-crash-tool-only-logs-a-mac-a
-      summary: "Apple's own crash tool only logs a Mac app hang if you force-quit
-        it · thread: App crash logs quietly captured everything users had dictated
-        aloud"
-      last_used: '2026-09-12'
+        post_id: p_8fce4021f421
+        round_id: quiet_machines:2026-09-12
+        report_label: 2026-09-11-open-harness-cloud-agents
+    - id: 2026-09-12-anthropic-s-rule-for-hosting-claude-code
+      summary: "Anthropic's rule for hosting Claude Code isn't about subscriptions
+        — it's about who holds the login · thread: A startup hosting AI coding agents
+        in Slack already died"
+      last_used:
       provenance:
-        post_id: p_fd8bb0ad58a1
-        round_id: quiet_machines:2026-09-08
-        report_label: 2026-09-06-desktop-error-reporting
-    - id: 2026-09-08-sentry-s-docs-adding-attachments-to-cras
-      summary: "Sentry's docs: \"adding attachments to crashes is currently not supported\"\
-        \ · thread: App crash logs quietly captured everything users had dictated
-        aloud"
-      last_used: '2026-09-12'
+        post_id: p_0b30a30fd23b
+        round_id: quiet_machines:2026-09-12
+        report_label: 2026-09-11-open-harness-cloud-agents
+    - id: 2026-09-12-openhands-names-apple-google-netflix-and
+      summary: 'OpenHands names Apple, Google, Netflix and Amazon as users. Its one
+        named paying customer is C3.ai · thread: A startup hosting AI coding agents
+        in Slack already died'
+      last_used:
       provenance:
-        post_id: p_f73b8ad468a6
-        round_id: quiet_machines:2026-09-08
-        report_label: 2026-09-06-desktop-error-reporting
-    - id: 2026-09-08-tranquility-base-s-mac-build-has-zero-xc
-      summary: "Tranquility Base's Mac build has zero Xcode project files — Sentry
-        and PostHog's crash-symbol docs assume one exists · thread: App crash logs
-        quietly captured everything users had dictated aloud"
-      last_used: '2026-09-12'
+        post_id: p_2e686ca0f3b6
+        round_id: quiet_machines:2026-09-12
+        report_label: 2026-09-11-open-harness-cloud-agents
+    - id: 2026-09-12-blacksmith-s-coding-agent-films-its-own
+      summary: "Blacksmith's coding agent films its own work — its docs never say
+        the video reaches the pull request · thread: A startup hosting AI coding agents
+        in Slack already died"
+      last_used:
       provenance:
-        post_id: p_8476edf43b14
-        round_id: quiet_machines:2026-09-08
-        report_label: 2026-09-06-desktop-error-reporting
-    - id: 2026-09-08-a-research-report-drafting-tranquility-b
-      summary: "A research report drafting Tranquility Base's crash reporting flagged
-        its own PostHog pick as 'the wrong house' · thread: App crash logs quietly
-        captured everything users had dictated aloud"
-      last_used: '2026-09-12'
+        post_id: p_a678b4fe50f5
+        round_id: quiet_machines:2026-09-12
+        report_label: 2026-09-11-open-harness-cloud-agents
+    - id: 2026-09-12-ona-s-13x-agent-growth-claim-before-open
+      summary: "Ona's '13x agent growth' claim before OpenAI bought it in June 2026
+        has no primary source · thread: A startup hosting AI coding agents in Slack
+        already died"
+      last_used:
       provenance:
-        post_id: p_48708a5b5b2f
-        round_id: quiet_machines:2026-09-08
-        report_label: 2026-09-06-desktop-error-reporting
+        post_id: p_268d7684b1a3
+        round_id: quiet_machines:2026-09-12
+        report_label: 2026-09-11-open-harness-cloud-agents
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-08-app-crash-logs-quietly-captured-everythi.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-12-a-startup-hosting-ai-coding-agents-in-sl.png
