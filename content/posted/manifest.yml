@@ -7107,3 +7107,39 @@
   angle: 2026-09-08-apple-s-own-crash-tool-only-logs-a-mac-a
   source_id: ''
   posted_at: '2026-09-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvfszms4qx2l
+  angle: angle:sib-2026-09-08-2026-09-07-a-sept-4-lega-1
+  source_id: research-2026-09-08-sib-2026-09-07-a-sept-4-lega-1
+  posted_at: '2026-09-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvfszp7jhb2f
+  angle: 2026-09-12-trail-of-bits-cve-2025-54795-hijacked-an
+  source_id: research-2026-09-12-1
+  posted_at: '2026-09-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvfszqt6lj2o
+  angle: 2026-09-12-anthropic-s-rule-for-hosting-claude-code
+  source_id: research-2026-09-12-2
+  posted_at: '2026-09-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvfszsjic42e
+  angle: 2026-09-12-openhands-names-apple-google-netflix-and
+  source_id: research-2026-09-12-3
+  posted_at: '2026-09-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvfszu7bll24
+  angle: 2026-09-12-blacksmith-s-coding-agent-films-its-own
+  source_id: research-2026-09-12-4
+  posted_at: '2026-09-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvfszvtwgf26
+  angle: 2026-09-12-ona-s-13x-agent-growth-claim-before-open
+  source_id: research-2026-09-12-5
+  posted_at: '2026-09-13'
