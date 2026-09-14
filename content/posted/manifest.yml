@@ -7143,3 +7143,33 @@
   angle: 2026-09-12-ona-s-13x-agent-growth-claim-before-open
   source_id: research-2026-09-12-5
   posted_at: '2026-09-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvijr4jiir2o
+  angle: 2026-09-13-measured-13-sept-2026-an-ai-agent-superv
+  source_id: research-2026-09-13-1
+  posted_at: '2026-09-14'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvijr6ogtg26
+  angle: 2026-09-13-kubernetes-deprecated-dockershim-in-dece
+  source_id: research-2026-09-13-2
+  posted_at: '2026-09-14'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvijrahvfg2z
+  angle: 2026-09-13-rust-analyzer-ran-inlay-hints-as-an-unof
+  source_id: research-2026-09-13-3
+  posted_at: '2026-09-14'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvijrcdoad2u
+  angle: 2026-09-13-paseo-s-own-commits-show-adding-a-vendor
+  source_id: research-2026-09-13-4
+  posted_at: '2026-09-14'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvijre6bad2u
+  angle: 2026-09-13-cursor-changed-its-local-credential-stor
+  source_id: research-2026-09-13-5
+  posted_at: '2026-09-14'
