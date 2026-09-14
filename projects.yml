@@ -353,96 +353,82 @@ research:
   channels:
     - bluesky
   facts:
-    - "OpenCode has no hosted, cloud-sandbox or Slack-triggered product.. GitHub Action
-      docs say it \"runs inside your GitHub's runners\"; server docs describe a local
-      headless HTTP server on 127.0.0.1:4096; no Slack bot is documented anywhere
-      on opencode.ai. [Tier 1: opencode.ai/docs/github, opencode.ai/docs/server]"
-    - "OpenCode traction: 206.7k stars, 27.0k forks, MIT, v1.18.30 on 9 Sep 2026..
-      [Tier 1: github.com/sst/opencode, releases page] The homepage's \"16M monthly
-      users\" and blogs' \"950 contributors\" are vendor or Tier 3 claims with no
-      independent verification."
-    - "OpenCode's company is Anomaly (formerly SST, YC 2021); no verified funding.
-      for identity (co-founder Dax Raad's own statement), Speculative for funding
-      (only a Tracxn \"undisclosed pre-seed\" entry; one \"$420M Series D\" result
-      is satire and excluded). [Tier 1: x.com/thdxr; Tier 3/4: Tracxn]"
-    - 'OpenCode product lineup: TUI, desktop beta, Zen (pay-as-you-go model gateway,
-      $20 minimum top-up), Go (reported $10/month open-weights subscription, not confirmed
-      on a Tier 1 page), Enterprise ("does not store any of your code or context data",
-      no pricing).. [Tier 1: opencode.ai, opencode.ai/zen]'
-    - 'OpenHands: 87.4k stars, 11.5k forks, 8,167 commits as of Sep 2026; ~65k stars
-      and 3 to 4M downloads at the Series A in Nov 2025.. [Tier 1: GitHub repo; Tier
-      1: openhands.dev Series A blog; Tier 2: BusinessWire]'
-    - 'OpenHands funding: $18.8M Series A on 18 Nov 2025 led by Madrona, with Menlo
-      Ventures, Pillar VC, Obvious Ventures, Fujitsu Ventures, Alumni Ventures; about
-      $23.8M total with an earlier ~$5M seed. No Series B found. for the A, Likely
-      for the total. [Tier 1: openhands.dev blog; Tier 2: BusinessWire]'
-    - "OpenHands named customers: C3.ai is the only on-record enterprise customer
-      (quote from Sina Pakazad, VP Data Science, on the Enterprise page). Engineers
-      at AMD, Apple, Google, Amazon, Netflix, TikTok, NVIDIA, Mastercard, VMware are
-      claimed as OSS users in the company's own Series A post, uncorroborated. for
-      C3.ai, Speculative for the list. A case-studies page appears in search indexes
-      but…"
-    - "OpenHands multi-backend (Agent Canvas) spawns Claude Code, Codex and Gemini
-      CLI as subprocesses over the Agent Client Protocol, letting users apply their
-      existing Claude Max, Codex Pro or Gemini subscriptions. Announced 18 Jun 2026..
-      [Tier 1: openhands.dev blog \"use any coding agent\"; GitHub repo description]
-      > \"Instead of Agent Canvas calling an LLM directly, the Agent Server spawns
-      the agent's…"
-    - 'OpenHands pricing and enterprise: Open Source free; Individual free hosted
-      tier with Slack and Jira, BYOK or at-cost tokens, 10 conversations a day; Enterprise
-      custom, SaaS or self-hosted in the customer VPC via Kubernetes, with RBAC, budgets,
-      audit logs, and triggers from GitHub, Slack, Jira or schedule.. [Tier 1: openhands.dev/pricing,
-      openhands.dev/enterprise]'
-    - 'OpenHands team size and revenue: undisclosed. Aggregators disagree (6, 11 to
-      50, 34).. [Tier 3: Tracxn, PitchBook, LinkedIn-derived]'
+    - '1. Paseo: the 900-to-1 ratio, measured in real commits [Established] — Adding
+      a provider is three different jobs wearing one name.'
+    - 2. Paseo's compatibility discipline is copyable in an afternoon 
+      [Established] — From `docs/protocol-compatibility.md`, there is no wire 
+      protocol version number at all.
+    - 3. Vendor drift is a recurring, named failure class with its own 
+      automation [Established] — Paseo runs `npm run acp:version-drift:check` 
+      and `acp:version-drift:update` as part of every release, explicitly to 
+      keep catalog entries current against upstream vendor CLIs.
+    - '4. Warp instruments, it does not observe [Established] — Warp supports roughly
+      fourteen third-party CLI agents but only four get "agent notifications": its
+      own agent, Claude Code, Codex and OpenCode.'
+    - '5. The protocols that survived: capabilities, never versions [Established]
+      — LSP has no protocol version number gating behaviour.'
+    - 6. How this kind of layer rots, and the observable warnings [Established] 
+      — | Project | The rot signal, stated as something measurable | 
+      Intervention that worked |
+    - 7. What this product needs that a screen-first tool does not [Established,
+      from source] — The summariser cannot work from a status enum. 
+      `SummaryRequest` needs `lastAssistantMessage`, `firstUserMessage`, 
+      `previousGoal`, `projectLabel`, `gitBranch`, `cwd`, `hookEvent` and 
+      `notificationMatcher`.
+    - '8. The lamp is dark because of configuration, not architecture [Established,
+      measured] — Measured against the live store and settings on 13 September 2026:'
+    - Three provider families, not N providers — The 900-to-1 finding says the 
+      cost driver is protocol membership, so the architecture should have three 
+      shapes and nothing else.
+    - What not to copy — - Paseo's five buckets as the stored model.
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-09-11-open-harness-cloud-agents' dated 2026-09-12, and from a
-      simulated review round where 9 agent-written posts were ranked by votes.
+      report '2026-09-13-durable-agent-supervision' dated 2026-09-13, and from a
+      simulated review round where 10 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-09-12-trail-of-bits-cve-2025-54795-hijacked-an
-      summary: "Trail of Bits' CVE-2025-54795 hijacked an already-approved command
-        — that's the trust model six 2026 startups just automated · thread: A startup
-        hosting AI coding agents in Slack already died"
-      last_used: '2026-09-12'
+    - id: 2026-09-13-measured-13-sept-2026-an-ai-agent-superv
+      summary: "Measured 13 Sept 2026: an AI-agent supervisor's 'needs input' alert
+        fired 47 times because its settings have zero rules that ever ask · thread:
+        No shared protocol made one AI vendor cost 900x more"
+      last_used:
       provenance:
-        post_id: p_8fce4021f421
-        round_id: quiet_machines:2026-09-12
-        report_label: 2026-09-11-open-harness-cloud-agents
-    - id: 2026-09-12-anthropic-s-rule-for-hosting-claude-code
-      summary: "Anthropic's rule for hosting Claude Code isn't about subscriptions
-        — it's about who holds the login · thread: A startup hosting AI coding agents
-        in Slack already died"
-      last_used: '2026-09-12'
+        post_id: p_2fd91c1a546b
+        round_id: quiet_machines:2026-09-13
+        report_label: 2026-09-13-durable-agent-supervision
+    - id: 2026-09-13-kubernetes-deprecated-dockershim-in-dece
+      summary: 'Kubernetes deprecated dockershim in December 2020 and deleted it in
+        April 2022 — on a published clock · thread: No shared protocol made one AI
+        vendor cost 900x more'
+      last_used:
       provenance:
-        post_id: p_0b30a30fd23b
-        round_id: quiet_machines:2026-09-12
-        report_label: 2026-09-11-open-harness-cloud-agents
-    - id: 2026-09-12-openhands-names-apple-google-netflix-and
-      summary: 'OpenHands names Apple, Google, Netflix and Amazon as users. Its one
-        named paying customer is C3.ai · thread: A startup hosting AI coding agents
-        in Slack already died'
-      last_used: '2026-09-12'
+        post_id: p_ac5edd70e989
+        round_id: quiet_machines:2026-09-13
+        report_label: 2026-09-13-durable-agent-supervision
+    - id: 2026-09-13-rust-analyzer-ran-inlay-hints-as-an-unof
+      summary: 'rust-analyzer ran inlay hints as an unofficial experiment for years
+        — then LSP 3.17 adopted them, no breaking change required · thread: No shared
+        protocol made one AI vendor cost 900x more'
+      last_used:
       provenance:
-        post_id: p_2e686ca0f3b6
-        round_id: quiet_machines:2026-09-12
-        report_label: 2026-09-11-open-harness-cloud-agents
-    - id: 2026-09-12-blacksmith-s-coding-agent-films-its-own
-      summary: "Blacksmith's coding agent films its own work — its docs never say
-        the video reaches the pull request · thread: A startup hosting AI coding agents
-        in Slack already died"
-      last_used: '2026-09-12'
+        post_id: p_8bcd535104ff
+        round_id: quiet_machines:2026-09-13
+        report_label: 2026-09-13-durable-agent-supervision
+    - id: 2026-09-13-paseo-s-own-commits-show-adding-a-vendor
+      summary: "Paseo's own commits show adding a vendor costs 15 lines or 12,984
+        — same feature, no in-between · thread: No shared protocol made one AI vendor
+        cost 900x more"
+      last_used:
       provenance:
-        post_id: p_a678b4fe50f5
-        round_id: quiet_machines:2026-09-12
-        report_label: 2026-09-11-open-harness-cloud-agents
-    - id: 2026-09-12-ona-s-13x-agent-growth-claim-before-open
-      summary: "Ona's '13x agent growth' claim before OpenAI bought it in June 2026
-        has no primary source · thread: A startup hosting AI coding agents in Slack
-        already died"
-      last_used: '2026-09-12'
+        post_id: p_166b735cd353
+        round_id: quiet_machines:2026-09-13
+        report_label: 2026-09-13-durable-agent-supervision
+    - id: 2026-09-13-cursor-changed-its-local-credential-stor
+      summary: "Cursor changed its local credential storage format twice, and adopting
+        a shared protocol didn't stop it from breaking Paseo · thread: No shared protocol
+        made one AI vendor cost 900x more"
+      last_used:
       provenance:
-        post_id: p_268d7684b1a3
-        round_id: quiet_machines:2026-09-12
-        report_label: 2026-09-11-open-harness-cloud-agents
+        post_id: p_665bcae0267e
+        round_id: quiet_machines:2026-09-13
+        report_label: 2026-09-13-durable-agent-supervision
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-12-a-startup-hosting-ai-coding-agents-in-sl.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-13-no-shared-protocol-made-one-ai-vendor-co.png
