@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-13-3",
+  "date": "2026-09-13",
+  "project": "research",
+  "angle": "2026-09-13-rust-analyzer-ran-inlay-hints-as-an-unof",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Paseo, a project that tracks AI-agent protocol compatibility, measured a 900-to-1 cost ratio in real commits: adding a new vendor is three separate jobs wearing one name. It now runs automated vendor-drift checks every release. If you're scoping vendor support, budget three jobs, not one."
+    }
+  ]
+}

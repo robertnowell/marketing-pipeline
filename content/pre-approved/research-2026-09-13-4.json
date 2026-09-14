@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-13-4",
+  "date": "2026-09-13",
+  "project": "research",
+  "angle": "2026-09-13-paseo-s-own-commits-show-adding-a-vendor",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Same feature, two AI vendors, a 900-to-1 cost ratio, per Paseo, a catalog that tracks AI coding-agent CLIs across vendors. Its own commits show why: \"Adding a provider is three different jobs wearing one name.\" If you support multiple AI vendors, that's your real cost driver, not code volume."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-13-5",
+  "date": "2026-09-13",
+  "project": "research",
+  "angle": "2026-09-13-cursor-changed-its-local-credential-stor",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Adding one AI coding agent can cost 900x more than another, per real commit data from Paseo. Vendor CLIs drift from spec constantly, so Paseo runs automated version-drift checks every release to keep catalog entries current. Budget for that drift-policing, not just integration."
+    }
+  ]
+}

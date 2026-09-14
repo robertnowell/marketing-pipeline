@@ -389,7 +389,7 @@ research:
       summary: "Measured 13 Sept 2026: an AI-agent supervisor's 'needs input' alert
         fired 47 times because its settings have zero rules that ever ask · thread:
         No shared protocol made one AI vendor cost 900x more"
-      last_used:
+      last_used: '2026-09-13'
       provenance:
         post_id: p_2fd91c1a546b
         round_id: quiet_machines:2026-09-13
@@ -398,7 +398,7 @@ research:
       summary: 'Kubernetes deprecated dockershim in December 2020 and deleted it in
         April 2022 — on a published clock · thread: No shared protocol made one AI
         vendor cost 900x more'
-      last_used:
+      last_used: '2026-09-13'
       provenance:
         post_id: p_ac5edd70e989
         round_id: quiet_machines:2026-09-13
@@ -407,7 +407,7 @@ research:
       summary: 'rust-analyzer ran inlay hints as an unofficial experiment for years
         — then LSP 3.17 adopted them, no breaking change required · thread: No shared
         protocol made one AI vendor cost 900x more'
-      last_used:
+      last_used: '2026-09-13'
       provenance:
         post_id: p_8bcd535104ff
         round_id: quiet_machines:2026-09-13
@@ -416,7 +416,7 @@ research:
       summary: "Paseo's own commits show adding a vendor costs 15 lines or 12,984
         — same feature, no in-between · thread: No shared protocol made one AI vendor
         cost 900x more"
-      last_used:
+      last_used: '2026-09-13'
       provenance:
         post_id: p_166b735cd353
         round_id: quiet_machines:2026-09-13
@@ -425,7 +425,7 @@ research:
       summary: "Cursor changed its local credential storage format twice, and adopting
         a shared protocol didn't stop it from breaking Paseo · thread: No shared protocol
         made one AI vendor cost 900x more"
-      last_used:
+      last_used: '2026-09-13'
       provenance:
         post_id: p_665bcae0267e
         round_id: quiet_machines:2026-09-13

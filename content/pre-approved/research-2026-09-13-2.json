@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-13-2",
+  "date": "2026-09-13",
+  "project": "research",
+  "angle": "2026-09-13-kubernetes-deprecated-dockershim-in-dece",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "One AI vendor integration cost 900-to-1 more engineering work than another, in real commits measured by Paseo, which tracks compatibility across vendor coding-agent CLIs. No shared protocol is why: one integration hides three separate jobs. Budget for that ratio before you add vendor two."
+    }
+  ]
+}
