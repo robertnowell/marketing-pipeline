@@ -7173,3 +7173,33 @@
   angle: 2026-09-13-cursor-changed-its-local-credential-stor
   source_id: research-2026-09-13-5
   posted_at: '2026-09-14'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvkvxrexsz2o
+  angle: 2026-09-14-pgbouncer-hands-your-transaction-a-diffe
+  source_id: research-2026-09-14-2
+  posted_at: '2026-09-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvkvxtcfsm2l
+  angle: 2026-09-14-google-s-secret-manager-automatic-rotati
+  source_id: research-2026-09-14-3
+  posted_at: '2026-09-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvkvxv2w4i27
+  angle: 2026-09-14-tranquility-base-s-14-sept-2026-hosting
+  source_id: research-2026-09-14-4
+  posted_at: '2026-09-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvkvxwsplq26
+  angle: 2026-09-14-cloud-run-s-default-billing-means-a-node
+  source_id: research-2026-09-14-5
+  posted_at: '2026-09-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvkvyozejv2o
+  angle: 2026-09-14-cloud-run-s-10-second-shutdown-window-is
+  source_id: ''
+  posted_at: '2026-09-15'

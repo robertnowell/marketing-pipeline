@@ -367,7 +367,7 @@ research:
       summary: "Cloud Run's 10-second shutdown window is POSIX's 1990 SIGTERM contract
         with a clock bolted on · thread: A popular cloud host's free tier can silently
         break scheduled jobs"
-      last_used: '2026-09-14'
+      last_used: '2026-09-15'
       provenance:
         post_id: p_ceab6f3d22c2
         round_id: quiet_machines:2026-09-14
