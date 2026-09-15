@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-14-5",
+  "date": "2026-09-14",
+  "project": "research",
+  "angle": "2026-09-14-cloud-run-s-default-billing-means-a-node",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Running a scheduled job on Cloud Run with a plain Node setInterval? It stops firing between requests, Cloud Run only bills and allocates CPU while a request is active. Confirmed against Google's own Cloud Run pricing table. Fix: swap the in-memory Set and timer for a database instead."
+    }
+  ]
+}

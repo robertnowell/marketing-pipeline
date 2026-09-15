@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-14-2",
+  "date": "2026-09-14",
+  "project": "research",
+  "angle": "2026-09-14-pgbouncer-hands-your-transaction-a-diffe",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Paying to keep a Google Cloud Run poller alive so a job stays warm is a symptom fix, not the real one. Swap the in-memory Set and timer for a database instead. Pick it carefully: PgBouncer can hand your next transaction a different Postgres connection than your last one."
+    }
+  ]
+}

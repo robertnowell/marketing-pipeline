@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-14-3",
+  "date": "2026-09-14",
+  "project": "research",
+  "angle": "2026-09-14-google-s-secret-manager-automatic-rotati",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Keeping a poller alive on a popular cloud host isn't free, per the real pricing table at cloud.google.com/run/pricing. The better fix: drop the in-memory Set and timer for a database picked on free tier and idle behavior. Report: 'gateway-hosting-cloud-run-vs-vercel,' 2026-09-14."
+    }
+  ]
+}

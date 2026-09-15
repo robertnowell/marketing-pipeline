@@ -367,7 +367,7 @@ research:
       summary: "Cloud Run's 10-second shutdown window is POSIX's 1990 SIGTERM contract
         with a clock bolted on · thread: A popular cloud host's free tier can silently
         break scheduled jobs"
-      last_used:
+      last_used: '2026-09-14'
       provenance:
         post_id: p_ceab6f3d22c2
         round_id: quiet_machines:2026-09-14
@@ -376,7 +376,7 @@ research:
       summary: "PgBouncer hands your transaction a different Postgres connection than
         your next one gets · thread: A popular cloud host's free tier can silently
         break scheduled jobs"
-      last_used:
+      last_used: '2026-09-14'
       provenance:
         post_id: p_ae6f904934e9
         round_id: quiet_machines:2026-09-14
@@ -385,7 +385,7 @@ research:
       summary: "Google's Secret Manager 'automatic rotation' is a calendar reminder,
         not a rotation · thread: A popular cloud host's free tier can silently break
         scheduled jobs"
-      last_used:
+      last_used: '2026-09-14'
       provenance:
         post_id: p_be13689016ce
         round_id: quiet_machines:2026-09-14
@@ -394,7 +394,7 @@ research:
       summary: "Tranquility Base's 14 Sept 2026 hosting report calls itself 'fully
         answered' — one of its own four requirements isn't · thread: A popular cloud
         host's free tier can silently break scheduled jobs"
-      last_used:
+      last_used: '2026-09-14'
       provenance:
         post_id: p_c6558c8c3e0a
         round_id: quiet_machines:2026-09-14
@@ -403,7 +403,7 @@ research:
       summary: "Cloud Run's default billing means a Node setInterval just stops firing
         between requests · thread: A popular cloud host's free tier can silently break
         scheduled jobs"
-      last_used:
+      last_used: '2026-09-14'
       provenance:
         post_id: p_098b8fe9508c
         round_id: quiet_machines:2026-09-14

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-14-4",
+  "date": "2026-09-14",
+  "project": "research",
+  "angle": "2026-09-14-tranquility-base-s-14-sept-2026-hosting",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A 2026-09-14 report on hosting a scheduled poller on Google Cloud Run vs Vercel claims to be fully answered. It isn't: the table for choosing a database, by free tier and idle behaviour, was never filled in. If a report claims completeness, check its own tables first."
+    }
+  ]
+}

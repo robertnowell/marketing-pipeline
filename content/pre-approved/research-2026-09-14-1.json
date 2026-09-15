@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-14-1",
+  "date": "2026-09-14",
+  "project": "research",
+  "angle": "2026-09-14-cloud-run-s-10-second-shutdown-window-is",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If your Cloud Run cron job relies on an in-memory Set and a timer, it can silently stop firing on the free tier. We checked the real poller cost against Google's own pricing table at cloud.google.com/run/pricing, then found a fix that's better, not just cheaper: swap the Set and timer for a database. From our 2026-09-14 gateway hosting research."
+    }
+  ]
+}
