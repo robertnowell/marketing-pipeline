@@ -353,82 +353,60 @@ research:
   channels:
     - bluesky
   facts:
-    - '1. Paseo: the 900-to-1 ratio, measured in real commits [Established] — Adding
-      a provider is three different jobs wearing one name.'
-    - 2. Paseo's compatibility discipline is copyable in an afternoon 
-      [Established] — From `docs/protocol-compatibility.md`, there is no wire 
-      protocol version number at all.
-    - 3. Vendor drift is a recurring, named failure class with its own 
-      automation [Established] — Paseo runs `npm run acp:version-drift:check` 
-      and `acp:version-drift:update` as part of every release, explicitly to 
-      keep catalog entries current against upstream vendor CLIs.
-    - '4. Warp instruments, it does not observe [Established] — Warp supports roughly
-      fourteen third-party CLI agents but only four get "agent notifications": its
-      own agent, Claude Code, Codex and OpenCode.'
-    - '5. The protocols that survived: capabilities, never versions [Established]
-      — LSP has no protocol version number gating behaviour.'
-    - 6. How this kind of layer rots, and the observable warnings [Established] 
-      — | Project | The rot signal, stated as something measurable | 
-      Intervention that worked |
-    - 7. What this product needs that a screen-first tool does not [Established,
-      from source] — The summariser cannot work from a status enum. 
-      `SummaryRequest` needs `lastAssistantMessage`, `firstUserMessage`, 
-      `previousGoal`, `projectLabel`, `gitBranch`, `cwd`, `hookEvent` and 
-      `notificationMatcher`.
-    - '8. The lamp is dark because of configuration, not architecture [Established,
-      measured] — Measured against the live store and settings on 13 September 2026:'
-    - Three provider families, not N providers — The 900-to-1 finding says the 
-      cost driver is protocol membership, so the architecture should have three 
-      shapes and nothing else.
-    - What not to copy — - Paseo's five buckets as the stored model.
+    - What it costs to keep the poller — Verified against the raw pricing table 
+      pulled from cloud.google.com/run/pricing
+    - 'The alternative, which is better rather than merely cheaper — Replace the in-memory
+      Set and the timer with:'
+    - Choosing the database — | Option | Free tier | Idle behaviour | Verdict |
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-09-13-durable-agent-supervision' dated 2026-09-13, and from a
-      simulated review round where 10 agent-written posts were ranked by votes.
+      report '2026-09-14-gateway-hosting-cloud-run-vs-vercel' dated 2026-09-14, 
+      and from a simulated review round where 10 agent-written posts were ranked
+      by votes.
   angles:
-    - id: 2026-09-13-measured-13-sept-2026-an-ai-agent-superv
-      summary: "Measured 13 Sept 2026: an AI-agent supervisor's 'needs input' alert
-        fired 47 times because its settings have zero rules that ever ask · thread:
-        No shared protocol made one AI vendor cost 900x more"
-      last_used: '2026-09-13'
+    - id: 2026-09-14-cloud-run-s-10-second-shutdown-window-is
+      summary: "Cloud Run's 10-second shutdown window is POSIX's 1990 SIGTERM contract
+        with a clock bolted on · thread: A popular cloud host's free tier can silently
+        break scheduled jobs"
+      last_used:
       provenance:
-        post_id: p_2fd91c1a546b
-        round_id: quiet_machines:2026-09-13
-        report_label: 2026-09-13-durable-agent-supervision
-    - id: 2026-09-13-kubernetes-deprecated-dockershim-in-dece
-      summary: 'Kubernetes deprecated dockershim in December 2020 and deleted it in
-        April 2022 — on a published clock · thread: No shared protocol made one AI
-        vendor cost 900x more'
-      last_used: '2026-09-13'
+        post_id: p_ceab6f3d22c2
+        round_id: quiet_machines:2026-09-14
+        report_label: 2026-09-14-gateway-hosting-cloud-run-vs-vercel
+    - id: 2026-09-14-pgbouncer-hands-your-transaction-a-diffe
+      summary: "PgBouncer hands your transaction a different Postgres connection than
+        your next one gets · thread: A popular cloud host's free tier can silently
+        break scheduled jobs"
+      last_used:
       provenance:
-        post_id: p_ac5edd70e989
-        round_id: quiet_machines:2026-09-13
-        report_label: 2026-09-13-durable-agent-supervision
-    - id: 2026-09-13-rust-analyzer-ran-inlay-hints-as-an-unof
-      summary: 'rust-analyzer ran inlay hints as an unofficial experiment for years
-        — then LSP 3.17 adopted them, no breaking change required · thread: No shared
-        protocol made one AI vendor cost 900x more'
-      last_used: '2026-09-13'
+        post_id: p_ae6f904934e9
+        round_id: quiet_machines:2026-09-14
+        report_label: 2026-09-14-gateway-hosting-cloud-run-vs-vercel
+    - id: 2026-09-14-google-s-secret-manager-automatic-rotati
+      summary: "Google's Secret Manager 'automatic rotation' is a calendar reminder,
+        not a rotation · thread: A popular cloud host's free tier can silently break
+        scheduled jobs"
+      last_used:
       provenance:
-        post_id: p_8bcd535104ff
-        round_id: quiet_machines:2026-09-13
-        report_label: 2026-09-13-durable-agent-supervision
-    - id: 2026-09-13-paseo-s-own-commits-show-adding-a-vendor
-      summary: "Paseo's own commits show adding a vendor costs 15 lines or 12,984
-        — same feature, no in-between · thread: No shared protocol made one AI vendor
-        cost 900x more"
-      last_used: '2026-09-13'
+        post_id: p_be13689016ce
+        round_id: quiet_machines:2026-09-14
+        report_label: 2026-09-14-gateway-hosting-cloud-run-vs-vercel
+    - id: 2026-09-14-tranquility-base-s-14-sept-2026-hosting
+      summary: "Tranquility Base's 14 Sept 2026 hosting report calls itself 'fully
+        answered' — one of its own four requirements isn't · thread: A popular cloud
+        host's free tier can silently break scheduled jobs"
+      last_used:
       provenance:
-        post_id: p_166b735cd353
-        round_id: quiet_machines:2026-09-13
-        report_label: 2026-09-13-durable-agent-supervision
-    - id: 2026-09-13-cursor-changed-its-local-credential-stor
-      summary: "Cursor changed its local credential storage format twice, and adopting
-        a shared protocol didn't stop it from breaking Paseo · thread: No shared protocol
-        made one AI vendor cost 900x more"
-      last_used: '2026-09-13'
+        post_id: p_c6558c8c3e0a
+        round_id: quiet_machines:2026-09-14
+        report_label: 2026-09-14-gateway-hosting-cloud-run-vs-vercel
+    - id: 2026-09-14-cloud-run-s-default-billing-means-a-node
+      summary: "Cloud Run's default billing means a Node setInterval just stops firing
+        between requests · thread: A popular cloud host's free tier can silently break
+        scheduled jobs"
+      last_used:
       provenance:
-        post_id: p_665bcae0267e
-        round_id: quiet_machines:2026-09-13
-        report_label: 2026-09-13-durable-agent-supervision
+        post_id: p_098b8fe9508c
+        round_id: quiet_machines:2026-09-14
+        report_label: 2026-09-14-gateway-hosting-cloud-run-vs-vercel
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-13-no-shared-protocol-made-one-ai-vendor-co.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-14-a-popular-cloud-host-s-free-tier-can-sil.png
