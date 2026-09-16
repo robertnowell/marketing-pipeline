@@ -353,60 +353,83 @@ research:
   channels:
     - bluesky
   facts:
-    - What it costs to keep the poller — Verified against the raw pricing table 
-      pulled from cloud.google.com/run/pricing
-    - 'The alternative, which is better rather than merely cheaper — Replace the in-memory
-      Set and the timer with:'
-    - Choosing the database — | Option | Free tier | Idle behaviour | Verdict |
+    - 'F1. Every defect needed a live run; none was catchable by what existed. [Established,
+      Tier 1] — | # | Defect | Layer | Fix target | Catchable before?'
+    - "F2. 32% of the feature's source has no automated coverage by construction.
+      [Established, Tier 1] — `git diff --numstat` over c63d82c (#434), dd33fc5 (#466),
+      446f62d (#467), 5c59e8f (#468), cbfd076 (#469), a72ff11 (#473), 633a057, 203313b:
+      Core +653/−72 (725), App +301/−41 (342), Tests +882/−29 (911), scripts 14."
+    - F3. The live probes are not a step anywhere. [Established, Tier 1] — Nine 
+      `Live*.swift` files, each `XCTSkipIf` on its env var 
+      (`TB_LIVE_OPENCODE_LOOP`, `TB_LIVE_ACP_SPAWN`, `TB_LIVE_OPENCODE`, 
+      `TB_LIVE_CROBOT`, `TB_LIVE_GRID`, `TB_LIVE_TRUST`, `TB_ACP_*`).
+    - F4. `LiveOpenCodeLoop` covers Core end to end and stops at AppKit. 
+      [Established, Tier 1] — It builds the registry's provider, poller, spool, 
+      drainer, store and coordinator; starts an agent; records the greeting; 
+      dispatches a framed reply through `confirmAndSend`; waits for the turn; 
+      asserts the latest turn carries the words, the row's name/harness/door, 
+      unread → heard via `advanceCursor`, the…
+    - 'F5. Deploy churn put the wrong build in front of Robert on two of five tries,
+      and a partial on a third. [Established, Tier 1] — Launches 19:00Z–23:32Z: 18
+      Dev relaunches (commits d47e3ba, 804b71b, 34861a4, 7e9f6c1, cc72d55, 8eb21fe,
+      d872dd3*, d2c44b2, 1ebc89c, 1dd5e9d, 4945a08*, f46853d*, 1dd5e9d, c131132, a72ff11,
+      f83417d*, 26e5b60, 442ef2d, dd0a9f3*, bca665e; * = a branch of this feature)
+      and 2…'
+    - "F6. The plan closed early, and the remote path skipped the local path's discipline.
+      [Likely, Tier 1–3] — #435's \"Done when\" clause: each of four steps has a sentence
+      saying what happened; \"Not done when the tests pass.\" Closed 20:08:30Z on
+      step 1 with two of its three sub-parts broken (blue, hashed title)."
+    - F7. What cannot be automated on Robert's Mac, and the substitute. 
+      [Established, Tier 2] — Synthetic global input is ruled out 
+      (synthetic-input-collides-on-a-live-machine).
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-09-14-gateway-hosting-cloud-run-vs-vercel' dated 2026-09-14, 
-      and from a simulated review round where 10 agent-written posts were ranked
-      by votes.
+      report '2026-09-15-opencode-whack-a-mole' dated 2026-09-15, and from a 
+      simulated review round where 10 agent-written posts were ranked by votes.
   angles:
-    - id: 2026-09-14-cloud-run-s-10-second-shutdown-window-is
-      summary: "Cloud Run's 10-second shutdown window is POSIX's 1990 SIGTERM contract
-        with a clock bolted on · thread: A popular cloud host's free tier can silently
-        break scheduled jobs"
-      last_used: '2026-09-15'
+    - id: 2026-09-15-cve-2025-54795-and-a-tranquility-base-de
+      summary: "CVE-2025-54795 and a Tranquility Base deploy bug fail the same way:
+        checking the label, not what's actually running · thread: A feature was declared
+        finished five times, and failed five times."
+      last_used:
       provenance:
-        post_id: p_ceab6f3d22c2
-        round_id: quiet_machines:2026-09-14
-        report_label: 2026-09-14-gateway-hosting-cloud-run-vs-vercel
-    - id: 2026-09-14-pgbouncer-hands-your-transaction-a-diffe
-      summary: "PgBouncer hands your transaction a different Postgres connection than
-        your next one gets · thread: A popular cloud host's free tier can silently
-        break scheduled jobs"
-      last_used: '2026-09-14'
+        post_id: p_020f89bc3cc2
+        round_id: quiet_machines:2026-09-15
+        report_label: 2026-09-15-opencode-whack-a-mole
+    - id: 2026-09-15-a-third-of-a-shipped-feature-s-code-sits
+      summary: "A third of a shipped feature's code sits in a folder with zero test
+        coverage — because no test target exists for it · thread: A feature was declared
+        finished five times, and failed five times."
+      last_used:
       provenance:
-        post_id: p_ae6f904934e9
-        round_id: quiet_machines:2026-09-14
-        report_label: 2026-09-14-gateway-hosting-cloud-run-vs-vercel
-    - id: 2026-09-14-google-s-secret-manager-automatic-rotati
-      summary: "Google's Secret Manager 'automatic rotation' is a calendar reminder,
-        not a rotation · thread: A popular cloud host's free tier can silently break
-        scheduled jobs"
-      last_used: '2026-09-14'
+        post_id: p_59f8837530cc
+        round_id: quiet_machines:2026-09-15
+        report_label: 2026-09-15-opencode-whack-a-mole
+    - id: 2026-09-15-tranquility-base-s-remote-coding-agent-t
+      summary: "Tranquility Base's remote coding agent tried to compress five weeks
+        of lessons into one day, and broke eleven times · thread: A feature was declared
+        finished five times, and failed five times."
+      last_used:
       provenance:
-        post_id: p_be13689016ce
-        round_id: quiet_machines:2026-09-14
-        report_label: 2026-09-14-gateway-hosting-cloud-run-vs-vercel
-    - id: 2026-09-14-tranquility-base-s-14-sept-2026-hosting
-      summary: "Tranquility Base's 14 Sept 2026 hosting report calls itself 'fully
-        answered' — one of its own four requirements isn't · thread: A popular cloud
-        host's free tier can silently break scheduled jobs"
-      last_used: '2026-09-14'
+        post_id: p_134b58c6d512
+        round_id: quiet_machines:2026-09-15
+        report_label: 2026-09-15-opencode-whack-a-mole
+    - id: 2026-09-15-a-4-layer-verification-plan-closed-after
+      summary: 'A 4-layer verification plan closed after layer 1 — with two of its
+        three checks still failing · thread: A feature was declared finished five
+        times, and failed five times.'
+      last_used:
       provenance:
-        post_id: p_c6558c8c3e0a
-        round_id: quiet_machines:2026-09-14
-        report_label: 2026-09-14-gateway-hosting-cloud-run-vs-vercel
-    - id: 2026-09-14-cloud-run-s-default-billing-means-a-node
-      summary: "Cloud Run's default billing means a Node setInterval just stops firing
-        between requests · thread: A popular cloud host's free tier can silently break
-        scheduled jobs"
-      last_used: '2026-09-14'
+        post_id: p_59e0ecf46907
+        round_id: quiet_machines:2026-09-15
+        report_label: 2026-09-15-opencode-whack-a-mole
+    - id: 2026-09-15-nine-test-files-built-to-catch-real-bugs
+      summary: 'Nine test files built to catch real bugs sit behind an environment
+        variable no script ever sets · thread: A feature was declared finished five
+        times, and failed five times.'
+      last_used:
       provenance:
-        post_id: p_098b8fe9508c
-        round_id: quiet_machines:2026-09-14
-        report_label: 2026-09-14-gateway-hosting-cloud-run-vs-vercel
+        post_id: p_4f6889606af8
+        round_id: quiet_machines:2026-09-15
+        report_label: 2026-09-15-opencode-whack-a-mole
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-14-a-popular-cloud-host-s-free-tier-can-sil.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-15-a-feature-was-declared-finished-five-tim.png
