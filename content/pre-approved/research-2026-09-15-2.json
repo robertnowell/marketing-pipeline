@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-15-2",
+  "date": "2026-09-15",
+  "project": "research",
+  "angle": "2026-09-15-a-third-of-a-shipped-feature-s-code-sits",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A feature was declared finished five times and failed five times. Why: 32% of its source has zero automated test coverage by construction, and the closing plan was marked done while two of three sub-parts were still broken. If tests passing is your done signal, check what they don't cover."
+    }
+  ]
+}

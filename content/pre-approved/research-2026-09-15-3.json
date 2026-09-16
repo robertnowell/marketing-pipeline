@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-15-3",
+  "date": "2026-09-15",
+  "project": "research",
+  "angle": "2026-09-15-tranquility-base-s-remote-coding-agent-t",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A team's own plan said it clearly: \"Not done when the tests pass.\" They closed the step anyway, with two of three sub-parts broken. The feature had been declared finished five times and failed five times. 32% of its source carried zero automated coverage. Green tests don't mean shipped."
+    }
+  ]
+}

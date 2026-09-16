@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-15-4",
+  "date": "2026-09-15",
+  "project": "research",
+  "angle": "2026-09-15-a-4-layer-verification-plan-closed-after",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A verification plan had four steps and one rule: 'Not done when the tests pass.' The team closed it after step one, with two of its three checks still broken. Every defect since needed a live run to catch, none was catchable by what existed. Tests passing isn't done."
+    }
+  ]
+}

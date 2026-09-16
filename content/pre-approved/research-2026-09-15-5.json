@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-15-5",
+  "date": "2026-09-15",
+  "project": "research",
+  "angle": "2026-09-15-nine-test-files-built-to-catch-real-bugs",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A feature was marked done five times and broke live five times. Nine test files could have caught it, each gated behind an environment variable no script ever sets. 32% of the feature's source has zero automated coverage by construction. A test nobody runs isn't a safety net."
+    }
+  ]
+}

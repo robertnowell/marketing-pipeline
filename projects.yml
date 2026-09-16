@@ -390,7 +390,7 @@ research:
       summary: "CVE-2025-54795 and a Tranquility Base deploy bug fail the same way:
         checking the label, not what's actually running · thread: A feature was declared
         finished five times, and failed five times."
-      last_used:
+      last_used: '2026-09-15'
       provenance:
         post_id: p_020f89bc3cc2
         round_id: quiet_machines:2026-09-15
@@ -399,7 +399,7 @@ research:
       summary: "A third of a shipped feature's code sits in a folder with zero test
         coverage — because no test target exists for it · thread: A feature was declared
         finished five times, and failed five times."
-      last_used:
+      last_used: '2026-09-15'
       provenance:
         post_id: p_59f8837530cc
         round_id: quiet_machines:2026-09-15
@@ -408,7 +408,7 @@ research:
       summary: "Tranquility Base's remote coding agent tried to compress five weeks
         of lessons into one day, and broke eleven times · thread: A feature was declared
         finished five times, and failed five times."
-      last_used:
+      last_used: '2026-09-15'
       provenance:
         post_id: p_134b58c6d512
         round_id: quiet_machines:2026-09-15
@@ -417,7 +417,7 @@ research:
       summary: 'A 4-layer verification plan closed after layer 1 — with two of its
         three checks still failing · thread: A feature was declared finished five
         times, and failed five times.'
-      last_used:
+      last_used: '2026-09-15'
       provenance:
         post_id: p_59e0ecf46907
         round_id: quiet_machines:2026-09-15
@@ -426,7 +426,7 @@ research:
       summary: 'Nine test files built to catch real bugs sit behind an environment
         variable no script ever sets · thread: A feature was declared finished five
         times, and failed five times.'
-      last_used:
+      last_used: '2026-09-15'
       provenance:
         post_id: p_4f6889606af8
         round_id: quiet_machines:2026-09-15
