@@ -7203,3 +7203,33 @@
   angle: 2026-09-14-cloud-run-s-10-second-shutdown-window-is
   source_id: ''
   posted_at: '2026-09-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvng6imvcg2f
+  angle: 2026-09-15-cve-2025-54795-and-a-tranquility-base-de
+  source_id: research-2026-09-15-1
+  posted_at: '2026-09-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvng6k5g3k26
+  angle: 2026-09-15-a-third-of-a-shipped-feature-s-code-sits
+  source_id: research-2026-09-15-2
+  posted_at: '2026-09-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvng6lkmes26
+  angle: 2026-09-15-tranquility-base-s-remote-coding-agent-t
+  source_id: research-2026-09-15-3
+  posted_at: '2026-09-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvng6mwjjg2o
+  angle: 2026-09-15-a-4-layer-verification-plan-closed-after
+  source_id: research-2026-09-15-4
+  posted_at: '2026-09-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvng6oegdw2f
+  angle: 2026-09-15-nine-test-files-built-to-catch-real-bugs
+  source_id: research-2026-09-15-5
+  posted_at: '2026-09-16'
