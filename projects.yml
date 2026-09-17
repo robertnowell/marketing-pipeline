@@ -375,7 +375,7 @@ research:
       summary: "OpenAI paid 27.5x ARR for Statsig in 2025; the personalization/CRO
         category it's grouped with tops out at 4-5x · thread: AI startup's board deck:
         $3.6 million revenue, $175 million valuation"
-      last_used: '2026-09-16'
+      last_used:
       provenance:
         post_id: p_c3cea3ac01f8
         round_id: applied_ai_buyouts:2026-09-16
@@ -384,7 +384,7 @@ research:
       summary: "Coframe pitched investors a 20-40% conversion lift; its sealed board
         appendix found wins in 16 of 35 customers · thread: AI startup's board deck:
         $3.6 million revenue, $175 million valuation"
-      last_used: '2026-09-16'
+      last_used:
       provenance:
         post_id: p_69f82dae1d13
         round_id: applied_ai_buyouts:2026-09-16
@@ -393,7 +393,7 @@ research:
       summary: "Redpoint priced most of a January 2026 round at $450M and the rest
         at $1B — Coframe's $175M has the same kind of seam, just unlabeled · thread:
         AI startup's board deck: $3.6 million revenue, $175 million valuation"
-      last_used: '2026-09-16'
+      last_used:
       provenance:
         post_id: p_5780ca114ebe
         round_id: applied_ai_buyouts:2026-09-16
@@ -402,7 +402,7 @@ research:
       summary: "Coframe's Aug 26, 2026 board deck says 54% retention — its own churn
         math can't produce that number · thread: AI startup's board deck: $3.6 million
         revenue, $175 million valuation"
-      last_used: '2026-09-16'
+      last_used:
       provenance:
         post_id: p_5e23904a2f14
         round_id: applied_ai_buyouts:2026-09-16
@@ -411,7 +411,7 @@ research:
       summary: "Coframe told investors Q1 2026 ARR was $1.35M; its own board deck
         says $1.8M for the same quarter · thread: AI startup's board deck: $3.6 million
         revenue, $175 million valuation"
-      last_used: '2026-09-16'
+      last_used:
       provenance:
         post_id: p_737abd828145
         round_id: applied_ai_buyouts:2026-09-16
