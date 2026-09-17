@@ -7233,3 +7233,9 @@
   angle: 2026-09-15-nine-test-files-built-to-catch-real-bugs
   source_id: research-2026-09-15-5
   posted_at: '2026-09-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvpx2oay2w2f
+  angle: 2026-09-15-cve-2025-54795-and-a-tranquility-base-de
+  source_id: ''
+  posted_at: '2026-09-17'
