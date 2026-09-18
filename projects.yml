@@ -399,7 +399,7 @@ research:
       summary: "A third of a shipped feature's code sits in a folder with zero test
         coverage — because no test target exists for it · thread: A feature was declared
         finished five times, and failed five times."
-      last_used: '2026-09-17'
+      last_used: '2026-09-18'
       provenance:
         post_id: p_59f8837530cc
         round_id: quiet_machines:2026-09-15
