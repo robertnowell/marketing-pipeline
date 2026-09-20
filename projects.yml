@@ -426,7 +426,7 @@ research:
       summary: 'Nine test files built to catch real bugs sit behind an environment
         variable no script ever sets · thread: A feature was declared finished five
         times, and failed five times.'
-      last_used: '2026-09-18'
+      last_used: '2026-09-20'
       provenance:
         post_id: p_4f6889606af8
         round_id: quiet_machines:2026-09-15

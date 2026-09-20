@@ -7311,3 +7311,9 @@
   angle: 2026-09-15-a-4-layer-verification-plan-closed-after
   source_id: ''
   posted_at: '2026-09-19'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvxfcj3m3c26
+  angle: 2026-09-15-nine-test-files-built-to-catch-real-bugs
+  source_id: ''
+  posted_at: '2026-09-20'
