@@ -7323,3 +7323,9 @@
   angle: 2026-09-15-cve-2025-54795-and-a-tranquility-base-de
   source_id: ''
   posted_at: '2026-09-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mvxmdvh4ns2l
+  angle: 2026-09-15-a-third-of-a-shipped-feature-s-code-sits
+  source_id: ''
+  posted_at: '2026-09-20'
