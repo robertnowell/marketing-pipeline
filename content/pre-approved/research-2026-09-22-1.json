@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-22-1",
+  "date": "2026-09-22",
+  "project": "research",
+  "angle": "2026-09-22-the-11-of-12-codex-hook-events-match-cla",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Codex, its coding agent, has a Rust struct in its own codebase named ClaudeHooksEngine, with fields handlers: Vec<ConfiguredHandler> and warnings: Vec<String>. Verified directly from codex-rs/hooks/src/engine/mod.rs on raw.githubusercontent.com/openai/codex/main. If you're building on Codex's hook system, the code underneath it is named after a rival product."
+    }
+  ]
+}

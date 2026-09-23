@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-22-3",
+  "date": "2026-09-22",
+  "project": "research",
+  "angle": "2026-09-22-codex-s-hooks-command-and-claude-code-s",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Codex has a Rust struct in its own source code named `ClaudeHooksEngine`, verified straight from openai/codex on GitHub (codex-rs/hooks/src/engine/mod.rs). If you're betting your workflow on Codex's plugin hooks, the code was built modeling Anthropic's Claude, not designed fresh."
+    }
+  ]
+}

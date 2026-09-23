@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-22-2",
+  "date": "2026-09-22",
+  "project": "research",
+  "angle": "2026-09-22-openai-s-own-commit-log-names-codex-s-ho",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Codex ships a plugin system literally named after a rival's product. The source code, pulled straight from codex-rs/hooks/src/engine/mod.rs on GitHub, defines: pub(crate) struct ClaudeHooksEngine { handlers: Vec<ConfiguredHandler>, warnings: Vec<String> }. If you're choosing between coding agents, the internals don't always match the marketing."
+    }
+  ]
+}

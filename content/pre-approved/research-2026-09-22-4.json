@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-22-4",
+  "date": "2026-09-22",
+  "project": "research",
+  "angle": "2026-09-22-codex-s-plugin-system-is-called-plugin-r",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Codex has a Rust struct in its own codebase literally named `ClaudeHooksEngine`. Verified directly in codex-rs/hooks/src/engine/mod.rs on openai/codex (main branch). If you're choosing between coding agents, know the plumbing isn't always as independent as the branding."
+    }
+  ]
+}

@@ -366,7 +366,7 @@ research:
       summary: "The '11 of 12 Codex hook events match Claude Code verbatim' stat had
         a denominator that moved three times in a month · thread: OpenAI's Codex secretly
         names its plugin system after Claude"
-      last_used:
+      last_used: '2026-09-22'
       provenance:
         post_id: p_3dfa772380ab
         round_id: quiet_machines:2026-09-22
@@ -375,7 +375,7 @@ research:
       summary: "OpenAI's own commit log names Codex's hook system ClaudeHooksEngine,
         March 10, 2026 · thread: OpenAI's Codex secretly names its plugin system after
         Claude"
-      last_used:
+      last_used: '2026-09-22'
       provenance:
         post_id: p_9c722856bb64
         round_id: quiet_machines:2026-09-22
@@ -384,7 +384,7 @@ research:
       summary: "Codex's `/hooks` command and Claude Code's trust gate both key on
         a hash of the hook's exact text · thread: OpenAI's Codex secretly names its
         plugin system after Claude"
-      last_used:
+      last_used: '2026-09-22'
       provenance:
         post_id: p_b0adf76e778c
         round_id: quiet_machines:2026-09-22
@@ -393,7 +393,7 @@ research:
       summary: "Codex's plugin system is called PLUGIN_ROOT. It also answers to CLAUDE_PLUGIN_ROOT,
         on purpose. · thread: OpenAI's Codex secretly names its plugin system after
         Claude"
-      last_used:
+      last_used: '2026-09-22'
       provenance:
         post_id: p_9d24b32193c2
         round_id: quiet_machines:2026-09-22
@@ -402,7 +402,7 @@ research:
       summary: "A GitHub repo called Hooks-for-Codex says Codex's own hooks were 'disabled
         by default' with 'no tooling around it' before any of this · thread: OpenAI's
         Codex secretly names its plugin system after Claude"
-      last_used:
+      last_used: '2026-09-22'
       provenance:
         post_id: p_96dbbcd1d91c
         round_id: quiet_machines:2026-09-22

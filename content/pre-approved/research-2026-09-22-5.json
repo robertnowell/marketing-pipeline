@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-22-5",
+  "date": "2026-09-22",
+  "project": "research",
+  "angle": "2026-09-22-a-github-repo-called-hooks-for-codex-say",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Codex has a real Rust struct named ClaudeHooksEngine, with fields handlers: Vec<ConfiguredHandler> and warnings: Vec<String>. Confirmed straight from codex-rs/hooks/src/engine/mod.rs. The branding on a coding tool isn't the whole picture."
+    }
+  ]
+}
