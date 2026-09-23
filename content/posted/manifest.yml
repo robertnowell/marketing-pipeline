@@ -7377,3 +7377,27 @@
   angle: 2026-09-15-cve-2025-54795-and-a-tranquility-base-de
   source_id: ''
   posted_at: '2026-09-22'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mw6zjmgjcb2o
+  angle: 2026-09-22-codex-s-hooks-command-and-claude-code-s
+  source_id: research-2026-09-22-3
+  posted_at: '2026-09-23'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mw6zjoh6or2z
+  angle: 2026-09-22-codex-s-plugin-system-is-called-plugin-r
+  source_id: research-2026-09-22-4
+  posted_at: '2026-09-23'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mw6zjqidlm2s
+  angle: 2026-09-22-a-github-repo-called-hooks-for-codex-say
+  source_id: research-2026-09-22-5
+  posted_at: '2026-09-23'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mw6zk7mpli2l
+  angle: 2026-09-22-the-11-of-12-codex-hook-events-match-cla
+  source_id: ''
+  posted_at: '2026-09-23'
