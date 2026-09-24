@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-23-sib-2026-09-15-a-4-layer-ver-1",
+  "date": "2026-09-23",
+  "project": "research",
+  "angle": "angle:sib-2026-09-23-2026-09-15-a-4-layer-ver-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Every bug in a recent feature build was only catchable by actually running the software live, not by any test or check already in place. Nine live-probe tests exist for exactly this reason, but none are wired into an automated step. If your CI never runs live, it isn't testing the failures that happen."
+    }
+  ]
+}
