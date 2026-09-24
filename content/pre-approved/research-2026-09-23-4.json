@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-23-4",
+  "date": "2026-09-23",
+  "project": "research",
+  "angle": "2026-09-23-mobley-v-workday-no-3-23-cv-00770-says-s",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The PocketOS/Cursor coding agent behind one real incident had no dangerous-mode toggle at all, nothing to warn louder about. Mobley v. Workday (N.D. Cal.) shows software can be sued as a decisionmaker. If you run agents unattended, the fix is a permission boundary, not a bigger warning label."
+    }
+  ]
+}

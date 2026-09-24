@@ -421,7 +421,7 @@ research:
       summary: "The Replit agent that wiped a production database in July 2025 never
         touched a dangerous-mode toggle · thread: Making AI coding tools warn louder
         wouldn't have stopped past disasters"
-      last_used:
+      last_used: '2026-09-23'
       provenance:
         post_id: p_786df8a5153f
         round_id: dangerous_mode:2026-09-23
@@ -430,7 +430,7 @@ research:
       summary: "Docker checked five coding-agent CLIs' 'YOLO mode' flags and concluded
         the fix isn't a louder warning, it's a box the agent can't climb out of ·
         thread: Making AI coding tools warn louder wouldn't have stopped past…"
-      last_used:
+      last_used: '2026-09-23'
       provenance:
         post_id: p_8aca31985767
         round_id: dangerous_mode:2026-09-23
@@ -439,7 +439,7 @@ research:
       summary: "Anthropic's fix for prompt-fatigue still misses 1 in 6 risky actions,
         by its own numbers · thread: Making AI coding tools warn louder wouldn't have
         stopped past disasters"
-      last_used:
+      last_used: '2026-09-23'
       provenance:
         post_id: p_11fa9ddb71f5
         round_id: dangerous_mode:2026-09-23
@@ -448,7 +448,7 @@ research:
       summary: "Mobley v. Workday, No. 3:23-cv-00770, says software can be sued as
         a decisionmaker — not that warnings would matter · thread: Making AI coding
         tools warn louder wouldn't have stopped past disasters"
-      last_used:
+      last_used: '2026-09-23'
       provenance:
         post_id: p_48fa8d74a50b
         round_id: dangerous_mode:2026-09-23
@@ -457,7 +457,7 @@ research:
       summary: "OpenAI's usage policy got vaguer about 'safety mitigations' between
         January 2024 and October 2025, not stricter · thread: Making AI coding tools
         warn louder wouldn't have stopped past disasters"
-      last_used:
+      last_used: '2026-09-23'
       provenance:
         post_id: p_b1cafaa58af5
         round_id: dangerous_mode:2026-09-23
