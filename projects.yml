@@ -430,7 +430,7 @@ research:
       summary: "Docker checked five coding-agent CLIs' 'YOLO mode' flags and concluded
         the fix isn't a louder warning, it's a box the agent can't climb out of ·
         thread: Making AI coding tools warn louder wouldn't have stopped past…"
-      last_used: '2026-09-23'
+      last_used: '2026-09-25'
       provenance:
         post_id: p_8aca31985767
         round_id: dangerous_mode:2026-09-23
