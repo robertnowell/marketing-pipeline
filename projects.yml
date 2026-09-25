@@ -439,7 +439,7 @@ research:
       summary: "Anthropic's fix for prompt-fatigue still misses 1 in 6 risky actions,
         by its own numbers · thread: Making AI coding tools warn louder wouldn't have
         stopped past disasters"
-      last_used: '2026-09-23'
+      last_used: '2026-09-25'
       provenance:
         post_id: p_11fa9ddb71f5
         round_id: dangerous_mode:2026-09-23
