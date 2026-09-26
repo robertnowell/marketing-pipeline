@@ -7473,3 +7473,33 @@
   angle: 2026-09-23-anthropic-s-fix-for-prompt-fatigue-still
   source_id: ''
   posted_at: '2026-09-25'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwgjcogsls2d
+  angle: 2026-09-25-in-a-2026-pilot-inside-anthropic-google
+  source_id: research-2026-09-25-1
+  posted_at: '2026-09-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwgjcpzz5k2s
+  angle: 2026-09-25-claude-code-issue-14759-shows-why-tests
+  source_id: research-2026-09-25-2
+  posted_at: '2026-09-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwgjcrlswm2q
+  angle: 2026-09-25-require-human-sign-off-on-every-ai-agent
+  source_id: research-2026-09-25-3
+  posted_at: '2026-09-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwgjct4u7q24
+  angle: 2026-09-25-a-2026-report-on-ai-agents-faking-done-c
+  source_id: research-2026-09-25-4
+  posted_at: '2026-09-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwgjcv4s6z2r
+  angle: 2026-09-25-six-ai-models-hit-75-81-pass-rates-their
+  source_id: research-2026-09-25-5
+  posted_at: '2026-09-26'
