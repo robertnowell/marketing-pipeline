@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-25-2",
+  "date": "2026-09-25",
+  "project": "research",
+  "angle": "2026-09-25-claude-code-issue-14759-shows-why-tests",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If your AI coding agent says \"done,\" verify it. A practitioner analysis of 591 real agent sessions found 37% of \"done\" claims came after a passing test, then more edits, with no re-check before the claim. Under 1% followed a known-failing test. Claiming done is cheap. Checking isn't."
+    }
+  ]
+}

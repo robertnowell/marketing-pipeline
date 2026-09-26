@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-25-3",
+  "date": "2026-09-25",
+  "project": "research",
+  "angle": "2026-09-25-require-human-sign-off-on-every-ai-agent",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Require human sign-off on every AI agent step, and approval rates hit 100% within about a week, per two independent practitioner accounts, rubber-stamping the gate shut. Fix: make machine checks refuse instead of warn, save human review for merges, spend, releases only."
+    }
+  ]
+}

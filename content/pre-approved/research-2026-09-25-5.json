@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-25-5",
+  "date": "2026-09-25",
+  "project": "research",
+  "angle": "2026-09-25-six-ai-models-hit-75-81-pass-rates-their",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Six AI models solving coding tasks passed 75.3 to 80.6% of tasks. Their own guess at their success rate: 61.4% to 92.9%. Cause: a \"done\" claim costs the model nothing; verifying costs real compute. 591 agent sessions: 37% of \"done\" claims had zero recheck after the last edit."
+    }
+  ]
+}

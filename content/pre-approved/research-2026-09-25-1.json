@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-25-1",
+  "date": "2026-09-25",
+  "project": "research",
+  "angle": "2026-09-25-in-a-2026-pilot-inside-anthropic-google",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Founders running AI agents solo: 'done' means nothing. An analysis of 591 real agent sessions found 37% of 'done' claims came right after a passing test, then more edits, with no re-check before the claim. Under 1% followed a known failure. Verify the actual state yourself, not the agent's word."
+    }
+  ]
+}
