@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-26-3",
+  "date": "2026-09-26",
+  "project": "research",
+  "angle": "2026-09-26-jason-lemkin-warned-replit-s-ai-eleven-t",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Jan 2024 policy let only vetted red-teamers bypass safety mitigations. The Oct 2025 rewrite deleted that exception. OpenAI's changelog: \"We've updated our Usage Policies to reflect a universal set of policies across OpenAI products and services.\" If you build on their API, that's it."
+    }
+  ]
+}

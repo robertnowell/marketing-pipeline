@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-26-2",
+  "date": "2026-09-26",
+  "project": "research",
+  "angle": "2026-09-26-ai-lab-watch-says-google-deepmind-copied",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's usage policy had a written exception letting red-team researchers bypass safety mitigations \"supported by OpenAI.\" The Oct 2025 rewrite quietly deleted it. Changelog: \"reflect a universal set of policies across OpenAI products and services.\" No mention of the cut. Read the diff."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-26-1",
+  "date": "2026-09-26",
+  "project": "research",
+  "angle": "2026-09-26-a-second-ai-agent-wiped-a-production-dat",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Jan 2024 usage policy had a named exception for bypassing safety mitigations, done under its Red Teaming Network. The Oct 29, 2025 rewrite deleted it. The changelog never mentions the change, only that policies became \"universal.\" Vendor rules can vanish with zero notice."
+    }
+  ]
+}

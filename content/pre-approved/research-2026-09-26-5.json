@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-26-5",
+  "date": "2026-09-26",
+  "project": "research",
+  "angle": "2026-09-26-anthropic-held-the-line-on-one-clause-it",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Jan 2024 usage policy let you bypass safety mitigations if OpenAI approved it, like its Red Teaming Network. The Oct 2025 rewrite deleted that exception, no disclosure, just 'a universal set of policies.' If you built compliance around OpenAI's stated rules, they changed under you."
+    }
+  ]
+}
