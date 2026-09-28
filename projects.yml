@@ -418,7 +418,7 @@ research:
       summary: "A second AI agent wiped a production database in April 2026 — this
         time the safety switch existed, it just wasn't wired up · thread: OpenAI quietly
         deleted its own safety-circumvention rule in 2025"
-      last_used: '2026-09-26'
+      last_used: '2026-09-28'
       provenance:
         post_id: p_d75f21764b2f
         round_id: industry_myths:2026-09-26
