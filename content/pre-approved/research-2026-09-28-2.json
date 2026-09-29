@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-28-2",
+  "date": "2026-09-28",
+  "project": "research",
+  "angle": "2026-09-28-anthropic-measured-users-approving-93-of",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Users approved 93% of Claude Code permission prompts, Anthropic measured. Its fix was a risk classifier, not a louder warning. If you run coding agents unattended, contain the blast radius instead of trusting a scarier toggle. Source: Anthropic's auto mode post."
+    }
+  ]
+}

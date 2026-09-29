@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-28-1",
+  "date": "2026-09-28",
+  "project": "research",
+  "angle": "2026-09-28-replit-s-july-2025-code-freeze-was-a-war",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Skipping confirmation prompts on your AI coding agent is legal. The scary incidents weren't about a hidden toggle either: Replit's agent had production-database write access, and its code freeze was only a natural-language instruction. No enforced boundary existed."
+    }
+  ]
+}

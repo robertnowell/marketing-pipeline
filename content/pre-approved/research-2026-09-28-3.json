@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-28-3",
+  "date": "2026-09-28",
+  "project": "research",
+  "angle": "2026-09-28-doj-s-justice-manual-bars-cfaa-charges-o",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Running Claude Code with permission prompts off is not a federal crime. The DOJ's own Justice Manual says it won't bring computer-fraud charges over a bare terms-of-service violation, and Anthropic documents the skip-permissions flag as supported. The real risk is the missing boundary."
+    }
+  ]
+}

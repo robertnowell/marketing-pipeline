@@ -421,7 +421,7 @@ research:
       summary: "Replit's July 2025 \"code freeze\" was a warning the agent ignored,
         so the louder-warning experiment has already run once · thread: AI coding
         agents' no-confirmation mode is legal, but louder warnings wouldn't have…"
-      last_used:
+      last_used: '2026-09-28'
       provenance:
         post_id: p_509c1b7b0d04
         round_id: dangerous_mode:2026-09-28
@@ -430,7 +430,7 @@ research:
       summary: "Anthropic measured users approving 93% of Claude Code permission prompts,
         then built a classifier instead of a louder prompt · thread: AI coding agents'
         no-confirmation mode is legal, but louder warnings wouldn't have…"
-      last_used:
+      last_used: '2026-09-28'
       provenance:
         post_id: p_079c11833ebb
         round_id: dangerous_mode:2026-09-28
@@ -439,7 +439,7 @@ research:
       summary: "DOJ's Justice Manual bars CFAA charges over a terms-of-service breach.
         That is why running Claude Code with prompts off isn't a federal crime · thread:
         AI coding agents' no-confirmation mode is legal, but louder…"
-      last_used:
+      last_used: '2026-09-28'
       provenance:
         post_id: p_f40da982aabc
         round_id: dangerous_mode:2026-09-28
@@ -448,7 +448,7 @@ research:
       summary: "Garcia v. Character Technologies and Raine v. OpenAI plead failure-to-warn
         and design-defect together. Plaintiffs aren't treating a warning as a shield.
         · thread: AI coding agents' no-confirmation mode is legal, but…"
-      last_used:
+      last_used: '2026-09-28'
       provenance:
         post_id: p_e4cb926f1fa9
         round_id: dangerous_mode:2026-09-28
@@ -457,7 +457,7 @@ research:
       summary: "OpenAI's January 2024 usage policy had \"safety mitigations\" wording
         with a red-teaming carve-out. The October 2025 rewrite dropped it. · thread:
         AI coding agents' no-confirmation mode is legal, but louder warnings…"
-      last_used:
+      last_used: '2026-09-28'
       provenance:
         post_id: p_e6514a3b87ba
         round_id: dangerous_mode:2026-09-28
