@@ -7563,3 +7563,33 @@
   angle: 2026-09-26-anthropic-held-the-line-on-one-clause-it
   source_id: ''
   posted_at: '2026-09-28'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwob626xxc2d
+  angle: 2026-09-28-replit-s-july-2025-code-freeze-was-a-war
+  source_id: research-2026-09-28-1
+  posted_at: '2026-09-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwob64c3bi2p
+  angle: 2026-09-28-anthropic-measured-users-approving-93-of
+  source_id: research-2026-09-28-2
+  posted_at: '2026-09-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwob665zai2p
+  angle: 2026-09-28-doj-s-justice-manual-bars-cfaa-charges-o
+  source_id: research-2026-09-28-3
+  posted_at: '2026-09-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwob67zmez2l
+  angle: 2026-09-28-garcia-v-character-technologies-and-rain
+  source_id: research-2026-09-28-4
+  posted_at: '2026-09-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwob6bwm252d
+  angle: 2026-09-28-openai-s-january-2024-usage-policy-had-s
+  source_id: research-2026-09-28-5
+  posted_at: '2026-09-29'
