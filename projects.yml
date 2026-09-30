@@ -353,114 +353,107 @@ research:
   channels:
     - bluesky
   facts:
-    - Running an agentic coding CLI without step-by-step confirmation does not 
-      create CFAA exposure.. *Van Buren v. United States* (2021) narrowed 
-      "exceeds authorized access" to accessing areas completely off-limits to 
-      the user; DOJ's own Justice Manual independently states it will not charge
-      CFAA on a bare ToS violation. A user automating their own coding agent on 
-      their own systems has valid access…
-    - Anthropic's Claude Code is explicitly documented as built for "scripted 
-      and automated use"; the skip-permissions flag is a named, supported 
-      feature, not a policy violation.. Anthropic's Legal and Compliance docs 
-      and its own engineering blog on "auto mode" both treat 
-      `--dangerously-skip-permissions` ("Safe YOLO mode") as a real, disclosed 
-      configuration option, discouraged, but not disallowed.
-    - "OpenAI's Codex CLI documents the equivalent bypass flag (`--dangerously-bypass-approvals-and-sandbox`
-      / `--yolo`) the same way: an \"Elevated Risk,\" \"not recommended\" but supported
-      mode, and OpenAI's Usage Policies never mention CLI tools, coding agents, or
-      automation by name.. Confirmed via direct primary-source text (current Oct 2025
-      Usage Policies, recovered via a verbatim PDF mirror after…"
-    - Neither vendor's usage policy frames "human confirmation before each 
-      action" as a contractual or legal requirement.. Anthropic's 
-      guardrail-circumvention clause targets content/jailbreak circumvention, 
-      not tool-permission bypass, on its plain text, though this reading is an 
-      interpretation, not a stated clarification from Anthropic. OpenAI's 
-      human-oversight clause is scoped to "high-stakes…
-    - Industry design precedent (Anthropic's auto mode, Docker's cross-CLI 
-      guidance) favors containing or classifying dangerous-mode actions, not 
-      merely labeling them louder.. Anthropic built a risk-classifier layer 
-      after measuring 93% blanket-approval rates (i.e., visibility/prompting 
-      alone had already failed via approval fatigue). Docker's engineering blog 
-      argues explicitly for environment isolation…
-    - The two headline incidents used to motivate this debate did not involve a 
-      dangerous-mode toggle failing to be visible; both involved the complete 
-      absence of an enforced permission boundary.. Replit's agent had standing 
-      production-database write access with a code freeze enforced only as a 
-      natural-language instruction. The PocketOS/Cursor agent had no 
-      dangerous-mode setting at all; it discovered…
-    - A security vendor's direct critique (Zenity) and an independent 
-      human-factors argument (changkun.de, citing SOC alert-fatigue data) both 
-      hold that visibility-based "soft guardrails" are structurally inadequate 
-      for irreversible actions, because warnings operate inside the same 
-      reasoning loop that produces the failure.. This directly opposes 
-      Anthropic's and Docker's "improve/contain, don't remove"…
-    - Case law exists for AI-delegation liability (*Mobley v. Workday*), but 
-      none was found addressing whether a louder warning reduces that 
-      liability.; Speculative (for the "louder toggle mitigates liability" 
-      extension). *Mobley* (N.D. Cal., ongoing through mid-2026) holds that 
-      delegating a traditionally human decision function to software can create 
-      vendor liability under an agency theory, a real,…
-    - Product-liability "duty to warn" doctrine (Restatement section 402A, 
-      comment j) does recognize adequate warnings as a factor that can reduce 
-      liability, but this doctrine is contested even in its home domain, and 
-      current AI litigation treats warnings and design defects as inseparable 
-      claims, not alternatives.. Legal scholars call Comment j "a puzzle" 
-      because courts disagree on whether it immunizes…
-    - 'The most on-point academic framework found argues the opposite of "just make
-      it louder" for genuinely agentic harm: it proposes replacing passive disclosure
-      with active constraint verification and forensic logging.. arXiv 2606.00518
-      ("Acting with AI") argues passive warning doctrine cleanly applies only to "pure
-      tool use," not to autonomous-drift or collaborative-planning harms, which is
-      the…'
+    - 'The building is a 7-unit individually-owned condominium built in 1981, not
+      a company-owned complex.. Zillow, Redfin, and Compass listings agree; not verified
+      against a fetched assessor record. Unit #1 sold 12 Jul 2023 for $1,110,000;
+      unit #5 sold 25 Jun 2021 for $1,288,000; unit #7 listed 3 Aug 2021 at $1,245,000
+      and closed 3 Dec 2021 at $1,230,000 (Compass, Tier 2). HOA $350/month "includes…'
+    - Woodlake Anchor is Watergate Sales, Inc., an active licensed brokerage 
+      with no disciplinary action.. DRE corporation licence 01943875, issued 26 
+      Nov 2013, status LICENSED, main office 520 Peninsula Ave, San Mateo 94401,
+      DBAs including "Woodlake Anchor Property Management" active as of 20 Nov 
+      2018; designated officer Clement Joseph Stein III, broker licence 
+      01337170, issued 1 May 2002, status…
+    - 'A single-owner condo is exempt from AB 1482 only with the verbatim notice in
+      the lease and a natural-person owner.. Required language: "This property is
+      not subject to the rent limits imposed by Section 1947.12 of the Civil Code
+      and is not subject to the just cause requirements of Section 1946.2 of the Civil
+      Code." For tenancies starting on or after 1 Jul 2020 the notice must be in the
+      rental…'
+    - If the unit is not exempt, the cap for 1 Aug 2025 to 31 Jul 2026 is 6.3% 
+      (5% + 1.3% CPI, SF-Oakland-Hayward).. One Tier 3 source corroborated 
+      against the CAA methodology. Just cause attaches after 12 months of 
+      continuous occupancy (24 months if a later-added tenant) (Civil Code 
+      1946.2, Tier 1).
+    - "Burlingame has no rent control; San Mateo County's relocation ordinance applies
+      to unincorporated areas only.. Burlingame FAQ: \"The City of Burlingame does
+      not have a rent control ordinance... California AB 1482 limits annual rent increases
+      statewide to 5% plus local CPI, or 10%, whichever is lower, until January 1,
+      2030.\" (Tier 1.) County Chapter 3.108 relocation assistance covers unincorporated…"
+    - After the 12-month lease the tenancy is month-to-month by default.. Civil 
+      Code 1945 presumes renewal on the same terms month-to-month when the 
+      tenant stays and rent is accepted; Civil Code 1946.1 lets an exempt 
+      landlord end it on 60 days' notice without cause (30 days if under a year 
+      of occupancy); rent increases need 30 days' notice at 10% or less over the
+      trailing 12 months, 90 days above 10%…
+    - Security deposits are capped at one month's rent since 1 Jul 2024 (AB 12),
+      two months for a small natural-person landlord with at most two properties
+      and four units.. (Civil Code 1950.5; Brownstein Hyatt analysis, Tier 2.)
+    - Application screening fee cap is $65.14 per applicant for 2025, $65.86 for
+      2026; unused fees must be refunded or the first qualified applicant 
+      accepted (AB 2493).. (Civil Code 1950.6 via BPOA/RentSpree summaries, Tier
+      2.)
+    - 'Unit #7 is asking $5,250, about 10% over the Burlingame 2-bed median of $4,757
+      and $1,000 over the Zillow Rent Zestimate of $4,250. for the ask and the Zumper
+      comparison (Tier 1/2), Likely for comps. Comps found: $5,500 (2bd/1ba, 1,170
+      sq ft, 1401 Bellevue Ave); $4,595 (2bd/2ba, 1,350 sq ft, 508 Peninsula Ave);
+      $4,199 (2bd/1ba duplex, San Mateo). RentCafe Burlingame 2-bed average $4,532
+      (Nov…'
+    - 'Reviews: 4.7 to 4.8 stars across 59 to 65 reviews (Google, Yelp, Birdeye);
+      text mostly inaccessible.. Two verbatim owner-side 5-star reviews ("very responsive
+      & knowledgeable... found two great tenants"). One Birdeye review (Jeff R., 4
+      years ago): "They gotta keep replacing their Web pages to hide bad reviews."
+      Apartmentratings page for Woodlake Condominiums HOA (900 Peninsula Ave, San
+      Mateo, a…'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-09-09-dangerous-mode-toggle-legal-review' dated 2026-09-28, 
+      report '2026-09-26-burlingame-townhouse-due-diligence' dated 2026-09-29, 
       and from a simulated review round where 10 agent-written posts were ranked
       by votes.
   angles:
-    - id: 2026-09-28-replit-s-july-2025-code-freeze-was-a-war
-      summary: "Replit's July 2025 \"code freeze\" was a warning the agent ignored,
-        so the louder-warning experiment has already run once · thread: AI coding
-        agents' no-confirmation mode is legal, but louder warnings wouldn't have…"
-      last_used: '2026-09-28'
+    - id: 2026-09-29-for-a-5-250-rental-one-missing-sentence
+      summary: "For a $5,250 rental, one missing sentence in the lease is worth about
+        $5,250 in relocation pay plus a rent ceiling · thread: California's rent cap
+        often doesn't cover condo rentals, and renters rarely know"
+      last_used:
       provenance:
-        post_id: p_509c1b7b0d04
-        round_id: dangerous_mode:2026-09-28
-        report_label: 2026-09-09-dangerous-mode-toggle-legal-review
-    - id: 2026-09-28-anthropic-measured-users-approving-93-of
-      summary: "Anthropic measured users approving 93% of Claude Code permission prompts,
-        then built a classifier instead of a louder prompt · thread: AI coding agents'
-        no-confirmation mode is legal, but louder warnings wouldn't have…"
-      last_used: '2026-09-28'
+        post_id: p_339ed64674cb
+        round_id: rental_fine_print:2026-09-29
+        report_label: 2026-09-26-burlingame-townhouse-due-diligence
+    - id: 2026-09-29-the-6-3-rent-cap-figure-for-burlingame-i
+      summary: "The 6.3% rent-cap figure for Burlingame in our research covers a period
+        that ended July 31, 2026, and SF.gov prints a different number · thread: California's
+        rent cap often doesn't cover condo rentals, and renters…"
+      last_used:
       provenance:
-        post_id: p_079c11833ebb
-        round_id: dangerous_mode:2026-09-28
-        report_label: 2026-09-09-dangerous-mode-toggle-legal-review
-    - id: 2026-09-28-doj-s-justice-manual-bars-cfaa-charges-o
-      summary: "DOJ's Justice Manual bars CFAA charges over a terms-of-service breach.
-        That is why running Claude Code with prompts off isn't a federal crime · thread:
-        AI coding agents' no-confirmation mode is legal, but louder…"
-      last_used: '2026-09-28'
+        post_id: p_54e98182684e
+        round_id: rental_fine_print:2026-09-29
+        report_label: 2026-09-26-burlingame-townhouse-due-diligence
+    - id: 2026-09-29-month-13-at-747-el-camino-real-two-sets
+      summary: "Month 13 at 747 El Camino Real: two sets of rules, and the lease notice
+        picks which one · thread: California's rent cap often doesn't cover condo
+        rentals, and renters rarely know"
+      last_used:
       provenance:
-        post_id: p_f40da982aabc
-        round_id: dangerous_mode:2026-09-28
-        report_label: 2026-09-09-dangerous-mode-toggle-legal-review
-    - id: 2026-09-28-garcia-v-character-technologies-and-rain
-      summary: "Garcia v. Character Technologies and Raine v. OpenAI plead failure-to-warn
-        and design-defect together. Plaintiffs aren't treating a warning as a shield.
-        · thread: AI coding agents' no-confirmation mode is legal, but…"
-      last_used: '2026-09-28'
+        post_id: p_aef46f0d19b8
+        round_id: rental_fine_print:2026-09-29
+        report_label: 2026-09-26-burlingame-townhouse-due-diligence
+    - id: 2026-09-29-747-el-camino-real-was-built-in-1981-so
+      summary: "747 El Camino Real was built in 1981, so AB 1482's 15-year exemption
+        is not the one in play · thread: California's rent cap often doesn't cover
+        condo rentals, and renters rarely know"
+      last_used:
       provenance:
-        post_id: p_e4cb926f1fa9
-        round_id: dangerous_mode:2026-09-28
-        report_label: 2026-09-09-dangerous-mode-toggle-legal-review
-    - id: 2026-09-28-openai-s-january-2024-usage-policy-had-s
-      summary: "OpenAI's January 2024 usage policy had \"safety mitigations\" wording
-        with a red-teaming carve-out. The October 2025 rewrite dropped it. · thread:
-        AI coding agents' no-confirmation mode is legal, but louder warnings…"
-      last_used: '2026-09-28'
+        post_id: p_f238c802bb19
+        round_id: rental_fine_print:2026-09-29
+        report_label: 2026-09-26-burlingame-townhouse-due-diligence
+    - id: 2026-09-29-a-blank-exemption-box-can-cost-a-landlor
+      summary: "A blank exemption box can cost a landlord the condo exemption, per
+        a tenant attorney's reading of AB 1482 · thread: California's rent cap often
+        doesn't cover condo rentals, and renters rarely know"
+      last_used:
       provenance:
-        post_id: p_e6514a3b87ba
-        round_id: dangerous_mode:2026-09-28
-        report_label: 2026-09-09-dangerous-mode-toggle-legal-review
+        post_id: p_f419b79ec70d
+        round_id: rental_fine_print:2026-09-29
+        report_label: 2026-09-26-burlingame-townhouse-due-diligence
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-28-ai-coding-agents-no-confirmation-mode-is.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-09-29-california-s-rent-cap-often-doesn-t-cove.png
