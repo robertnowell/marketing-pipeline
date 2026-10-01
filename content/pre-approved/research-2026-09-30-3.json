@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-30-3",
+  "date": "2026-09-30",
+  "project": "research",
+  "angle": "2026-09-30-a-research-pass-reported-a-96-acceptance",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Your AI agent saying \"done\" costs it almost nothing. In 591 real agent sessions, 37% of \"done\" claims came after a passing test run and then more edits, with no re-verification. Make machine checks refuse, not warn. Keep human sign-off for merges, releases, spend."
+    }
+  ]
+}

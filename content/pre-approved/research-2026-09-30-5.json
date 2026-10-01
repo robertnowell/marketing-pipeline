@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-30-5",
+  "date": "2026-09-30",
+  "project": "research",
+  "angle": "2026-09-30-the-best-llm-judge-at-spotting-false-tas",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Asking an LLM to catch an AI agent's false 'task complete' claims barely works. The best judge tested, Claude Sonnet 4.5, scored AUROC 0.640. A plain TF-IDF+XGBoost classifier scored 0.825 and ran roughly 3,300 times faster. Verify against real state, not another model's opinion."
+    }
+  ]
+}

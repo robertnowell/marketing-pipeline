@@ -422,7 +422,7 @@ research:
       summary: "In 591 logged coding-agent sessions, 37% of 'done' claims came after
         a passing test and then more unchecked edits · thread: AI agents say 'done'
         for free; checking their work isn't"
-      last_used:
+      last_used: '2026-09-30'
       provenance:
         post_id: p_a189c70756b5
         round_id: anti_slop:2026-09-30
@@ -431,7 +431,7 @@ research:
       summary: "Rewrite an agent's honest failure message in confident language and
         LLM judges flip on 20–25% of cases · thread: AI agents say 'done' for free;
         checking their work isn't"
-      last_used:
+      last_used: '2026-09-30'
       provenance:
         post_id: p_c505cea7c2aa
         round_id: anti_slop:2026-09-30
@@ -440,7 +440,7 @@ research:
       summary: "A research pass reported a '96% acceptance rate' for a paper. The
         paper contains no such number. · thread: AI agents say 'done' for free; checking
         their work isn't"
-      last_used:
+      last_used: '2026-09-30'
       provenance:
         post_id: p_6a02658445e8
         round_id: anti_slop:2026-09-30
@@ -449,7 +449,7 @@ research:
       summary: "Six frontier models solved 75–81% of 93 SWE-bench tasks. Their own
         predicted success ranged from 61% to 93%. · thread: AI agents say 'done' for
         free; checking their work isn't"
-      last_used:
+      last_used: '2026-09-30'
       provenance:
         post_id: p_59993e9a825a
         round_id: anti_slop:2026-09-30
@@ -458,7 +458,7 @@ research:
       summary: "The best LLM judge at spotting false 'task complete' claims scored
         AUROC 0.640. A TF-IDF classifier scored 0.825. · thread: AI agents say 'done'
         for free; checking their work isn't"
-      last_used:
+      last_used: '2026-09-30'
       provenance:
         post_id: p_836947ac5165
         round_id: anti_slop:2026-09-30

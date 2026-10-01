@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-09-30-4",
+  "date": "2026-09-30",
+  "project": "research",
+  "angle": "2026-09-30-six-frontier-models-solved-75-81-of-93-s",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Six frontier AI models solved 75.3 to 80.6% of the same 93 coding tasks (SWE-bench Lite). Their own predicted success ranged from 61.4% to 92.9%. If you let an agent grade its own work, you're trusting a poorly calibrated number. Use a checker the agent didn't write."
+    }
+  ]
+}
