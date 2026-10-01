@@ -7623,3 +7623,33 @@
   angle: 2026-09-29-a-blank-exemption-box-can-cost-a-landlor
   source_id: research-2026-09-29-5
   posted_at: '2026-09-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwtdspldgw2o
+  angle: 2026-09-30-in-591-logged-coding-agent-sessions-37-o
+  source_id: research-2026-09-30-1
+  posted_at: '2026-10-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwtdsrfqki26
+  angle: 2026-09-30-rewrite-an-agent-s-honest-failure-messag
+  source_id: research-2026-09-30-2
+  posted_at: '2026-10-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwtdstdh4q2f
+  angle: 2026-09-30-a-research-pass-reported-a-96-acceptance
+  source_id: research-2026-09-30-3
+  posted_at: '2026-10-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwtdsv44mq2v
+  angle: 2026-09-30-six-frontier-models-solved-75-81-of-93-s
+  source_id: research-2026-09-30-4
+  posted_at: '2026-10-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwtdswtzo22z
+  angle: 2026-09-30-the-best-llm-judge-at-spotting-false-tas
+  source_id: research-2026-09-30-5
+  posted_at: '2026-10-01'
