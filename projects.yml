@@ -422,7 +422,7 @@ research:
       summary: "In 591 logged coding-agent sessions, 37% of 'done' claims came after
         a passing test and then more unchecked edits · thread: AI agents say 'done'
         for free; checking their work isn't"
-      last_used: '2026-09-30'
+      last_used: '2026-10-02'
       provenance:
         post_id: p_a189c70756b5
         round_id: anti_slop:2026-09-30
