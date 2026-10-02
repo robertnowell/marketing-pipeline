@@ -7659,3 +7659,9 @@
   angle: 2026-09-30-in-591-logged-coding-agent-sessions-37-o
   source_id: ''
   posted_at: '2026-10-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwvsyl4q6l2i
+  angle: 2026-09-30-rewrite-an-agent-s-honest-failure-messag
+  source_id: ''
+  posted_at: '2026-10-02'

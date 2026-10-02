@@ -431,7 +431,7 @@ research:
       summary: "Rewrite an agent's honest failure message in confident language and
         LLM judges flip on 20–25% of cases · thread: AI agents say 'done' for free;
         checking their work isn't"
-      last_used: '2026-09-30'
+      last_used: '2026-10-02'
       provenance:
         post_id: p_c505cea7c2aa
         round_id: anti_slop:2026-09-30
