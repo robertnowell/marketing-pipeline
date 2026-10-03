@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-03-5",
+  "date": "2026-10-03",
+  "project": "research",
+  "angle": "2026-10-03-in-april-2025-openai-swapped-audited-by",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's usage policy used to carve out safeguard bypasses by red-team experts. The Oct 29, 2025 rewrite deleted that carve-out. The changelog says only: \"universal set of policies across OpenAI products and services.\" If your product leans on their terms, diff them yourself."
+    }
+  ]
+}

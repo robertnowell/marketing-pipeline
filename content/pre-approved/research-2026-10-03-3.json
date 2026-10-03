@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-03-3",
+  "date": "2026-10-03",
+  "project": "research",
+  "angle": "2026-10-03-anthropic-s-june-6-2024-usage-policy-add",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Jan 10, 2024 usage policy let testers bypass safeguards if supported by OpenAI, e.g. its Red Teaming Network. The Oct 29, 2025 rewrite deleted that exception. The changelog says only \"a universal set of policies.\" If you build on OpenAI, diff the policy yourself."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-03-4",
+  "date": "2026-10-03",
+  "project": "research",
+  "angle": "2026-10-03-openai-s-usage-policy-never-mentions-cod",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Jan 2024 usage policy let you bypass safeguards if \"supported by OpenAI (e.g., domain experts in our Red Teaming Network)\". The Oct 2025 rewrite deleted that exception. The changelog doesn't mention it. If you build on OpenAI, the rule now has no stated carve-out."
+    }
+  ]
+}

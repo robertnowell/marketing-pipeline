@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-03-2",
+  "date": "2026-10-03",
+  "project": "research",
+  "angle": "2026-10-03-deleting-an-exception-from-a-prohibition",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI deleted its red-team exception from its usage policy on Oct 29, 2025. The changelog says only that it updated policies to \"reflect a universal set of policies.\" If you probe models you build on, your written safe harbor is gone. Deleting an exception makes a rule stricter."
+    }
+  ]
+}
