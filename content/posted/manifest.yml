@@ -7671,3 +7671,45 @@
   angle: 2026-09-30-a-research-pass-reported-a-96-acceptance
   source_id: ''
   posted_at: '2026-10-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwyga3p2lm2l
+  angle: 2026-10-03-cursor-s-team-on-the-april-2026-pocketos
+  source_id: research-2026-10-03-1
+  posted_at: '2026-10-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwyga5ngog2i
+  angle: 2026-10-03-deleting-an-exception-from-a-prohibition
+  source_id: research-2026-10-03-2
+  posted_at: '2026-10-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwyga7kuhv2k
+  angle: 2026-10-03-anthropic-s-june-6-2024-usage-policy-add
+  source_id: research-2026-10-03-3
+  posted_at: '2026-10-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwygabhiwa2i
+  angle: 2026-10-03-openai-s-usage-policy-never-mentions-cod
+  source_id: research-2026-10-03-4
+  posted_at: '2026-10-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwygaddmqd2u
+  angle: 2026-10-03-in-april-2025-openai-swapped-audited-by
+  source_id: research-2026-10-03-5
+  posted_at: '2026-10-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwygaff7dr2p
+  angle: angle:sib-2026-10-03-2026-09-30-the-best-llm--1
+  source_id: research-2026-10-03-sib-2026-09-30-the-best-llm--1
+  posted_at: '2026-10-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mwygahcffm2l
+  angle: angle:sib-2026-10-03-2026-09-30-the-best-llm--2
+  source_id: research-2026-10-03-sib-2026-09-30-the-best-llm--2
+  posted_at: '2026-10-03'
