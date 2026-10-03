@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-03-sib-2026-09-30-the-best-llm--1",
+  "date": "2026-10-03",
+  "project": "research",
+  "angle": "angle:sib-2026-10-03-2026-09-30-the-best-llm--1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Your coding agent's 'done' is the cheapest thing it produces. In a practitioner analysis of 591 real agent sessions, 37% of 'done' claims followed a passing test run and then more edits, with no re-verification. Verifying costs real time and compute, so it gets skipped. Gate on checks, not claims."
+    }
+  ]
+}
