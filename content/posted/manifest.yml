@@ -7731,3 +7731,9 @@
   angle: 2026-10-03-anthropic-s-june-6-2024-usage-policy-add
   source_id: ''
   posted_at: '2026-10-04'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mx2xh3drkm2l
+  angle: 2026-10-03-openai-s-usage-policy-never-mentions-cod
+  source_id: ''
+  posted_at: '2026-10-04'
