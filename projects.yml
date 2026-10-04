@@ -418,7 +418,7 @@ research:
       summary: "Cursor's team on the April 2026 PocketOS database wipe: 'They built
         a lot of tooling to force agents to run certain commands through humans, but
         they did not apply it here.' · thread: OpenAI quietly deleted the…"
-      last_used:
+      last_used: '2026-10-04'
       provenance:
         post_id: p_a7c071417e1f
         round_id: dangerous_mode:2026-10-03
@@ -427,7 +427,7 @@ research:
       summary: "Deleting an exception from a prohibition makes it stricter. OpenAI's
         2025 safeguards edit may have cut red-teamers' safe harbor, not loosened anything.
         · thread: OpenAI quietly deleted the exceptions from its rule…"
-      last_used:
+      last_used: '2026-10-04'
       provenance:
         post_id: p_1a4581c6efb4
         round_id: dangerous_mode:2026-10-03
@@ -436,7 +436,7 @@ research:
       summary: "Anthropic's June 6, 2024 usage policy added a named bypass clause.
         OpenAI's October 2025 rewrite went the other way. · thread: OpenAI quietly
         deleted the exceptions from its rule against bypassing safeguards"
-      last_used:
+      last_used: '2026-10-04'
       provenance:
         post_id: p_79e0e7d82169
         round_id: dangerous_mode:2026-10-03
@@ -445,7 +445,7 @@ research:
       summary: "OpenAI's usage policy never mentions Codex CLI, so the one-line safeguards
         rule says nothing about its --yolo flag · thread: OpenAI quietly deleted the
         exceptions from its rule against bypassing safeguards"
-      last_used:
+      last_used: '2026-10-04'
       provenance:
         post_id: p_c7802f0dea78
         round_id: dangerous_mode:2026-10-03
@@ -454,7 +454,7 @@ research:
       summary: "In April 2025 OpenAI swapped 'audited by qualified, independent third-parties'
         for 'if we deem that a deployment warrants.' Reporters caught it. · thread:
         OpenAI quietly deleted the exceptions from its rule against…"
-      last_used:
+      last_used: '2026-10-04'
       provenance:
         post_id: p_456a95b5de3e
         round_id: dangerous_mode:2026-10-03

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-04-4",
+  "date": "2026-10-04",
+  "project": "research",
+  "angle": "2026-10-03-openai-s-usage-policy-never-mentions-cod",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Jan 2024 policy banned bypassing safeguards \"unless supported by OpenAI.\" Its Oct 2025 rewrite deleted that exception. The changelog says only \"a universal set of policies across OpenAI products and services.\" If you build on its models, the carve-out is gone and nobody told you."
+    }
+  ]
+}

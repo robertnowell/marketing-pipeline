@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-04-3",
+  "date": "2026-10-04",
+  "project": "research",
+  "angle": "2026-10-03-anthropic-s-june-6-2024-usage-policy-add",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Jan 2024 usage policy had an exception to its ban on bypassing safeguards: \"unless supported by OpenAI\". The Oct 29, 2025 rewrite deleted it. The changelog says only \"a universal set of policies.\" If you build on OpenAI, diff the policy yourself; the changelog won't tell you."
+    }
+  ]
+}

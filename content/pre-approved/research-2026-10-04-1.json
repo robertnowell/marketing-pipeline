@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-04-1",
+  "date": "2026-10-04",
+  "project": "research",
+  "angle": "2026-10-03-cursor-s-team-on-the-april-2026-pocketos",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Jan 10, 2024 usage policy had a named exception for bypassing safeguards: experts supported by OpenAI, such as its red team. The Oct 29, 2025 rewrite deleted it. The changelog says only that policies were updated to be \"universal.\" If you build on their API, read the diff, not the changelog."
+    }
+  ]
+}

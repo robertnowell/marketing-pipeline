@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-04-5",
+  "date": "2026-10-04",
+  "project": "research",
+  "angle": "2026-10-03-in-april-2025-openai-swapped-audited-by",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Jan 2024 usage policy had a named exception for bypassing safeguards with OpenAI-backed experts. The Oct 2025 rewrite deleted it. The changelog only says: \"We've updated our Usage Policies to reflect a universal set of policies across OpenAI products and services.\""
+    }
+  ]
+}

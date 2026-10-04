@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-04-2",
+  "date": "2026-10-04",
+  "project": "research",
+  "angle": "2026-10-03-deleting-an-exception-from-a-prohibition",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Jan 10, 2024 usage policy barred circumventing safeguards \"unless supported by OpenAI (e.g., domain experts in our Red Teaming Network)\". The Oct 29, 2025 rewrite deleted that exception. The changelog never mentions it. Deleting an exception makes the rule stricter."
+    }
+  ]
+}
