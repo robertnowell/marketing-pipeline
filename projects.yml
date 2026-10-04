@@ -427,7 +427,7 @@ research:
       summary: "Deleting an exception from a prohibition makes it stricter. OpenAI's
         2025 safeguards edit may have cut red-teamers' safe harbor, not loosened anything.
         · thread: OpenAI quietly deleted the exceptions from its rule…"
-      last_used: '2026-10-03'
+      last_used: '2026-10-04'
       provenance:
         post_id: p_1a4581c6efb4
         round_id: dangerous_mode:2026-10-03
