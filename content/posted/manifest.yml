@@ -7743,3 +7743,33 @@
   angle: 2026-10-03-in-april-2025-openai-swapped-audited-by
   source_id: ''
   posted_at: '2026-10-04'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mx5njl4xw72q
+  angle: 2026-10-03-deleting-an-exception-from-a-prohibition
+  source_id: research-2026-10-04-2
+  posted_at: '2026-10-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mx5njn5kfd2k
+  angle: 2026-10-03-anthropic-s-june-6-2024-usage-policy-add
+  source_id: research-2026-10-04-3
+  posted_at: '2026-10-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mx5njp2vac2w
+  angle: 2026-10-03-openai-s-usage-policy-never-mentions-cod
+  source_id: research-2026-10-04-4
+  posted_at: '2026-10-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mx5njqypsk2f
+  angle: 2026-10-03-in-april-2025-openai-swapped-audited-by
+  source_id: research-2026-10-04-5
+  posted_at: '2026-10-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mx5nkiuo7u2i
+  angle: 2026-10-03-cursor-s-team-on-the-april-2026-pocketos
+  source_id: ''
+  posted_at: '2026-10-05'
