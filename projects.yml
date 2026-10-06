@@ -445,7 +445,7 @@ research:
       summary: "OpenAI's usage policy never mentions Codex CLI, so the one-line safeguards
         rule says nothing about its --yolo flag · thread: OpenAI quietly deleted the
         exceptions from its rule against bypassing safeguards"
-      last_used: '2026-10-04'
+      last_used: '2026-10-06'
       provenance:
         post_id: p_c7802f0dea78
         round_id: dangerous_mode:2026-10-03
