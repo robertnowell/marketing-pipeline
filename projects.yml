@@ -436,7 +436,7 @@ research:
       summary: "Anthropic's June 6, 2024 usage policy added a named bypass clause.
         OpenAI's October 2025 rewrite went the other way. · thread: OpenAI quietly
         deleted the exceptions from its rule against bypassing safeguards"
-      last_used: '2026-10-07'
+      last_used: '2026-10-08'
       provenance:
         post_id: p_79e0e7d82169
         round_id: dangerous_mode:2026-10-03
