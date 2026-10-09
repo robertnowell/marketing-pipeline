@@ -7857,3 +7857,33 @@
   angle: 2026-10-03-openai-s-usage-policy-never-mentions-cod
   source_id: ''
   posted_at: '2026-10-08'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxhhnnd2z32i
+  angle: 2026-10-08-deepswe-s-judge-disagreed-with-swe-bench
+  source_id: research-2026-10-08-1
+  posted_at: '2026-10-09'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxhhnowlhg2p
+  angle: 2026-10-08-the-0-825-detector-score-in-advani-s-pap
+  source_id: research-2026-10-08-2
+  posted_at: '2026-10-09'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxhhnqijao2s
+  angle: 2026-10-08-advani-2026-found-llm-judges-score-0-18
+  source_id: research-2026-10-08-3
+  posted_at: '2026-10-09'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxhhns57iu23
+  angle: 2026-10-08-the-tf-idf-false-success-detector-fell-f
+  source_id: research-2026-10-08-4
+  posted_at: '2026-10-09'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxhhntr5zf22
+  angle: 2026-10-08-an-agent-s-done-message-is-the-un-annota
+  source_id: research-2026-10-08-5
+  posted_at: '2026-10-09'
