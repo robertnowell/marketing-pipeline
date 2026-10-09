@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-08-3",
+  "date": "2026-10-08",
+  "project": "research",
+  "angle": "2026-10-08-advani-2026-found-llm-judges-score-0-18",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Asking an LLM whether your AI agent actually finished the job is close to useless. In arXiv 2606.09863, no judge configuration exceeds AUROC 0.65, while a TF-IDF word-count classifier hit 0.825 on tau2-bench. Judges anchor on confident closing language. Verify against environment state."
+    }
+  ]
+}

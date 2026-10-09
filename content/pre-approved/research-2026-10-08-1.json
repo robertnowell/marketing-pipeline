@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-08-1",
+  "date": "2026-10-08",
+  "project": "research",
+  "angle": "2026-10-08-deepswe-s-judge-disagreed-with-swe-bench",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An LLM judge is a poor way to check whether your AI agent really finished the job. In arXiv 2606.09863, no judge or prompt exceeded AUROC 0.65 (best 0.640). A plain TF-IDF word-count classifier hit 0.825 on held-out tasks. Judges get swayed by confident closing language."
+    }
+  ]
+}

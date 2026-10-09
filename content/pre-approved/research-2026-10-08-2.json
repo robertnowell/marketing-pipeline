@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-08-2",
+  "date": "2026-10-08",
+  "project": "research",
+  "angle": "2026-10-08-the-0-825-detector-score-in-advani-s-pap",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI judges can't reliably tell if your AI agent finished the job: across 5 judge models, none exceeds 0.65 AUROC (arXiv 2606.09863). A word-counting classifier hit 0.953 on AppWorld, where labels come from a database status field, not text. Confident closing lines fool the judges."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-08-4",
+  "date": "2026-10-08",
+  "project": "research",
+  "angle": "2026-10-08-the-tf-idf-false-success-detector-fell-f",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A word-counting classifier beat every AI judge at catching agents that falsely claim 'done'. Then it moved from airline to retail tasks and fell from 0.83 to 0.66-0.70, about the judges' ceiling of 0.65. If you ship agents, calibrate the checker per domain. Source: arXiv 2606.09863"
+    }
+  ]
+}

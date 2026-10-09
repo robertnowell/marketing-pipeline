@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-08-5",
+  "date": "2026-10-08",
+  "project": "research",
+  "angle": "2026-10-08-an-agent-s-done-message-is-the-un-annota",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An LLM judge mostly believes your agent's 'done' message. Confident closing language raised 'completed' scores 0.27-0.36 regardless of outcome. On tau2-bench, a word-counting classifier scored 0.825 AUROC vs 0.545 for a GPT-4o judge. Source: arXiv 2606.09863."
+    }
+  ]
+}
