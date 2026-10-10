@@ -426,7 +426,7 @@ research:
       summary: "The 0.825 detector score in Advani's paper rests on labels made by
         regex over the agent's closing message. The AppWorld replication is the real
         test. · thread: A simple word-counting classifier beat the best AI judge at…"
-      last_used: '2026-10-08'
+      last_used: '2026-10-10'
       provenance:
         post_id: p_99373235a179
         round_id: anti_slop:2026-10-08
