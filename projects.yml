@@ -417,7 +417,7 @@ research:
       summary: "DeepSWE's judge disagreed with SWE-bench Pro's tests on 256 of 789
         rollouts but only 10 of 735 against its own verifier. That's about the tests,
         not the judge. · thread: A simple word-counting classifier beat the best…"
-      last_used: '2026-10-08'
+      last_used: '2026-10-10'
       provenance:
         post_id: p_ea3160519cf2
         round_id: anti_slop:2026-10-08

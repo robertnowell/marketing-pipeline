@@ -7887,3 +7887,9 @@
   angle: 2026-10-08-an-agent-s-done-message-is-the-un-annota
   source_id: research-2026-10-08-5
   posted_at: '2026-10-09'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxju3jxqpc26
+  angle: 2026-10-08-deepswe-s-judge-disagreed-with-swe-bench
+  source_id: ''
+  posted_at: '2026-10-10'
