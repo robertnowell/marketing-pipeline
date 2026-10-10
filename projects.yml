@@ -435,7 +435,7 @@ research:
       summary: "Advani (2026) found LLM judges score 0.18–0.30 AUROC at telling false
         'done' claims from honest failures: worse than a coin flip · thread: A simple
         word-counting classifier beat the best AI judge at catching false…"
-      last_used: '2026-10-08'
+      last_used: '2026-10-10'
       provenance:
         post_id: p_21d8e8964e91
         round_id: anti_slop:2026-10-08
