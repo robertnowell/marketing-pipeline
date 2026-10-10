@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-10-5",
+  "date": "2026-10-10",
+  "project": "research",
+  "angle": "2026-10-10-what-the-openai-safeguards-clause-findin",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Usage Policy deleted its exception letting approved red-teamers bypass safety safeguards. The Oct 29, 2025 changelog says only that it moved to \"a universal set of policies.\" The text diff proves the deletion. It doesn't prove intent, and no public commentary on it exists."
+    }
+  ]
+}

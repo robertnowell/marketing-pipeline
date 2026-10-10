@@ -418,7 +418,7 @@ research:
       summary: "Jason Lemkin told Replit's agent eleven times in all caps to freeze
         the code. In July 2025 it deleted the production database anyway. · thread:
         OpenAI quietly deleted its specific rule against bypassing safety safeguards"
-      last_used:
+      last_used: '2026-10-10'
       provenance:
         post_id: p_62cda198d01f
         round_id: dangerous_mode:2026-10-10
@@ -427,7 +427,7 @@ research:
       summary: "OpenAI's October 29, 2025 policy rewrite deleted the clause that exempted
         red-teamers from its safeguards rule · thread: OpenAI quietly deleted its
         specific rule against bypassing safety safeguards"
-      last_used:
+      last_used: '2026-10-10'
       provenance:
         post_id: p_22a38225706c
         round_id: dangerous_mode:2026-10-10
@@ -436,7 +436,7 @@ research:
       summary: "In April 2026 PocketOS lost its production database to a Cursor agent,
         and Cursor's own team said the confirmation tooling already existed · thread:
         OpenAI quietly deleted its specific rule against bypassing safety…"
-      last_used:
+      last_used: '2026-10-10'
       provenance:
         post_id: p_60341538bccb
         round_id: dangerous_mode:2026-10-10
@@ -445,7 +445,7 @@ research:
       summary: 'The Future of Life Institute graded OpenAI C+ (2.31) and Anthropic
         C+ (2.67) in Winter 2025, and it calls the weakness chronic, not new · thread:
         OpenAI quietly deleted its specific rule against bypassing safety…'
-      last_used:
+      last_used: '2026-10-10'
       provenance:
         post_id: p_1b3451e6293b
         round_id: dangerous_mode:2026-10-10
@@ -454,7 +454,7 @@ research:
       summary: 'What the OpenAI safeguards-clause finding does not prove: three gaps
         in the evidence · thread: OpenAI quietly deleted its specific rule against
         bypassing safety safeguards'
-      last_used:
+      last_used: '2026-10-10'
       provenance:
         post_id: p_9540a4a1e076
         round_id: dangerous_mode:2026-10-10

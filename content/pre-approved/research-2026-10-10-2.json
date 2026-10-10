@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-10-2",
+  "date": "2026-10-10",
+  "project": "research",
+  "angle": "2026-10-10-openai-s-october-29-2025-policy-rewrite",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Oct 29, 2025 policy rewrite deleted the clause exempting red-teamers from its rule against bypassing safeguards. The changelog says only: \"universal set of policies across OpenAI products and services.\" If you build on OpenAI, diff the terms yourself."
+    }
+  ]
+}

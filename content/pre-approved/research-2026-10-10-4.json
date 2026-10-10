@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-10-4",
+  "date": "2026-10-10",
+  "project": "research",
+  "angle": "2026-10-10-the-future-of-life-institute-graded-open",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI's Jan 2024 usage policy named an exception for bypassing safeguards with its Red Teaming Network. The Oct 2025 rewrite deleted it. The changelog mentions only a \"universal set of policies\". If you build on their API, diff the terms yourself."
+    }
+  ]
+}
