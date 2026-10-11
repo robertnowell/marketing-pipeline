@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-11-sib-2026-10-08-the-0-825-det-2",
+  "date": "2026-10-11",
+  "project": "research",
+  "angle": "angle:sib-2026-10-11-2026-10-08-the-0-825-det-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI judges that grade your agent's work reward confident closing language, not results. Per arXiv 2606.09863, assertion vocabulary raised \"completed\" scores 0.27-0.36 regardless of outcome. Separating false success from honest failure, AUROC was 0.18-0.30: below chance."
+    }
+  ]
+}

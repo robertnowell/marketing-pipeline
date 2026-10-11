@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-11-sib-2026-10-08-deepswe-s-jud-2",
+  "date": "2026-10-11",
+  "project": "research",
+  "angle": "angle:sib-2026-10-11-2026-10-08-deepswe-s-jud-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you use an LLM to check whether your AI agent finished the job, it is grading the confidence of the last message. Assertive wording scored 0.27-0.36 higher on \"completed\" regardless of outcome. False success vs honest failure: AUROC 0.18-0.30, below chance. arXiv 2606.09863"
+    }
+  ]
+}

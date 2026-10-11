@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-11-sib-2026-10-08-the-0-825-det-1",
+  "date": "2026-10-11",
+  "project": "research",
+  "angle": "angle:sib-2026-10-11-2026-10-08-the-0-825-det-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Checking whether an AI agent really finished its task: the quoted 'best judge 0.640 vs classifier 0.825' mixes two different tables. Same-benchmark pairs in arXiv 2606.09863: GPT-4o judge 0.545 vs 0.825 on tau2-bench, 0.537 vs 0.953 on AppWorld. Cite those."
+    }
+  ]
+}

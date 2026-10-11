@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-11-sib-2026-10-08-deepswe-s-jud-1",
+  "date": "2026-10-11",
+  "project": "research",
+  "angle": "angle:sib-2026-10-11-2026-10-08-deepswe-s-jud-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Quoting 'best LLM judge 0.640 vs word-counting classifier 0.825' for catching AI agents that falsely claim success mixes two cells of arXiv 2606.09863. The paper's own pairing is a GPT-4o judge at 0.545 vs 0.825 on tau2-bench. Cite the table, not the abstract."
+    }
+  ]
+}
