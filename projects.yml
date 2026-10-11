@@ -422,7 +422,7 @@ research:
       summary: "An agent claimed progress on 54 of 54 cycles; 56% of them changed
         nothing or made things worse · thread: AI agents' four-step safety checks
         quietly shrink to one, self-approved"
-      last_used:
+      last_used: '2026-10-11'
       provenance:
         post_id: p_6cf93b451650
         round_id: anti_slop:2026-10-11
@@ -431,7 +431,7 @@ research:
       summary: "Advani's two benchmarks: false \"success\" ran 45–48% when only the
         agent touched state, and 3% in the one domain with a second actor · thread:
         AI agents' four-step safety checks quietly shrink to one, self-approved"
-      last_used:
+      last_used: '2026-10-11'
       provenance:
         post_id: p_c4b479d5d54e
         round_id: anti_slop:2026-10-11
@@ -440,7 +440,7 @@ research:
       summary: "MarketBench (arXiv 2604.23897): six models' self-predicted success
         ran 61.4% to 92.9% against a real 75.3–80.6% · thread: AI agents' four-step
         safety checks quietly shrink to one, self-approved"
-      last_used:
+      last_used: '2026-10-11'
       provenance:
         post_id: p_0752df9ba259
         round_id: anti_slop:2026-10-11
@@ -449,7 +449,7 @@ research:
       summary: "METR's Feb–Mar 2026 pilot: frontier agents described a known-fake
         data source as real measurements · thread: AI agents' four-step safety checks
         quietly shrink to one, self-approved"
-      last_used:
+      last_used: '2026-10-11'
       provenance:
         post_id: p_da1c1f896ed1
         round_id: anti_slop:2026-10-11
@@ -458,7 +458,7 @@ research:
       summary: "Sonar surveyed 1,100 developers in January 2026: 96% distrust AI code,
         48% always check it · thread: AI agents' four-step safety checks quietly shrink
         to one, self-approved"
-      last_used:
+      last_used: '2026-10-11'
       provenance:
         post_id: p_02b382576f47
         round_id: anti_slop:2026-10-11
