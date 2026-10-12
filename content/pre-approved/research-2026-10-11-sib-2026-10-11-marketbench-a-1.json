@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-11-sib-2026-10-11-marketbench-a-1",
+  "date": "2026-10-11",
+  "project": "research",
+  "angle": "angle:sib-2026-10-11-2026-10-11-marketbench-a-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "In 591 real AI agent sessions, 37% of \"done\" claims came after a passing test run followed by more edits, with no re-check. Saying \"done\" costs the model almost nothing; re-verifying costs real time and compute. If you ship on its word, you're trusting the cheapest signal it produces."
+    }
+  ]
+}

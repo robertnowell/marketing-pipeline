@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-11-sib-2026-10-11-marketbench-a-2",
+  "date": "2026-10-11",
+  "project": "research",
+  "angle": "angle:sib-2026-10-11-2026-10-11-marketbench-a-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Asking an LLM to check whether your AI agent really finished the job barely beats a coin flip. Across 5 judge models and 5 prompting strategies, none exceeded AUROC 0.65. Best: Claude Sonnet 4.5 at 0.640. Reasoning models didn't help: DeepSeek-R1 peaked at 0.573."
+    }
+  ]
+}
