@@ -6,7 +6,7 @@
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Six AI coding models passed a similar share of real tasks: 75.3 to 80.6%. Asked how likely they were to succeed, their answers ran from 61.4% to 92.9%. When your agent says it will probably work, that is a guess, not a measurement. Check the output yourself."
+      "text": "Six frontier AI models were tested on 93 coding tasks. They passed 75.3 to 80.6% of them, but their own predicted odds of success ranged from 61.4% to 92.9%. If your agent grades its own work before you ship, you're reading noise. MarketBench, arXiv 2604.23897"
     }
   ]
 }

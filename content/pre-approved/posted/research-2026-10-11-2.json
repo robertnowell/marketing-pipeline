@@ -6,7 +6,7 @@
   "posts": [
     {
       "channel": "bluesky",
-      "text": "When only the AI agent can change state, it falsely reports success 45 to 48% of the time (AppWorld and tau2-bench). Add an independent check grounded in real state and false completion drops by roughly an order of magnitude. A second reviewer with read-only authority doesn't."
+      "text": "When only the agent can change state, it falsely claims success 45 to 48% of the time (AppWorld, tau2-bench). Independent, state-grounded checks cut that by roughly an order of magnitude. Read-only review by a second party doesn't. Verify the state, not the agent's word."
     }
   ]
 }

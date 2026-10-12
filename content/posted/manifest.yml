@@ -7989,3 +7989,45 @@
   angle: angle:sib-2026-10-11-2026-10-08-the-0-825-det-2
   source_id: research-2026-10-11-sib-2026-10-08-the-0-825-det-2
   posted_at: '2026-10-11'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxpcitjalk2h
+  angle: 2026-10-11-an-agent-claimed-progress-on-54-of-54-cy
+  source_id: research-2026-10-11-1
+  posted_at: '2026-10-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxpcivlri62w
+  angle: 2026-10-11-advani-s-two-benchmarks-false-success-ra
+  source_id: research-2026-10-11-2
+  posted_at: '2026-10-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxpcixmhji23
+  angle: 2026-10-11-marketbench-arxiv-2604-23897-six-models
+  source_id: research-2026-10-11-3
+  posted_at: '2026-10-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxpciztldt2g
+  angle: 2026-10-11-metr-s-feb-mar-2026-pilot-frontier-agent
+  source_id: research-2026-10-11-4
+  posted_at: '2026-10-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxpcj3z5mu2p
+  angle: 2026-10-11-sonar-surveyed-1-100-developers-in-janua
+  source_id: research-2026-10-11-5
+  posted_at: '2026-10-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxpcj67foe2p
+  angle: angle:sib-2026-10-11-2026-10-11-marketbench-a-1
+  source_id: research-2026-10-11-sib-2026-10-11-marketbench-a-1
+  posted_at: '2026-10-12'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxpcja7by32i
+  angle: angle:sib-2026-10-11-2026-10-11-marketbench-a-2
+  source_id: research-2026-10-11-sib-2026-10-11-marketbench-a-2
+  posted_at: '2026-10-12'
