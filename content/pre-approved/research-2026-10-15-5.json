@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-15-5",
+  "date": "2026-10-15",
+  "project": "research",
+  "angle": "2026-10-15-marketbench-s-self-knowledge-card-cut-ca",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI agents misjudge their own odds of success, in both directions. In MarketBench (93 coding tasks, six LLMs), a 'self-knowledge card' cut calibration error from 0.1065 to 0.0616. A self-report market still won only 29/50 vs 24/50 at p = 0.30. Calibration is not a routing win."
+    }
+  ]
+}

@@ -368,7 +368,7 @@ research:
       summary: 'Six AI models guessed their own success rate anywhere from 61.4% to
         92.9%. The real rate was 75.3–80.6% for all of them · thread: AI models guess
         their own success rate wrong, in both directions'
-      last_used:
+      last_used: '2026-10-15'
       provenance:
         post_id: p_5c8c4b615d18
         round_id: anti_slop:2026-10-15
@@ -377,7 +377,7 @@ research:
       summary: 'Gemini 3 Pro predicted it would use 1,801 tokens on a coding task.
         It used 55,969 · thread: AI models guess their own success rate wrong, in
         both directions'
-      last_used:
+      last_used: '2026-10-15'
       provenance:
         post_id: p_eab48e22020b
         round_id: anti_slop:2026-10-15
@@ -386,7 +386,7 @@ research:
       summary: "Anthropic's auto mode missed 17% of real overeager agent actions,
         and the company called that \"the honest number\" · thread: AI models guess
         their own success rate wrong, in both directions"
-      last_used:
+      last_used: '2026-10-15'
       provenance:
         post_id: p_38392cd0d2ba
         round_id: anti_slop:2026-10-15
@@ -395,7 +395,7 @@ research:
       summary: 'SEAL (arXiv 2607.24300, July 2026): agents that write their own tests
         post near-perfect scores while deployment performance stays low · thread:
         AI models guess their own success rate wrong, in both directions'
-      last_used:
+      last_used: '2026-10-15'
       provenance:
         post_id: p_e1c46503b7da
         round_id: anti_slop:2026-10-15
@@ -404,7 +404,7 @@ research:
       summary: "MarketBench's 'self-knowledge card' cut calibration error from 0.1065
         to 0.0616, yet a self-report market won 29/50 vs 24/50 at p = 0.30 · thread:
         AI models guess their own success rate wrong, in both directions"
-      last_used:
+      last_used: '2026-10-15'
       provenance:
         post_id: p_12a21eb505f6
         round_id: anti_slop:2026-10-15

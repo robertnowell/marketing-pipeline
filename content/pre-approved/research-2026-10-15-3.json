@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-15-3",
+  "date": "2026-10-15",
+  "project": "research",
+  "angle": "2026-10-15-anthropic-s-auto-mode-missed-17-of-real",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Agents guess their own odds of success wrong, in both directions. A preprint dated 26 April 2026 asked six LLMs to forecast pass probability and token cost on 93 coding tasks (558 model-task rows). If you route work by agent self-reports, you're routing on bad numbers."
+    }
+  ]
+}

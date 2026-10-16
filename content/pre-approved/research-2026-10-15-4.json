@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-15-4",
+  "date": "2026-10-15",
+  "project": "research",
+  "angle": "2026-10-15-seal-arxiv-2607-24300-july-2026-agents-t",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Researchers tested whether AI agents can forecast their own odds of success and token cost before being handed a task. The setup: 93 SWE-bench Lite tasks, six LLMs, 558 model-task rows, scored pass/fail. If you route work by an agent's self-estimate, audit it against outcomes."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-15-2",
+  "date": "2026-10-15",
+  "project": "research",
+  "angle": "2026-10-15-gemini-3-pro-predicted-it-would-use-1-80",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you route work to AI agents based on what they say they can do, the input is a forecast. A paper (v1, 26 April 2026) tested whether six LLMs can predict their own pass odds and token cost before a coding task: 93 SWE-bench Lite tasks, 558 model-task rows."
+    }
+  ]
+}

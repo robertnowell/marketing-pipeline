@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-15-1",
+  "date": "2026-10-15",
+  "project": "research",
+  "angle": "2026-10-15-six-ai-models-guessed-their-own-success",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Can an AI agent predict if it will solve a task before you hand it over? A paper posted 26 April 2026 tested six LLMs on 93 coding tasks. Their self-estimates missed in both directions. Don't route work by an agent's own confidence."
+    }
+  ]
+}
