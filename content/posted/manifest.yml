@@ -8085,3 +8085,33 @@
   angle: 2026-10-12-woodlake-anchor-s-dre-record-prints-an-e
   source_id: ''
   posted_at: '2026-10-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxytn3n3aj2s
+  angle: 2026-10-15-six-ai-models-guessed-their-own-success
+  source_id: research-2026-10-15-1
+  posted_at: '2026-10-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxytn5zvnh22
+  angle: 2026-10-15-gemini-3-pro-predicted-it-would-use-1-80
+  source_id: research-2026-10-15-2
+  posted_at: '2026-10-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxytn7zpze23
+  angle: 2026-10-15-anthropic-s-auto-mode-missed-17-of-real
+  source_id: research-2026-10-15-3
+  posted_at: '2026-10-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxytnc34aa2f
+  angle: 2026-10-15-seal-arxiv-2607-24300-july-2026-agents-t
+  source_id: research-2026-10-15-4
+  posted_at: '2026-10-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mxytne3mkw2p
+  angle: 2026-10-15-marketbench-s-self-knowledge-card-cut-ca
+  source_id: research-2026-10-15-5
+  posted_at: '2026-10-16'
