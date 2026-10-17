@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-16-1",
+  "date": "2026-10-16",
+  "project": "research",
+  "angle": "2026-10-16-datacurve-s-32-4-rests-on-30-swe-bench-p",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge disagreed with SWE-Bench Pro's own tests on 32.4% of coding-agent attempts (789 judged). On DeepSWE, another benchmark, it was 1.4%. If you pick coding agents by leaderboard, the grader matters as much as the model. Source: DeepSWE blog and its arXiv paper."
+    }
+  ]
+}

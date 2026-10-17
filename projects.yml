@@ -368,7 +368,7 @@ research:
       summary: "Datacurve's 32.4% rests on 30 SWE-Bench Pro tasks, sampled 3 times
         each across 9 configurations · thread: An AI grader overruled a famous coding
         benchmark's tests on a third of attempts"
-      last_used:
+      last_used: '2026-10-16'
       provenance:
         post_id: p_f87beda326f9
         round_id: quiet_machines:2026-10-16
@@ -377,7 +377,7 @@ research:
       summary: "DeepSWE's judge agreed with its verifiers on 735 attempts, but those
         verifiers were written from the same description as the answer key the judge
         read · thread: An AI grader overruled a famous coding benchmark's tests…"
-      last_used:
+      last_used: '2026-10-16'
       provenance:
         post_id: p_e31404ddafe3
         round_id: quiet_machines:2026-10-16
@@ -386,7 +386,7 @@ research:
       summary: "Datacurve says its own audit is \"not a ground-truth error rate,\"\
         \ and four checks that would settle it were not run · thread: An AI grader
         overruled a famous coding benchmark's tests on a third of attempts"
-      last_used:
+      last_used: '2026-10-16'
       provenance:
         post_id: p_25ab9cd21640
         round_id: quiet_machines:2026-10-16
@@ -395,7 +395,7 @@ research:
       summary: "In Datacurve's SWE-Bench Pro audit, 189 of the 256 judge disagreements
         were the judge saying a failed attempt should have passed · thread: An AI
         grader overruled a famous coding benchmark's tests on a third of attempts"
-      last_used:
+      last_used: '2026-10-16'
       provenance:
         post_id: p_495b2671a81d
         round_id: quiet_machines:2026-10-16
@@ -404,7 +404,7 @@ research:
       summary: "In Datacurve's audit, 67 SWE-Bench Pro passes were judged improper
         and 189 failures judged wrong, so the leaderboard shows only the net · thread:
         An AI grader overruled a famous coding benchmark's tests on a third of…"
-      last_used:
+      last_used: '2026-10-16'
       provenance:
         post_id: p_9f3663412ffa
         round_id: quiet_machines:2026-10-16

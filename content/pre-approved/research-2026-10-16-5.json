@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-16-5",
+  "date": "2026-10-16",
+  "project": "research",
+  "angle": "2026-10-16-in-datacurve-s-audit-67-swe-bench-pro-pa",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI grader disagreed with SWE-Bench Pro's own tests on 32.4% of 789 coding-agent runs: 67 passes judged improper, 189 failures judged wrong. The leaderboard shows only the net. If you pick a coding agent by benchmark rank, the score hides the noise. Same audit on DeepSWE: 1.4%."
+    }
+  ]
+}

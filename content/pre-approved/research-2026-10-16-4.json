@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-16-4",
+  "date": "2026-10-16",
+  "project": "research",
+  "angle": "2026-10-16-in-datacurve-s-swe-bench-pro-audit-189-o",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge overruled SWE-Bench Pro's own tests on 32.4% of 789 coding-agent attempts. In 189 cases it said a failed attempt should have passed. If you choose AI coding tools by benchmark score, check what graded them. On DeepSWE the rate was 1.4%."
+    }
+  ]
+}

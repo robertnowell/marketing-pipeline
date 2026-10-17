@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-16-2",
+  "date": "2026-10-16",
+  "project": "research",
+  "angle": "2026-10-16-deepswe-s-judge-agreed-with-its-verifier",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI grader disagreed with the tests on 32.4% of SWE-Bench Pro coding-agent runs (789 judged). On DeepSWE: 1.4% (735). Don't read that as cleaner tests: DeepSWE's verifiers and the judge's answer key were written from the same description, so agreement may just be shared blind spots."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-16-3",
+  "date": "2026-10-16",
+  "project": "research",
+  "angle": "2026-10-16-datacurve-says-its-own-audit-is-not-a-gr",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI grader disagreed with SWE-Bench Pro's tests on 32.4% of 789 coding-agent rollouts (95% CI 29.2 to 35.8%). Datacurve, whose own audit this is, calls it \"not a ground-truth error rate,\" and four checks that would settle it were not run. Treat leaderboard scores as rough."
+    }
+  ]
+}
