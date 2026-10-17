@@ -353,61 +353,61 @@ research:
   channels:
     - bluesky
   facts:
-    - '### 1. MarketBench: what it measures and what it found (Established) Fradkin
-      and Krishnan (v1, 26 April 2026) test whether agents can forecast their own
-      success probability and token cost before a task is assigned, as an input to
-      market-style task allocation. Setup: 93 SWE-bench Lite tasks, six LLMs, 558
-      model-task rows, binary pass/fail. (Sources: S1, S2 [Tier 1]; confirmed independently
-      by…'
+    - '### 1. The numbers (Established) Two Tier 1 sources agree: the DeepSWE blog
+      (published 2026-05-26) and the arXiv paper (submitted 2026-07-08). | Benchmark
+      | Rollouts judged | False positives | False negatives | Disagreement | 95% CI
+      | |---|---|---|---|---|---| | SWE-Bench Pro | 789 | 67 | 189 | 32.4% | [29.2,
+      35.8]% | | DeepSWE | 735 | 2 | 8 | 1.4% | [0.7, 2.5]% | - Design: 30 tasks drawn
+      at…'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-10-13-marketbench-self-assessment-safety-checks' dated 
-      2026-10-15, and from a simulated review round where 10 agent-written posts
-      were ranked by votes.
+      report '2026-10-11-deepswe-judge-vs-swebench-pro-tests' dated 2026-10-16, 
+      and from a simulated review round where 10 agent-written posts were ranked
+      by votes.
   angles:
-    - id: 2026-10-15-six-ai-models-guessed-their-own-success
-      summary: 'Six AI models guessed their own success rate anywhere from 61.4% to
-        92.9%. The real rate was 75.3–80.6% for all of them · thread: AI models guess
-        their own success rate wrong, in both directions'
-      last_used: '2026-10-15'
+    - id: 2026-10-16-datacurve-s-32-4-rests-on-30-swe-bench-p
+      summary: "Datacurve's 32.4% rests on 30 SWE-Bench Pro tasks, sampled 3 times
+        each across 9 configurations · thread: An AI grader overruled a famous coding
+        benchmark's tests on a third of attempts"
+      last_used:
       provenance:
-        post_id: p_5c8c4b615d18
-        round_id: anti_slop:2026-10-15
-        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
-    - id: 2026-10-15-gemini-3-pro-predicted-it-would-use-1-80
-      summary: 'Gemini 3 Pro predicted it would use 1,801 tokens on a coding task.
-        It used 55,969 · thread: AI models guess their own success rate wrong, in
-        both directions'
-      last_used: '2026-10-15'
+        post_id: p_f87beda326f9
+        round_id: quiet_machines:2026-10-16
+        report_label: 2026-10-11-deepswe-judge-vs-swebench-pro-tests
+    - id: 2026-10-16-deepswe-s-judge-agreed-with-its-verifier
+      summary: "DeepSWE's judge agreed with its verifiers on 735 attempts, but those
+        verifiers were written from the same description as the answer key the judge
+        read · thread: An AI grader overruled a famous coding benchmark's tests…"
+      last_used:
       provenance:
-        post_id: p_eab48e22020b
-        round_id: anti_slop:2026-10-15
-        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
-    - id: 2026-10-15-anthropic-s-auto-mode-missed-17-of-real
-      summary: "Anthropic's auto mode missed 17% of real overeager agent actions,
-        and the company called that \"the honest number\" · thread: AI models guess
-        their own success rate wrong, in both directions"
-      last_used: '2026-10-15'
+        post_id: p_e31404ddafe3
+        round_id: quiet_machines:2026-10-16
+        report_label: 2026-10-11-deepswe-judge-vs-swebench-pro-tests
+    - id: 2026-10-16-datacurve-says-its-own-audit-is-not-a-gr
+      summary: "Datacurve says its own audit is \"not a ground-truth error rate,\"\
+        \ and four checks that would settle it were not run · thread: An AI grader
+        overruled a famous coding benchmark's tests on a third of attempts"
+      last_used:
       provenance:
-        post_id: p_38392cd0d2ba
-        round_id: anti_slop:2026-10-15
-        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
-    - id: 2026-10-15-seal-arxiv-2607-24300-july-2026-agents-t
-      summary: 'SEAL (arXiv 2607.24300, July 2026): agents that write their own tests
-        post near-perfect scores while deployment performance stays low · thread:
-        AI models guess their own success rate wrong, in both directions'
-      last_used: '2026-10-15'
+        post_id: p_25ab9cd21640
+        round_id: quiet_machines:2026-10-16
+        report_label: 2026-10-11-deepswe-judge-vs-swebench-pro-tests
+    - id: 2026-10-16-in-datacurve-s-swe-bench-pro-audit-189-o
+      summary: "In Datacurve's SWE-Bench Pro audit, 189 of the 256 judge disagreements
+        were the judge saying a failed attempt should have passed · thread: An AI
+        grader overruled a famous coding benchmark's tests on a third of attempts"
+      last_used:
       provenance:
-        post_id: p_e1c46503b7da
-        round_id: anti_slop:2026-10-15
-        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
-    - id: 2026-10-15-marketbench-s-self-knowledge-card-cut-ca
-      summary: "MarketBench's 'self-knowledge card' cut calibration error from 0.1065
-        to 0.0616, yet a self-report market won 29/50 vs 24/50 at p = 0.30 · thread:
-        AI models guess their own success rate wrong, in both directions"
-      last_used: '2026-10-15'
+        post_id: p_495b2671a81d
+        round_id: quiet_machines:2026-10-16
+        report_label: 2026-10-11-deepswe-judge-vs-swebench-pro-tests
+    - id: 2026-10-16-in-datacurve-s-audit-67-swe-bench-pro-pa
+      summary: "In Datacurve's audit, 67 SWE-Bench Pro passes were judged improper
+        and 189 failures judged wrong, so the leaderboard shows only the net · thread:
+        An AI grader overruled a famous coding benchmark's tests on a third of…"
+      last_used:
       provenance:
-        post_id: p_12a21eb505f6
-        round_id: anti_slop:2026-10-15
-        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
+        post_id: p_9f3663412ffa
+        round_id: quiet_machines:2026-10-16
+        report_label: 2026-10-11-deepswe-judge-vs-swebench-pro-tests
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-10-15-ai-models-guess-their-own-success-rate-w.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-10-16-an-ai-grader-overruled-a-famous-coding-b.png
