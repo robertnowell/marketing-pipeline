@@ -8115,3 +8115,33 @@
   angle: 2026-10-15-marketbench-s-self-knowledge-card-cut-ca
   source_id: research-2026-10-15-5
   posted_at: '2026-10-16'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3my3afy5twk2i
+  angle: 2026-10-16-datacurve-s-32-4-rests-on-30-swe-bench-p
+  source_id: research-2026-10-16-1
+  posted_at: '2026-10-17'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3my3afzwvlm2p
+  angle: 2026-10-16-deepswe-s-judge-agreed-with-its-verifier
+  source_id: research-2026-10-16-2
+  posted_at: '2026-10-17'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3my3ag3ol5l22
+  angle: 2026-10-16-datacurve-says-its-own-audit-is-not-a-gr
+  source_id: research-2026-10-16-3
+  posted_at: '2026-10-17'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3my3ag5g4a72h
+  angle: 2026-10-16-in-datacurve-s-swe-bench-pro-audit-189-o
+  source_id: research-2026-10-16-4
+  posted_at: '2026-10-17'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3my3ag754mf23
+  angle: 2026-10-16-in-datacurve-s-audit-67-swe-bench-pro-pa
+  source_id: research-2026-10-16-5
+  posted_at: '2026-10-17'
