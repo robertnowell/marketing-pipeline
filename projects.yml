@@ -368,7 +368,7 @@ research:
       summary: "Datacurve's 32.4% rests on 30 SWE-Bench Pro tasks, sampled 3 times
         each across 9 configurations · thread: An AI grader overruled a famous coding
         benchmark's tests on a third of attempts"
-      last_used: '2026-10-16'
+      last_used: '2026-10-18'
       provenance:
         post_id: p_f87beda326f9
         round_id: quiet_machines:2026-10-16
