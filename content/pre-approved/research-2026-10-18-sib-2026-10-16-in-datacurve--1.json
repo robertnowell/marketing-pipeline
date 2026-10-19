@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-18-sib-2026-10-16-in-datacurve--1",
+  "date": "2026-10-18",
+  "project": "research",
+  "angle": "angle:sib-2026-10-18-2026-10-16-in-datacurve--1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A coding-agent benchmark's own tests were overruled by an AI judge on 32.4% of 789 attempts (SWE-Bench Pro). In 189 of them, the judge said a failed attempt should have passed. Leaderboard scores you use to pick a coding tool may be measuring the grader. Source: DeepSWE blog, 2026-05-26."
+    }
+  ]
+}
