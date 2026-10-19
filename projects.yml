@@ -404,7 +404,7 @@ research:
       summary: "In Datacurve's audit, 67 SWE-Bench Pro passes were judged improper
         and 189 failures judged wrong, so the leaderboard shows only the net · thread:
         An AI grader overruled a famous coding benchmark's tests on a third of…"
-      last_used: '2026-10-16'
+      last_used: '2026-10-19'
       provenance:
         post_id: p_9f3663412ffa
         round_id: quiet_machines:2026-10-16
