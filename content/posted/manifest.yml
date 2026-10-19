@@ -8163,3 +8163,15 @@
   angle: 2026-10-16-datacurve-says-its-own-audit-is-not-a-gr
   source_id: ''
   posted_at: '2026-10-18'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3myam7myqkq2s
+  angle: angle:sib-2026-10-18-2026-10-16-in-datacurve--1
+  source_id: research-2026-10-18-sib-2026-10-16-in-datacurve--1
+  posted_at: '2026-10-19'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3myamagpusm2m
+  angle: 2026-10-16-in-datacurve-s-swe-bench-pro-audit-189-o
+  source_id: ''
+  posted_at: '2026-10-19'
