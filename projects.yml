@@ -377,7 +377,7 @@ research:
       summary: "DeepSWE's judge agreed with its verifiers on 735 attempts, but those
         verifiers were written from the same description as the answer key the judge
         read · thread: An AI grader overruled a famous coding benchmark's tests…"
-      last_used: '2026-10-19'
+      last_used: '2026-10-20'
       provenance:
         post_id: p_e31404ddafe3
         round_id: quiet_machines:2026-10-16
