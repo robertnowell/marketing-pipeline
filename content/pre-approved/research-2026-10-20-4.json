@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-20-4",
+  "date": "2026-10-20",
+  "project": "research",
+  "angle": "2026-10-20-rewriting-only-an-agent-s-reasoning-text",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Rewrite only the reasoning text an AI agent shows, keep its actions identical, and AI judges' false-positive rate jumps 20-30 points. Tested on 800 web trajectories and 9 judge models (arXiv 2601.14691). An LLM grading your agent is grading the story, not the result."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-20-3",
+  "date": "2026-10-20",
+  "project": "research",
+  "angle": "2026-10-20-advani-s-false-success-detector-goes-fro",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "No LLM judge tested in arXiv 2606.09863 exceeded AUROC 0.65 at spotting AI agents that falsely claim success. A word-counting TF-IDF classifier hits 0.83 after 100 labeled examples per class, up from 0.69 zero-shot. If you ship agents, label your own failures first."
+    }
+  ]
+}

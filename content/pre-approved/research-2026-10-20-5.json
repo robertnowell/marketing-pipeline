@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-20-5",
+  "date": "2026-10-20",
+  "project": "research",
+  "angle": "2026-10-20-opencomputer-s-verifier-matched-humans-o",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An LLM judge can't reliably tell whether your AI agent finished the job. On tau2-bench, a GPT-4o judge scored 0.545 AUROC at spotting false successes; a TF-IDF text classifier scored 0.825. Judges get anchored by confident closing language. Source: arXiv 2606.09863"
+    }
+  ]
+}

@@ -417,7 +417,7 @@ research:
       summary: "\"0.640 vs 0.825\" mixes two cells of Advani's tables; the paper's
         own pairing is GPT-4o 0.545 vs 0.825, and 0.537 vs 0.953 on AppWorld · thread:
         A simple word-counting classifier beat the best AI judge at catching false…"
-      last_used:
+      last_used: '2026-10-20'
       provenance:
         post_id: p_ec14206b7af3
         round_id: anti_slop:2026-10-20
@@ -426,7 +426,7 @@ research:
       summary: "Advani's 0.640 \"best judge\" is the top of 25 judge-and-prompt cells;
         Sonnet 4.5's default prompt scored 0.576 · thread: A simple word-counting
         classifier beat the best AI judge at catching false success claims"
-      last_used:
+      last_used: '2026-10-20'
       provenance:
         post_id: p_988de5644382
         round_id: anti_slop:2026-10-20
@@ -435,7 +435,7 @@ research:
       summary: "Advani's false-success detector goes from 0.69 to 0.83 AUROC with
         100 labeled examples per class, which prices the 'simple beats LLM' claim
         · thread: A simple word-counting classifier beat the best AI judge at catching…"
-      last_used:
+      last_used: '2026-10-20'
       provenance:
         post_id: p_fbe4be6ea6e9
         round_id: anti_slop:2026-10-20
@@ -444,7 +444,7 @@ research:
       summary: "Rewriting only an agent's reasoning text, with actions unchanged,
         raised judges' false-positive rate by 20-30 points (arXiv 2601.14691) · thread:
         A simple word-counting classifier beat the best AI judge at catching…"
-      last_used:
+      last_used: '2026-10-20'
       provenance:
         post_id: p_ffbbb8da3037
         round_id: anti_slop:2026-10-20
@@ -453,7 +453,7 @@ research:
       summary: "OpenComputer's verifier matched humans on 113 of 120 tasks; DeepSWE's
         32.4% vs 1.4% measures something else · thread: A simple word-counting classifier
         beat the best AI judge at catching false success claims"
-      last_used:
+      last_used: '2026-10-20'
       provenance:
         post_id: p_489ade9ac1c5
         round_id: anti_slop:2026-10-20

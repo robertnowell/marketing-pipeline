@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-20-2",
+  "date": "2026-10-20",
+  "project": "research",
+  "angle": "2026-10-20-advani-s-0-640-best-judge-is-the-top-of",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge checking whether your AI agent really finished the job tops out near 0.64. 5 judges x 5 prompts, none exceeded 0.65 AUROC. A word-counting classifier hit 0.825 (arXiv 2606.09863). Judges get anchored by confident closing language."
+    }
+  ]
+}
