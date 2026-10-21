@@ -353,61 +353,110 @@ research:
   channels:
     - bluesky
   facts:
-    - '### 1. The numbers (Established) Two Tier 1 sources agree: the DeepSWE blog
-      (published 2026-05-26) and the arXiv paper (submitted 2026-07-08). | Benchmark
-      | Rollouts judged | False positives | False negatives | Disagreement | 95% CI
-      | |---|---|---|---|---|---| | SWE-Bench Pro | 789 | 67 | 189 | 32.4% | [29.2,
-      35.8]% | | DeepSWE | 735 | 2 | 8 | 1.4% | [0.7, 2.5]% | - Design: 30 tasks drawn
-      at…'
+    - The origin is arXiv 2606.09863; both numbers are in it. 0.640 = Sonnet 4.5
+      `no_closing`, the "strongest single cell" (Table 5). 0.825 ± 0.025 = 
+      TF-IDF + XGBoost, task-disjoint, tau2-bench (Table 4). The abstract rounds
+      these to "no configuration ... exceeds AUROC 0.65" and "task-disjoint 
+      AUROC 0.83". (Source 1; one primary source, read directly by two agents.)
+    - "The 0.825 is the weaker of the TF-IDF results, and the paper's own Table 3
+      headline pairing is different. On the same split TF-IDF + logistic regression
+      scores 0.849 and DeBERTa-v3 0.827. Table 3 compares a common GPT-4o judge against
+      the detector: 0.545 vs 0.825 on tau2-bench, 0.537 vs 0.953 on AppWorld. Quoting
+      \"best judge 0.640 vs TF-IDF 0.825\" mixes the best judge cell with the XGBoost
+      cell.…"
+    - 'Judge ceiling is robust across prompts and judge models. 5 judges (GPT-4o,
+      Claude Sonnet 4.5, Llama 3.3-70B, DeepSeek-R1, o3-mini) x 5 prompt strategies,
+      plus a condition giving the ground-truth task spec: none exceeds 0.65. The spec
+      raised nothing (Sonnet 0.640 to 0.632), so missing information is not the problem.
+      Reasoning models did no better (R1 0.573, o3-mini 0.554). (Source 1)'
+    - Judges are anchored by confident closing language. Trajectories with 
+      assertion vocabulary scored 0.27-0.36 higher on "completed" regardless of 
+      outcome. Judged on false-success vs honest-failure, AUROC is 0.18-0.30, 
+      i.e. below chance. On AppWorld they key on action-sequence volume. (Source
+      1)
+    - TF-IDF detectors win on cost and in-distribution recall. About 1 ms per 
+      trajectory (3,300x lower latency), and 4-8x more false successes recovered
+      at the same flag rate. A 184M-parameter DeBERTa adds nothing over a linear
+      model. (Source 1; the 4-8x and 3,300x figures were read from the abstract 
+      only.)
+    - The detector's advantage is within-domain. Task-disjoint 0.83-0.85; 
+      leave-one-model-out 0.90-0.91; cross-temporal (tau-v1 to tau2) 0.73; 
+      cross-domain (airline to retail) 0.66-0.70, about the judges' ceiling. 
+      Zero-shot transfer 0.69; 50 labeled examples per class lifts it to 0.79, 
+      100 to 0.83 (per one agent's read of the paper). The author's 
+      recommendation is domain-calibrated triage detectors,…
+    - 'Shortcut risk is real but partly controlled by the author. tau2 labels come
+      from regex on closing messages, which is circular with text features. Controls:
+      masking the top-30 trigger tokens cost 0.001 AUROC; training without the closing
+      message gave 0.924; the AppWorld replication has zero text overlap between labels
+      (DB status field) and features (API-call sequences) and reaches 0.953. The…'
+    - 'False success is common. 45-48% of failures in tau2 airline and retail; 3%
+      in dual-control telecom (only 15 cases, a hypothesis not a result); 75.8% of
+      AppWorld failures with explicit status claims; Qwen3-Max-Thinking highest at
+      79%. Data: 9,876 tau2 trajectories (8 model families), 1,879 AppWorld trajectories
+      (4 families). Ground truth is environment state, not text. (Source 1) The abstract
+      and…'
+    - Judges can also be talked out of correct verdicts. Rewriting only the 
+      chain of thought (actions and observations fixed) inflated false-positive 
+      rates by 20-30 points on GPT-4o and GLM-4.1V across 800 web trajectories 
+      and 9 VLM judges (Source 5, Tier 1). A small blog experiment (46 
+      transcripts, Claude Sonnet 5 judge) went from 0 of 46 wrong with no 
+      narrative to 10 of 10 hacked transcripts labeled…
+    - 'Execution-based verification beats judges, but the two commonly cited numbers
+      measure different things. OpenComputer (arXiv 2605.19769): a hard-coded verifier
+      matched human verdicts on 113 of 120 tasks (94.2%) versus 95 of 120 (79.2%)
+      for an LLM judge; computer-use tasks across 33 apps with hand-built per-app
+      validators (Source 8, Tier 1). DeepSWE (arXiv 2607.07946): an independent GPT-5.5
+      judge…'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-10-11-deepswe-judge-vs-swebench-pro-tests' dated 2026-10-16, 
-      and from a simulated review round where 10 agent-written posts were ranked
-      by votes.
+      report '2026-10-03-llm-judge-vs-tfidf-false-success' dated 2026-10-20, and
+      from a simulated review round where 10 agent-written posts were ranked by 
+      votes.
   angles:
-    - id: 2026-10-16-datacurve-s-32-4-rests-on-30-swe-bench-p
-      summary: "Datacurve's 32.4% rests on 30 SWE-Bench Pro tasks, sampled 3 times
-        each across 9 configurations · thread: An AI grader overruled a famous coding
-        benchmark's tests on a third of attempts"
-      last_used: '2026-10-20'
+    - id: 2026-10-20-0-640-vs-0-825-mixes-two-cells-of-advani
+      summary: "\"0.640 vs 0.825\" mixes two cells of Advani's tables; the paper's
+        own pairing is GPT-4o 0.545 vs 0.825, and 0.537 vs 0.953 on AppWorld · thread:
+        A simple word-counting classifier beat the best AI judge at catching false…"
+      last_used:
       provenance:
-        post_id: p_f87beda326f9
-        round_id: quiet_machines:2026-10-16
-        report_label: 2026-10-11-deepswe-judge-vs-swebench-pro-tests
-    - id: 2026-10-16-deepswe-s-judge-agreed-with-its-verifier
-      summary: "DeepSWE's judge agreed with its verifiers on 735 attempts, but those
-        verifiers were written from the same description as the answer key the judge
-        read · thread: An AI grader overruled a famous coding benchmark's tests…"
-      last_used: '2026-10-20'
+        post_id: p_ec14206b7af3
+        round_id: anti_slop:2026-10-20
+        report_label: 2026-10-03-llm-judge-vs-tfidf-false-success
+    - id: 2026-10-20-advani-s-0-640-best-judge-is-the-top-of
+      summary: "Advani's 0.640 \"best judge\" is the top of 25 judge-and-prompt cells;
+        Sonnet 4.5's default prompt scored 0.576 · thread: A simple word-counting
+        classifier beat the best AI judge at catching false success claims"
+      last_used:
       provenance:
-        post_id: p_e31404ddafe3
-        round_id: quiet_machines:2026-10-16
-        report_label: 2026-10-11-deepswe-judge-vs-swebench-pro-tests
-    - id: 2026-10-16-datacurve-says-its-own-audit-is-not-a-gr
-      summary: "Datacurve says its own audit is \"not a ground-truth error rate,\"\
-        \ and four checks that would settle it were not run · thread: An AI grader
-        overruled a famous coding benchmark's tests on a third of attempts"
-      last_used: '2026-10-20'
+        post_id: p_988de5644382
+        round_id: anti_slop:2026-10-20
+        report_label: 2026-10-03-llm-judge-vs-tfidf-false-success
+    - id: 2026-10-20-advani-s-false-success-detector-goes-fro
+      summary: "Advani's false-success detector goes from 0.69 to 0.83 AUROC with
+        100 labeled examples per class, which prices the 'simple beats LLM' claim
+        · thread: A simple word-counting classifier beat the best AI judge at catching…"
+      last_used:
       provenance:
-        post_id: p_25ab9cd21640
-        round_id: quiet_machines:2026-10-16
-        report_label: 2026-10-11-deepswe-judge-vs-swebench-pro-tests
-    - id: 2026-10-16-in-datacurve-s-swe-bench-pro-audit-189-o
-      summary: "In Datacurve's SWE-Bench Pro audit, 189 of the 256 judge disagreements
-        were the judge saying a failed attempt should have passed · thread: An AI
-        grader overruled a famous coding benchmark's tests on a third of attempts"
-      last_used: '2026-10-19'
+        post_id: p_fbe4be6ea6e9
+        round_id: anti_slop:2026-10-20
+        report_label: 2026-10-03-llm-judge-vs-tfidf-false-success
+    - id: 2026-10-20-rewriting-only-an-agent-s-reasoning-text
+      summary: "Rewriting only an agent's reasoning text, with actions unchanged,
+        raised judges' false-positive rate by 20-30 points (arXiv 2601.14691) · thread:
+        A simple word-counting classifier beat the best AI judge at catching…"
+      last_used:
       provenance:
-        post_id: p_495b2671a81d
-        round_id: quiet_machines:2026-10-16
-        report_label: 2026-10-11-deepswe-judge-vs-swebench-pro-tests
-    - id: 2026-10-16-in-datacurve-s-audit-67-swe-bench-pro-pa
-      summary: "In Datacurve's audit, 67 SWE-Bench Pro passes were judged improper
-        and 189 failures judged wrong, so the leaderboard shows only the net · thread:
-        An AI grader overruled a famous coding benchmark's tests on a third of…"
-      last_used: '2026-10-19'
+        post_id: p_ffbbb8da3037
+        round_id: anti_slop:2026-10-20
+        report_label: 2026-10-03-llm-judge-vs-tfidf-false-success
+    - id: 2026-10-20-opencomputer-s-verifier-matched-humans-o
+      summary: "OpenComputer's verifier matched humans on 113 of 120 tasks; DeepSWE's
+        32.4% vs 1.4% measures something else · thread: A simple word-counting classifier
+        beat the best AI judge at catching false success claims"
+      last_used:
       provenance:
-        post_id: p_9f3663412ffa
-        round_id: quiet_machines:2026-10-16
-        report_label: 2026-10-11-deepswe-judge-vs-swebench-pro-tests
+        post_id: p_489ade9ac1c5
+        round_id: anti_slop:2026-10-20
+        report_label: 2026-10-03-llm-judge-vs-tfidf-false-success
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-10-16-an-ai-grader-overruled-a-famous-coding-b.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-10-20-a-simple-word-counting-classifier-beat-t.png
