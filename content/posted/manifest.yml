@@ -8211,3 +8211,33 @@
   angle: 2026-10-16-deepswe-s-judge-agreed-with-its-verifier
   source_id: ''
   posted_at: '2026-10-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3myfhr76efk2q
+  angle: 2026-10-20-0-640-vs-0-825-mixes-two-cells-of-advani
+  source_id: research-2026-10-20-1
+  posted_at: '2026-10-21'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3myfhrapnhe2c
+  angle: 2026-10-20-advani-s-0-640-best-judge-is-the-top-of
+  source_id: research-2026-10-20-2
+  posted_at: '2026-10-21'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3myfhrc3lpk2w
+  angle: 2026-10-20-advani-s-false-success-detector-goes-fro
+  source_id: research-2026-10-20-3
+  posted_at: '2026-10-21'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3myfhrdj3sh27
+  angle: 2026-10-20-rewriting-only-an-agent-s-reasoning-text
+  source_id: research-2026-10-20-4
+  posted_at: '2026-10-21'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3myfhrew5a32d
+  angle: 2026-10-20-opencomputer-s-verifier-matched-humans-o
+  source_id: research-2026-10-20-5
+  posted_at: '2026-10-21'
