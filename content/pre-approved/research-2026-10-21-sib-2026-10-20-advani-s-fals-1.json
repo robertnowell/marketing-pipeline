@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-21-sib-2026-10-20-advani-s-fals-1",
+  "date": "2026-10-21",
+  "project": "research",
+  "angle": "angle:sib-2026-10-21-2026-10-20-advani-s-fals-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The 'AI judge 0.640 vs word-counting classifier 0.825' stat for catching agents that falsely claim success mixes two different cells. 0.640 is Sonnet 4.5's best single cell (Table 5). 0.825 is TF-IDF + XGBoost on tau2-bench (Table 4). Source: arXiv 2606.09863"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-21-sib-2026-10-20-advani-s-fals-2",
+  "date": "2026-10-21",
+  "project": "research",
+  "angle": "angle:sib-2026-10-21-2026-10-20-advani-s-fals-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you use an LLM to check whether your AI agent really finished the job, a paper (arXiv 2606.09863) tested 5 judges, including GPT-4o and Claude Sonnet 4.5, across 5 prompt strategies. None exceeded 0.65 AUROC. Don't ship an LLM judge as your only success check."
+    }
+  ]
+}
