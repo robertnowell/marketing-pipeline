@@ -353,110 +353,104 @@ research:
   channels:
     - bluesky
   facts:
-    - The origin is arXiv 2606.09863; both numbers are in it. 0.640 = Sonnet 4.5
-      `no_closing`, the "strongest single cell" (Table 5). 0.825 ± 0.025 = 
-      TF-IDF + XGBoost, task-disjoint, tau2-bench (Table 4). The abstract rounds
-      these to "no configuration ... exceeds AUROC 0.65" and "task-disjoint 
-      AUROC 0.83". (Source 1; one primary source, read directly by two agents.)
-    - "The 0.825 is the weaker of the TF-IDF results, and the paper's own Table 3
-      headline pairing is different. On the same split TF-IDF + logistic regression
-      scores 0.849 and DeBERTa-v3 0.827. Table 3 compares a common GPT-4o judge against
-      the detector: 0.545 vs 0.825 on tau2-bench, 0.537 vs 0.953 on AppWorld. Quoting
-      \"best judge 0.640 vs TF-IDF 0.825\" mixes the best judge cell with the XGBoost
-      cell.…"
-    - 'Judge ceiling is robust across prompts and judge models. 5 judges (GPT-4o,
-      Claude Sonnet 4.5, Llama 3.3-70B, DeepSeek-R1, o3-mini) x 5 prompt strategies,
-      plus a condition giving the ground-truth task spec: none exceeds 0.65. The spec
-      raised nothing (Sonnet 0.640 to 0.632), so missing information is not the problem.
-      Reasoning models did no better (R1 0.573, o3-mini 0.554). (Source 1)'
-    - Judges are anchored by confident closing language. Trajectories with 
-      assertion vocabulary scored 0.27-0.36 higher on "completed" regardless of 
-      outcome. Judged on false-success vs honest-failure, AUROC is 0.18-0.30, 
-      i.e. below chance. On AppWorld they key on action-sequence volume. (Source
-      1)
-    - TF-IDF detectors win on cost and in-distribution recall. About 1 ms per 
-      trajectory (3,300x lower latency), and 4-8x more false successes recovered
-      at the same flag rate. A 184M-parameter DeBERTa adds nothing over a linear
-      model. (Source 1; the 4-8x and 3,300x figures were read from the abstract 
-      only.)
-    - The detector's advantage is within-domain. Task-disjoint 0.83-0.85; 
-      leave-one-model-out 0.90-0.91; cross-temporal (tau-v1 to tau2) 0.73; 
-      cross-domain (airline to retail) 0.66-0.70, about the judges' ceiling. 
-      Zero-shot transfer 0.69; 50 labeled examples per class lifts it to 0.79, 
-      100 to 0.83 (per one agent's read of the paper). The author's 
-      recommendation is domain-calibrated triage detectors,…
-    - 'Shortcut risk is real but partly controlled by the author. tau2 labels come
-      from regex on closing messages, which is circular with text features. Controls:
-      masking the top-30 trigger tokens cost 0.001 AUROC; training without the closing
-      message gave 0.924; the AppWorld replication has zero text overlap between labels
-      (DB status field) and features (API-call sequences) and reaches 0.953. The…'
-    - 'False success is common. 45-48% of failures in tau2 airline and retail; 3%
-      in dual-control telecom (only 15 cases, a hypothesis not a result); 75.8% of
-      AppWorld failures with explicit status claims; Qwen3-Max-Thinking highest at
-      79%. Data: 9,876 tau2 trajectories (8 model families), 1,879 AppWorld trajectories
-      (4 families). Ground truth is environment state, not text. (Source 1) The abstract
-      and…'
-    - Judges can also be talked out of correct verdicts. Rewriting only the 
-      chain of thought (actions and observations fixed) inflated false-positive 
-      rates by 20-30 points on GPT-4o and GLM-4.1V across 800 web trajectories 
-      and 9 VLM judges (Source 5, Tier 1). A small blog experiment (46 
-      transcripts, Claude Sonnet 5 judge) went from 0 of 46 wrong with no 
-      narrative to 10 of 10 hacked transcripts labeled…
-    - 'Execution-based verification beats judges, but the two commonly cited numbers
-      measure different things. OpenComputer (arXiv 2605.19769): a hard-coded verifier
-      matched human verdicts on 113 of 120 tasks (94.2%) versus 95 of 120 (79.2%)
-      for an LLM judge; computer-use tasks across 33 apps with hand-built per-app
-      validators (Source 8, Tier 1). DeepSWE (arXiv 2607.07946): an independent GPT-5.5
-      judge…'
+    - "Exact counts and direction. n=789 SWE-Bench Pro rollouts, 67 false positives,
+      189 false negatives, 256 disagreements (32.4%). Same judge on DeepSWE: 2 and
+      8 of 735 (1.4%). A false negative is when \"the verifier failed but the judge
+      concludes the patch is a reasonable solution to the prompt.\" Confidence: Established
+      (Datacurve paper [Tier 1], read in three fetches; the blog's 24.0%/8.5% matches…"
+    - "The judge's identity and inputs. GPT-5.5 at xhigh reasoning effort, run as
+      a Codex CLI agent. It sees the task definition, the agent trajectory and patch,
+      the verifier output, and the hidden reference solution. Confidence: Likely ([Tier
+      1] paper §3.4/§7; the fetch tool paraphrased rather than returned raw text,
+      and an earlier agent reading the blog said the model was unnamed)."
+    - 'Design is small. 30 random tasks per benchmark, 9 of 16 agent configurations,
+      3 rollouts per task; some rollouts excluded (API errors, timeouts). Confidence:
+      Likely ([Tier 1] paper; the blog describes 10 configurations, a minor discrepancy).'
+    - 'Confidence intervals are probably too narrow. The paper uses Clopper–Pearson
+      intervals over rollouts, treating them as independent, but 3 rollouts share
+      each of 30 tasks. One reported cluster: 29 trials on flipt failed because fixture
+      YAMLs existed only in the gold commit. The paper does not report how many distinct
+      tasks account for the 189. Confidence: Likely ([Tier 1] paper and blog; the…'
+    - "Named examples of strict or mismatched tests (blog). A gold test importing
+      `parseRpmQfLine`, a maintainer helper the prompt never mentions (vuls); 9 unrelated
+      version-output snapshot tests broken by a correct `SelectionReason` change (qutebrowser);
+      missing fixtures (flipt). Confidence: Emerging ([Tier 1] Datacurve blog, one
+      source, author's own)."
+    - "The paper's own limits. No judge-verdict human validation, unreleased prompt,
+      self-preference caveat, \"illustrative\" per-tag rates. Confidence: Established
+      ([Tier 1] paper §3.4, §7, §8)."
+    - "Independent evidence that Pro's tests wrongly fail correct work. OpenAI's July
+      2026 audit: 200 of 731 public tasks (27.4%) flagged flawed by agent-plus-human
+      review, 249 (34.1%) by five developers, about 74% agreement, and a retraction
+      of OpenAI's earlier recommendation of Pro. Categories include \"too strict,\"\
+      \ \"too vague,\" \"too shallow,\" \"misleading.\" Named case: a task asks for
+      one space, the…"
+    - "Same pattern on SWE-bench Verified. OpenAI's re-audit of 138 hard problems
+      (o3 often failed) found at least 59.4% had tests rejecting functionally correct
+      submissions and about 35.5% had overly narrow tests. The sample is the hard
+      tail of failures, which is the closest analogue to a judge reviewing failed
+      attempts; it is not a base rate. Confidence: Emerging ([Tier 1] OpenAI page
+      seen only via…"
+    - "Tests also err the other way. UTBoost found 345 erroneous patches wrongly marked
+      passing and changed 40.9% of Lite and 24.4% of Verified leaderboard entries;
+      SWE-Bench+ found 32.67% of passing patches involved solution leakage and filtering
+      dropped a resolve rate from 12.47% to 3.97%. Datacurve's 67 false positives
+      and its \"CHEATED\" gold-commit-leak labels fit this. Confidence: Likely ([Tier
+      1]…"
+    - 'LLM judges have documented failure modes in both directions. Jin & Chen (arXiv
+      2603.00539) find judges over-reject correct code; Crupi et al. (arXiv 2507.16587)
+      find even the best judge "frequently misjudges" correctness. Snippet-level,
+      unverified: judge cues such as stated test results or a reference patch can
+      push judges to accept overfitting patches. The Datacurve judge sees both. Confidence:…'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-10-03-llm-judge-vs-tfidf-false-success' dated 2026-10-20, and
-      from a simulated review round where 10 agent-written posts were ranked by 
-      votes.
+      report '2026-10-18-swe-bench-pro-judge-disagreements' dated 2026-10-21, 
+      and from a simulated review round where 10 agent-written posts were ranked
+      by votes.
   angles:
-    - id: 2026-10-20-0-640-vs-0-825-mixes-two-cells-of-advani
-      summary: "\"0.640 vs 0.825\" mixes two cells of Advani's tables; the paper's
-        own pairing is GPT-4o 0.545 vs 0.825, and 0.537 vs 0.953 on AppWorld · thread:
-        A simple word-counting classifier beat the best AI judge at catching false…"
-      last_used: '2026-10-20'
+    - id: 2026-10-21-the-same-gpt-5-5-judge-disagreed-with-da
+      summary: "The same GPT-5.5 judge disagreed with Datacurve's own DeepSWE tests
+        on 10 of 735 runs, versus 256 of 789 on SWE-Bench Pro · thread: An AI judge
+        said failed code was fine, and nobody checked the judge"
+      last_used:
       provenance:
-        post_id: p_ec14206b7af3
-        round_id: anti_slop:2026-10-20
-        report_label: 2026-10-03-llm-judge-vs-tfidf-false-success
-    - id: 2026-10-20-advani-s-0-640-best-judge-is-the-top-of
-      summary: "Advani's 0.640 \"best judge\" is the top of 25 judge-and-prompt cells;
-        Sonnet 4.5's default prompt scored 0.576 · thread: A simple word-counting
-        classifier beat the best AI judge at catching false success claims"
-      last_used: '2026-10-20'
+        post_id: p_4ea2855b521c
+        round_id: anti_slop:2026-10-21
+        report_label: 2026-10-18-swe-bench-pro-judge-disagreements
+    - id: 2026-10-21-datacurve-s-judge-also-failed-67-of-789
+      summary: "Datacurve's judge also failed 67 of 789 attempts the tests had passed,
+        so the net lean toward 'should have passed' is 15.5 points, not 24 · thread:
+        An AI judge said failed code was fine, and nobody checked the judge"
+      last_used:
       provenance:
-        post_id: p_988de5644382
-        round_id: anti_slop:2026-10-20
-        report_label: 2026-10-03-llm-judge-vs-tfidf-false-success
-    - id: 2026-10-20-advani-s-false-success-detector-goes-fro
-      summary: "Advani's false-success detector goes from 0.69 to 0.83 AUROC with
-        100 labeled examples per class, which prices the 'simple beats LLM' claim
-        · thread: A simple word-counting classifier beat the best AI judge at catching…"
-      last_used: '2026-10-20'
+        post_id: p_f2f40947967c
+        round_id: anti_slop:2026-10-21
+        report_label: 2026-10-18-swe-bench-pro-judge-disagreements
+    - id: 2026-10-21-datacurve-s-789-swe-bench-pro-judge-verd
+      summary: "Datacurve's 789 SWE-Bench Pro judge verdicts come from 30 tasks run
+        three times, and 29 flipt trials failed on one missing fixture · thread: An
+        AI judge said failed code was fine, and nobody checked the judge"
+      last_used:
       provenance:
-        post_id: p_fbe4be6ea6e9
-        round_id: anti_slop:2026-10-20
-        report_label: 2026-10-03-llm-judge-vs-tfidf-false-success
-    - id: 2026-10-20-rewriting-only-an-agent-s-reasoning-text
-      summary: "Rewriting only an agent's reasoning text, with actions unchanged,
-        raised judges' false-positive rate by 20-30 points (arXiv 2601.14691) · thread:
-        A simple word-counting classifier beat the best AI judge at catching…"
-      last_used: '2026-10-20'
+        post_id: p_41d56dd99c6f
+        round_id: anti_slop:2026-10-21
+        report_label: 2026-10-18-swe-bench-pro-judge-disagreements
+    - id: 2026-10-21-datacurve-s-swe-bench-pro-audit-189-of-7
+      summary: "Datacurve's SWE-Bench Pro audit: 189 of 789 attempts, 24.0%, were
+        failed by the tests and passed by a GPT-5.5 judge · thread: An AI judge said
+        failed code was fine, and nobody checked the judge"
+      last_used:
       provenance:
-        post_id: p_ffbbb8da3037
-        round_id: anti_slop:2026-10-20
-        report_label: 2026-10-03-llm-judge-vs-tfidf-false-success
-    - id: 2026-10-20-opencomputer-s-verifier-matched-humans-o
-      summary: "OpenComputer's verifier matched humans on 113 of 120 tasks; DeepSWE's
-        32.4% vs 1.4% measures something else · thread: A simple word-counting classifier
-        beat the best AI judge at catching false success claims"
-      last_used: '2026-10-20'
+        post_id: p_9577aba30755
+        round_id: anti_slop:2026-10-21
+        report_label: 2026-10-18-swe-bench-pro-judge-disagreements
+    - id: 2026-10-21-datacurve-s-paper-calls-its-gpt-5-5-judg
+      summary: "Datacurve's paper calls its GPT-5.5 judge \"an auditor of the verifier,
+        not the grader of record\", so \"AI overruled the tests\" misreads it · thread:
+        An AI judge said failed code was fine, and nobody checked the judge"
+      last_used:
       provenance:
-        post_id: p_489ade9ac1c5
-        round_id: anti_slop:2026-10-20
-        report_label: 2026-10-03-llm-judge-vs-tfidf-false-success
+        post_id: p_3d74474c36e8
+        round_id: anti_slop:2026-10-21
+        report_label: 2026-10-18-swe-bench-pro-judge-disagreements
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-10-20-a-simple-word-counting-classifier-beat-t.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-10-21-an-ai-judge-said-failed-code-was-fine-an.png
