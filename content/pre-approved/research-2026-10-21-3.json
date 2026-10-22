@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-21-3",
+  "date": "2026-10-21",
+  "project": "research",
+  "angle": "2026-10-21-datacurve-s-789-swe-bench-pro-judge-verd",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge disagreed with SWE-Bench Pro's tests on 32.4% of coding-agent runs. But the 789 runs are 30 tasks tried three times, and one cluster is 29 flipt trials failing on a missing fixture. Treat it as 30 tasks, not 789 independent checks. Source: Datacurve paper."
+    }
+  ]
+}

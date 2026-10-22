@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-21-1",
+  "date": "2026-10-21",
+  "project": "research",
+  "angle": "2026-10-21-the-same-gpt-5-5-judge-disagreed-with-da",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Same GPT-5.5 judge, two benchmarks. On SWE-Bench Pro it disagreed with the tests on 256 of 789 AI coding runs. On DeepSWE, 2 and 8 of 735. OpenAI's July 2026 audit flagged 200 of 731 Pro tasks as flawed. I'd bet on the tests. (Datacurve paper)"
+    }
+  ]
+}

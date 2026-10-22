@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-21-2",
+  "date": "2026-10-21",
+  "project": "research",
+  "angle": "2026-10-21-datacurve-s-judge-also-failed-67-of-789",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A GPT-5.5 judge re-graded 789 coding-agent runs on SWE-Bench Pro and disagreed with the tests on 32.4%. In 189 the tests failed code the judge called fine. In 67 the tests passed code it rejected. The paper reports no human validation of the judge's verdicts."
+    }
+  ]
+}

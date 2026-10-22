@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-21-5",
+  "date": "2026-10-21",
+  "project": "research",
+  "angle": "2026-10-21-datacurve-s-paper-calls-its-gpt-5-5-judg",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "On a popular coding-agent benchmark, an AI judge disagreed with the tests on 32.4% of runs. Same judge on a different benchmark: 1.4%. If you pick AI coding tools by leaderboard, the tests may be the weak link. OpenAI's July 2026 audit flagged 27.4% of that benchmark's tasks as flawed."
+    }
+  ]
+}

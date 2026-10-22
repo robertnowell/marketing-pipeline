@@ -411,7 +411,7 @@ research:
       summary: "The same GPT-5.5 judge disagreed with Datacurve's own DeepSWE tests
         on 10 of 735 runs, versus 256 of 789 on SWE-Bench Pro · thread: An AI judge
         said failed code was fine, and nobody checked the judge"
-      last_used:
+      last_used: '2026-10-21'
       provenance:
         post_id: p_4ea2855b521c
         round_id: anti_slop:2026-10-21
@@ -420,7 +420,7 @@ research:
       summary: "Datacurve's judge also failed 67 of 789 attempts the tests had passed,
         so the net lean toward 'should have passed' is 15.5 points, not 24 · thread:
         An AI judge said failed code was fine, and nobody checked the judge"
-      last_used:
+      last_used: '2026-10-21'
       provenance:
         post_id: p_f2f40947967c
         round_id: anti_slop:2026-10-21
@@ -429,7 +429,7 @@ research:
       summary: "Datacurve's 789 SWE-Bench Pro judge verdicts come from 30 tasks run
         three times, and 29 flipt trials failed on one missing fixture · thread: An
         AI judge said failed code was fine, and nobody checked the judge"
-      last_used:
+      last_used: '2026-10-21'
       provenance:
         post_id: p_41d56dd99c6f
         round_id: anti_slop:2026-10-21
@@ -438,7 +438,7 @@ research:
       summary: "Datacurve's SWE-Bench Pro audit: 189 of 789 attempts, 24.0%, were
         failed by the tests and passed by a GPT-5.5 judge · thread: An AI judge said
         failed code was fine, and nobody checked the judge"
-      last_used:
+      last_used: '2026-10-21'
       provenance:
         post_id: p_9577aba30755
         round_id: anti_slop:2026-10-21
@@ -447,7 +447,7 @@ research:
       summary: "Datacurve's paper calls its GPT-5.5 judge \"an auditor of the verifier,
         not the grader of record\", so \"AI overruled the tests\" misreads it · thread:
         An AI judge said failed code was fine, and nobody checked the judge"
-      last_used:
+      last_used: '2026-10-21'
       provenance:
         post_id: p_3d74474c36e8
         round_id: anti_slop:2026-10-21

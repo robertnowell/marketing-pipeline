@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-21-4",
+  "date": "2026-10-21",
+  "project": "research",
+  "angle": "2026-10-21-datacurve-s-swe-bench-pro-audit-189-of-7",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you pick AI coding tools by benchmark score: on SWE-Bench Pro, tests failed 189 of 789 attempts that a GPT-5.5 judge called reasonable solutions (Datacurve audit). OpenAI's own audit flagged 200 of 731 tasks as flawed. Caveat: no human validated the judge."
+    }
+  ]
+}
