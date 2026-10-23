@@ -429,7 +429,7 @@ research:
       summary: "Datacurve's 789 SWE-Bench Pro judge verdicts come from 30 tasks run
         three times, and 29 flipt trials failed on one missing fixture · thread: An
         AI judge said failed code was fine, and nobody checked the judge"
-      last_used: '2026-10-21'
+      last_used: '2026-10-23'
       provenance:
         post_id: p_41d56dd99c6f
         round_id: anti_slop:2026-10-21
