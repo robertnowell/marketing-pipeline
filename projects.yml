@@ -447,7 +447,7 @@ research:
       summary: "Datacurve's paper calls its GPT-5.5 judge \"an auditor of the verifier,
         not the grader of record\", so \"AI overruled the tests\" misreads it · thread:
         An AI judge said failed code was fine, and nobody checked the judge"
-      last_used: '2026-10-21'
+      last_used: '2026-10-23'
       provenance:
         post_id: p_3d74474c36e8
         round_id: anti_slop:2026-10-21
