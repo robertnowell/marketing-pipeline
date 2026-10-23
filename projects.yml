@@ -411,7 +411,7 @@ research:
       summary: "The same GPT-5.5 judge disagreed with Datacurve's own DeepSWE tests
         on 10 of 735 runs, versus 256 of 789 on SWE-Bench Pro · thread: An AI judge
         said failed code was fine, and nobody checked the judge"
-      last_used: '2026-10-21'
+      last_used: '2026-10-23'
       provenance:
         post_id: p_4ea2855b521c
         round_id: anti_slop:2026-10-21
