@@ -438,7 +438,7 @@ research:
       summary: "Datacurve's SWE-Bench Pro audit: 189 of 789 attempts, 24.0%, were
         failed by the tests and passed by a GPT-5.5 judge · thread: An AI judge said
         failed code was fine, and nobody checked the judge"
-      last_used: '2026-10-21'
+      last_used: '2026-10-23'
       provenance:
         post_id: p_9577aba30755
         round_id: anti_slop:2026-10-21
