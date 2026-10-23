@@ -420,7 +420,7 @@ research:
       summary: "Datacurve's judge also failed 67 of 789 attempts the tests had passed,
         so the net lean toward 'should have passed' is 15.5 points, not 24 · thread:
         An AI judge said failed code was fine, and nobody checked the judge"
-      last_used: '2026-10-21'
+      last_used: '2026-10-23'
       provenance:
         post_id: p_f2f40947967c
         round_id: anti_slop:2026-10-21
