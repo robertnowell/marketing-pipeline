@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-23-5",
+  "date": "2026-10-23",
+  "project": "research",
+  "angle": "2026-10-23-advani-s-own-caveat-at-a-10-flag-rate-th",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A model that flags AI agents falsely claiming success is just bigram TF-IDF plus logistic regression. Its author's caveat: at a 10% flag rate it is 50% precise, \"a triage signal, not an autonomous monitor\". https://arxiv.org/html/2606.09863"
+    }
+  ]
+}

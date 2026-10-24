@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-23-2",
+  "date": "2026-10-23",
+  "project": "research",
+  "angle": "2026-10-23-in-advani-s-few-shot-test-logistic-regre",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A model that catches AI agents falsely claiming success is just bigram TF-IDF plus logistic regression, capped at 30000 features. The paper (arXiv 2606.09863) also tests XGBoost and DeBERTa-v3-base on the same task. Before you pay for an LLM judge to check agent output, benchmark the cheap model first."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-23-3",
+  "date": "2026-10-23",
+  "project": "research",
+  "angle": "2026-10-23-advani-s-tau2-bench-false-success-labels",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The detector for AI agents that falsely report success is bigram TF-IDF plus logistic regression, 30000 features max. The paper also tested XGBoost and DeBERTa-v3-base. Before paying an LLM to grade your agent, try a word-feature baseline. https://arxiv.org/html/2606.09863"
+    }
+  ]
+}

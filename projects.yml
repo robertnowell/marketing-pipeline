@@ -367,7 +367,7 @@ research:
       summary: "Advani's \"0.83\" is at least two different results: 0.827 after 200
         target labels, or 0.849 with none (but in-domain) · thread: A simple word-count
         model beats AI judges at catching agents that falsely claim success"
-      last_used:
+      last_used: '2026-10-23'
       provenance:
         post_id: p_6e636e5eef86
         round_id: anti_slop:2026-10-23
@@ -376,7 +376,7 @@ research:
       summary: "In Advani's few-shot test, logistic regression rose from 0.693 to
         0.827 while XGBoost fell from 0.657 to 0.538 · thread: A simple word-count
         model beats AI judges at catching agents that falsely claim success"
-      last_used:
+      last_used: '2026-10-23'
       provenance:
         post_id: p_241ed80f8fa8
         round_id: anti_slop:2026-10-23
@@ -385,7 +385,7 @@ research:
       summary: "Advani's tau2-bench \"false success\" labels come from a regex on
         the agent's closing message, and the winning classifier reads that same message
         · thread: A simple word-count model beats AI judges at catching agents that…"
-      last_used:
+      last_used: '2026-10-23'
       provenance:
         post_id: p_4a6fb564ba16
         round_id: anti_slop:2026-10-23
@@ -394,7 +394,7 @@ research:
       summary: "Advani's 0.95 AUROC on AppWorld and 0.85 on tau2-bench come from different
         detectors, so they aren't a progression · thread: A simple word-count model
         beats AI judges at catching agents that falsely claim success"
-      last_used:
+      last_used: '2026-10-23'
       provenance:
         post_id: p_ba4e24aa6bd6
         round_id: anti_slop:2026-10-23
@@ -403,7 +403,7 @@ research:
       summary: "Advani's own caveat: at a 10% flag rate the false-success detector
         is 50% precise, and the author calls it \"a triage signal, not an autonomous
         monitor\" · thread: A simple word-count model beats AI judges at catching…"
-      last_used:
+      last_used: '2026-10-23'
       provenance:
         post_id: p_4a82c4a2f779
         round_id: anti_slop:2026-10-23

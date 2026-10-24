@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-23-1",
+  "date": "2026-10-23",
+  "project": "research",
+  "angle": "2026-10-23-advani-s-0-83-is-at-least-two-different",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A paper reports 0.83 for catching AI agents that falsely claim success. That number is two results: 0.827 after 200 target labels, or 0.849 with none (but in-domain). The detector is bigram TF-IDF plus logistic regression, not an AI judge. https://arxiv.org/html/2606.09863"
+    }
+  ]
+}
