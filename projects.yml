@@ -367,7 +367,7 @@ research:
       summary: "Advani's \"0.83\" is at least two different results: 0.827 after 200
         target labels, or 0.849 with none (but in-domain) · thread: A simple word-count
         model beats AI judges at catching agents that falsely claim success"
-      last_used: '2026-10-23'
+      last_used: '2026-10-24'
       provenance:
         post_id: p_6e636e5eef86
         round_id: anti_slop:2026-10-23
