@@ -376,7 +376,7 @@ research:
       summary: "In Advani's few-shot test, logistic regression rose from 0.693 to
         0.827 while XGBoost fell from 0.657 to 0.538 · thread: A simple word-count
         model beats AI judges at catching agents that falsely claim success"
-      last_used: '2026-10-23'
+      last_used: '2026-10-25'
       provenance:
         post_id: p_241ed80f8fa8
         round_id: anti_slop:2026-10-23
