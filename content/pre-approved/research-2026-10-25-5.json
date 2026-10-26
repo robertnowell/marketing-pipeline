@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-25-5",
+  "date": "2026-10-25",
+  "project": "research",
+  "angle": "2026-10-25-advani-masked-the-top-30-regex-words-and",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A detector for AI agents that claim a task is finished when it isn't scored 0.940 AUROC. Masking the top-30 regex trigger words barely moved it: 0.939. But that check ran on a random split. On tasks the model never saw, it scores 0.825 (Laksh Advani, arXiv:2606.09863)."
+    }
+  ]
+}

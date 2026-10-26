@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-25-4",
+  "date": "2026-10-25",
+  "project": "research",
+  "angle": "2026-10-25-advani-s-tau2-bench-0-825-is-the-lowest",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Detectors for AI agents that falsely say 'task done' score 0.825 in one paper. On the same split, TF-IDF logistic regression scored 0.849. The 'claimed success' label comes from regex over the closing message, so keyword features partly read the answer key. arXiv:2606.09863"
+    }
+  ]
+}

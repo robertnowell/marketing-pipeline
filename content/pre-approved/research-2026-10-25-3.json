@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-25-3",
+  "date": "2026-10-25",
+  "project": "research",
+  "angle": "2026-10-25-the-slop-paper-found-llm-judges-recall-8",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Agents that say 'done' when the task isn't done can be detected at 0.940 AUROC. Catch: the 'said done' label is keyword matching on the closing message, and the classifier reads the same words. On unseen tasks, XGBoost falls to 0.825. Laksh Advani, arXiv:2606.09863."
+    }
+  ]
+}

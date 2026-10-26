@@ -388,7 +388,7 @@ research:
       summary: "Advani's 75.8% AppWorld false-success rate is measured on 1,879 runs
         left after filtering 8,190 · thread: A famous AI cheating-detector score rests
         on labels made by keyword matching"
-      last_used:
+      last_used: '2026-10-25'
       provenance:
         post_id: p_156162ccfea1
         round_id: anti_slop:2026-10-25
@@ -397,7 +397,7 @@ research:
       summary: "In Advani's tau2-bench data, \"the agent failed\" comes from the environment.
         Only \"the agent claimed success\" comes from a regex. · thread: A famous
         AI cheating-detector score rests on labels made by keyword matching"
-      last_used:
+      last_used: '2026-10-25'
       provenance:
         post_id: p_e0946e0244f1
         round_id: anti_slop:2026-10-25
@@ -406,7 +406,7 @@ research:
       summary: "The slop paper found LLM judges recall 8–12% of verbose spans. Advani's
         agent-monitoring numbers show the same pattern. · thread: A famous AI cheating-detector
         score rests on labels made by keyword matching"
-      last_used:
+      last_used: '2026-10-25'
       provenance:
         post_id: p_7030b894c524
         round_id: anti_slop:2026-10-25
@@ -415,7 +415,7 @@ research:
       summary: "Advani's tau2-bench \"0.825\" is the lowest of three scores on the
         same split · thread: A famous AI cheating-detector score rests on labels made
         by keyword matching"
-      last_used:
+      last_used: '2026-10-25'
       provenance:
         post_id: p_c256a64256f4
         round_id: anti_slop:2026-10-25
@@ -424,7 +424,7 @@ research:
       summary: 'Advani masked the top-30 regex words and AUROC moved 0.940 → 0.939.
         That test was run on a different split from the 0.825 headline. · thread:
         A famous AI cheating-detector score rests on labels made by keyword matching'
-      last_used:
+      last_used: '2026-10-25'
       provenance:
         post_id: p_6d0c3e258d9e
         round_id: anti_slop:2026-10-25

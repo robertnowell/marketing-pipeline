@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-25-1",
+  "date": "2026-10-25",
+  "project": "research",
+  "angle": "2026-10-25-advani-s-75-8-appworld-false-success-rat",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A detector for AI agents that say 'done' when the task failed scores 0.940 AUROC on a random split. On task-disjoint splits it drops to 0.825. The success-claim label comes from keyword matching on the closing message, and the classifier reads those same words. Laksh Advani, arXiv:2606.09863"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-25-2",
+  "date": "2026-10-25",
+  "project": "research",
+  "angle": "2026-10-25-in-advani-s-tau2-bench-data-the-agent-fa",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Papers on AI agents that falsely claim success have a measurement catch. In arXiv:2606.09863 (Laksh Advani, sole author), 'failed' comes from the environment, but 'claimed success' comes from a regex over the closing message. A classifier can learn the label's own vocabulary."
+    }
+  ]
+}
