@@ -8349,3 +8349,45 @@
   angle: 2026-10-23-in-advani-s-few-shot-test-logistic-regre
   source_id: ''
   posted_at: '2026-10-25'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mys6qfkzgx2n
+  angle: 2026-10-25-advani-s-75-8-appworld-false-success-rat
+  source_id: research-2026-10-25-1
+  posted_at: '2026-10-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mys6qhpb4b2j
+  angle: 2026-10-25-in-advani-s-tau2-bench-data-the-agent-fa
+  source_id: research-2026-10-25-2
+  posted_at: '2026-10-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mys6qjshda2n
+  angle: 2026-10-25-the-slop-paper-found-llm-judges-recall-8
+  source_id: research-2026-10-25-3
+  posted_at: '2026-10-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mys6qlzvp52x
+  angle: 2026-10-25-advani-s-tau2-bench-0-825-is-the-lowest
+  source_id: research-2026-10-25-4
+  posted_at: '2026-10-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mys6qo5ljh23
+  angle: 2026-10-25-advani-masked-the-top-30-regex-words-and
+  source_id: research-2026-10-25-5
+  posted_at: '2026-10-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mys6qqnxvz2j
+  angle: angle:sib-2026-10-25-2026-10-21-datacurve-s-p-1
+  source_id: research-2026-10-25-sib-2026-10-21-datacurve-s-p-1
+  posted_at: '2026-10-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mys6qsvtll23
+  angle: angle:sib-2026-10-25-2026-10-21-datacurve-s-p-2
+  source_id: research-2026-10-25-sib-2026-10-21-datacurve-s-p-2
+  posted_at: '2026-10-26'
