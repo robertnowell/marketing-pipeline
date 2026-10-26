@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-25-sib-2026-10-21-datacurve-s-p-2",
+  "date": "2026-10-25",
+  "project": "research",
+  "angle": "angle:sib-2026-10-25-2026-10-21-datacurve-s-p-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Some AI coding benchmark tests fail correct code. One gold test imported parseRpmQfLine, a maintainer helper the prompt never mentions. A correct change broke 9 unrelated version-output snapshot tests. Picking tools by benchmark score means partly measuring test luck. (Datacurve blog)"
+    }
+  ]
+}

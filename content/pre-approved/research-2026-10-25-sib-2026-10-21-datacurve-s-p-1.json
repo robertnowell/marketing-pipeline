@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-25-sib-2026-10-21-datacurve-s-p-1",
+  "date": "2026-10-25",
+  "project": "research",
+  "angle": "angle:sib-2026-10-25-2026-10-21-datacurve-s-p-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Same AI judge, two coding benchmarks. On SWE-Bench Pro it disagreed with the tests on 256 of 789 runs (32.4%), and 189 were failed code it called reasonable. On DeepSWE: 1.4%. Datacurve's paper, judge GPT-5.5. I'd check a benchmark's tests before its leaderboard."
+    }
+  ]
+}
