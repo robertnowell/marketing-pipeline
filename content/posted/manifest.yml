@@ -8391,3 +8391,9 @@
   angle: angle:sib-2026-10-25-2026-10-21-datacurve-s-p-2
   source_id: research-2026-10-25-sib-2026-10-21-datacurve-s-p-2
   posted_at: '2026-10-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3myuor7kkzw27
+  angle: 2026-10-25-advani-s-75-8-appworld-false-success-rat
+  source_id: ''
+  posted_at: '2026-10-27'
