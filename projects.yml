@@ -424,7 +424,7 @@ research:
       summary: 'Advani masked the top-30 regex words and AUROC moved 0.940 → 0.939.
         That test was run on a different split from the 0.825 headline. · thread:
         A famous AI cheating-detector score rests on labels made by keyword matching'
-      last_used: '2026-10-25'
+      last_used: '2026-10-28'
       provenance:
         post_id: p_6d0c3e258d9e
         round_id: anti_slop:2026-10-25
