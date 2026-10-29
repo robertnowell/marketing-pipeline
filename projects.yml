@@ -397,7 +397,7 @@ research:
       summary: "In Advani's tau2-bench data, \"the agent failed\" comes from the environment.
         Only \"the agent claimed success\" comes from a regex. · thread: A famous
         AI cheating-detector score rests on labels made by keyword matching"
-      last_used: '2026-10-28'
+      last_used: '2026-10-29'
       provenance:
         post_id: p_e0946e0244f1
         round_id: anti_slop:2026-10-25
