@@ -406,7 +406,7 @@ research:
       summary: "The slop paper found LLM judges recall 8–12% of verbose spans. Advani's
         agent-monitoring numbers show the same pattern. · thread: A famous AI cheating-detector
         score rests on labels made by keyword matching"
-      last_used: '2026-10-27'
+      last_used: '2026-10-29'
       provenance:
         post_id: p_7030b894c524
         round_id: anti_slop:2026-10-25
