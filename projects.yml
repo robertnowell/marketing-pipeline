@@ -388,7 +388,7 @@ research:
       summary: "Advani's 75.8% AppWorld false-success rate is measured on 1,879 runs
         left after filtering 8,190 · thread: A famous AI cheating-detector score rests
         on labels made by keyword matching"
-      last_used: '2026-10-28'
+      last_used: '2026-10-29'
       provenance:
         post_id: p_156162ccfea1
         round_id: anti_slop:2026-10-25
