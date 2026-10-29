@@ -415,7 +415,7 @@ research:
       summary: "Advani's tau2-bench \"0.825\" is the lowest of three scores on the
         same split · thread: A famous AI cheating-detector score rests on labels made
         by keyword matching"
-      last_used: '2026-10-27'
+      last_used: '2026-10-29'
       provenance:
         post_id: p_c256a64256f4
         round_id: anti_slop:2026-10-25

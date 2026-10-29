@@ -8439,3 +8439,9 @@
   angle: 2026-10-25-the-slop-paper-found-llm-judges-recall-8
   source_id: ''
   posted_at: '2026-10-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3myzs4c5jhl2v
+  angle: 2026-10-25-advani-s-tau2-bench-0-825-is-the-lowest
+  source_id: ''
+  posted_at: '2026-10-29'
