@@ -353,81 +353,60 @@ research:
   channels:
     - bluesky
   facts:
-    - 'F1. Paper identity (Established) — "From Confident Closing to Silent Failure:
-      Characterizing False Success in LLM Agents", Laksh Advani (sole author), arXiv:2606.09863
-      (cs.LG), submitted 1 June 2026 (PDF metadata says 10 June).'
-    - 'F2. What is detected (Established) — "False success": the agent claims completion
-      while environment state shows it is not complete.'
-    - F3. tau2-bench labels are regex over the closing message (Likely) — - 
-      Failure is decided by the environment reward (final state matches 
-      ground-truth spec).
-    - F4. The classifier reads the same vocabulary the label is built from 
-      (Likely) — Features are bigram TF-IDF (30k features, min_df=2, sublinear 
-      TF) into LR or XGBoost (300 trees, depth 6) over the full serialized 
-      trajectory, with closing-message-only and tool-text-only ablations.
-    - "F5. The author's circularity controls help but are partial (Likely) — - Masking
-      the top-30 regex trigger tokens: random-split XGBoost AUROC 0.940 → 0.939."
-    - F6. Task-disjoint tau2 numbers (Likely) — TF-IDF+XGBoost 0.825 ± 0.025; 
-      TF-IDF+LR 0.849; DeBERTa 0.827.
-    - 'F7. The AppWorld replication is in the paper and avoids the regex (Likely)
-      — - Claim channel: the agent writes a status field (success/fail) to a supervisor
-      database.'
-    - F8. The AppWorld sample is heavily filtered (Likely) — 8,190 public 
-      trajectories (GPT-4o, GPT-4-Turbo, LLaMA-3, DeepSeekCoder; 4 
-      architectures).
-    - F9. AppWorld ground truth is state-based (Established) — 750 tasks, 9 
-      apps, 457 APIs, ~100 fictitious users.
-    - F10. Corroboration that judges follow surface cues (Emerging) — Khalifa et
-      al.
+    - "### 1. The detector is TF-IDF + logistic regression, not a plain word counter
+      (Established: author's paper plus consistent secondary summaries) Bigram TF-IDF
+      (ngram_range (1,2), max_features 30000, min_df 2, sublinear_tf), LogisticRegression
+      (C=1.0, class_weight balanced, liblinear). XGBoost and DeBERTa-v3-base are tested
+      on the same task. (Source: [arXiv HTML](https://arxiv.org/html/2606.09863)…"
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-10-12-advani-false-success-appworld' dated 2026-10-25, and 
-      from a simulated review round where 10 agent-written posts were ranked by 
-      votes.
+      report '2026-10-22-false-success-detector-label-cost' dated 2026-10-29, 
+      and from a simulated review round where 10 agent-written posts were ranked
+      by votes.
   angles:
-    - id: 2026-10-25-advani-s-75-8-appworld-false-success-rat
-      summary: "Advani's 75.8% AppWorld false-success rate is measured on 1,879 runs
-        left after filtering 8,190 · thread: A famous AI cheating-detector score rests
-        on labels made by keyword matching"
-      last_used: '2026-10-29'
+    - id: 2026-10-29-advani-s-false-success-auroc-of-0-95-on
+      summary: "Advani's false-success AUROC of 0.95 on AppWorld sits on a 75.8% base
+        rate. In telecom the base rate is 3%. · thread: A simple word-counting classifier
+        beat the best AI judge at spotting fake success"
+      last_used:
       provenance:
-        post_id: p_156162ccfea1
-        round_id: anti_slop:2026-10-25
-        report_label: 2026-10-12-advani-false-success-appworld
-    - id: 2026-10-25-in-advani-s-tau2-bench-data-the-agent-fa
-      summary: "In Advani's tau2-bench data, \"the agent failed\" comes from the environment.
-        Only \"the agent claimed success\" comes from a regex. · thread: A famous
-        AI cheating-detector score rests on labels made by keyword matching"
-      last_used: '2026-10-29'
+        post_id: p_ef6950f79a56
+        round_id: anti_slop:2026-10-29
+        report_label: 2026-10-22-false-success-detector-label-cost
+    - id: 2026-10-29-advani-s-simple-word-counter-is-a-30-000
+      summary: "Advani's \"simple word counter\" is a 30,000-feature bigram logistic
+        regression trained on labeled agent runs, and the judges got no labels · thread:
+        A simple word-counting classifier beat the best AI judge at spotting…"
+      last_used:
       provenance:
-        post_id: p_e0946e0244f1
-        round_id: anti_slop:2026-10-25
-        report_label: 2026-10-12-advani-false-success-appworld
-    - id: 2026-10-25-the-slop-paper-found-llm-judges-recall-8
-      summary: "The slop paper found LLM judges recall 8–12% of verbose spans. Advani's
-        agent-monitoring numbers show the same pattern. · thread: A famous AI cheating-detector
-        score rests on labels made by keyword matching"
-      last_used: '2026-10-29'
+        post_id: p_15dce4530467
+        round_id: anti_slop:2026-10-29
+        report_label: 2026-10-22-false-success-detector-label-cost
+    - id: 2026-10-29-hanley-mcneil-puts-the-0-69-vs-0-83-gap
+      summary: 'Hanley-McNeil puts the 0.69 vs 0.83 gap near 2.9 standard errors,
+        if the test set is 100 per class. Nobody knows the test size. · thread: A
+        simple word-counting classifier beat the best AI judge at spotting fake success'
+      last_used:
       provenance:
-        post_id: p_7030b894c524
-        round_id: anti_slop:2026-10-25
-        report_label: 2026-10-12-advani-false-success-appworld
-    - id: 2026-10-25-advani-s-tau2-bench-0-825-is-the-lowest
-      summary: "Advani's tau2-bench \"0.825\" is the lowest of three scores on the
-        same split · thread: A famous AI cheating-detector score rests on labels made
-        by keyword matching"
-      last_used: '2026-10-29'
+        post_id: p_127d5939be0a
+        round_id: anti_slop:2026-10-29
+        report_label: 2026-10-22-false-success-detector-label-cost
+    - id: 2026-10-29-advani-s-xgboost-detector-fell-from-0-65
+      summary: "Advani's XGBoost detector fell from 0.657 to 0.538 AUROC as it was
+        given 100 labeled examples per class, while logistic regression rose to 0.827
+        · thread: A simple word-counting classifier beat the best AI judge at…"
+      last_used:
       provenance:
-        post_id: p_c256a64256f4
-        round_id: anti_slop:2026-10-25
-        report_label: 2026-10-12-advani-false-success-appworld
-    - id: 2026-10-25-advani-masked-the-top-30-regex-words-and
-      summary: 'Advani masked the top-30 regex words and AUROC moved 0.940 → 0.939.
-        That test was run on a different split from the 0.825 headline. · thread:
-        A famous AI cheating-detector score rests on labels made by keyword matching'
-      last_used: '2026-10-29'
+        post_id: p_dc9aa1cf2805
+        round_id: anti_slop:2026-10-29
+        report_label: 2026-10-22-false-success-detector-label-cost
+    - id: 2026-10-29-advani-s-false-success-detector-scores-0
+      summary: "Advani's false-success detector scores 0.913 on a random split and
+        0.696 on a new domain. Same model. · thread: A simple word-counting classifier
+        beat the best AI judge at spotting fake success"
+      last_used:
       provenance:
-        post_id: p_6d0c3e258d9e
-        round_id: anti_slop:2026-10-25
-        report_label: 2026-10-12-advani-false-success-appworld
+        post_id: p_5034d090a239
+        round_id: anti_slop:2026-10-29
+        report_label: 2026-10-22-false-success-detector-label-cost
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-10-25-a-famous-ai-cheating-detector-score-rest.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-10-29-a-simple-word-counting-classifier-beat-t.png
