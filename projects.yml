@@ -367,7 +367,7 @@ research:
       summary: "Advani's false-success AUROC of 0.95 on AppWorld sits on a 75.8% base
         rate. In telecom the base rate is 3%. · thread: A simple word-counting classifier
         beat the best AI judge at spotting fake success"
-      last_used:
+      last_used: '2026-10-29'
       provenance:
         post_id: p_ef6950f79a56
         round_id: anti_slop:2026-10-29
@@ -376,7 +376,7 @@ research:
       summary: "Advani's \"simple word counter\" is a 30,000-feature bigram logistic
         regression trained on labeled agent runs, and the judges got no labels · thread:
         A simple word-counting classifier beat the best AI judge at spotting…"
-      last_used:
+      last_used: '2026-10-29'
       provenance:
         post_id: p_15dce4530467
         round_id: anti_slop:2026-10-29
@@ -385,7 +385,7 @@ research:
       summary: 'Hanley-McNeil puts the 0.69 vs 0.83 gap near 2.9 standard errors,
         if the test set is 100 per class. Nobody knows the test size. · thread: A
         simple word-counting classifier beat the best AI judge at spotting fake success'
-      last_used:
+      last_used: '2026-10-29'
       provenance:
         post_id: p_127d5939be0a
         round_id: anti_slop:2026-10-29
@@ -394,7 +394,7 @@ research:
       summary: "Advani's XGBoost detector fell from 0.657 to 0.538 AUROC as it was
         given 100 labeled examples per class, while logistic regression rose to 0.827
         · thread: A simple word-counting classifier beat the best AI judge at…"
-      last_used:
+      last_used: '2026-10-29'
       provenance:
         post_id: p_dc9aa1cf2805
         round_id: anti_slop:2026-10-29
@@ -403,7 +403,7 @@ research:
       summary: "Advani's false-success detector scores 0.913 on a random split and
         0.696 on a new domain. Same model. · thread: A simple word-counting classifier
         beat the best AI judge at spotting fake success"
-      last_used:
+      last_used: '2026-10-29'
       provenance:
         post_id: p_5034d090a239
         round_id: anti_slop:2026-10-29

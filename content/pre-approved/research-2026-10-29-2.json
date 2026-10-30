@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-29-2",
+  "date": "2026-10-29",
+  "project": "research",
+  "angle": "2026-10-29-advani-s-simple-word-counter-is-a-30-000",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A 'simple word counter' beat the best AI judge at spotting false successes in agent runs. It's a 30,000-feature bigram logistic regression trained on labeled runs. The judges got no labels. Budget for labels before buying an LLM judge. https://arxiv.org/html/2606.09863"
+    }
+  ]
+}

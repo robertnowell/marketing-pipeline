@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-29-3",
+  "date": "2026-10-29",
+  "project": "research",
+  "angle": "2026-10-29-hanley-mcneil-puts-the-0-69-vs-0-83-gap",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A word-counting classifier beat the best AI judge at spotting fake success. Not a plain counter: bigram TF-IDF into logistic regression, tested against XGBoost and DeBERTa-v3-base (arXiv 2606.09863). Before paying an LLM to grade your agent's runs, try the cheap baseline."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-29-4",
+  "date": "2026-10-29",
+  "project": "research",
+  "angle": "2026-10-29-advani-s-xgboost-detector-fell-from-0-65",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A false-success detector for AI agents is just bigram TF-IDF plus logistic regression. The paper also ran XGBoost and DeBERTa-v3-base on the same task. Before paying for an LLM judge, try a word-count baseline first. https://arxiv.org/html/2606.09863"
+    }
+  ]
+}
