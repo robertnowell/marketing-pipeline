@@ -8463,3 +8463,33 @@
   angle: 2026-10-25-advani-masked-the-top-30-regex-words-and
   source_id: ''
   posted_at: '2026-10-29'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mz4aalg2ix23
+  angle: 2026-10-29-advani-s-false-success-auroc-of-0-95-on
+  source_id: research-2026-10-29-1
+  posted_at: '2026-10-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mz4aanakqk2n
+  angle: 2026-10-29-advani-s-simple-word-counter-is-a-30-000
+  source_id: research-2026-10-29-2
+  posted_at: '2026-10-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mz4aaop3tx2w
+  angle: 2026-10-29-hanley-mcneil-puts-the-0-69-vs-0-83-gap
+  source_id: research-2026-10-29-3
+  posted_at: '2026-10-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mz4aaqf7f22n
+  angle: 2026-10-29-advani-s-xgboost-detector-fell-from-0-65
+  source_id: research-2026-10-29-4
+  posted_at: '2026-10-30'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mz4aarsv5d2g
+  angle: 2026-10-29-advani-s-false-success-detector-scores-0
+  source_id: research-2026-10-29-5
+  posted_at: '2026-10-30'
