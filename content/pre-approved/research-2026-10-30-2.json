@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-30-2",
+  "date": "2026-10-30",
+  "project": "research",
+  "angle": "2026-10-30-marketbench-s-six-models-passed-between",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI agents' self-predicted success rates varied far more than their actual results. A paper (v1, 26 April 2026) tested six models on 93 coding tasks. The pass rates look tight, but that band is within sampling noise. If agents pick their own tasks by confidence, check it against pass/fail first."
+    }
+  ]
+}

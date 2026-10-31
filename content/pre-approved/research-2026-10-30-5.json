@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-30-5",
+  "date": "2026-10-30",
+  "project": "research",
+  "angle": "2026-10-30-a-viral-claim-says-agent-safety-checks-s",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A viral claim says AI agent safety checks \"shrink from four steps to one.\" The paper it cites, MarketBench, never says that. It only tests whether agents can forecast their own success odds and token cost: 93 coding tasks, six LLMs. Don't cut a review step on a claim nobody sourced."
+    }
+  ]
+}

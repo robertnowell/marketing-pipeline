@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-30-4",
+  "date": "2026-10-30",
+  "project": "research",
+  "angle": "2026-10-30-kaddour-et-al-feb-2026-coding-agents-tha",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Coding agents that succeed 22% of the time predicted they'd succeed 77% of the time. Asking them to hunt for bugs first fixed most of it. If you let an AI agent pick or price its own tasks, its confidence number is not data. Source: Kaddour et al., Feb 2026."
+    }
+  ]
+}

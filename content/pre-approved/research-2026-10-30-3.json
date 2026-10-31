@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-30-3",
+  "date": "2026-10-30",
+  "project": "research",
+  "angle": "2026-10-30-in-2022-anthropic-researchers-found-mode",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Don't assign work to AI agents based on their own odds of success. A paper posted 26 April 2026 had six LLMs forecast their pass probability and token cost on 93 SWE-bench Lite tasks (558 model-task rows). Its premise: agents may not know what they can do."
+    }
+  ]
+}
