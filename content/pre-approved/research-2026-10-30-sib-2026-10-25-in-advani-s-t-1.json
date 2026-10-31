@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-30-sib-2026-10-25-in-advani-s-t-1",
+  "date": "2026-10-30",
+  "project": "research",
+  "angle": "angle:sib-2026-10-30-2026-10-25-in-advani-s-t-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI agents that say 'done' when the task isn't done now have a name: false success. It's defined in arXiv:2606.09863, 'From Confident Closing to Silent Failure', a sole-author paper by Laksh Advani, submitted 1 June 2026. Check the system's state, not the agent's closing message."
+    }
+  ]
+}

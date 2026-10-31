@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-30-sib-2026-10-23-advani-s-own--1",
+  "date": "2026-10-30",
+  "project": "research",
+  "angle": "angle:sib-2026-10-30-2026-10-23-advani-s-own--1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The detector that beats AI judges at catching false success claims isn't a neural net. It's bigram TF-IDF into logistic regression: 30000 features, min_df 2, class_weight balanced. The paper also tests XGBoost and DeBERTa-v3-base on the same task. https://arxiv.org/html/2606.09863"
+    }
+  ]
+}

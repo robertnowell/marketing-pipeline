@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-30-sib-2026-10-25-in-advani-s-t-2",
+  "date": "2026-10-30",
+  "project": "research",
+  "angle": "angle:sib-2026-10-30-2026-10-25-in-advani-s-t-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Check the labels before you trust an AI agent failure detector. In Laksh Advani's arXiv:2606.09863, the claimed-success label is a regex on the closing message, and the classifier is bigram TF-IDF over the full transcript. It reads the same vocabulary the label was built from."
+    }
+  ]
+}
