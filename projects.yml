@@ -353,60 +353,61 @@ research:
   channels:
     - bluesky
   facts:
-    - "### 1. The detector is TF-IDF + logistic regression, not a plain word counter
-      (Established: author's paper plus consistent secondary summaries) Bigram TF-IDF
-      (ngram_range (1,2), max_features 30000, min_df 2, sublinear_tf), LogisticRegression
-      (C=1.0, class_weight balanced, liblinear). XGBoost and DeBERTa-v3-base are tested
-      on the same task. (Source: [arXiv HTML](https://arxiv.org/html/2606.09863)…"
+    - '### 1. MarketBench: what it measures and what it found (Established) Fradkin
+      and Krishnan (v1, 26 April 2026) test whether agents can forecast their own
+      success probability and token cost before a task is assigned, as an input to
+      market-style task allocation. Setup: 93 SWE-bench Lite tasks, six LLMs, 558
+      model-task rows, binary pass/fail. (Sources: S1, S2 [Tier 1]; confirmed independently
+      by…'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-10-22-false-success-detector-label-cost' dated 2026-10-29, 
-      and from a simulated review round where 10 agent-written posts were ranked
-      by votes.
+      report '2026-10-13-marketbench-self-assessment-safety-checks' dated 
+      2026-10-30, and from a simulated review round where 10 agent-written posts
+      were ranked by votes.
   angles:
-    - id: 2026-10-29-advani-s-false-success-auroc-of-0-95-on
-      summary: "Advani's false-success AUROC of 0.95 on AppWorld sits on a 75.8% base
-        rate. In telecom the base rate is 3%. · thread: A simple word-counting classifier
-        beat the best AI judge at spotting fake success"
-      last_used: '2026-10-29'
+    - id: 2026-10-30-anthropic-calls-its-17-auto-mode-miss-ra
+      summary: "Anthropic calls its 17% auto-mode miss rate 'the honest number.' It
+        comes from 52 actions, so the plausible range is roughly 9% to 30% · thread:
+        AI models predicted their own success anywhere from 61% to 93%"
+      last_used:
       provenance:
-        post_id: p_ef6950f79a56
-        round_id: anti_slop:2026-10-29
-        report_label: 2026-10-22-false-success-detector-label-cost
-    - id: 2026-10-29-advani-s-simple-word-counter-is-a-30-000
-      summary: "Advani's \"simple word counter\" is a 30,000-feature bigram logistic
-        regression trained on labeled agent runs, and the judges got no labels · thread:
-        A simple word-counting classifier beat the best AI judge at spotting…"
-      last_used: '2026-10-29'
+        post_id: p_b45cb8e83662
+        round_id: dangerous_mode:2026-10-30
+        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
+    - id: 2026-10-30-marketbench-s-six-models-passed-between
+      summary: "MarketBench's six models passed between 70 and 75 of 93 tasks. The
+        'tight 75–81% band' is within sampling noise · thread: AI models predicted
+        their own success anywhere from 61% to 93%"
+      last_used:
       provenance:
-        post_id: p_15dce4530467
-        round_id: anti_slop:2026-10-29
-        report_label: 2026-10-22-false-success-detector-label-cost
-    - id: 2026-10-29-hanley-mcneil-puts-the-0-69-vs-0-83-gap
-      summary: 'Hanley-McNeil puts the 0.69 vs 0.83 gap near 2.9 standard errors,
-        if the test set is 100 per class. Nobody knows the test size. · thread: A
-        simple word-counting classifier beat the best AI judge at spotting fake success'
-      last_used: '2026-10-29'
+        post_id: p_d7dcfffcf780
+        round_id: dangerous_mode:2026-10-30
+        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
+    - id: 2026-10-30-in-2022-anthropic-researchers-found-mode
+      summary: "In 2022 Anthropic researchers found models 'mostly know what they
+        know.' Barkan, Kaddour and MarketBench say agents don't. Both can be true
+        · thread: AI models predicted their own success anywhere from 61% to 93%"
+      last_used:
       provenance:
-        post_id: p_127d5939be0a
-        round_id: anti_slop:2026-10-29
-        report_label: 2026-10-22-false-success-detector-label-cost
-    - id: 2026-10-29-advani-s-xgboost-detector-fell-from-0-65
-      summary: "Advani's XGBoost detector fell from 0.657 to 0.538 AUROC as it was
-        given 100 labeled examples per class, while logistic regression rose to 0.827
-        · thread: A simple word-counting classifier beat the best AI judge at…"
-      last_used: '2026-10-29'
+        post_id: p_f09b65a0e997
+        round_id: dangerous_mode:2026-10-30
+        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
+    - id: 2026-10-30-kaddour-et-al-feb-2026-coding-agents-tha
+      summary: 'Kaddour et al. (Feb 2026): coding agents that succeed 22% of the time
+        predicted 77%. Asking them to hunt for bugs fixed most of it · thread: AI
+        models predicted their own success anywhere from 61% to 93%'
+      last_used:
       provenance:
-        post_id: p_dc9aa1cf2805
-        round_id: anti_slop:2026-10-29
-        report_label: 2026-10-22-false-success-detector-label-cost
-    - id: 2026-10-29-advani-s-false-success-detector-scores-0
-      summary: "Advani's false-success detector scores 0.913 on a random split and
-        0.696 on a new domain. Same model. · thread: A simple word-counting classifier
-        beat the best AI judge at spotting fake success"
-      last_used: '2026-10-29'
+        post_id: p_a0b3e550681a
+        round_id: dangerous_mode:2026-10-30
+        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
+    - id: 2026-10-30-a-viral-claim-says-agent-safety-checks-s
+      summary: 'A viral claim says agent safety checks "shrink from four steps to
+        one." MarketBench, the paper it cites, never says that · thread: AI models
+        predicted their own success anywhere from 61% to 93%'
+      last_used:
       provenance:
-        post_id: p_5034d090a239
-        round_id: anti_slop:2026-10-29
-        report_label: 2026-10-22-false-success-detector-label-cost
+        post_id: p_6cc7bc5689df
+        round_id: dangerous_mode:2026-10-30
+        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-10-29-a-simple-word-counting-classifier-beat-t.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-10-30-ai-models-predicted-their-own-success-an.png
