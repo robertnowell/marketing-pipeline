@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-31-sib-2026-10-30-kaddour-et-al-1",
+  "date": "2026-10-31",
+  "project": "research",
+  "angle": "angle:sib-2026-10-31-2026-10-30-kaddour-et-al-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Agent-run work needs a quote up front: odds of success and token cost. A paper (v1, 26 April 2026) tested whether six LLMs can forecast both before a task is assigned, across 93 SWE-bench Lite tasks (558 model-task rows, pass/fail)."
+    }
+  ]
+}

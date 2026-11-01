@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-10-31-sib-2026-10-30-a-viral-claim-1",
+  "date": "2026-10-31",
+  "project": "research",
+  "angle": "angle:sib-2026-10-31-2026-10-30-a-viral-claim-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you route work to AI coding agents, one question matters: can an agent forecast its own odds of success and token cost before you assign the task? MarketBench tests that on 93 SWE-bench Lite tasks and six LLMs. That gives 558 model-task rows, each scored pass or fail."
+    }
+  ]
+}
