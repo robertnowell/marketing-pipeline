@@ -8541,3 +8541,15 @@
   angle: angle:sib-2026-10-30-2026-10-25-in-advani-s-t-2
   source_id: research-2026-10-30-sib-2026-10-25-in-advani-s-t-2
   posted_at: '2026-10-31'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzbbjaa5mh24
+  angle: angle:sib-2026-10-31-2026-10-30-a-viral-claim-1
+  source_id: research-2026-10-31-sib-2026-10-30-a-viral-claim-1
+  posted_at: '2026-11-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzbbjcfzx52j
+  angle: angle:sib-2026-10-31-2026-10-30-kaddour-et-al-1
+  source_id: research-2026-10-31-sib-2026-10-30-kaddour-et-al-1
+  posted_at: '2026-11-01'
