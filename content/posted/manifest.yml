@@ -8553,3 +8553,33 @@
   angle: angle:sib-2026-10-31-2026-10-30-kaddour-et-al-1
   source_id: research-2026-10-31-sib-2026-10-30-kaddour-et-al-1
   posted_at: '2026-11-01'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mze5ytdbzn27
+  angle: 2026-11-01-datacurve-s-swe-bench-pro-audit-189-of-2
+  source_id: research-2026-11-01-1
+  posted_at: '2026-11-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mze5yvf53622
+  angle: 2026-11-01-datacurve-s-95-interval-of-29-2-35-8-tre
+  source_id: research-2026-11-01-2
+  posted_at: '2026-11-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mze5yx7rgf27
+  angle: 2026-11-01-the-same-gpt-5-5-judge-disagreed-with-de
+  source_id: research-2026-11-01-3
+  posted_at: '2026-11-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mze5yzcqwv2x
+  angle: 2026-11-01-openai-found-59-4-of-138-hard-swe-bench
+  source_id: research-2026-11-01-4
+  posted_at: '2026-11-02'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mze5z35xdk2v
+  angle: 2026-11-01-a-gold-test-imported-a-helper-the-prompt
+  source_id: research-2026-11-01-5
+  posted_at: '2026-11-02'
