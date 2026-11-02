@@ -13,11 +13,10 @@ re-posts.
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import sys
 from pathlib import Path
-
-import re
 
 from pipeline.antislop import PRIVACY_DENYLIST
 from pipeline.config import Config, ConfigError
