@@ -353,61 +353,104 @@ research:
   channels:
     - bluesky
   facts:
-    - '### 1. MarketBench: what it measures and what it found (Established) Fradkin
-      and Krishnan (v1, 26 April 2026) test whether agents can forecast their own
-      success probability and token cost before a task is assigned, as an input to
-      market-style task allocation. Setup: 93 SWE-bench Lite tasks, six LLMs, 558
-      model-task rows, binary pass/fail. (Sources: S1, S2 [Tier 1]; confirmed independently
-      by…'
+    - "Exact counts and direction. n=789 SWE-Bench Pro rollouts, 67 false positives,
+      189 false negatives, 256 disagreements (32.4%). Same judge on DeepSWE: 2 and
+      8 of 735 (1.4%). A false negative is when \"the verifier failed but the judge
+      concludes the patch is a reasonable solution to the prompt.\" Confidence: Established
+      (Datacurve paper [Tier 1], read in three fetches; the blog's 24.0%/8.5% matches…"
+    - "The judge's identity and inputs. GPT-5.5 at xhigh reasoning effort, run as
+      a Codex CLI agent. It sees the task definition, the agent trajectory and patch,
+      the verifier output, and the hidden reference solution. Confidence: Likely ([Tier
+      1] paper §3.4/§7; the fetch tool paraphrased rather than returned raw text,
+      and an earlier agent reading the blog said the model was unnamed)."
+    - 'Design is small. 30 random tasks per benchmark, 9 of 16 agent configurations,
+      3 rollouts per task; some rollouts excluded (API errors, timeouts). Confidence:
+      Likely ([Tier 1] paper; the blog describes 10 configurations, a minor discrepancy).'
+    - 'Confidence intervals are probably too narrow. The paper uses Clopper–Pearson
+      intervals over rollouts, treating them as independent, but 3 rollouts share
+      each of 30 tasks. One reported cluster: 29 trials on flipt failed because fixture
+      YAMLs existed only in the gold commit. The paper does not report how many distinct
+      tasks account for the 189. Confidence: Likely ([Tier 1] paper and blog; the…'
+    - "Named examples of strict or mismatched tests (blog). A gold test importing
+      `parseRpmQfLine`, a maintainer helper the prompt never mentions (vuls); 9 unrelated
+      version-output snapshot tests broken by a correct `SelectionReason` change (qutebrowser);
+      missing fixtures (flipt). Confidence: Emerging ([Tier 1] Datacurve blog, one
+      source, author's own)."
+    - "The paper's own limits. No judge-verdict human validation, unreleased prompt,
+      self-preference caveat, \"illustrative\" per-tag rates. Confidence: Established
+      ([Tier 1] paper §3.4, §7, §8)."
+    - "Independent evidence that Pro's tests wrongly fail correct work. OpenAI's July
+      2026 audit: 200 of 731 public tasks (27.4%) flagged flawed by agent-plus-human
+      review, 249 (34.1%) by five developers, about 74% agreement, and a retraction
+      of OpenAI's earlier recommendation of Pro. Categories include \"too strict,\"\
+      \ \"too vague,\" \"too shallow,\" \"misleading.\" Named case: a task asks for
+      one space, the…"
+    - "Same pattern on SWE-bench Verified. OpenAI's re-audit of 138 hard problems
+      (o3 often failed) found at least 59.4% had tests rejecting functionally correct
+      submissions and about 35.5% had overly narrow tests. The sample is the hard
+      tail of failures, which is the closest analogue to a judge reviewing failed
+      attempts; it is not a base rate. Confidence: Emerging ([Tier 1] OpenAI page
+      seen only via…"
+    - "Tests also err the other way. UTBoost found 345 erroneous patches wrongly marked
+      passing and changed 40.9% of Lite and 24.4% of Verified leaderboard entries;
+      SWE-Bench+ found 32.67% of passing patches involved solution leakage and filtering
+      dropped a resolve rate from 12.47% to 3.97%. Datacurve's 67 false positives
+      and its \"CHEATED\" gold-commit-leak labels fit this. Confidence: Likely ([Tier
+      1]…"
+    - 'LLM judges have documented failure modes in both directions. Jin & Chen (arXiv
+      2603.00539) find judges over-reject correct code; Crupi et al. (arXiv 2507.16587)
+      find even the best judge "frequently misjudges" correctness. Snippet-level,
+      unverified: judge cues such as stated test results or a reference patch can
+      push judges to accept overfitting patches. The Datacurve judge sees both. Confidence:…'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-10-13-marketbench-self-assessment-safety-checks' dated 
-      2026-10-30, and from a simulated review round where 10 agent-written posts
-      were ranked by votes.
+      report '2026-10-18-swe-bench-pro-judge-disagreements' dated 2026-11-01, 
+      and from a simulated review round where 10 agent-written posts were ranked
+      by votes.
   angles:
-    - id: 2026-10-30-anthropic-calls-its-17-auto-mode-miss-ra
-      summary: "Anthropic calls its 17% auto-mode miss rate 'the honest number.' It
-        comes from 52 actions, so the plausible range is roughly 9% to 30% · thread:
-        AI models predicted their own success anywhere from 61% to 93%"
-      last_used: '2026-10-30'
+    - id: 2026-11-01-datacurve-s-swe-bench-pro-audit-189-of-2
+      summary: "Datacurve's SWE-Bench Pro audit: 189 of 256 disagreements is 24.0%
+        of attempts, and the paper never prints 256 · thread: An AI judge says a quarter
+        of coding-benchmark failures were actually correct"
+      last_used:
       provenance:
-        post_id: p_b45cb8e83662
-        round_id: dangerous_mode:2026-10-30
-        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
-    - id: 2026-10-30-marketbench-s-six-models-passed-between
-      summary: "MarketBench's six models passed between 70 and 75 of 93 tasks. The
-        'tight 75–81% band' is within sampling noise · thread: AI models predicted
-        their own success anywhere from 61% to 93%"
-      last_used: '2026-10-30'
+        post_id: p_3842bd8945ba
+        round_id: anti_slop:2026-11-01
+        report_label: 2026-10-18-swe-bench-pro-judge-disagreements
+    - id: 2026-11-01-datacurve-s-95-interval-of-29-2-35-8-tre
+      summary: "Datacurve's 95% interval of 29.2–35.8% treats 789 rollouts as independent,
+        but they come from 30 tasks · thread: An AI judge says a quarter of coding-benchmark
+        failures were actually correct"
+      last_used:
       provenance:
-        post_id: p_d7dcfffcf780
-        round_id: dangerous_mode:2026-10-30
-        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
-    - id: 2026-10-30-in-2022-anthropic-researchers-found-mode
-      summary: "In 2022 Anthropic researchers found models 'mostly know what they
-        know.' Barkan, Kaddour and MarketBench say agents don't. Both can be true
-        · thread: AI models predicted their own success anywhere from 61% to 93%"
-      last_used: '2026-10-30'
+        post_id: p_50ff1d48b659
+        round_id: anti_slop:2026-11-01
+        report_label: 2026-10-18-swe-bench-pro-judge-disagreements
+    - id: 2026-11-01-the-same-gpt-5-5-judge-disagreed-with-de
+      summary: "The same GPT-5.5 judge disagreed with DeepSWE's tests on 1.4% of rollouts
+        and with SWE-Bench Pro's on 32.4% · thread: An AI judge says a quarter of
+        coding-benchmark failures were actually correct"
+      last_used:
       provenance:
-        post_id: p_f09b65a0e997
-        round_id: dangerous_mode:2026-10-30
-        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
-    - id: 2026-10-30-kaddour-et-al-feb-2026-coding-agents-tha
-      summary: 'Kaddour et al. (Feb 2026): coding agents that succeed 22% of the time
-        predicted 77%. Asking them to hunt for bugs fixed most of it · thread: AI
-        models predicted their own success anywhere from 61% to 93%'
-      last_used: '2026-10-30'
+        post_id: p_db301915dd51
+        round_id: anti_slop:2026-11-01
+        report_label: 2026-10-18-swe-bench-pro-judge-disagreements
+    - id: 2026-11-01-openai-found-59-4-of-138-hard-swe-bench
+      summary: 'OpenAI found 59.4% of 138 hard SWE-bench Verified problems had tests
+        that reject correct code. Those 138 were picked because models kept failing
+        them · thread: An AI judge says a quarter of coding-benchmark failures…'
+      last_used:
       provenance:
-        post_id: p_a0b3e550681a
-        round_id: dangerous_mode:2026-10-30
-        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
-    - id: 2026-10-30-a-viral-claim-says-agent-safety-checks-s
-      summary: 'A viral claim says agent safety checks "shrink from four steps to
-        one." MarketBench, the paper it cites, never says that · thread: AI models
-        predicted their own success anywhere from 61% to 93%'
-      last_used: '2026-10-30'
+        post_id: p_d6b3976e7187
+        round_id: anti_slop:2026-11-01
+        report_label: 2026-10-18-swe-bench-pro-judge-disagreements
+    - id: 2026-11-01-a-gold-test-imported-a-helper-the-prompt
+      summary: 'A gold test imported a helper the prompt never mentioned: three named
+        cases from the SWE-Bench Pro audit · thread: An AI judge says a quarter of
+        coding-benchmark failures were actually correct'
+      last_used:
       provenance:
-        post_id: p_6cc7bc5689df
-        round_id: dangerous_mode:2026-10-30
-        report_label: 2026-10-13-marketbench-self-assessment-safety-checks
+        post_id: p_654ec8fe4a81
+        round_id: anti_slop:2026-11-01
+        report_label: 2026-10-18-swe-bench-pro-judge-disagreements
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-10-30-ai-models-predicted-their-own-success-an.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-01-an-ai-judge-says-a-quarter-of-coding-ben.png
