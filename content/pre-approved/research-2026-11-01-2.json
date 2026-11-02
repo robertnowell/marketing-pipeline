@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-01-2",
+  "date": "2026-11-01",
+  "project": "research",
+  "angle": "2026-11-01-datacurve-s-95-interval-of-29-2-35-8-tre",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge disagreed with a coding benchmark's pass/fail on 256 of 789 attempts (32.4%). The paper's error bars treat all 789 as independent, but they come from 30 tasks. If you pick AI coding tools by benchmark score, expect wider real error bars. Source: Datacurve paper."
+    }
+  ]
+}

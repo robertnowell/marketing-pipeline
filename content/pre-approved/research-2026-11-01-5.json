@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-01-5",
+  "date": "2026-11-01",
+  "project": "research",
+  "angle": "2026-11-01-a-gold-test-imported-a-helper-the-prompt",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Coding benchmark tests fail correct AI work. One test imported a maintainer helper the task prompt never mentioned. A Datacurve audit found an AI judge disagreed with the tests on 32.4% of 789 runs. Scores used to pick coding tools partly measure test strictness."
+    }
+  ]
+}

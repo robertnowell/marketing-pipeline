@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-01-1",
+  "date": "2026-11-01",
+  "project": "research",
+  "angle": "2026-11-01-datacurve-s-swe-bench-pro-audit-189-of-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge re-read 789 attempts on SWE-Bench Pro, a coding benchmark, and disagreed with the tests on 256. In 189, the tests said fail while the judge called the patch a reasonable solution. Before picking a coding agent by leaderboard score, note the grader may be the broken part."
+    }
+  ]
+}

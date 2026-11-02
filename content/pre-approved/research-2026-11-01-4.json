@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-01-4",
+  "date": "2026-11-01",
+  "project": "research",
+  "angle": "2026-11-01-openai-found-59-4-of-138-hard-swe-bench",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "OpenAI re-audited 138 hard SWE-bench Verified problems: at least 59.4% had tests that reject functionally correct code. Those 138 were picked because models kept failing them, so it's not a base rate. Still, benchmark failures aren't always the model's fault."
+    }
+  ]
+}

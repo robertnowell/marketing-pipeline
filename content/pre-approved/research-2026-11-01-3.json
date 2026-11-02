@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-01-3",
+  "date": "2026-11-01",
+  "project": "research",
+  "angle": "2026-11-01-the-same-gpt-5-5-judge-disagreed-with-de",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "One AI judge, two coding benchmarks: it disagreed with the test suite on 1.4% of runs on DeepSWE and 32.4% on SWE-Bench Pro (256 of 789). If you pick coding agents by leaderboard score, the tests may be the noisy part. OpenAI's July 2026 audit flagged 27.4% of Pro tasks as flawed."
+    }
+  ]
+}

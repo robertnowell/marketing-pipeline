@@ -411,7 +411,7 @@ research:
       summary: "Datacurve's SWE-Bench Pro audit: 189 of 256 disagreements is 24.0%
         of attempts, and the paper never prints 256 · thread: An AI judge says a quarter
         of coding-benchmark failures were actually correct"
-      last_used:
+      last_used: '2026-11-01'
       provenance:
         post_id: p_3842bd8945ba
         round_id: anti_slop:2026-11-01
@@ -420,7 +420,7 @@ research:
       summary: "Datacurve's 95% interval of 29.2–35.8% treats 789 rollouts as independent,
         but they come from 30 tasks · thread: An AI judge says a quarter of coding-benchmark
         failures were actually correct"
-      last_used:
+      last_used: '2026-11-01'
       provenance:
         post_id: p_50ff1d48b659
         round_id: anti_slop:2026-11-01
@@ -429,7 +429,7 @@ research:
       summary: "The same GPT-5.5 judge disagreed with DeepSWE's tests on 1.4% of rollouts
         and with SWE-Bench Pro's on 32.4% · thread: An AI judge says a quarter of
         coding-benchmark failures were actually correct"
-      last_used:
+      last_used: '2026-11-01'
       provenance:
         post_id: p_db301915dd51
         round_id: anti_slop:2026-11-01
@@ -438,7 +438,7 @@ research:
       summary: 'OpenAI found 59.4% of 138 hard SWE-bench Verified problems had tests
         that reject correct code. Those 138 were picked because models kept failing
         them · thread: An AI judge says a quarter of coding-benchmark failures…'
-      last_used:
+      last_used: '2026-11-01'
       provenance:
         post_id: p_d6b3976e7187
         round_id: anti_slop:2026-11-01
@@ -447,7 +447,7 @@ research:
       summary: 'A gold test imported a helper the prompt never mentioned: three named
         cases from the SWE-Bench Pro audit · thread: An AI judge says a quarter of
         coding-benchmark failures were actually correct'
-      last_used:
+      last_used: '2026-11-01'
       provenance:
         post_id: p_654ec8fe4a81
         round_id: anti_slop:2026-11-01
