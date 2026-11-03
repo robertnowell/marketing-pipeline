@@ -420,7 +420,7 @@ research:
       summary: "Datacurve's 95% interval of 29.2–35.8% treats 789 rollouts as independent,
         but they come from 30 tasks · thread: An AI judge says a quarter of coding-benchmark
         failures were actually correct"
-      last_used: '2026-11-01'
+      last_used: '2026-11-03'
       provenance:
         post_id: p_50ff1d48b659
         round_id: anti_slop:2026-11-01
