@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-04-3",
+  "date": "2026-11-04",
+  "project": "research",
+  "angle": "2026-11-04-kaddour-et-al-at-iclr-2026-is-two-worksh",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Gemini 3 Pro solved 22% of real coding tasks, then rated its own chances at 77%. Claude Opus 4.5: 61% vs 27% actual. GPT-5.2-Codex: 73% vs 35%. If your coding agent grades its own work, treat its self-grade as a guess and keep a human on review. arXiv 2602.06948"
+    }
+  ]
+}

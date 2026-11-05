@@ -410,7 +410,7 @@ research:
       summary: "The Kaddour bug-hunting prompt moved GPT's predictions down without
         improving them; a one-line recalibration got ECE to about 0.01 · thread: Coding
         AI agents that succeed 22% of the time predicted 77%"
-      last_used:
+      last_used: '2026-11-04'
       provenance:
         post_id: p_5cea57e16221
         round_id: anti_slop:2026-11-04
@@ -419,7 +419,7 @@ research:
       summary: 'In Kaddour et al., 62% of failing runs got a confident pass prediction.
         Only 11% of passing runs got a confident fail prediction. · thread: Coding
         AI agents that succeed 22% of the time predicted 77%'
-      last_used:
+      last_used: '2026-11-04'
       provenance:
         post_id: p_610687e90016
         round_id: anti_slop:2026-11-04
@@ -428,7 +428,7 @@ research:
       summary: '"Kaddour et al. at ICLR 2026" is two workshop posters, and the 22%
         comes from 22 passing tasks · thread: Coding AI agents that succeed 22% of
         the time predicted 77%'
-      last_used:
+      last_used: '2026-11-04'
       provenance:
         post_id: p_500e4a492846
         round_id: anti_slop:2026-11-04
@@ -437,7 +437,7 @@ research:
       summary: "Two literatures reached the same gate order: a deterministic check
         first, the model's opinion of itself last (arXiv 2509.19163, Kaddour 2026)
         · thread: Coding AI agents that succeed 22% of the time predicted 77%"
-      last_used:
+      last_used: '2026-11-04'
       provenance:
         post_id: p_6d0890223da2
         round_id: anti_slop:2026-11-04
@@ -446,7 +446,7 @@ research:
       summary: "In Kaddour et al., the weakest agent (22% success) made the highest
         prediction (77%); across three models, confidence didn't track skill · thread:
         Coding AI agents that succeed 22% of the time predicted 77%"
-      last_used:
+      last_used: '2026-11-04'
       provenance:
         post_id: p_b813dd937afd
         round_id: anti_slop:2026-11-04

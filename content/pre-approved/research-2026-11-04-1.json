@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-04-1",
+  "date": "2026-11-04",
+  "project": "research",
+  "angle": "2026-11-04-the-kaddour-bug-hunting-prompt-moved-gpt",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Gemini 3 Pro finished coding tasks and rated its own odds of success at 77%. Actual success: 22%. Across three frontier coding agents, post-run confidence was 61-77% against 22-35% reality. If you ship agent-written code, its \"looks good\" is noise. Source: arXiv 2602.06948"
+    }
+  ]
+}

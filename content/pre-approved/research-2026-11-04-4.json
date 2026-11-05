@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-04-4",
+  "date": "2026-11-04",
+  "project": "research",
+  "angle": "2026-11-04-two-literatures-reached-the-same-gate-or",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Gemini 3 Pro solved 22% of real coding tasks, then rated its own odds at 77%. GPT-5.2-Codex said 73% against an actual 35%. If your AI agent signs off on its own work, that sign-off is noise. Run tests first, ask the model last. arXiv 2602.06948"
+    }
+  ]
+}

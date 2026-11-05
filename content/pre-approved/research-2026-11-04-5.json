@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-04-5",
+  "date": "2026-11-04",
+  "project": "research",
+  "angle": "2026-11-04-in-kaddour-et-al-the-weakest-agent-22-su",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Coding AI agents that succeeded 22% of the time predicted 77% success on their own work. The weakest agent was the most confident. If you let an agent grade its own work, its confidence tells you nothing about skill. Source: arXiv 2602.06948, 100 SWE-bench Pro tasks."
+    }
+  ]
+}

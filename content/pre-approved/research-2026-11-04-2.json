@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-04-2",
+  "date": "2026-11-04",
+  "project": "research",
+  "angle": "2026-11-04-in-kaddour-et-al-62-of-failing-runs-got",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Coding AI agents are confident when they fail. In a test on 100 SWE-bench Pro tasks, 62% of failing runs got a confident pass prediction. Only 11% of passing runs got a confident fail prediction. Don't let an agent grade its own work. Source: arXiv 2602.06948"
+    }
+  ]
+}
