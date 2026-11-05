@@ -8601,3 +8601,45 @@
   angle: 2026-11-01-the-same-gpt-5-5-judge-disagreed-with-de
   source_id: ''
   posted_at: '2026-11-03'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzlhrpth3d23
+  angle: 2026-11-04-the-kaddour-bug-hunting-prompt-moved-gpt
+  source_id: research-2026-11-04-1
+  posted_at: '2026-11-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzlhrrhz4w2j
+  angle: 2026-11-04-in-kaddour-et-al-62-of-failing-runs-got
+  source_id: research-2026-11-04-2
+  posted_at: '2026-11-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzlhrt6nrt2v
+  angle: 2026-11-04-kaddour-et-al-at-iclr-2026-is-two-worksh
+  source_id: research-2026-11-04-3
+  posted_at: '2026-11-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzlhruwnct2d
+  angle: 2026-11-04-two-literatures-reached-the-same-gate-or
+  source_id: research-2026-11-04-4
+  posted_at: '2026-11-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzlhrwp26t23
+  angle: 2026-11-04-in-kaddour-et-al-the-weakest-agent-22-su
+  source_id: research-2026-11-04-5
+  posted_at: '2026-11-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzlhryecrd2x
+  angle: angle:sib-2026-11-04-2026-11-01-the-same-gpt--1
+  source_id: research-2026-11-04-sib-2026-11-01-the-same-gpt--1
+  posted_at: '2026-11-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzlhrzxaqi2w
+  angle: angle:sib-2026-11-04-2026-11-01-the-same-gpt--2
+  source_id: research-2026-11-04-sib-2026-11-01-the-same-gpt--2
+  posted_at: '2026-11-05'
