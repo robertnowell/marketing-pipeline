@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-04-sib-2026-11-01-the-same-gpt--1",
+  "date": "2026-11-04",
+  "project": "research",
+  "angle": "angle:sib-2026-11-04-2026-11-01-the-same-gpt--1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Same AI judge, two coding benchmarks. DeepSWE: it disagreed with the tests on 1.4% of 735 rollouts. SWE-Bench Pro: 256 of 789 (32.4%). The direction matters: 189 were tests failing patches the judge found reasonable, 67 the reverse. Source: Datacurve paper."
+    }
+  ]
+}

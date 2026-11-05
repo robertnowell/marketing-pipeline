@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-04-sib-2026-11-01-the-same-gpt--2",
+  "date": "2026-11-04",
+  "project": "research",
+  "angle": "angle:sib-2026-11-04-2026-11-01-the-same-gpt--2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A patch judged reasonable still failed its benchmark: the reference test imported parseRpmQfLine, a maintainer helper the task prompt never mentions. Another correct change broke 9 unrelated snapshot tests. If you pick coding agents by benchmark score, some of that score is test noise."
+    }
+  ]
+}
