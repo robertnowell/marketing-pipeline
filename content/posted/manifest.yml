@@ -8643,3 +8643,9 @@
   angle: angle:sib-2026-11-04-2026-11-01-the-same-gpt--2
   source_id: research-2026-11-04-sib-2026-11-01-the-same-gpt--2
   posted_at: '2026-11-05'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mznwfk65gq2u
+  angle: 2026-11-04-the-kaddour-bug-hunting-prompt-moved-gpt
+  source_id: ''
+  posted_at: '2026-11-06'
