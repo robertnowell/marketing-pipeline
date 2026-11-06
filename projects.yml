@@ -446,7 +446,7 @@ research:
       summary: "In Kaddour et al., the weakest agent (22% success) made the highest
         prediction (77%); across three models, confidence didn't track skill · thread:
         Coding AI agents that succeed 22% of the time predicted 77%"
-      last_used: '2026-11-04'
+      last_used: '2026-11-06'
       provenance:
         post_id: p_b813dd937afd
         round_id: anti_slop:2026-11-04
