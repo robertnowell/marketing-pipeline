@@ -419,7 +419,7 @@ research:
       summary: 'In Kaddour et al., 62% of failing runs got a confident pass prediction.
         Only 11% of passing runs got a confident fail prediction. · thread: Coding
         AI agents that succeed 22% of the time predicted 77%'
-      last_used: '2026-11-04'
+      last_used: '2026-11-06'
       provenance:
         post_id: p_610687e90016
         round_id: anti_slop:2026-11-04
