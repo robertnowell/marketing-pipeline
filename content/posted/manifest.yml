@@ -8673,3 +8673,9 @@
   angle: 2026-11-04-in-kaddour-et-al-the-weakest-agent-22-su
   source_id: ''
   posted_at: '2026-11-06'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzqdcejnsd2e
+  angle: 2026-11-04-the-kaddour-bug-hunting-prompt-moved-gpt
+  source_id: ''
+  posted_at: '2026-11-07'
