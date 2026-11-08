@@ -437,7 +437,7 @@ research:
       summary: "Two literatures reached the same gate order: a deterministic check
         first, the model's opinion of itself last (arXiv 2509.19163, Kaddour 2026)
         · thread: Coding AI agents that succeed 22% of the time predicted 77%"
-      last_used: '2026-11-07'
+      last_used: '2026-11-08'
       provenance:
         post_id: p_6d0890223da2
         round_id: anti_slop:2026-11-04
