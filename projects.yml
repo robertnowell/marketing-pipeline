@@ -410,7 +410,7 @@ research:
       summary: "The Kaddour bug-hunting prompt moved GPT's predictions down without
         improving them; a one-line recalibration got ECE to about 0.01 · thread: Coding
         AI agents that succeed 22% of the time predicted 77%"
-      last_used: '2026-11-07'
+      last_used: '2026-11-08'
       provenance:
         post_id: p_5cea57e16221
         round_id: anti_slop:2026-11-04
