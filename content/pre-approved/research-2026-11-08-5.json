@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-08-5",
+  "date": "2026-11-08",
+  "project": "research",
+  "angle": "2026-11-08-29-failed-trials-in-one-flipt-io-flipt-t",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "One AI judge re-graded two coding benchmarks. It disagreed with the tests 1.4% of the time on one, 32.4% on SWE-Bench Pro. Not proof of error, but OpenAI's separate audit flagged 27.4% of that benchmark's tasks as flawed. If you pick coding agents by leaderboard, audit the tests first."
+    }
+  ]
+}

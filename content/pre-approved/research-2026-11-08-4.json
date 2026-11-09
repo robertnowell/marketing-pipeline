@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-08-4",
+  "date": "2026-11-08",
+  "project": "research",
+  "angle": "2026-11-08-the-gpt-5-5-judge-that-flagged-32-4-of-s",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge disagreed with one coding benchmark's tests 1.4% of the time, and another's 32.4%. But it was handed the hidden answer key, and its authors call it \"an auditor of the verifier, not the grader of record.\" Treat coding-model leaderboard scores as unaudited."
+    }
+  ]
+}

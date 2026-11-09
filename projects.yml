@@ -412,7 +412,7 @@ research:
       summary: "DeepSWE's 1.4% judge-disagreement rate rests on 10 rollouts, and the
         team that wrote the tests also audited them · thread: The same AI judge disagreed
         with one coding test 1.4% of the time, another 32.4%"
-      last_used:
+      last_used: '2026-11-08'
       provenance:
         post_id: p_f29a2723e688
         round_id: anti_slop:2026-11-08
@@ -421,7 +421,7 @@ research:
       summary: 'The 32.4% comes from 30 tasks, and the 789 rollouts behind its "95%
         CI 29.2–35.8" are not 789 independent samples · thread: The same AI judge
         disagreed with one coding test 1.4% of the time, another 32.4%'
-      last_used:
+      last_used: '2026-11-08'
       provenance:
         post_id: p_bb91281e57a4
         round_id: anti_slop:2026-11-08
@@ -430,7 +430,7 @@ research:
       summary: 'A SWE-Bench Pro test imports a private helper, parseRpmQfLine, that
         the task prompt never mentions · thread: The same AI judge disagreed with
         one coding test 1.4% of the time, another 32.4%'
-      last_used:
+      last_used: '2026-11-08'
       provenance:
         post_id: p_cd573f9facbe
         round_id: anti_slop:2026-11-08
@@ -439,7 +439,7 @@ research:
       summary: 'The GPT-5.5 judge that flagged 32.4% of SWE-Bench Pro rollouts was
         handed the answer key · thread: The same AI judge disagreed with one coding
         test 1.4% of the time, another 32.4%'
-      last_used:
+      last_used: '2026-11-08'
       provenance:
         post_id: p_549cdd7704ca
         round_id: anti_slop:2026-11-08
@@ -448,7 +448,7 @@ research:
       summary: "29 failed trials in one flipt-io/flipt task show why 24% of rollouts
         isn't 24% of a benchmark · thread: The same AI judge disagreed with one coding
         test 1.4% of the time, another 32.4%"
-      last_used:
+      last_used: '2026-11-08'
       provenance:
         post_id: p_9283c42df67d
         round_id: anti_slop:2026-11-08

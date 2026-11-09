@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-08-2",
+  "date": "2026-11-08",
+  "project": "research",
+  "angle": "2026-11-08-the-32-4-comes-from-30-tasks-and-the-789",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The same AI judge disagreed with SWE-Bench Pro's tests on 32.4% of coding-agent runs, and with DeepSWE's on 1.4%. But the audit sampled 30 tasks per benchmark, and the judge saw the answer key. The authors call it \"an auditor of the verifier, not the grader of record.\""
+    }
+  ]
+}
