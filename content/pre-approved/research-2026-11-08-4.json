@@ -2,11 +2,11 @@
   "id": "research-2026-11-08-4",
   "date": "2026-11-08",
   "project": "research",
-  "angle": "2026-11-08-the-gpt-5-5-judge-that-flagged-32-4-of-s",
+  "angle": "2026-11-08-kaddour-et-al-s-table-2-prints-gaps-not",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "An AI judge disagreed with one coding benchmark's tests 1.4% of the time, and another's 32.4%. But it was handed the hidden answer key, and its authors call it \"an auditor of the verifier, not the grader of record.\" Treat coding-model leaderboard scores as unaudited."
+      "text": "A coding agent that succeeded on 22% of tasks predicted it succeeded on 77%. That's Gemini-3-Pro, tested on 100 SWE-bench Pro tasks (arXiv 2602.06948). If your agent tells you its work is done and correct, treat that as a claim, not a signal. Check with tests."
     }
   ]
 }

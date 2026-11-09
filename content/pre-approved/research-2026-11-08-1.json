@@ -2,11 +2,11 @@
   "id": "research-2026-11-08-1",
   "date": "2026-11-08",
   "project": "research",
-  "angle": "2026-11-08-deepswe-s-1-4-judge-disagreement-rate-re",
+  "angle": "2026-11-08-gemini-3-pro-s-77-predicted-was-its-afte",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "The same AI judge disagreed with one coding benchmark's tests 1.4% of the time and another's 32.4%. Disagreement isn't proof of error, and the authors built one of the benchmarks. But OpenAI also flagged 27.4% of SWE-Bench Pro tasks as flawed. Don't choose coding agents off one leaderboard."
+      "text": "A coding AI that solved 22% of its tasks predicted it solved 77%. Gemini-3-Pro, tested on 100 SWE-bench Pro tasks, was asked after each run whether it succeeded. If you ship code an agent says works, treat its confidence as noise and run the tests. Source: arXiv 2602.06948"
     }
   ]
 }

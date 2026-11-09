@@ -406,7 +406,7 @@ research:
       summary: "Gemini-3-Pro's \"77% predicted\" was its after-the-fact guess. Before
         starting it averaged about 99%, and at 75% of the run it said 67%. · thread:
         A coding AI that solved 22% of tasks predicted it solved 77%"
-      last_used:
+      last_used: '2026-11-08'
       provenance:
         post_id: p_1810c2d1773e
         round_id: anti_slop:2026-11-08
@@ -415,7 +415,7 @@ research:
       summary: 'The abstract says "some agents that succeed only 22% of the time predict
         77%." The headline dropped "some." · thread: A coding AI that solved 22% of
         tasks predicted it solved 77%'
-      last_used:
+      last_used: '2026-11-08'
       provenance:
         post_id: p_85d9d6cce7f6
         round_id: anti_slop:2026-11-08
@@ -424,7 +424,7 @@ research:
       summary: "In Kaddour et al., the 22-task sample can't rank pre- vs post-execution
         confidence. It also can't dent the overconfidence gap. · thread: A coding
         AI that solved 22% of tasks predicted it solved 77%"
-      last_used:
+      last_used: '2026-11-08'
       provenance:
         post_id: p_f6ffcd93e53d
         round_id: anti_slop:2026-11-08
@@ -433,7 +433,7 @@ research:
       summary: "Kaddour et al.'s Table 2 prints gaps, not means. Deriving GPT's mean
         from it gives 74%, but the text says 73%. · thread: A coding AI that solved
         22% of tasks predicted it solved 77%"
-      last_used:
+      last_used: '2026-11-08'
       provenance:
         post_id: p_4b4ce36f9fc3
         round_id: anti_slop:2026-11-08
@@ -442,7 +442,7 @@ research:
       summary: "In Kaddour et al.'s overconfidence table, \"+0.77\" and \"77%\" are
         different numbers for Gemini-3-Pro. One is a gap, one is a level. · thread:
         A coding AI that solved 22% of tasks predicted it solved 77%"
-      last_used:
+      last_used: '2026-11-08'
       provenance:
         post_id: p_46e9976f9278
         round_id: anti_slop:2026-11-08

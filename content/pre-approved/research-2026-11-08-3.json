@@ -2,11 +2,11 @@
   "id": "research-2026-11-08-3",
   "date": "2026-11-08",
   "project": "research",
-  "angle": "2026-11-08-a-swe-bench-pro-test-imports-a-private-h",
+  "angle": "2026-11-08-in-kaddour-et-al-the-22-task-sample-can",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "An AI judge disagreed with the tests on 32.4% of sampled coding-agent runs on one benchmark, SWE-Bench Pro. On another, DeepSWE, it was 1.4%. If you pick AI coding tools by leaderboard score, the grader may be the noise. Caveat: the judge itself was never validated by humans (DeepSWE paper)."
+      "text": "A coding AI that solved 22% of tasks predicted it solved 77%. Gemini-3-Pro, 100 SWE-bench Pro tasks, arXiv 2602.06948. If your agent says the work is done, that is not evidence. Run the tests yourself. The sample is small, but even the upper bound of the 95% interval leaves a gap over 45 points."
     }
   ]
 }

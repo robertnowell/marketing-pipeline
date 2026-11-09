@@ -2,11 +2,11 @@
   "id": "research-2026-11-08-2",
   "date": "2026-11-08",
   "project": "research",
-  "angle": "2026-11-08-the-32-4-comes-from-30-tasks-and-the-789",
+  "angle": "2026-11-08-the-abstract-says-some-agents-that-succe",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "The same AI judge disagreed with SWE-Bench Pro's tests on 32.4% of coding-agent runs, and with DeepSWE's on 1.4%. But the audit sampled 30 tasks per benchmark, and the judge saw the answer key. The authors call it \"an auditor of the verifier, not the grader of record.\""
+      "text": "A coding AI agent that solved 22% of its tasks predicted it solved 77%. That is Gemini-3-Pro on 100 SWE-bench Pro tasks (arXiv 2602.06948). If your agent grades its own work before you ship, its confidence tells you little. I'd gate on tests you run, not on self-report."
     }
   ]
 }
