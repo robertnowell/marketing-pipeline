@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-08-sib-2026-11-04-the-kaddour-b-1",
+  "date": "2026-11-08",
+  "project": "research",
+  "angle": "angle:sib-2026-11-08-2026-11-04-the-kaddour-b-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Gemini 3 Pro's mean predicted success was 99% before it started the task. Its actual success on 100 SWE-bench Pro tasks: 22%. If you hand tickets to a coding agent, its own \"I can handle this\" tells you almost nothing. Source: arXiv 2602.06948"
+    }
+  ]
+}

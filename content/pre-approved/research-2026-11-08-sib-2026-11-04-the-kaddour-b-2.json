@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-08-sib-2026-11-04-the-kaddour-b-2",
+  "date": "2026-11-08",
+  "project": "research",
+  "angle": "angle:sib-2026-11-08-2026-11-04-the-kaddour-b-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Prompting a coding agent with \"Your job is to find problems: edge cases, failure modes, gaps\" cut GPT's calibration error from 0.42 to 0.30. But its ability to tell good runs from bad slipped (AUROC 0.58 to 0.55). It just guessed lower, not better. arXiv 2602.06948"
+    }
+  ]
+}
