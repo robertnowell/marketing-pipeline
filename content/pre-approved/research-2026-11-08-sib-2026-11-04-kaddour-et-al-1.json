@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-08-sib-2026-11-04-kaddour-et-al-1",
+  "date": "2026-11-08",
+  "project": "research",
+  "angle": "angle:sib-2026-11-08-2026-11-04-kaddour-et-al-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The claim that coding AI agents overrate their own work holds up at the source. arXiv 2602.06948: abstract, full text and conference listing agree, and three research agents independently found the same abstract sentence. Setup: 3 models, 100 SWE-bench Pro tasks. Real paper, real result."
+    }
+  ]
+}

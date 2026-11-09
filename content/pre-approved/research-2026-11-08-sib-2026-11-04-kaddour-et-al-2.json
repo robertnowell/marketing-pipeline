@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-08-sib-2026-11-04-kaddour-et-al-2",
+  "date": "2026-11-08",
+  "project": "research",
+  "angle": "angle:sib-2026-11-08-2026-11-04-kaddour-et-al-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Asked how likely they were to have succeeded, after finishing the task: GPT-5.2-Codex said 73% (actual 35%), Gemini 3 Pro 77% (actual 22%), Claude Opus 4.5 61% (actual 27%). An agent's 'done' is not a test result. Run the tests. arXiv 2602.06948, 100 SWE-bench Pro tasks."
+    }
+  ]
+}

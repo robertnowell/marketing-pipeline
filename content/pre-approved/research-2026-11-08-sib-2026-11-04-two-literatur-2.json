@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-08-sib-2026-11-04-two-literatur-2",
+  "date": "2026-11-08",
+  "project": "research",
+  "angle": "angle:sib-2026-11-08-2026-11-04-two-literatur-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Three coding agents rated their own odds on 100 SWE-bench Pro tasks. Real success: GPT-5.2-Codex 35%, Claude Opus 4.5 27%, Gemini 3 Pro 22%. Their ratings were near chance at separating wins from losses. Gate merges on tests, not on the agent's confidence. arXiv 2602.06948"
+    }
+  ]
+}

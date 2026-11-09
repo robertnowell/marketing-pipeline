@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-08-sib-2026-11-04-two-literatur-1",
+  "date": "2026-11-08",
+  "project": "research",
+  "angle": "angle:sib-2026-11-08-2026-11-04-two-literatur-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Asking a coding agent 'did you succeed?' after it finishes tells you slightly less than asking before it starts. Claude Opus 4.5 AUROC: 0.64 pre-execution, 0.55 post. Source: arXiv 2602.06948, 100 SWE-bench Pro tasks. Route work on the early guess, not the victory lap."
+    }
+  ]
+}
