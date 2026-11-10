@@ -410,7 +410,7 @@ research:
       summary: 'A coding agent that passed 22 of 100 tasks told its authors it expected
         to pass 77% · thread: AI coding agents that succeeded 22% of the time predicted
         77%'
-      last_used:
+      last_used: '2026-11-09'
       provenance:
         post_id: p_460973c145c9
         round_id: quiet_machines:2026-11-09
@@ -419,7 +419,7 @@ research:
       summary: "In the Kaddour paper, the bug-hunting prompt moved GPT's guesses down
         without improving them · thread: AI coding agents that succeeded 22% of the
         time predicted 77%"
-      last_used:
+      last_used: '2026-11-09'
       provenance:
         post_id: p_9f9ddad15d53
         round_id: quiet_machines:2026-11-09
@@ -428,7 +428,7 @@ research:
       summary: 'The "61% to 93%" range circulating about Kaddour et al. has no 93
         in the paper · thread: AI coding agents that succeeded 22% of the time predicted
         77%'
-      last_used:
+      last_used: '2026-11-09'
       provenance:
         post_id: p_2df6945397da
         round_id: quiet_machines:2026-11-09
@@ -437,7 +437,7 @@ research:
       summary: "In Kaddour et al., 97% of Claude's runs lost confidence mid-task,
         and the drop told you nothing · thread: AI coding agents that succeeded 22%
         of the time predicted 77%"
-      last_used:
+      last_used: '2026-11-09'
       provenance:
         post_id: p_1c8adc898a5a
         round_id: quiet_machines:2026-11-09
@@ -446,7 +446,7 @@ research:
       summary: 'In Kaddour et al., 62% of predictions on failing coding tasks were
         overconfident, but only 11% of passing tasks were underconfident · thread:
         AI coding agents that succeeded 22% of the time predicted 77%'
-      last_used:
+      last_used: '2026-11-09'
       provenance:
         post_id: p_0c0b0dc6d17d
         round_id: quiet_machines:2026-11-09

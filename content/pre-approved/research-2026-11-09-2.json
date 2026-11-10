@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-09-2",
+  "date": "2026-11-09",
+  "project": "research",
+  "angle": "2026-11-09-in-the-kaddour-paper-the-bug-hunting-pro",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Tell a coding agent to hunt for bugs in its own work and it sounds less sure. It does not get more accurate. In arXiv 2602.06948, GPT's overconfidence fell from +0.39 to +0.26 but AUROC slipped 0.58 to 0.55. A downward shift, not self-knowledge. Keep a human on the accept step."
+    }
+  ]
+}

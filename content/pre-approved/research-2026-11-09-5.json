@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-09-5",
+  "date": "2026-11-09",
+  "project": "research",
+  "angle": "2026-11-09-in-kaddour-et-al-62-of-predictions-on-fa",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Coding agents are far more often confidently wrong than timidly right. On 100 SWE-bench Pro tasks, 62% of predictions on failing tasks were overconfident; only 11% of passing tasks were underconfident. Gemini 3 Pro passed 22% and predicted 77%. Don't let it grade itself. arXiv 2602.06948"
+    }
+  ]
+}

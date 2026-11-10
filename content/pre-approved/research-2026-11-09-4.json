@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-09-4",
+  "date": "2026-11-09",
+  "project": "research",
+  "angle": "2026-11-09-in-kaddour-et-al-97-of-claude-s-runs-los",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Coding agents that actually succeeded 22% of the time predicted 77% success (Gemini 3 Pro, 100 SWE-bench Pro tasks). If you let an agent grade its own work before you merge, you're trusting a confidence score that barely separates passes from failures. Source: arXiv 2602.06948"
+    }
+  ]
+}

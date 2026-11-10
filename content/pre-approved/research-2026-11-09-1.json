@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-09-1",
+  "date": "2026-11-09",
+  "project": "research",
+  "angle": "2026-11-09-a-coding-agent-that-passed-22-of-100-tas",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A coding agent (Gemini 3 Pro) passed 22 of 100 real software tasks, then predicted it had a 77% chance of passing. Before starting, its average confidence was 99%. If an agent grades its own work before you ship, its confidence tells you almost nothing. Source: arXiv 2602.06948"
+    }
+  ]
+}
