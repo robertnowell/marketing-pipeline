@@ -353,99 +353,103 @@ research:
   channels:
     - bluesky
   facts:
-    - 'One source paper; no venue on the preprint. arXiv 2602.06948 has empty Comments
-      and Journal-ref fields. Abstract: *"All results exhibit agentic overconfidence:
-      some agents that succeed only 22% of the time predict 77% success."* (The abstract
-      was returned only as fragments; the rest is not verified verbatim.) [Tier 1]
-      arXiv abs page. Established.'
-    - "22% and 77% are different kinds of number, both Gemini's. 22% is the observed
-      base rate. 77% is the mean predicted success probability post-execution. Neither
-      is accuracy or AUROC. Conclusion text: *\"Gemini predicts 77% against a 22%
-      base rate.\"* The abstract's \"some agents\" is never named; the conclusion
-      identifies Gemini. [Tier 1] arXiv HTML. Established (corroborated by two agents'
-      fetches)."
-    - 'Setup. 100 tasks sampled from SWE-bench Pro, three models. Base rates: GPT-5.2-Codex
-      35%, Claude Opus 4.5 27%, Gemini-3-Pro 22%. Post-execution GPT estimate: *"73%
-      success for GPT (base rate 35%)"*. [Tier 1] arXiv HTML. Likely (HTML fetched
-      through a summarizing model).'
-    - Overconfidence by model. The paper's Table 2 gives overconfidence as mean 
-      estimate minus base rate. Mean estimates are not printed in the table; any
-      means derived as base rate plus overconfidence are our computation (GPT 
-      post-execution derives to 74% vs 73% stated in text). | Model | Base rate 
-      | Pre-exec overconf. | Post-exec overconf. | |---|---|---|---| | 
-      GPT-5.2-Codex | 35% | +0.35 | +0.39 | |…
-    - The 22-positives caveat is the authors' own. *"Our evaluation uses 100 
-      SWE-bench Pro tasks, yielding as few as 22 positive examples (Gemini)."* 
-      [Tier 1] arXiv HTML. Established.
-    - 'Discrimination results are statistically weak; the authors say so. Bootstrap
-      95% CIs on AUROC: GPT pre 0.62 [0.50, 0.75], GPT post 0.58 [0.46, 0.70], Claude
-      pre 0.64 [0.49, 0.78], Claude post 0.55 [0.42, 0.67]. Several include 0.5 (chance).
-      Pre- vs post-execution differences are described as "not statistically significant"
-      and the pattern as "suggestive". [Tier 1] arXiv HTML. Likely.'
-    - 'Own arithmetic: the overconfidence headline survives the small sample. - Wilson
-      95% interval for 22/100 is about 15.0% to 31.1%. Even at the upper bound, the
-      gap to 77% exceeds 45 points. (Our calculation; method per Brown, Cai & DasGupta
-      2001, Statistical Science, [Tier 1], seen via search summaries only.) - With
-      22 positives and 78 negatives, Hanley-McNeil gives an AUROC SE of about 0.07
-      at…'
-    - 'Venue: workshop listings on iclr.cc. Poster listing 10019072 names "Principled
-      Design for Trustworthy AI: Interpretability, Robustness, and Safety Across Modalities"
-      (workshop page: Monday 27 April 2026, 9:00 to 17:00 -03), with OpenReview id
-      yz28r69xU8. A second workshop page, "Post-AGI Science and Society Workshop"
-      (Sun 26 April 2026), is reported to list the same title with a different…'
-    - Other stated limitations. Coding tasks only; prompting only (no trained 
-      verifiers); scaling unexplored; multi-agent propagation unstudied; 
-      adversarial "bug-finding" prompting "reduces but does not eliminate 
-      overconfidence". [Tier 1] arXiv HTML. Likely.
+    - 'Paper identified and headline verified. Confidence: Established arXiv abstract,
+      full text and conference listing agree; three agents independently found the
+      same abstract sentence. [Tier 1] arXiv 2602.06948.'
+    - 'Setup: 3 agents, 100 SWE-bench Pro tasks. GPT-5.2-Codex, Gemini 3 Pro (Preview),
+      Claude Opus 4.5. Actual success: 35% / 22% / 27%. Agents gave success probabilities
+      before, during (25/50/75%) and after execution. Confidence: Established [Tier
+      1] arXiv 2602.06948 (read by three agents).'
+    - 'Post-execution predicted vs actual (standard prompt). GPT 73% vs 35%; Gemini
+      77% vs 22%; Claude 61% vs 27%. Confidence: Likely (figures read through a summarizing
+      fetch tool; GPT 73% is quoted from the paper in a search snippet, 74% by derivation).
+      [Tier 1] arXiv 2602.06948.'
+    - 'Pre-execution is even more overconfident for Gemini. Pre-exec mean 99% for
+      Gemini (stated); GPT about 70% and Claude about 64% are derived (base rate +
+      overconfidence). Pre-execution, with strictly less information, discriminated
+      *slightly better* than post-execution (AUROC GPT 0.62 vs 0.58; Claude 0.64 vs
+      0.55; Gemini 0.53 vs 0.51), though not always significantly. Confidence: Likely
+      [Tier 1]…'
+    - 'Adversarial (bug-hunting) prompt: best calibration, but partial. Prompt: "Your
+      job is to find problems: edge cases, failure modes, gaps." Confidence: Likely
+      [Tier 1] arXiv 2602.06948. - ECE: GPT 0.42 to 0.30; Claude 0.37 to 0.24; Gemini
+      0.66 to 0.53. - Overconfidence (predicted minus base rate): GPT +0.39 to +0.26;
+      Gemini +0.55 to +0.40; Claude +0.34 to +0.20. - Overconfident-failure rate 72%
+      to…'
+    - The gain is mostly a downward shift, not better self-knowledge. For GPT 
+      the effect was a uniform shift (AUROC 0.58 to 0.55); Platt scaling on the 
+      standard predictions reached ECE of about 0.01. Gemini and Claude AUROC 
+      rose (0.51 to 0.57; 0.55 to 0.64) but pairwise differences were not 
+      individually significant (p=0.18, 0.09). AUROC across all regimes is 
+      0.51-0.64, i.e. near chance at telling which…
+    - 'Failure asymmetry. 62% of predictions on failing instances were overconfident
+      (at least 0.7), versus 11% of passing instances underconfident (below 0.3).
+      Mid-execution confidence fell ("cold feet": 71% of GPT, 97% of Claude instances)
+      but the drop was uninformative. Confidence: Likely [Tier 1] arXiv 2602.06948.'
+    - 'Independent corroboration of the general pattern. "Do Large Language Models
+      Know What They Are Capable Of?" (arXiv 2512.24661, Dec 2025): "All LLMs we tested
+      are overconfident, but most predict their success with better-than-random discriminatory
+      power"; reasoning models did no better; Claude Sonnet models grew more overconfident
+      as they progressed on SWE-Bench Verified. Confidence: Likely (one…'
+    - 'Builder-facing mitigations in the paper. Taking the min of pre- and post-exec
+      estimates improved GPT ECE 0.42 to 0.32; the authors suggest using pre-exec
+      estimates to route tasks and adversarial review to accept submissions, escalating
+      disagreements to humans, and say it is not "a license to remove human oversight."
+      Confidence: Likely [Tier 1] arXiv 2602.06948.'
+    - 'General literature agrees: self-critique without external feedback is weak.
+      Huang et al. (arXiv 2310.01798): "without external feedback, LLMs struggle to
+      self-correct their responses, and at times their performance even degrades."
+      Panickssery et al. (arXiv 2404.13076): LLM evaluators favor their own outputs.
+      Olausson et al. (arXiv 2306.09896): self-repair gains for code are modest and…'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-11-08-kaddour-agentic-overconfidence' dated 2026-11-08, and 
-      from a simulated review round where 9 agent-written posts were ranked by 
+      report '2026-11-01-agent-overconfidence-kaddour' dated 2026-11-09, and 
+      from a simulated review round where 10 agent-written posts were ranked by 
       votes.
   angles:
-    - id: 2026-11-08-gemini-3-pro-s-77-predicted-was-its-afte
-      summary: "Gemini-3-Pro's \"77% predicted\" was its after-the-fact guess. Before
-        starting it averaged about 99%, and at 75% of the run it said 67%. · thread:
-        A coding AI that solved 22% of tasks predicted it solved 77%"
-      last_used: '2026-11-08'
+    - id: 2026-11-09-a-coding-agent-that-passed-22-of-100-tas
+      summary: 'A coding agent that passed 22 of 100 tasks told its authors it expected
+        to pass 77% · thread: AI coding agents that succeeded 22% of the time predicted
+        77%'
+      last_used:
       provenance:
-        post_id: p_1810c2d1773e
-        round_id: anti_slop:2026-11-08
-        report_label: 2026-11-08-kaddour-agentic-overconfidence
-    - id: 2026-11-08-the-abstract-says-some-agents-that-succe
-      summary: 'The abstract says "some agents that succeed only 22% of the time predict
-        77%." The headline dropped "some." · thread: A coding AI that solved 22% of
-        tasks predicted it solved 77%'
-      last_used: '2026-11-08'
+        post_id: p_460973c145c9
+        round_id: quiet_machines:2026-11-09
+        report_label: 2026-11-01-agent-overconfidence-kaddour
+    - id: 2026-11-09-in-the-kaddour-paper-the-bug-hunting-pro
+      summary: "In the Kaddour paper, the bug-hunting prompt moved GPT's guesses down
+        without improving them · thread: AI coding agents that succeeded 22% of the
+        time predicted 77%"
+      last_used:
       provenance:
-        post_id: p_85d9d6cce7f6
-        round_id: anti_slop:2026-11-08
-        report_label: 2026-11-08-kaddour-agentic-overconfidence
-    - id: 2026-11-08-in-kaddour-et-al-the-22-task-sample-can
-      summary: "In Kaddour et al., the 22-task sample can't rank pre- vs post-execution
-        confidence. It also can't dent the overconfidence gap. · thread: A coding
-        AI that solved 22% of tasks predicted it solved 77%"
-      last_used: '2026-11-08'
+        post_id: p_9f9ddad15d53
+        round_id: quiet_machines:2026-11-09
+        report_label: 2026-11-01-agent-overconfidence-kaddour
+    - id: 2026-11-09-the-61-to-93-range-circulating-about-kad
+      summary: 'The "61% to 93%" range circulating about Kaddour et al. has no 93
+        in the paper · thread: AI coding agents that succeeded 22% of the time predicted
+        77%'
+      last_used:
       provenance:
-        post_id: p_f6ffcd93e53d
-        round_id: anti_slop:2026-11-08
-        report_label: 2026-11-08-kaddour-agentic-overconfidence
-    - id: 2026-11-08-kaddour-et-al-s-table-2-prints-gaps-not
-      summary: "Kaddour et al.'s Table 2 prints gaps, not means. Deriving GPT's mean
-        from it gives 74%, but the text says 73%. · thread: A coding AI that solved
-        22% of tasks predicted it solved 77%"
-      last_used: '2026-11-08'
+        post_id: p_2df6945397da
+        round_id: quiet_machines:2026-11-09
+        report_label: 2026-11-01-agent-overconfidence-kaddour
+    - id: 2026-11-09-in-kaddour-et-al-97-of-claude-s-runs-los
+      summary: "In Kaddour et al., 97% of Claude's runs lost confidence mid-task,
+        and the drop told you nothing · thread: AI coding agents that succeeded 22%
+        of the time predicted 77%"
+      last_used:
       provenance:
-        post_id: p_4b4ce36f9fc3
-        round_id: anti_slop:2026-11-08
-        report_label: 2026-11-08-kaddour-agentic-overconfidence
-    - id: 2026-11-08-in-kaddour-et-al-s-overconfidence-table
-      summary: "In Kaddour et al.'s overconfidence table, \"+0.77\" and \"77%\" are
-        different numbers for Gemini-3-Pro. One is a gap, one is a level. · thread:
-        A coding AI that solved 22% of tasks predicted it solved 77%"
-      last_used: '2026-11-08'
+        post_id: p_1c8adc898a5a
+        round_id: quiet_machines:2026-11-09
+        report_label: 2026-11-01-agent-overconfidence-kaddour
+    - id: 2026-11-09-in-kaddour-et-al-62-of-predictions-on-fa
+      summary: 'In Kaddour et al., 62% of predictions on failing coding tasks were
+        overconfident, but only 11% of passing tasks were underconfident · thread:
+        AI coding agents that succeeded 22% of the time predicted 77%'
+      last_used:
       provenance:
-        post_id: p_46e9976f9278
-        round_id: anti_slop:2026-11-08
-        report_label: 2026-11-08-kaddour-agentic-overconfidence
+        post_id: p_0c0b0dc6d17d
+        round_id: quiet_machines:2026-11-09
+        report_label: 2026-11-01-agent-overconfidence-kaddour
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-08-a-coding-ai-that-solved-22-of-tasks-pred.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-09-ai-coding-agents-that-succeeded-22-of-th.png
