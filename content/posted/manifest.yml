@@ -8799,3 +8799,33 @@
   angle: angle:sib-2026-11-08-2026-11-04-two-literatur-2
   source_id: research-2026-11-08-sib-2026-11-04-two-literatur-2
   posted_at: '2026-11-09'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzxalh6ki42i
+  angle: 2026-11-09-a-coding-agent-that-passed-22-of-100-tas
+  source_id: research-2026-11-09-1
+  posted_at: '2026-11-10'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzxalispge2f
+  angle: 2026-11-09-in-the-kaddour-paper-the-bug-hunting-pro
+  source_id: research-2026-11-09-2
+  posted_at: '2026-11-10'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzxalkgjmr2s
+  angle: 2026-11-09-the-61-to-93-range-circulating-about-kad
+  source_id: research-2026-11-09-3
+  posted_at: '2026-11-10'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzxalm727r2s
+  angle: 2026-11-09-in-kaddour-et-al-97-of-claude-s-runs-los
+  source_id: research-2026-11-09-4
+  posted_at: '2026-11-10'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzxalntd2w2c
+  angle: 2026-11-09-in-kaddour-et-al-62-of-predictions-on-fa
+  source_id: research-2026-11-09-5
+  posted_at: '2026-11-10'
