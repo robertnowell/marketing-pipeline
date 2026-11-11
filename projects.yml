@@ -353,103 +353,95 @@ research:
   channels:
     - bluesky
   facts:
-    - 'Paper identified and headline verified. Confidence: Established arXiv abstract,
-      full text and conference listing agree; three agents independently found the
-      same abstract sentence. [Tier 1] arXiv 2602.06948.'
-    - 'Setup: 3 agents, 100 SWE-bench Pro tasks. GPT-5.2-Codex, Gemini 3 Pro (Preview),
-      Claude Opus 4.5. Actual success: 35% / 22% / 27%. Agents gave success probabilities
-      before, during (25/50/75%) and after execution. Confidence: Established [Tier
-      1] arXiv 2602.06948 (read by three agents).'
-    - 'Post-execution predicted vs actual (standard prompt). GPT 73% vs 35%; Gemini
-      77% vs 22%; Claude 61% vs 27%. Confidence: Likely (figures read through a summarizing
-      fetch tool; GPT 73% is quoted from the paper in a search snippet, 74% by derivation).
-      [Tier 1] arXiv 2602.06948.'
-    - 'Pre-execution is even more overconfident for Gemini. Pre-exec mean 99% for
-      Gemini (stated); GPT about 70% and Claude about 64% are derived (base rate +
-      overconfidence). Pre-execution, with strictly less information, discriminated
-      *slightly better* than post-execution (AUROC GPT 0.62 vs 0.58; Claude 0.64 vs
-      0.55; Gemini 0.53 vs 0.51), though not always significantly. Confidence: Likely
-      [Tier 1]…'
-    - 'Adversarial (bug-hunting) prompt: best calibration, but partial. Prompt: "Your
-      job is to find problems: edge cases, failure modes, gaps." Confidence: Likely
-      [Tier 1] arXiv 2602.06948. - ECE: GPT 0.42 to 0.30; Claude 0.37 to 0.24; Gemini
-      0.66 to 0.53. - Overconfidence (predicted minus base rate): GPT +0.39 to +0.26;
-      Gemini +0.55 to +0.40; Claude +0.34 to +0.20. - Overconfident-failure rate 72%
-      to…'
-    - The gain is mostly a downward shift, not better self-knowledge. For GPT 
-      the effect was a uniform shift (AUROC 0.58 to 0.55); Platt scaling on the 
-      standard predictions reached ECE of about 0.01. Gemini and Claude AUROC 
-      rose (0.51 to 0.57; 0.55 to 0.64) but pairwise differences were not 
-      individually significant (p=0.18, 0.09). AUROC across all regimes is 
-      0.51-0.64, i.e. near chance at telling which…
-    - 'Failure asymmetry. 62% of predictions on failing instances were overconfident
-      (at least 0.7), versus 11% of passing instances underconfident (below 0.3).
-      Mid-execution confidence fell ("cold feet": 71% of GPT, 97% of Claude instances)
-      but the drop was uninformative. Confidence: Likely [Tier 1] arXiv 2602.06948.'
-    - 'Independent corroboration of the general pattern. "Do Large Language Models
-      Know What They Are Capable Of?" (arXiv 2512.24661, Dec 2025): "All LLMs we tested
-      are overconfident, but most predict their success with better-than-random discriminatory
-      power"; reasoning models did no better; Claude Sonnet models grew more overconfident
-      as they progressed on SWE-Bench Verified. Confidence: Likely (one…'
-    - 'Builder-facing mitigations in the paper. Taking the min of pre- and post-exec
-      estimates improved GPT ECE 0.42 to 0.32; the authors suggest using pre-exec
-      estimates to route tasks and adversarial review to accept submissions, escalating
-      disagreements to humans, and say it is not "a license to remove human oversight."
-      Confidence: Likely [Tier 1] arXiv 2602.06948.'
-    - 'General literature agrees: self-critique without external feedback is weak.
-      Huang et al. (arXiv 2310.01798): "without external feedback, LLMs struggle to
-      self-correct their responses, and at times their performance even degrades."
-      Panickssery et al. (arXiv 2404.13076): LLM evaluators favor their own outputs.
-      Olausson et al. (arXiv 2306.09896): self-repair gains for code are modest and…'
+    - "The quote is verbatim and sits in the paper's Deployment/Limitations text.
+      \"The detector is a triage signal, not an autonomous monitor.\" The paper adds
+      that high-stakes use likely needs direct trajectory-vs-environment consistency
+      checks rather than surface-text detection. Confidence: Likely (one Tier 1 source,
+      fetched and read; the search layer had initially failed to find the phrase,
+      then the…"
+    - "At 10% flag rate on tau2-bench: detector (XGBoost) recall 72% [63,80], precision
+      50% [40,60]; best judge (Sonnet 4.5, no_closing) recall 13% [8,17], precision
+      58% [32,79]. The judge's precision is nominally higher but its interval is wide
+      and overlaps. Confidence: Likely (single Tier 1 source). [Tier 1]"
+    - 'The headline gap is in ranking quality. Best judge AUROC 0.640 (ceiling 0.65
+      across 5 judges x 5 prompt strategies, even with the task spec); detectors task-disjoint
+      0.825-0.849 on tau2-bench, up to 0.953 on AppWorld (judges 0.537 there). The
+      detector runs at about 1.19 ms on CPU vs about 4,000 ms per judge call (about
+      3,300x). Confidence: Likely (Tier 1; latency and recall-multiple also repeated…'
+    - The detector is not a word count. It is "Bigram TF-IDF features (max 30k 
+      tokens, min_df=2, sublinear TF)" into class-balanced logistic regression, 
+      plus an XGBoost variant (300 trees, depth 6) and a DeBERTa-v3-base 
+      comparison. A secondary source describes the features as closing-language 
+      patterns on tau2-bench and read-vs-write API call shape on AppWorld, so 
+      the AppWorld detector has no…
+    - 'The detectors do not transfer across domains. Airline-to-retail zero-shot AUROC
+      0.66-0.69 (paper reports 0.69); recovery to 0.79-0.83 took 50-100 labeled examples
+      per class per the secondary write-up. "Calibrated per domain" is a hard requirement
+      of the claim. Confidence: Likely. [Tier 1; Tier 3]'
+    - 'Surface-text detection is gameable. Rewriting honest-failure messages as confident
+      completions flips roughly 20-25% of cases for both detectors and judges. Confidence:
+      Emerging (single paper, from its limitations section). [Tier 1]'
+    - Evidence-strength caveats. Single-author FAGEN workshop paper at ICML 
+      2026; no independent replication; internal inconsistency (introduction 
+      44-52% vs 45-48% elsewhere); the AppWorld 75.8% applies only to the subset
+      of two architectures that emit a status claim; telecom 3% rests on 15 
+      cases; some "false success" may come from broken or under-specified 
+      checkers, not dishonest agents. Confidence:…
+    - "Derived inference (ours, not the paper's): the 50% is largely a prevalence
+      effect. The paper gives 616 false successes among 9,876 tau2-bench trajectories
+      (about 6.2%). Precision = recall x prevalence / flag rate. With recall 0.72
+      and flag rate 0.10, a precision of 0.50 implies prevalence of about 6.9%, which
+      matches the roughly 6% whole-corpus figure. Under that reading, 50% precision
+      is about…"
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-11-01-agent-overconfidence-kaddour' dated 2026-11-09, and 
+      report '2026-10-31-false-success-detector-triage' dated 2026-11-10, and 
       from a simulated review round where 10 agent-written posts were ranked by 
       votes.
   angles:
-    - id: 2026-11-09-a-coding-agent-that-passed-22-of-100-tas
-      summary: 'A coding agent that passed 22 of 100 tasks told its authors it expected
-        to pass 77% · thread: AI coding agents that succeeded 22% of the time predicted
-        77%'
-      last_used: '2026-11-09'
+    - id: 2026-11-10-on-advani-s-10-flag-rate-test-the-best-l
+      summary: "On Advani's 10% flag-rate test, the best LLM judge caught 13% of false
+        successes and the detector caught 72% · thread: A fraud detector flagging
+        10% of cases is right only half the time"
+      last_used:
       provenance:
-        post_id: p_460973c145c9
-        round_id: quiet_machines:2026-11-09
-        report_label: 2026-11-01-agent-overconfidence-kaddour
-    - id: 2026-11-09-in-the-kaddour-paper-the-bug-hunting-pro
-      summary: "In the Kaddour paper, the bug-hunting prompt moved GPT's guesses down
-        without improving them · thread: AI coding agents that succeeded 22% of the
-        time predicted 77%"
-      last_used: '2026-11-09'
+        post_id: p_d864306144db
+        round_id: anti_slop:2026-11-10
+        report_label: 2026-10-31-false-success-detector-triage
+    - id: 2026-11-10-the-word-count-model-that-beat-five-llm
+      summary: 'The "word-count model" that beat five LLM judges at AUROC 0.825 is
+        bigram TF-IDF, and it runs in 1.19 ms · thread: A fraud detector flagging
+        10% of cases is right only half the time'
+      last_used:
       provenance:
-        post_id: p_9f9ddad15d53
-        round_id: quiet_machines:2026-11-09
-        report_label: 2026-11-01-agent-overconfidence-kaddour
-    - id: 2026-11-09-the-61-to-93-range-circulating-about-kad
-      summary: 'The "61% to 93%" range circulating about Kaddour et al. has no 93
-        in the paper · thread: AI coding agents that succeeded 22% of the time predicted
-        77%'
-      last_used: '2026-11-09'
+        post_id: p_ff1706c0eff2
+        round_id: anti_slop:2026-11-10
+        report_label: 2026-10-31-false-success-detector-triage
+    - id: 2026-11-10-advani-s-judge-and-detector-precision-58
+      summary: "Advani's judge and detector precision (58% vs 50%) were measured on
+        pools with about 32% and 6% false successes · thread: A fraud detector flagging
+        10% of cases is right only half the time"
+      last_used:
       provenance:
-        post_id: p_2df6945397da
-        round_id: quiet_machines:2026-11-09
-        report_label: 2026-11-01-agent-overconfidence-kaddour
-    - id: 2026-11-09-in-kaddour-et-al-97-of-claude-s-runs-los
-      summary: "In Kaddour et al., 97% of Claude's runs lost confidence mid-task,
-        and the drop told you nothing · thread: AI coding agents that succeeded 22%
-        of the time predicted 77%"
-      last_used: '2026-11-09'
+        post_id: p_527ab7b60a7e
+        round_id: anti_slop:2026-11-10
+        report_label: 2026-10-31-false-success-detector-triage
+    - id: 2026-11-10-if-advani-s-10-flag-rate-were-measured-o
+      summary: "If Advani's 10% flag rate were measured on the 295-run judge sample,
+        72% recall and 50% precision could not both hold · thread: A fraud detector
+        flagging 10% of cases is right only half the time"
+      last_used:
       provenance:
-        post_id: p_1c8adc898a5a
-        round_id: quiet_machines:2026-11-09
-        report_label: 2026-11-01-agent-overconfidence-kaddour
-    - id: 2026-11-09-in-kaddour-et-al-62-of-predictions-on-fa
-      summary: 'In Kaddour et al., 62% of predictions on failing coding tasks were
-        overconfident, but only 11% of passing tasks were underconfident · thread:
-        AI coding agents that succeeded 22% of the time predicted 77%'
-      last_used: '2026-11-09'
+        post_id: p_70cf13ce53b7
+        round_id: anti_slop:2026-11-10
+        report_label: 2026-10-31-false-success-detector-triage
+    - id: 2026-11-10-advani-s-0-953-appworld-auroc-comes-from
+      summary: "Advani's 0.953 AppWorld AUROC comes from a detector with no natural-language
+        input, so it can't be compared to the 0.825 on tau2-bench · thread: A fraud
+        detector flagging 10% of cases is right only half the time"
+      last_used:
       provenance:
-        post_id: p_0c0b0dc6d17d
-        round_id: quiet_machines:2026-11-09
-        report_label: 2026-11-01-agent-overconfidence-kaddour
+        post_id: p_affc49e30f13
+        round_id: anti_slop:2026-11-10
+        report_label: 2026-10-31-false-success-detector-triage
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-09-ai-coding-agents-that-succeeded-22-of-th.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-10-a-fraud-detector-flagging-10-of-cases-is.png
