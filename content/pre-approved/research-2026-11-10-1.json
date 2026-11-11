@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-10-1",
+  "date": "2026-11-10",
+  "project": "research",
+  "angle": "2026-11-10-on-advani-s-10-flag-rate-test-the-best-l",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you use an LLM to check whether your AI agent really finished the task, it misses most failures. Flagging 10% of runs, the best LLM judge (Sonnet 4.5) caught 13% of false successes. A small text classifier caught 72%, at about 1.19 ms on CPU. Single paper, unreplicated."
+    }
+  ]
+}

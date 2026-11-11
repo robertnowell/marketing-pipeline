@@ -402,7 +402,7 @@ research:
       summary: "On Advani's 10% flag-rate test, the best LLM judge caught 13% of false
         successes and the detector caught 72% · thread: A fraud detector flagging
         10% of cases is right only half the time"
-      last_used:
+      last_used: '2026-11-10'
       provenance:
         post_id: p_d864306144db
         round_id: anti_slop:2026-11-10
@@ -411,7 +411,7 @@ research:
       summary: 'The "word-count model" that beat five LLM judges at AUROC 0.825 is
         bigram TF-IDF, and it runs in 1.19 ms · thread: A fraud detector flagging
         10% of cases is right only half the time'
-      last_used:
+      last_used: '2026-11-10'
       provenance:
         post_id: p_ff1706c0eff2
         round_id: anti_slop:2026-11-10
@@ -420,7 +420,7 @@ research:
       summary: "Advani's judge and detector precision (58% vs 50%) were measured on
         pools with about 32% and 6% false successes · thread: A fraud detector flagging
         10% of cases is right only half the time"
-      last_used:
+      last_used: '2026-11-10'
       provenance:
         post_id: p_527ab7b60a7e
         round_id: anti_slop:2026-11-10
@@ -429,7 +429,7 @@ research:
       summary: "If Advani's 10% flag rate were measured on the 295-run judge sample,
         72% recall and 50% precision could not both hold · thread: A fraud detector
         flagging 10% of cases is right only half the time"
-      last_used:
+      last_used: '2026-11-10'
       provenance:
         post_id: p_70cf13ce53b7
         round_id: anti_slop:2026-11-10
@@ -438,7 +438,7 @@ research:
       summary: "Advani's 0.953 AppWorld AUROC comes from a detector with no natural-language
         input, so it can't be compared to the 0.825 on tau2-bench · thread: A fraud
         detector flagging 10% of cases is right only half the time"
-      last_used:
+      last_used: '2026-11-10'
       provenance:
         post_id: p_affc49e30f13
         round_id: anti_slop:2026-11-10

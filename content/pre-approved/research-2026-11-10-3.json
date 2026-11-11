@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-10-3",
+  "date": "2026-11-10",
+  "project": "research",
+  "angle": "2026-11-10-advani-s-judge-and-detector-precision-58",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A detector for AI agents that falsely claim success flags 10% of runs and is right only 50% of the time. That looks weak, but only 616 of 9,876 test runs were false successes, and it still catches 72%. An LLM judge scores 58% precision but catches 13%. Precision alone misleads."
+    }
+  ]
+}

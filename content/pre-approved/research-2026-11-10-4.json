@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-10-4",
+  "date": "2026-11-10",
+  "project": "research",
+  "angle": "2026-11-10-if-advani-s-10-flag-rate-were-measured-o",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI-agent 'false success' detector catches 72% of bad runs, but only 50% of its flags are right. Cause: false successes are about 6.2% of runs (616 of 9,876). When the thing you hunt is rare, precision drops. Use it for triage, not as an autonomous monitor."
+    }
+  ]
+}

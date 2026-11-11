@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-10-5",
+  "date": "2026-11-10",
+  "project": "research",
+  "angle": "2026-11-10-advani-s-0-953-appworld-auroc-comes-from",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI agents that report success when they failed: a cheap text classifier catches 72% of them at a 10% flag rate. Sonnet 4.5 as a judge catches 13%. But precision is 50%. The paper's words: \"The detector is a triage signal, not an autonomous monitor.\" Route flags to human review."
+    }
+  ]
+}

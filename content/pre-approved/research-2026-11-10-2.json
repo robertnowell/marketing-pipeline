@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-10-2",
+  "date": "2026-11-10",
+  "project": "research",
+  "angle": "2026-11-10-the-word-count-model-that-beat-five-llm",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Agents that report 'task done' when they failed are catchable with a bigram TF-IDF classifier. At a 10% flag rate it recalls 72% of false successes; the best LLM judge (Sonnet 4.5) recalls 13%. It runs in 1.19 ms vs about 4,000 ms per judge call. One workshop paper, so use it for triage."
+    }
+  ]
+}
