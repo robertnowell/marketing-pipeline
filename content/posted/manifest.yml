@@ -8829,3 +8829,33 @@
   angle: 2026-11-09-in-kaddour-et-al-62-of-predictions-on-fa
   source_id: research-2026-11-09-5
   posted_at: '2026-11-10'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzzr3qzrkt26
+  angle: 2026-11-10-on-advani-s-10-flag-rate-test-the-best-l
+  source_id: research-2026-11-10-1
+  posted_at: '2026-11-11'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzzr3t6wh52x
+  angle: 2026-11-10-the-word-count-model-that-beat-five-llm
+  source_id: research-2026-11-10-2
+  posted_at: '2026-11-11'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzzr3vhdu72v
+  angle: 2026-11-10-advani-s-judge-and-detector-precision-58
+  source_id: research-2026-11-10-3
+  posted_at: '2026-11-11'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzzr3xvnow27
+  angle: 2026-11-10-if-advani-s-10-flag-rate-were-measured-o
+  source_id: research-2026-11-10-4
+  posted_at: '2026-11-11'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3mzzr3zyakh2a
+  angle: 2026-11-10-advani-s-0-953-appworld-auroc-comes-from
+  source_id: research-2026-11-10-5
+  posted_at: '2026-11-11'
