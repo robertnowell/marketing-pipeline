@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-11-5",
+  "date": "2026-11-11",
+  "project": "research",
+  "angle": "2026-11-11-swe-rm-s-trained-verifier-scored-48-8-on",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Some AI coding agents that succeed 22% of the time predict 77% success on their own work (Kaddour et al., arXiv 2602.06948, Gemini-3-Pro). If you ship on the agent's 'done', that gap is your risk. I'd gate on a test or build exit code, not on the agent's confidence."
+    }
+  ]
+}

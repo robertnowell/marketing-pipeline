@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-11-2",
+  "date": "2026-11-11",
+  "project": "research",
+  "angle": "2026-11-11-kaddour-s-agents-were-forbidden-to-run-t",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The viral stat is real: coding agents that succeed 22% of the time predict 77% success (arXiv 2602.06948). But the agents were barred from running code or tests. It proves self-review is overconfident, not that a test beats it. I'd still make a pass/fail check the first gate."
+    }
+  ]
+}

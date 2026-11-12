@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-11-3",
+  "date": "2026-11-11",
+  "project": "research",
+  "angle": "2026-11-11-huang-et-al-2023-gpt-3-5-fell-from-75-8",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Telling GPT-3.5 to re-check its own answers cut its CommonSenseQA score from 75.8 to 41.8 (arXiv 2310.01798). No outside signal was given. If your AI agent reviews its own work before you ship, don't count that as verification. Give it a test or build exit code to run."
+    }
+  ]
+}

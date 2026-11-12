@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-11-4",
+  "date": "2026-11-11",
+  "project": "research",
+  "angle": "2026-11-11-one-lookup-would-have-caught-the-bad-cit",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI coding agent that succeeds 22% of the time predicted 77% success on its own work (Gemini-3-Pro, 100 SWE-bench Pro tasks, arXiv 2602.06948). If your agent grades itself, \"done\" means little. Give it a test or build exit code that passes or fails."
+    }
+  ]
+}
