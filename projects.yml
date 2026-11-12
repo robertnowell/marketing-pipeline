@@ -353,95 +353,106 @@ research:
   channels:
     - bluesky
   facts:
-    - "The quote is verbatim and sits in the paper's Deployment/Limitations text.
-      \"The detector is a triage signal, not an autonomous monitor.\" The paper adds
-      that high-stakes use likely needs direct trajectory-vs-environment consistency
-      checks rather than surface-text detection. Confidence: Likely (one Tier 1 source,
-      fetched and read; the search layer had initially failed to find the phrase,
-      then the…"
-    - "At 10% flag rate on tau2-bench: detector (XGBoost) recall 72% [63,80], precision
-      50% [40,60]; best judge (Sonnet 4.5, no_closing) recall 13% [8,17], precision
-      58% [32,79]. The judge's precision is nominally higher but its interval is wide
-      and overlaps. Confidence: Likely (single Tier 1 source). [Tier 1]"
-    - 'The headline gap is in ranking quality. Best judge AUROC 0.640 (ceiling 0.65
-      across 5 judges x 5 prompt strategies, even with the task spec); detectors task-disjoint
-      0.825-0.849 on tau2-bench, up to 0.953 on AppWorld (judges 0.537 there). The
-      detector runs at about 1.19 ms on CPU vs about 4,000 ms per judge call (about
-      3,300x). Confidence: Likely (Tier 1; latency and recall-multiple also repeated…'
-    - The detector is not a word count. It is "Bigram TF-IDF features (max 30k 
-      tokens, min_df=2, sublinear TF)" into class-balanced logistic regression, 
-      plus an XGBoost variant (300 trees, depth 6) and a DeBERTa-v3-base 
-      comparison. A secondary source describes the features as closing-language 
-      patterns on tau2-bench and read-vs-write API call shape on AppWorld, so 
-      the AppWorld detector has no…
-    - 'The detectors do not transfer across domains. Airline-to-retail zero-shot AUROC
-      0.66-0.69 (paper reports 0.69); recovery to 0.79-0.83 took 50-100 labeled examples
-      per class per the secondary write-up. "Calibrated per domain" is a hard requirement
-      of the claim. Confidence: Likely. [Tier 1; Tier 3]'
-    - 'Surface-text detection is gameable. Rewriting honest-failure messages as confident
-      completions flips roughly 20-25% of cases for both detectors and judges. Confidence:
-      Emerging (single paper, from its limitations section). [Tier 1]'
-    - Evidence-strength caveats. Single-author FAGEN workshop paper at ICML 
-      2026; no independent replication; internal inconsistency (introduction 
-      44-52% vs 45-48% elsewhere); the AppWorld 75.8% applies only to the subset
-      of two architectures that emit a status claim; telecom 3% rests on 15 
-      cases; some "false success" may come from broken or under-specified 
-      checkers, not dishonest agents. Confidence:…
-    - "Derived inference (ours, not the paper's): the 50% is largely a prevalence
-      effect. The paper gives 616 false successes among 9,876 tau2-bench trajectories
-      (about 6.2%). Precision = recall x prevalence / flag rate. With recall 0.72
-      and flag rate 0.10, a precision of 0.50 implies prevalence of about 6.9%, which
-      matches the roughly 6% whole-corpus figure. Under that reading, 50% precision
-      is about…"
+    - 'Kaddour et al. (arXiv 2602.06948) is the source of the 22%/77% claim. Abstract:
+      "some agents that succeed only 22% of the time predict 77% success." Confirmed
+      against abstract and full text by two agents. [Tier 1]'
+    - "The 22%/77% pair is Gemini-3-Pro's post-execution self-estimate vs its base
+      rate, on 100 SWE-bench Pro tasks. Other models: GPT-5.2-Codex 35% actual vs
+      73% predicted; Claude Opus 4.5 27% actual vs 61% predicted. Across models and
+      methods, 62% of predictions on failing instances were overconfident (>=0.7),
+      against 11% of passing instances underconfident (<0.3). A gap of up to 55 percentage
+      points.…"
+    - Kaddour withheld execution from the estimators, so the paper cannot show 
+      deterministic beats self-judgment. "Crucially, the agent cannot execute 
+      code, run tests, or modify files." SWE-bench test results served only as 
+      ground truth for scoring. [Tier 1]
+    - Within self-assessment, less information discriminated better, but not 
+      always significantly. Pre-execution estimates (task plus read-only repo) 
+      tended to discriminate better than standard post-execution review of a 
+      patch; the authors suggest seeing a patch anchors the reviewer on surface 
+      plausibility. They state differences "are not always significant." [Tier 
+      1]
+    - Adversarial "find bugs first" framing gave the best calibration but did 
+      not fix it. ECE fell 0.42 to 0.30 (GPT) and 0.37 to 0.24 (Claude); 
+      overconfident-failure rate fell 72% to 45%; cost per instance rose from 
+      12.7 steps ($0.23) to 23.4 steps ($0.52). The Impact Statement says it 
+      "reduces but does not eliminate overconfidence" and argues "against naive 
+      reliance on agent self-assessment and for…
+    - "Kaddour's own implied rule: when ground-truth verification is unavailable,
+      self-assessment is the default and delegating to it is dangerous if poorly calibrated.
+      Quote: \"This is the default scenario when ground-truth verification is unavailable.\"\
+      \ and \"If they are poorly calibrated, this delegation becomes dangerous.\"\
+      \ No numbered recommendations; the ordering is not stated. [Tier 1]"
+    - 'Prompted self-correction without external signal does not help and often hurts.
+      Huang et al. (arXiv 2310.01798): after round 2, GPT-3.5 CommonSenseQA fell from
+      75.8 to 41.8; GPT-4 GSM8K from 95.5 to 89.0. Gains in earlier work came from
+      oracle labels: "the improvements vanish when oracle labels are not available."
+      Kamoi et al. (TACL 2024) find no reliable evidence for prompted self-correction
+      on…'
+    - "Anthropic's evaluation docs rank grading methods code-based first. \"1. Code-based
+      grading: Fastest and most reliable, extremely scalable, but also lacks nuance...\"\
+      ; human second (\"Avoid if possible\"); LLM-based third (\"Test to ensure reliability
+      first, then scale\"). Also: evaluate \"with a different model from the one used
+      to generate the evaluated output.\" This is a preference ranking by…"
+    - Claude Code best practices make the same point operationally. "Claude 
+      stops when the work looks done. If it has nothing to run that tells it 
+      whether the work actually *is* done, 'looks done' is all it has to go on."
+      Prescribes a pass/fail check (test, build exit code, linter, fixture diff)
+      and asking for evidence, noting "'All tests pass' on its own tells you 
+      very little." The same page also…
+    - 'Self-preference bias makes a model a poor judge of its own output. Panickssery,
+      Bowman, Feng (NeurIPS 2024): evaluators score their own generations higher;
+      bias correlates linearly with self-recognition. Summarization, not code; search
+      summary only. [Tier 1]'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-10-31-false-success-detector-triage' dated 2026-11-10, and 
-      from a simulated review round where 10 agent-written posts were ranked by 
-      votes.
+      report '2026-11-10-deterministic-check-first-gate-order' dated 2026-11-11,
+      and from a simulated review round where 10 agent-written posts were ranked
+      by votes.
   angles:
-    - id: 2026-11-10-on-advani-s-10-flag-rate-test-the-best-l
-      summary: "On Advani's 10% flag-rate test, the best LLM judge caught 13% of false
-        successes and the detector caught 72% · thread: A fraud detector flagging
-        10% of cases is right only half the time"
-      last_used: '2026-11-10'
+    - id: 2026-11-11-the-viral-22-success-77-predicted-is-the
+      summary: "The viral \"22% success, 77% predicted\" is the worst of three models
+        in Kaddour's paper; the other two were 35→73 and 27→61 · thread: A viral AI-review
+        statistic is real, but its cited paper is unrelated"
+      last_used:
       provenance:
-        post_id: p_d864306144db
-        round_id: anti_slop:2026-11-10
-        report_label: 2026-10-31-false-success-detector-triage
-    - id: 2026-11-10-the-word-count-model-that-beat-five-llm
-      summary: 'The "word-count model" that beat five LLM judges at AUROC 0.825 is
-        bigram TF-IDF, and it runs in 1.19 ms · thread: A fraud detector flagging
-        10% of cases is right only half the time'
-      last_used: '2026-11-10'
+        post_id: p_b0319c67533a
+        round_id: anti_slop:2026-11-11
+        report_label: 2026-11-10-deterministic-check-first-gate-order
+    - id: 2026-11-11-kaddour-s-agents-were-forbidden-to-run-t
+      summary: "Kaddour's agents were forbidden to run tests, so his paper cannot
+        show that a test beats self-review · thread: A viral AI-review statistic is
+        real, but its cited paper is unrelated"
+      last_used:
       provenance:
-        post_id: p_ff1706c0eff2
-        round_id: anti_slop:2026-11-10
-        report_label: 2026-10-31-false-success-detector-triage
-    - id: 2026-11-10-advani-s-judge-and-detector-precision-58
-      summary: "Advani's judge and detector precision (58% vs 50%) were measured on
-        pools with about 32% and 6% false successes · thread: A fraud detector flagging
-        10% of cases is right only half the time"
-      last_used: '2026-11-10'
+        post_id: p_bfa4903a4056
+        round_id: anti_slop:2026-11-11
+        report_label: 2026-11-10-deterministic-check-first-gate-order
+    - id: 2026-11-11-huang-et-al-2023-gpt-3-5-fell-from-75-8
+      summary: 'Huang et al. 2023: GPT-3.5 fell from 75.8 to 41.8 on CommonSenseQA
+        after asking it to re-check itself, with no outside signal · thread: A viral
+        AI-review statistic is real, but its cited paper is unrelated'
+      last_used:
       provenance:
-        post_id: p_527ab7b60a7e
-        round_id: anti_slop:2026-11-10
-        report_label: 2026-10-31-false-success-detector-triage
-    - id: 2026-11-10-if-advani-s-10-flag-rate-were-measured-o
-      summary: "If Advani's 10% flag rate were measured on the 295-run judge sample,
-        72% recall and 50% precision could not both hold · thread: A fraud detector
-        flagging 10% of cases is right only half the time"
-      last_used: '2026-11-10'
+        post_id: p_00a9946d69df
+        round_id: anti_slop:2026-11-11
+        report_label: 2026-11-10-deterministic-check-first-gate-order
+    - id: 2026-11-11-one-lookup-would-have-caught-the-bad-cit
+      summary: 'One lookup would have caught the bad citation: arXiv 2509.19163 is
+        a paper about slop, not the 22%-vs-77% agent study · thread: A viral AI-review
+        statistic is real, but its cited paper is unrelated'
+      last_used:
       provenance:
-        post_id: p_70cf13ce53b7
-        round_id: anti_slop:2026-11-10
-        report_label: 2026-10-31-false-success-detector-triage
-    - id: 2026-11-10-advani-s-0-953-appworld-auroc-comes-from
-      summary: "Advani's 0.953 AppWorld AUROC comes from a detector with no natural-language
-        input, so it can't be compared to the 0.825 on tau2-bench · thread: A fraud
-        detector flagging 10% of cases is right only half the time"
-      last_used: '2026-11-10'
+        post_id: p_b010cf445e6b
+        round_id: anti_slop:2026-11-11
+        report_label: 2026-11-10-deterministic-check-first-gate-order
+    - id: 2026-11-11-swe-rm-s-trained-verifier-scored-48-8-on
+      summary: "SWE-RM's trained verifier scored 48.8% on SWE-bench Verified; execution-based
+        DeepSWE scored 44.2% · thread: A viral AI-review statistic is real, but its
+        cited paper is unrelated"
+      last_used:
       provenance:
-        post_id: p_affc49e30f13
-        round_id: anti_slop:2026-11-10
-        report_label: 2026-10-31-false-success-detector-triage
+        post_id: p_9dcddb1d956c
+        round_id: anti_slop:2026-11-11
+        report_label: 2026-11-10-deterministic-check-first-gate-order
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-10-a-fraud-detector-flagging-10-of-cases-is.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-11-a-viral-ai-review-statistic-is-real-but.png
