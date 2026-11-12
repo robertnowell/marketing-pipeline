@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-11-sib-2026-11-10-advani-s-0-95-2",
+  "date": "2026-11-11",
+  "project": "research",
+  "angle": "angle:sib-2026-11-11-2026-11-10-advani-s-0-95-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Flag the riskiest 10% of AI agent runs on tau2-bench: an XGBoost detector catches 72% of false successes, the best LLM judge catches 13%. The judge's precision looks higher (58% vs 50%), but its interval is wide and overlaps. If your agent QA is an LLM judge, it misses most failures."
+    }
+  ]
+}

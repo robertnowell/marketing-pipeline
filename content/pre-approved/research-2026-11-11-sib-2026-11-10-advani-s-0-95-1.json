@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-11-sib-2026-11-10-advani-s-0-95-1",
+  "date": "2026-11-11",
+  "project": "research",
+  "angle": "angle:sib-2026-11-11-2026-11-10-advani-s-0-95-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The paper behind a detector for AI agents that falsely claim success says: \"The detector is a triage signal, not an autonomous monitor.\" For high-stakes use it wants checks against the environment, not text. Rewriting failures as confident completions flips roughly 20-25% of cases."
+    }
+  ]
+}
