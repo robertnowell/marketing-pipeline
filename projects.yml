@@ -440,7 +440,7 @@ research:
       summary: 'One lookup would have caught the bad citation: arXiv 2509.19163 is
         a paper about slop, not the 22%-vs-77% agent study · thread: A viral AI-review
         statistic is real, but its cited paper is unrelated'
-      last_used: '2026-11-11'
+      last_used: '2026-11-13'
       provenance:
         post_id: p_b010cf445e6b
         round_id: anti_slop:2026-11-11
