@@ -413,7 +413,7 @@ research:
       summary: "The viral \"22% success, 77% predicted\" is the worst of three models
         in Kaddour's paper; the other two were 35→73 and 27→61 · thread: A viral AI-review
         statistic is real, but its cited paper is unrelated"
-      last_used: '2026-11-11'
+      last_used: '2026-11-13'
       provenance:
         post_id: p_b0319c67533a
         round_id: anti_slop:2026-11-11
