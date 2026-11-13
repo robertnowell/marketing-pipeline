@@ -449,7 +449,7 @@ research:
       summary: "SWE-RM's trained verifier scored 48.8% on SWE-bench Verified; execution-based
         DeepSWE scored 44.2% · thread: A viral AI-review statistic is real, but its
         cited paper is unrelated"
-      last_used: '2026-11-11'
+      last_used: '2026-11-13'
       provenance:
         post_id: p_9dcddb1d956c
         round_id: anti_slop:2026-11-11

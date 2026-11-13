@@ -8925,3 +8925,9 @@
   angle: 2026-11-11-one-lookup-would-have-caught-the-bad-cit
   source_id: ''
   posted_at: '2026-11-13'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2777ur7wp24
+  angle: 2026-11-11-swe-rm-s-trained-verifier-scored-48-8-on
+  source_id: ''
+  posted_at: '2026-11-13'
