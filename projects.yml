@@ -422,7 +422,7 @@ research:
       summary: "Kaddour's agents were forbidden to run tests, so his paper cannot
         show that a test beats self-review · thread: A viral AI-review statistic is
         real, but its cited paper is unrelated"
-      last_used: '2026-11-11'
+      last_used: '2026-11-13'
       provenance:
         post_id: p_bfa4903a4056
         round_id: anti_slop:2026-11-11
