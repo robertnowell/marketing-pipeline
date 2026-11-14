@@ -431,7 +431,7 @@ research:
       summary: 'Huang et al. 2023: GPT-3.5 fell from 75.8 to 41.8 on CommonSenseQA
         after asking it to re-check itself, with no outside signal · thread: A viral
         AI-review statistic is real, but its cited paper is unrelated'
-      last_used: '2026-11-13'
+      last_used: '2026-11-14'
       provenance:
         post_id: p_00a9946d69df
         round_id: anti_slop:2026-11-11
