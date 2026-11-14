@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-14-sib-2026-11-11-one-lookup-wo-1",
+  "date": "2026-11-14",
+  "project": "research",
+  "angle": "angle:sib-2026-11-14-2026-11-11-one-lookup-wo-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Some AI coding agents that succeed only 22% of the time predict 77% success. That is Gemini-3-Pro grading its own work on 100 SWE-bench Pro tasks (arXiv 2602.06948). If an agent's own verdict is your only signal that work is done, you have no signal. Give it a test that passes or fails."
+    }
+  ]
+}

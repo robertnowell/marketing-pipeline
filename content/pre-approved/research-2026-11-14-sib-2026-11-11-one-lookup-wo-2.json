@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-14-sib-2026-11-11-one-lookup-wo-2",
+  "date": "2026-11-14",
+  "project": "research",
+  "angle": "angle:sib-2026-11-14-2026-11-11-one-lookup-wo-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Having an AI coding agent review its finished patch may judge worse than a guess before it starts. In arXiv 2602.06948, pre-execution estimates tended to discriminate better. Authors' theory: a patch anchors the reviewer on surface plausibility. Differences \"are not always significant.\""
+    }
+  ]
+}
