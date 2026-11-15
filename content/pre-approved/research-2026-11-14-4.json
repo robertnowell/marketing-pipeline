@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-14-4",
+  "date": "2026-11-14",
+  "project": "research",
+  "angle": "2026-11-14-a-link-checker-would-pass-arxiv-2509-191",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A viral AI statistic cites arXiv 2509.19163. The link resolves, but the paper never says it. It's a slop-measurement paper; its authors say fully automated, scalable measurement remains open. A link checker passes this. Compare the claim to the title."
+    }
+  ]
+}

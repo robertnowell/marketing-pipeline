@@ -398,7 +398,7 @@ research:
       summary: "arXiv 2603.15911 contains both 22.5% and 77.5%, which sum to 100 and
         still don't make a pair · thread: A viral AI statistic cites a paper that
         never says it"
-      last_used:
+      last_used: '2026-11-14'
       provenance:
         post_id: p_ad6ed329a481
         round_id: anti_slop:2026-11-14
@@ -407,7 +407,7 @@ research:
       summary: 'Linardon et al. found GPT-4o fabricated 6% of citations on well-studied
         topics and 28-29% on obscure ones · thread: A viral AI statistic cites a paper
         that never says it'
-      last_used:
+      last_used: '2026-11-14'
       provenance:
         post_id: p_165b50c0f19c
         round_id: anti_slop:2026-11-14
@@ -416,7 +416,7 @@ research:
       summary: 'A 2026 IOP Publishing survey has a 77 and a 22% in it, and neither
         belongs to the viral AI-review statistic · thread: A viral AI statistic cites
         a paper that never says it'
-      last_used:
+      last_used: '2026-11-14'
       provenance:
         post_id: p_471d6f8f37ed
         round_id: anti_slop:2026-11-14
@@ -425,7 +425,7 @@ research:
       summary: 'A link checker would pass arXiv 2509.19163, which is why a grounding
         gate has to compare title and claim · thread: A viral AI statistic cites a
         paper that never says it'
-      last_used:
+      last_used: '2026-11-14'
       provenance:
         post_id: p_43267c5eeca3
         round_id: anti_slop:2026-11-14
@@ -434,7 +434,7 @@ research:
       summary: 'arXiv 2509.19163, cited for a 22%-vs-77% AI-review statistic, is a
         paper about measuring slop · thread: A viral AI statistic cites a paper that
         never says it'
-      last_used:
+      last_used: '2026-11-14'
       provenance:
         post_id: p_0bf5fb06b713
         round_id: anti_slop:2026-11-14

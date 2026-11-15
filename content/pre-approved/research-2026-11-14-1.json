@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-14-1",
+  "date": "2026-11-14",
+  "project": "research",
+  "angle": "2026-11-14-arxiv-2603-15911-contains-both-22-5-and",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A 22%-vs-77% agent/human statistic is going around with arXiv 2509.19163 as its source. That paper is about measuring slop, and its authors say fully automated, scalable measurement remains open. No candidate paper we read contains that pair. Open the source before you repost a stat."
+    }
+  ]
+}
