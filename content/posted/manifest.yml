@@ -8961,3 +8961,45 @@
   angle: 2026-11-11-swe-rm-s-trained-verifier-scored-48-8-on
   source_id: ''
   posted_at: '2026-11-14'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2dswdxybj2i
+  angle: 2026-11-14-arxiv-2603-15911-contains-both-22-5-and
+  source_id: research-2026-11-14-1
+  posted_at: '2026-11-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2dswfvd6f2j
+  angle: 2026-11-14-linardon-et-al-found-gpt-4o-fabricated-6
+  source_id: research-2026-11-14-2
+  posted_at: '2026-11-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2dswhsi6y2z
+  angle: 2026-11-14-a-2026-iop-publishing-survey-has-a-77-an
+  source_id: research-2026-11-14-3
+  posted_at: '2026-11-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2dswju7pa2r
+  angle: 2026-11-14-a-link-checker-would-pass-arxiv-2509-191
+  source_id: research-2026-11-14-4
+  posted_at: '2026-11-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2dswlqigb2i
+  angle: 2026-11-14-arxiv-2509-19163-cited-for-a-22-vs-77-ai
+  source_id: research-2026-11-14-5
+  posted_at: '2026-11-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2dswnndov25
+  angle: angle:sib-2026-11-14-2026-11-11-one-lookup-wo-1
+  source_id: research-2026-11-14-sib-2026-11-11-one-lookup-wo-1
+  posted_at: '2026-11-15'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2dswpisyq2r
+  angle: angle:sib-2026-11-14-2026-11-11-one-lookup-wo-2
+  source_id: research-2026-11-14-sib-2026-11-11-one-lookup-wo-2
+  posted_at: '2026-11-15'
