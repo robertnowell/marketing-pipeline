@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-15-2",
+  "date": "2026-11-15",
+  "project": "research",
+  "angle": "2026-11-15-in-flipt-io-flipt-29-agent-trials-failed",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "29 coding-agent trials failed with \"Missing tests: ['TestImport']\" because the benchmark harness never copied a fixture file. An AI auditor disagreed with SWE-Bench Pro's tests on 32.4% of runs, versus 1.4% on DeepSWE. If you pick agents by leaderboard, audit the benchmark first."
+    }
+  ]
+}

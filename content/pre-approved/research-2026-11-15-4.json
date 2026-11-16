@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-15-4",
+  "date": "2026-11-15",
+  "project": "research",
+  "angle": "2026-11-15-the-deepswe-audit-blog-is-dated-may-2026",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "On the coding-agent benchmark SWE-Bench Pro, an AI judge disagreed with the official tests on 32.4% of runs. On DeepSWE, 1.4%. If you choose coding tools by leaderboard score, the scoreboard may be the noisy part. Caveat: the audit has no human validation of the judge."
+    }
+  ]
+}

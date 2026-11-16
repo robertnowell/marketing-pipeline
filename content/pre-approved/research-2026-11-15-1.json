@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-15-1",
+  "date": "2026-11-15",
+  "project": "research",
+  "angle": "2026-11-15-epoch-s-20-of-swe-bench-pro-tasks-are-de",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The '>20% of tasks are flawed' figure for SWE-Bench Pro, an AI coding benchmark, is a stopping point. Epoch AI says it \"stopped inspecting once we discovered errors that exceeded our published threshold.\" If you pick coding agents by leaderboard, treat it as a floor, not a measured rate."
+    }
+  ]
+}

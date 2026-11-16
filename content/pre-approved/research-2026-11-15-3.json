@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-15-3",
+  "date": "2026-11-15",
+  "project": "research",
+  "angle": "2026-11-15-an-independent-2025-study-found-llm-patc",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An LLM judge disagreed with SWE-Bench Pro's coding tests on 32.4% of agent runs. On DeepSWE: 1.4%. Most of it was tests failing code the judge called correct (189 of 789 runs). If you pick AI models by benchmark rank, the scoreboard may partly measure test flaws. Source: DeepSWE paper."
+    }
+  ]
+}

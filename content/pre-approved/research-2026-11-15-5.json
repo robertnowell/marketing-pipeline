@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-15-5",
+  "date": "2026-11-15",
+  "project": "research",
+  "angle": "2026-11-15-a-quarter-of-swe-bench-pro-failures-were",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI grader disagreed with the pass/fail tests on 32.4% of SWE-Bench Pro coding runs. On DeepSWE, another coding benchmark, it disagreed on 1.4%. If you pick AI coding tools by leaderboard score, note that disagreement is not error: the audit has no human validation of the grader."
+    }
+  ]
+}
