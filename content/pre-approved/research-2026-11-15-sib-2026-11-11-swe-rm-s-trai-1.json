@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-15-sib-2026-11-11-swe-rm-s-trai-1",
+  "date": "2026-11-15",
+  "project": "research",
+  "angle": "angle:sib-2026-11-15-2026-11-11-swe-rm-s-trai-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The viral stat is real: some AI coding agents that succeed only 22% of the time predict 77% success. That is Gemini-3-Pro judging its own work on 100 SWE-bench Pro tasks (arXiv 2602.06948). If your agent grades its own output, its sense of done is a guess. Give it a test to run."
+    }
+  ]
+}

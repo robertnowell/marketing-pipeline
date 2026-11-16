@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-15-sib-2026-11-11-swe-rm-s-trai-2",
+  "date": "2026-11-15",
+  "project": "research",
+  "angle": "angle:sib-2026-11-15-2026-11-11-swe-rm-s-trai-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI agents tended to predict their own success better before seeing a patch than when reviewing one. The authors of arXiv 2602.06948 suggest the patch anchors the reviewer on surface plausibility. Differences \"are not always significant,\" they note."
+    }
+  ]
+}

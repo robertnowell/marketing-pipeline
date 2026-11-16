@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-15-sib-2026-11-11-the-viral-22--1",
+  "date": "2026-11-15",
+  "project": "research",
+  "angle": "angle:sib-2026-11-15-2026-11-11-the-viral-22--1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The viral AI-agent stat is real. Kaddour et al. (arXiv 2602.06948) abstract: \"some agents that succeed only 22% of the time predict 77% success.\" If your agent grades its own work, its confidence tells you little. I'd gate on a test, not the agent's say-so."
+    }
+  ]
+}

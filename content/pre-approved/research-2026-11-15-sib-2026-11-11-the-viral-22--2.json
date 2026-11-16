@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-15-sib-2026-11-11-the-viral-22--2",
+  "date": "2026-11-15",
+  "project": "research",
+  "angle": "angle:sib-2026-11-15-2026-11-11-the-viral-22--2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "If you let an AI agent grade its own work, ask before it builds, not after. In a coding-agent study (arXiv 2602.06948), estimates from the task plus a read-only repo tended to beat review of the finished patch. Authors' guess: the patch anchors you on surface plausibility. Not always significant."
+    }
+  ]
+}
