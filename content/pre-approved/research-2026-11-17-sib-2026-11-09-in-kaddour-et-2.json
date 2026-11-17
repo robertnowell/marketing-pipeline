@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-17-sib-2026-11-09-in-kaddour-et-2",
+  "date": "2026-11-17",
+  "project": "research",
+  "angle": "angle:sib-2026-11-17-2026-11-09-in-kaddour-et-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Telling an AI coding agent to hunt for bugs in its own work makes it sound less overconfident, not more accurate. For GPT it was a uniform downward shift (AUROC 0.58 to 0.55), and plain Platt scaling got calibration error to about 0.01. arXiv 2602.06948"
+    }
+  ]
+}

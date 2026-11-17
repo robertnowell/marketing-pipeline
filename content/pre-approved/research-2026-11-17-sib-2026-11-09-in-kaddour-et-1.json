@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-17-sib-2026-11-09-in-kaddour-et-1",
+  "date": "2026-11-17",
+  "project": "research",
+  "angle": "angle:sib-2026-11-17-2026-11-09-in-kaddour-et-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Claude Opus 4.5 solved 27% of 100 SWE-bench Pro tasks. After finishing each one, it rated its own odds of success at 61% on average. GPT-5.2-Codex: 35% actual, 73% predicted. If your coding agent says the work is probably right, treat that as a guess, not a check. arXiv 2602.06948"
+    }
+  ]
+}
