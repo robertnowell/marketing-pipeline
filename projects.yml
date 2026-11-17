@@ -421,7 +421,7 @@ research:
       summary: "In flipt-io/flipt, 29 agent trials failed SWE-Bench Pro with \"Missing
         tests: ['TestImport']\" because the harness skipped a fixture · thread: An
         AI grader disagreed with one coding test 32% of the time, another 1%"
-      last_used: '2026-11-15'
+      last_used: '2026-11-17'
       provenance:
         post_id: p_a31a418eaa53
         round_id: quiet_machines:2026-11-15
