@@ -439,7 +439,7 @@ research:
       summary: "The DeepSWE audit blog is dated May 2026 and the paper July 8, so
         OpenAI's July 8 audit may not be independent · thread: An AI grader disagreed
         with one coding test 32% of the time, another 1%"
-      last_used: '2026-11-15'
+      last_used: '2026-11-18'
       provenance:
         post_id: p_def7e72a09cb
         round_id: quiet_machines:2026-11-15
