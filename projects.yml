@@ -430,7 +430,7 @@ research:
       summary: 'An independent 2025 study found LLM patch judges skew lenient (precision
         0.65, recall 0.93), and in it, tests were the stricter party · thread: An
         AI grader disagreed with one coding test 32% of the time, another 1%'
-      last_used: '2026-11-15'
+      last_used: '2026-11-18'
       provenance:
         post_id: p_36f80930dd95
         round_id: quiet_machines:2026-11-15
