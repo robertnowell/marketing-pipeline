@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-18-1",
+  "date": "2026-11-18",
+  "project": "research",
+  "angle": "2026-11-18-kaddour-et-al-feb-2026-the-famous-22-suc",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "The viral AI stat, agents that succeed 22% of the time predicting 77% success, is the worst of three models tested (Gemini 3 Pro). GPT-5.2-Codex: 35% real, 73% predicted. Claude Opus 4.5: 27% real, 61% predicted. Milder, still bad. If a coding agent says it works, verify it yourself."
+    }
+  ]
+}

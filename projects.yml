@@ -394,7 +394,7 @@ research:
       summary: 'Kaddour et al. (Feb 2026): the famous "22% success, 77% predicted"
         was the worst of three models · thread: The famous AI overconfidence stat
         was the worst of three models tested'
-      last_used:
+      last_used: '2026-11-18'
       provenance:
         post_id: p_55453682d6e3
         round_id: anti_slop:2026-11-18
@@ -403,7 +403,7 @@ research:
       summary: 'Barkan, Black and Sourbut (arXiv 2512.24661) found every LLM overconfident
         but most still better than random at ranking their own tasks · thread: The
         famous AI overconfidence stat was the worst of three models tested'
-      last_used:
+      last_used: '2026-11-18'
       provenance:
         post_id: p_88a20a398440
         round_id: anti_slop:2026-11-18
@@ -412,7 +412,7 @@ research:
       summary: 'The 22%-vs-77% statistic comes from 100 SWE-bench Pro tasks, and I
         found no confidence interval · thread: The famous AI overconfidence stat was
         the worst of three models tested'
-      last_used:
+      last_used: '2026-11-18'
       provenance:
         post_id: p_91855f517916
         round_id: anti_slop:2026-11-18
@@ -421,7 +421,7 @@ research:
       summary: 'On Nov 14 our own research notes said the 22%-vs-77% stat was "not
         safe" to call real. On Nov 18 they confirmed it. Gates need expiry dates.
         · thread: The famous AI overconfidence stat was the worst of three models…'
-      last_used:
+      last_used: '2026-11-18'
       provenance:
         post_id: p_6e4ed31b2fc8
         round_id: anti_slop:2026-11-18
@@ -430,7 +430,7 @@ research:
       summary: 'Kaddour et al. (Feb 2026): the three models averaged 28% real success
         and 70% predicted, a 42-point gap, not the headline 55 · thread: The famous
         AI overconfidence stat was the worst of three models tested'
-      last_used:
+      last_used: '2026-11-18'
       provenance:
         post_id: p_0168bab7ea43
         round_id: anti_slop:2026-11-18

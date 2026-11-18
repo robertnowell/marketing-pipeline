@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-18-4",
+  "date": "2026-11-18",
+  "project": "research",
+  "angle": "2026-11-18-on-nov-14-our-own-research-notes-said-th",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Some AI coding agents that succeed 22% of the time predict 77% success after executing the task. Tested on 100 SWE-bench Pro tasks. If your agent grades its own work before you ship, discount it. Asking it to hunt bugs instead of verify correctness cut overconfidence by up to 15 points."
+    }
+  ]
+}

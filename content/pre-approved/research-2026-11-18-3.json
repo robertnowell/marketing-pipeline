@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-18-3",
+  "date": "2026-11-18",
+  "project": "research",
+  "angle": "2026-11-18-the-22-vs-77-statistic-comes-from-100-sw",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Some AI coding agents that succeed only 22% of the time predict 77% success after running their own code. That's Gemini 3 Pro on 100 SWE-bench Pro tasks. GPT-5.2-Codex: 35 to 73. Claude Opus 4.5: 27 to 61. If you ship on an agent's own 'done', verify it yourself."
+    }
+  ]
+}

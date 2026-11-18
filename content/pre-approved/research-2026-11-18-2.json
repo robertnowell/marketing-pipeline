@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-18-2",
+  "date": "2026-11-18",
+  "project": "research",
+  "angle": "2026-11-18-barkan-black-and-sourbut-arxiv-2512-2466",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI coding agent that succeeds only 22% of the time predicts 77% success on its own work. That's Gemini 3 Pro after running the task. GPT-5.2-Codex: 35% true, 73% predicted. Claude Opus 4.5: 27% true, 61%. If you ship what your agent says is done, check it yourself."
+    }
+  ]
+}
