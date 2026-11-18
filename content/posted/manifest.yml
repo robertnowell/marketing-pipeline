@@ -9069,3 +9069,15 @@
   angle: 2026-11-15-in-flipt-io-flipt-29-agent-trials-failed
   source_id: ''
   posted_at: '2026-11-17'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2leef3in72y
+  angle: angle:sib-2026-11-17-2026-11-09-in-kaddour-et-1
+  source_id: research-2026-11-17-sib-2026-11-09-in-kaddour-et-1
+  posted_at: '2026-11-18'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2leegsbi72b
+  angle: angle:sib-2026-11-17-2026-11-09-in-kaddour-et-2
+  source_id: research-2026-11-17-sib-2026-11-09-in-kaddour-et-2
+  posted_at: '2026-11-18'
