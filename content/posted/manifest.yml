@@ -9093,3 +9093,33 @@
   angle: 2026-11-15-the-deepswe-audit-blog-is-dated-may-2026
   source_id: ''
   posted_at: '2026-11-18'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2nut7hgk624
+  angle: 2026-11-18-kaddour-et-al-feb-2026-the-famous-22-suc
+  source_id: research-2026-11-18-1
+  posted_at: '2026-11-19'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2nutb6ahg2r
+  angle: 2026-11-18-barkan-black-and-sourbut-arxiv-2512-2466
+  source_id: research-2026-11-18-2
+  posted_at: '2026-11-19'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2nutcsnag2j
+  angle: 2026-11-18-the-22-vs-77-statistic-comes-from-100-sw
+  source_id: research-2026-11-18-3
+  posted_at: '2026-11-19'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2nutekgcv2b
+  angle: 2026-11-18-on-nov-14-our-own-research-notes-said-th
+  source_id: research-2026-11-18-4
+  posted_at: '2026-11-19'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2nutgbcap2f
+  angle: 2026-11-18-kaddour-et-al-feb-2026-the-three-models
+  source_id: research-2026-11-18-5
+  posted_at: '2026-11-19'
