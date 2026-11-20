@@ -9123,3 +9123,33 @@
   angle: 2026-11-18-kaddour-et-al-feb-2026-the-three-models
   source_id: research-2026-11-18-5
   posted_at: '2026-11-19'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2qfbxufwd25
+  angle: 2026-11-19-kaddour-et-al-s-62-vs-11-compares-two-di
+  source_id: research-2026-11-19-1
+  posted_at: '2026-11-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2qfbzd4xr2z
+  angle: 2026-11-19-platt-scaling-cut-gpt-s-calibration-erro
+  source_id: research-2026-11-19-2
+  posted_at: '2026-11-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2qfc2sipo2y
+  angle: 2026-11-19-telling-an-agent-to-find-the-bug-cut-its
+  source_id: research-2026-11-19-3
+  posted_at: '2026-11-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2qfc4caxn2r
+  angle: 2026-11-19-barkan-black-and-sourbut-found-claude-so
+  source_id: research-2026-11-19-4
+  posted_at: '2026-11-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2qfc5siu52i
+  angle: 2026-11-19-one-cell-in-the-kaddour-et-al-overconfid
+  source_id: research-2026-11-19-5
+  posted_at: '2026-11-20'
