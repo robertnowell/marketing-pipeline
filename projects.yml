@@ -353,87 +353,107 @@ research:
   channels:
     - bluesky
   facts:
-    - "The statistic is stated verbatim in the paper's abstract and is the Gemini
-      3 Pro post-execution figure.. Two agents independently retrieved it from arXiv
-      abs and HTML full text. (Sources 1, 2) > \"All results exhibit agentic overconfidence:
-      some agents that succeed only 22% of the time predict 77% success.\""
-    - "The other two models match the angle's numbers: GPT-5.2-Codex 35→73 and Claude
-      Opus 4.5 27→61.. Figure 1 caption and Section 3.2 give true rates of 35/22/27%.
-      (Sources 1, 2) > \"Post-execution agents predict 73% success for GPT (base rate
-      35%), 77% for Gemini (base rate 22%), … and 61% for Claude (base rate 27%).\""
-    - "\"Worst of three\" is correct on the gap and on the base rate.. Table 2 overconfidence
-      values reported as Gemini +0.55, GPT +0.39, Claude +0.34 (one agent notes GPT
-      rounds to 38 pp from the text figures). The conclusion states \"up to a 55pp
-      gap\". The full-text details were read through WebFetch's summarizer, not directly.
-      (Source 2)"
-    - The setting is agentic coding self-prediction, not review of humans' 
-      work.. 100 tasks sampled at random from SWE-bench Pro; agents give 
-      probability estimates before, during, and after execution. (Source 2)
-    - The paper has a mitigation result a viral post would likely omit.. Framing
-      the post-execution check as bug-finding rather than correctness 
-      verification reduced overconfidence by up to 15 points (derived 
-      adversarial values roughly GPT ~61%, Gemini ~62%, Opus ~47%, still well 
-      above true rates). Pre-execution assessment, with less information, tended
-      to discriminate better than post-execution…
-    - "Overconfidence varies by timing and model: Opus is slightly underconfident
-      at the 75% execution checkpoint.. Mid-execution estimates fall as work proceeds
-      (e.g. Opus 58% → 37% → 17% at 25/50/75%; Gemini 87% → 80% → 67%). Gemini's pre-execution
-      figure is reported near 99%. Single-source, partly from figure-text summaries.
-      (Source 2)"
-    - 'Independent work finds the same direction of overconfidence.. Barkan, Black,
-      Sourbut (arXiv 2512.24661; BigCodeBench, a contract-acceptance game, SWE-Bench
-      Verified): "All LLMs we tested are overconfident, but most predict their success
-      with better-than-random discriminatory power." Salesforce (2601.15778) and a
-      2026 clarification-seeking paper (2606.19559) were seen only as snippets. (Sources…'
+    - The primary source. "Agentic Uncertainty Reveals Agentic Overconfidence", 
+      Kaddour, Patel, Dovonon, Richter, Minervini, Kusner (UCL, SevnAI, 
+      Edinburgh, Mila), arXiv:2602.06948, submitted 6 Feb 2026; ICLR 2026 
+      listing. [Tier 1] Established (fetched full text by two agents; ICLR 
+      listing seen in search only).
+    - 'Setup. Models: GPT-5.2-Codex, Gemini 3 Pro, Claude Opus 4.5; the same model
+      is agent and estimator. Benchmark: 100 tasks sampled from SWE-bench Pro. Four
+      elicitation regimes: pre-execution (task + read-only repo), mid-execution (checkpoints
+      at 25/50/75% of steps), post-execution (reviewing its own patch), adversarial
+      post-execution (bug-finding prompt). Metrics: AUROC, ECE, Brier, overconfidence…'
+    - The asymmetry (Section 3.2, "Pervasive Overconfidence"). 62% of 
+      predictions on failing instances were overconfident; 11% on passing were 
+      underconfident; ratio ≈5.5×. Under standard post-execution review, the 
+      overconfident-failure rate was 72%; adversarial review lowered it to 45%. 
+      [Tier 1] Likely. Independent sources do not state this specific asymmetry;
+      they only corroborate overconfidence…
+    - Per-model overconfidence (predicted minus base rate). [Tier 1] Likely 
+      (figures from fetch summary of the paper's tables). | Model (base rate) | 
+      Pre-exec | Post-exec | Adversarial post-exec | |---|---|---|---| | 
+      GPT-5.2-Codex (35%) | +0.35 | +0.39 (73% predicted) | +0.26 | | Gemini 3 
+      Pro (22%) | +0.77* | +0.55 (77% predicted) | +0.40 | | Claude Opus 4.5 
+      (27%) | +0.37 | +0.34 (61% predicted) |…
+    - 'Confidence barely discriminates. AUROC, pre-exec: GPT 0.62, Claude 0.64, Gemini
+      0.53; post-exec: 0.58 / 0.55 / 0.51; adversarial post-exec: GPT 0.55, Gemini
+      0.57, Claude 0.64. The paper says pre-over-post differences are not always statistically
+      significant. Near 0.5 is chance. [Tier 1] Likely.'
+    - Adversarial "find the bug" framing gave the best calibration. ECE fell 
+      from 0.42→0.30 (GPT) and 0.37→0.24 (Claude); AUROC improved for Gemini 
+      (0.51→0.57) and Claude (0.55→0.64), was flat for GPT. Cost roughly doubled
+      (12.7 steps/$0.23 → 23.4 steps/$0.52 per instance). The paper says it 
+      "reduces but does not eliminate overconfidence" and "should not be treated
+      as a license to remove human…
+    - Cheap statistical fixes can match the prompt trick. For GPT, post-hoc 
+      Platt scaling reached ECE ≈0.01 vs 0.30 for adversarial prompting, i.e. 
+      the adversarial gain is largely a uniform downward shift. A conservative 
+      ensemble (min of pre- and post-exec estimates) cut ECE modestly (GPT 
+      0.42→0.32; Claude 0.37→0.31). The paper suggests pre-exec estimates for 
+      routing and adversarial review for…
+    - 'Independent corroboration: Barkan, Black, Sourbut (RAND / UK AISI / FLI), "Do
+      Large Language Models Know What They Are Capable Of?", arXiv:2512.24661. "All
+      LLMs we tested are overconfident, but most predict their success with better-than-random
+      discriminatory power." Llama 3/3.1/4, GPT-4o through GPT-5.1, Claude 3.5 Haiku
+      through Sonnet 4.5; BigCodeBench (1,140 tasks) and multi-step SWE-bench…'
+    - "Older code-model evidence (different phenomenon: token probabilities). Spiess
+      et al., ICSE'25, arXiv:2402.02047: raw Brier skill scores mostly negative; GPT-3.5
+      HumanEval ECE 0.63, MBPP ECE 0.71; Platt scaling cut average ECE 0.32→0.03,
+      but needed ~64+ data points and transferred inconsistently; warns low ECE can
+      be misleading (\"bucket collapse\"). [Tier 1] Likely."
+    - 'General verbalized-confidence literature. Xiong et al., ICLR 2024, arXiv:2306.13063:
+      LLMs "tend to be overconfident, possibly because they imitate human patterns
+      of expressing confidence"; calibration improves with capability; no technique
+      consistently wins. Read abstract only. [Tier 1] Emerging.'
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-11-18-kaddour-overconfidence-three-models' dated 2026-11-18, 
-      and from a simulated review round where 10 agent-written posts were ranked
-      by votes.
+      report '2026-11-18-agent-overconfidence-kaddour' dated 2026-11-19, and 
+      from a simulated review round where 10 agent-written posts were ranked by 
+      votes.
   angles:
-    - id: 2026-11-18-kaddour-et-al-feb-2026-the-famous-22-suc
-      summary: 'Kaddour et al. (Feb 2026): the famous "22% success, 77% predicted"
-        was the worst of three models · thread: The famous AI overconfidence stat
-        was the worst of three models tested'
-      last_used: '2026-11-18'
+    - id: 2026-11-19-kaddour-et-al-s-62-vs-11-compares-two-di
+      summary: "Kaddour et al.'s '62% vs 11%' compares two different cutoffs on 100
+        coding tasks · thread: AI coding agents are confidently wrong on failing tasks,
+        so don't ask them"
+      last_used:
       provenance:
-        post_id: p_55453682d6e3
-        round_id: anti_slop:2026-11-18
-        report_label: 2026-11-18-kaddour-overconfidence-three-models
-    - id: 2026-11-18-barkan-black-and-sourbut-arxiv-2512-2466
-      summary: 'Barkan, Black and Sourbut (arXiv 2512.24661) found every LLM overconfident
-        but most still better than random at ranking their own tasks · thread: The
-        famous AI overconfidence stat was the worst of three models tested'
-      last_used: '2026-11-18'
+        post_id: p_f44126eeee9f
+        round_id: anti_slop:2026-11-19
+        report_label: 2026-11-18-agent-overconfidence-kaddour
+    - id: 2026-11-19-platt-scaling-cut-gpt-s-calibration-erro
+      summary: "Platt scaling cut GPT's calibration error from 0.30 to about 0.01
+        in Kaddour et al., but its AUROC still sat near 0.55 to 0.58 · thread: AI
+        coding agents are confidently wrong on failing tasks, so don't ask them"
+      last_used:
       provenance:
-        post_id: p_88a20a398440
-        round_id: anti_slop:2026-11-18
-        report_label: 2026-11-18-kaddour-overconfidence-three-models
-    - id: 2026-11-18-the-22-vs-77-statistic-comes-from-100-sw
-      summary: 'The 22%-vs-77% statistic comes from 100 SWE-bench Pro tasks, and I
-        found no confidence interval · thread: The famous AI overconfidence stat was
-        the worst of three models tested'
-      last_used: '2026-11-18'
+        post_id: p_20cb2e199c26
+        round_id: anti_slop:2026-11-19
+        report_label: 2026-11-18-agent-overconfidence-kaddour
+    - id: 2026-11-19-telling-an-agent-to-find-the-bug-cut-its
+      summary: "Telling an agent to 'find the bug' cut its overconfidence and doubled
+        its bill: 12.7 steps to 23.4 · thread: AI coding agents are confidently wrong
+        on failing tasks, so don't ask them"
+      last_used:
       provenance:
-        post_id: p_91855f517916
-        round_id: anti_slop:2026-11-18
-        report_label: 2026-11-18-kaddour-overconfidence-three-models
-    - id: 2026-11-18-on-nov-14-our-own-research-notes-said-th
-      summary: 'On Nov 14 our own research notes said the 22%-vs-77% stat was "not
-        safe" to call real. On Nov 18 they confirmed it. Gates need expiry dates.
-        · thread: The famous AI overconfidence stat was the worst of three models…'
-      last_used: '2026-11-18'
+        post_id: p_28a0229a3a5a
+        round_id: anti_slop:2026-11-19
+        report_label: 2026-11-18-agent-overconfidence-kaddour
+    - id: 2026-11-19-barkan-black-and-sourbut-found-claude-so
+      summary: 'Barkan, Black and Sourbut found Claude Sonnet models grew MORE overconfident
+        as tasks progressed; Kaddour found overconfidence mostly shrank mid-run ·
+        thread: AI coding agents are confidently wrong on failing tasks, so…'
+      last_used:
       provenance:
-        post_id: p_6e4ed31b2fc8
-        round_id: anti_slop:2026-11-18
-        report_label: 2026-11-18-kaddour-overconfidence-three-models
-    - id: 2026-11-18-kaddour-et-al-feb-2026-the-three-models
-      summary: 'Kaddour et al. (Feb 2026): the three models averaged 28% real success
-        and 70% predicted, a 42-point gap, not the headline 55 · thread: The famous
-        AI overconfidence stat was the worst of three models tested'
-      last_used: '2026-11-18'
+        post_id: p_7e6528fc9cfa
+        round_id: anti_slop:2026-11-19
+        report_label: 2026-11-18-agent-overconfidence-kaddour
+    - id: 2026-11-19-one-cell-in-the-kaddour-et-al-overconfid
+      summary: "One cell in the Kaddour et al. overconfidence table, Gemini 3 Pro's
+        '+0.77', implies a 99% prediction and may be a mix-up · thread: AI coding
+        agents are confidently wrong on failing tasks, so don't ask them"
+      last_used:
       provenance:
-        post_id: p_0168bab7ea43
-        round_id: anti_slop:2026-11-18
-        report_label: 2026-11-18-kaddour-overconfidence-three-models
+        post_id: p_b4767ccc0a2c
+        round_id: anti_slop:2026-11-19
+        report_label: 2026-11-18-agent-overconfidence-kaddour
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-18-the-famous-ai-overconfidence-stat-was-th.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-19-ai-coding-agents-are-confidently-wrong-o.png
