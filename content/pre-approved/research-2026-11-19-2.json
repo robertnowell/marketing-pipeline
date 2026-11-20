@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-19-2",
+  "date": "2026-11-19",
+  "project": "research",
+  "angle": "2026-11-19-platt-scaling-cut-gpt-s-calibration-erro",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Asking your AI coding agent whether its patch works tells you almost nothing. In a UCL-led study (arXiv:2602.06948), GPT-5.2-Codex's confidence scored AUROC 0.58 after finishing; 0.5 is chance. Platt scaling fixed calibration error (ECE 0.01) but not that. Run the tests instead."
+    }
+  ]
+}

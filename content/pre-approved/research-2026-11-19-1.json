@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-19-1",
+  "date": "2026-11-19",
+  "project": "research",
+  "angle": "2026-11-19-kaddour-et-al-s-62-vs-11-compares-two-di",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Ask a coding agent if its patch works and it will say yes, even when it failed. Kaddour et al. (UCL, Edinburgh, Mila), arXiv:2602.06948: on failing tasks 62% of predictions were overconfident; on passing tasks 11% were underconfident. Run the tests, don't ask the agent."
+    }
+  ]
+}

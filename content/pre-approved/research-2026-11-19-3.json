@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-19-3",
+  "date": "2026-11-19",
+  "project": "research",
+  "angle": "2026-11-19-telling-an-agent-to-find-the-bug-cut-its",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "When a coding agent reviews its own failing patch, it is overconfident 72% of the time. A 'find the bug' prompt cut that to 45% but roughly doubled cost ($0.23 to $0.52 per task). Don't ask the agent if it's right. Paper: arXiv:2602.06948 (Kaddour et al.)"
+    }
+  ]
+}

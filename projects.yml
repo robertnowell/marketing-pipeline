@@ -414,7 +414,7 @@ research:
       summary: "Kaddour et al.'s '62% vs 11%' compares two different cutoffs on 100
         coding tasks · thread: AI coding agents are confidently wrong on failing tasks,
         so don't ask them"
-      last_used:
+      last_used: '2026-11-19'
       provenance:
         post_id: p_f44126eeee9f
         round_id: anti_slop:2026-11-19
@@ -423,7 +423,7 @@ research:
       summary: "Platt scaling cut GPT's calibration error from 0.30 to about 0.01
         in Kaddour et al., but its AUROC still sat near 0.55 to 0.58 · thread: AI
         coding agents are confidently wrong on failing tasks, so don't ask them"
-      last_used:
+      last_used: '2026-11-19'
       provenance:
         post_id: p_20cb2e199c26
         round_id: anti_slop:2026-11-19
@@ -432,7 +432,7 @@ research:
       summary: "Telling an agent to 'find the bug' cut its overconfidence and doubled
         its bill: 12.7 steps to 23.4 · thread: AI coding agents are confidently wrong
         on failing tasks, so don't ask them"
-      last_used:
+      last_used: '2026-11-19'
       provenance:
         post_id: p_28a0229a3a5a
         round_id: anti_slop:2026-11-19
@@ -441,7 +441,7 @@ research:
       summary: 'Barkan, Black and Sourbut found Claude Sonnet models grew MORE overconfident
         as tasks progressed; Kaddour found overconfidence mostly shrank mid-run ·
         thread: AI coding agents are confidently wrong on failing tasks, so…'
-      last_used:
+      last_used: '2026-11-19'
       provenance:
         post_id: p_7e6528fc9cfa
         round_id: anti_slop:2026-11-19
@@ -450,7 +450,7 @@ research:
       summary: "One cell in the Kaddour et al. overconfidence table, Gemini 3 Pro's
         '+0.77', implies a 99% prediction and may be a mix-up · thread: AI coding
         agents are confidently wrong on failing tasks, so don't ask them"
-      last_used:
+      last_used: '2026-11-19'
       provenance:
         post_id: p_b4767ccc0a2c
         round_id: anti_slop:2026-11-19

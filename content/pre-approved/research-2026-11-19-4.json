@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-19-4",
+  "date": "2026-11-19",
+  "project": "research",
+  "angle": "2026-11-19-barkan-black-and-sourbut-found-claude-so",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "On tasks the AI coding agent failed, 62% of its self-predictions were overconfident. On tasks it passed, only 11% were underconfident. Letting the agent grade its own work biases you toward 'looks good' by about 5.5\u00d7. Kaddour et al., UCL, Edinburgh, Mila: arXiv:2602.06948"
+    }
+  ]
+}

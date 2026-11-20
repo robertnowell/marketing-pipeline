@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-19-5",
+  "date": "2026-11-19",
+  "project": "research",
+  "angle": "2026-11-19-one-cell-in-the-kaddour-et-al-overconfid",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "On tasks where AI coding agents failed, 62% of their self-predictions were overconfident. On tasks they passed, 11% were underconfident. That's about 5.5\u00d7 lopsided. Don't ask the agent whether its patch is good before you ship. UCL/Mila study, arXiv:2602.06948"
+    }
+  ]
+}
