@@ -9153,3 +9153,33 @@
   angle: 2026-11-19-one-cell-in-the-kaddour-et-al-overconfid
   source_id: research-2026-11-19-5
   posted_at: '2026-11-20'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2svq4ahh32i
+  angle: 2026-11-20-the-complement-theory-for-22-6-in-arxiv
+  source_id: research-2026-11-20-1
+  posted_at: '2026-11-21'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2svq5yxz62j
+  angle: 2026-11-20-gptzero-s-neurips-2025-scan-100-bad-cita
+  source_id: research-2026-11-20-2
+  posted_at: '2026-11-21'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2svq7miiz2i
+  angle: 2026-11-20-five-unrelated-ai-review-figures-sit-wit
+  source_id: research-2026-11-20-3
+  posted_at: '2026-11-21'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2svqbileb2i
+  angle: 2026-11-20-the-slop-paper-says-automated-slop-measu
+  source_id: research-2026-11-20-4
+  posted_at: '2026-11-21'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2svqd5sio2r
+  angle: 2026-11-20-arxiv-2603-15911-contains-both-22-5-and
+  source_id: research-2026-11-20-5
+  posted_at: '2026-11-21'
