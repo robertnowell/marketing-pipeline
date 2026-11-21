@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-20-3",
+  "date": "2026-11-20",
+  "project": "research",
+  "angle": "2026-11-20-five-unrelated-ai-review-figures-sit-wit",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A viral AI stat (22% vs 77%) cites arXiv 2509.19163. That paper is about measuring AI slop, not reviews. No paper we checked has that pair. The nearest: 22.6% of agent-written pull requests got agent-only review (arXiv 2605.02273). Matching digits isn't sourcing. Open the link first."
+    }
+  ]
+}

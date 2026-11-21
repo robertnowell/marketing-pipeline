@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-20-1",
+  "date": "2026-11-20",
+  "project": "research",
+  "angle": "2026-11-20-the-complement-theory-for-22-6-in-arxiv",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A viral AI stat pairs 22% with 77%. The paper it cites, arXiv 2509.19163, is a slop-measurement paper. None of the candidate papers we checked contains a 22%-vs-77% pair. Closest is arXiv 2605.02273: 22.6% of agent-authored PRs reviewed exclusively by agents. No 77%."
+    }
+  ]
+}

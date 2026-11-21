@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-20-4",
+  "date": "2026-11-20",
+  "project": "research",
+  "angle": "2026-11-20-the-slop-paper-says-automated-slop-measu",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A viral AI stat cited arXiv 2509.19163. That paper is about measuring slop, and no paper we checked contains a 22%-vs-77% agent/human split. The slop paper says automated measurement is still open, yet a wrong ID is slop a script can catch. Check the source before you repeat the number."
+    }
+  ]
+}

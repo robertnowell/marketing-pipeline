@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-20-5",
+  "date": "2026-11-20",
+  "project": "research",
+  "angle": "2026-11-20-arxiv-2603-15911-contains-both-22-5-and",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A viral AI stat pairs 22% against 77%. No candidate paper we read contains that pair. The closest real figure is 22.6% of agent-authored PRs reviewed only by agents (arXiv 2605.02273). If you repost stats, open the cited paper and find the number first."
+    }
+  ]
+}

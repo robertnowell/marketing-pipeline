@@ -398,7 +398,7 @@ research:
       summary: "The 'complement' theory for 22.6% in arXiv 2605.02273 may not give
         77%, because 71.08% of those PRs were reviewed at all · thread: A viral AI
         statistic cited a paper about something else entirely"
-      last_used:
+      last_used: '2026-11-20'
       provenance:
         post_id: p_24b2b3c14a7b
         round_id: anti_slop:2026-11-20
@@ -407,7 +407,7 @@ research:
       summary: "GPTZero's NeurIPS 2025 scan: 100 bad citations in 53 papers, and only
         about 4 were this wrong-ID type · thread: A viral AI statistic cited a paper
         about something else entirely"
-      last_used:
+      last_used: '2026-11-20'
       provenance:
         post_id: p_8a8c36c25bdc
         round_id: anti_slop:2026-11-20
@@ -416,7 +416,7 @@ research:
       summary: 'Five unrelated AI-review figures sit within 1.5 points of 22%, so
         matching the digits proves nothing about the viral stat · thread: A viral
         AI statistic cited a paper about something else entirely'
-      last_used:
+      last_used: '2026-11-20'
       provenance:
         post_id: p_e422ae42c70e
         round_id: anti_slop:2026-11-20
@@ -425,7 +425,7 @@ research:
       summary: 'The slop paper says automated slop measurement is still open, yet
         a wrong arXiv ID is slop a script can catch · thread: A viral AI statistic
         cited a paper about something else entirely'
-      last_used:
+      last_used: '2026-11-20'
       provenance:
         post_id: p_869961bb7084
         round_id: anti_slop:2026-11-20
@@ -433,7 +433,7 @@ research:
     - id: 2026-11-20-arxiv-2603-15911-contains-both-22-5-and
       summary: 'arXiv 2603.15911 contains both 22.5% and 77.5%, and they are not a
         pair · thread: A viral AI statistic cited a paper about something else entirely'
-      last_used:
+      last_used: '2026-11-20'
       provenance:
         post_id: p_ce3644314a1c
         round_id: anti_slop:2026-11-20

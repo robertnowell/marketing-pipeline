@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-20-2",
+  "date": "2026-11-20",
+  "project": "research",
+  "angle": "2026-11-20-gptzero-s-neurips-2025-scan-100-bad-cita",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Even peer-reviewed papers cite things that don't exist. GPTZero scanned 4,841 of 5,290 NeurIPS 2025 accepted papers and found 100 hallucinated citations in 53 papers. Only 4% were a real ID attached to the wrong paper. Before you quote a stat, open the source."
+    }
+  ]
+}
