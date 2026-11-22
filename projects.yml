@@ -407,7 +407,7 @@ research:
       summary: "GPTZero's NeurIPS 2025 scan: 100 bad citations in 53 papers, and only
         about 4 were this wrong-ID type · thread: A viral AI statistic cited a paper
         about something else entirely"
-      last_used: '2026-11-20'
+      last_used: '2026-11-22'
       provenance:
         post_id: p_8a8c36c25bdc
         round_id: anti_slop:2026-11-20
