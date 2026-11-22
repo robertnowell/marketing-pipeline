@@ -9183,3 +9183,9 @@
   angle: 2026-11-20-arxiv-2603-15911-contains-both-22-5-and
   source_id: research-2026-11-20-5
   posted_at: '2026-11-21'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2vg6v7mqj2z
+  angle: 2026-11-20-the-complement-theory-for-22-6-in-arxiv
+  source_id: ''
+  posted_at: '2026-11-22'
