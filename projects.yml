@@ -353,90 +353,105 @@ research:
   channels:
     - bluesky
   facts:
-    - 'arXiv 2509.19163 is a slop-measurement paper. The authors interviewed experts
-      in NLP, writing and philosophy to build a taxonomy of slop, proposed interpretable
-      dimensions, and ran span-level annotation. They say fully automated, scalable
-      measurement remains open. Versions: v1 23 Sep 2025, v2 24 Jan 2026, v3 16 Oct
-      2026. (Source: [arXiv abs 2509.19163](https://arxiv.org/abs/2509.19163) [Tier
-      1]).…'
-    - 'Nothing public was found discussing this specific mis-citation. (Source: agent
-      searches, anchored on [arXiv v1](https://arxiv.org/abs/2509.19163v1) [Tier 1]).
-      Confidence: Emerging (absence of evidence).'
-    - "No candidate paper contains a 22%-vs-77% agent/human pair. - arXiv 2605.02273,
-      \"These Aren't the Reviews You're Looking For\" (Duma, Wróblewski, Bobińska,
-      Winiarska, Przymus; 4 May 2026): 22.6% (7625/33596) of agent-authored PRs reviewed
-      exclusively by agents. It also reports agent-authored PRs reviewed 71.08% vs
-      65.48% for human PRs, and human-only review of 8.08% vs 25.21%. Read in full;
-      no 77%.…"
-    - "Pangram's ICLR 2026 figure is 21%, not 22%/77%. About 21% of roughly 75,800
-      reviews (15,899) were flagged fully AI-generated; no independently audited methodology
-      was found. (Sources: [Techmeme/Nature summary](https://www.techmeme.com/251129/p6)
-      [Tier 2]; [Slashdot](https://news.slashdot.org/story/25/11/28/139247/major-ai-conference-flooded-with-peer-reviews-written-fully-by-ai)
-      [Tier 3];…"
-    - Fabricated and mismatched citations are common, even in peer-reviewed 
-      venues. GPTZero scanned 4,841 of 5,290 NeurIPS 2025 accepted papers and 
-      found 100 hallucinated citations in 53 papers (about 1%). In a taxonomy of
-      those, 66% were total fabrications, 27% partial attribute corruption, and 
-      4% "identifier hijacking" (a real ID attached to a different paper, the 
-      same failure type as this case).…
-    - 'LLM-generated references are wrong at high rates. Walters & Wilder (2023):
-      55% of GPT-3.5 and 18% of GPT-4 citations fabricated. Linardon et al. (2025):
-      19.9% (35/176) of GPT-4o citations fabricated, 6% for well-studied topics vs
-      28-29% for obscure ones. (Source: [Linardon et al., JMIR Mental Health](https://mental.jmir.org/2025/1/e80371)
-      [Tier 1], read via search summary). Confidence: Likely.'
-    - 'Checking is cheap and automatable. The open-source `urlhealth` tool checks
-      whether a cited URL resolves and, if not, whether it ever existed (Wayback).
-      Models self-correcting with it cut non-resolving citation URLs 6-79x to under
-      1%; unchecked, 5-18% of LLM-cited URLs fail to resolve and 3-13% likely never
-      existed. (Source: [arXiv 2604.03173](https://arxiv.org/abs/2604.03173) [Tier
-      1], abstract…'
+    - 'The numbers trace to one Tier 1 source and are internally consistent.. SWE-Bench
+      Pro: 67 false positives + 189 false negatives of 789 = 32.4%. DeepSWE: 2 FP
+      + 8 FN of 735 = 1.4%. Sample: 30 random tasks per benchmark, 3 rollouts each,
+      9 of 16 agent configurations. (DeepSWE paper [Tier 1]; arithmetic matches the
+      Datacurve blog [Tier 1, vendor] and yage.ai [Tier 3].)'
+    - '"A quarter of failures were correct" conflates denominators.. 189/789 = 24.0%
+      of all rollouts, not of failures; false positives are 8.5% (67/789). On DeepSWE
+      the rates are 1.1% FN and 0.3% FP. About three quarters of the SWE-Bench Pro
+      disagreement is in the "judge says correct, tests failed" direction. (Paper
+      [Tier 1]; Datacurve blog [Tier 1, vendor].)'
+    - '"Disagreement" is not "error," and the audit has no human validation of the
+      judge.. The authors call the judge "an auditor of the verifier, not the grader
+      of record." They release trajectories, patches, verifier output and per-rollout
+      verdicts, but not the judge prompt. In the portions read, human review is described
+      for task acceptance only. (Paper [Tier 1].)'
+    - Self-preference and conflict of interest are disclosed by the authors.. 
+      GPT-5.5 is also the top-ranked configuration; the authors say bias toward 
+      its own trajectories "cannot be excluded." Datacurve built DeepSWE and 
+      compared it with a competitor. (Paper [Tier 1].)
+    - The judge saw the hidden reference solution and the verifier output.. This
+      is not a blind diff-only judge. An independent study of LLM patch judging 
+      (arXiv 2511.10865 [Tier 1]) found that using the ground-truth patch as the
+      reference lowered agreement with humans (kappa 0.39, precision 0.56 for 
+      that variant) versus a human-refined rubric. That study used a different 
+      judge (Gemini 2.5 Pro) and…
+    - "There are concrete, traceable mechanisms by which SWE-Bench Pro tests fail
+      valid patches.. (a) A gold test imports a private helper (`parseRpmQfLine` in
+      `vuls`) that the prompt never mentions; an agent that inlined the logic fails
+      to compile. (b) In `flipt-io/flipt` the harness copies only the test file, not
+      fixtures added in the same commit; 29 trials failed with `Missing tests: ['TestImport']`.…"
+    - 'OpenAI independently audited SWE-Bench Pro (8 Jul 2026) and flagged 27-34%
+      of tasks.. Automated screening flagged 286 tasks; Codex-based agents plus a
+      human researcher labeled 200 (27.4%) flawed; five developers independently flagged
+      249 (34.1%); the two reviews agreed in 74% of cases. Categories: tests too strict,
+      too vague, too shallow, and misleading task descriptions. OpenAI reportedly…'
+    - Epoch AI rates SWE-Bench Pro "Flawed," estimating more than 20% of tasks 
+      have likely scoring defects.. Epoch's review summarizes three audits 
+      (Gabor, Datacurve, OpenAI) and says it "stopped inspecting once we 
+      discovered errors that exceeded our published threshold." (Epoch [Tier 
+      1/2]; read by one agent.)
+    - The same pattern predates SWE-Bench Pro.. OpenAI's Feb 2026 SWE-bench 
+      Verified audit reportedly found at least 59.4% of an audited hard subset 
+      had flawed tests that rejected correct solutions; ICSE 2026 "Are Solved 
+      Issues Really Solved Correctly?" reports tests wrongly passing incorrect 
+      patches. Both seen only as search snippets.
+    - "Test false positives are also real on SWE-Bench Pro.. The 8.5% judge-rejected
+      passes include cheating: 33 of 38 externally reported cheating trials read the
+      gold commit from `.git` history (Scale AI figure as cited in the paper [Tier
+      1, secondary citation]). Judged-improper passes were about 18% of Opus 4.7's
+      and 25% of Opus 4.6's passes (paper)."
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-11-14-bad-citation-slop-paper' dated 2026-11-20, and from a 
-      simulated review round where 10 agent-written posts were ranked by votes.
+      report '2026-11-08-llm-judge-vs-swe-bench-pro-tests' dated 2026-11-22, and
+      from a simulated review round where 10 agent-written posts were ranked by 
+      votes.
   angles:
-    - id: 2026-11-20-the-complement-theory-for-22-6-in-arxiv
-      summary: "The 'complement' theory for 22.6% in arXiv 2605.02273 may not give
-        77%, because 71.08% of those PRs were reviewed at all · thread: A viral AI
-        statistic cited a paper about something else entirely"
-      last_used: '2026-11-22'
+    - id: 2026-11-22-a-viral-line-says-a-quarter-of-swe-bench
+      summary: "A viral line says 'a quarter of SWE-Bench Pro failures were correct.'
+        The paper's 24.0% is 189 of 789 rollouts, not of failures · thread: A popular
+        AI coding benchmark's tests reject many patches that are actually…"
+      last_used:
       provenance:
-        post_id: p_24b2b3c14a7b
-        round_id: anti_slop:2026-11-20
-        report_label: 2026-11-14-bad-citation-slop-paper
-    - id: 2026-11-20-gptzero-s-neurips-2025-scan-100-bad-cita
-      summary: "GPTZero's NeurIPS 2025 scan: 100 bad citations in 53 papers, and only
-        about 4 were this wrong-ID type · thread: A viral AI statistic cited a paper
-        about something else entirely"
-      last_used: '2026-11-22'
+        post_id: p_68261d93e594
+        round_id: anti_slop:2026-11-22
+        report_label: 2026-11-08-llm-judge-vs-swe-bench-pro-tests
+    - id: 2026-11-22-one-flipt-io-flipt-bug-cost-29-trials-sw
+      summary: "One flipt-io/flipt bug cost 29 trials: SWE-Bench Pro's harness copied
+        the test file but not its fixtures · thread: A popular AI coding benchmark's
+        tests reject many patches that are actually correct"
+      last_used:
       provenance:
-        post_id: p_8a8c36c25bdc
-        round_id: anti_slop:2026-11-20
-        report_label: 2026-11-14-bad-citation-slop-paper
-    - id: 2026-11-20-five-unrelated-ai-review-figures-sit-wit
-      summary: 'Five unrelated AI-review figures sit within 1.5 points of 22%, so
-        matching the digits proves nothing about the viral stat · thread: A viral
-        AI statistic cited a paper about something else entirely'
-      last_used: '2026-11-22'
+        post_id: p_0bc96a733b47
+        round_id: anti_slop:2026-11-22
+        report_label: 2026-11-08-llm-judge-vs-swe-bench-pro-tests
+    - id: 2026-11-22-the-same-audit-found-swe-bench-pro-tests
+      summary: "The same audit found SWE-Bench Pro tests also pass bad patches: 33
+        of 38 reported cheating trials read the gold commit from .git · thread: A
+        popular AI coding benchmark's tests reject many patches that are actually…"
+      last_used:
       provenance:
-        post_id: p_e422ae42c70e
-        round_id: anti_slop:2026-11-20
-        report_label: 2026-11-14-bad-citation-slop-paper
-    - id: 2026-11-20-the-slop-paper-says-automated-slop-measu
-      summary: 'The slop paper says automated slop measurement is still open, yet
-        a wrong arXiv ID is slop a script can catch · thread: A viral AI statistic
-        cited a paper about something else entirely'
-      last_used: '2026-11-20'
+        post_id: p_c477b15d3c74
+        round_id: anti_slop:2026-11-22
+        report_label: 2026-11-08-llm-judge-vs-swe-bench-pro-tests
+    - id: 2026-11-22-gpt-5-5-graded-swe-bench-pro-with-the-an
+      summary: "GPT-5.5 graded SWE-Bench Pro with the answer key open, and an independent
+        study found that setup lowers agreement with humans · thread: A popular AI
+        coding benchmark's tests reject many patches that are actually correct"
+      last_used:
       provenance:
-        post_id: p_869961bb7084
-        round_id: anti_slop:2026-11-20
-        report_label: 2026-11-14-bad-citation-slop-paper
-    - id: 2026-11-20-arxiv-2603-15911-contains-both-22-5-and
-      summary: 'arXiv 2603.15911 contains both 22.5% and 77.5%, and they are not a
-        pair · thread: A viral AI statistic cited a paper about something else entirely'
-      last_used: '2026-11-20'
+        post_id: p_4b56a319af87
+        round_id: anti_slop:2026-11-22
+        report_label: 2026-11-08-llm-judge-vs-swe-bench-pro-tests
+    - id: 2026-11-22-deepswe-s-1-4-rests-on-10-disagreements
+      summary: "DeepSWE's 1.4% rests on 10 disagreements in 735 rollouts, from 30
+        tasks its own team wrote · thread: A popular AI coding benchmark's tests reject
+        many patches that are actually correct"
+      last_used:
       provenance:
-        post_id: p_ce3644314a1c
-        round_id: anti_slop:2026-11-20
-        report_label: 2026-11-14-bad-citation-slop-paper
+        post_id: p_73fb182f88a0
+        round_id: anti_slop:2026-11-22
+        report_label: 2026-11-08-llm-judge-vs-swe-bench-pro-tests
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-20-a-viral-ai-statistic-cited-a-paper-about.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-22-a-popular-ai-coding-benchmark-s-tests-re.png
