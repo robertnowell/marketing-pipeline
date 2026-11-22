@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-22-5",
+  "date": "2026-11-22",
+  "project": "research",
+  "angle": "2026-11-22-deepswe-s-1-4-rests-on-10-disagreements",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge disagreed with SWE-Bench Pro's tests on 32.4% of coding-agent runs. On the authors' own new benchmark: 1.4%. But the judge saw the answer key, no human validated it, and the authors built the rival. Disagreement isn't error. Don't pick a coding agent on either number."
+    }
+  ]
+}

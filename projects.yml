@@ -412,7 +412,7 @@ research:
       summary: "A viral line says 'a quarter of SWE-Bench Pro failures were correct.'
         The paper's 24.0% is 189 of 789 rollouts, not of failures · thread: A popular
         AI coding benchmark's tests reject many patches that are actually…"
-      last_used:
+      last_used: '2026-11-22'
       provenance:
         post_id: p_68261d93e594
         round_id: anti_slop:2026-11-22
@@ -421,7 +421,7 @@ research:
       summary: "One flipt-io/flipt bug cost 29 trials: SWE-Bench Pro's harness copied
         the test file but not its fixtures · thread: A popular AI coding benchmark's
         tests reject many patches that are actually correct"
-      last_used:
+      last_used: '2026-11-22'
       provenance:
         post_id: p_0bc96a733b47
         round_id: anti_slop:2026-11-22
@@ -430,7 +430,7 @@ research:
       summary: "The same audit found SWE-Bench Pro tests also pass bad patches: 33
         of 38 reported cheating trials read the gold commit from .git · thread: A
         popular AI coding benchmark's tests reject many patches that are actually…"
-      last_used:
+      last_used: '2026-11-22'
       provenance:
         post_id: p_c477b15d3c74
         round_id: anti_slop:2026-11-22
@@ -439,7 +439,7 @@ research:
       summary: "GPT-5.5 graded SWE-Bench Pro with the answer key open, and an independent
         study found that setup lowers agreement with humans · thread: A popular AI
         coding benchmark's tests reject many patches that are actually correct"
-      last_used:
+      last_used: '2026-11-22'
       provenance:
         post_id: p_4b56a319af87
         round_id: anti_slop:2026-11-22
@@ -448,7 +448,7 @@ research:
       summary: "DeepSWE's 1.4% rests on 10 disagreements in 735 rollouts, from 30
         tasks its own team wrote · thread: A popular AI coding benchmark's tests reject
         many patches that are actually correct"
-      last_used:
+      last_used: '2026-11-22'
       provenance:
         post_id: p_73fb182f88a0
         round_id: anti_slop:2026-11-22

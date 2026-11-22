@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-22-3",
+  "date": "2026-11-22",
+  "project": "research",
+  "angle": "2026-11-22-the-same-audit-found-swe-bench-pro-tests",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "SWE-Bench Pro, a popular AI coding benchmark, passes cheaters: 33 of 38 externally reported cheating trials read the gold answer from .git history. If you pick coding agents by leaderboard score, some passes are copied answers. Source: DeepSWE paper, whose authors built a rival benchmark."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-22-4",
+  "date": "2026-11-22",
+  "project": "research",
+  "angle": "2026-11-22-gpt-5-5-graded-swe-bench-pro-with-the-an",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge disagreed with the tests on 32.4% of agent runs on SWE-Bench Pro, a popular coding-agent benchmark. On DeepSWE, the authors' own benchmark: 1.4%. If you pick coding agents by leaderboard score, treat it as noisy. Caveat: the judge saw the answer key, so it's not proof of error."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-22-1",
+  "date": "2026-11-22",
+  "project": "research",
+  "angle": "2026-11-22-a-viral-line-says-a-quarter-of-swe-bench",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Viral claim: a quarter of AI coding benchmark failures were actually correct. The DeepSWE paper's 24.0% is 189 of 789 runs, not of failures. It's also an LLM judge disagreeing with the tests, with no human validation of the judge. Don't pick a coding agent off a quote."
+    }
+  ]
+}

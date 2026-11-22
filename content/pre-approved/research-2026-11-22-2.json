@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-22-2",
+  "date": "2026-11-22",
+  "project": "research",
+  "angle": "2026-11-22-one-flipt-io-flipt-bug-cost-29-trials-sw",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "One bug in a popular AI coding benchmark failed 29 trials: the harness copied the test file but not the fixtures added in the same commit. If you pick coding agents by leaderboard score, some of that score is harness bugs. Audit of SWE-Bench Pro, DeepSWE paper."
+    }
+  ]
+}
