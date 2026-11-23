@@ -413,7 +413,7 @@ research:
       summary: "The '22% success, 77% predicted' stat traveled with arXiv 2509.19163
         attached, which is a paper about slop, not agents · thread: AI coding agents
         predicted 77% success but actually passed 22%"
-      last_used:
+      last_used: '2026-11-22'
       provenance:
         post_id: p_311a3a91edb4
         round_id: anti_slop:2026-11-22
@@ -422,7 +422,7 @@ research:
       summary: "In Kaddour et al., 71% of GPT runs and 97% of Claude runs lost confidence
         mid-task. It didn't separate winners from losers · thread: AI coding agents
         predicted 77% success but actually passed 22%"
-      last_used:
+      last_used: '2026-11-22'
       provenance:
         post_id: p_7fd929dfb39a
         round_id: anti_slop:2026-11-22
@@ -431,7 +431,7 @@ research:
       summary: "SWE-RM's hybrid feedback beat execution-only by 3.0 points in RL and
         2.4 on SWE-Bench Live. Execution-free alone was 0.4 ahead of execution-based
         · thread: AI coding agents predicted 77% success but actually passed 22%"
-      last_used:
+      last_used: '2026-11-22'
       provenance:
         post_id: p_24cbcf04843e
         round_id: anti_slop:2026-11-22
@@ -440,7 +440,7 @@ research:
       summary: "Kaddour et al. found agents judged their own work better before seeing
         the patch than after, and 'looks finished' may be why · thread: AI coding
         agents predicted 77% success but actually passed 22%"
-      last_used:
+      last_used: '2026-11-22'
       provenance:
         post_id: p_b920643e8a3c
         round_id: anti_slop:2026-11-22
@@ -449,7 +449,7 @@ research:
       summary: "Anthropic's eval docs rank code-based grading first and LLM grading
         third, but only by speed and reliability, not as a strict ladder · thread:
         AI coding agents predicted 77% success but actually passed 22%"
-      last_used:
+      last_used: '2026-11-22'
       provenance:
         post_id: p_8a6c2c4f4248
         round_id: anti_slop:2026-11-22

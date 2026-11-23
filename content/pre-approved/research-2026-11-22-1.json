@@ -2,11 +2,11 @@
   "id": "research-2026-11-22-1",
   "date": "2026-11-22",
   "project": "research",
-  "angle": "2026-11-22-a-viral-line-says-a-quarter-of-swe-bench",
+  "angle": "2026-11-22-the-22-success-77-predicted-stat-travele",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "Viral claim: a quarter of AI coding benchmark failures were actually correct. The DeepSWE paper's 24.0% is 189 of 789 runs, not of failures. It's also an LLM judge disagreeing with the tests, with no human validation of the judge. Don't pick a coding agent off a quote."
+      "text": "AI coding agents that succeed 22% of the time predicted 77% success. That's Gemini-3-Pro grading its own work on 100 SWE-bench Pro tasks (arXiv 2602.06948). If your agent's 'done' is its own opinion, you have no signal. Make it run a test or a build before you believe it."
     }
   ]
 }

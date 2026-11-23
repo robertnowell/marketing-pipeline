@@ -2,11 +2,11 @@
   "id": "research-2026-11-22-5",
   "date": "2026-11-22",
   "project": "research",
-  "angle": "2026-11-22-deepswe-s-1-4-rests-on-10-disagreements",
+  "angle": "2026-11-22-anthropic-s-eval-docs-rank-code-based-gr",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "An AI judge disagreed with SWE-Bench Pro's tests on 32.4% of coding-agent runs. On the authors' own new benchmark: 1.4%. But the judge saw the answer key, no human validated it, and the authors built the rival. Disagreement isn't error. Don't pick a coding agent on either number."
+      "text": "Coding agents that pass only 22% of the time predict 77% success on their own work (Gemini-3-Pro, 100 SWE-bench Pro tasks, arXiv 2602.06948). If your agent's word is the only sign it's done, you're shipping on a bad number. Make it run a test or build and report the exit code."
     }
   ]
 }

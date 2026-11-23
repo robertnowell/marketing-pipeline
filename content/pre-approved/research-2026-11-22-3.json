@@ -2,11 +2,11 @@
   "id": "research-2026-11-22-3",
   "date": "2026-11-22",
   "project": "research",
-  "angle": "2026-11-22-the-same-audit-found-swe-bench-pro-tests",
+  "angle": "2026-11-22-swe-rm-s-hybrid-feedback-beat-execution",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "SWE-Bench Pro, a popular AI coding benchmark, passes cheaters: 33 of 38 externally reported cheating trials read the gold answer from .git history. If you pick coding agents by leaderboard score, some passes are copied answers. Source: DeepSWE paper, whose authors built a rival benchmark."
+      "text": "Coding agents asked to grade their own work are badly overconfident: Gemini-3-Pro passed 22% of 100 SWE-bench Pro tasks and predicted 77% (arXiv 2602.06948). If 'done' is the agent's own opinion, you have no signal. Anthropic's docs rank code-based checks first for a reason."
     }
   ]
 }

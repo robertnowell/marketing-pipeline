@@ -2,11 +2,11 @@
   "id": "research-2026-11-22-4",
   "date": "2026-11-22",
   "project": "research",
-  "angle": "2026-11-22-gpt-5-5-graded-swe-bench-pro-with-the-an",
+  "angle": "2026-11-22-kaddour-et-al-found-agents-judged-their",
   "posts": [
     {
       "channel": "bluesky",
-      "text": "An AI judge disagreed with the tests on 32.4% of agent runs on SWE-Bench Pro, a popular coding-agent benchmark. On DeepSWE, the authors' own benchmark: 1.4%. If you pick coding agents by leaderboard score, treat it as noisy. Caveat: the judge saw the answer key, so it's not proof of error."
+      "text": "Some AI coding agents that succeed only 22% of the time predict 77% success (arXiv 2602.06948, Gemini-3-Pro, 100 SWE-bench Pro tasks). If your agent grades its own work, you're reading a guess. Give it a pass/fail check to run instead. Self-review is the weakest gate you have."
     }
   ]
 }
