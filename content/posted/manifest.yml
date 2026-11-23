@@ -9201,3 +9201,33 @@
   angle: 2026-11-20-five-unrelated-ai-review-figures-sit-wit
   source_id: ''
   posted_at: '2026-11-22'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2xwpmq2cg2a
+  angle: 2026-11-22-the-22-success-77-predicted-stat-travele
+  source_id: research-2026-11-22-1
+  posted_at: '2026-11-23'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2xwpouiq52r
+  angle: 2026-11-22-in-kaddour-et-al-71-of-gpt-runs-and-97-o
+  source_id: research-2026-11-22-2
+  posted_at: '2026-11-23'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2xwpqtdgc2f
+  angle: 2026-11-22-swe-rm-s-hybrid-feedback-beat-execution
+  source_id: research-2026-11-22-3
+  posted_at: '2026-11-23'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2xwpszdj22j
+  angle: 2026-11-22-kaddour-et-al-found-agents-judged-their
+  source_id: research-2026-11-22-4
+  posted_at: '2026-11-23'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n2xwpuwcp72x
+  angle: 2026-11-22-anthropic-s-eval-docs-rank-code-based-gr
+  source_id: research-2026-11-22-5
+  posted_at: '2026-11-23'
