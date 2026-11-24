@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-23-1",
+  "date": "2026-11-23",
+  "project": "research",
+  "angle": "2026-11-23-a-correct-qutebrowser-patch-failed-9-tes",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI coding benchmark's tests may fail many correct answers. On SWE-Bench Pro, an LLM judge disagreed with the tests on 32.4% of 789 rollouts. On DeepSWE: 1.4%. Disagreement isn't proof of error, but if you pick coding agents by leaderboard, treat the scores as noisy."
+    }
+  ]
+}

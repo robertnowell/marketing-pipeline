@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-23-5",
+  "date": "2026-11-23",
+  "project": "research",
+  "angle": "2026-11-23-the-32-4-vs-1-4-comparison-audits-two-di",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A popular AI coding benchmark, SWE-Bench Pro, may be failing correct code. An LLM judge disagreed with its tests on 32.4% of runs, vs 1.4% on a rival benchmark. Caveat: the rival's maker ran the audit, and the judge saw the answer key. If you pick agents by leaderboard, discount it."
+    }
+  ]
+}

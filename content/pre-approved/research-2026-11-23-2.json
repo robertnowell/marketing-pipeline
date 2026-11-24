@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-23-2",
+  "date": "2026-11-23",
+  "project": "research",
+  "angle": "2026-11-23-the-789-audited-rollouts-come-from-30-ta",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge said 189 of 789 coding-agent runs on a popular benchmark were correct even though the benchmark's tests failed them. But those 789 runs come from just 30 tasks, 3 attempts each. It's a flag, not a measurement. If you pick coding agents by leaderboard score, discount it."
+    }
+  ]
+}

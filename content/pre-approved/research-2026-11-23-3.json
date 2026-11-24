@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-23-3",
+  "date": "2026-11-23",
+  "project": "research",
+  "angle": "2026-11-23-29-failed-runs-on-one-flipt-task-trace-t",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "On SWE-Bench Pro, an AI coding benchmark, 29 trials of one task failed because the harness copied the test file but not its fixtures. If you pick coding agents by leaderboard, discount it: Epoch AI rates the benchmark \"Flawed\" and estimates more than 20% of tasks likely have scoring defects."
+    }
+  ]
+}

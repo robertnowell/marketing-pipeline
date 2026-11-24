@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-23-4",
+  "date": "2026-11-23",
+  "project": "research",
+  "angle": "2026-11-23-deepswe-s-gpt-5-5-judge-read-the-hidden",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge disagreed with SWE-Bench Pro's test results on 32.4% of coding-agent runs. On the benchmark the auditors built themselves: 1.4%. But the judge saw the hidden answer key, and a separate study found that lowers agreement with humans. If you pick coding agents by benchmark score, treat the number as soft."
+    }
+  ]
+}

@@ -412,7 +412,7 @@ research:
       summary: "A correct qutebrowser patch failed 9 tests by changing the --version
         output, in a benchmark that grades patches by tests · thread: A popular AI
         coding benchmark's tests may fail many correct answers"
-      last_used:
+      last_used: '2026-11-23'
       provenance:
         post_id: p_16983000922d
         round_id: anti_slop:2026-11-23
@@ -421,7 +421,7 @@ research:
       summary: "The 789 audited rollouts come from 30 tasks, so the 24% false-negative
         figure is not 789 independent data points · thread: A popular AI coding benchmark's
         tests may fail many correct answers"
-      last_used:
+      last_used: '2026-11-23'
       provenance:
         post_id: p_73531962bdfe
         round_id: anti_slop:2026-11-23
@@ -430,7 +430,7 @@ research:
       summary: "29 failed runs on one flipt task trace to a harness that copied the
         test file but not its fixtures · thread: A popular AI coding benchmark's tests
         may fail many correct answers"
-      last_used:
+      last_used: '2026-11-23'
       provenance:
         post_id: p_1282572c3d2a
         round_id: anti_slop:2026-11-23
@@ -439,7 +439,7 @@ research:
       summary: "DeepSWE's GPT-5.5 judge read the hidden answer key before grading
         SWE-Bench Pro. A separate study found that lowered agreement with humans ·
         thread: A popular AI coding benchmark's tests may fail many correct answers"
-      last_used:
+      last_used: '2026-11-23'
       provenance:
         post_id: p_c71d07e99b31
         round_id: anti_slop:2026-11-23
@@ -448,7 +448,7 @@ research:
       summary: "The 32.4% vs 1.4% comparison audits two different prompt styles, and
         the paper and blog disagree on how many agent configurations ran · thread:
         A popular AI coding benchmark's tests may fail many correct answers"
-      last_used:
+      last_used: '2026-11-23'
       provenance:
         post_id: p_13e47e8ecb20
         round_id: anti_slop:2026-11-23
