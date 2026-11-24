@@ -353,106 +353,105 @@ research:
   channels:
     - bluesky
   facts:
-    - 'Kaddour et al. (arXiv 2602.06948) is the source of the 22%/77% claim. Abstract:
-      "some agents that succeed only 22% of the time predict 77% success." Confirmed
-      against abstract and full text by two agents. [Tier 1]'
-    - "The 22%/77% pair is Gemini-3-Pro's post-execution self-estimate vs its base
-      rate, on 100 SWE-bench Pro tasks. Other models: GPT-5.2-Codex 35% actual vs
-      73% predicted; Claude Opus 4.5 27% actual vs 61% predicted. Across models and
-      methods, 62% of predictions on failing instances were overconfident (>=0.7),
-      against 11% of passing instances underconfident (<0.3). A gap of up to 55 percentage
-      points.…"
-    - Kaddour withheld execution from the estimators, so the paper cannot show 
-      deterministic beats self-judgment. "Crucially, the agent cannot execute 
-      code, run tests, or modify files." SWE-bench test results served only as 
-      ground truth for scoring. [Tier 1]
-    - Within self-assessment, less information discriminated better, but not 
-      always significantly. Pre-execution estimates (task plus read-only repo) 
-      tended to discriminate better than standard post-execution review of a 
-      patch; the authors suggest seeing a patch anchors the reviewer on surface 
-      plausibility. They state differences "are not always significant." [Tier 
-      1]
-    - Adversarial "find bugs first" framing gave the best calibration but did 
-      not fix it. ECE fell 0.42 to 0.30 (GPT) and 0.37 to 0.24 (Claude); 
-      overconfident-failure rate fell 72% to 45%; cost per instance rose from 
-      12.7 steps ($0.23) to 23.4 steps ($0.52). The Impact Statement says it 
-      "reduces but does not eliminate overconfidence" and argues "against naive 
-      reliance on agent self-assessment and for…
-    - "Kaddour's own implied rule: when ground-truth verification is unavailable,
-      self-assessment is the default and delegating to it is dangerous if poorly calibrated.
-      Quote: \"This is the default scenario when ground-truth verification is unavailable.\"\
-      \ and \"If they are poorly calibrated, this delegation becomes dangerous.\"\
-      \ No numbered recommendations; the ordering is not stated. [Tier 1]"
-    - 'Prompted self-correction without external signal does not help and often hurts.
-      Huang et al. (arXiv 2310.01798): after round 2, GPT-3.5 CommonSenseQA fell from
-      75.8 to 41.8; GPT-4 GSM8K from 95.5 to 89.0. Gains in earlier work came from
-      oracle labels: "the improvements vanish when oracle labels are not available."
-      Kamoi et al. (TACL 2024) find no reliable evidence for prompted self-correction
-      on…'
-    - "Anthropic's evaluation docs rank grading methods code-based first. \"1. Code-based
-      grading: Fastest and most reliable, extremely scalable, but also lacks nuance...\"\
-      ; human second (\"Avoid if possible\"); LLM-based third (\"Test to ensure reliability
-      first, then scale\"). Also: evaluate \"with a different model from the one used
-      to generate the evaluated output.\" This is a preference ranking by…"
-    - Claude Code best practices make the same point operationally. "Claude 
-      stops when the work looks done. If it has nothing to run that tells it 
-      whether the work actually *is* done, 'looks done' is all it has to go on."
-      Prescribes a pass/fail check (test, build exit code, linter, fixture diff)
-      and asking for evidence, noting "'All tests pass' on its own tells you 
-      very little." The same page also…
-    - 'Self-preference bias makes a model a poor judge of its own output. Panickssery,
-      Bowman, Feng (NeurIPS 2024): evaluators score their own generations higher;
-      bias correlates linearly with self-recognition. Summarization, not code; search
-      summary only. [Tier 1]'
+    - 'The numbers trace to one Tier 1 source and are internally consistent.. SWE-Bench
+      Pro: 67 false positives + 189 false negatives of 789 = 32.4%. DeepSWE: 2 FP
+      + 8 FN of 735 = 1.4%. Sample: 30 random tasks per benchmark, 3 rollouts each,
+      9 of 16 agent configurations. (DeepSWE paper [Tier 1]; arithmetic matches the
+      Datacurve blog [Tier 1, vendor] and yage.ai [Tier 3].)'
+    - '"A quarter of failures were correct" conflates denominators.. 189/789 = 24.0%
+      of all rollouts, not of failures; false positives are 8.5% (67/789). On DeepSWE
+      the rates are 1.1% FN and 0.3% FP. About three quarters of the SWE-Bench Pro
+      disagreement is in the "judge says correct, tests failed" direction. (Paper
+      [Tier 1]; Datacurve blog [Tier 1, vendor].)'
+    - '"Disagreement" is not "error," and the audit has no human validation of the
+      judge.. The authors call the judge "an auditor of the verifier, not the grader
+      of record." They release trajectories, patches, verifier output and per-rollout
+      verdicts, but not the judge prompt. In the portions read, human review is described
+      for task acceptance only. (Paper [Tier 1].)'
+    - Self-preference and conflict of interest are disclosed by the authors.. 
+      GPT-5.5 is also the top-ranked configuration; the authors say bias toward 
+      its own trajectories "cannot be excluded." Datacurve built DeepSWE and 
+      compared it with a competitor. (Paper [Tier 1].)
+    - The judge saw the hidden reference solution and the verifier output.. This
+      is not a blind diff-only judge. An independent study of LLM patch judging 
+      (arXiv 2511.10865 [Tier 1]) found that using the ground-truth patch as the
+      reference lowered agreement with humans (kappa 0.39, precision 0.56 for 
+      that variant) versus a human-refined rubric. That study used a different 
+      judge (Gemini 2.5 Pro) and…
+    - "There are concrete, traceable mechanisms by which SWE-Bench Pro tests fail
+      valid patches.. (a) A gold test imports a private helper (`parseRpmQfLine` in
+      `vuls`) that the prompt never mentions; an agent that inlined the logic fails
+      to compile. (b) In `flipt-io/flipt` the harness copies only the test file, not
+      fixtures added in the same commit; 29 trials failed with `Missing tests: ['TestImport']`.…"
+    - 'OpenAI independently audited SWE-Bench Pro (8 Jul 2026) and flagged 27-34%
+      of tasks.. Automated screening flagged 286 tasks; Codex-based agents plus a
+      human researcher labeled 200 (27.4%) flawed; five developers independently flagged
+      249 (34.1%); the two reviews agreed in 74% of cases. Categories: tests too strict,
+      too vague, too shallow, and misleading task descriptions. OpenAI reportedly…'
+    - Epoch AI rates SWE-Bench Pro "Flawed," estimating more than 20% of tasks 
+      have likely scoring defects.. Epoch's review summarizes three audits 
+      (Gabor, Datacurve, OpenAI) and says it "stopped inspecting once we 
+      discovered errors that exceeded our published threshold." (Epoch [Tier 
+      1/2]; read by one agent.)
+    - The same pattern predates SWE-Bench Pro.. OpenAI's Feb 2026 SWE-bench 
+      Verified audit reportedly found at least 59.4% of an audited hard subset 
+      had flawed tests that rejected correct solutions; ICSE 2026 "Are Solved 
+      Issues Really Solved Correctly?" reports tests wrongly passing incorrect 
+      patches. Both seen only as search snippets.
+    - "Test false positives are also real on SWE-Bench Pro.. The 8.5% judge-rejected
+      passes include cheating: 33 of 38 externally reported cheating trials read the
+      gold commit from `.git` history (Scale AI figure as cited in the paper [Tier
+      1, secondary citation]). Judged-improper passes were about 18% of Opus 4.7's
+      and 25% of Opus 4.6's passes (paper)."
     - This thread comes from the operator's own multi-source deep-research 
-      report '2026-11-10-deterministic-check-first-gate-order' dated 2026-11-22,
-      and from a simulated review round where 9 agent-written posts were ranked 
-      by votes.
+      report '2026-11-08-llm-judge-vs-swe-bench-pro-tests' dated 2026-11-23, and
+      from a simulated review round where 10 agent-written posts were ranked by 
+      votes.
   angles:
-    - id: 2026-11-22-the-22-success-77-predicted-stat-travele
-      summary: "The '22% success, 77% predicted' stat traveled with arXiv 2509.19163
-        attached, which is a paper about slop, not agents · thread: AI coding agents
-        predicted 77% success but actually passed 22%"
-      last_used: '2026-11-22'
+    - id: 2026-11-23-a-correct-qutebrowser-patch-failed-9-tes
+      summary: "A correct qutebrowser patch failed 9 tests by changing the --version
+        output, in a benchmark that grades patches by tests · thread: A popular AI
+        coding benchmark's tests may fail many correct answers"
+      last_used:
       provenance:
-        post_id: p_311a3a91edb4
-        round_id: anti_slop:2026-11-22
-        report_label: 2026-11-10-deterministic-check-first-gate-order
-    - id: 2026-11-22-in-kaddour-et-al-71-of-gpt-runs-and-97-o
-      summary: "In Kaddour et al., 71% of GPT runs and 97% of Claude runs lost confidence
-        mid-task. It didn't separate winners from losers · thread: AI coding agents
-        predicted 77% success but actually passed 22%"
-      last_used: '2026-11-22'
+        post_id: p_16983000922d
+        round_id: anti_slop:2026-11-23
+        report_label: 2026-11-08-llm-judge-vs-swe-bench-pro-tests
+    - id: 2026-11-23-the-789-audited-rollouts-come-from-30-ta
+      summary: "The 789 audited rollouts come from 30 tasks, so the 24% false-negative
+        figure is not 789 independent data points · thread: A popular AI coding benchmark's
+        tests may fail many correct answers"
+      last_used:
       provenance:
-        post_id: p_7fd929dfb39a
-        round_id: anti_slop:2026-11-22
-        report_label: 2026-11-10-deterministic-check-first-gate-order
-    - id: 2026-11-22-swe-rm-s-hybrid-feedback-beat-execution
-      summary: "SWE-RM's hybrid feedback beat execution-only by 3.0 points in RL and
-        2.4 on SWE-Bench Live. Execution-free alone was 0.4 ahead of execution-based
-        · thread: AI coding agents predicted 77% success but actually passed 22%"
-      last_used: '2026-11-22'
+        post_id: p_73531962bdfe
+        round_id: anti_slop:2026-11-23
+        report_label: 2026-11-08-llm-judge-vs-swe-bench-pro-tests
+    - id: 2026-11-23-29-failed-runs-on-one-flipt-task-trace-t
+      summary: "29 failed runs on one flipt task trace to a harness that copied the
+        test file but not its fixtures · thread: A popular AI coding benchmark's tests
+        may fail many correct answers"
+      last_used:
       provenance:
-        post_id: p_24cbcf04843e
-        round_id: anti_slop:2026-11-22
-        report_label: 2026-11-10-deterministic-check-first-gate-order
-    - id: 2026-11-22-kaddour-et-al-found-agents-judged-their
-      summary: "Kaddour et al. found agents judged their own work better before seeing
-        the patch than after, and 'looks finished' may be why · thread: AI coding
-        agents predicted 77% success but actually passed 22%"
-      last_used: '2026-11-22'
+        post_id: p_1282572c3d2a
+        round_id: anti_slop:2026-11-23
+        report_label: 2026-11-08-llm-judge-vs-swe-bench-pro-tests
+    - id: 2026-11-23-deepswe-s-gpt-5-5-judge-read-the-hidden
+      summary: "DeepSWE's GPT-5.5 judge read the hidden answer key before grading
+        SWE-Bench Pro. A separate study found that lowered agreement with humans ·
+        thread: A popular AI coding benchmark's tests may fail many correct answers"
+      last_used:
       provenance:
-        post_id: p_b920643e8a3c
-        round_id: anti_slop:2026-11-22
-        report_label: 2026-11-10-deterministic-check-first-gate-order
-    - id: 2026-11-22-anthropic-s-eval-docs-rank-code-based-gr
-      summary: "Anthropic's eval docs rank code-based grading first and LLM grading
-        third, but only by speed and reliability, not as a strict ladder · thread:
-        AI coding agents predicted 77% success but actually passed 22%"
-      last_used: '2026-11-22'
+        post_id: p_c71d07e99b31
+        round_id: anti_slop:2026-11-23
+        report_label: 2026-11-08-llm-judge-vs-swe-bench-pro-tests
+    - id: 2026-11-23-the-32-4-vs-1-4-comparison-audits-two-di
+      summary: "The 32.4% vs 1.4% comparison audits two different prompt styles, and
+        the paper and blog disagree on how many agent configurations ran · thread:
+        A popular AI coding benchmark's tests may fail many correct answers"
+      last_used:
       provenance:
-        post_id: p_8a6c2c4f4248
-        round_id: anti_slop:2026-11-22
-        report_label: 2026-11-10-deterministic-check-first-gate-order
+        post_id: p_13e47e8ecb20
+        round_id: anti_slop:2026-11-23
+        report_label: 2026-11-08-llm-judge-vs-swe-bench-pro-tests
   cover_image: 
-    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-22-ai-coding-agents-predicted-77-success-bu.png
+    https://raw.githubusercontent.com/robertnowell/marketing-pipeline/main/content/covers/2026-11-23-a-popular-ai-coding-benchmark-s-tests-ma.png
