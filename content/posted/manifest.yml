@@ -9231,3 +9231,33 @@
   angle: 2026-11-22-anthropic-s-eval-docs-rank-code-based-gr
   source_id: research-2026-11-22-5
   posted_at: '2026-11-23'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n32h6aappv2y
+  angle: 2026-11-23-a-correct-qutebrowser-patch-failed-9-tes
+  source_id: research-2026-11-23-1
+  posted_at: '2026-11-24'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n32h6cgum62x
+  angle: 2026-11-23-the-789-audited-rollouts-come-from-30-ta
+  source_id: research-2026-11-23-2
+  posted_at: '2026-11-24'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n32h6elae525
+  angle: 2026-11-23-29-failed-runs-on-one-flipt-task-trace-t
+  source_id: research-2026-11-23-3
+  posted_at: '2026-11-24'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n32h6hj46j2j
+  angle: 2026-11-23-the-32-4-vs-1-4-comparison-audits-two-di
+  source_id: research-2026-11-23-5
+  posted_at: '2026-11-24'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n32h7au6ef25
+  angle: 2026-11-23-a-correct-qutebrowser-patch-failed-9-tes
+  source_id: ''
+  posted_at: '2026-11-24'

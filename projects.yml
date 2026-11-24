@@ -412,7 +412,7 @@ research:
       summary: "A correct qutebrowser patch failed 9 tests by changing the --version
         output, in a benchmark that grades patches by tests · thread: A popular AI
         coding benchmark's tests may fail many correct answers"
-      last_used: '2026-11-23'
+      last_used: '2026-11-24'
       provenance:
         post_id: p_16983000922d
         round_id: anti_slop:2026-11-23
