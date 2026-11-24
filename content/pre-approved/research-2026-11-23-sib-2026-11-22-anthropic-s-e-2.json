@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-23-sib-2026-11-22-anthropic-s-e-2",
+  "date": "2026-11-23",
+  "project": "research",
+  "angle": "angle:sib-2026-11-23-2026-11-22-anthropic-s-e-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Coding-agent leaderboards can fail correct code for plumbing reasons. On SWE-Bench Pro, one test imports a private helper (parseRpmQfLine) the task never mentions, so an agent that inlined the logic fails to compile. In flipt, the harness skipped fixtures: 29 trials failed."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-23-sib-2026-11-22-anthropic-s-e-1",
+  "date": "2026-11-23",
+  "project": "research",
+  "angle": "angle:sib-2026-11-23-2026-11-22-anthropic-s-e-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI judge re-graded coding-agent runs on SWE-Bench Pro and disagreed with the test suite on 32.4% of them (67 false positives + 189 false negatives, of 789). On DeepSWE: 1.4% (2 + 8 of 735). If you choose coding agents by leaderboard score, treat the tests as a noisy ruler. Source: DeepSWE paper."
+    }
+  ]
+}
