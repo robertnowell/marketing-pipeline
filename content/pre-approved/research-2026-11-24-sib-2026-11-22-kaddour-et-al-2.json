@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-24-sib-2026-11-22-kaddour-et-al-2",
+  "date": "2026-11-24",
+  "project": "research",
+  "angle": "angle:sib-2026-11-24-2026-11-22-kaddour-et-al-2",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "A company's audit says a rival AI coding benchmark clashes with an AI judge on 32.4% of runs, its own on 1.4%. The authors disclose the conflict: they built the second one, and bias toward GPT-5.5's own trajectories \"cannot be excluded.\" Weigh vendor audits accordingly."
+    }
+  ]
+}

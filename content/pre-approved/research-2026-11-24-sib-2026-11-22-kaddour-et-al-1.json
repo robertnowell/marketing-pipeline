@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-24-sib-2026-11-22-kaddour-et-al-1",
+  "date": "2026-11-24",
+  "project": "research",
+  "angle": "angle:sib-2026-11-24-2026-11-22-kaddour-et-al-1",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "On SWE-Bench Pro, an AI coding benchmark, an LLM judge disagreed with the test results on 32.4% of agent runs (67 false passes + 189 false fails of 789). On DeepSWE: 1.4%. Caveat: DeepSWE's authors built it, and the judge has no human validation. Discount leaderboard gaps accordingly."
+    }
+  ]
+}
