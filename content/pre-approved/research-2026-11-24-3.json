@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-24-3",
+  "date": "2026-11-24",
+  "project": "research",
+  "angle": "2026-11-24-anthropic-ranks-eval-graders-by-most-rel",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI agent predicted 77% success on 100 coding tasks. It passed 22%. That's Gemini-3-Pro grading its own work on SWE-bench Pro (Kaddour et al., 2026). Anthropic's docs rank graders code-based, then human, then LLM-based. Letting the model grade itself measures confidence, not output."
+    }
+  ]
+}

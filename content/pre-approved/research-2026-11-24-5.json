@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-24-5",
+  "date": "2026-11-24",
+  "project": "research",
+  "angle": "2026-11-24-anthropic-s-eval-docs-tell-you-not-to-gr",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Gemini-3-Pro predicted it would pass 77% of 100 coding tasks. It passed 22%. It was grading its own work. Anthropic's eval docs rank graders: code-based (1), human (2), LLM-based (3). If your evals let the writer judge its own output, you're on the lowest rung."
+    }
+  ]
+}

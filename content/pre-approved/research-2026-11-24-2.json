@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-24-2",
+  "date": "2026-11-24",
+  "project": "research",
+  "angle": "2026-11-24-gemini-3-pro-predicted-99-success-before",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "In one test, an AI agent said its code would pass 77% of 100 coding tasks after running it. It passed 22%. If you ship agent output, don't let the same model be the only judge. Source: Kaddour et al. (2026), Gemini-3-Pro on SWE-bench Pro."
+    }
+  ]
+}

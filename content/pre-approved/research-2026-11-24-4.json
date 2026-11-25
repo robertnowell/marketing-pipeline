@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-24-4",
+  "date": "2026-11-24",
+  "project": "research",
+  "angle": "2026-11-24-a-2025-audit-found-7-8-of-swe-bench-solv",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI coding agent predicted it had solved 77% of 100 software tasks. It actually passed 22%. Kaddour et al. (2026) tested Gemini-3-Pro grading its own work. Anthropic's docs rank graders: code-based first, human second, LLM-based third. Never let the agent be your only test."
+    }
+  ]
+}

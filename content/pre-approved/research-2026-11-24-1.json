@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-24-1",
+  "date": "2026-11-24",
+  "project": "research",
+  "angle": "2026-11-24-gpt-4-wrongly-accepted-14-of-20-bad-math",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Gemini-3-Pro predicted it would pass 77% of 100 SWE-bench Pro coding tasks. It passed 22%. If your agent evals let the model grade its own work, you're measuring confidence, not quality. Anthropic's docs rank graders: code-based first, human second, LLM-based third. (Kaddour et al., 2026)"
+    }
+  ]
+}
