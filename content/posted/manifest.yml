@@ -9315,3 +9315,33 @@
   angle: angle:sib-2026-11-24-2026-11-22-kaddour-et-al-2
   source_id: research-2026-11-24-sib-2026-11-22-kaddour-et-al-2
   posted_at: '2026-11-25'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n37i3xd4jh2f
+  angle: 2026-11-26-a-gemini-agent-put-its-qutebrowser-patch
+  source_id: research-2026-11-26-1
+  posted_at: '2026-11-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n37i3zpirb2p
+  angle: 2026-11-26-in-kaddour-et-al-claude-s-confidence-fel
+  source_id: research-2026-11-26-2
+  posted_at: '2026-11-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n37i4462ha2d
+  angle: 2026-11-26-asking-agents-to-hunt-for-bugs-in-their
+  source_id: research-2026-11-26-3
+  posted_at: '2026-11-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n37i46hrwy2e
+  angle: 2026-11-26-metr-had-four-maintainers-review-296-ai
+  source_id: research-2026-11-26-4
+  posted_at: '2026-11-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n37i4ar2ma2p
+  angle: 2026-11-26-looks-finished-does-not-appear-in-kaddou
+  source_id: research-2026-11-26-5
+  posted_at: '2026-11-26'
