@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-26-2",
+  "date": "2026-11-26",
+  "project": "research",
+  "angle": "2026-11-26-in-kaddour-et-al-claude-s-confidence-fel",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "An AI coding agent's mid-task doubt tells you nothing. In a UCL study (arXiv:2602.06948), Claude's confidence fell 58% to 37% to 17% as it worked, the same for tasks it passed and failed. It passed 27%. Don't trust an agent's self-rating; make it hunt for bugs in its own diff."
+    }
+  ]
+}

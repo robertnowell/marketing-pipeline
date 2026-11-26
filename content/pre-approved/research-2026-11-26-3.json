@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-26-3",
+  "date": "2026-11-26",
+  "project": "research",
+  "angle": "2026-11-26-asking-agents-to-hunt-for-bugs-in-their",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI coding agents that pass 22% of tasks predict 77% success on their own patches. That's Gemini 3 Pro in a UCL/SevnAI study, arXiv:2602.06948. If you merge agent code because the agent says it looks right, you're trusting a badly inflated number."
+    }
+  ]
+}

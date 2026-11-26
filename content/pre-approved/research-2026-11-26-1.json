@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-26-1",
+  "date": "2026-11-26",
+  "project": "research",
+  "angle": "2026-11-26-a-gemini-agent-put-its-qutebrowser-patch",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Gemini 3 Pro passed 22% of real coding tasks, then predicted it passed 77%. In a UCL/SevnAI study (arXiv:2602.06948), agents graded their own patches. Asking them to hunt for bugs instead cut overconfident failures from 72% to 45%. Don't merge on an agent's \"looks good.\""
+    }
+  ]
+}

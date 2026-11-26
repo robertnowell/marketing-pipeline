@@ -408,7 +408,7 @@ research:
       summary: 'A Gemini agent put its qutebrowser patch at 45% before writing it
         and 82% after. The patch failed. · thread: AI coding agents predicted 77%
         success; they actually passed 22%'
-      last_used:
+      last_used: '2026-11-26'
       provenance:
         post_id: p_f2af5d5dfb56
         round_id: anti_slop:2026-11-26
@@ -417,7 +417,7 @@ research:
       summary: "In Kaddour et al., Claude's confidence fell from 58% to 17% as it
         worked, and the drop was the same for tasks it passed and tasks it failed
         · thread: AI coding agents predicted 77% success; they actually passed 22%"
-      last_used:
+      last_used: '2026-11-26'
       provenance:
         post_id: p_39fa94d33600
         round_id: anti_slop:2026-11-26
@@ -426,7 +426,7 @@ research:
       summary: 'Asking agents to hunt for bugs in their own patch cut overconfident
         failures from 72% to 45%, but for GPT a simple rescaling matched the gain
         · thread: AI coding agents predicted 77% success; they actually passed 22%'
-      last_used:
+      last_used: '2026-11-26'
       provenance:
         post_id: p_09f45a8496f1
         round_id: anti_slop:2026-11-26
@@ -435,7 +435,7 @@ research:
       summary: 'METR had four maintainers review 296 AI pull requests that passed
         SWE-bench; the grader ran 24.2 points above their merge rate · thread: AI
         coding agents predicted 77% success; they actually passed 22%'
-      last_used:
+      last_used: '2026-11-26'
       provenance:
         post_id: p_3310dcaa6c89
         round_id: anti_slop:2026-11-26
@@ -444,7 +444,7 @@ research:
       summary: "'Looks finished' does not appear in Kaddour et al.'s paper; the authors
         wrote 'looks reasonable', and that is a hypothesis · thread: AI coding agents
         predicted 77% success; they actually passed 22%"
-      last_used:
+      last_used: '2026-11-26'
       provenance:
         post_id: p_0cf0b95bc9e4
         round_id: anti_slop:2026-11-26

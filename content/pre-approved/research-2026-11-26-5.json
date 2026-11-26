@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-26-5",
+  "date": "2026-11-26",
+  "project": "research",
+  "angle": "2026-11-26-looks-finished-does-not-appear-in-kaddou",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Gemini 3 Pro passed 22% of real coding tasks, then predicted 77% success on its own work (UCL/SevnAI, arXiv:2602.06948). If your agent tells you its work looks reasonable, ask it to find bugs in its diff instead. Overconfident failures fell from 72% to 45%."
+    }
+  ]
+}

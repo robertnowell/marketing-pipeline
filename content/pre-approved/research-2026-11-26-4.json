@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-26-4",
+  "date": "2026-11-26",
+  "project": "research",
+  "angle": "2026-11-26-metr-had-four-maintainers-review-296-ai",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Gemini 3 Pro passes 22% of real coding tasks, yet predicts it passes 77% when it grades its own work. If an AI agent signs off on its own code before you ship, treat that confidence as noise. Source: UCL researchers, arXiv:2602.06948."
+    }
+  ]
+}
