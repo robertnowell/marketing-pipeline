@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-27-2",
+  "date": "2026-11-27",
+  "project": "research",
+  "angle": "2026-11-27-kaddour-et-al-s-three-coding-agents-pred",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "AI coding agents grade their own work far too generously. In one arXiv paper, an agent that passed 22% of tasks predicted 77% success. GPT-5.2-Codex: 73% predicted vs a true 35%. Claude Opus 4.5: 61% vs 27%. If your agent says it works, check the tests yourself."
+    }
+  ]
+}

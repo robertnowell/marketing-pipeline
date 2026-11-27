@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-27-1",
+  "date": "2026-11-27",
+  "project": "research",
+  "angle": "2026-11-27-in-kaddour-et-al-the-77-was-not-an-engin",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Some AI coding agents that succeed only 22% of the time predict 77% success. The agent wasn't a reviewer: it was grading its own patch after running it. If your workflow trusts an agent's self-reported confidence, you're trusting noise."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-27-4",
+  "date": "2026-11-27",
+  "project": "research",
+  "angle": "2026-11-27-kaddour-et-al-s-22-is-22-passed-tasks-ou",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Some AI coding agents that succeed only 22% of the time predict 77% success. That line is verbatim from the abstract of an arXiv paper that tested agents on 100 SWE-bench Pro tasks. An agent's own \"it works\" is not evidence. Check the output yourself before you ship."
+    }
+  ]
+}

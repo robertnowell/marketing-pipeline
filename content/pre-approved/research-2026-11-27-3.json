@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-27-3",
+  "date": "2026-11-27",
+  "project": "research",
+  "angle": "2026-11-27-the-viral-22-vs-77-post-was-never-found",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Some AI coding agents that succeed 22% of the time predict 77% success after running their own code. Tested on 100 random SWE-bench Pro tasks. If your agent says the work is done and passing, that self-report is not evidence. Verify with an independent check."
+    }
+  ]
+}

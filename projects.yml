@@ -394,7 +394,7 @@ research:
       summary: "In Kaddour et al., the 77% was not an engineer's or a reviewer's guess.
         The agent wrote it about its own patch. · thread: The viral AI overconfidence
         stat is the worst of three models tested"
-      last_used:
+      last_used: '2026-11-27'
       provenance:
         post_id: p_84a7e3b4a195
         round_id: anti_slop:2026-11-27
@@ -403,7 +403,7 @@ research:
       summary: "Kaddour et al.'s three coding agents predicted 61-77% for themselves
         but passed 22-35%; Gemini looks worst partly because it passed the least ·
         thread: The viral AI overconfidence stat is the worst of three models tested"
-      last_used:
+      last_used: '2026-11-27'
       provenance:
         post_id: p_996241214a9e
         round_id: anti_slop:2026-11-27
@@ -412,7 +412,7 @@ research:
       summary: "The viral '22% vs 77%' post was never found, so the claim that it
         cited an unrelated paper is untested · thread: The viral AI overconfidence
         stat is the worst of three models tested"
-      last_used:
+      last_used: '2026-11-27'
       provenance:
         post_id: p_1f530bfcb00f
         round_id: anti_slop:2026-11-27
@@ -421,7 +421,7 @@ research:
       summary: "Kaddour et al.'s 22% is 22 passed tasks out of 100, which leaves about
         4 points of sampling error · thread: The viral AI overconfidence stat is the
         worst of three models tested"
-      last_used:
+      last_used: '2026-11-27'
       provenance:
         post_id: p_d75390777cc4
         round_id: anti_slop:2026-11-27
@@ -430,7 +430,7 @@ research:
       summary: "Kaddour et al.: GPT-5.2-Codex's 35%→73% is 38 points by subtraction
         but 0.39 in Table 2, and some quoted figures here are derived · thread: The
         viral AI overconfidence stat is the worst of three models tested"
-      last_used:
+      last_used: '2026-11-27'
       provenance:
         post_id: p_173da032e411
         round_id: anti_slop:2026-11-27

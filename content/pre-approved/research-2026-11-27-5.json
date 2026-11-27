@@ -1,0 +1,12 @@
+{
+  "id": "research-2026-11-27-5",
+  "date": "2026-11-27",
+  "project": "research",
+  "angle": "2026-11-27-kaddour-et-al-gpt-5-2-codex-s-35-73-is-3",
+  "posts": [
+    {
+      "channel": "bluesky",
+      "text": "Gemini 3 Pro succeeded on 22% of real coding tasks, then predicted 77% success after running its own work. GPT-5.2-Codex: 35% real, 73% predicted. Claude Opus 4.5: 27% real, 61%. Tested on 100 SWE-bench Pro tasks. If your coding agent says it's done, treat that as a guess."
+    }
+  ]
+}
