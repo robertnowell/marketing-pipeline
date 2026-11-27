@@ -9345,3 +9345,33 @@
   angle: 2026-11-26-looks-finished-does-not-appear-in-kaddou
   source_id: research-2026-11-26-5
   posted_at: '2026-11-26'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n3byk5nbck2z
+  angle: 2026-11-27-in-kaddour-et-al-the-77-was-not-an-engin
+  source_id: research-2026-11-27-1
+  posted_at: '2026-11-27'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n3byk75zv62f
+  angle: 2026-11-27-kaddour-et-al-s-three-coding-agents-pred
+  source_id: research-2026-11-27-2
+  posted_at: '2026-11-27'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n3bykaodti2e
+  angle: 2026-11-27-the-viral-22-vs-77-post-was-never-found
+  source_id: research-2026-11-27-3
+  posted_at: '2026-11-27'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n3bykc7tsy2e
+  angle: 2026-11-27-kaddour-et-al-s-22-is-22-passed-tasks-ou
+  source_id: research-2026-11-27-4
+  posted_at: '2026-11-27'
+- project: research
+  channel: bluesky
+  url: https://bsky.app/profile/palo-alto-eng.bsky.social/post/3n3bykdpbdy2p
+  angle: 2026-11-27-kaddour-et-al-gpt-5-2-codex-s-35-73-is-3
+  source_id: research-2026-11-27-5
+  posted_at: '2026-11-27'
