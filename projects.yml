@@ -394,7 +394,7 @@ research:
       summary: "In Kaddour et al., the 77% was not an engineer's or a reviewer's guess.
         The agent wrote it about its own patch. · thread: The viral AI overconfidence
         stat is the worst of three models tested"
-      last_used: '2026-11-27'
+      last_used: '2026-11-28'
       provenance:
         post_id: p_84a7e3b4a195
         round_id: anti_slop:2026-11-27
