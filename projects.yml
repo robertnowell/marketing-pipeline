@@ -403,7 +403,7 @@ research:
       summary: "Kaddour et al.'s three coding agents predicted 61-77% for themselves
         but passed 22-35%; Gemini looks worst partly because it passed the least ·
         thread: The viral AI overconfidence stat is the worst of three models tested"
-      last_used: '2026-11-27'
+      last_used: '2026-11-28'
       provenance:
         post_id: p_996241214a9e
         round_id: anti_slop:2026-11-27
