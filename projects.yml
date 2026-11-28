@@ -421,7 +421,7 @@ research:
       summary: "Kaddour et al.'s 22% is 22 passed tasks out of 100, which leaves about
         4 points of sampling error · thread: The viral AI overconfidence stat is the
         worst of three models tested"
-      last_used: '2026-11-27'
+      last_used: '2026-11-28'
       provenance:
         post_id: p_d75390777cc4
         round_id: anti_slop:2026-11-27
